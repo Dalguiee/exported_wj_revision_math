@@ -1,0 +1,679 @@
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "NanumSquareRound" !important;
+}
+
+.osign {
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../COMM/IMG/QUIZBATTLE/OSIGN.PNG");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.lcmRatio img{
+  width: 266px !important;
+  height: 200px !important;
+}
+
+/* .winPopup {
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url(/COMM/IMG/QUIZBATTLE/WINPOPUP.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1440px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.defeatPopup {
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url(/COMM/IMG/QUIZBATTLE/DEFEATPOPUP.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 855px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.winPopup_btn,
+.defeatPopup_btn {
+  position: absolute;
+  top: 69%;
+  left: 50%;
+  width: 355px;
+  height: 100px;
+  border-radius: 100px;
+  transform: translateX(-50%);
+  font-size: 0;
+} */
+
+#complete_popup {
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#complete_popup .buttonArea {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  top: 940px;
+}
+#complete_popup .dimmed {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+#complete_popup .bg {
+  position: absolute;
+  top: 140px;
+  width: 100%;
+  height: 80%;
+  z-index: 1;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/QUIZBATTLE/LASTPOPUP.PNG");
+}
+
+#complete_popup.defeat .bg {
+  background: center/contain no-repeat
+    url("../../COMM/IMG/QUIZBATTLE/LASTPOPUP_DEFEAT.PNG");
+}
+
+#complete_popup .reload {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  color: blue;
+  z-index: 2;
+  border-radius: 100px;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/QUIZBATTLE/RETRY.PNG");
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#complete_popup .play_view {
+  display: flex;
+  width: 300px;
+  height: 100px;
+  color: white;
+  font-size: 32px;
+  font-weight: 800px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #2dcabd;
+  z-index: 2;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#complete_popup p {
+  display: flex;
+  position: absolute;
+  bottom: -50px;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.warp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  /* transform: scale(50%); */
+  position: relative;
+  width: 100%;
+  height: 1200px;
+  background: url("../../COMM/IMG/QUIZBATTLE/BG.JPG") no-repeat center;
+  background-size: 100% 1200px;
+  overflow: hidden;
+}
+
+/* -----인트로----- */
+.game_intro {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../../COMM/IMG/QUIZBATTLE/INTRO.JPG") no-repeat center;
+  background-size: 100% 1200px;
+}
+
+/* -----인트로 시작 버튼----- */
+.game_intro_start {
+  position: absolute;
+  top: 69%;
+  left: 50%;
+  width: 355px;
+  height: 140px;
+  border-radius: 100px;
+  transform: translateX(-50%);
+  font-size: 0;
+}
+
+/* -----타이틀----- */
+.game_title {
+  z-index: 1;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 60px;
+  color: white;
+  text-shadow: 0px 0px 16px #238aff;
+  font-weight: 700;
+  width: 1500px;
+  text-align: center;
+}
+
+.character-warp {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+}
+
+.character1,
+.character2 {
+  position: absolute;
+  width: 0;
+  margin-left: -433px;
+}
+
+.character1 {
+  transform: translateX(-709px) translateY(-100%);
+}
+.character2 {
+  transform: translateX(745px) translateY(-100%);
+}
+
+.character1 .charac {
+  position: relative;
+  top: 117px;
+  left: -31px;
+  width: 500px;
+  height: 500px;
+  background: url("../../COMM/IMG/QUIZBATTLE/CHARACTER1.PNG") no-repeat center;
+}
+
+.character1 .charac.wrong {
+  background: url("../../COMM/IMG/QUIZBATTLE/CHARACTER1WRONG.PNG") no-repeat
+    left;
+  display: none;
+  top: 74px;
+  left: 18px;
+}
+
+.character1 .charac.correct {
+  background: url("../../COMM/IMG/QUIZBATTLE/CHARACTER1CORRECTLY.PNG") no-repeat
+    center;
+  display: none;
+  left: -20px;
+}
+
+.character2 .charac {
+  position: relative;
+  top: 135px;
+  left: -60px;
+  width: 500px;
+  height: 500px;
+  background: url("../../COMM/IMG/QUIZBATTLE/CHARACTER2.PNG") no-repeat center;
+}
+
+.character2 .charac.wrong {
+  background: url("../../COMM/IMG/QUIZBATTLE/CHARACTER2WRONG.PNG") no-repeat
+    left;
+  display: none;
+  left: -32px;
+}
+
+.character2 .charac.correct {
+  background: url("../../COMM/IMG/QUIZBATTLE/CHARACTER2CORRECTLY.PNG") no-repeat
+    left;
+  display: none;
+  left: -20px;
+}
+
+.character1 .desk {
+  position: relative;
+  width: 400px;
+  height: 317px;
+  background: url("../../COMM/IMG/QUIZBATTLE/DESK1.PNG");
+}
+
+.character2 .desk {
+  position: relative;
+  width: 400px;
+  height: 317px;
+  background: url("../../COMM/IMG/QUIZBATTLE/DESK2.PNG");
+}
+
+.character2 .desk.on {
+  bottom: 0;
+  position: absolute;
+  width: 400px;
+  height: 317px;
+  background: url("../../COMM/IMG/QUIZBATTLE/DESK2ON.PNG");
+  display: none;
+}
+
+.character1 .wrongMark {
+  display: none;
+  z-index: 1;
+  right: 40px;
+  position: absolute;
+  width: 138px;
+  height: 126px;
+  background: url("../../COMM/IMG/QUIZBATTLE/WRONG.PNG");
+}
+
+.character2 .note {
+  position: absolute;
+  top: 140px;
+  right: 56px;
+  width: 65px;
+  height: 116px;
+  background: url("../../COMM/IMG/QUIZBATTLE/NOTE.PNG");
+  display: none;
+}
+
+.character2 .osignsmall {
+  position: absolute;
+  z-index: 1;
+  top: -51px;
+  right: -327px;
+  width: 260px;
+  height: 260px;
+  background: url("../../COMM/IMG/QUIZBATTLE/OSIGNSMALL.PNG");
+  display: none;
+}
+
+.star-list {
+  position: absolute;
+  bottom: 155px;
+  left: 26px;
+  display: flex;
+}
+
+.star-list_img {
+  width: 60px;
+  height: 58px;
+  margin-right: 12px;
+  transform: scale(300%);
+  opacity: 0;
+}
+
+.quiz-screen {
+  position: absolute;
+  top: 184px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
+  height: 528px;
+  border-radius: 40px;
+  background: white;
+  box-shadow: 0px 0px 90px 15px rgba(35, 136, 255, 0.8);
+  overflow: hidden;
+}
+
+.quiz-screen_list {
+  display: flex;
+  width: 500%;
+  height: 100%;
+  transition: transform 480ms;
+}
+.quiz-screen_list_item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-screen_list_item h3 {
+  color: rgba(7, 6, 41, 1);
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 62px;
+  text-align: center;
+}
+
+.quiz-screen_list_item img {
+  /* margin-bottom: 40px; */
+}
+
+.quiz-list {
+  position: absolute;
+  bottom: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.quiz-list.img {
+  bottom: 150px;
+}
+
+.quiz-list_item {
+  width: 286px;
+  background: #458fff;
+  margin-right: 32px;
+  border-radius: 20px;
+}
+
+.quiz-list_item:last-of-type {
+  margin-right: 0;
+}
+
+.quiz-list_item.d-none {
+  display: none !important;
+}
+
+.quiz-list_item.outLine {
+  outline: 8px solid #ff64dc;
+}
+
+.quiz-list_item_btn {
+  width: 100%;
+  height: 100%;
+}
+
+.quiz-list_item_btn .img-warp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 286px;
+  height: 214px;
+}
+
+.quiz-list_item_btn img {
+  width: 226px;
+  height: 150px;
+}
+.quiz-list_item_btn p {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+}
+
+.quiz-list_item_btn .d-none {
+  display: none;
+}
+
+/* 타이틀 떨어지는 모션 */
+.title-drop {
+  transform: translateX(-50%) translateY(-200px);
+}
+.title-drop.motionStart {
+  animation-duration: 0.7s;
+  animation-name: title-drop;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+@keyframes title-drop {
+  0% {
+    transform: translateX(-50%) translateY(-200px);
+  }
+  80% {
+    transform: translateX(-50%) translateY(40px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* 캐릭터1 슬라이드 모션 */
+.character1-slide {
+  transform: translateX(-2000px) translateY(-100%);
+}
+.character1-slide.motionStart {
+  animation-duration: 1s;
+  animation-name: character1-slide;
+  animation-fill-mode: forwards;
+}
+
+@keyframes character1-slide {
+  0% {
+    transform: translateX(-2000px) translateY(-100%);
+  }
+  100% {
+    transform: translateX(-709px) translateY(-100%);
+  }
+}
+
+/* 캐릭터2 슬라이드 모션 */
+.character2-slide {
+  transform: translateX(2000px) translateY(-100%);
+}
+.character2-slide.motionStart {
+  animation-duration: 1s;
+  animation-name: character2-slide;
+  animation-fill-mode: forwards;
+}
+@keyframes character2-slide {
+  0% {
+    transform: translateX(2000px) translateY(-100%);
+  }
+  100% {
+    transform: translateX(745px) translateY(-100%);
+  }
+}
+
+/* 퀴즈 스크린 등장 모션 */
+.quiz-screen-closeup {
+  transform: translateX(-50%) scale(0);
+}
+.quiz-screen-closeup.motionStart {
+  animation-duration: 0.5s;
+  animation-name: quiz-screen-closeup;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+@keyframes quiz-screen-closeup {
+  0% {
+    transform: translateX(-50%) scale(0);
+  }
+  80% {
+    transform: translateX(-50%) scale(110%);
+  }
+  100% {
+    transform: translateX(-50%) scale(100%);
+  }
+}
+
+/* 문제 리스트 등장 모션 */
+.quiz-list-up {
+  transform: translateY(400px);
+}
+.quiz-list-up.motionStart {
+  animation-duration: 0.8s;
+  animation-name: quiz-list-up;
+  animation-fill-mode: forwards;
+}
+.quiz-list-up:nth-of-type(2).motionStart {
+  animation-delay: 0.3s;
+}
+.quiz-list-up:nth-of-type(3).motionStart {
+  animation-delay: 0.6s;
+}
+@keyframes quiz-list-up {
+  0% {
+    transform: translateY(400px);
+  }
+  70% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* 문제 리스트 퇴장 모션 */
+.quiz-list-down {
+  animation-duration: 0.8s;
+  animation-name: quiz-list-down;
+  animation-fill-mode: forwards;
+}
+.quiz-list-down:nth-of-type(2) {
+  animation-delay: 0.3s;
+}
+.quiz-list-down:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+@keyframes quiz-list-down {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(400px);
+  }
+}
+
+/* 틀린 문제 흔들림 모션 */
+.quiz-wrong {
+  animation-duration: 0.6s !important;
+  animation-name: quiz-wrong !important;
+}
+@keyframes quiz-wrong {
+  0% {
+    transform: translateX(0);
+    background: #ff4646;
+  }
+  20% {
+    transform: translateX(30px);
+  }
+  40% {
+    transform: translateX(-30px);
+  }
+  60% {
+    transform: translateX(30px);
+  }
+  80% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0);
+    background: #ff4646;
+  }
+}
+
+.star-list_img.motionStart {
+  animation-duration: 1.2s;
+  animation-name: star-motion;
+  animation-fill-mode: forwards;
+}
+
+@keyframes star-motion {
+  0% {
+    transform: scale(300%);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(100%);
+    opacity: 1;
+  }
+}
+
+.pearl-guide {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.pearl-guide-point {
+  width: 120px;
+  height: 110px;
+  position: absolute;
+  z-index: 2;
+  background: url("../../COMM/IMG/TOUCH_GUIDE.PNG") no-repeat center;
+  animation: opa 1s infinite linear;
+}
+.pearl-guide-point.no1 {
+  left: 28%;
+  bottom: 15%;
+}
+.pearl-guide-point.no2 {
+  left: 44.3%;
+  bottom: 15%;
+}
+.pearl-guide-point.no3 {
+  left: 60%;
+  bottom: 15%;
+}
+
+.pearl-guide-hand {
+  width: 120px;
+  height: 110px;
+  position: absolute;
+  z-index: 2;
+  background: url("../../COMM/IMG/TOUCH_GUIDE_HAND.PNG") no-repeat center;
+}
+.pearl-guide-hand.no1 {
+  left: 30.8%;
+  bottom: 11.4%;
+}
+.pearl-guide-hand.no2 {
+  left: 47.2%;
+  bottom: 11.4%;
+}
+.pearl-guide-hand.no3 {
+  left: 63%;
+  bottom: 11.4%;
+}
+
+@keyframes opa {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

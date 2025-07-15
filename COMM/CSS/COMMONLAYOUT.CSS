@@ -1,0 +1,385 @@
+/*
+    개념익히기, 확인문제 공통 레이아웃 요소 (2024-04-16~)
+    2024-04-16 작성
+    아래 차시부터 적용
+    개정수학 1학년 5단원 2차시 ~
+    개정수학 2학년 5단원 4차시 ~
+    개정수학 2학년 6단원 2차시 ~
+*/
+
+.dp_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dp_flex_column {
+  flex-flow: column;
+}
+
+.margin_center {
+  margin: 0 auto;
+}
+
+/* div 테이블 스타일 */
+.table_box {
+  width: var(--table-width);
+  height: var(--table-height);
+  border-radius: 20px;
+}
+
+.table_box .tr,
+.table_box .tr .td {
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.table_box .tr .td {
+  border-left: 3px solid var(--table-border-color);
+  border-top: 3px solid var(--table-border-color);
+  font-size: 44px;
+  line-height: 1;
+}
+
+.table_box .tr:last-child .td {
+  border-bottom: 3px solid var(--table-border-color);
+}
+
+.table_box .tr .td:last-child {
+  border-right: 3px solid var(--table-border-color);
+}
+
+.table_box .tr:first-child .td:first-child {
+  border-top-left-radius: 20px;
+}
+
+.table_box .tr:first-child .td:last-child {
+  border-top-right-radius: 20px;
+}
+
+.table_box .tr:last-child .td:first-child {
+  border-bottom-left-radius: 20px;
+}
+
+.table_box .tr:last-child .td:last-child {
+  border-bottom-right-radius: 20px;
+}
+
+.table_box .tr .td .space_txt {
+  padding-bottom: 4px;
+}
+
+.table_box.blink {
+  position: relative;
+}
+
+.table_box.blink::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: solid 5px rgba(103, 68, 243, 1);
+  opacity: 0;
+  animation: 1s opacityBlink infinite;
+  box-sizing: border-box;
+}
+
+.table_box .tr:first-child {
+  height: var(--table-title-height);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.table_box .tr:not(:first-child) {
+  margin-top: -3px;
+}
+
+.table_box .tr .title_td {
+  height: var(--table-title-height) !important;
+  background-color: var(--table-title-color);
+  font-size: 48px;
+}
+
+/* txt_container 나누기 가르기 */
+.txt_container {
+  width: 75px;
+  height: 75px;
+  border-radius: 10px;
+  border: solid 4px #ff64dc;
+  background-color: #fff;
+  color: #000;
+  position: relative;
+  z-index: 1;
+
+  font-size: 44px;
+  line-height: 44px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 4px 4px 0 0; /* 패드 정렬 이슈로 추가한 부분 절대 삭제 금지 */
+}
+
+.txt_container.green {
+  border-color: rgba(139, 193, 20, 1) !important;
+}
+
+.txt_container.blue {
+  border-color: rgba(37, 116, 252, 1) !important;
+}
+
+.txt_container.red {
+  border-color: rgba(255, 0, 0, 1) !important;
+}
+
+.txt_container.point {
+  border-color: rgba(103, 68, 243, 1) !important;
+}
+
+.txt_container.white {
+  border-color: rgba(223, 235, 255, 1) !important;
+}
+
+.txt_container::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 7px);
+  height: calc(100% + 7px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(103, 68, 243, 0.8);
+  z-index: 0;
+  opacity: 0;
+}
+
+.txt_container.blink::after {
+  animation: 1s opacityBlink infinite;
+}
+
+@keyframes opacityBlink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.txt_container + span {
+  margin-left: 15px;
+}
+
+.txt_container + .txt_container {
+  margin-left: 30px;
+}
+
+/* 효과 시작 */
+/* 반짝이 */
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blinking {
+  animation: 1.4s blinking infinite;
+}
+
+/* 글씨 확대 */
+@keyframes aniScale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.aniScale {
+  animation: 1s aniScale infinite;
+}
+
+/* 이미지 확대 */
+@keyframes aniScale2 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.aniScale2 {
+  animation: 1s aniScale2 infinite;
+}
+
+span.aniScale,
+span.aniScale2 {
+  display: inline-block;
+}
+
+/* 하이라이트 */
+.highlight {
+  color: #6744f3 !important;
+}
+
+.highlight.blue {
+  color: rgba(37, 116, 252, 1) !important;
+}
+
+.highlight.blue2 {
+  color: rgba(2, 119, 255, 1) !important;
+}
+
+.highlight.red {
+  color: rgba(255, 0, 0, 1) !important;
+}
+
+.highlight.red2 {
+  color: rgba(231, 46, 38, 1) !important;
+}
+
+.highlight.orange {
+  color: rgba(249, 126, 12, 1) !important;
+}
+
+.highlight.yellow {
+  color: rgba(255, 191, 0, 1) !important;
+}
+
+.highlight.yellow2 {
+  color: rgba(249, 166, 12, 1) !important;
+}
+
+.highlight.pink {
+  color: rgba(255, 100, 220, 1) !important;
+}
+
+.highlight.neon {
+  color: rgba(113, 180, 90, 1) !important;
+}
+
+.highlight.green {
+  color: rgba(131, 174, 0, 1) !important;
+}
+
+.highlight.green2 {
+  color: rgba(45, 174, 0, 1) !important;
+}
+
+/* 밑줄 */
+.underline {
+  position: relative;
+}
+
+.underline::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-bottom: var(--line-height) solid rgba(255, 0, 0, 1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* 별 강조 */
+.point_star {
+  position: relative;
+}
+
+.point_star::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 251px;
+  height: 245px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("../IMG/CONCEPT/COMM/IMG_POINT_STAR.png") no-repeat center
+    center;
+}
+
+/* 이미지 360도 회전 가로, 세로 길이 같은 원만 가능 */
+.img_point__wrap.spining {
+  transform: translate(-50%, -50%) rotate(90deg) scale(0);
+  animation: 0.5s aniSpining forwards;
+}
+
+@keyframes aniSpining {
+  0% {
+    transform: translate(-50%, -50%) rotate(90deg) scale(0%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(100%);
+  }
+}
+
+/* text shadow 쉐도우 blink */
+.txt_blink {
+  animation: 1s txtShodowBlink infinite;
+}
+
+.txt_blink2 {
+  animation: 1.4s txtShodowBlink2 infinite;
+  animation-iteration-count: 5;
+}
+
+@keyframes txtShodowBlink {
+  0% {
+    text-shadow: 0px 0px 5px rgba(103, 68, 243, 0);
+  }
+
+  50% {
+    text-shadow: 0px 0px 10px rgba(103, 68, 243, 0.8);
+  }
+
+  100% {
+    text-shadow: 0px 0px 5px rgba(103, 68, 243, 0);
+  }
+}
+
+/* 확인문제 선망효과 */
+@keyframes txtShodowBlink2 {
+  0% {
+    text-shadow: 0px 0px 10px rgba(103, 68, 243, 0);
+  }
+
+  50% {
+    text-shadow: 0px 0px 20px rgba(54, 4, 255, 0.8);
+  }
+
+  100% {
+    text-shadow: 0px 0px 10px rgba(103, 68, 243, 0);
+  }
+}
+/* 효과 끝 */

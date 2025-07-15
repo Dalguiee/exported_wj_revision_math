@@ -1,0 +1,1013 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>개정교육과정-수학 수학 개념</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <meta name="KeyWORDs" content="" />
+  <meta name="Description" content="" />
+  <meta name="Robots" content="all" />
+  <meta http-equiv="Subject" content="" />
+  <meta http-equiv="Title" content="" />
+  <meta http-equiv="Author" content="onflou " />
+  <meta http-equiv="Publisher" content="" />
+
+  <!-- 브라우저 호환성을 지정 -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="shortcut icon" href="#" />
+  <link href="../../../COMM/CSS/COMMON.CSS" rel="stylesheet" />
+  <link href="../../../COMM/CSS/CONCEPTCOMMON2.CSS" rel="stylesheet" />
+  <link href="../../../COMM/CSS/VIDEO.CSS" rel="stylesheet" />
+
+  <style>
+    .img_bubble {
+      width: 1600px;
+      height: 288px;
+    }
+
+    .calc_wrap {
+      margin-top: 165px;
+    }
+
+    .calc_wrap .calc_comm {
+      position: relative;
+    }
+
+    .calc_wrap .calc_comm .txt_box {
+      position: absolute;
+      bottom: calc(100% + 16px);
+      left: 37.5px;
+      transform: translate(-50%, 0);
+      margin: 0;
+    }
+
+    .answer_box {
+      margin-top: 80px;
+      width: 100%;
+      height: 114px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      visibility: hidden;
+
+      position: relative;
+      z-index: 10;
+    }
+
+    .answer_box .answer {
+      width: 240px;
+      height: 114px;
+    }
+
+    /* 1p */
+    .step1 .star {
+      width: 331px;
+      height: 331px;
+      font-size: 60px;
+      margin-top: 40px;
+
+      background: url("../../../COMM/IMG/CONCEPT/1_3_12/STEP1_IMG.png") no-repeat center;
+    }
+
+    .step1 .star .num {
+      visibility: hidden;
+    }
+
+    /* 2p */
+    .step2 .step2_img {
+      width: 649px;
+      height: 635px;
+    }
+
+    .step2 .step2_right_box {
+      margin-left: 212px;
+      font-size: 48px;
+    }
+
+    .step2 .step2_right_box .calc_comm {
+      visibility: hidden;
+      position: relative;
+    }
+
+    .step2 .step2_right_box .calc_comm+.calc_comm {
+      margin-top: 110px;
+    }
+
+    .step2 .point_star {
+      position: absolute;
+      left: 80px;
+      top: 45px;
+      display: none;
+    }
+
+    .step2 .point_star::after {
+      width: 402px;
+      height: 178px;
+      background-image: url("../../../COMM/IMG/CONCEPT/1_3_12/IMG_STAR_POINT.png");
+    }
+
+    /* 3p */
+
+    /* 4p */
+
+    /* 5p */
+
+    /* 6p */
+    .step6 .step6_cont+.step6_cont {
+      margin-top: 50px;
+    }
+
+    .step6 .step6_cont_left {
+      width: 519px;
+      height: 105px;
+    }
+
+    .step6 .step6_cont_right {
+      font-size: 60px;
+      margin-left: 200px;
+
+      visibility: hidden;
+    }
+
+    .step6 .step6_cont_right .txt {
+      position: relative;
+    }
+
+    .step6 .step6_cont_right .txt.point::before {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(calc(-50% + 3px), calc(-50% + -5px));
+
+      width: 67px;
+      height: 67px;
+      border-radius: 50%;
+      background-color: rgba(255, 100, 220, 0.5);
+    }
+
+    .step6 .calc_comm>div+div {
+      margin-left: 20px;
+    }
+
+    .step6 .check_footer_text {
+      position: relative;
+      background: url("../../../COMM/IMG/CONCEPT/1_3_12/STEP6_FOOTER_TXT.png") no-repeat center;
+      left: 100px;
+    }
+
+    .step6 .check_footer_text .hint {
+      width: 333px;
+      height: 148px;
+      position: absolute;
+      background: url("../../../COMM/IMG/CONCEPT/1_3_12/STEP6_FOOTER_HINT.png") no-repeat center;
+      left: -80px;
+      top: 25px;
+
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="contents-wrap" class="concept" style="position: absolute; display: flex"></div>
+    <div id="contents-main" style="display: none" class="concept-warp">
+      <div class="concept-warp_inner">
+        <header class="header" style="visibility: visible">
+          <div class="header_title">
+            <button class="sound-btn" onclick="titleSound()"></button>
+            <h3>덧셈과 뺄셈을 해 볼까요</h3>
+          </div>
+          <p class="header_page"><span>1</span>/2</p>
+        </header>
+        <main class="main">
+          <div class="main_content">
+            <!-- 콘텐츠영역 -->
+            <div class="step step1" style="display: block">
+              <!-- step1 시작부분 -->
+              <div class="main__container dp_flex dp_flex_column">
+                <div class="txt txt_box">내가 고른 수</div>
+                <div class="star dp_flex"><span class="num">5</span></div>
+              </div>
+            </div>
+            <div class="step step2" style="display: none">
+              <!-- step2 시작부분 -->
+              <div class="main__container dp_flex">
+                <div class="step2_left_box">
+                  <div class="step2_img img_container">
+                    <img src="../../../COMM/IMG/CONCEPT/1_3_12/STEP2_IMG1.png" alt="귤 다섯개 이미지" class="img img1" />
+                    <img src="../../../COMM/IMG/CONCEPT/1_3_12/STEP2_IMG2_1.png" alt="귤 다섯개 이미지" class="img img2" />
+                    <img src="../../../COMM/IMG/CONCEPT/1_3_12/STEP2_IMG3_1.png" alt="귤 다섯개 이미지" class="img img3" />
+                    <img src="../../../COMM/IMG/CONCEPT/1_3_12/STEP2_IMG4_1.png" alt="귤 다섯개 이미지" class="img img4" />
+                    <img src="../../../COMM/IMG/CONCEPT/1_3_12/STEP2_IMG5_1.png" alt="귤 다섯개 이미지" class="img img5" />
+                  </div>
+                </div>
+                <div class="step2_right_box">
+                  <div class="calc1 calc_comm">
+                    <div class="txt">1</div>
+                    <div class="txt">+</div>
+                    <div class="txt">4</div>
+                    <div class="txt">=</div>
+                    <div class="txt">5</div>
+                    <div class="point_star"></div>
+                  </div>
+                  <div class="calc2 calc_comm">
+                    <div class="txt">2</div>
+                    <div class="txt">+</div>
+                    <div class="txt">3</div>
+                    <div class="txt">=</div>
+                    <div class="txt">5</div>
+                    <div class="point_star"></div>
+                  </div>
+                  <div class="calc3 calc_comm">
+                    <div class="txt">3</div>
+                    <div class="txt">+</div>
+                    <div class="txt">2</div>
+                    <div class="txt">=</div>
+                    <div class="txt">5</div>
+                    <div class="point_star"></div>
+                  </div>
+                  <div class="calc4 calc_comm">
+                    <div class="txt">4</div>
+                    <div class="txt">+</div>
+                    <div class="txt">1</div>
+                    <div class="txt">=</div>
+                    <div class="txt">5</div>
+                    <div class="point_star"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step step3" style="display: none">
+              <!-- step3 시작부분 -->
+              <div class="main__container dp_flex dp_flex_column">
+                <div class="step3_top_box content_box_comm">
+                  <div class="img_bubble img_container">
+                    <img src="../../../COMM/IMG/CONCEPT/1_3_12/IMG_BUBBLE.png" alt="구슬 다섯개 이미지" class="img img1" />
+                    <img src="../../../COMM/IMG/CONCEPT/1_3_12/IMG_BUBBLE_1.png" alt="구슬 다섯개 이미지" class="img img2" />
+                  </div>
+                </div>
+                <div class="step3_btm_box calc_wrap">
+                  <div class="calc_comm">
+                    <div class="txt_container txt_container1">?</div>
+                    <div class="txt">-</div>
+                    <div class="txt_container txt_container2">?</div>
+                    <div class="txt">=</div>
+                    <div class="txt_container txt_container3">?</div>
+                    <div class="txt_box">내가 고른 수</div>
+                  </div>
+                </div>
+                <div class="step3_answer_box answer_box"></div>
+              </div>
+            </div>
+            <div class="step step4" style="display: none">
+              <!-- step4 시작부분 -->
+              <div class="main__container dp_flex dp_flex_column">
+                <div class="step4_top_box content_box_comm">
+                  <div class="img_bubble img_container">
+                    <img src="../../../COMM/IMG/CONCEPT/1_3_12/IMG_BUBBLE.png" alt="구슬 다섯개 이미지" class="img img1" />
+                    <img src="../../../COMM/IMG/CONCEPT/1_3_12/IMG_BUBBLE_2.png" alt="구슬 다섯개 이미지" class="img img2" />
+                  </div>
+                </div>
+                <div class="step4_btm_box calc_wrap">
+                  <div class="calc_comm">
+                    <div class="txt_container txt_container1">?</div>
+                    <div class="txt">-</div>
+                    <div class="txt_container txt_container2">?</div>
+                    <div class="txt">=</div>
+                    <div class="txt_container txt_container3">?</div>
+                    <div class="txt_box">내가 고른 수</div>
+                  </div>
+                </div>
+                <div class="step4_answer_box answer_box"></div>
+              </div>
+            </div>
+            <div class="step step5" style="display: none">
+              <!-- step5 시작부분 -->
+              <div class="main__container dp_flex dp_flex_column">
+                <div class="step5_top_box content_box_comm">
+                  <div class="img_bubble img_container">
+                    <img src="../../../COMM/IMG/CONCEPT/1_3_12/IMG_BUBBLE.png" alt="구슬 다섯개 이미지" class="img img1" />
+                    <img src="../../../COMM/IMG/CONCEPT/1_3_12/IMG_BUBBLE_3.png" alt="구슬 다섯개 이미지" class="img img2" />
+                  </div>
+                </div>
+                <div class="step5_btm_box calc_wrap">
+                  <div class="calc_comm">
+                    <div class="txt_container txt_container1">?</div>
+                    <div class="txt">-</div>
+                    <div class="txt_container txt_container2">?</div>
+                    <div class="txt">=</div>
+                    <div class="txt_container txt_container3">?</div>
+                    <div class="txt_box">내가 고른 수</div>
+                  </div>
+                </div>
+                <div class="step5_answer_box answer_box"></div>
+              </div>
+            </div>
+            <div class="step step6" style="display: none">
+              <!-- step6 시작부분 -->
+              <div class="main__container">
+                <div class="step6_top_box full_content_comm dp_flex dp_flex_column">
+                  <div class="step6_cont step6_cont1 dp_flex">
+                    <div class="step6_cont_left img_container">
+                      <img src="../../../COMM/IMG/CONCEPT/1_3_12/STEP6_BUBBLE.png" alt="구슬 다섯개 이미지" class="img img1" />
+                      <img src="../../../COMM/IMG/CONCEPT/1_3_12/STEP6_BUBBLE_1_1.png" alt="구슬 다섯개 이미지"
+                        class="img img2" />
+                    </div>
+                    <div class="step6_cont_right">
+                      <div class="calc_comm">
+                        <div class="txt">5</div>
+                        <div class="txt">-</div>
+                        <div class="txt txt3">1</div>
+                        <div class="txt">=</div>
+                        <div class="txt">4</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step6_cont step6_cont2 dp_flex">
+                    <div class="step6_cont_left img_container">
+                      <img src="../../../COMM/IMG/CONCEPT/1_3_12/STEP6_BUBBLE.png" alt="구슬 다섯개 이미지" class="img img1" />
+                      <img src="../../../COMM/IMG/CONCEPT/1_3_12/STEP6_BUBBLE_2_1.png" alt="구슬 다섯개 이미지"
+                        class="img img2" />
+                    </div>
+                    <div class="step6_cont_right">
+                      <div class="calc_comm">
+                        <div class="txt">5</div>
+                        <div class="txt">-</div>
+                        <div class="txt txt3">2</div>
+                        <div class="txt">=</div>
+                        <div class="txt">3</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step6_cont step6_cont3 dp_flex">
+                    <div class="step6_cont_left img_container">
+                      <img src="../../../COMM/IMG/CONCEPT/1_3_12/STEP6_BUBBLE.png" alt="구슬 다섯개 이미지" class="img img1" />
+                      <img src="../../../COMM/IMG/CONCEPT/1_3_12/STEP6_BUBBLE_3_1.png" alt="구슬 다섯개 이미지"
+                        class="img img2" />
+                    </div>
+                    <div class="step6_cont_right">
+                      <div class="calc_comm">
+                        <div class="txt">5</div>
+                        <div class="txt">-</div>
+                        <div class="txt txt3">3</div>
+                        <div class="txt">=</div>
+                        <div class="txt">2</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <footer class="check_footer">
+                  <div class="check_footer_inner slideUp">
+                    <div class="check_footer_text">
+                      <div class="hint"></div>
+                    </div>
+                    <div class="check_footer_ch">
+                      <div class="check_footer_ch_head"></div>
+                      <div class="check_footer_ch_body"></div>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <ul class="step-list">
+              <li class="step-list_item active"></li>
+              <li class="step-list_item"></li>
+            </ul>
+          </div>
+        </main>
+        <div class="main_prev-next">
+          <button class="btn-prev" style="display: none">이전버튼</button>
+          <!-- <button class="btn-next" style="display: block" disabled> -->
+          <button class="btn-next blinking" style="display: block">
+            다음버튼
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script crossorigin src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="../../../COMM/JS/COMMON2.JS"></script>
+  <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+  <script src="../../../COMM/JS/CONCEPTEVNT3.JS"></script>
+  <script src="../../../COMM/JS/CONCEPTEVNTBTN.JS"></script> <!-- 개념 익히기 공통 버튼 처리 (0424) -->
+  <script src="../../../COMM/JS/GAME.JS"></script>
+  <script src="../../../COMM/JS/VIDEO.JS"></script>
+  <script src="../../../COMM/JS/VIDEO-HTTP-STREAMING.JS"></script>
+  <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+  <script>
+    /*
+     * 데이터
+     */
+    let intro = {
+      type: "concept", //concept 개념익히기, checkExam 확인문제
+      title: "덧셈과 뺄셈을 해 볼까요",
+      subTitle: [
+        "내가 고른 수가 계산한 값이 되는 덧셈식을 만들 수 있어요.",
+        "내가 고른 수에서 빼는 뺄셈식을 만들 수 있어요.",
+      ],
+      // sound: ["../../../COMM/SOUND/1_3_12/1_1_3-10_020.mp3"],
+    };
+
+    //현재 페이지
+    let disStep = 1;
+
+    let pageData = [
+      {
+        step: 1,
+        title: "내가 고른 수가 되는 덧셈식을 만들어 봅시다.",
+        sound: "../../../COMM/SOUND/1_3_12/1_1_3-12_001.mp3",
+        headerPage: [1, 2],
+        footerPage: [1, 2],
+        prev: 0,
+        next: 1,
+      },
+      {
+        step: 2,
+        title: "내가 고른 수가 되는 덧셈식을 만들어 봅시다.",
+        sound: "../../../COMM/SOUND/1_3_12/1_1_3-12_001.mp3",
+        headerPage: [1, 2],
+        footerPage: [2, 2],
+        prev: 1,
+        next: 0,
+      },
+      {
+        step: 3,
+        title: "내가 고른 수를 이용하여 뺄셈식을 만들어 봅시다.",
+        sound: "../../../COMM/SOUND/1_3_12/1_1_3-12_011.mp3",
+        headerPage: [2, 2],
+        footerPage: [1, 3],
+        prev: 2,
+        next: 1,
+      },
+      {
+        step: 4,
+        title: "내가 고른 수를 이용하여 뺄셈식을 만들어 봅시다.",
+        sound: "../../../COMM/SOUND/1_3_12/1_1_3-12_011.mp3",
+        headerPage: [2, 2],
+        footerPage: [2, 3],
+        prev: 1,
+        next: 1,
+      },
+      {
+        step: 5,
+        title: "내가 고른 수를 이용하여 뺄셈식을 만들어 봅시다.",
+        sound: "../../../COMM/SOUND/1_3_12/1_1_3-12_011.mp3",
+        headerPage: [2, 2],
+        footerPage: [3, 3],
+        prev: 1,
+        next: 0,
+      },
+      {
+        step: 6,
+        title: "",
+        sound: "",
+        headerPage: [0, 0],
+        footerPage: [0, 0],
+        prev: 3,
+        next: 0,
+      },
+    ];
+
+    function pageAction() {
+      console.log("disStep ::: ", disStep);
+      //setTimeout 초기화
+      const TimeoutId = setTimeout(() => console.log("timeout clear"), 1);
+      for (let i = 0; i < TimeoutId; i++) {
+        clearTimeout(i);
+      }
+      stepSet();
+      switch (disStep) {
+        case 1:
+          step1.reset();
+          step1.start();
+          break;
+        case 2:
+          step2.reset();
+          step2.start();
+          break;
+        case 3:
+          step3.reset();
+          step3.start();
+          break;
+        case 4:
+          step4.reset();
+          step4.start();
+          break;
+        case 5:
+          step5.reset();
+          step5.start();
+          break;
+        case 6:
+          step6.reset();
+          step6.start();
+          break;
+      }
+    }
+
+    //문제 시작
+    let correctlyFlag = 0;
+    let stepDropList;
+    let stepDropArr;
+
+    //================STEP1==============
+    const step1 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_001.mp3",
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_002.mp3",
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_003.mp3",
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_004.mp3",
+        ], [
+          {
+            idx: 3,
+            type: 'start',
+            callback: () => {
+              $('.step1 .star').addClass('blinking');
+            }
+          },
+          {
+            idx: 4,
+            type: 'start',
+            callback: () => {
+              $('.step1 .star').removeClass('blinking');
+              $('.step1 .star .num').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 4,
+            type: 'end',
+            callback: () => {
+              correctly();
+            }
+          },
+        ]);
+      },
+      reset: () => {
+        $('.step1 .star').removeClass('blinking');
+        $('.step1 .star .num').css('visibility', '');
+      },
+    };
+    //================STEP2==============
+    const step2 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_005.mp3",
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_006_1.mp3",
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_006_2.mp3",
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_007_1.mp3",
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_007_2.mp3",
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_008_1.mp3",
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_008_2.mp3",
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_009_1.mp3",
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_009_2.mp3",
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_010.mp3",
+        ], [
+          {
+            idx: 2,
+            type: 'start',
+            callback: () => {
+              $('.step2 .step2_img .img1').css('display', 'none');
+              $('.step2 .step2_img .img2').css('display', 'block');
+              $('.step2 .step2_right_box .calc1').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 3,
+            type: 'start',
+            callback: () => {
+              $('.step2 .step2_right_box .calc1 .point_star').css('display', 'block');
+            }
+          },
+          {
+            idx: 4,
+            type: 'start',
+            callback: () => {
+              $('.step2 .step2_img .img2').css('display', 'none');
+              $('.step2 .step2_right_box .calc1 .point_star').css('display', 'none');
+              $('.step2 .step2_img .img3').css('display', 'block');
+              $('.step2 .step2_right_box .calc2').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 5,
+            type: 'start',
+            callback: () => {
+              $('.step2 .step2_right_box .calc2 .point_star').css('display', 'block');
+            }
+          },
+          {
+            idx: 6,
+            type: 'start',
+            callback: () => {
+              $('.step2 .step2_img .img3').css('display', 'none');
+              $('.step2 .step2_right_box .calc2 .point_star').css('display', 'none');
+              $('.step2 .step2_img .img4').css('display', 'block');
+              $('.step2 .step2_right_box .calc3').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 7,
+            type: 'start',
+            callback: () => {
+              $('.step2 .step2_right_box .calc3 .point_star').css('display', 'block');
+            }
+          },
+          {
+            idx: 8,
+            type: 'start',
+            callback: () => {
+              $('.step2 .step2_img .img4').css('display', 'none');
+              $('.step2 .step2_right_box .calc3 .point_star').css('display', 'none');
+              $('.step2 .step2_img .img5').css('display', 'block');
+              $('.step2 .step2_right_box .calc4').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 9,
+            type: 'start',
+            callback: () => {
+              $('.step2 .step2_right_box .calc4 .point_star').css('display', 'block');
+            }
+          },
+          {
+            idx: 10,
+            type: 'start',
+            callback: () => {
+              $('.step2 .step2_img .img5').css('display', 'none');
+              $('.step2 .step2_right_box .calc4 .point_star').css('display', 'none');
+              $('.step2 .step2_img .img1').css('display', 'block');
+            }
+          },
+          {
+            idx: 10,
+            type: 'end',
+            callback: () => {
+              disStep++;
+              pageAction();
+            }
+          },
+        ]);
+      },
+      reset: () => {
+        $('.step2 .step2_img .img').css('display', '');
+        $('.step2 .step2_right_box .point_star').css('display', 'none');
+        $('.step2 .step2_right_box .calc_comm').css('visibility', '');
+      },
+    };
+    //================STEP3==============
+    const step3 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_011.mp3",
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_012.mp3",
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_013.mp3",
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_014.mp3",
+        ], [
+          {
+            idx: 3,
+            type: 'start',
+            callback: () => {
+              $('.step3 .img_bubble .img2').css('display', 'block');
+            }
+          },
+          {
+            idx: 4,
+            type: 'end',
+            callback: () => {
+              $('.step3 .step3_answer_box').css('visibility', 'visible');
+            }
+          }
+        ]);
+      },
+      dropppFn: () => {
+        $(".droppable")
+          .droppable({ disabled: false })
+          .on("droppable:drop", function (droppp, drag) {
+            let dragAnswer = drag.item[0].dataset.val;
+            let answer = droppp.currentTarget.dataset.val;
+
+            if (answer === dragAnswer) {
+              correctlyFlag++;
+              quizMultiDragDropSetCorrect(droppp.currentTarget);
+
+              if (correctlyFlag == stepDropList.length) {
+                quizMultiDragDropSetCorrectly();
+                stepDropList = "";
+                stepDropArr = "";
+
+                audioSet([
+                  "../../../COMM/SOUND/CORRECT.mp3",
+                  "../../../COMM/SOUND/1_3_12/1_1_3-12_015.mp3",
+                ], [
+                  {
+                    idx: 2,
+                    type: 'end',
+                    callback: () => {
+                      correctly();
+                    }
+                  }
+                ]);
+              } else {
+                audioSet([
+                  "../../../COMM/SOUND/CORRECT.mp3",
+                ]);
+              }
+            } else {
+              audioSet([
+                "../../../COMM/SOUND/WRONG.mp3",
+              ]);
+
+              return false;
+            }
+          });
+      },
+      reset: () => {
+        correctlyFlag = 0;
+
+        stepDropList = [
+          {
+            dropEl: '.step3 .txt_container1',
+            correct: 2
+          },
+          {
+            dropEl: '.step3 .txt_container2',
+            correct: 3
+          },
+          {
+            dropEl: '.step3 .txt_container3',
+            correct: 1
+          },
+        ];
+
+        stepDropArr = ["4", "5", "1"];
+
+        quizMultiDragDropSetOn(stepDropList, $('.step3_answer_box'), stepDropArr, step3);
+        $('.step3 .img_bubble .img').css('display', '');
+        $('.step3 .step3_answer_box').css('visibility', '');
+      },
+    };
+    //================STEP4==============
+    const step4 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_016.mp3",
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_014.mp3",
+        ], [
+          {
+            idx: 1,
+            type: 'start',
+            callback: () => {
+              timerSet(() => {
+                $('.step4 .img_bubble .img2').css('display', 'block');
+                timerInit();
+              }, 700);
+            }
+          },
+          {
+            idx: 2,
+            type: 'end',
+            callback: () => {
+              $('.step4 .step4_answer_box').css('visibility', 'visible');
+            }
+          }
+        ]);
+      },
+      dropppFn: () => {
+        $(".droppable")
+          .droppable({ disabled: false })
+          .on("droppable:drop", function (droppp, drag) {
+            let dragAnswer = drag.item[0].dataset.val;
+            let answer = droppp.currentTarget.dataset.val;
+
+            if (answer === dragAnswer) {
+              correctlyFlag++;
+              quizMultiDragDropSetCorrect(droppp.currentTarget);
+
+              if (correctlyFlag == stepDropList.length) {
+                quizMultiDragDropSetCorrectly();
+                stepDropList = "";
+                stepDropArr = "";
+
+                audioSet([
+                  "../../../COMM/SOUND/CORRECT.mp3",
+                  "../../../COMM/SOUND/1_3_12/1_1_3-12_017.mp3",
+                ], [
+                  {
+                    idx: 2,
+                    type: 'end',
+                    callback: () => {
+                      correctly();
+                    }
+                  }
+                ]);
+              } else {
+                audioSet([
+                  "../../../COMM/SOUND/CORRECT.mp3",
+                ]);
+              }
+            } else {
+              audioSet([
+                "../../../COMM/SOUND/WRONG.mp3",
+              ]);
+
+              return false;
+            }
+          });
+      },
+      reset: () => {
+        correctlyFlag = 0;
+
+        stepDropList = [
+          {
+            dropEl: '.step4 .txt_container1',
+            correct: 1
+          },
+          {
+            dropEl: '.step4 .txt_container2',
+            correct: 3
+          },
+          {
+            dropEl: '.step4 .txt_container3',
+            correct: 2
+          },
+        ];
+
+        stepDropArr = ["5", "3", "2"];
+
+        quizMultiDragDropSetOn(stepDropList, $('.step4_answer_box'), stepDropArr, step4);
+        $('.step4 .img_bubble .img').css('display', '');
+        $('.step4 .step4_answer_box').css('visibility', '');
+      },
+    };
+    //================STEP5==============
+    const step5 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_018.mp3",
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_014.mp3",
+        ], [
+          {
+            idx: 1,
+            type: 'start',
+            callback: () => {
+              timerSet(() => {
+                $('.step5 .img_bubble .img2').css('display', 'block');
+                timerInit();
+              }, 700);
+            }
+          },
+          {
+            idx: 2,
+            type: 'end',
+            callback: () => {
+              $('.step5 .step5_answer_box').css('visibility', 'visible');
+            }
+          }
+        ]);
+      },
+      dropppFn: () => {
+        $(".droppable")
+          .droppable({ disabled: false })
+          .on("droppable:drop", function (droppp, drag) {
+            let dragAnswer = drag.item[0].dataset.val;
+            let answer = droppp.currentTarget.dataset.val;
+
+            if (answer === dragAnswer) {
+              correctlyFlag++;
+              quizMultiDragDropSetCorrect(droppp.currentTarget);
+
+              if (correctlyFlag == stepDropList.length) {
+                quizMultiDragDropSetCorrectly();
+                stepDropList = "";
+                stepDropArr = "";
+
+                audioSet([
+                  "../../../COMM/SOUND/CORRECT.mp3",
+                  "../../../COMM/SOUND/1_3_12/1_1_3-12_019.mp3",
+                ], [
+                  {
+                    idx: 2,
+                    type: 'end',
+                    callback: () => {
+                      disStep++;
+                      pageAction();
+                    }
+                  }
+                ]);
+              } else {
+                audioSet([
+                  "../../../COMM/SOUND/CORRECT.mp3",
+                ]);
+              }
+            } else {
+              audioSet([
+                "../../../COMM/SOUND/WRONG.mp3",
+              ]);
+
+              return false;
+            }
+          });
+      },
+      reset: () => {
+        correctlyFlag = 0;
+
+        stepDropList = [
+          {
+            dropEl: '.step5 .txt_container1',
+            correct: 1
+          },
+          {
+            dropEl: '.step5 .txt_container2',
+            correct: 2
+          },
+          {
+            dropEl: '.step5 .txt_container3',
+            correct: 3
+          },
+        ];
+
+        stepDropArr = ["5", "3", "2"];
+
+        quizMultiDragDropSetOn(stepDropList, $('.step5_answer_box'), stepDropArr, step5);
+        $('.step5 .img_bubble .img').css('display', '');
+        $('.step5 .step5_answer_box').css('visibility', '');
+      },
+    };
+    //================STEP6==============
+    const step6 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_020.mp3",
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_021.mp3",
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_022.mp3",
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_023.mp3",
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_024.mp3",
+          "../../../COMM/SOUND/1_3_12/1_1_3-12_025.mp3",
+        ], [
+          {
+            idx: 2,
+            type: 'start',
+            callback: () => {
+              $('.step6 .step6_cont1 .img2').css('display', 'block');
+              $('.step6 .step6_cont1 .step6_cont_right').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 3,
+            type: 'start',
+            callback: () => {
+              $('.step6 .step6_cont2 .img2').css('display', 'block');
+              $('.step6 .step6_cont2 .step6_cont_right').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 4,
+            type: 'start',
+            callback: () => {
+              $('.step6 .step6_cont3 .img2').css('display', 'block');
+              $('.step6 .step6_cont3 .step6_cont_right').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 5,
+            type: 'start',
+            callback: () => {
+              $('.step6 .check_footer_text .hint').css('display', 'block');
+            }
+          },
+          {
+            idx: 6,
+            type: 'start',
+            callback: () => {
+              $('.step6 .step6_cont_right .txt3').addClass('point');
+            }
+          },
+          {
+            idx: 6,
+            type: 'end',
+            callback: () => {
+              callFinish();
+            }
+          },
+        ]);
+      },
+      reset: () => {
+      },
+    };
+  </script>
+</body>
+
+</html>

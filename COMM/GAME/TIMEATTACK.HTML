@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=2000, user-scalable=no" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <link rel="stylesheet" href="../../../COMM/GAME/RESET.CSS" />
+    <link rel="stylesheet" href="../../../COMM/GAME/TIMEATTACK.CSS" />
+    <title>타임어택 게임</title>
+  </head>
+
+  <body>
+    <div class="warp">
+      <section class="game">
+        <section class="osign"></section>
+        <section class="transparentWall"></section>
+        <!-- 클리어 시 팝업 -->
+        <!-- <section class="winPopup">
+          <button class="winPopup_restart">다시하기 버튼</button>
+          <button class="winPopup_btn">앤딩 버튼</button>
+        </section> -->
+        <!-- 실패 시 팝업 -->
+        <!-- <section class="defeatPopup">
+          <button class="defeatPopup_restart">다시하기 버튼</button>
+          <button class="defeatPopup_btn">앤딩 버튼</button>
+        </section> -->
+        <section id="complete_popup" style="display: none">
+          <div class="dimmed"></div>
+          <div class="bg"></div>
+          <div class="buttonArea">
+            <button class="reload" onclick="gameRetry()"></button>
+            <button class="play_view" onclick="videoPlayer()">
+              개념 영상 보기
+            </button>
+            <!-- <p>
+              더 공부하고 싶다면 개념영상 보러 가보자!
+            </p> -->
+          </div>
+        </section>
+        <!-- -----인트로----- -->
+        <article class="game_intro">
+          <button class="game_intro_start">게임 시작</button>
+        </article>
+        <article class="game_wrong"></article>
+        <div class="page_num">
+          <span id="pageCnt">1</span>
+          <span>/</span>
+          <span id="pageCntAll">3</span>
+        </div>
+        <!-- -----카트----- -->
+        <article class="game_title" style="display: none">
+          <p>발문</p>
+        </article>
+        <div class="game_inner">
+          <div class="game_cart">
+            <div class="character"></div>
+            <div class="iscream type1"></div>
+            <div class="cart">
+              <p class="cart_time"></p>
+              <div class="cart_wheel">
+                <div class="wheel"></div>
+                <div class="wheel"></div>
+              </div>
+            </div>
+            <div class="arm"></div>
+          </div>
+          <!-- -----자동차----- -->
+          <div class="game_car">
+            <div class="game_car_window">
+              <div class="game_car_character"></div>
+            </div>
+            <div class="game_car_screen">
+              <!-- 문제 보기 등장 -->
+            </div>
+            <div class="game_car_wheel">
+              <div class="wheel"></div>
+              <div class="wheel"></div>
+            </div>
+          </div>
+        </div>
+        <!-- -----정답선택지----- -->
+        <ul class="answer-list">
+          <!-- 정답 선택지 랜더링 -->
+        </ul>
+      </section>
+      <!-- 가이드 -->
+      <section class="pearl-guide">
+        <div class="pearl-guide-point"></div>
+        <div class="pearl-guide-hand"></div>
+      </section>
+    </div>
+  </body>
+  <script
+    crossorigin
+    src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"
+  ></script>
+  <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+  <script src="../../../COMM/GAME/TIMEATTACK.JS"></script>
+  <script defer src="../../../COMM/JS/COMMONGAME.JS"></script>
+</html>

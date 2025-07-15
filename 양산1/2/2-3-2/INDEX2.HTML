@@ -1,0 +1,1586 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>개정교육과정-수학 수학 개념</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <meta name="KeyWORDs" content="" />
+  <meta name="Description" content="" />
+  <meta name="Robots" content="all" />
+  <meta http-equiv="Subject" content="" />
+  <meta http-equiv="Title" content="" />
+  <meta http-equiv="Author" content="onflou " />
+  <meta http-equiv="Publisher" content="" />
+
+  <!-- 브라우저 호환성을 지정 -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="shortcut icon" href="#" />
+  <link href="../../../COMM/CSS/COMMON.CSS" rel="stylesheet" />
+  <link href="../../../COMM/CSS/CONCEPTCOMMON2.CSS" rel="stylesheet" />
+  <link href="../../../COMM/CSS/VIDEO.CSS" rel="stylesheet" />
+
+  <style>
+    .calc_box_comm {
+      padding: 30px 60px;
+      border-radius: 20px;
+      background-color: rgba(255, 184, 239, 1);
+      text-align: center;
+    }
+
+    /* .calc_box_comm .txt,
+      .calc_arrow_comm .txt {
+        padding-top: 8px;
+      } */
+
+    .number_model_table {
+      width: 487px;
+      height: 288px;
+      background: url("../../../COMM/IMG/CONCEPT/2_3_2/NUMBER_MODEL_TABLE.png") no-repeat;
+      padding-top: 82px;
+
+      margin: 30px;
+    }
+
+    .number_model_table .tr {
+      width: 100%;
+      height: 206px;
+
+      display: flex;
+    }
+
+    .number_model_table .td {
+      width: 50%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .number_model_table .td .img_container {
+      width: 100px;
+      height: 200px;
+    }
+
+    /* 1p */
+    .step1 .step1_top_box {
+      width: 1200px;
+      height: 288px;
+      text-align: center;
+      line-height: 70px;
+    }
+
+    .step1 .step1_mid_box {
+      margin-top: 60px;
+    }
+
+    .step1 .step1_img_box {
+      width: 878px;
+      height: 220px;
+    }
+
+    .step1 .step1_btm_box {
+      margin-top: 60px;
+      visibility: hidden;
+    }
+
+    .step1 .touchMotion1-1 {
+      top: 500px;
+      left: 950px;
+    }
+
+    /* 2p */
+    .step2 .step2_top_box {
+      width: 1600px;
+      height: 470px;
+    }
+
+    .step2 .step2_img_box {
+      width: 1163px;
+      height: 221px;
+    }
+
+    .step2 .step2_mid_box {
+      visibility: hidden;
+      padding-left: 455px;
+      margin-top: 15px;
+    }
+
+    .step2 .step2_mid_box>div {
+      width: 62px;
+      text-align: center;
+      position: relative;
+    }
+
+    .step2 .step2_mid_box>div+div {
+      margin-left: 50px;
+    }
+
+    .step2 .step2_mid_box>div:not(:first-child) {
+      visibility: hidden;
+    }
+
+    .step2 .step2_mid_box>div:not(:first-child)::before {
+      content: '';
+      position: absolute;
+      top: calc(100% + 8px);
+      left: -73px;
+      width: 112px;
+      height: 36px;
+      background: url("../../../COMM/IMG/CONCEPT/2_3_2/STEP2_ARROW.png") no-repeat;
+      background-size: cover;
+    }
+
+    .step2 .step2_mid_box>div.txt_container {
+      width: 133px;
+      margin-left: 10px;
+    }
+
+    .step2 .step2_mid_box>div.txt_container::before {
+      left: -39px;
+      top: calc(100% + 2px);
+    }
+
+    .step2 .step2_btm_box {
+      margin-top: 80px;
+      visibility: hidden;
+    }
+
+    /* 3p */
+    .step3 .step3_top_box {
+      position: relative;
+    }
+
+    .step3 .step3_top_left {
+      position: absolute;
+      top: 50%;
+      left: 194px;
+      transform: translate(0, -50%);
+    }
+
+    .step3 .step3_top_right .img_container .img4 {
+      width: 450px;
+      height: 69px;
+      position: absolute;
+      top: 100px;
+      left: 630px;
+    }
+
+    .step3 .step3_top_right .img_container .img5 {
+      width: 229px;
+      height: 168px;
+      position: absolute;
+      top: 197px;
+      left: 630px;
+    }
+
+    .step3 .step3_btm_box {
+      margin-top: 80px;
+      visibility: hidden;
+    }
+
+    .step3 .step3_img_box {
+      width: 1600px;
+      height: 470px;
+    }
+
+    .step3 .touchMotion3-1 {
+      top: 260px;
+      left: 1370px;
+    }
+
+    .step3 .touchMotion3-2 {
+      top: 440px;
+      left: 1370px;
+    }
+
+    /* 4p */
+    .step4 .step4_top_box {
+      position: relative;
+    }
+
+    .step4 .step4_top_box .hint,
+    .step5 .step5_top_box .hint {
+      position: absolute;
+      width: 305px;
+      height: 199px;
+      background: url("../../../COMM/IMG/CONCEPT/2_3_2/STEP4_5_HINT.png") no-repeat center;
+
+      top: -50%;
+      left: 205px;
+      z-index: 2;
+
+      display: none;
+    }
+
+    .step4 .step4_top_box .hint.point::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url("../../../COMM/IMG/CONCEPT/2_3_2/STEP4_HINT_POINT.png") no-repeat center;
+
+      top: 0;
+      left: 0;
+    }
+
+    .step4 .step4_top_box .hint_cont {
+      padding-left: 26px;
+      display: none;
+    }
+
+    .step4 .step4_top_box .hint_cont .hint_cont_arrow {
+      margin: -5px 0 0 0;
+    }
+
+    .step4 .step4_mid_box {
+      display: flex;
+      margin-top: 78px;
+    }
+
+    .step4 .step4_mid_box .number_board_table {
+      width: 480px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .step4 .step4_mid_box .number_board_table2 {
+      position: relative;
+      z-index: 1;
+    }
+
+    .step4 .step4_mid_box .number_board_table2.blink::after {
+      animation: 1s opacityBlink infinite;
+    }
+
+    .step4 .step4_mid_box .number_board_table2::after {
+      content: "";
+      width: calc(100% - 8px);
+      height: calc(100% - 8px);
+      box-shadow: 0px 0px 10px 5px rgba(103, 68, 243, 0.8);
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      z-index: 0;
+      opacity: 0;
+    }
+
+    .step4 .step4_mid_box .number_board_table+.number_board_table {
+      margin-left: 48px;
+    }
+
+    .step4 .number_board_table .td {
+      width: 90px;
+      height: 90px;
+    }
+
+    .step4 .number_board_table .circle {
+      width: 55px;
+      height: 55px;
+    }
+
+    .step4 .number_board_table .triangle {
+      width: 55px;
+      height: 55px;
+      background: url("../../../COMM/IMG/CONCEPT/2_3_2/STEP4_POLYGON.png") no-repeat center;
+
+      visibility: hidden;
+    }
+
+    .step4 .step4_btm_box {
+      margin-top: 46px;
+      visibility: hidden;
+    }
+
+    .step4 .touchMotion4-1 {
+      top: 214px;
+      left: 1051px;
+    }
+
+    .step4 .touchMotion4-2 {
+      top: 213px;
+      left: 1157px;
+    }
+
+    /* 5p */
+    .step5 .step5_top_box {
+      position: relative;
+    }
+
+    .step5 .step5_top_box .hint {
+      display: block;
+    }
+
+    .step5 .step5_top_box .hint.point::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url("../../../COMM/IMG/CONCEPT/2_3_2/STEP5_HINT_POINT.png") no-repeat center;
+      animation: 1s opacityBlink infinite;
+
+      top: 0;
+      left: 0;
+    }
+
+    .step5 .step5_top_box .hint_cont {
+      padding-left: 26px;
+      z-index: 1;
+      display: none;
+    }
+
+    .step5 .step5_top_box .hint_cont .hint_cont_arrow {
+      margin: -5px 0 0 0;
+    }
+
+    .step5 .step5_mid_box {
+      display: flex;
+      margin-top: 78px;
+    }
+
+    .step5 .step5_mid_box .number_board_table {
+      width: 480px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .step5 .step5_mid_box .number_board_table+.number_board_table {
+      margin-left: 48px;
+    }
+
+    .step5 .number_board_table .td {
+      width: 90px;
+      height: 90px;
+    }
+
+    .step5 .number_board_table .circle {
+      width: 55px;
+      height: 55px;
+    }
+
+    .step5 .number_board_table .triangle {
+      width: 55px;
+      height: 55px;
+      background: url("../../../COMM/IMG/CONCEPT/2_3_2/STEP4_POLYGON.png") no-repeat center;
+    }
+
+    .step5 .step5_btm_box {
+      margin-top: 46px;
+    }
+
+    .step5 .check_footer_text {
+      background: url("../../../COMM/IMG/CONCEPT/2_3_2/STEP5_FOOTER_TXT.png") no-repeat center;
+    }
+
+    /* 6p */
+    .step6 .step6_top_box {
+      width: 1600px;
+
+      display: flex;
+      flex-wrap: wrap;
+
+      justify-content: center;
+    }
+
+    .step6 .step6_top_box .number_model_table1,
+    .step6 .step6_top_box .number_model_table2 {
+      margin-top: 0;
+    }
+
+    .step6 .step6_top_box .number_model_table3 {
+      margin-bottom: 0;
+      visibility: hidden;
+    }
+
+    .step6 .step6_top_box .number_model_table3 .step6_img_box {
+      visibility: hidden;
+    }
+
+    .step6 .step6_btm_box {
+      margin-top: 60px;
+      visibility: hidden;
+    }
+
+    .step6 .touchMotion6-1 {
+      top: 575px;
+      left: 715px;
+    }
+
+    .step6 .touchMotion6-2 {
+      top: 575px;
+      left: 965px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="contents-wrap" class="concept" style="position: absolute; display: flex"></div>
+    <div id="contents-main" style="display: none" class="concept-warp">
+      <div class="concept-warp_inner">
+        <header class="header" style="visibility: visible">
+          <div class="header_title">
+            <button class="sound-btn" onclick="titleSound()"></button>
+            <h3></h3>
+          </div>
+          <p class="header_page"><span>1</span>/2</p>
+        </header>
+        <main class="main">
+          <div class="main_content">
+            <!-- 콘텐츠영역 -->
+            <div class="step step1" style="display: block">
+              <!-- step1 시작부분 -->
+              <div class="main__container dp_flex dp_flex_column">
+                <div class="step1_top_box content_box_comm dp_flex">빵이 15개, 도넛이 6개 있습니다.<br />빵과 도넛은 모두 몇 개일까요?</div>
+                <div class="step1_mid_box">
+                  <div class="step1_img_box img_container">
+                    <img src="../../../COMM/IMG/CONCEPT/2_3_2/STEP1_IMG.png" class="img img1" />
+                  </div>
+                </div>
+                <div class="step1_btm_box calc_box_comm dp_flex">
+                  <div class="txt txt1">15</div>
+                  <div class="txt txt2">+</div>
+                  <div class="txt txt3">6</div>
+                </div>
+              </div>
+            </div>
+            <div class="step step2" style="display: none">
+              <!-- step2 시작부분 -->
+              <div class="main__container dp_flex dp_flex_column">
+                <div class="step2_top_box content_box_comm dp_flex dp_flex_column">
+                  <div class="step2_img_box img_container">
+                    <img src="../../../COMM/IMG/CONCEPT/2_3_2/STEP2_IMG.png" class="img img1" />
+                  </div>
+                  <div class="step2_mid_box dp_flex">
+                    <div class="txt txt1">15</div>
+                    <div class="txt txt2">16</div>
+                    <div class="txt txt3">17</div>
+                    <div class="txt txt4">18</div>
+                    <div class="txt txt5">19</div>
+                    <div class="txt txt6">20</div>
+                    <div class="txt txt_container keypad_txt keypad_txt1" data-val="21" data-length="2">?</div>
+                  </div>
+                </div>
+                <div class="step2_btm_box">
+                  <div class="calc_arrow_comm dp_flex">
+                    <div class="txt txt1">15</div>
+                    <div class="txt txt2">+</div>
+                    <div class="txt txt3">6</div>
+                    <div class="txt txt4">=</div>
+                    <div class="txt txt5">21</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step step3" style="display: none">
+              <!-- step3 시작부분 -->
+              <div class="main__container dp_flex dp_flex_column">
+                <div class="touchMotion touchMotion3-1">
+                  <div class="touchMotion_point"></div>
+                  <div class="touchMotion_hand"></div>
+                </div>
+
+                <div class="touchMotion touchMotion3-2">
+                  <div class="touchMotion_point"></div>
+                  <div class="touchMotion_hand"></div>
+                </div>
+
+                <div class="step3_top_box content_box_comm">
+                  <div class="step3_top_left">
+                    <div class="calc_box_comm dp_flex">
+                      <div class="txt txt1">15</div>
+                      <div class="txt txt2">+</div>
+                      <div class="txt txt3">6</div>
+                    </div>
+                  </div>
+                  <div class="step3_top_right">
+                    <div class="step3_img_box img_container">
+                      <img src="../../../COMM/IMG/CONCEPT/2_3_2/STEP3_IMG1.png" class="img img1" />
+                      <img src="../../../COMM/IMG/CONCEPT/2_3_2/STEP3_IMG2.png" class="img img2" />
+                      <img src="../../../COMM/IMG/CONCEPT/2_3_2/STEP3_IMG3.png" class="img img3" />
+                      <img src="../../../COMM/IMG/CONCEPT/2_3_2/STEP4_BLOCK1_POINT.png" class="img img4" />
+                      <img src="../../../COMM/IMG/CONCEPT/2_3_2/STEP4_BLOCK2_POINT.png" class="img img5" />
+                    </div>
+                  </div>
+                </div>
+                <div class="step3_btm_box">
+                  <div class="calc_arrow_comm dp_flex">
+                    <div class="txt txt1">15</div>
+                    <div class="txt txt2">+</div>
+                    <div class="txt txt3">6</div>
+                    <div class="txt txt4">=</div>
+                    <div class="txt txt5">21</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step step4" style="display: none">
+              <!-- step4 시작부분 -->
+              <div class="main__container dp_flex dp_flex_column">
+                <div class="touchMotion touchMotion4-1">
+                  <div class="touchMotion_point"></div>
+                  <div class="touchMotion_hand"></div>
+                </div>
+
+                <div class="touchMotion touchMotion4-2">
+                  <div class="touchMotion_point"></div>
+                  <div class="touchMotion_hand"></div>
+                </div>
+
+                <div class="full_content_comm dp_flex dp_flex_column">
+                  <div class="step4_top_box">
+                    <div class="calc_box_comm dp_flex">
+                      <div class="txt txt1">15</div>
+                      <div class="txt txt2">+</div>
+                      <div class="txt txt3">6</div>
+                    </div>
+                    <div class="hint dp_flex">
+                      <div class="hint_cont dp_flex dp_flex_column">
+                        <div class="hint_cont_top">
+                          <div class="txt">6</div>
+                        </div>
+                        <div class="hint_cont_arrow">
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_2/STEP4_HINT_ARROW.png" class="img" />
+                        </div>
+                        <div class="hint_cont_btm dp_flex">
+                          <div class="txt_container txt_container1">5</div>
+                          <div class="txt_container txt_container1">1</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step4_mid_box">
+                    <div class="number_board_table number_board_table1">
+                      <table>
+                        <tr>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle1"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle2"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle3"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle4"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle5"></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle6"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle7"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle8"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle9"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle10"></div>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="number_board_table number_board_table2">
+                      <table>
+                        <tr>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle11"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle12"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle13"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle14"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle15"></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="td">
+                              <div class="triangle triangle16"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="triangle triangle17"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="triangle triangle18"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="triangle triangle19"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="triangle triangle20"></div>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="number_board_table number_board_table3">
+                      <table>
+                        <tr>
+                          <td>
+                            <div class="td">
+                              <div class="triangle triangle21"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td"></div>
+                          </td>
+                          <td>
+                            <div class="td"></div>
+                          </td>
+                          <td>
+                            <div class="td"></div>
+                          </td>
+                          <td>
+                            <div class="td"></div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="td"></div>
+                          </td>
+                          <td>
+                            <div class="td"></div>
+                          </td>
+                          <td>
+                            <div class="td"></div>
+                          </td>
+                          <td>
+                            <div class="td"></div>
+                          </td>
+                          <td>
+                            <div class="td"></div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="step4_btm_box">
+                    <div class="calc_arrow_comm dp_flex">
+                      <div class="txt txt1">15</div>
+                      <div class="txt txt2">+</div>
+                      <div class="txt txt3">6</div>
+                      <div class="txt txt4">=</div>
+                      <div class="txt txt5">21</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step step5" style="display: none">
+              <!-- step5 시작부분 -->
+              <div class="main__container">
+                <div class="touchMotion touchMotion4-1">
+                  <div class="touchMotion_point"></div>
+                  <div class="touchMotion_hand"></div>
+                </div>
+
+                <div class="touchMotion touchMotion4-2">
+                  <div class="touchMotion_point"></div>
+                  <div class="touchMotion_hand"></div>
+                </div>
+
+                <div class="full_content_comm dp_flex dp_flex_column">
+                  <div class="step5_top_box">
+                    <div class="calc_box_comm dp_flex">
+                      <div class="txt txt1">15</div>
+                      <div class="txt txt2">+</div>
+                      <div class="txt txt3">6</div>
+                    </div>
+                    <div class="hint dp_flex">
+                      <div class="hint_cont dp_flex dp_flex_column">
+                        <div class="hint_cont_top">
+                          <div class="txt">6</div>
+                        </div>
+                        <div class="hint_cont_arrow">
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_2/STEP5_HINT_ARROW.png" class="img" />
+                        </div>
+                        <div class="hint_cont_btm dp_flex">
+                          <div class="txt_container txt_container1">5</div>
+                          <div class="txt_container txt_container1">1</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step5_mid_box">
+                    <div class="number_board_table number_board_table1">
+                      <table>
+                        <tr>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle1"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle2"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle3"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle4"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle5"></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle6"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle7"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle8"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle9"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle10"></div>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="number_board_table number_board_table2">
+                      <table>
+                        <tr>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle11"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle12"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle13"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle14"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="circle circle15"></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="td">
+                              <div class="triangle triangle16"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="triangle triangle17"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="triangle triangle18"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="triangle triangle19"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td">
+                              <div class="triangle triangle20"></div>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="number_board_table number_board_table3">
+                      <table>
+                        <tr>
+                          <td>
+                            <div class="td">
+                              <div class="triangle triangle21"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="td"></div>
+                          </td>
+                          <td>
+                            <div class="td"></div>
+                          </td>
+                          <td>
+                            <div class="td"></div>
+                          </td>
+                          <td>
+                            <div class="td"></div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="td"></div>
+                          </td>
+                          <td>
+                            <div class="td"></div>
+                          </td>
+                          <td>
+                            <div class="td"></div>
+                          </td>
+                          <td>
+                            <div class="td"></div>
+                          </td>
+                          <td>
+                            <div class="td"></div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="step5_btm_box">
+                    <div class="calc_arrow_comm dp_flex">
+                      <div class="txt txt1">15</div>
+                      <div class="txt txt2">+</div>
+                      <div class="txt txt3">6</div>
+                      <div class="txt txt4">=</div>
+                      <div class="txt txt5">21</div>
+                    </div>
+                  </div>
+                </div>
+                <footer class="check_footer">
+                  <div class="check_footer_inner">
+                    <div class="check_footer_text"></div>
+                    <div class="check_footer_ch">
+                      <div class="check_footer_ch_head"></div>
+                      <div class="check_footer_ch_body"></div>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="step step6" style="display: none">
+              <!-- step6 시작부분 -->
+              <div class="main__container dp_flex dp_flex_column">
+                <div class="touchMotion touchMotion6-1">
+                  <div class="touchMotion_point"></div>
+                  <div class="touchMotion_hand"></div>
+                </div>
+                <div class="touchMotion touchMotion6-2">
+                  <div class="touchMotion_point"></div>
+                  <div class="touchMotion_hand"></div>
+                </div>
+
+                <div class="step6_top_box">
+                  <div class="number_model_table number_model_table1">
+                    <div class="tr">
+                      <div class="td">
+                        <div class="step6_img_box step6_img_box1 img_container">
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_2/STEP6_BLOCK1.png" class="img img1" />
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_2/STEP6_BLOCK1_POINT.png" class="img img1_1" />
+                        </div>
+                      </div>
+                      <div class="td">
+                        <div class="step6_img_box step6_img_box2 img_container">
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_2/STEP6_BLOCK2.png" class="img img2" />
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_2/STEP6_BLOCK2_POINT.png" class="img img2_1" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="number_model_table number_model_table2">
+                    <div class="tr">
+                      <div class="td"></div>
+                      <div class="td">
+                        <div class="step6_img_box step6_img_box4 img_container">
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_2/STEP6_BLOCK3.png" class="img img3" />
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_2/STEP6_BLOCK3_POINT.png" class="img img3_1" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="number_model_table number_model_table3">
+                    <div class="tr">
+                      <div class="td">
+                        <div class="step6_img_box step6_img_box5 img_container">
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_2/STEP6_BLOCK1.png" class="img img4" />
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_2/STEP6_BLOCK1_POINT.png" class="img img4_1" />
+                        </div>
+                      </div>
+                      <div class="td">
+                        <div class="step6_img_box step6_img_box6 img_container">
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_2/STEP6_BLOCK4.png" class="img img5" />
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_2/STEP6_BLOCK4_POINT.png" class="img img5_1" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="step6_btm_box">
+                  <div class="calc_arrow_comm dp_flex">
+                    <div class="txt txt1">15</div>
+                    <div class="txt txt2">+</div>
+                    <div class="txt txt3">6</div>
+                    <div class="txt txt4">=</div>
+                    <div class="txt txt5">21</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="step-list">
+              <li class="step-list_item active"></li>
+              <li class="step-list_item"></li>
+            </ul>
+          </div>
+        </main>
+        <div class="main_prev-next">
+          <button class="btn-prev" style="display: none">이전버튼</button>
+          <!-- <button class="btn-next" style="display: block" disabled> -->
+          <button class="btn-next blinking" style="display: block">
+            다음버튼
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script crossorigin src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+  <script src="../../../COMM/JS/COMMON2.JS"></script>
+  <script src="../../../COMM/JS/CONCEPTEVNT3.JS"></script>
+  <script src="../../../COMM/JS/CONCEPTEVNTBTN.JS"></script> <!-- 개념 익히기 공통 버튼 처리 (0424) -->
+  <script src="../../../COMM/JS/GAME.JS"></script>
+  <script src="../../../COMM/JS/VIDEO.JS"></script>
+  <script src="../../../COMM/JS/VIDEO-HTTP-STREAMING.JS"></script>
+  <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+  <script>
+    /*
+     * 데이터
+     */
+    let intro = {
+      type: "concept", //concept 개념익히기, checkExam 확인문제
+      title: "여러 가지 방법으로<br/>덧셈을 해 볼까요(1)",
+      subTitle: [
+        "일의 자리에서 받아올림이 있는 (두 자리 수)+(한 자리 수)의 문제를 여러 가지 방법으로 해결해 봐요.",
+        "수 모형으로 덧셈을 구해 봐요.",
+      ],
+      sound: ["../../../COMM/SOUND/1_3_2/1_1_3-2_001.mp3"],
+    };
+
+    //현재 페이지
+    let disStep = 1;
+
+    let pageData = [
+      {
+        step: 1,
+        title: "여러 가지 방법으로 덧셈을 해 봅시다.",
+        sound: "../../../COMM/SOUND/2_3_2/2_1_3-2_001.mp3",
+        headerPage: [1, 2],
+        footerPage: [1, 4],
+        prev: 0,
+        next: 1,
+      },
+      {
+        step: 2,
+        title: "여러 가지 방법으로 덧셈을 해 봅시다.",
+        sound: "../../../COMM/SOUND/2_3_2/2_1_3-2_001.mp3",
+        headerPage: [1, 2],
+        footerPage: [2, 4],
+        prev: 1,
+        next: 1,
+      },
+      {
+        step: 3,
+        title: "여러 가지 방법으로 덧셈을 해 봅시다.",
+        sound: "../../../COMM/SOUND/2_3_2/2_1_3-2_001.mp3",
+        headerPage: [1, 2],
+        footerPage: [3, 4],
+        prev: 1,
+        next: 1,
+      },
+      {
+        step: 4,
+        title: "여러 가지 방법으로 덧셈을 해 봅시다.",
+        sound: "../../../COMM/SOUND/2_3_2/2_1_3-2_001.mp3",
+        headerPage: [1, 2],
+        footerPage: [4, 4],
+        prev: 1,
+        next: 0,
+      },
+      {
+        step: 5,
+        title: "",
+        sound: "",
+        headerPage: [0, 0],
+        footerPage: [0, 0],
+        prev: 1,
+        next: 1,
+      },
+      {
+        step: 6,
+        title: "수 모형으로 덧셈을 해 봅시다.",
+        sound: "../../../COMM/SOUND/2_3_2/2_1_3-2_019.mp3",
+        headerPage: [2, 2],
+        footerPage: [0, 0],
+        prev: 5,
+        next: 0,
+      },
+    ];
+
+    function pageAction() {
+      console.log("disStep ::: ", disStep);
+      //setTimeout 초기화
+      const TimeoutId = setTimeout(() => console.log("timeout clear"), 1);
+      for (let i = 0; i < TimeoutId; i++) {
+        clearTimeout(i);
+      }
+      stepSet();
+      switch (disStep) {
+        case 1:
+          step1.reset();
+          step1.start();
+          break;
+        case 2:
+          step2.reset();
+          step2.start();
+          break;
+        case 3:
+          step3.reset();
+          step3.start();
+          break;
+        case 4:
+          step4.reset();
+          step4.start();
+          break;
+        case 5:
+          step5.reset();
+          step5.start();
+          break;
+        case 6:
+          step6.reset();
+          step6.start();
+          break;
+      }
+    }
+
+    //문제 시작
+    //================STEP1==============
+    const step1 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/2_3_2/2_1_3-2_001.mp3",
+          "../../../COMM/SOUND/2_3_2/2_1_3-2_002.mp3",
+        ], [
+          {
+            idx: 2,
+            type: 'end',
+            callback: () => {
+              touchMotionSetOn(500, 950, step1.guideTouch, $('.step1 .step1_img_box'));
+            }
+          }
+        ]);
+      },
+      guideTouch: () => {
+        audioSet([
+          "../../../COMM/SOUND/2_3_2/2_1_3-2_003.mp3",
+        ], [
+          {
+            idx: 1,
+            type: 'start',
+            callback: () => {
+              $('.step1 .step1_btm_box').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 1,
+            type: 'end',
+            callback: () => {
+              correctly();
+            }
+          },
+        ]);
+      },
+      reset: () => {
+        touchMotionSetInit();
+        $('.step1 .step1_btm_box').css('visibility', '');
+      },
+    };
+    //================STEP2==============
+    const step2 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/2_3_2/2_1_3-2_004.mp3",
+          "../../../COMM/SOUND/2_3_2/2_1_3-2_005.mp3",
+          "../../../COMM/SOUND/2_3_2/2_1_3-2_006.mp3",
+        ], [
+          {
+            idx: 2,
+            type: 'start',
+            callback: () => {
+              $('.step2 .step2_mid_box').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 3,
+            type: 'start',
+            callback: () => {
+              $('.step2 .step2_mid_box .txt2').css('visibility', 'visible');
+
+              timerSet(() => {
+                $('.step2 .step2_mid_box .txt3').css('visibility', 'visible');
+                timerInit();
+
+                timerSet(() => {
+                  $('.step2 .step2_mid_box .txt4').css('visibility', 'visible');
+                  timerInit();
+
+                  timerSet(() => {
+                    $('.step2 .step2_mid_box .txt5').css('visibility', 'visible');
+                    timerInit();
+
+                    timerSet(() => {
+                      $('.step2 .step2_mid_box .txt6').css('visibility', 'visible');
+                      timerInit();
+                    }, 1100);
+                  }, 1100);
+                }, 1100);
+              }, 1100);
+            }
+          },
+          {
+            idx: 3,
+            type: 'end',
+            callback: () => {
+              $('.step2 .step2_mid_box .keypad_txt1').css('visibility', 'visible');
+
+              // 빈칸 깜빡이기 (키패드 노출)
+              let keypadTxtEl1 = $('.step2 .step2_mid_box .keypad_txt1');
+
+              keypadTxtEl1.addClass("blink").click(() => {
+                keypadTxtEl1.removeClass('blink');
+                keypadSetOn(keypadTxtEl1, 14, 14);
+                step2.keypadSetClick(keypadTxtEl1);
+              });
+            }
+          },
+        ]);
+      },
+      keypadSetClick: (btn) => {
+        $(document).on("click", keypadBtnCheckEl, (e) => {
+          e.stopPropagation();
+
+          if (keypadInput == btn.data('val')) {
+            keypadSetCorrect(btn);
+
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.MP3",
+              "../../../COMM/SOUND/2_3_2/2_1_3-2_007.mp3",
+              "../../../COMM/SOUND/2_3_2/2_1_3-2_008.mp3",
+            ], [
+              {
+                idx: 3,
+                type: 'start',
+                callback: () => {
+                  $('.step2 .step2_btm_box').css('visibility', 'visible');
+                }
+              },
+              {
+                idx: 3,
+                type: 'end',
+                callback: () => {
+                  correctly();
+                }
+              }
+            ]);
+
+          } else {
+            keypadSetOff(btn);
+            btn.addClass('blink');
+
+            audioSet([
+              "../../../COMM/SOUND/WRONG.MP3",
+            ]);
+          }
+        });
+      },
+      reset: () => {
+        keypadSetInit();
+
+        $('.step2 .step2_mid_box').css('visibility', '');
+        $('.step2 .step2_mid_box .txt').css('visibility', '');
+        $('.step2 .step2_btm_box').css('visibility', '');
+      },
+    };
+    //================STEP3==============
+    const step3 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/2_3_2/2_1_3-2_009.mp3",
+          "../../../COMM/SOUND/2_3_2/2_1_3-2_010.mp3",
+        ], [
+          {
+            idx: 2,
+            type: 'end',
+            callback: () => {
+              touchMotionSetOn(260, 1370, step3.guideTouch, $('.step3 .step3_img_box'));
+            }
+          }
+        ]);
+      },
+      guideTouch: () => {
+        $('.step3 .img1').css('display', 'none');
+        $('.step3 .img2').css('display', 'block');
+
+        audioSet([
+          "../../../COMM/SOUND/2_3_2/2_1_3-2_011.mp3",
+        ], [
+          {
+            idx: 1,
+            type: 'end',
+            callback: () => {
+              touchMotionSetOn(440, 1370, step3.guideTouch2, $('.step3 .step3_img_box'));
+            }
+          }
+        ]);
+      },
+      guideTouch2: () => {
+        $('.step3 .img2').css('display', 'none');
+        $('.step3 .img3').css('display', 'block');
+
+        audioSet([
+          "../../../COMM/SOUND/2_3_2/2_1_3-2_012.mp3",
+          "../../../COMM/SOUND/2_3_2/2_1_3-2_013_1.mp3",
+          "../../../COMM/SOUND/2_3_2/2_1_3-2_013.mp3",
+          "../../../COMM/SOUND/2_3_2/2_1_3-2_008.mp3",
+        ], [
+          {
+            idx: 2,
+            type: 'start',
+            callback: () => {
+              $('.step3 .img4').css('display', 'block');
+              $('.step3 .img5').css('display', 'block');
+              $('.step3 .img4').addClass('blinking');
+            }
+          },
+          {
+            idx: 3,
+            type: 'start',
+            callback: () => {
+              $('.step3 .img4').removeClass('blinking');
+              $('.step3 .img5').addClass('blinking');
+
+              timerSet(() => {
+                $('.step3 .img5').removeClass('blinking');
+                timerInit();
+              }, 1000);
+            }
+          },
+          {
+            idx: 4,
+            type: 'start',
+            callback: () => {
+              $('.step3 .step3_btm_box').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 4,
+            type: 'end',
+            callback: () => {
+              correctly();
+            }
+          }
+        ]);
+      },
+      reset: () => {
+        touchMotionSetInit();
+
+        $('.step3 .img').css('display', '');
+        $('.step3 .step3_btm_box').css('visibility', '');
+      },
+    };
+    //================STEP4==============
+    const step4 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/2_3_2/2_1_3-2_014.mp3",
+          "../../../COMM/SOUND/2_3_2/2_1_3-2_015.mp3",
+          "../../../COMM/SOUND/2_3_2/2_1_3-2_016.mp3",
+        ], [
+          {
+            idx: 3,
+            type: 'start',
+            callback: () => {
+              $('.step4 .number_board_table2').addClass('blink');
+            }
+          },
+          {
+            idx: 3,
+            type: 'end',
+            callback: () => {
+              $('.step4 .number_board_table2').removeClass('blink');
+
+              $('.step4 .hint').css('display', 'flex');
+              $('.step4 .touchMotion4-1').css('display', 'block');
+              step4.guideTouch();
+            }
+          }
+        ]);
+      },
+      guideTouch: () => {
+        $('.step4 .touchMotion4-1').click(() => {
+          $('.step4 .touchMotion4-1').css('display', '');
+          $('.step4 .number_board_table2 .triangle').css('visibility', 'visible');
+
+          $('.step4 .touchMotion4-2').css('display', 'block');
+          step4.guideTouch2();
+        });
+      },
+      guideTouch2: () => {
+        $('.step4 .touchMotion4-2').click(() => {
+          $('.step4 .touchMotion4-2').css('display', '');
+          $('.step4 .number_board_table3 .triangle').css('visibility', 'visible');
+
+          audioSet([
+            "../../../COMM/SOUND/2_3_2/2_1_3-2_017.mp3",
+            "../../../COMM/SOUND/2_3_2/2_1_3-2_008.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step4_btm_box').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                // correctly();
+                disStep++;
+                pageAction();
+              }
+            }
+          ]);
+        });
+      },
+      reset: () => {
+        $('.step4 .number_board_table2').removeClass('point');
+        $('.step4 .hint').css('display', '').removeClass('point');
+        $('.step4 .touchMotion').css('display', '');
+        $('.step4 .triangle').css('visibility', '');
+        $('.step4 .step4_btm_box').css('visibility', '');
+      },
+    };
+    //================STEP5==============
+    const step5 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/2_3_2/2_1_3-2_018.mp3",
+        ], [
+          {
+            idx: 1,
+            type: 'start',
+            callback: () => {
+              $('.step5 .check_footer_inner').addClass('slideUp');
+              $('.step5 .step5_top_box .hint').addClass('blinking');
+            }
+          },
+          {
+            idx: 1,
+            type: 'end',
+            callback: () => {
+              // disStep++;
+              // pageAction();
+              $('.step5 .step5_top_box .hint').removeClass('blinking');
+              correctly();
+            }
+          }
+        ]);
+      },
+      reset: () => {
+        $('.step5 .check_footer_inner').removeClass('slideUp');
+        $('.step5 .step5_top_box .hint').removeClass('blinking');
+      },
+    };
+    //================STEP6==============
+    const step6 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/2_3_2/2_1_3-2_019.mp3",
+          "../../../COMM/SOUND/2_3_2/2_1_3-2_020.mp3",
+          "../../../COMM/SOUND/2_3_2/2_1_3-2_021.mp3",
+        ], [
+          {
+            idx: 2,
+            type: 'end',
+            callback: () => {
+              $('.step6 .number_model_table3').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 3,
+            type: 'end',
+            callback: () => {
+              $('.step6 .touchMotion6-1').css('display', 'block');
+              step6.guideTouch();
+            }
+          },
+        ]);
+      },
+      guideTouch: () => {
+        $('.step6 .touchMotion6-1').click(() => {
+          $('.step6 .touchMotion6-1').css('display', 'none');
+          $('.step6 .step6_img_box1 .img1_1').css('display', 'block');
+          $('.step6 .step6_img_box5').css('visibility', 'visible');
+
+          audioSet([
+            "../../../COMM/SOUND/2_3_2/2_1_3-2_022.mp3",
+            "../../../COMM/SOUND/2_3_2/2_1_3-2_023.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $('.step6 .touchMotion6-2').css('display', 'block');
+                step6.guideTouch2();
+              }
+            }
+          ]);
+        });
+      },
+      guideTouch2: () => {
+        $('.step6 .touchMotion6-2').click(() => {
+          $('.step6 .touchMotion6-2').css('display', 'none');
+          $('.step6 .step6_img_box2 .img2_1').css('display', 'block');
+          $('.step6 .step6_img_box4 .img3_1').css('display', 'block');
+          $('.step6 .step6_img_box6').css('visibility', 'visible');
+
+          audioSet([
+            "../../../COMM/SOUND/2_3_2/2_1_3-2_024.mp3",
+            "../../../COMM/SOUND/2_3_2/2_1_3-2_025.mp3",
+            "../../../COMM/SOUND/2_3_2/2_1_3-2_008.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step6 .step6_img_box1 .img1_1').css('display', 'none');
+                $('.step6 .step6_img_box2 .img2_1').css('display', 'none');
+                $('.step6 .step6_img_box4 .img3_1').css('display', 'none');
+                $('.step6 .step6_img_box6 .img5_1').css('display', 'block');
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step6 .step6_btm_box').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 3,
+              type: 'end',
+              callback: () => {
+                callFinish();
+              }
+            },
+          ]);
+        });
+      },
+      reset: () => {
+        $('.step6 .number_model_table').css('visibility', '');
+        $('.step6 .touchMotion').css('display', '');
+        $('.step6 .img').css('display', '');
+        $('.step6 .step6_img_box').css('visibility', '');
+        $('.step6 .step6_btm_box').css('visibility', '');
+      },
+    };
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,2953 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>개정교육과정-수학 수학 개념</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="KeyWORDs" content="" />
+    <meta name="Description" content="" />
+    <meta name="Robots" content="all" />
+    <meta http-equiv="Subject" content="" />
+    <meta http-equiv="Title" content="" />
+    <meta http-equiv="Author" content="onflou " />
+    <meta http-equiv="Publisher" content="" />
+
+    <!-- 브라우저 호환성을 지정 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="#" />
+    <link href="../../../COMM/CSS/COMMON.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/COMMONLAYOUT.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/CONCEPTCOMMON3.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/VIDEO.CSS" rel="stylesheet" />
+ 
+    <style>
+      .calc_arrow_comm {
+        background: url(../../../COMM/IMG/CONCEPT/COMM/ARROW_PINK2.png) no-repeat left top;
+      }
+
+      /* 1p */
+      .table_box .tr {
+        height: auto;
+      }
+
+      .table_box .tr:not(:first-child) {
+        margin-top: 0;
+      }
+
+      .step1_top_box .img_box {
+        position: relative;
+      }
+
+      .step1_top_box > .img_box > img,
+      .step1_top_box > .content1 > .img_box > img {
+        border-radius: 50%;
+      }
+      
+      .step1_top_box .img_box .time {
+        width: 120%;
+        height: 120%;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        position: absolute;
+        top: -9.5%;
+        left: -10%;
+      }
+
+      .step1_top_box .img_box .time span {
+        display: inline-block;
+      }
+
+      .step1 .step1_btm_box {
+        margin-top: 70px;
+        position: relative;
+      }
+
+      .step1 .step1_btm_box .table_box {
+        width: 1600px;
+        border: 3px solid rgba(103, 68, 243, 1);
+        border-radius: 20px;
+        overflow: hidden;
+      }
+
+      .step1 .step1_btm_box .table_box .tr .td:not(.td:last-child) {
+        border-right: 3px solid rgba(103, 68, 243, 1);
+      }
+
+      .step1 .step1_btm_box .table_box .tr1 .td,
+      .step1 .step1_btm_box .table_box .tr2 .td .line:not(.line:last-child) {
+        border-bottom: 3px solid rgba(103, 68, 243, 1);
+      }
+
+      .step1 .step1_btm_box .table_box .tr1 .td {
+        height: 71px;
+        background-color: rgba(209, 188, 247, 1);
+      }
+
+      .step1 .step1_btm_box .table_box .tr2 .td {
+        height: 145px;
+      }
+
+      .step1 .step1_btm_box .table_box .tr .td .txt {
+        text-align: center;
+      }
+
+      .step1 .step1_btm_box .table_box .tr2 .td1 {
+        background-color: rgba(209, 188, 247, 1);
+      }
+
+      .step1 .step1_btm_box .table_box .tr2 .td1 .txt span {
+        line-height: 55px;
+      }
+
+      .step1 .character_txt {
+        top: 50px;
+        left: 80px;
+      }
+
+      .step1 .character {
+        top: 180px;
+        left: 80px;
+      }
+
+      .step1 .txt_container3 {
+        position: absolute;
+        top: calc(50% - 5px);
+        left: 132px;
+        transform: translateY(-50%);
+      }
+
+      .step1 .step1_answer_box1 {
+        position: absolute;
+        bottom: -15px;
+        right: 247.5px;
+        transform: translateY(100%);
+      }
+
+      .step1 .step1_answer_box1 .answer {
+        width: 105px;
+        height: 85px;
+      }
+
+      .step1 .step1_answer_box1 .answer + .answer {
+        margin-left: 90px;
+      }
+
+      .step1 .step1_answer_box2 {
+        position: absolute;
+        bottom: -9px;
+        right: -100px;
+        transform: translateY(100%);
+      }
+
+      .step1 .step1_answer_box2 .answer {
+        width: 120px;
+        height: 85px;
+        font-size: 44px;
+      }
+
+      .step1 .step1_answer_box2 .answer + .answer {
+        margin-left: 20px;
+      }
+
+      .step1_top_box .img_box .time {
+        transform-origin: 50% 50%;
+      }
+
+      .step1_top_box .img_box .time6 {
+        --clock-deg: 90;
+      }
+
+      .step1_top_box .img_box .time8 {
+        --clock-deg: 120;
+      }
+
+      .step1_top_box .img_box .time12 {
+        --clock-deg: 180;
+      }
+
+      .step1_top_box .img_box .time15 {
+        --clock-deg: 225;
+      }
+
+      .step1_top_box .img_box .time17 {
+        --clock-deg: 255;
+      }
+
+      @keyframes degreeAniScale {
+        0% {
+          transform: scale(1) rotate(calc(var(--clock-deg) * -1deg));
+        }
+
+        50% {
+          transform: scale(1.2) rotate(calc(var(--clock-deg) * -1deg));
+        }
+
+        100% {
+          transform: scale(1) rotate(calc(var(--clock-deg) * -1deg));
+        }
+      }
+
+      .dAniScale {
+        animation: 1s degreeAniScale infinite;
+      }
+
+      .step1 .step1_point1 {
+        top: calc(50% - 6px);
+        left: 200px;
+        z-index: 10;
+      }
+
+      /* 2p */
+      .step2 .content {
+        min-height: 387px;
+      }
+
+      .content2 {
+        position: relative;
+      }
+
+      .content2 .line_box {
+        border: 2px solid #000;
+        position: relative;
+      }
+
+      .content2 .line_box .block {
+        width: 34.5px;
+        height: 80px;
+        position: relative;
+      }
+
+      .content2 .line_box .block.yellow {
+        background-color: rgba(255, 226, 121, 1);
+      }
+
+      .content2 .line_box .block.blue {
+        background-color: rgba(156, 202, 228, 1);
+      }
+
+      .content2 .line_box .block.pink {
+        background-color: rgba(238, 193, 214, 1);
+      }
+
+      .content2 .line_box .block.green {
+        background-color: rgba(196, 218, 170, 1);
+      }
+
+      .content2 .line_box .block.purple {
+        background-color: rgba(204, 191, 214, 1);
+      }
+
+      .content2 .line_box .block.green2 {
+        background-color: rgba(170, 206, 202, 1);
+      }
+
+      .content2 .line_box .block.orange {
+        background-color: rgba(233, 188, 180, 1);
+      }
+
+      .content2 .line_box .block.blue2 {
+        background-color: rgba(160, 214, 244, 1);
+      }
+
+      .content2 .line_box .block.bgColor {
+        animation: 1s bgBlink infinite;
+      }
+
+      .content2 .line_box .block:not(.nondot)::after {
+        content: '';
+        width: 2px;
+        height: 80px;
+        background-image: url('../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP2_LINE1.png');
+        background-repeat: repeat-y;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        z-index: 10;
+      }
+
+      .content2 .line_box .block.nondot::after {
+        content: '';
+        width: 2px;
+        height: 80px;
+        background-color: #000;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        z-index: 10;
+      }
+
+      .content2 .line_box .block:last-child::after {
+        content: none;
+      }
+
+      .content2 .line_box .block .txt {
+        position: absolute;
+        top: -5px;
+        left: 0;
+        transform: translate(-50%, -100%);
+      }
+
+      .content2 .line_box .block .txt.right {
+        transform: translate(-23%, -100%);
+      }
+
+      .content2 .line_box .block .txt.right2 {
+        transform: translate(21%, -100%);
+      }
+
+      .content2 .line_box .block .txt.bottom {
+        top: auto;
+        bottom: -5px;
+        transform: translate(-50%, 100%);
+      }
+
+      .content2 .line_box .block .txt.bottom.right {
+        top: auto;
+        bottom: -5px;
+        transform: translate(21%, 100%);
+      }
+
+      .content2 .line_box .block .txt span {
+        white-space: nowrap;
+        font-size: 30px;
+        line-height: 36px;
+      }
+
+      .step2 .content2 {
+        gap: 160px;
+      }
+
+      .step2 .content2 .left_box .img_box {
+        position: relative;
+      }
+
+      .step2 .content2 .left_box .img_box .text_box {
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        gap: 35px;
+      }
+
+      .step2 .content2 .left_box .img_box .text_box .line {
+        width: 100%;
+        position: relative;
+      }
+
+      .step2 .content2 .left_box .img_box .text_box .line .step2_point1 {
+        top: 50%;
+        left: 50%;
+      }
+
+      .step2 .content2 .left_box .img_box .text_box .line .txt:not(.txt3) {
+        width: 50%;
+      }
+
+      .step2 .content2 .left_box .img_box .text_box .line .txt span {
+        font-size: 33px;
+      }
+
+      .step2 .content2 .right_box .img_box {
+        position: relative;
+      }
+
+      .step2 .content2 .right_box .img_box .img:not(.img1) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .step2 .content2 .right_box .img_box .img1 {
+        position: relative;
+        z-index: 10;
+      }
+
+      .step2 .step2_btm_box {
+        margin-top: 108px;
+        align-items: flex-start;
+        gap: 90px;
+      }
+
+      .step2 .step2_btm_box table tr td {
+        line-height: 1;
+      }
+
+      .step2 .step2_btm_box table tr:not(.tr1) td {
+        padding-top: 20px;
+      }
+
+      .step2 .step2_btm_box table tr td:last-child {
+        padding-left: 15px;
+      }
+
+      .step2 .step2_btm_box .right_box {
+        width: 385px;
+        height: 118px;
+        background-color: rgba(255, 184, 239, 1);
+        border-radius: 20px;
+      }
+
+      @keyframes blinking2 {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      .blinking2 {
+        animation: 1.4s blinking2 infinite;
+      }
+
+      @keyframes bgBlink {
+        0% {
+          background-color: rgba(255, 255, 255, 1);
+        }
+
+        50% {
+          background-color: rgba(255, 226, 121, 1);
+        }
+
+        100% {
+          background-color: rgba(255, 255, 255, 1);
+        }
+      }
+
+      .content2 .line_box .block.yellow.bgBlink {
+        animation: 1.4s bgBlink infinite;
+      }
+
+      @keyframes bgBlink2 {
+        0% {
+          background-color: rgba(255, 255, 255, 1);
+        }
+
+        50% {
+          background-color: rgba(156, 202, 228, 1);
+        }
+
+        100% {
+          background-color: rgba(255, 255, 255, 1);
+        }
+      }
+
+      .content2 .line_box .block.blue.bgBlink {
+        animation: 1.4s bgBlink2 infinite;
+      }
+
+      /* 3p */
+      .step3 .main__container {
+        padding-bottom: 280px;
+        position: relative;
+        gap: 90px;
+      }
+
+      .step3 .content2 .line_box .block {
+        width: 40px;
+        height: 100px;
+      }
+
+      .step3 .content2 .line_box .block:not(.nondot)::after {
+        height: 100px;
+      }
+
+      .step3 .content2 .line_box .block.nondot::after {
+        height: 100px;
+      }
+
+      .step3 .step3_right_box .text_box {
+        width: 100%;
+        height: 104px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .step3 .step3_right_box .text_box .block1 {
+        width: 240px;
+      }
+
+      .step3 .step3_right_box .text_box .block2,
+      .step3 .step3_right_box .text_box .block5,
+      .step3 .step3_right_box .text_box .block7,
+      .step3 .step3_right_box .text_box .block8 {
+        width: 80px;
+      }
+
+      .step3 .step3_right_box .text_box .block3 {
+        width: 160px;
+      }
+
+      .step3 .step3_right_box .text_box .block4,
+      .step3 .step3_right_box .text_box .block6 {
+        width: 120px;
+      }
+
+      .step3 .step3_right_box .text_box span {
+        font-size: 33px;
+        line-height: 1;
+      }
+
+      .step3 .step3_right_box .text_box .block5 span {
+        font-size: 25px;
+      }
+
+      .content2 .arrow {
+        width: 480px;
+        aspect-ratio: 498/45;
+        background-image: url('../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP3_IMG1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+      }
+
+      .content2 .arrow span {
+        font-size: 33px;
+        position: absolute;
+        left: 50%;
+      }
+
+      .content2 .arrow1 {
+        top: -55px;
+        left: 0;
+        transform: translateY(-100%);
+      }
+
+      .content2 .arrow1 span {
+        top: 10px;
+        transform: translate(-50%, -100%);
+      }
+
+      .content2 .arrow2 {
+        bottom: -55px;
+        right: 0;
+        transform: translateY(100%);
+      }
+
+      .content2 .arrow2 span {
+        bottom: 5px;
+        transform: translate(-50%, 100%);
+      }
+
+      .step3 .bubble_box .bubble {
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+      }
+
+      .step3 .bubble_box .bubble1 {
+        width: 467px;
+        height: 312px;
+        background-image: url('../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP3_BUBBLE1.png');
+        left: 512px;
+        bottom: 203px;
+      }
+
+      .step3 .bubble_box .bubble2 {
+        width: 506px;
+        height: 309px;
+        background-image: url('../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP3_BUBBLE2.png');
+        right: 165px;
+        bottom: 120px;
+      }
+
+      .step3 .bubble_box .bubble .txt_container {
+        width: 190px;
+      }
+
+      .step3 .bubble_box .bubble1 .txt_container {
+        position: absolute;
+        bottom: 20px;
+        left: 48px;
+      }
+
+      .step3 .bubble_box .bubble2 .txt_container {
+        position: absolute;
+        bottom: 105px;
+        left: 61px;
+      }
+
+      .step3 .step3_answer_box1 {
+        position: absolute;
+        right: 420px;
+        bottom: 20px;
+      }
+
+      .step3 .step3_answer_box1 .answer {
+        width: 296px;
+        height: 85px;
+      }
+
+      .step3 .step3_answer_box1 .answer + .answer {
+        margin-left: 60px;
+      }
+      
+      /* 4p */
+      .step4_top_box {
+        margin-top: -65px;
+        align-items: flex-start;
+        gap: 280px;
+      }
+
+      .step4_top_box .text_box {
+        font-size: 36px;
+        text-align: center;
+      }
+
+      .step4_top_box .text_box span {
+        line-height: 1.2;
+      }
+
+      .step4_top_box .img_box {
+        margin-top: 13px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      .step4_mid_box {
+        gap: 140px;
+      }
+
+      .step4_mid_box .content2 .line_box .block {
+        width: 35px;
+        height: 75px;
+      }
+
+      .step4_mid_box .content2 .line_box .block.skyblue.on {
+        background-color: rgba(189, 225, 246, 1);
+      }
+
+      .step4_mid_box .content2 .line_box .block.lightpink.on {
+        background-color: rgba(247, 212, 230, 1);
+      }
+
+      @keyframes bgBlink3 {
+        0% {
+          background-color: rgba(255, 255, 255, 1);
+        }
+
+        50% {
+          background-color: rgba(189, 225, 246, 1);
+        }
+
+        100% {
+          background-color: rgba(255, 255, 255, 1);
+        }
+      }
+
+      .step4_mid_box .content2 .line_box .block.skyblue.bgBlink {
+        animation: 1.4s bgBlink3 infinite;
+      }
+
+      @keyframes bgBlink4 {
+        0% {
+          background-color: rgba(255, 255, 255, 1);
+        }
+
+        50% {
+          background-color: rgba(247, 212, 230, 1);
+        }
+
+        100% {
+          background-color: rgba(255, 255, 255, 1);
+        }
+      }
+
+      .step4_mid_box .content2 .line_box .block.lightpink.bgBlink {
+        animation: 1.4s bgBlink4 infinite;
+      }
+
+      .step4_mid_box .content2 .line_box .block:not(.nondot)::after {
+        height: 75px;
+      }
+
+      .step4_mid_box .content2 .line_box .block.nondot::after {
+        height: 75px;
+      }
+
+      .step4_mid_box .content2 .arrow {
+        width: 420px;
+        aspect-ratio: 498/45;
+        background-image: url('../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP3_IMG1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+      }
+
+      .step4_mid_box .content2 .arrow1 {
+        top: -40px;
+      }
+
+      .step4_mid_box .content2 .arrow2 {
+        bottom: -40px;
+      }
+
+      .step4_mid_box .content2_2 {
+        margin-top: 240px;
+      }
+
+      .step4_mid_box .content2 .bubble1 {
+        position: absolute;
+        bottom: -85px;
+        right: 0;
+        transform: translate(50%, 100%);
+      }
+
+      .step4_mid_box .content2 .bubble2 {
+        position: absolute;
+        bottom: -17px;
+        right: -10px;
+        transform: translateY(100%);
+      }
+
+      .step4_mid_box .content2 .bubble img {
+        object-fit: none;
+      }
+
+      .step4_btm_box {
+        margin-top: 55px;
+      }
+
+      /* 5p */
+      .step5 .full_content_comm {
+        justify-content: flex-start;
+      }
+
+      .step5 .step4_top_box .img_box {
+        width: 205px;
+        aspect-ratio: 1/1;
+      }
+
+      .step5 .step4_mid_box .content2 .line_box .block {
+        width: 25px;
+        height: 60px;
+      }
+
+      .step5 .content2 .line_box .block .txt {
+        top: 2px;
+      }
+
+      .step5 .content2 .line_box .block .txt.bottom {
+        bottom: 0;
+      }
+
+      .step5 .step4_mid_box .content2 .line_box .block span {
+        font-size: 22px;
+      }
+
+      .step5 .step4_mid_box .content2 .line_box .block:not(.nondot)::after {
+        height: 60px;
+      }
+
+      .step5 .step4_mid_box .content2 .line_box .block.nondot::after {
+        height: 60px;
+      }
+
+      .step5 .step4_mid_box .content2 .arrow {
+        width: 300px;
+      }
+
+      .step5 .step4_mid_box .content2 .arrow1 {
+        top: -30px;
+      }
+
+      .step5 .step4_mid_box .content2 .arrow2 {
+        bottom: -25px;
+      }
+
+      .step5 .content2 .arrow span {
+        font-size: 26px;
+      }
+
+      .step5 .step4_mid_box .content2_2 {
+        margin-top: 187px;
+      }
+
+      .step5 .step4_btm_box {
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div
+        id="contents-wrap"
+        class="concept"
+        style="position: absolute; display: flex"
+      ></div>
+      <div id="contents-main" style="display: none" class="concept-warp">
+        <div class="concept-warp_inner">
+          <header class="header" style="visibility: visible">
+            <div class="header_title">
+              <button class="sound-btn" onclick="titleSound()"></button>
+              <h3></h3>
+            </div>
+            <p class="header_page"><span>1</span>/2</p>
+          </header>
+          <main class="main">
+            <div class="main_content">
+              <!-- 콘텐츠영역 -->
+              <div class="step step1" style="display: block">
+                <!-- step1 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step1_top_box">
+                    <div class="img_box">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP1_IMG1.png?=v1" alt="하루 계획표">
+
+                      <div class="time time1"><span>1</span></div>
+                      <div class="time time2"><span>2</span></div>
+                      <div class="time time3"><span>3</span></div>
+                      <div class="time time4"><span>4</span></div>
+                      <div class="time time5"><span>5</span></div>
+                      <div class="time time6"><span>6</span></div>
+                      <div class="time time7"><span>7</span></div>
+                      <div class="time time8"><span>8</span></div>
+                      <div class="time time9"><span>9</span></div>
+                      <div class="time time10"><span>10</span></div>
+                      <div class="time time11"><span>11</span></div>
+                      <div class="time time12"><span>12</span></div>
+                      <div class="time time13"><span>1</span></div>
+                      <div class="time time14"><span>2</span></div>
+                      <div class="time time15"><span>3</span></div>
+                      <div class="time time16"><span>4</span></div>
+                      <div class="time time17"><span>5</span></div>
+                      <div class="time time18"><span>6</span></div>
+                      <div class="time time19"><span>7</span></div>
+                      <div class="time time20"><span>8</span></div>
+                      <div class="time time21"><span>9</span></div>
+                      <div class="time time22"><span>10</span></div>
+                      <div class="time time23"><span>11</span></div>
+                      <div class="time time24"><span>12</span></div> 
+                    </div>
+
+                    <div class="character_txt">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP1_CHAR_HINT.png" alt="캐릭터 말풍선" />
+
+                      <div class="txt_container txt_container3 two"><span>?</span></div>
+
+
+                      <div class="step1_answer_box2 answer_box v_hidden">
+                        <div class="answer_list">
+                          <div class="answer answer1">12</div>
+                          <div class="answer answer2">24</div>
+                        </div>
+                      </div>
+
+                      <div class="step1_point step1_point1 img_point__wrap dp_none">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP1_STAR1.png" />
+                      </div>
+                    </div>
+                    <div class="character"></div>
+                  </div>
+                  <div class="step1_btm_box dp_none">
+                    <div class="table_box">
+                      <div class="tr tr1 dp_flex">
+                        <div class="td td1 dp_flex">
+                          <div class="txt">
+                            <span>하는 일</span>
+                          </div>
+                        </div>
+                        <div class="td td2 dp_flex">
+                          <div class="txt">
+                            <span>체험 준비</span>
+                          </div>
+                        </div>
+                        <div class="td td3 dp_flex">
+                          <div class="txt">
+                            <span>불국사</span>
+                          </div>
+                        </div>
+                        <div class="td td4 dp_flex">
+                          <div class="txt">
+                            <span>대릉원</span>
+                          </div>
+                        </div>
+                        <div class="td td5 dp_flex">
+                          <div class="txt">
+                            <span>첨성대</span>
+                          </div>
+                        </div>
+                        <div class="td td6 dp_flex">
+                          <div class="txt">
+                            <span>월정교</span>
+                          </div>
+                        </div>
+                        <div class="td td7 dp_flex">
+                          <div class="txt">
+                            <span>일기 쓰기</span>
+                          </div>
+                        </div>
+                        <div class="td td8 dp_flex">
+                          <div class="txt">
+                            <span>잠</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tr tr2 dp_flex">
+                        <div class="td td1 dp_flex dp_flex_column">
+                          <div class="txt">
+                            <span>걸린 시간<br>(시간)</span>
+                          </div>
+                        </div>
+                        <div class="td td2 dp_flex dp_flex_column">
+                          <div class="txt v_hidden">
+                            <span>2</span>
+                          </div>
+                        </div>
+                        <div class="td td3 dp_flex dp_flex_column">
+                          <div class="txt v_hidden">
+                            <span>4</span>
+                          </div>
+                        </div>
+                        <div class="td td4 dp_flex dp_flex_column">
+                          <div class="txt v_hidden">
+                            <span>3</span>
+                          </div>
+                        </div>
+                        <div class="td td5 dp_flex dp_flex_column">
+                          <div class="txt v_hidden">
+                            <span>2</span>
+                          </div>
+                        </div>
+                        <div class="td td6 dp_flex dp_flex_column">
+                          <div class="txt_container txt_container1"><span>?</span></div>
+                        </div>
+                        <div class="td td7 dp_flex dp_flex_column">
+                          <div class="txt_container txt_container2"><span>?</span></div>
+                        </div>
+                        <div class="td td8 dp_flex dp_flex_column">
+                          <div class="txt">
+                            <span>8</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="step1_answer_box1 answer_box v_hidden">
+                      <div class="answer_list">
+                        <div class="answer answer1">2</div>
+                        <div class="answer answer2">3</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step2" style="display: block">
+                <!-- step2 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step1_top_box">
+                    <div class="content content1">
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP1_IMG1.png?=v1" alt="하루 계획표">
+  
+                        <div class="time time1"><span>1</span></div>
+                        <div class="time time2"><span>2</span></div>
+                        <div class="time time3"><span>3</span></div>
+                        <div class="time time4"><span>4</span></div>
+                        <div class="time time5"><span>5</span></div>
+                        <div class="time time6"><span>6</span></div>
+                        <div class="time time7"><span>7</span></div>
+                        <div class="time time8"><span>8</span></div>
+                        <div class="time time9"><span>9</span></div>
+                        <div class="time time10"><span>10</span></div>
+                        <div class="time time11"><span>11</span></div>
+                        <div class="time time12"><span>12</span></div>
+                        <div class="time time13"><span>1</span></div>
+                        <div class="time time14"><span>2</span></div>
+                        <div class="time time15"><span>3</span></div>
+                        <div class="time time16"><span>4</span></div>
+                        <div class="time time17"><span>5</span></div>
+                        <div class="time time18"><span>6</span></div>
+                        <div class="time time19"><span>7</span></div>
+                        <div class="time time20"><span>8</span></div>
+                        <div class="time time21"><span>9</span></div>
+                        <div class="time time22"><span>10</span></div>
+                        <div class="time time23"><span>11</span></div>
+                        <div class="time time24"><span>12</span></div> 
+                      </div>
+                    </div>
+                    <div class="content content2 dp_flex dp_none">
+                      <div class="left_box">
+                        <div class="line_box dp_flex">
+                          <div class="block block1 yellow">
+                            <div class="txt">
+                              <span>12</span>
+                            </div>
+                          </div>
+                          <div class="block block2 yellow">
+                            <div class="txt">
+                              <span>1</span>
+                            </div>
+                          </div>
+                          <div class="block block3 yellow">
+                            <div class="txt">
+                              <span>2</span>
+                            </div>
+                          </div>
+                          <div class="block block4 yellow">
+                            <div class="txt">
+                              <span>3</span>
+                            </div>
+                          </div>
+                          <div class="block block5 yellow">
+                            <div class="txt">
+                              <span>4</span>
+                            </div>
+                          </div>
+                          <div class="block block6 yellow">
+                            <div class="txt">
+                              <span>5</span>
+                            </div>
+                          </div>
+                          <div class="block block7 yellow">
+                            <div class="txt">
+                              <span>6</span>
+                            </div>
+                          </div>
+                          <div class="block block8 yellow">
+                            <div class="txt">
+                              <span>7</span>
+                            </div>
+                          </div>
+                          <div class="block block9 yellow">
+                            <div class="txt">
+                              <span>8</span>
+                            </div>
+                          </div>
+                          <div class="block block10 yellow">
+                            <div class="txt">
+                              <span>9</span>
+                            </div>
+                          </div>
+                          <div class="block block11 yellow">
+                            <div class="txt">
+                              <span>10</span>
+                            </div>
+                          </div>
+                          <div class="block block12 nondot yellow">
+                            <div class="txt">
+                              <span>11</span>
+                            </div>
+                          </div>
+                          <div class="block block13 blue">
+                            <div class="txt right">
+                              <span>12(시)</span>
+                            </div>
+                          </div>
+                          <div class="block block14 blue">
+                            <div class="txt bottom">
+                              <span>1</span>
+                            </div>
+                          </div>
+                          <div class="block block15 blue">
+                            <div class="txt bottom">
+                              <span>2</span>
+                            </div>
+                          </div>
+                          <div class="block block16 blue">
+                            <div class="txt bottom">
+                              <span>3</span>
+                            </div>
+                          </div>
+                          <div class="block block17 blue">
+                            <div class="txt bottom">
+                              <span>4</span>
+                            </div>
+                          </div>
+                          <div class="block block18 blue">
+                            <div class="txt bottom">
+                              <span>5</span>
+                            </div>
+                          </div>
+                          <div class="block block19 blue">
+                            <div class="txt bottom">
+                              <span>6</span>
+                            </div>
+                          </div>
+                          <div class="block block20 blue">
+                            <div class="txt bottom">
+                              <span>7</span>
+                            </div>
+                          </div>
+                          <div class="block block21 blue">
+                            <div class="txt bottom">
+                              <span>8</span>
+                            </div>
+                          </div>
+                          <div class="block block22 blue">
+                            <div class="txt bottom">
+                              <span>9</span>
+                            </div>
+                          </div>
+                          <div class="block block23 blue">
+                            <div class="txt bottom">
+                              <span>10</span>
+                            </div>
+                          </div>
+                          <div class="block block24 nondot blue">
+                            <div class="txt bottom">
+                              <span>11</span>
+                            </div>
+                            <div class="txt bottom right">
+                              <span>12(시)</span>
+                            </div>
+                          </div>
+  
+                          <div class="point v_hidden"></div>
+                        </div>
+                        <div class="img_box">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP2_IMG1.png" alt="선">
+
+                          <div class="text_box dp_flex dp_flex_column">
+                            <div class="line line1 dp_flex">
+                              <div class="txt txt1 dp_flex">
+                                <span>12시간(오전)</span>
+                              </div>
+                              <div class="txt txt2 dp_flex">
+                                <span>12시간(오후)</span>
+                              </div>
+                            </div>
+                            <div class="line line2 dp_flex">
+                              <div class="txt txt3">
+                                <span>24시간(1일)</span>
+                              </div>
+
+                              <div class="step2_point step2_point1  img_point__wrap dp_none">
+                                <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP2_STAR1.png" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="right_box">
+                        <div class="img_box">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP2_IMG2.png" class="img img1" alt="하루 계획표">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP2_IMG3.png" class="img img2" alt="노란색 망">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP2_IMG4.png" class="img img3" alt="하늘색 망">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step2_btm_box dp_flex">
+                    <div class="left_box">
+                      <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                          <tr class="tr tr1">
+                            <td class="td td1">
+                              <span class="v_hidden">전날</span>
+                            </td>
+                            <td class="td td2">
+                              <span class="v_hidden">밤 12시부터 낮 12시까지를 <span class="point point1">오전</span>이라고 합니다.</span>
+                            </td>
+                          </tr>
+                          <tr class="tr tr2">
+                            <td class="td td1">
+                              <span>&nbsp;</span>
+                            </td>
+                            <td class="td td2">
+                              <span class="v_hidden">낮 12시부터 밤 12시까지를 <span class="point point2">오후</span>라고 합니다.</span>
+                            </td>
+                          </tr>
+                          <tr class="tr tr3">
+                            <td class="td td1">
+                              <span>&nbsp;</span>
+                            </td>
+                            <td class="td td2">
+                              <span class="v_hidden">하루는 <span class="point point3">24시간</span>입니다.</span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="right_box dp_flex v_hidden">
+                      <div class="txt">
+                        <span>1일 = 24시간</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step3" style="display: none">
+                <!-- step3 시작부분 -->
+                <div class="main__container dp_flex">
+                  <div class="step3_left_box">
+                    <div class="step1_top_box">
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP1_IMG1.png?=v1" alt="하루 계획표">
+
+                        <div class="time time1"><span>1</span></div>
+                        <div class="time time2"><span>2</span></div>
+                        <div class="time time3"><span>3</span></div>
+                        <div class="time time4"><span>4</span></div>
+                        <div class="time time5"><span>5</span></div>
+                        <div class="time time6"><span>6</span></div>
+                        <div class="time time7"><span>7</span></div>
+                        <div class="time time8"><span>8</span></div>
+                        <div class="time time9"><span>9</span></div>
+                        <div class="time time10"><span>10</span></div>
+                        <div class="time time11"><span>11</span></div>
+                        <div class="time time12"><span>12</span></div>
+                        <div class="time time13"><span>1</span></div>
+                        <div class="time time14"><span>2</span></div>
+                        <div class="time time15"><span>3</span></div>
+                        <div class="time time16"><span>4</span></div>
+                        <div class="time time17"><span>5</span></div>
+                        <div class="time time18"><span>6</span></div>
+                        <div class="time time19"><span>7</span></div>
+                        <div class="time time20"><span>8</span></div>
+                        <div class="time time21"><span>9</span></div>
+                        <div class="time time22"><span>10</span></div>
+                        <div class="time time23"><span>11</span></div>
+                        <div class="time time24"><span>12</span></div> 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step3_right_box">
+                    <div class="content content2">
+                      <div class="line_box dp_flex">
+                        <div class="block block1 blue">
+                          <div class="txt">
+                            <span>12</span>
+                          </div>
+                        </div>
+                        <div class="block block2 blue">
+                          <div class="txt">
+                            <span>1</span>
+                          </div>
+                        </div>
+                        <div class="block block3 blue">
+                          <div class="txt">
+                            <span>2</span>
+                          </div>
+                        </div>
+                        <div class="block block4 blue">
+                          <div class="txt">
+                            <span>3</span>
+                          </div>
+                        </div>
+                        <div class="block block5 blue">
+                          <div class="txt">
+                            <span>4</span>
+                          </div>
+                        </div>
+                        <div class="block block6 blue">
+                          <div class="txt">
+                            <span>5</span>
+                          </div>
+                        </div>
+                        <div class="block block7 yellow">
+                          <div class="txt">
+                            <span>6</span>
+                          </div>
+                        </div>
+                        <div class="block block8 yellow">
+                          <div class="txt">
+                            <span>7</span>
+                          </div>
+                        </div>
+                        <div class="block block9 pink">
+                          <div class="txt">
+                            <span>8</span>
+                          </div>
+                        </div>
+                        <div class="block block10 pink">
+                          <div class="txt">
+                            <span>9</span>
+                          </div>
+                        </div>
+                        <div class="block block11 pink">
+                          <div class="txt">
+                            <span>10</span>
+                          </div>
+                        </div>
+                        <div class="block block12 nondot pink">
+                          <div class="txt">
+                            <span>11</span>
+                          </div>
+                        </div>
+                        <div class="block block13 green">
+                          <div class="txt right">
+                            <span>12(시)</span>
+                          </div>
+                        </div>
+                        <div class="block block14 green">
+                          <div class="txt bottom">
+                            <span>1</span>
+                          </div>
+                        </div>
+                        <div class="block block15 green">
+                          <div class="txt bottom">
+                            <span>2</span>
+                          </div>
+                        </div>
+                        <div class="block block16 purple">
+                          <div class="txt bottom">
+                            <span>3</span>
+                          </div>
+                        </div>
+                        <div class="block block17 purple">
+                          <div class="txt bottom">
+                            <span>4</span>
+                          </div>
+                        </div>
+                        <div class="block block18 green2">
+                          <div class="txt bottom">
+                            <span>5</span>
+                          </div>
+                        </div>
+                        <div class="block block19 green2">
+                          <div class="txt bottom">
+                            <span>6</span>
+                          </div>
+                        </div>
+                        <div class="block block20 green2">
+                          <div class="txt bottom">
+                            <span>7</span>
+                          </div>
+                        </div>
+                        <div class="block block21 orange">
+                          <div class="txt bottom">
+                            <span>8</span>
+                          </div>
+                        </div>
+                        <div class="block block22 orange">
+                          <div class="txt bottom">
+                            <span>9</span>
+                          </div>
+                        </div>
+                        <div class="block block23 blue2">
+                          <div class="txt bottom">
+                            <span>10</span>
+                          </div>
+                        </div>
+                        <div class="block block24 nondot blue2">
+                          <div class="txt bottom">
+                            <span>11</span>
+                          </div>
+                          <div class="txt bottom right">
+                            <span>12(시)</span>
+                          </div>
+                        </div>
+
+                        <div class="point v_hidden"></div>
+                      </div>
+
+                      <div class="text_box dp_flex">
+                        <div class="block block1 dp_flex">
+                          <div class="txt">
+                            <span>잠</span>
+                          </div>
+                        </div>
+                        <div class="block block2 dp_flex">
+                          <div class="txt">
+                            <span>
+                              체험<br>
+                              준비
+                            </span>
+                          </div>
+                        </div>
+                        <div class="block block3 dp_flex">
+                          <div class="txt">
+                            <span>불국사</span>
+                          </div>
+                        </div>
+                        <div class="block block4 dp_flex">
+                          <div class="txt">
+                            <span>대릉원</span>
+                          </div>
+                        </div>
+                        <div class="block block5 dp_flex">
+                          <div class="txt">
+                            <span>첨성대</span>
+                          </div>
+                        </div>
+                        <div class="block block6 dp_flex">
+                          <div class="txt">
+                            <span>월정교</span>
+                          </div>
+                        </div>
+                        <div class="block block7 dp_flex">
+                          <div class="txt">
+                            <span>
+                              일기<br>
+                              쓰기
+                            </span>
+                          </div>
+                        </div>
+                        <div class="block block8 dp_flex">
+                          <div class="txt">
+                            <span>잠</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="arrow arrow1">
+                        <span>오전</span>
+                      </div>
+                      <div class="arrow arrow2">
+                        <span>오후</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bubble_box v_hidden">
+                    <div class="bubble bubble1">
+                      <div class="txt_container txt_container1"><span>?</span></div>
+                    </div>
+                    <div class="bubble bubble2">
+                      <div class="txt_container txt_container2"><span>?</span></div>
+                    </div>
+                  </div>
+
+                  <div class="step3_answer_box1 answer_box v_hidden">
+                    <div class="answer_list">
+                      <div class="answer answer1">월정교</div>
+                      <div class="answer answer2">불국사</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step4" style="display: none">
+                <!-- step4 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step4_top_box dp_flex">
+                    <div class="left_box dp_flex dp_flex_column">
+                      <div class="text_box">
+                        <span>
+                          출발한 시각: <br>
+                          첫날 오전 9시
+                        </span>
+                      </div>
+
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP4_IMG1.png" alt="9시 시계">
+                      </div>
+                    </div>
+                    <div class="right_box dp_flex dp_flex_column">
+                      <div class="text_box">
+                        <span>
+                          도착한 시각: <br>
+                          다음날 오전 11시
+                        </span>
+                      </div>
+
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP4_IMG2.png" alt="11시 시계">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step4_mid_box dp_flex v_hidden">
+                    <div class="content content2 content2_1">
+                      <div class="line_box dp_flex">
+                        <div class="block block1">
+                          <div class="txt">
+                            <span>12</span>
+                          </div>
+                        </div>
+                        <div class="block block2">
+                          <div class="txt">
+                            <span>1</span>
+                          </div>
+                        </div>
+                        <div class="block block3">
+                          <div class="txt">
+                            <span>2</span>
+                          </div>
+                        </div>
+                        <div class="block block4">
+                          <div class="txt">
+                            <span>3</span>
+                          </div>
+                        </div>
+                        <div class="block block5">
+                          <div class="txt">
+                            <span>4</span>
+                          </div>
+                        </div>
+                        <div class="block block6">
+                          <div class="txt">
+                            <span>5</span>
+                          </div>
+                        </div>
+                        <div class="block block7">
+                          <div class="txt">
+                            <span>6</span>
+                          </div>
+                        </div>
+                        <div class="block block8">
+                          <div class="txt">
+                            <span>7</span>
+                          </div>
+                        </div>
+                        <div class="block block9">
+                          <div class="txt">
+                            <span>8</span>
+                          </div>
+                        </div>
+                        <div class="block block10 skyblue">
+                          <div class="txt">
+                            <span>9</span>
+                          </div>
+                        </div>
+                        <div class="block block11 skyblue">
+                          <div class="txt">
+                            <span>10</span>
+                          </div>
+                        </div>
+                        <div class="block block12 nondot skyblue">
+                          <div class="txt">
+                            <span>11</span>
+                          </div>
+                        </div>
+                        <div class="block block13 skyblue">
+                          <div class="txt right">
+                            <span>12(시)</span>
+                          </div>
+                        </div>
+                        <div class="block block14 skyblue">
+                          <div class="txt bottom">
+                            <span>1</span>
+                          </div>
+                        </div>
+                        <div class="block block15 skyblue">
+                          <div class="txt bottom">
+                            <span>2</span>
+                          </div>
+                        </div>
+                        <div class="block block16 skyblue">
+                          <div class="txt bottom">
+                            <span>3</span>
+                          </div>
+                        </div>
+                        <div class="block block17 skyblue">
+                          <div class="txt bottom">
+                            <span>4</span>
+                          </div>
+                        </div>
+                        <div class="block block18 skyblue">
+                          <div class="txt bottom">
+                            <span>5</span>
+                          </div>
+                        </div>
+                        <div class="block block19 skyblue">
+                          <div class="txt bottom">
+                            <span>6</span>
+                          </div>
+                        </div>
+                        <div class="block block20 skyblue">
+                          <div class="txt bottom">
+                            <span>7</span>
+                          </div>
+                        </div>
+                        <div class="block block21 skyblue">
+                          <div class="txt bottom">
+                            <span>8</span>
+                          </div>
+                        </div>
+                        <div class="block block22 skyblue">
+                          <div class="txt bottom">
+                            <span>9</span>
+                          </div>
+                        </div>
+                        <div class="block block23 skyblue">
+                          <div class="txt bottom">
+                            <span>10</span>
+                          </div>
+                        </div>
+                        <div class="block block24 nondot skyblue">
+                          <div class="txt bottom">
+                            <span>11</span>
+                          </div>
+                          <div class="txt bottom right">
+                            <span>12(시)</span>
+                          </div>
+                        </div>
+
+                        <div class="point v_hidden"></div>
+                      </div>
+
+                      <div class="arrow arrow1">
+                        <span>오전</span>
+                      </div>
+                      <div class="arrow arrow2">
+                        <span>오후</span>
+                      </div>
+
+                      <div class="bubble bubble1 v_hidden">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP4_BUBBLE1.png" alt="24시간">
+                      </div>
+                    </div>
+                    <div class="content content2 content2_2">
+                      <div class="line_box dp_flex">
+                        <div class="block block1 skyblue">
+                          <div class="txt">
+                            <span>12</span>
+                          </div>
+                        </div>
+                        <div class="block block2 skyblue">
+                          <div class="txt">
+                            <span>1</span>
+                          </div>
+                        </div>
+                        <div class="block block3 skyblue">
+                          <div class="txt">
+                            <span>2</span>
+                          </div>
+                        </div>
+                        <div class="block block4 skyblue">
+                          <div class="txt">
+                            <span>3</span>
+                          </div>
+                        </div>
+                        <div class="block block5 skyblue">
+                          <div class="txt">
+                            <span>4</span>
+                          </div>
+                        </div>
+                        <div class="block block6 skyblue">
+                          <div class="txt">
+                            <span>5</span>
+                          </div>
+                        </div>
+                        <div class="block block7 skyblue">
+                          <div class="txt">
+                            <span>6</span>
+                          </div>
+                        </div>
+                        <div class="block block8 skyblue">
+                          <div class="txt">
+                            <span>7</span>
+                          </div>
+                        </div>
+                        <div class="block block9 skyblue">
+                          <div class="txt">
+                            <span>8</span>
+                          </div>
+                        </div>
+                        <div class="block block10 lightpink">
+                          <div class="txt">
+                            <span>9</span>
+                          </div>
+                        </div>
+                        <div class="block block11 lightpink">
+                          <div class="txt">
+                            <span>10</span>
+                          </div>
+                        </div>
+                        <div class="block block12 nondot">
+                          <div class="txt">
+                            <span>11</span>
+                          </div>
+                          <div class="txt right2">
+                            <span>12(시)</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="arrow arrow1">
+                        <span>오전</span>
+                      </div>
+
+                      <div class="bubble bubble2 v_hidden">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP4_BUBBLE2.png" alt="2시간">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step4_btm_box v_hidden">
+                    <div class="calc_arrow_comm">
+                      <div class="txt txt1">여행한 시간은 26시간입니다.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step5" style="display: none">
+                <!-- step5 시작부분 -->
+                <div class="main__container">
+                  <div class="full_content_comm dp_flex dp_flex_column">
+                    <div class="step4_top_box dp_flex">
+                      <div class="left_box dp_flex dp_flex_column">
+                        <div class="text_box">
+                          <span>
+                            출발한 시각: <br>
+                            첫날 오전 9시
+                          </span>
+                        </div>
+
+                        <div class="img_box">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP5_IMG1.png" alt="9시 시계">
+                        </div>
+                      </div>
+                      <div class="right_box dp_flex dp_flex_column">
+                        <div class="text_box">
+                          <span>
+                            도착한 시각: <br>
+                            다음날 오전 11시
+                          </span>
+                        </div>
+
+                        <div class="img_box">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP5_IMG2.png" alt="11시 시계">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="step4_mid_box dp_flex">
+                      <div class="content content2 content2_1">
+                        <div class="line_box dp_flex">
+                          <div class="block block1">
+                            <div class="txt">
+                              <span>12</span>
+                            </div>
+                          </div>
+                          <div class="block block2">
+                            <div class="txt">
+                              <span>1</span>
+                            </div>
+                          </div>
+                          <div class="block block3">
+                            <div class="txt">
+                              <span>2</span>
+                            </div>
+                          </div>
+                          <div class="block block4">
+                            <div class="txt">
+                              <span>3</span>
+                            </div>
+                          </div>
+                          <div class="block block5">
+                            <div class="txt">
+                              <span>4</span>
+                            </div>
+                          </div>
+                          <div class="block block6">
+                            <div class="txt">
+                              <span>5</span>
+                            </div>
+                          </div>
+                          <div class="block block7">
+                            <div class="txt">
+                              <span>6</span>
+                            </div>
+                          </div>
+                          <div class="block block8">
+                            <div class="txt">
+                              <span>7</span>
+                            </div>
+                          </div>
+                          <div class="block block9">
+                            <div class="txt">
+                              <span>8</span>
+                            </div>
+                          </div>
+                          <div class="block block10 skyblue on">
+                            <div class="txt">
+                              <span>9</span>
+                            </div>
+                          </div>
+                          <div class="block block11 skyblue on">
+                            <div class="txt">
+                              <span>10</span>
+                            </div>
+                          </div>
+                          <div class="block block12 nondot skyblue on">
+                            <div class="txt">
+                              <span>11</span>
+                            </div>
+                          </div>
+                          <div class="block block13 skyblue on">
+                            <div class="txt right">
+                              <span>12(시)</span>
+                            </div>
+                          </div>
+                          <div class="block block14 skyblue on">
+                            <div class="txt bottom">
+                              <span>1</span>
+                            </div>
+                          </div>
+                          <div class="block block15 skyblue on">
+                            <div class="txt bottom">
+                              <span>2</span>
+                            </div>
+                          </div>
+                          <div class="block block16 skyblue on">
+                            <div class="txt bottom">
+                              <span>3</span>
+                            </div>
+                          </div>
+                          <div class="block block17 skyblue on">
+                            <div class="txt bottom">
+                              <span>4</span>
+                            </div>
+                          </div>
+                          <div class="block block18 skyblue on">
+                            <div class="txt bottom">
+                              <span>5</span>
+                            </div>
+                          </div>
+                          <div class="block block19 skyblue on">
+                            <div class="txt bottom">
+                              <span>6</span>
+                            </div>
+                          </div>
+                          <div class="block block20 skyblue on">
+                            <div class="txt bottom">
+                              <span>7</span>
+                            </div>
+                          </div>
+                          <div class="block block21 skyblue on">
+                            <div class="txt bottom">
+                              <span>8</span>
+                            </div>
+                          </div>
+                          <div class="block block22 skyblue on">
+                            <div class="txt bottom">
+                              <span>9</span>
+                            </div>
+                          </div>
+                          <div class="block block23 skyblue on">
+                            <div class="txt bottom">
+                              <span>10</span>
+                            </div>
+                          </div>
+                          <div class="block block24 nondot skyblue on">
+                            <div class="txt bottom">
+                              <span>11</span>
+                            </div>
+                            <div class="txt bottom right">
+                              <span>12(시)</span>
+                            </div>
+                          </div>
+
+                          <div class="point v_hidden"></div>
+                        </div>
+
+                        <div class="arrow arrow1">
+                          <span>오전</span>
+                        </div>
+                        <div class="arrow arrow2">
+                          <span>오후</span>
+                        </div>
+
+                        <div class="bubble bubble1 v_hidden">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP4_BUBBLE1.png" alt="24시간">
+                        </div>
+                      </div>
+                      <div class="content content2 content2_2">
+                        <div class="line_box dp_flex">
+                          <div class="block block1 skyblue on">
+                            <div class="txt">
+                              <span>12</span>
+                            </div>
+                          </div>
+                          <div class="block block2 skyblue on">
+                            <div class="txt">
+                              <span>1</span>
+                            </div>
+                          </div>
+                          <div class="block block3 skyblue on">
+                            <div class="txt">
+                              <span>2</span>
+                            </div>
+                          </div>
+                          <div class="block block4 skyblue on">
+                            <div class="txt">
+                              <span>3</span>
+                            </div>
+                          </div>
+                          <div class="block block5 skyblue on">
+                            <div class="txt">
+                              <span>4</span>
+                            </div>
+                          </div>
+                          <div class="block block6 skyblue on">
+                            <div class="txt">
+                              <span>5</span>
+                            </div>
+                          </div>
+                          <div class="block block7 skyblue on">
+                            <div class="txt">
+                              <span>6</span>
+                            </div>
+                          </div>
+                          <div class="block block8 skyblue on">
+                            <div class="txt">
+                              <span>7</span>
+                            </div>
+                          </div>
+                          <div class="block block9 skyblue on">
+                            <div class="txt">
+                              <span>8</span>
+                            </div>
+                          </div>
+                          <div class="block block10 lightpink on">
+                            <div class="txt">
+                              <span>9</span>
+                            </div>
+                          </div>
+                          <div class="block block11 lightpink on">
+                            <div class="txt">
+                              <span>10</span>
+                            </div>
+                          </div>
+                          <div class="block block12 nondot">
+                            <div class="txt">
+                              <span>11</span>
+                            </div>
+                            <div class="txt right2">
+                              <span>12(시)</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="arrow arrow1">
+                          <span>오전</span>
+                        </div>
+
+                        <div class="bubble bubble2 v_hidden">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP4_BUBBLE2.png" alt="2시간">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="step4_btm_box">
+                      <div class="calc_arrow_comm">
+                        <div class="txt txt1">24시간 + 2시간 = <span class="point">26시간</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <footer class="check_footer">
+                    <div class="check_footer_inner">
+                      <div class="check_footer_text img_container img_container1">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_6/STEP5_FOOTER_TXT.png" class="img img1 footer_img" />
+                      </div>
+                      <div class="check_footer_ch">
+                        <div class="check_footer_ch_head"></div>
+                        <div class="check_footer_ch_body"></div>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+
+              <ul class="step-list">
+                <li class="step-list_item active"></li>
+                <li class="step-list_item"></li>
+              </ul>
+            </div>
+          </main>
+          <div class="main_prev-next">
+            <button class="btn-prev" style="display: none">이전버튼</button>
+            <!-- <button class="btn-next" style="display: block" disabled> -->
+            <button class="btn-next blinking" style="display: block">
+              다음버튼
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      crossorigin
+      src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"
+    ></script>
+    <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+    <script src="../../../COMM/JS/COMMON2.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNT3.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNTBTN.JS"></script>
+    <script src="../../../COMM/JS/GAME.JS"></script>
+    <script src="../../../COMM/JS/VIDEO.JS"></script>
+    <script src="../../../COMM/JS/VIDEO-HTTP-STREAMING.JS"></script>
+    <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+    <script>
+      /*
+       * 데이터
+       */
+      let intro = {
+        type: "concept", //concept 개념익히기, checkExam 확인문제
+        title: "하루의 시간을 알아볼까요",
+        subTitle: [
+          "하루는 24시간임을 알고 설명할 수 있어요.",
+          "오전과 오후의 시간을 구분할 수 있어요."
+        ],
+        sound: ["../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_01.mp3"],
+      };
+
+      //현재 페이지
+      let disStep = 1;
+
+      let pageData = [
+        {
+          step: 1,
+          title: "하루의 시간에 대해 알아봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_01.mp3",
+          headerPage: [1, 2],
+          footerPage: [1, 3],
+          prev: 0,
+          next: 1,
+        },
+        {
+          step: 2,
+          title: "오전과 오후를 알아봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_14.mp3",
+          headerPage: [1, 2],
+          footerPage: [2, 3],
+          prev: 1,
+          next: 1,
+        },
+        {
+          step: 3,
+          title: "오전과 오후에 한 일을 알아봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_023.mp3",
+          headerPage: [1, 2],
+          footerPage: [3, 3],
+          prev: 1,
+          next: 1,
+        },
+        {
+          step: 4,
+          title: "여행한 시간을 구해 봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_28.mp3",
+          headerPage: [2, 2],
+          footerPage: [1, 1],
+          prev: 3,
+          next: 0,
+        },
+        {
+          step: 5,
+          title: "",
+          sound: "",
+          headerPage: [0, 0],
+          footerPage: [0, 0],
+          prev: 1,
+          next: 0,
+        }
+      ];
+      
+      function pageAction() {
+        console.log("disStep ::: ", disStep);
+        //setTimeout 초기화
+        const TimeoutId = setTimeout(() => console.log("timeout clear"), 1);
+        for (let i = 0; i < TimeoutId; i++) {
+          clearTimeout(i);
+        }
+        stepSet();
+        switch (disStep) {
+          case 1:
+            step1.reset();
+            step1.start();
+            break;
+          case 2:
+            step2.reset();
+            step2.start();
+            break;
+          case 3:
+            step3.reset();
+            step3.start();
+            break;
+          case 4:
+            step4.reset();
+            step4.start();
+            break;
+          case 5:
+            step5.reset();
+            step5.start();
+            break;
+        }
+      }
+
+      // 시계 숫자 배치
+      for (let i = 1; i <= 24; i++) {
+        let angle = i * 15;
+        $(`.step1_top_box .img_box .time.time${i}`).css({
+          'transform': `rotate(${angle}deg)`
+        });
+
+        $(`.step1_top_box .img_box .time.time${i} span`).css({
+          'transform': `rotate(${-angle}deg)`
+        });
+      }
+      
+      //문제 시작
+      //================STEP1==============
+      const step1 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_01.mp3",
+            "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_02.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $('.step1 .step1_top_box .img_box .time').addClass('txt_blink2');
+                $('.step1 .step1_top_box > .img_box > img').addClass('box_blink2');
+                touchMotionSetOn(420, 840, step1.guideTouch, $('.step1 .step1_top_box > .img_box'));
+              }
+            },
+          ]);
+        },
+        guideTouch: (flag) => {
+          $('.step1 .step1_top_box .img_box .time').removeClass('txt_blink2');
+          $('.step1 .step1_top_box > .img_box > img').removeClass('box_blink2');
+          $('.step1 .step1_btm_box').css('display', 'block');
+
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_03.mp3",
+            "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_04.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step1 .step1_top_box .img_box .time6 span').addClass('dAniScale');
+                $('.step1 .step1_top_box .img_box .time8 span').addClass('dAniScale');
+              }
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $('.step1 .step1_top_box .img_box .time span.dAniScale').removeClass('dAniScale');
+                $('.step1 .step1_btm_box .table_box .tr2 .td2 .txt').css('visibility', 'visible');
+                
+                timerSet(() => {
+                  audioSet([
+                    "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_05.mp3",
+                  ], [
+                    {
+                      idx: 1,
+                      type: 'start',
+                      callback: () => {
+                        $('.step1 .step1_top_box .img_box .time8 span').addClass('dAniScale');
+                        $('.step1 .step1_top_box .img_box .time12 span').addClass('dAniScale');
+                      }
+                    },
+                    {
+                      idx: 1,
+                      type: 'end',
+                      callback: () => {
+                        $('.step1 .step1_top_box .img_box .time span.dAniScale').removeClass('dAniScale');
+                        $('.step1 .step1_btm_box .table_box .tr2 .td3 .txt').css('visibility', 'visible');
+                        
+                        timerSet(() => {
+                          audioSet([
+                            "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_06.mp3",
+                          ], [
+                            {
+                              idx: 1,
+                              type: 'start',
+                              callback: () => {
+                                $('.step1 .step1_top_box .img_box .time12 span').addClass('dAniScale');
+                                $('.step1 .step1_top_box .img_box .time15 span').addClass('dAniScale');
+                              }
+                            },
+                            {
+                              idx: 1,
+                              type: 'end',
+                              callback: () => {
+                                $('.step1 .step1_top_box .img_box .time span.dAniScale').removeClass('dAniScale');
+                                $('.step1 .step1_btm_box .table_box .tr2 .td4 .txt').css('visibility', 'visible');
+
+                                timerSet(() => {
+                                  audioSet([
+                                    "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_07.mp3",
+                                  ], [
+                                    {
+                                      idx: 1,
+                                      type: 'start',
+                                      callback: () => {
+                                        $('.step1 .step1_top_box .img_box .time15 span').addClass('dAniScale');
+                                        $('.step1 .step1_top_box .img_box .time17 span').addClass('dAniScale');
+                                      }
+                                    },
+                                    {
+                                      idx: 1,
+                                      type: 'end',
+                                      callback: () => {
+                                        $('.step1 .step1_top_box .img_box .time span.dAniScale').removeClass('dAniScale');
+                                        $('.step1 .step1_btm_box .table_box .tr2 .td5 .txt').css('visibility', 'visible');
+                                        
+                                        timerSet(() => {
+                                          audioSet([
+                                            "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_08.mp3",
+                                          ], [
+                                            {
+                                              idx: 1,
+                                              type: 'end',
+                                              callback: () => {
+                                                stepDropList = [
+                                                  {
+                                                    dropEl: '.step1 .txt_container1',
+                                                    correct: 2
+                                                  },
+                                                  {
+                                                    dropEl: '.step1 .txt_container2',
+                                                    correct: 1
+                                                  },
+                                                ];
+                                                          
+                                                stepDropArr = [2, 3];
+                                                      
+                                                quizMultiDragDropSetOnNew(stepDropList, $('.step1 .step1_answer_box1'), stepDropArr, step1.dropppFn);
+
+                                                $('.step1 .step1_answer_box1').css('visibility', 'visible');
+                                              }
+                                            },
+                                          ]);
+                        
+                                          timerInit();
+                                        }, 1000);
+                                      }
+                                    },
+                                  ]);
+                
+                                  timerInit();
+                                }, 1000);
+                              }
+                            },
+                          ]);
+        
+                          timerInit();
+                        }, 1000);
+                      }
+                    },
+                  ]);
+
+                  timerInit();
+                }, 1000);
+              }
+            },
+          ]);
+        },
+        dropppFn: () => {
+          $(".droppable")
+          .droppable({ disabled: false })
+          .on("droppable:drop", function (droppp, drag) {
+            let dragAnswer = drag.item[0].dataset.val;
+            let answer = droppp.currentTarget.dataset.val;
+
+            if (answer === dragAnswer) {
+              correctlyFlag++;
+              quizMultiDragDropSetCorrect(droppp.currentTarget);
+
+              if (correctlyFlag == stepDropList.length) {
+                quizMultiDragDropSetCorrectly();
+                stepDropList = "";
+                stepDropArr = "";
+
+                audioSet([
+                  "../../../COMM/SOUND/CORRECT.mp3",
+                  "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_09.mp3",
+                  "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_10.mp3",
+                  "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_11.mp3",
+                ], [
+                  {
+                    idx: 2,
+                    type: 'start',
+                    callback: () => {
+                      $('.step1 .character_txt').css('display', 'block');
+                      $('.step1 .character').css('display', 'block');
+                    }
+                  },
+                  {
+                    idx: 3,
+                    type: 'start',
+                    callback: () => {
+                      $('.step1 .step1_top_box .img_box .time24 span').addClass('highlight red2');
+                      $('.step1 .step1_top_box .img_box .time1 span').addClass('highlight red2');
+                      $('.step1 .step1_top_box .img_box .time2 span').addClass('highlight red2');
+                      $('.step1 .step1_top_box .img_box .time3 span').addClass('highlight red2');
+                      $('.step1 .step1_top_box .img_box .time4 span').addClass('highlight red2');
+                      $('.step1 .step1_top_box .img_box .time5 span').addClass('highlight red2');
+                      $('.step1 .step1_top_box .img_box .time6 span').addClass('highlight red2');
+                      $('.step1 .step1_top_box .img_box .time7 span').addClass('highlight red2');
+                      $('.step1 .step1_top_box .img_box .time8 span').addClass('highlight red2');
+                      $('.step1 .step1_top_box .img_box .time9 span').addClass('highlight red2');
+                      $('.step1 .step1_top_box .img_box .time10 span').addClass('highlight red2');
+                      $('.step1 .step1_top_box .img_box .time11 span').addClass('highlight red2');
+                      $('.step1 .step1_top_box .img_box .time12 span').addClass('highlight red2');
+                    }
+                  },
+                  {
+                    idx: 4,
+                    type: 'start',
+                    callback: () => {
+                      $('.step1 .step1_top_box .img_box .time span.highlight.red2').removeClass('highlight red2');
+                      timerSet(() => {
+                        timerInit();
+                        $('.step1 .step1_top_box .img_box .time12 span').addClass('highlight red2');
+                        $('.step1 .step1_top_box .img_box .time13 span').addClass('highlight red2');
+                        $('.step1 .step1_top_box .img_box .time14 span').addClass('highlight red2');
+                        $('.step1 .step1_top_box .img_box .time15 span').addClass('highlight red2');
+                        $('.step1 .step1_top_box .img_box .time16 span').addClass('highlight red2');
+                        $('.step1 .step1_top_box .img_box .time17 span').addClass('highlight red2');
+                        $('.step1 .step1_top_box .img_box .time18 span').addClass('highlight red2');
+                        $('.step1 .step1_top_box .img_box .time19 span').addClass('highlight red2');
+                        $('.step1 .step1_top_box .img_box .time20 span').addClass('highlight red2');
+                        $('.step1 .step1_top_box .img_box .time21 span').addClass('highlight red2');
+                        $('.step1 .step1_top_box .img_box .time22 span').addClass('highlight red2');
+                        $('.step1 .step1_top_box .img_box .time23 span').addClass('highlight red2');
+                        $('.step1 .step1_top_box .img_box .time24 span').addClass('highlight red2');
+                      }, 500);
+                    }
+                  },
+                  {
+                    idx: 4,
+                    type: 'end',
+                    callback: () => {
+                      $('.step1 .step1_top_box .img_box .time span.highlight.red2').removeClass('highlight red2');
+
+                      stepDropList2 = [
+                        {
+                          dropEl: '.step1 .txt_container3',
+                          correct: 2
+                        },
+                      ];
+                                
+                      stepDropArr2 = [12, 24];
+                            
+                      quizMultiDragDropSetOnNew(stepDropList2, $('.step1 .step1_answer_box2'), stepDropArr2, step1.dropppFn2);
+
+                      $('.step1 .step1_answer_box2').css('visibility', 'visible');
+                    }
+                  },
+                ]);
+              } else {
+                audioSet([
+                  "../../../COMM/SOUND/CORRECT.mp3",
+                ]);
+              }
+            } else {
+              audioSet([
+                "../../../COMM/SOUND/WRONG.mp3",
+              ]);
+
+              return false;
+            }
+          });
+        },
+        dropppFn2: () => {
+          $(".droppable")
+          .droppable({ disabled: false })
+          .on("droppable:drop", function (droppp, drag) {
+            let dragAnswer = drag.item[0].dataset.val;
+            let answer = droppp.currentTarget.dataset.val;
+
+            if (answer === dragAnswer) {
+              quizMultiDragDropSetCorrect(droppp.currentTarget);
+              quizMultiDragDropSetCorrectly();
+              stepDropList = "";
+              stepDropArr = "";
+
+              $('.step1 .step1_answer_box2').css('visibility', '');
+
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.mp3",
+                "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_12.mp3",
+                "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_13.mp3",
+              ], [
+                // {
+                //   idx: 2,
+                //   type: 'start',
+                //   callback: () => {
+                //   }
+                // },
+                {
+                  idx: 3,
+                  type: 'start',
+                  callback: () => {
+                    $(".step1 .step1_point1").css('display', 'block').addClass("spining");
+                    timerSet(() => {
+                      $(".step1 .step1_btm_box .table_box .tr2 .td:not(.td1) .txt").addClass("blinking");
+                      $(".step1 .step1_btm_box .table_box .tr2 .td .txt_container .answer").addClass("blinking");
+                      timerInit();
+                    }, 3000);
+                  }
+                },
+                {
+                  idx: 3,
+                  type: 'end',
+                  callback: () => {
+                    $(".step1 .step1_btm_box .table_box .tr2 .td:not(.td1) .txt").removeClass("blinking");
+                    $(".step1 .step1_btm_box .table_box .tr2 .td .txt_container .answer").removeClass("blinking");
+
+                    correctly();
+                  }
+                },
+              ]);
+            } else {
+              audioSet([
+                "../../../COMM/SOUND/WRONG.mp3",
+              ]);
+
+              return false;
+            }
+          });
+        },
+        reset: () => {
+          touchMotionSetInit();
+          correctlyFlag = 0;
+
+          $('.step1 .dp_none').css('display', '');
+          $('.step1 .v_hidden').css('visibility', '');
+          $('.step1 .box_blink2').removeClass('box_blink2');
+          $('.step1 .txt_blink2').removeClass('txt_blink2');
+          $('.step1 .aniScale').removeClass('aniScale');
+          $('.step1 .dAniScale').removeClass('dAniScale');
+          $('.step1 .spining').removeClass('spining');
+          $('.step1 .hightlight').removeClass('hightlight');
+          $('.step1 .red2').removeClass('red2');
+          $('.step1 .character_txt').css('display', '');
+          $('.step1 .character').css('display', '');
+          $('.step1 .txt_container').html('<span>?</span>');
+        },
+      };
+      //================STEP2==============
+      const step2 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_14.mp3",
+            "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_15.mp3",
+            '../../../COMM/SOUND/Eff_Start.mp3',
+            "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_16.mp3",
+            '../../../COMM/SOUND/Eff_Start.mp3',
+            "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_17.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step2 .step2_btm_box table .tr1 td > span').css('visibility', 'visible');
+
+                $('.step2 .step1_top_box .img_box .time24 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time1 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time2 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time3 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time4 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time5 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time6 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time7 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time8 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time9 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time10 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time11 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time12 span').addClass('highlight red2');
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step2 .step1_top_box .img_box .time span.highlight.red2').removeClass('highlight red2');
+                $('.step2 .step2_btm_box table .tr1 td .point1').addClass('highlight red2');
+              }
+            },
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                $('.step2 .step2_btm_box table .tr2 td > span').css('visibility', 'visible');
+
+                $('.step2 .step1_top_box .img_box .time12 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time13 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time14 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time15 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time16 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time17 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time18 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time19 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time20 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time21 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time22 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time23 span').addClass('highlight red2');
+                $('.step2 .step1_top_box .img_box .time24 span').addClass('highlight red2');
+              }
+            },
+            {
+              idx: 5,
+              type: 'start',
+              callback: () => {
+                $('.step2 .step1_top_box .img_box .time span.highlight.red2').removeClass('highlight red2');
+                $('.step2 .step2_btm_box table .tr2 td .point2').addClass('highlight red2');
+              }
+            },
+            {
+              idx: 6,
+              type: 'start',
+              callback: () => {
+                $('.step2 .step2_btm_box table .tr3 td > span').css('visibility', 'visible');
+                timerSet(() => {
+                  $('.step2 .step2_btm_box table .tr3 td .point3').addClass('highlight red2');
+                  timerInit();
+                  timerSet(() => {
+                    $('.step2 .step2_btm_box .right_box').css('visibility', 'visible');
+                    timerInit();
+                  }, 2000);
+                }, 1000);
+              }
+            },
+            {
+              idx: 6,
+              type: 'end',
+              callback: () => {
+                $('.step2 .step1_top_box .img_box .time').addClass('txt_blink2');
+                $('.step2 .step1_top_box .img_box > img').addClass('box_blink2');
+                touchMotionSetOn(257, 840, step2.guideTouch, $('.step2 .step1_top_box .img_box'));
+              }
+            },
+          ]);
+        },
+        guideTouch: (flag) => {
+          $('.step2 .step1_top_box .img_box .time').removeClass('txt_blink2');
+          $('.step2 .step1_top_box .img_box > img').removeClass('box_blink2');
+          $('.step2 .content1').css('display', 'none');
+          $('.step2 .content2').css('display', 'flex');
+
+          timerSet(() => {
+            audioSet([
+              "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_18.mp3",
+              "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_19.mp3",
+              "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_20.mp3",
+              "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_21.mp3",
+              "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_22.mp3",
+            ], [
+              {
+                idx: 1,
+                type: 'start',
+                callback: () => {
+                  $('.step2 .content2 .line_box .block.yellow').addClass('bgBlink');
+                  $('.step2 .content2 .right_box .img_box .img3').addClass('blinking2');
+                }
+              },
+              {
+                idx: 2,
+                type: 'start',
+                callback: () => {
+                  $('.step2 .content2 .line_box .block.yellow').removeClass('bgBlink');
+                  $('.step2 .content2 .right_box .img_box .img3').removeClass('blinking2');
+                  $('.step2 .content2 .line_box .block.blue').addClass('bgBlink');
+                  $('.step2 .content2 .right_box .img_box .img2').addClass('blinking2');
+                }
+              },
+              {
+                idx: 3,
+                type: 'start',
+                callback: () => {
+                  $('.step2 .content2 .line_box .block.blue').removeClass('bgBlink');
+                  $('.step2 .content2 .right_box .img_box .img2').removeClass('blinking2');
+                  $('.step2 .content2 .line_box .block.yellow').addClass('bgBlink');
+                  $('.step2 .content2 .left_box .img_box .text_box .line1 .txt1 span').addClass('blinking2');
+                }
+              },
+              {
+                idx: 4,
+                type: 'start',
+                callback: () => {
+                  $('.step2 .content2 .line_box .block.yellow').removeClass('bgBlink');
+                  $('.step2 .content2 .left_box .img_box .text_box .line1 .txt1 span').removeClass('blinking2');
+                  timerSet(() => {
+                    $('.step2 .content2 .line_box .block.blue').addClass('bgBlink');
+                    $('.step2 .content2 .left_box .img_box .text_box .line1 .txt2 span').addClass('blinking2');
+                    timerInit();
+                  }, 100);
+                }
+              },
+              {
+                idx: 5,
+                type: 'start',
+                callback: () => {
+                  $('.step2 .content2 .line_box .block.blue').removeClass('bgBlink');
+                  $('.step2 .content2 .left_box .img_box .text_box .line1 .txt2 span').removeClass('blinking2');
+                }
+              },
+              {
+                idx: 5,
+                type: 'end',
+                callback: () => {
+                  $('.step2 .content2 .left_box .img_box .text_box .line2 .step2_point1').css('display', 'block');
+  
+                  correctly();
+                }
+              },
+            ]);
+            timerInit();
+          }, 1500);
+        },
+        reset: () => {
+          touchMotionSetInit();
+
+          $('.step2 .dp_none').css('display', '');
+          $('.step2 .v_hidden').css('visibility', '');
+          $('.step2 .highlight').removeClass('highlight');
+          $('.step2 .red2').removeClass('red2');
+          $('.step2 .txt_blink2').removeClass('txt_blink2');
+          $('.step2 .box_blink2').removeClass('box_blink2');
+          $('.step2 .blinking').removeClass('blinking');
+          $('.step2 .blinking2').removeClass('blinking2');
+          $('.step2 .bgBlink').removeClass('bgBlink');
+          $('.step2 .content1').css('display', 'block');
+        },
+      };
+      //================STEP3==============
+      const step3 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_23.mp3",
+            "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_24.mp3",
+            "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_25.mp3",
+          ], [
+            {
+              idx: 3,
+              type: 'end',
+              callback: () => {
+                $('.step3 .bubble_box').css('visibility', 'visible');
+                $('.step3 .step3_answer_box1').css('visibility', 'visible');
+
+                stepDropList = [
+                  {
+                    dropEl: '.step3 .txt_container1',
+                    correct: 2
+                  },
+                  {
+                    dropEl: '.step3 .txt_container2',
+                    correct: 1
+                  },
+                ];
+                          
+                stepDropArr = ['월정교', '불국사'];
+                      
+                quizMultiDragDropSetOnNew(stepDropList, $('.step3 .step3_answer_box1'), stepDropArr, step3.dropppFn);
+
+                $('.step3 .step3_answer_box1').css('visibility', 'visible');
+              }
+            },
+          ]);
+        },
+        dropppFn: () => {
+          $(".droppable")
+          .droppable({ disabled: false })
+          .on("droppable:drop", function (droppp, drag) {
+            let dragAnswer = drag.item[0].dataset.val;
+            let answer = droppp.currentTarget.dataset.val;
+
+            if (answer === dragAnswer) {
+              correctlyFlag++;
+              quizMultiDragDropSetCorrect(droppp.currentTarget);
+
+              if (correctlyFlag == stepDropList.length) {
+                quizMultiDragDropSetCorrectly();
+                stepDropList = "";
+                stepDropArr = "";
+
+                audioSet([
+                  "../../../COMM/SOUND/CORRECT.mp3",
+                  "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_26.mp3",
+                  "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_27.mp3",
+                ], [
+                  {
+                    idx: 2,
+                    type: 'start',
+                    callback: () => {
+                      $('.step3 .step3_right_box .text_box .block1 .txt').addClass('blinking');
+                      $('.step3 .step3_right_box .text_box .block2 .txt').addClass('blinking');
+                      $('.step3 .step3_right_box .text_box .block3 .txt').addClass('blinking');
+                    }
+                  },
+                  {
+                    idx: 3,
+                    type: 'start',
+                    callback: () => {
+                      $('.step3 .step3_right_box .text_box .block1 .txt').removeClass('blinking');
+                      $('.step3 .step3_right_box .text_box .block2 .txt').removeClass('blinking');
+                      $('.step3 .step3_right_box .text_box .block3 .txt').removeClass('blinking');
+                      $('.step3 .step3_right_box .text_box .block4 .txt').addClass('blinking');
+                      $('.step3 .step3_right_box .text_box .block5 .txt').addClass('blinking');
+                      $('.step3 .step3_right_box .text_box .block6 .txt').addClass('blinking');
+                      $('.step3 .step3_right_box .text_box .block7 .txt').addClass('blinking');
+                      $('.step3 .step3_right_box .text_box .block8 .txt').addClass('blinking');
+                    }
+                  },
+                  {
+                    idx: 3,
+                    type: 'end',
+                    callback: () => {
+                      $('.step3 .step3_right_box .text_box .block4 .txt').removeClass('blinking');
+                      $('.step3 .step3_right_box .text_box .block5 .txt').removeClass('blinking');
+                      $('.step3 .step3_right_box .text_box .block6 .txt').removeClass('blinking');
+                      $('.step3 .step3_right_box .text_box .block7 .txt').removeClass('blinking');
+                      $('.step3 .step3_right_box .text_box .block8 .txt').removeClass('blinking');
+
+                      correctly();
+                    }
+                  },
+                ]);
+              } else {
+                audioSet([
+                  "../../../COMM/SOUND/CORRECT.mp3",
+                ]);
+              }
+            } else {
+              audioSet([
+                "../../../COMM/SOUND/WRONG.mp3",
+              ]);
+
+              return false;
+            }
+          });
+        },
+        reset: () => {
+          correctlyFlag = 0;
+
+          $('.step3 .dp_none').css('display', '');
+          $('.step3 .v_hidden').css('visibility', '');
+          $('.step3 .blinking').removeClass('blinking');
+          $('.step3 .txt_container').html('<span>?</span>');
+        },
+      };
+      //================STEP4==============
+      const step4 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_28.mp3",
+            "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_29.mp3",
+            "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_30.mp3",
+            "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_37.mp3",
+            "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_38.mp3",
+            "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_39.mp3",
+            "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_35.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step4_top_box .left_box .img_box').addClass('box_blink2');
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step4_top_box .left_box .img_box').removeClass('box_blink2');
+                $('.step4 .step4_top_box .right_box .img_box').addClass('box_blink2');
+              }
+            },
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step4_top_box .right_box .img_box').removeClass('box_blink2');
+                $('.step4 .step4_mid_box').css('visibility', 'visible');
+                timerSet(() => {
+                  $('.step4 .step4_mid_box .content2_1 .line_box .block10').addClass('on');
+                  timerInit();
+                  timerSet(() => {
+                    $('.step4 .step4_mid_box .content2_1 .line_box .block11').addClass('on');
+                    timerInit();
+                    timerSet(() => {
+                      $('.step4 .step4_mid_box .content2_1 .line_box .block12').addClass('on');
+                      timerInit();
+                      timerSet(() => {
+                        $('.step4 .step4_mid_box .content2_1 .line_box .block13').addClass('on');
+                        timerInit();
+                        timerSet(() => {
+                          $('.step4 .step4_mid_box .content2_1 .line_box .block14').addClass('on');
+                          timerInit();
+                          timerSet(() => {
+                            $('.step4 .step4_mid_box .content2_1 .line_box .block15').addClass('on');
+                            timerInit();
+                            timerSet(() => {
+                              $('.step4 .step4_mid_box .content2_1 .line_box .block16').addClass('on');
+                              timerInit();
+                              timerSet(() => {
+                                $('.step4 .step4_mid_box .content2_1 .line_box .block17').addClass('on');
+                                timerInit();
+                                timerSet(() => {
+                                  $('.step4 .step4_mid_box .content2_1 .line_box .block18').addClass('on');
+                                  timerInit();
+                                  timerSet(() => {
+                                    $('.step4 .step4_mid_box .content2_1 .line_box .block19').addClass('on');
+                                    timerInit();
+                                    timerSet(() => {
+                                      $('.step4 .step4_mid_box .content2_1 .line_box .block20').addClass('on');
+                                      timerInit();
+                                      timerSet(() => {
+                                        $('.step4 .step4_mid_box .content2_1 .line_box .block21').addClass('on');
+                                        timerInit();
+                                        timerSet(() => {
+                                          $('.step4 .step4_mid_box .content2_1 .line_box .block22').addClass('on');
+                                          timerInit();
+                                          timerSet(() => {
+                                            $('.step4 .step4_mid_box .content2_1 .line_box .block23').addClass('on');
+                                            timerInit();
+                                            timerSet(() => {
+                                              $('.step4 .step4_mid_box .content2_1 .line_box .block24').addClass('on');
+                                              timerInit();
+                                              timerSet(() => {
+                                                $('.step4 .step4_mid_box .content2_2 .line_box .block1').addClass('on');
+                                                timerInit();
+                                                timerSet(() => {
+                                                  $('.step4 .step4_mid_box .content2_2 .line_box .block2').addClass('on');
+                                                  timerInit();
+                                                  timerSet(() => {
+                                                    $('.step4 .step4_mid_box .content2_2 .line_box .block3').addClass('on');
+                                                    timerInit();
+                                                    timerSet(() => {
+                                                      $('.step4 .step4_mid_box .content2_2 .line_box .block4').addClass('on');
+                                                      timerInit();
+                                                      timerSet(() => {
+                                                        $('.step4 .step4_mid_box .content2_2 .line_box .block5').addClass('on');
+                                                        timerInit();
+                                                        timerSet(() => {
+                                                          $('.step4 .step4_mid_box .content2_2 .line_box .block6').addClass('on');
+                                                          timerInit();
+                                                          timerSet(() => {
+                                                            $('.step4 .step4_mid_box .content2_2 .line_box .block7').addClass('on');
+                                                            timerInit();
+                                                            timerSet(() => {
+                                                              $('.step4 .step4_mid_box .content2_2 .line_box .block8').addClass('on');
+                                                              timerInit();
+                                                              timerSet(() => {
+                                                                $('.step4 .step4_mid_box .content2_2 .line_box .block9').addClass('on');
+                                                                timerInit();
+                                                                timerSet(() => {
+                                                                  $('.step4 .step4_mid_box .content2 .bubble1').css('visibility', 'visible');
+                                                                  timerInit();
+                                                                }, 200);
+                                                              }, 200);
+                                                            }, 200);
+                                                          }, 200);
+                                                        }, 200);
+                                                      }, 200);
+                                                    }, 200);
+                                                  }, 200);
+                                                }, 200);
+                                              }, 200);
+                                            }, 200);
+                                          }, 200);
+                                        }, 200);
+                                      }, 200);
+                                    }, 200);
+                                  }, 200);
+                                }, 200);
+                              }, 200);
+                            }, 200);
+                          }, 200);
+                        }, 200);
+                      }, 200);
+                    }, 200);
+                  }, 200);
+                }, 200);
+              }
+            },
+            {
+              idx: 5,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step4_mid_box .content2_2 .line_box .block10').addClass('on');
+                timerSet(() => {
+                  $('.step4 .step4_mid_box .content2_2 .line_box .block11').addClass('on');
+                  timerInit();
+                  timerSet(() => {
+                    $('.step4 .step4_mid_box .content2 .bubble2').css('visibility', 'visible');
+                    timerInit();
+                  }, 200);
+                }, 200);
+              }
+            },
+            {
+              idx: 6,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step4_mid_box .content2 .bubble').css('visibility', '');
+                $('.step4 .step4_btm_box').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 7,
+              type: 'end',
+              callback: () => {
+                disStep++;
+                pageAction();
+              }
+            },
+          ]);
+        },
+        reset: () => {
+          $('.step4 .dp_none').css('display', '');
+          $('.step4 .v_hidden').css('visibility', '');
+          $('.step4 .box_blink2').removeClass('box_blink2');
+          $('.step4 .on').removeClass('on');
+        },
+      };
+      //================STEP5==============
+      const step5 = {
+        start: () => {
+          $('.step5 .check_footer_inner').addClass('slideUp');
+
+          timerSet(() => {
+            audioSet([
+              "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_40.mp3",
+              "../../../COMM/SOUND/SEASON2/2_4_6/2_2_4-6_41.mp3",
+            ], [
+              {
+                idx: 1,
+                type: 'start',
+                callback: () => {
+                  $('.step5 .step4_mid_box .content2 .line_box .block.skyblue').addClass('bgBlink');
+                }
+              },
+              {
+                idx: 2,
+                type: 'start',
+                callback: () => {
+                  $('.step5 .step4_mid_box .content2 .line_box .block.skyblue').removeClass('bgBlink');
+                  $('.step5 .step4_mid_box .content2 .line_box .block.lightpink').addClass('bgBlink');
+                }
+              },
+              {
+                idx: 2,
+                type: 'end',
+                callback: () => {
+                  $('.step5 .step4_mid_box .content2 .line_box .block.lightpink').removeClass('bgBlink');
+                  $('.step5 .step4_btm_box .point').addClass('aniScale');
+                  timerSet(() => {
+                    $('.step5 .step4_btm_box .point').removeClass('aniScale');
+  
+                    callFinish();
+  
+                    timerInit();
+                  }, 3000);
+                }
+              },
+            ]);
+
+            timerInit();
+          }, 1000);
+        },
+        reset: () => {
+          $('.step5 .dp_none').css('display', '');
+          $('.step5 .v_hidden').css('visibility', '');
+          $('.step5 .bgBlink').removeClass('bgBlink');
+          $('.step5 .slideUp').removeClass('slideUp');
+          $('.step5 .aniScale').removeClass('aniScale');
+        },
+      };
+    </script>
+  </body>
+</html>

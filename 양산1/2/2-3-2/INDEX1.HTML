@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>개정교육과정-수학 준비게임</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="KeyWORDs" content="" />
+    <meta name="Description" content="" />
+    <meta name="Robots" content="all" />
+    <meta http-equiv="Subject" content="" />
+    <meta http-equiv="Title" content="" />
+    <meta http-equiv="Author" content="onflou " />
+    <meta http-equiv="Publisher" content="" />
+
+    <!-- 브라우저 호환성을 지정 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="#" />
+
+    <link href="../../../COMM/CSS/COMMON.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/VIDEO.CSS" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div id="contents-wrap"></div>
+    </div>
+
+    <script src="../../../COMM/JS/DATASET.JSON"></script>
+    <script>
+      //페이지 정보
+      const grade = "grade2"; //학년
+      const unit = "unit3"; //단원
+      const chapter = 2; //차시
+      const pageId = "readyGame"; //페이지 타입
+
+      // 차시 데이터
+      const data = JSON.parse(JSON.stringify(dataset[grade][unit][chapter]));
+    </script>
+    <script
+      crossorigin
+      src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"
+    ></script>
+    <script src="../../../COMM/JS/COMMON.JS"></script>
+    <script src="../../../COMM/JS/GAME.JS"></script>
+    <script src="../../../COMM/JS/VIDEO.JS"></script>
+    <script src="../../../COMM/JS/VIDEO-HTTP-STREAMING.JS"></script>
+  </body>
+</html>

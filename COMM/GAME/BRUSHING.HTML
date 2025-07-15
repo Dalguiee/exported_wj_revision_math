@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=2000, user-scalable=no" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <link rel="stylesheet" href="../../../COMM/GAME/RESET.CSS" />
+    <link rel="stylesheet" href="../../../COMM/GAME/BRUSHING.CSS" />
+    <title>이닦기 게임</title>
+  </head>
+
+  <body>
+    <div class="warp">
+      <section class="osign"></section>
+      <section class="game">
+        <!-- -----인트로----- -->
+        <article class="game_intro">
+          <button class="game_intro_start" onclick="bgStart()">
+            게임 시작
+          </button>
+        </article>
+        <!-- -----타이틀----- -->
+        <article class="game_title">
+          <div class="game_title_inner">알맞은 숫자를 넣어 보자!</div>
+        </article>
+        <div class="page_num">
+          <span id="pageCnt">1</span>
+          <span>/</span>
+          <span id="pageCntAll">3</span>
+        </div>
+        <!-- -----캐릭터----- -->
+        <article class="character character-slide">
+          <div class="character_snout">
+            <ul class="answer-input-list">
+              <!-- 정답입력칸 (이빨) 랜더링 -->
+            </ul>
+          </div>
+          <div class="character_arm character-arm-motion"></div>
+          <div class="character_body"></div>
+          <div class="character_head"></div>
+        </article>
+        <!-- -----문항 리스트----- -->
+        <ul class="quiz-list quiz-list-slide">
+          <!-- -----문항 랜더링----- -->
+        </ul>
+      </section>
+      <section id="complete_popup" style="display: none">
+        <div class="dimmed"></div>
+        <div class="bg"></div>
+        <div class="buttonArea">
+          <button class="reload" onclick="gameRetry()"></button>
+          <button class="play_view" onclick="videoPlayer()">
+            개념 영상 보기
+          </button>
+          <!-- <p>
+            더 공부하고 싶다면 개념영상 보러 가보자!
+          </p> -->
+        </div>
+      </section>
+      <!-- 가이드 -->
+      <section class="pearl-guide">
+        <div class="pearl-guide-point"></div>
+        <div class="pearl-guide-hand"></div>
+      </section>
+    </div>
+  </body>
+  <script>
+    if (typeof jQuery === "undefined") {
+      const script = document.createElement("script");
+      script.src = "https://code.jquery.com/jquery-3.6.4.min.js";
+      script.defer = true;
+      document.head.appendChild(script);
+    }
+  </script>
+  <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+  <script src="../../../COMM/GAME/BRUSHING.JS"></script>
+  <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+  <script defer src="../../../COMM/JS/COMMONGAME.JS"></script>
+</html>

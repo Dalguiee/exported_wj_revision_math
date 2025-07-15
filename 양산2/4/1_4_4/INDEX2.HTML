@@ -1,0 +1,1584 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>개정교육과정-수학 수학 개념</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="KeyWORDs" content="" />
+    <meta name="Description" content="" />
+    <meta name="Robots" content="all" />
+    <meta http-equiv="Subject" content="" />
+    <meta http-equiv="Title" content="" />
+    <meta http-equiv="Author" content="onflou " />
+    <meta http-equiv="Publisher" content="" />
+
+    <!-- 브라우저 호환성을 지정 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="#" />
+    <link href="../../../COMM/CSS/COMMON.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/COMMONLAYOUT.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/CONCEPTCOMMON3.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/VIDEO.CSS" rel="stylesheet" />
+ 
+    <style>
+      .txt_container.point {
+        border-color: rgba(103, 68, 243, 1);
+      }
+
+      /* 1p */
+      .step1 .step1_content {
+        padding-bottom: 189px;
+        position: relative;
+        align-items: flex-start;
+        gap: 45px;
+      }
+
+      .step1 .step1_content .line {
+        gap: 230px;
+        position: relative;
+        z-index: 10;
+      }
+
+      .step1 .step1_content .line .left_box {
+        width: 570px;
+        justify-content: flex-start;
+        gap: 8px;
+      }
+
+      .step1_content .line .right_box {
+        gap: 35px;
+      }
+
+      .step1_content .line .right_box * {
+        font-size: 64px;
+      }
+
+      .step1_content .line .right_box .txt3,
+      .step1_content .line .right_box .txt_container {
+        width: 133px;
+        height: 100px;
+      }
+
+      .step1_content .line .right_box .txt3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .step1_content .line .right_box .txt {
+        position: relative;
+      }
+
+      .step1_content .line .right_box .txt span {
+        position: relative;
+        z-index: 10;
+      }
+
+      .step1_content .line .right_box .txt .circle {
+        width: 73px;
+        aspect-ratio: 1/1;
+        background-color: rgba(255, 211, 57, 1);
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 4px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .step1 .arrow {
+        height: 10px;
+        background-color: rgba(255, 184, 239, 1);
+        position: absolute;
+        top: 5px;
+        transition: height 1s ease-in-out;
+      }
+
+      .step1 .arrow1 {
+        width: 60px;
+        right: 229px;
+      }
+
+      .step1 .arrow.on {
+        height: 540px;
+      }
+
+      .step1 .arrow2 {
+        width: 123px;
+        right: 4px;
+      }
+
+      .step1 .arrow1::after {
+        content: "";
+        border-top: 46px solid rgba(255, 184, 239, 1);
+        border-right: 46px solid transparent;
+        border-left: 46px solid transparent;
+        position: absolute;
+        left: 50%;
+        bottom: 2px;
+        transform: translate(-50%, 100%);
+      }
+
+      .step1 .arrow2::after {
+        content: "";
+        border-top: 46px solid rgba(255, 184, 239, 1);
+        border-right: 92px solid transparent;
+        border-left: 92px solid transparent;
+        position: absolute;
+        left: 50%;
+        bottom: 2px;
+        transform: translate(-50%, 100%);
+      }
+
+      .step1 .quiz_select_wrap1 {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .step1 .quiz_select_wrap1 .answer {
+        width: 200px;
+        height: 114px;
+      }
+
+      .step1 .quiz_select_wrap1 .answer + .answer {
+        margin-left: 50px;
+      }
+
+      .step1 .step1_point {
+        width: 563px;
+        height: 250px;
+        position: absolute;
+        left: 1000px;
+        z-index: 5;
+      }
+
+      .step1 .step1_point1 {
+        top: 60px;
+      }
+
+      .step1 .step1_point2 {
+        top: 210px;
+      }
+
+      /* 2p */
+      .step2 .step1_content {
+        padding-bottom: 100px;
+        position: relative;
+      }
+
+      .step2 .step1_content .line {
+        position: relative;
+        z-index: 10;
+      }
+
+      .step2 .point {
+        width: 60px;
+        height: 380px;
+        background-color: rgba(255, 211, 57, 1);
+        position: absolute;
+        top: 5px;
+        left: -10px;
+      }
+
+      .step2 .arrow {
+        height: 10px;
+        background-color: rgba(255, 184, 239, 1);
+        position: absolute;
+        top: 5px;
+        transition: height 1s ease-in-out;
+      }
+
+      .step2 .arrow.on {
+        height: 370px;
+      }
+
+      .step2 .arrow1 {
+        width: 60px;
+        right: 229px;
+      }
+
+      .step2 .arrow2 {
+        width: 123px;
+        right: 4px;
+      }
+
+      .step2 .arrow1::after {
+        content: "";
+        border-top: 46px solid rgba(255, 184, 239, 1);
+        border-right: 46px solid transparent;
+        border-left: 46px solid transparent;
+        position: absolute;
+        left: 50%;
+        bottom: 2px;
+        transform: translate(-50%, 100%);
+      }
+
+      .step2 .arrow2::after {
+        content: "";
+        border-top: 46px solid rgba(255, 184, 239, 1);
+        border-right: 92px solid transparent;
+        border-left: 92px solid transparent;
+        position: absolute;
+        left: 50%;
+        bottom: 2px;
+        transform: translate(-50%, 100%);
+      }
+
+      .step2 .arrow .txt {
+        color: rgba(231, 46, 38, 1);
+        white-space: nowrap;
+        position: absolute;
+        bottom: -80px;
+        left: 50%;
+        transform: translate(-50%, 100%);
+      }
+
+      /* 3p */
+      .step3_top_box {
+        gap: 118px;
+      }
+
+      .step3_top_box .left_box .line {
+        justify-content: flex-start;
+      }
+
+      .step3_top_box .left_box .line .block {
+        width: 200px;
+        height: 100px;
+        border: 1px solid rgba(0, 0, 0, 1);
+        position: relative;
+      }
+
+      .step3_top_box .left_box .line .block.bgBlink {
+        animation: 2s bgBlink infinite;
+      }
+
+      @keyframes bgBlink {
+        0% {
+          background-color: rgba(255, 255, 255, 1);
+        }
+      
+        50% {
+          background-color: rgba(131, 174, 0, 1);
+        }
+      
+        100% {
+          background-color: rgba(255, 255, 255, 1);
+        }
+      }
+
+      .step3_top_box .left_box .line .block.bgBlink2 {
+        animation: 2s bgBlink2 infinite;
+      }
+
+      @keyframes bgBlink2 {
+        0% {
+          background-color: rgba(255, 255, 255, 1);
+        }
+      
+        50% {
+          background-color: rgba(255, 211, 57, 1);
+        }
+      
+        100% {
+          background-color: rgba(255, 255, 255, 1);
+        }
+      }
+
+      .step3_top_box .left_box .line .block.on {
+        background-color: rgba(131, 174, 0, 1);
+      }
+
+      .step3_top_box .left_box .line .block.on2 {
+        background-color: rgba(255, 211, 57, 1);
+      }
+
+      .step3_top_box .left_box .line .block .txt {
+        font-size: 40px;
+        color: rgba(231, 46, 38, 1);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 55%);
+      }
+
+      .step3_top_box .left_box .line .block .txt.right {
+        top: 50%;
+        left: auto;
+        right: 0;
+        transform: translate(85%, -50%);
+      }
+
+      .step3_top_box .left_box .line:not(.line:last-child) .block {
+        border-bottom: none;
+      }
+
+      .step3_top_box .left_box .line .block + .block {
+        border-left: none;
+      }
+
+      .step3_top_box .right_box {
+        gap: 35px;
+        position: relative;
+      }
+
+      .step3_top_box .right_box * {
+        font-size: 60px;
+      }
+
+      .step3_top_box .right_box .line {
+        gap: 30px;
+        position: relative;
+        z-index: 10;
+      }
+
+      .step3 .arrow {
+        width: 60px;
+        height: 10px;
+        position: absolute;
+        top: 0;
+        transition: height 1s ease-in-out;
+      }
+
+      .step3 .arrow.on {
+        height: 280px;
+      }
+
+      .step3 .arrow1 {
+        background-color: rgba(190, 218, 255, 1);
+        left: -10px;
+      }
+
+      .step3 .arrow2 {
+        background-color: rgba(255, 184, 239, 1);
+        left: 120px;
+      }
+
+      .step3 .arrow::after {
+        content: "";
+        border-right: 46px solid transparent;
+        border-left: 46px solid transparent;
+        position: absolute;
+        left: 50%;
+        bottom: 2px;
+        transform: translate(-50%, 100%);
+      }
+
+      .step3 .arrow1::after {
+        border-top: 46px solid rgba(190, 218, 255, 1);
+      }
+
+      .step3 .arrow2::after {
+        border-top: 46px solid rgba(255, 184, 239, 1);
+      }
+
+      .step3 .arrow .txt {
+        font-size: 40px;
+        color: rgba(231, 46, 38, 1);
+        text-align: center;
+        white-space: nowrap;
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translate(-50%, 100%);
+      }
+
+      .step3_btm_box {
+        width: 1211px;
+        height: 190px;
+        margin-top: 92px;
+        background-color: rgba(255, 211, 57, 0.44);
+        border-radius: 20px;
+        text-align: center;
+        line-height: 1.135;
+      }
+
+      /* 4p */
+      .step4 .step3_top_box .right_box .line .txt span {
+        position: relative;
+        z-index: 10;
+      }
+
+      .step4 .step3_btm_box {
+        width: 1184px;
+        height: 159px;
+        margin-top: 123px;
+      }
+
+      .step4 .txt {
+        position: relative;
+      }
+
+      .step4 .txt .circle {
+        width: 73px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 4px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .step4 .txt .circle.pink {
+        background-color: rgba(255, 184, 239, 1);
+      }
+
+      .step4 .txt .circle.blue {
+        background-color: rgba(190, 218, 255, 1);
+      }
+
+      .step4 .txt .circle.green {
+        background-color: rgba(199, 230, 103, 1);
+      }
+
+      .step4 .txt .circle.orange {
+        background-color: rgba(249, 166, 12, 1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div
+        id="contents-wrap"
+        class="concept"
+        style="position: absolute; display: flex"
+      ></div>
+      <div id="contents-main" style="display: none" class="concept-warp">
+        <div class="concept-warp_inner">
+          <header class="header" style="visibility: visible">
+            <div class="header_title">
+              <button class="sound-btn" onclick="titleSound()"></button>
+              <h3></h3>
+            </div>
+            <p class="header_page"><span>1</span>/2</p>
+          </header>
+          <main class="main">
+            <div class="main_content">
+              <!-- 콘텐츠영역 -->
+              <div class="step step1" style="display: block">
+                <!-- step1 시작부분 -->
+                <div class="main__container dp_flex">
+                  <div class="step1_content dp_flex dp_flex_column">
+                    <div class="line line1 dp_flex">
+                      <div class="left_box dp_flex">
+                        <div class="icon_box icon_box1">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box2">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box3">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box4">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box5">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box6">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box7">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box8">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_BLUE.png" alt="파란 연필">
+                        </div>
+                        <div class="icon_box icon_box9">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_BLUE.png" alt="파란 연필">
+                        </div>
+                        <div class="icon_box icon_box10">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_BLUE.png" alt="파란 연필">
+                        </div>
+                        <div class="icon_box icon_box11">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_BLUE.png" alt="파란 연필">
+                        </div>
+                      </div>
+                      <div class="right_box dp_flex">
+                        <div class="txt txt1">
+                          <span>7</span>
+                          <div class="circle v_hidden"></div>
+                        </div>
+                        <div class="txt sign">+</div>
+                        <div class="txt txt2">4</div>
+                        <div class="txt sign">=</div>
+                        <div class="txt txt3">11</div>
+                      </div>
+                    </div>
+                    <div class="line line2 dp_flex">
+                      <div class="left_box dp_flex">
+                        <div class="icon_box icon_box1">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box2">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box3">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box4">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box5">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box6">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box7">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box8">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_BLUE.png" alt="파란 연필">
+                        </div>
+                        <div class="icon_box icon_box9">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_BLUE.png" alt="파란 연필">
+                        </div>
+                        <div class="icon_box icon_box10">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_BLUE.png" alt="파란 연필">
+                        </div>
+                        <div class="icon_box icon_box11">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_BLUE.png" alt="파란 연필">
+                        </div>
+                        <div class="icon_box icon_box12">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_BLUE.png" alt="파란 연필">
+                        </div>
+                      </div>
+                      <div class="right_box dp_flex">
+                        <div class="txt txt1">
+                          <span>7</span>
+                          <div class="circle v_hidden"></div>
+                        </div>
+                        <div class="txt sign">+</div>
+                        <div class="txt txt2">5</div>
+                        <div class="txt sign">=</div>
+                        <div class="txt txt3">12</div>
+                      </div>
+                    </div>
+                    <div class="line line3 dp_flex">
+                      <div class="left_box dp_flex">
+                        <div class="icon_box icon_box1">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box2">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box3">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box4">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box5">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box6">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box7">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box8">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_BLUE.png" alt="파란 연필">
+                        </div>
+                        <div class="icon_box icon_box9">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_BLUE.png" alt="파란 연필">
+                        </div>
+                        <div class="icon_box icon_box10">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_BLUE.png" alt="파란 연필">
+                        </div>
+                        <div class="icon_box icon_box11">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_BLUE.png" alt="파란 연필">
+                        </div>
+                        <div class="icon_box icon_box12">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_BLUE.png" alt="파란 연필">
+                        </div>
+                        <div class="icon_box icon_box13">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_BLUE.png" alt="파란 연필">
+                        </div>
+                      </div>
+                      <div class="right_box dp_flex">
+                        <div class="txt txt1">
+                          <span>7</span>
+                          <div class="circle v_hidden"></div>
+                        </div>
+                        <div class="txt sign">+</div>
+                        <div class="txt txt2">6</div>
+                        <div class="txt sign">=</div>
+                        <div class="txt txt3">
+                          <div class="txt_container txt_container1 two"><span>?</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="line line4 dp_flex">
+                      <div class="left_box dp_flex">
+                        <div class="icon_box icon_box1">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box2">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box3">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box4">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box5">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box6">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box7">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_RED.png" alt="빨간 연필">
+                        </div>
+                        <div class="icon_box icon_box8">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_BLUE.png" alt="파란 연필">
+                        </div>
+                        <div class="icon_box icon_box9">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_BLUE.png" alt="파란 연필">
+                        </div>
+                        <div class="icon_box icon_box10">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_BLUE.png" alt="파란 연필">
+                        </div>
+                        <div class="icon_box icon_box11">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_BLUE.png" alt="파란 연필">
+                        </div>
+                        <div class="icon_box icon_box12">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_BLUE.png" alt="파란 연필">
+                        </div>
+                        <div class="icon_box icon_box13">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_BLUE.png" alt="파란 연필">
+                        </div>
+                        <div class="icon_box icon_box14">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_IMG_BLUE.png" alt="파란 연필">
+                        </div>
+                      </div>
+                      <div class="right_box dp_flex">
+                        <div class="txt txt1">
+                          <span>7</span>
+                          <div class="circle v_hidden"></div>
+                        </div>
+                        <div class="txt sign">+</div>
+                        <div class="txt txt2">7</div>
+                        <div class="txt sign">=</div>
+                        <div class="txt txt3">
+                          <div class="txt_container txt_container2 two"><span>?</span></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="arrow arrow1 v_hidden"></div>
+                    <div class="arrow arrow2 v_hidden"></div>
+
+                    <div class="step1_point step1_point1 img_point__wrap dp_none">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_POINT.png" alt="별모양 강조효과"/>
+                    </div>
+
+                    <div class="step1_point step1_point2 img_point__wrap dp_none">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP1_POINT.png" alt="별모양 강조효과"/>
+                    </div>
+
+                    <div class="quiz_select_wrap quiz_select_wrap1">
+                      <!-- <div class="select_list">
+                        <div class="answer answer1">13</div>
+                        <div class="answer answer2">14</div>
+                        <div class="answer answer3">15</div>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step2" style="display: block">
+                <!-- step2 시작부분 -->
+                <div class="main__container">
+                  <div class="full_content_comm dp_flex dp_flex_column">
+                    <div class="step1_content">
+                      <div class="line line1">
+                        <div class="right_box dp_flex">
+                          <div class="txt txt1">8</div>
+                          <div class="txt sign">+</div>
+                          <div class="txt txt2">3</div>
+                          <div class="txt sign">=</div>
+                          <div class="txt txt3">11</div>
+                        </div>
+                      </div>
+                      <div class="line line2">
+                        <div class="right_box dp_flex">
+                          <div class="txt txt1">8</div>
+                          <div class="txt sign">+</div>
+                          <div class="txt txt2">4</div>
+                          <div class="txt sign">=</div>
+                          <div class="txt txt3">12</div>
+                        </div>
+                      </div>
+                      <div class="line line3">
+                        <div class="right_box dp_flex">
+                          <div class="txt txt1">8</div>
+                          <div class="txt sign">+</div>
+                          <div class="txt txt2">5</div>
+                          <div class="txt sign">=</div>
+                          <div class="txt txt3">13</div>
+                        </div>
+                      </div>
+                      <div class="line line4">
+                        <div class="right_box dp_flex">
+                          <div class="txt txt1">8</div>
+                          <div class="txt sign">+</div>
+                          <div class="txt txt2">6</div>
+                          <div class="txt sign">=</div>
+                          <div class="txt txt3">14</div>
+                        </div>
+                      </div>
+
+                      <div class="point v_hidden"></div>
+                      <div class="arrow arrow1 v_hidden">
+                        <span class="txt v_hidden">1씩 커짐</span>
+                      </div>
+                      <div class="arrow arrow2 v_hidden">
+                        <span class="txt v_hidden">1씩 커짐</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <footer class="check_footer">
+                    <div class="check_footer_inner">
+                      <div class="check_footer_text img_container img_container1">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_4_4/STEP2_FOOTER_TXT.png?=t" class="img footer_img" />
+                      </div>
+                      <div class="check_footer_ch">
+                        <div class="check_footer_ch_head"></div>
+                        <div class="check_footer_ch_body"></div>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+              <div class="step step3" style="display: none">
+                <!-- step3 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step3_top_box dp_flex">
+                    <div class="left_box">
+                      <div class="line line1 dp_flex">
+                        <div class="block block1 dp_flex">
+                          <span>9 + 6</span>
+                        </div>
+                      </div>
+                      <div class="line line2 dp_flex">
+                        <div class="block block1 dp_flex">
+                          <span>9 + 7</span>
+                          <div class="txt v_hidden">=16</div>
+                        </div>
+                        <div class="block block2 dp_flex">
+                          <span>8 + 7</span>
+                        </div>
+                      </div>
+                      <div class="line line3 dp_flex">
+                        <div class="block block1 dp_flex">
+                          <span>9 + 8</span>
+                        </div>
+                        <div class="block block2 dp_flex">
+                          <span>8 + 8</span>
+                        </div>
+                        <div class="block block3 dp_flex">
+                          <span>7 + 8</span>
+                        </div>
+                      </div>
+                      <div class="line line4 dp_flex">
+                        <div class="block block1 dp_flex">
+                          <span>9 + 9</span>
+                        </div>
+                        <div class="block block2 dp_flex">
+                          <span>8 + 9</span>
+                        </div>
+                        <div class="block block3 dp_flex">
+                          <span>7 + 9</span>
+                        </div>
+                        <div class="block block4 dp_flex">
+                          <span>6 + 9</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right_box dp_flex dp_flex_column v_hidden">
+                      <div class="line line1 dp_flex">
+                        <div class="txt txt1">9</div>
+                        <div class="txt sign">+</div>
+                        <div class="txt txt2">7</div>
+                        <div class="txt sign">=</div>
+                        <div class="txt txt3">16</div>
+                      </div>
+                      <div class="line line2 dp_flex">
+                        <div class="txt txt1">8</div>
+                        <div class="txt sign">+</div>
+                        <div class="txt txt2">8</div>
+                        <div class="txt sign">=</div>
+                        <div class="txt txt3">16</div>
+                      </div>
+                      <div class="line line3 dp_flex">
+                        <div class="txt txt1">7</div>
+                        <div class="txt sign">+</div>
+                        <div class="txt txt2">9</div>
+                        <div class="txt sign">=</div>
+                        <div class="txt txt3">16</div>
+                      </div>
+
+                      <div class="arrow arrow1 v_hidden">
+                        <span class="txt v_hidden">1씩<br>작아짐</span>
+                      </div>
+                      <div class="arrow arrow2 v_hidden">
+                        <span class="txt v_hidden">1씩<br>커짐</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step3_btm_box dp_flex v_hidden">
+                    <span>
+                      더해지는 수가 작아질 때, <br>
+                      같은 수만큼 더하는 수가 커지면 합이 같습니다.
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="step step4" style="display: none">
+                <!-- step4 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step3_top_box dp_flex">
+                    <div class="left_box">
+                      <div class="line line1 dp_flex">
+                        <div class="block block1 dp_flex">
+                          <span>9 + 6</span>
+                          <div class="txt right v_hidden">=15</div>
+                        </div>
+                      </div>
+                      <div class="line line2 dp_flex">
+                        <div class="block block1 on dp_flex">
+                          <span>9 + 7</span>
+                        </div>
+                        <div class="block block2 dp_flex">
+                          <span>8 + 7</span>
+                        </div>
+                      </div>
+                      <div class="line line3 dp_flex">
+                        <div class="block block1 dp_flex">
+                          <span>9 + 8</span>
+                        </div>
+                        <div class="block block2 on dp_flex">
+                          <span>8 + 8</span>
+                        </div>
+                        <div class="block block3 dp_flex">
+                          <span>7 + 8</span>
+                        </div>
+                      </div>
+                      <div class="line line4 dp_flex">
+                        <div class="block block1 dp_flex">
+                          <span>9 + 9</span>
+                        </div>
+                        <div class="block block2 dp_flex">
+                          <span>8 + 9</span>
+                        </div>
+                        <div class="block block3 on dp_flex">
+                          <span>7 + 9</span>
+                        </div>
+                        <div class="block block4 dp_flex">
+                          <span>6 + 9</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right_box dp_flex dp_flex_column v_hidden">
+                      <div class="line line1 dp_flex">
+                        <div class="txt txt1">
+                          <span>9</span>
+                          <div class="circle pink v_hidden"></div>
+                        </div>
+                        <div class="txt sign"><span>+</span></div>
+                        <div class="txt txt2">
+                          <span>6</span>
+                          <div class="circle blue v_hidden"></div>
+                        </div>
+                        <div class="txt sign"><span>=</span></div>
+                        <div class="txt txt3"><span>15</span></div>
+                      </div>
+                      <div class="line line2 dp_flex">
+                        <div class="txt txt1">
+                          <span>8</span>
+                          <div class="circle orange v_hidden"></div>
+                        </div>
+                        <div class="txt sign"><span>+</span></div>
+                        <div class="txt txt2">
+                          <span>7</span>
+                          <div class="circle green v_hidden"></div>
+                        </div>
+                        <div class="txt sign"><span>=</span></div>
+                        <div class="txt txt3"><span>15</span></div>
+                      </div>
+                      <div class="line line3 dp_flex">
+                        <div class="txt txt1">
+                          <span>7</span>
+                          <div class="circle green v_hidden"></div>
+                        </div>
+                        <div class="txt sign"><span>+</span></div>
+                        <div class="txt txt2">
+                          <span>8</span>
+                          <div class="circle orange v_hidden"></div>
+                        </div>
+                        <div class="txt sign"><span>=</span></div>
+                        <div class="txt txt3"><span>15</span></div>
+                      </div>
+                      <div class="line line4 dp_flex">
+                        <div class="txt txt1">
+                          <span>6</span>
+                          <div class="circle blue v_hidden"></div>
+                        </div>
+                        <div class="txt sign"><span>+</span></div>
+                        <div class="txt txt2">
+                          <span>9</span>
+                          <div class="circle pink v_hidden"></div>
+                        </div>
+                        <div class="txt sign"><span>=</span></div>
+                        <div class="txt txt3"><span>15</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step3_btm_box dp_flex v_hidden">
+                    <span>
+                      두 수를 바꾸어 더해도 합은 같습니다.
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="step-list">
+                <li class="step-list_item active"></li>
+                <li class="step-list_item"></li>
+              </ul>
+            </div>
+          </main>
+          <div class="main_prev-next">
+            <button class="btn-prev" style="display: none">이전버튼</button>
+            <!-- <button class="btn-next" style="display: block" disabled> -->
+            <button class="btn-next blinking" style="display: block">
+              다음버튼
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      crossorigin
+      src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"
+    ></script>
+    <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+    <script src="../../../COMM/JS/COMMON2.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNT3.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNTBTN.JS"></script>
+    <script src="../../../COMM/JS/GAME.JS"></script>
+    <script src="../../../COMM/JS/VIDEO.JS"></script>
+    <script src="../../../COMM/JS/VIDEO-HTTP-STREAMING.JS"></script>
+    <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+    <script>
+      /*
+       * 데이터
+       */
+      let intro = {
+        type: "concept", //concept 개념익히기, checkExam 확인문제
+        title: "여러 가지 덧셈을 해 볼까요",
+        subTitle: [
+          "여러 가지 덧셈식을 계산하며 다양한 덧셈 방법을 확인할 수 있어요.",
+          "덧셈표에서 합이 같은 식을 찾을 수 있어요."
+        ],
+        sound: ["../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_001.mp3"],
+      };
+
+      //현재 페이지
+      let disStep = 1;
+
+      let pageData = [
+        {
+          step: 1,
+          title: "여러 가지 덧셈을 해 봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_001.mp3",
+          headerPage: [1, 2],
+          footerPage: [1, 1],
+          prev: 0,
+          next: 0,
+        },
+        {
+          step: 2,
+          title: "",
+          sound: "",
+          headerPage: [0, 0],
+          footerPage: [0, 0],
+          prev: 1,
+          next: 1,
+        },
+        {
+          step: 3,
+          title: "합이 같은 덧셈식끼리 같은 색으로 색칠해 봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_017.mp3",
+          headerPage: [2, 2],
+          footerPage: [1, 2],
+          prev: 2,
+          next: 1,
+        },
+        {
+          step: 4,
+          title: "합이 같은 덧셈식끼리 같은 색으로 색칠해 봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_017.mp3",
+          headerPage: [2, 2],
+          footerPage: [2, 2],
+          prev: 1,
+          next: 0,
+        }
+      ];
+      
+      function pageAction() {
+        console.log("disStep ::: ", disStep);
+        //setTimeout 초기화
+        const TimeoutId = setTimeout(() => console.log("timeout clear"), 1);
+        for (let i = 0; i < TimeoutId; i++) {
+          clearTimeout(i);
+        }
+        stepSet();
+        switch (disStep) {
+          case 1:
+            step1.reset();
+            step1.start();
+            break;
+          case 2:
+            step2.reset();
+            step2.start();
+            break;
+          case 3:
+            step3.reset();
+            step3.start();
+            break;
+          case 4:
+            step4.reset();
+            step4.start();
+            break;
+        }
+      }
+
+      //문제 시작
+      //================STEP1==============
+      const step1 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_001.mp3",
+            "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_002.mp3",
+            "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_003.mp3",
+            "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_004.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step1 .step1_point1').css('display', 'block');
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step1 .step1_point1').css('display', 'none');
+                $('.step1 .step1_point2').css('display', 'block');
+              }
+            },
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                $('.step1 .step1_point2').css('display', 'none');
+
+                $('.step1 .txt_container1').addClass('blink');
+                timerSet(() => {
+                  timerInit();
+                  $('.step1 .txt_container1').removeClass('blink');
+                  $('.step1 .txt_container2').addClass('blink');
+                  timerSet(() => {
+                    timerInit();
+                    $('.step1 .txt_container2').removeClass('blink');
+                  }, 1500);
+                }, 1500);
+              }
+            },
+            {
+              idx: 4,
+              type: 'end',
+              callback: () => {
+                touchMotionSetOn(395, 1385, step1.guideTouch, $('.step1 .txt_container1'));
+              }
+            },
+          ]);
+        },
+        guideTouch: (flag) => {
+          quizSelectSetInit($('.step1 .quiz_select_wrap1'), [13, 14, 15]);
+          quizSelectSetOnNew(1, step1.quizSelectCorrect, $('.step1 .txt_container1'), true);
+        },
+        quizSelectCorrect: (flag) => {
+	        if (flag) {
+	          audioSet([
+	            "../../../COMM/SOUND/CORRECT.mp3",
+	          ], [
+              {
+                idx: 1,
+                type: 'end',
+                callback: () => {
+                  touchMotionSetOn(535, 1385, step1.guideTouch2, $('.step1 .txt_container2'));
+                }
+              },
+	          ]);
+	        } else {
+	          audioSet([
+	            "../../../COMM/SOUND/WRONG.mp3",
+              "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_005.mp3",
+	          ]);
+	        }
+        },
+        guideTouch2: (flag) => {
+          quizSelectSetInit($('.step1 .quiz_select_wrap1'), [13, 14, 15]);
+          quizSelectSetOnNew(2, step1.quizSelectCorrect2, $('.step1 .txt_container2'), true);
+        },
+        quizSelectCorrect2: (flag) => {
+	        if (flag) {
+	          audioSet([
+	            "../../../COMM/SOUND/CORRECT.mp3",
+              "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_007.mp3",
+              "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_008.mp3",
+              "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_009.mp3",
+              "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_010.mp3",
+              "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_011.mp3",
+              "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_012.mp3",
+	          ], [
+              {
+                idx: 4,
+                type: 'start',
+                callback: () => {
+                  $('.step1_content .line .right_box .txt .circle').css('visibility', 'visible').addClass('blinking');
+                }
+              },
+              {
+                idx: 5,
+                type: 'start',
+                callback: () => {
+                  $('.step1_content .line .right_box .txt .circle').css('visibility', '').removeClass('blinking');
+                  $('.step1 .arrow1').css('visibility', 'visible').addClass('on');
+                }
+              },
+              {
+                idx: 7,
+                type: 'start',
+                callback: () => {
+                  $('.step1 .arrow2').css('visibility', 'visible').addClass('on');
+                }
+              },
+              {
+                idx: 7,
+                type: 'end',
+                callback: () => {
+                  disStep++;
+                  pageAction();
+                }
+              },
+	          ]);
+	        } else {
+	          audioSet([
+	            "../../../COMM/SOUND/WRONG.mp3",
+              "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_006.mp3",
+	          ]);
+	        }
+        },
+        reset: () => {
+          touchMotionSetInit();
+
+          $('.step1 .dp_none').css('display', '');
+          $('.step1 .v_hidden').css('visibility', '');
+          $('.step1 .blinking').removeClass('blinking');
+          $('.step1 .blink').removeClass('blink');
+          $('.step1 .on').removeClass('on');
+          $('.step1 .txt_container').html('?');
+        },
+      };
+      //================STEP2==============
+      const step2 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_013.mp3",
+            "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_014.mp3",
+            "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_015.mp3",
+            "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_016.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step2 .check_footer_inner').addClass('slideUp');
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step2 .point').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step2 .point').css('visibility', 'hidden');
+                $('.step2 .arrow1').css('visibility', 'visible').addClass('on');
+                timerSet(() => {
+                  timerInit();
+                  $('.step2 .arrow1 .txt').css('visibility', 'visible');
+                }, 1000);
+              }
+            },
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                $('.step2 .arrow2').css('visibility', 'visible').addClass('on');
+                timerSet(() => {
+                  timerInit();
+                  $('.step2 .arrow2 .txt').css('visibility', 'visible');
+                }, 1000);
+              }
+            },
+            {
+              idx: 4,
+              type: 'end',
+              callback: () => {
+                correctly();
+              }
+            },
+          ]);
+        },
+        reset: () => {
+          $('.step2 .dp_none').css('display', '');
+          $('.step2 .v_hidden').css('visibility', '');
+          $('.step2 .on').removeClass('on');
+          $('.step2 .slideUp').removeClass('slideUp');
+        },
+      };
+      //================STEP3==============
+      const step3 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_017.mp3",
+            "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_018.mp3",
+            "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_019.mp3",
+            "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_020.mp3",
+            "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_021.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step3 .step3_top_box .left_box').addClass('blinking');
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step3 .step3_top_box .left_box').removeClass('blinking');
+                $('.step3 .step3_top_box .left_box .line2 .block1').addClass('bgBlink');
+              }
+            },
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                $('.step3 .step3_top_box .left_box .line2 .block1').removeClass('bgBlink');
+                $('.step3 .step3_top_box .left_box .line2 .block1').addClass('on');
+              }
+            },
+            {
+              idx: 5,
+              type: 'start',
+              callback: () => {
+                $('.step3 .step3_top_box .left_box .line2 .block1 .txt').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 5,
+              type: 'end',
+              callback: () => {
+                touchMotionSetOn(325, 505, step3.guideTouch, $('.step3 .step3_top_box .left_box .line3 .block2'));
+              }
+            },
+          ]);
+        },
+        guideTouch: (flag) => {
+          audioSet([
+	          "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_022.mp3",
+	        ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step3 .step3_top_box .left_box .line3 .block2').addClass('on');
+              }
+            },
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                touchMotionSetOn(425, 715, step3.guideTouch2, $('.step3 .step3_top_box .left_box .line4 .block3'));
+              }
+            },
+	        ]);
+        },
+        guideTouch2: (flag) => {
+          audioSet([
+	          "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_023.mp3",
+	          "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_024.mp3",
+	          "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_025.mp3",
+	          "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_026.mp3",
+	          "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_027.mp3",
+	        ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step3 .step3_top_box .left_box .line4 .block3').addClass('on');
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step3 .step3_top_box .right_box').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step3 .arrow2').css('visibility', 'visible').addClass('on');
+                timerSet(() => {
+                  timerInit();
+                  $('.step3 .arrow2 .txt').css('visibility', 'visible');
+                }, 1000);
+              }
+            },
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                $('.step3 .arrow1').css('visibility', 'visible').addClass('on');
+                timerSet(() => {
+                  timerInit();
+                  $('.step3 .arrow1 .txt').css('visibility', 'visible');
+                  timerSet(() => {
+                    timerInit();
+                    $('.step3 .step3_top_box .right_box .line .txt3').addClass('blinking');
+                  }, 2000);
+                }, 1000);
+              }
+            },
+            {
+              idx: 5,
+              type: 'start',
+              callback: () => {
+                $('.step3 .step3_top_box .right_box .line .txt3').removeClass('blinking');
+                $('.step3 .step3_btm_box').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 5,
+              type: 'end',
+              callback: () => {
+                correctly();
+              }
+            },
+	        ]);
+        },
+        reset: () => {
+          touchMotionSetInit();
+
+          $('.step3 .dp_none').css('display', '');
+          $('.step3 .v_hidden').css('visibility', '');
+          $('.step3 .blinking').removeClass('blinking');
+          $('.step3 .bgBlink').removeClass('bgBlink');
+          $('.step3 .on').removeClass('on');
+        },
+      };
+      //================STEP4==============
+      const step4 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_028.mp3",
+            "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_029.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step3_top_box .left_box .line1 .block1').addClass('bgBlink2');
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step3_top_box .left_box .line1 .block1').removeClass('bgBlink2');
+                $('.step4 .step3_top_box .left_box .line1 .block1').addClass('on2');
+                timerSet(() => {
+                  timerInit();
+                  $('.step4 .step3_top_box .left_box .line1 .block1 .txt').css('visibility', 'visible');
+                }, 1500);
+              }
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                touchMotionSetOn(225, 505, step4.guideTouch, $('.step4 .step3_top_box .left_box .line2 .block2'));
+              }
+            },
+          ]);
+        },
+        guideTouch: (flag) => {
+          audioSet([
+	          "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_030.mp3",
+	        ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step3_top_box .left_box .line2 .block2').addClass('on2');
+              }
+            },
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                touchMotionSetOn(325, 715, step4.guideTouch2, $('.step4 .step3_top_box .left_box .line3 .block3'));
+              }
+            },
+	        ]);
+        },
+        guideTouch2: (flag) => {
+          audioSet([
+	          "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_031.mp3",
+	        ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step3_top_box .left_box .line3 .block3').addClass('on2');
+              }
+            },
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                touchMotionSetOn(425, 925, step4.guideTouch3, $('.step4 .step3_top_box .left_box .line4 .block4'));
+              }
+            },
+	        ]);
+        },
+        guideTouch3: (flag) => {
+          audioSet([
+	          "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_032.mp3",
+	          "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_033.mp3",
+	          "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_034.mp3",
+	          "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_035.mp3",
+	          "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_036.mp3",
+	          "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_037.mp3",
+	          "../../../COMM/SOUND/SEASON2/1_4_4/1_2_4-4_038.mp3",
+	        ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step3_top_box .left_box .line4 .block4').addClass('on2');
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step3_top_box .right_box').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step3_top_box .right_box .line1').addClass('blinking');
+                $('.step4 .step3_top_box .right_box .line4').addClass('blinking');
+              }
+            },
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step3_top_box .right_box .line1').removeClass('blinking');
+                $('.step4 .step3_top_box .right_box .line4').removeClass('blinking');
+                $('.step4 .step3_top_box .right_box .line1 .circle').css('visibility', 'visible');
+                $('.step4 .step3_top_box .right_box .line4 .circle').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 5,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step3_top_box .right_box .line1 .circle').css('visibility', '');
+                $('.step4 .step3_top_box .right_box .line4 .circle').css('visibility', '');
+                $('.step4 .step3_top_box .right_box .line2').addClass('blinking');
+                $('.step4 .step3_top_box .right_box .line3').addClass('blinking');
+              }
+            },
+            {
+              idx: 6,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step3_top_box .right_box .line2').removeClass('blinking');
+                $('.step4 .step3_top_box .right_box .line3').removeClass('blinking');
+                $('.step4 .step3_top_box .right_box .line2 .circle').css('visibility', 'visible');
+                $('.step4 .step3_top_box .right_box .line3 .circle').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 7,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step3_top_box .right_box .line2 .circle').css('visibility', '');
+                $('.step4 .step3_top_box .right_box .line3 .circle').css('visibility', '');
+                $('.step4 .step3_btm_box').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 7,
+              type: 'end',
+              callback: () => {
+                callFinish();
+              }
+            },
+	        ]);
+        },
+        reset: () => {
+          touchMotionSetInit();
+
+          $('.step4 .dp_none').css('display', '');
+          $('.step4 .v_hidden').css('visibility', '');
+        },
+      };
+    </script>
+  </body>
+</html>

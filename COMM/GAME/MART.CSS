@@ -1,0 +1,460 @@
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "NanumSquareRound" !important;
+}
+
+.cSize {
+  /* width: 50% !important; */
+  /* height: 50% !important; */
+  text-align: center;
+  line-height: 1.3;
+}
+
+.cSizeFig {
+  /* width: 400px !important; */
+}
+
+.qFig {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.qFig span {
+  /* font-size: 40px; */
+}
+
+.cmImg {
+  width: 300px !important;
+  height: 200px !important;
+  margin-top: 0 !important;
+}
+
+.tPoint2_3_5_L {
+  margin: 0 -16px 0 0;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid black;
+  background-color: #dae1f5;
+  border-radius: 7px;
+  width: 152px;
+  height: 75px;
+  border: none;
+}
+
+.osign {
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../COMM/IMG/MART/OSIGN.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.transparentWall {
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.winPopup {
+  z-index: 3;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.winPopup img {
+  position: absolute;
+  margin-top: 30px;
+  top: 50%;
+  left: 50%;
+
+  transform: translateX(-50%) translateY(-50%);
+}
+.winPopup.skill {
+  display: none;
+}
+.winPopup.skill img {
+  width: 1440px;
+  height: 994px;
+}
+
+.winPopup.ready {
+  display: none;
+}
+
+.winPopup.ready img {
+  width: 1440px;
+  height: 990px;
+}
+
+.winPopup_btn {
+  margin-top: 30px;
+  position: absolute;
+  top: 78.6%;
+  left: 50%;
+  width: 310px;
+  height: 100px;
+  border-radius: 100px;
+  font-size: 0;
+  transform: translateX(calc(-50% + 62px));
+  /* background: blue; */
+}
+.ready .winPopup_restart {
+  transform: translateX(-50%);
+  /* background: red; */
+}
+.winPopup_restart {
+  position: absolute;
+  top: 78.6%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  font-size: 0;
+  transform: translateX(calc(-50% + -165px));
+}
+
+.warp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  /* transform: scale(50%); */
+  position: relative;
+  width: 2000px;
+  height: 1200px;
+  background: url("../../COMM/IMG/MART/BG.JPG") no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* -----인트로----- */
+.game_intro {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../../COMM/IMG/MART/INTRO.JPG") no-repeat center;
+  background-size: 100% 1200px;
+}
+
+/* -----인트로 시작 버튼----- */
+.game_intro_start {
+  position: absolute;
+  top: 69%;
+  left: 50%;
+  width: 355px;
+  height: 140px;
+  border-radius: 100px;
+  transform: translateX(-50%);
+  font-size: 0;
+}
+
+.game_title {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(7, 6, 41, 1);
+  font-weight: 800;
+  font-size: 60px;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.quiz {
+  position: absolute;
+  top: 194px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 919px;
+  height: 100%;
+  overflow: hidden;
+  /* index3.html .quiz 스타일 명령들과 겹칩니다 배경투명 추가합니다 */
+  background-color: transparent;
+}
+.quiz_paper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 317px;
+  background: url("../../COMM/IMG/MART/PAPER.PNG") no-repeat center;
+  color: #070629;
+  font-size: 120px;
+  font-weight: 800;
+  padding: 30px 60px 40px;
+  line-height: 1.2;
+  transform: translateY(-100%);
+  text-align: center;
+}
+.quiz_paper.fontsmall {
+  font-size: 70px;
+}
+
+.quiz_paper_img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz_paper_img img {
+  width: 100%;
+}
+
+.quiz_paper p {
+  color: #070629;
+  word-break: keep-all;
+}
+
+.quiz_list_item .underline {
+  text-decoration: underline;
+}
+
+.dask {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 701px;
+  background: url("../../COMM/IMG/MART/DASK.PNG") no-repeat center;
+  background-size: cover;
+}
+
+.view {
+  position: absolute;
+  display: flex;
+  top: 510px;
+  right: 0;
+}
+
+.view_item,
+.view_item_inner {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 504px;
+  height: 375px;
+}
+
+.view_item.d-none {
+  display: none;
+}
+
+.view_item img,
+.view_item_inner img {
+  width: 350px;
+  height: 220px;
+  /* 2024-10-17 수정 */
+  /* margin-top: 155px; */
+  /* 2025-03-14 수정 */
+  align-self: flex-end;
+}
+
+.view_item.ani-stop {
+  animation-play-state: paused !important;
+}
+
+.view_item.zIndex {
+  z-index: 1;
+}
+
+.view_item_inner.active {
+  /* filter: drop-shadow(0 0 10px rgba(255, 100, 220, 1)); */
+  filter: drop-shadow(6px 0 0px #ff64dc) drop-shadow(0 6px 0 #ff64dc)
+    drop-shadow(-6px 0 0px #ff64dc) drop-shadow(0 -6px 0 #ff64dc);
+}
+
+.view_item.small p {
+  font-size: 52px;
+}
+
+.view_item_inner.small p {
+  font-size: 52px;
+}
+
+.view_item_text,
+.view_item_inner_text {
+  padding-top: 176px;
+  font-size: 70px;
+  color: rgba(7, 6, 41, 1);
+  text-shadow: -1px 0 rgba(7, 6, 41, 1), 0 1px rgba(7, 6, 41, 1),
+    1px 0 rgba(7, 6, 41, 1), 0 -1px rgba(7, 6, 41, 1);
+}
+
+.grape {
+  background: url("../../COMM/IMG/MART/VIEW1.PNG") no-repeat center;
+  background-size: cover;
+}
+.apple {
+  background: url("../../COMM/IMG/MART/VIEW2.PNG") no-repeat center;
+  background-size: cover;
+}
+.watermelon {
+  background: url("../../COMM/IMG/MART/VIEW3.PNG") no-repeat center;
+  background-size: cover;
+}
+
+.character {
+  position: absolute;
+  z-index: 2;
+  left: 70px;
+  bottom: 0;
+  width: 1224px;
+  height: 573px;
+  background: url("../../COMM/IMG/MART/CHARACTER.PNG") no-repeat center;
+  transform: translateX(-1400px);
+  pointer-events: none;
+}
+
+.wrong {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 656px;
+  background: url("../../COMM/IMG/MART/CHARACTER_WRONG.PNG") no-repeat center;
+  display: none;
+}
+
+.cart {
+  position: absolute;
+  left: 600px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  height: 200px;
+  padding-bottom: 100px;
+  border: unset;
+  background: unset;
+}
+
+.pointerNone {
+  pointer-events: none;
+}
+
+/* 캐릭터 등장 모션 */
+.character.motion {
+  animation-duration: 2s;
+  animation-name: character-slide;
+  animation-fill-mode: forwards;
+}
+@keyframes character-slide {
+  0% {
+    transform: translateX(-1400px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*문제 출력되는 모션*/
+.quiz_paper.print {
+  animation-duration: 0.7s;
+  animation-name: print;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+@keyframes print {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* 문제 떨어지는 모션 */
+.quiz_paper.falling {
+  animation-duration: 1s;
+  animation-name: falling;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+@keyframes falling {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+}
+
+.view_item.motion {
+  animation-duration: 15s;
+  animation-name: view-slide;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes view-slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-180% * 3));
+  }
+}
+
+.mart-guide {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.mart-guide-hand {
+  width: 120px;
+  height: 110px;
+  position: absolute;
+  z-index: 2;
+  background: url("../../COMM/IMG/TOUCH_GUIDE_HAND.PNG") no-repeat center;
+  left: 42%;
+  bottom: 35%;
+  animation: hand-move 1s infinite linear;
+}
+
+@keyframes hand-move {
+  0% {
+    bottom: 35%;
+  }
+  100% {
+    bottom: 10%;
+  }
+}

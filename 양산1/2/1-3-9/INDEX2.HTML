@@ -1,0 +1,1218 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>개정교육과정-수학 수학 개념</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <meta name="KeyWORDs" content="" />
+  <meta name="Description" content="" />
+  <meta name="Robots" content="all" />
+  <meta http-equiv="Subject" content="" />
+  <meta http-equiv="Title" content="" />
+  <meta http-equiv="Author" content="onflou " />
+  <meta http-equiv="Publisher" content="" />
+
+  <!-- 브라우저 호환성을 지정 -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="shortcut icon" href="#" />
+  <link href="../../../COMM/CSS/COMMON.CSS" rel="stylesheet" />
+  <link href="../../../COMM/CSS/CONCEPTCOMMON2.CSS" rel="stylesheet" />
+  <link href="../../../COMM/CSS/VIDEO.CSS" rel="stylesheet" />
+
+  <style>
+    .calc_box_comm {
+      width: 325px;
+      height: 200px;
+      border-radius: 20px;
+      background-color: #F2F5FF;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .calc_box_comm span+span {
+      margin-left: 12px;
+    }
+
+    .calc_box_comm.point {
+      border: solid 5px rgba(103, 68, 243, 1);
+    }
+
+    /* 1p */
+    .step1 .character_txt {
+      width: 242px;
+      height: 136px;
+      top: 533px;
+      left: 1492px;
+      background-image: url("../../../COMM/IMG/CONCEPT/1_3_9/STEP1_CHARACTER_TXT.png");
+    }
+
+    .step1 .step1_left_box {
+      position: relative;
+    }
+
+    .step1 .step1_left_box .step1_img {
+      width: 1600px;
+      height: 470px;
+    }
+
+    .step1 .step1_left_box .step1_txt {
+      position: absolute;
+      display: none;
+    }
+
+    .step1 .step1_left_box .step1_txt1 {
+      top: -5px;
+      left: 475px;
+    }
+
+    .step1 .step1_left_box .step1_txt2 {
+      top: 365px;
+      left: 700px;
+    }
+
+    .step1 .step1_right_box {
+      position: absolute;
+      width: 325px;
+      right: 276px;
+      top: 50%;
+      transform: translate(0, -50%);
+      display: none;
+    }
+
+    .step1 .step1_calc_container {
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+    }
+
+    .step1 .step1_calc_container .calc_left,
+    .step1 .step1_calc_container .calc_right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      width: 200px;
+      font-size: 42px;
+      text-align: center;
+    }
+
+    .step1 .step1_calc_container .txt {
+      margin-top: 20px;
+    }
+
+    .step1 .step1_calc_container .calc_sign {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 75px;
+      height: 75px;
+    }
+
+    .step1 .step1_right_btm {
+      margin-top: 40px;
+    }
+
+    .step1 .point1 {
+      top: 235px;
+      left: 855px;
+    }
+
+    /* 2p */
+    .step2 .step2_btm_box {
+      margin-top: 80px;
+      visibility: hidden;
+    }
+
+    .step2 .step2_btm_box .step2_btm_left {
+      position: relative;
+    }
+
+    .step2 .step2_btm_box .step2_btm_left .step2_img {
+      width: 687px;
+      height: 384px;
+    }
+
+    .step2 .step2_btm_box .step2_btm_left .txt {
+      font-size: 42px;
+      color: rgba(237, 28, 36, 1);
+      position: absolute;
+
+      display: none;
+    }
+
+    .step2 .step2_btm_box .step2_btm_left .txt1 {
+      top: 174px;
+      left: 53px;
+    }
+
+    .step2 .step2_btm_box .step2_btm_left .txt2 {
+      top: 53px;
+      left: 78px;
+    }
+
+    .step2 .step2_btm_box .step2_btm_left .txt3 {
+      top: 10px;
+      left: 160px;
+    }
+
+    .step2 .step2_btm_box .step2_btm_left .txt4 {
+      top: 24px;
+      left: 245px;
+    }
+
+    .step2 .step2_btm_box .step2_btm_left .txt5 {
+      top: 60px;
+      left: 300px;
+    }
+
+    .step2 .step2_btm_box .step2_btm_left .txt6 {
+      top: 30px;
+      left: 420px;
+    }
+
+    .step2 .step2_btm_box .step2_btm_right {
+      margin-left: 120px;
+    }
+
+    /* 3p */
+    .step3 .step3_img {
+      width: 1274px;
+      height: 287px;
+    }
+
+    .step3 .step3_img .img {
+      top: auto;
+      bottom: 0;
+    }
+
+    .step3 .step3_btm_box {
+      margin-top: 67px;
+      position: relative;
+    }
+
+    .step3 .step3_btm_box .step3_btm_left {
+      position: relative;
+    }
+
+    .step3 .step3_btm_box .step3_btm_left .txt {
+      font-size: 42px;
+      position: absolute;
+      color: rgba(237, 28, 36, 1);
+      top: 49px;
+
+      display: none;
+    }
+
+    .step3 .step3_btm_box .step3_btm_left .txt1 {
+      left: 11.77px;
+    }
+
+    .step3 .step3_btm_box .step3_btm_left .txt2 {
+      left: 109.77px;
+    }
+
+    .step3 .step3_btm_box .step3_btm_left .txt3 {
+      left: 204.77px;
+    }
+
+    .step3 .step3_btm_box .step3_btm_left .txt4 {
+      left: 299.77px;
+    }
+
+    .step3 .step3_btm_box .step3_btm_left .txt5 {
+      left: 397.77px;
+    }
+
+    .step3 .step3_btm_box .step3_btm_left .txt6 {
+      left: 486.77px;
+    }
+
+    .step3 .step3_btm_box .step3_btm_right {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    /* 4p */
+    .step4 .step4_btm_box {
+      margin-top: 80px;
+    }
+
+    .step4 .step4_btm_box .step4_btm_left .step4_table>table {
+      border-collapse: collapse;
+    }
+
+    .step4 .step4_btm_box .step4_btm_left .step4_table>table td {
+      border: solid 4px #B098C1;
+    }
+
+    .step4 .step4_table_td {
+      width: 150px;
+      height: 150px;
+
+      position: relative;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .step4 .step4_btm_box .step4_btm_right {
+      margin-left: 120px;
+    }
+
+    .step4 .circle {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: solid 4px #EC008C;
+
+      visibility: hidden;
+    }
+
+    .step4 .circle_blue {
+      border-color: #2574FC;
+    }
+
+    .step4 .circle.point {
+      border-color: #6744F3;
+    }
+
+    .step4 .dash {
+      position: absolute;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: solid 4px #EC008C;
+
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+    }
+
+    .step4 .dash .line {
+      width: 127.28px;
+      height: 4px;
+      background-color: rgba(0, 174, 239, 1);
+      transform: rotate(-45deg);
+
+      position: absolute;
+      top: 50%;
+      left: -25%;
+    }
+
+    .step4 .touchMotion4-1 {
+      top: 634px;
+      left: 677px;
+    }
+
+    .step4 .touchMotion4-2 {
+      top: 634px;
+      left: 523px;
+    }
+
+    /* 5p */
+    .step5 .full_content_comm {
+      position: relative;
+    }
+
+    .step5 .step5_top_box {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .step5 .step5_top_box .calc_box_comm {
+      width: 560px;
+      height: 160px;
+      background-color: rgba(249, 166, 12, 0.5);
+      font-size: 60px;
+      line-height: 0;
+    }
+
+    .step5 .step5_btm_box {
+      position: relative;
+    }
+
+    .step5 .step5_btm_box .txt_box {
+      width: 163px;
+      height: 73px;
+      background-color: rgba(255, 184, 239, 1);
+      border-radius: 10px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 36px;
+
+      position: absolute;
+      top: 212px;
+      z-index: 1;
+    }
+
+    .step5 .step5_btm_box .txt_box1 {
+      left: 177px;
+    }
+
+    .step5 .step5_btm_box .txt_box2 {
+      left: 742px;
+    }
+
+    .step5 .step5_btm_box .txt_box3 {
+      left: 1343px;
+    }
+
+    .step5 .step5_img {
+      width: 1700px;
+      height: 595px;
+    }
+
+    .step5 .step5_img .img3,
+    .step5 .step5_img .img5 {
+      display: block;
+    }
+
+    .step5 .check_footer_text {
+      background: url("../../../COMM/IMG/CONCEPT/1_3_9/STEP5_FOOTER_TXT.png") no-repeat center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="contents-wrap" class="concept" style="position: absolute; display: flex"></div>
+    <div id="contents-main" style="display: none" class="concept-warp">
+      <div class="concept-warp_inner">
+        <header class="header" style="visibility: visible">
+          <div class="header_title">
+            <button class="sound-btn" onclick="titleSound()"></button>
+            <h3>덧셈을 알아볼까요.</h3>
+          </div>
+          <p class="header_page"><span>1</span>/2</p>
+        </header>
+        <main class="main">
+          <div class="main_content">
+            <!-- 콘텐츠영역 -->
+            <div class="step step1" style="display: block">
+              <!-- step1 시작부분 -->
+              <div class="main__container dp_flex">
+                <div class="step1_left_box">
+                  <div class="step1_img img_container">
+                    <img src="../../../COMM/IMG/CONCEPT/1_3_9/STEP1_IMG1.png" alt="주차장 이미지" class="img img1" />
+                    <img src="../../../COMM/IMG/CONCEPT/1_3_9/STEP1_IMG2.png" alt="주차장 8대 강조 이미지" class="img img2" />
+                    <img src="../../../COMM/IMG/CONCEPT/1_3_9/STEP1_IMG3.png" alt="주차장 2대 강조 이미지" class="img img3" />
+                  </div>
+                  <div class="step1_txt step1_txt1">자동차 8대</div>
+                  <div class="step1_txt step1_txt2">나간 자동차 2대</div>
+                  <div class="img_point__wrap point1 v_hidden"><img
+                      src="../../../COMM/IMG/CONCEPT/1_3_9/IMG_STAR_POINT.png" alt="나간 자동차 2대 강조 이미지" /></div>
+                </div>
+                <div class="step1_right_box dp_flex dp_flex_column">
+                  <div class="calc_box_comm"><span class="txt txt_8">8</span><span class="txt txt_minus">-</span><span
+                      class="txt txt_2">2</span></div>
+                </div>
+
+                <div class="character_txt">빼기 기호와 등호 기호</div>
+                <div class="character">
+                  <div class="character_head">
+                    <img src="../../../COMM/IMG/CHARACTER_HEAD.PNG" alt="캐릭터 머리" />
+                  </div>
+                  <div class="character_body">
+                    <img src="../../../COMM/IMG/CHARACTER_BODY.PNG" alt="캐릭터 몸" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step step2" style="display: none">
+              <!-- step2 시작부분 -->
+              <div class="main__container dp_flex dp_flex_column">
+                <div class="step2_top_box dp_flex">
+                  <div class="calc_box_comm"><span class="txt txt_8">8</span><span class="txt txt_minus">-</span><span
+                      class="txt txt_2">2</span></div>
+                </div>
+                <div class="step2_btm_box dp_flex">
+                  <div class="step2_btm_left">
+                    <div class="step2_img img_container">
+                      <img src="../../../COMM/IMG/CONCEPT/1_3_9/STEP2_IMG1.png" alt="손가락 이미지" class="img img1" />
+                      <img src="../../../COMM/IMG/CONCEPT/1_3_9/STEP2_IMG2.png" alt="손가락 이미지" class="img img2" />
+                    </div>
+                    <div class="txt txt1">1</div>
+                    <div class="txt txt2">2</div>
+                    <div class="txt txt3">3</div>
+                    <div class="txt txt4">4</div>
+                    <div class="txt txt5">5</div>
+                    <div class="txt txt6">6</div>
+                  </div>
+                  <div class="step2_btm_right dp_flex">
+                    <div class="calc_comm">
+                      <div class="txt">8</div>
+                      <div class="txt">-</div>
+                      <div class="txt">2</div>
+                      <div class="txt">=</div>
+                      <div class="txt_container txt_container3 keypad_txt keypad_txt1" data-val="6">?</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step step3" style="display: none">
+              <!-- step3 시작부분 -->
+              <div class="main__container dp_flex dp_flex_column">
+                <div class="step3_top_box dp_flex">
+                  <div class="calc_box_comm"><span class="txt txt_8">8</span><span class="txt txt_minus">-</span><span
+                      class="txt txt_2">2</span></div>
+                </div>
+                <div class="step3_btm_box dp_flex">
+                  <div class="step3_btm_left">
+                    <div class="step3_img img_container">
+                      <img src="../../../COMM/IMG/CONCEPT/1_3_9/STEP3_IMG1.png" alt="빈 손 이미지" class="img img1" />
+                      <img src="../../../COMM/IMG/CONCEPT/1_3_9/STEP3_IMG2.png" alt="연결 모형 나누는 이미지" class="img img2" />
+                    </div>
+                    <div class="txt txt1">1</div>
+                    <div class="txt txt2">2</div>
+                    <div class="txt txt3">3</div>
+                    <div class="txt txt4">4</div>
+                    <div class="txt txt5">5</div>
+                    <div class="txt txt6">6</div>
+                  </div>
+                  <div class="step3_btm_right dp_flex">
+                    <div class="calc_comm">
+                      <div class="txt">8</div>
+                      <div class="txt">-</div>
+                      <div class="txt">2</div>
+                      <div class="txt">=</div>
+                      <div class="txt_container txt_container3 keypad_txt keypad_txt1" data-val="6">?</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step step4" style="display: none">
+              <!-- step4 시작부분 -->
+              <div class="touchMotion touchMotion4-1">
+                <div class="touchMotion_point"></div>
+                <div class="touchMotion_hand"></div>
+              </div>
+
+              <div class="touchMotion touchMotion4-2">
+                <div class="touchMotion_point"></div>
+                <div class="touchMotion_hand"></div>
+              </div>
+
+              <div class="main__container dp_flex dp_flex_column">
+                <div class="step4_top_box dp_flex">
+                  <div class="calc_box_comm"><span class="txt txt_8">8</span><span class="txt txt_minus">-</span><span
+                      class="txt txt_2">2</span></div>
+                </div>
+                <div class="step4_btm_box dp_flex">
+                  <div class="step4_btm_left">
+                    <div class="step4_table">
+                      <table>
+                        <tr>
+                          <td>
+                            <div class="step4_table_td">
+                              <div class="circle circle1 circle_red"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="step4_table_td">
+                              <div class="circle circle2 circle_red"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="step4_table_td">
+                              <div class="circle circle3 circle_red"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="step4_table_td">
+                              <div class="circle circle4 circle_red"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="step4_table_td">
+                              <div class="circle circle5 circle_red"></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="step4_table_td">
+                              <div class="circle circle6 circle_red"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="step4_table_td">
+                              <div class="circle circle7 circle_red"></div>
+                              <div class="dash dash2">
+                                <div class="line"></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="step4_table_td">
+                              <div class="circle circle8 circle_red"></div>
+                              <div class="dash dash1">
+                                <div class="line"></div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="step4_table_td"></div>
+                          </td>
+                          <td>
+                            <div class="step4_table_td"></div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="step4_btm_right dp_flex">
+                    <div class="calc_comm">
+                      <div class="txt">8</div>
+                      <div class="txt">-</div>
+                      <div class="txt">2</div>
+                      <div class="txt">=</div>
+                      <div class="txt_container txt_container3 keypad_txt keypad_txt1" data-val="6">?</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step step5" style="display: none">
+              <!-- step5 시작부분 -->
+              <div class="main__container">
+                <div class="full_content_comm dp_flex dp_flex_column">
+                  <div class="step5_top_box dp_flex">
+                    <div class="calc_box_comm">
+                      <span class="txt txt_8">8</span>
+                      <span class="txt txt_minus">-</span>
+                      <span class="txt txt_2">2</span>
+                      <span class="txt txt_equal">=</span>
+                      <span class="txt txt_6">6</span>
+                    </div>
+                  </div>
+                  <div class="step5_btm_box">
+                    <div class="txt_box txt_box1">방법1</div>
+                    <div class="txt_box txt_box2">방법2</div>
+                    <div class="txt_box txt_box3">방법3</div>
+                    <div class="step5_img img_container">
+                      <img src="../../../COMM/IMG/CONCEPT/1_3_9/STEP5_TOP_IMG1.png" alt="빈 손 이미지" class="img img1" />
+                      <img src="../../../COMM/IMG/CONCEPT/1_3_9/STEP5_TOP_IMG1_2.png" alt="빈 손 이미지" class="img img2" />
+                      <img src="../../../COMM/IMG/CONCEPT/1_3_9/STEP5_TOP_IMG2.png" alt="빈 손 이미지" class="img img3" />
+                      <img src="../../../COMM/IMG/CONCEPT/1_3_9/STEP5_TOP_IMG2_2.png" alt="빈 손 이미지" class="img img4" />
+                      <img src="../../../COMM/IMG/CONCEPT/1_3_9/STEP5_TOP_IMG3.png" alt="빈 손 이미지" class="img img5" />
+                      <img src="../../../COMM/IMG/CONCEPT/1_3_9/STEP5_TOP_IMG3_2.png" alt="빈 손 이미지" class="img img6" />
+                    </div>
+                  </div>
+                </div>
+                <footer class="check_footer">
+                  <div class="check_footer_inner slideUp">
+                    <div class="check_footer_text"></div>
+                    <div class="check_footer_ch">
+                      <div class="check_footer_ch_head"></div>
+                      <div class="check_footer_ch_body"></div>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+
+            <ul class="step-list">
+              <li class="step-list_item active"></li>
+              <li class="step-list_item"></li>
+            </ul>
+          </div>
+        </main>
+        <div class="main_prev-next">
+          <button class="btn-prev" style="display: none">이전버튼</button>
+          <!-- <button class="btn-next" style="display: block" disabled> -->
+          <button class="btn-next blinking" style="display: block">
+            다음버튼
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script crossorigin src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="../../../COMM/JS/COMMON2.JS"></script>
+  <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+  <script src="../../../COMM/JS/CONCEPTEVNT3.JS"></script>
+  <script src="../../../COMM/JS/CONCEPTEVNTBTN.JS"></script> <!-- 개념 익히기 공통 버튼 처리 (0424) -->
+  <script src="../../../COMM/JS/GAME.JS"></script>
+  <script src="../../../COMM/JS/VIDEO.JS"></script>
+  <script src="../../../COMM/JS/VIDEO-HTTP-STREAMING.JS"></script>
+  <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+  <script>
+    /*
+     * 데이터
+     */
+    let intro = {
+      type: "concept", //concept 개념익히기, checkExam 확인문제
+      title: "뺄셈을 해 볼까요(1)",
+      subTitle: [
+        "뺄셈을 이해하고 다양한 방법으로 뺄셈을 할 수 있어요.",
+        "상황에 알맞은 뺄셈식을 쓰고 계산할 수 있어요.",
+      ],
+      sound: ["../../../COMM/SOUND/2_2_6/2_1_2-6_002.mp3"],
+    };
+
+    //현재 페이지
+    let disStep = 1;
+
+    let pageData = [
+      {
+        step: 1,
+        title: "남은 자동차의 수를 여러 가지 방법으로 구해 봅시다.",
+        sound: "../../../COMM/SOUND/1_3_9/1_1_3-9_001.mp3",
+        headerPage: [1, 2],
+        footerPage: [1, 4],
+        prev: 0,
+        next: 1,
+      },
+      {
+        step: 2,
+        title: "남은 자동차의 수를 여러 가지 방법으로 구해 봅시다.",
+        sound: "../../../COMM/SOUND/1_3_9/1_1_3-9_001.mp3",
+        headerPage: [1, 2],
+        footerPage: [2, 4],
+        prev: 1,
+        next: 1,
+      },
+      {
+        step: 3,
+        title: "남은 자동차의 수를 여러 가지 방법으로 구해 봅시다.",
+        sound: "../../../COMM/SOUND/1_3_9/1_1_3-9_001.mp3",
+        headerPage: [1, 2],
+        footerPage: [3, 4],
+        prev: 1,
+        next: 1,
+      },
+      {
+        step: 4,
+        title: "남은 자동차의 수를 여러 가지 방법으로 구해 봅시다.",
+        sound: "../../../COMM/SOUND/1_3_9/1_1_3-9_001.mp3",
+        headerPage: [1, 2],
+        footerPage: [4, 4],
+        prev: 1,
+        next: 0,
+      },
+      {
+        step: 5,
+        title: "",
+        sound: "",
+        headerPage: [0, 0],
+        footerPage: [0, 0],
+        prev: 4,
+        next: 0,
+      },
+    ];
+
+    function pageAction() {
+      console.log("disStep ::: ", disStep);
+      //setTimeout 초기화
+      const TimeoutId = setTimeout(() => console.log("timeout clear"), 1);
+      for (let i = 0; i < TimeoutId; i++) {
+        clearTimeout(i);
+      }
+      stepSet();
+      switch (disStep) {
+        case 1:
+          step1.reset();
+          step1.start();
+          break;
+        case 2:
+          step2.reset();
+          step2.start();
+          break;
+        case 3:
+          step3.reset();
+          step3.start();
+          break;
+        case 4:
+          step4.reset();
+          step4.start();
+          break;
+        case 5:
+          step5.reset();
+          step5.start();
+          break;
+      }
+    }
+
+    //문제 시작
+    //================STEP1==============
+    const step1 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_001.mp3",
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_002_1.mp3",
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_002_2.mp3",
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_003.mp3",
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_004.mp3",
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_005.mp3",
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_006.mp3",
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_007.mp3",
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_008.mp3",
+        ], [
+          {
+            idx: 3,
+            type: 'start',
+            callback: () => {
+              // 별 강조
+              $('.step1 .step1_left_box .point1').addClass('spining').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 4,
+            type: 'start',
+            callback: () => {
+              // 별 강조 제거
+              $('.step1 .step1_left_box .point1').removeClass('spining').css('visibility', '');
+            }
+          },
+          {
+            idx: 5,
+            type: 'start',
+            callback: () => {
+              // 분석이 등장
+              $('.step1 .character').css('display', 'flex');
+            }
+          },
+          {
+            idx: 6,
+            type: 'start',
+            callback: () => {
+              // 말풍선 나레이션에 맞춰 등장 후 사라짐
+              $('.step1 .character_txt').css('display', 'block');
+            }
+          },
+          {
+            idx: 6,
+            type: 'end',
+            callback: () => {
+              // 말풍선 나레이션에 맞춰 등장 후 사라짐
+              $('.step1 .character_txt').css('display', '');
+              $('.step1 .character').css('display', '');
+            }
+          },
+          {
+            idx: 7,
+            type: 'start',
+            callback: () => {
+              // 자동차 8 강조
+              $('.step1 .step1_left_box .img2').css('display', 'block');
+              $('.step1 .step1_left_box .step1_txt1').css('display', 'block');
+            }
+          },
+          {
+            idx: 8,
+            type: 'start',
+            callback: () => {
+              // 자동차 2 강조
+              $('.step1 .step1_left_box .img3').css('display', 'block');
+              $('.step1 .step1_left_box .step1_txt2').css('display', 'block');
+            }
+          },
+          {
+            idx: 9,
+            type: 'start',
+            callback: () => {
+              // 오른쪽 식 등장
+              $('.step1 .step1_right_box').css('display', 'block');
+            }
+          },
+          {
+            idx: 9,
+            type: 'end',
+            callback: () => {
+              correctly();
+            }
+          },
+        ]);
+      },
+      reset: () => {
+        $('.step1 .character_txt').css('display', '');
+        $('.step1 .character').css('display', '');
+        $('.step1 .step1_left_box .img').css('display', '');
+        $('.step1 .step1_left_box .step1_txt').css('display', '');
+        $('.step1 .step1_right_box').css('display', '');
+        $('.step1 .v_hidden').css('visibility', '').removeClass('spining');
+      },
+    };
+    //================STEP2==============
+    const step2 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_009.mp3",
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_010.mp3",
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_011.mp3",
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_012.mp3",
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_013.mp3",
+        ], [
+          {
+            idx: 1,
+            type: 'start',
+            callback: () => {
+              timerSet(() => {
+                // 뺄셈식 강조
+                $('.step2 .step2_top_box .calc_box_comm').addClass('point');
+
+                timerInit();
+              }, 1000);
+            }
+          },
+          {
+            idx: 2,
+            type: 'start',
+            callback: () => {
+              $('.step2 .step2_top_box .calc_box_comm').removeClass('point');
+              // 손가락 이미지
+              $('.step2 .step2_btm_box').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 4,
+            type: 'start',
+            callback: () => {
+              // 손가락 두개 접은 이미지로 교체
+              $('.step2 .step2_btm_left .img2').fadeIn('fast');
+            }
+          },
+          {
+            idx: 5,
+            type: 'end',
+            callback: () => {
+              // 빈칸 깜빡이기 (키패드 노출)
+              let keypadTxtEl1 = $('.step2 .keypad_txt1');
+
+              keypadTxtEl1.addClass("blink").click(() => {
+                keypadTxtEl1.removeClass('blink');
+                keypadSetOn(keypadTxtEl1, 14, 14);
+                step2.keypadSetClick(keypadTxtEl1);
+              });
+            }
+          },
+        ]);
+      },
+      keypadSetClick: (btn) => {
+        $(document).on("click", keypadBtnCheckEl, (e) => {
+          e.stopPropagation();
+
+          if (keypadInput == btn.data('val')) {
+            keypadSetCorrect(btn);
+
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.MP3",
+              "../../../COMM/SOUND/1_3_9/1_1_3-9_014.mp3",
+            ], [
+              {
+                idx: 2,
+                type: 'end',
+                callback: () => {
+                  correctly();
+                }
+              }
+            ]);
+
+          } else {
+            keypadSetOff(btn);
+            btn.addClass('blink');
+
+            audioSet([
+              "../../../COMM/SOUND/WRONG.MP3",
+              "../../../COMM/SOUND/1_3_9/1_1_3-9_015.mp3",
+            ], [
+              {
+                idx: 2,
+                type: 'start',
+                callback: () => {
+                  // 오답 시 접힌 손가락 위에 숫자 나타남
+                  $('.step2 .step2_btm_left .txt').css('display', 'block');
+                }
+              }
+            ]);
+          }
+        });
+      },
+      reset: () => {
+        keypadSetInit();
+
+        $('.step2 .step2_top_box .calc_box_comm').removeClass('point');
+        $('.step2 .step2_btm_box').css('visibility', '');
+        $('.step2 .step2_btm_left .txt').css('display', '');
+        $('.step2 .step2_btm_left .img').css('display', '');
+      },
+    };
+    //================STEP3==============
+    const step3 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_016.mp3",
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_017.mp3",
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_018.mp3",
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_019.mp3",
+        ], [
+          {
+            idx: 3,
+            type: 'start',
+            callback: () => {
+              // 연결 모형 사이에 손과 화살표 등장하며 2개를 옆으로 빼는 모습
+              $('.step3 .step3_btm_left .img2').fadeIn('slow');
+            }
+          },
+          {
+            idx: 4,
+            type: 'end',
+            callback: () => {
+              // 빈칸 깜빡이기 (키패드 노출)
+              let keypadTxtEl1 = $('.step3 .keypad_txt1');
+
+              keypadTxtEl1.addClass("blink").click(() => {
+                keypadTxtEl1.removeClass('blink');
+                keypadSetOn(keypadTxtEl1, 100, 400);
+                step3.keypadSetClick(keypadTxtEl1);
+              });
+            }
+          },
+        ]);
+      },
+      keypadSetClick: (btn) => {
+        $(document).on("click", keypadBtnCheckEl, (e) => {
+          e.stopPropagation();
+
+          if (keypadInput == btn.data('val')) {
+            keypadSetCorrect(btn);
+
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.MP3",
+              "../../../COMM/SOUND/1_3_9/1_1_3-9_020.mp3",
+            ], [
+              {
+                idx: 2,
+                type: 'end',
+                callback: () => {
+                  correctly();
+                }
+              }
+            ]);
+
+          } else {
+            keypadSetOff(btn);
+            btn.addClass('blink');
+
+            audioSet([
+              "../../../COMM/SOUND/WRONG.MP3",
+              "../../../COMM/SOUND/1_3_9/1_1_3-9_021.mp3",
+            ], [
+              {
+                idx: 2,
+                type: 'start',
+                callback: () => {
+                  // 오답 시 연결 모형 위에 숫자 노출
+                  $('.step3 .step3_btm_left .txt').css('display', 'block');
+                }
+              }
+            ]);
+          }
+        });
+      },
+      reset: () => {
+        keypadSetInit();
+
+        $('.step3 .step3_btm_left .img').css('display', '');
+        $('.step3 .step3_btm_left .txt').css('display', '');
+      },
+    };
+    //================STEP4==============
+    const step4 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_022.mp3",
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_023.mp3",
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_024.mp3",
+        ], [
+          {
+            idx: 2,
+            type: 'start',
+            callback: () => {
+              $('.step4 .step4_table .circle').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 3,
+            type: 'end',
+            callback: () => {
+              // 십 배열판의 빈칸 터치 유도
+              $('.step4 .touchMotion4-1').css('display', 'block');
+              step4.guideTouch();
+            }
+          },
+        ]);
+      },
+      guideTouch: () => {
+        $('.step4 .touchMotion4-1').click((e) => {
+          e.stopPropagation();
+          effectAudioSet('click');
+
+          $('.step4 .touchMotion4-1').css('display', '');
+
+          // 지우기 표시 
+          $('.step4 .step4_table .dash1').css('display', 'block');
+
+          // 십 배열판의 빈칸 터치 유도
+          $('.step4 .touchMotion4-2').css('display', 'block');
+          step4.guideTouch2();
+        });
+      },
+      guideTouch2: () => {
+        $('.step4 .touchMotion4-2').click((e) => {
+          e.stopPropagation();
+          effectAudioSet('click');
+
+          $('.step4 .touchMotion4-2').css('display', '');
+
+          // 지우기 표시 
+          $('.step4 .step4_table .dash2').css('display', 'block');
+
+          audioSet([
+            "../../../COMM/SOUND/1_3_9/1_1_3-9_025.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                // 파란색 동그라미 2개가 모두 노출되면 빈칸 깜빡이며 정답 유도 (키패드)
+                let keypadTxtEl1 = $('.step4 .keypad_txt1');
+
+                keypadTxtEl1.addClass("blink").click(() => {
+                  keypadTxtEl1.removeClass('blink');
+                  keypadSetOn(keypadTxtEl1, 100, 400);
+                  step4.keypadSetClick(keypadTxtEl1);
+                });
+              }
+            }
+          ]);
+        });
+      },
+      keypadSetClick: (btn) => {
+        $(document).on("click", keypadBtnCheckEl, (e) => {
+          e.stopPropagation();
+
+          if (keypadInput == btn.data('val')) {
+            keypadSetCorrect(btn);
+
+            $('.step4 .step4_table .circle').removeClass('point').removeClass('blinking');
+
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.MP3",
+              "../../../COMM/SOUND/1_3_9/1_1_3-9_026.mp3",
+            ], [
+              {
+                idx: 2,
+                type: 'end',
+                callback: () => {
+                  disStep++;
+                  pageAction();
+                }
+              }
+            ]);
+          } else {
+            keypadSetOff(btn);
+            btn.addClass('blink');
+
+            audioSet([
+              "../../../COMM/SOUND/WRONG.MP3",
+              "../../../COMM/SOUND/1_3_9/1_1_3-9_027.mp3",
+            ], [
+              {
+                idx: 2,
+                type: 'start',
+                callback: () => {
+                  $('.step4 .step4_table .circle1').addClass('point');
+                  $('.step4 .step4_table .circle2').addClass('point');
+                  $('.step4 .step4_table .circle3').addClass('point');
+                  $('.step4 .step4_table .circle4').addClass('point');
+                  $('.step4 .step4_table .circle5').addClass('point');
+                  $('.step4 .step4_table .circle6').addClass('point');
+                  $('.step4 .step4_table .circle1').addClass('blinking');
+                  $('.step4 .step4_table .circle2').addClass('blinking');
+                  $('.step4 .step4_table .circle3').addClass('blinking');
+                  $('.step4 .step4_table .circle4').addClass('blinking');
+                  $('.step4 .step4_table .circle5').addClass('blinking');
+                  $('.step4 .step4_table .circle6').addClass('blinking');
+                }
+              }
+            ]);
+          }
+        });
+      },
+      reset: () => {
+        keypadSetInit();
+
+        $('.step4 .step4_table .circle').css('visibility', '').removeClass('point').removeClass('blinking');
+        $('.step4 .step4_table .dash').css('display', '');
+        $('.step4 .touchMotion').css('display', '');
+      },
+    };
+    //================STEP5==============
+    const step5 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_028.mp3",
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_029.mp3",
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_030.mp3",
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_031.mp3",
+          "../../../COMM/SOUND/1_3_9/1_1_3-9_032.mp3",
+        ], [
+          {
+            idx: 2,
+            type: 'start',
+            callback: () => {
+              $('.step5 .step5_img .img2').fadeIn('fast');
+            }
+          },
+          {
+            idx: 3,
+            type: 'start',
+            callback: () => {
+              $('.step5 .step5_img .img3').fadeOut('slow');
+              $('.step5 .step5_img .img4').fadeIn('fast');
+            }
+          },
+          {
+            idx: 4,
+            type: 'start',
+            callback: () => {
+              $('.step5 .step5_img .img6').fadeIn('fast');
+            }
+          },
+          {
+            idx: 5,
+            type: 'end',
+            callback: () => {
+              callFinish();
+            }
+          },
+        ]);
+      },
+      reset: () => {
+        $('.step5 .step5_img .img');
+      },
+    };
+  </script>
+</body>
+
+</html>

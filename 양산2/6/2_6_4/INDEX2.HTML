@@ -1,0 +1,2409 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>개정교육과정-수학 수학 개념</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="KeyWORDs" content="" />
+    <meta name="Description" content="" />
+    <meta name="Robots" content="all" />
+    <meta http-equiv="Subject" content="" />
+    <meta http-equiv="Title" content="" />
+    <meta http-equiv="Author" content="onflou " />
+    <meta http-equiv="Publisher" content="" />
+
+    <!-- 브라우저 호환성을 지정 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="#" />
+    <link href="../../../COMM/CSS/COMMON.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/COMMONLAYOUT.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/CONCEPTCOMMON3.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/VIDEO.CSS" rel="stylesheet" />
+ 
+    <style>
+      .ani_twice {
+        animation-iteration-count: 2 !important;
+      }
+
+      .ani_third {
+        animation-iteration-count: 3 !important;
+      }
+
+      .plus {
+        aspect-ratio: 1/1;
+        margin: 0 auto;
+        background-image: url(../../../COMM/IMG/CONCEPT/SEASON2/2_6_4/PLUS.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      .sentence_box {
+        background-color: rgba(190, 218, 255, 0.5);
+        border-radius: 30px;
+        padding: 20px 50px 22px;
+        position: relative;
+        align-items: start;
+      }
+
+      .sentence_box.pink {
+        background-color: rgba(255, 184, 239, 0.5);
+      }
+
+      .sentence_box .txt_container {
+        margin: 0 4px 0 20px;
+      }
+
+      .sentence_box .txt_container + span {
+        margin-left: 0;
+      }
+
+      .step table {
+        border-collapse: collapse;
+        table-layout: fixed;
+      }
+
+      .step table th,
+      .step table td {
+        border: solid 1px #8D8D8D;
+        font-size: 34px;
+        text-align: center;
+        padding-top: 2px;
+      }
+
+      .step table th {
+        background-color: rgba(225, 218, 253, 1);
+      }
+
+      .step table tr:first-child th:first-child {
+        background-color: rgba(194, 180, 250, 1);
+      }
+
+      @keyframes changeConChar2 {
+        0% {
+          background-position: left 0px center;
+        }
+        20% {
+          background-position: left -208px center;
+        }
+        40% {
+          background-position: left -416px center;
+        }
+        60% {
+          background-position: left -624px center;
+        }
+        80% {
+          background-position: left -832px center;
+        }
+        100% {
+          background-position: left -1040px center;
+        }
+      }
+
+      /* step1 */
+      .step1 table,
+      .step2 table {
+        width: 728px;
+        height: 728px;
+      }
+
+      .step1 .plus {
+        width: 23px;
+      }
+
+      .step1 table tr td {
+        width: calc(100% / 11);
+        height: calc(100% / 11);
+      }
+
+      .character_box {
+        position: absolute;
+        top: 50%;
+      }
+
+      .character_box .character_txt {
+        position: relative;
+      }
+
+      .character_box1 {
+        left: -45px;
+        transform: translate(-100%, -50%);
+      }
+
+      .character_box1 .char_g_head {
+        width: 208px;
+      }
+
+      .character_box2 {
+        top: 44.5%;
+        right: -45px;
+        transform: translate(100%, -50%);
+      }
+
+      .character_box2 .character_con {
+        margin-top: -10px;
+      }
+
+      .step1_mid_box {
+        position: relative;
+      }
+
+      .step1_mid_box .point {
+        border: 5px solid rgba(103, 68, 243, 1);
+        position: absolute;
+      }
+
+      .step1_mid_box .point1 {
+        width: 66px;
+        height: calc(100% - 66px);
+        bottom: 0;
+        left: 0;
+      }
+
+      .step1_mid_box .point2 {
+        width: calc(100% - 66px);
+        height: 66px;
+        top: 0;
+        right: 0;
+      }
+
+      .step1_mid_box .arrow1 {
+        position: absolute;
+        top: 66px;
+        left: -15px;
+        transform: translateX(-100%);
+      }
+
+      .step1_mid_box .arrow1 .img_box {
+        height: 0;
+        transition: height 1s ease;
+        overflow: hidden;
+      }
+
+      .step1_mid_box .arrow1.on .img_box {
+        height: 662px;
+      }
+
+      .step1_mid_box .arrow2 {
+        position: absolute;
+        top: -15px;
+        left: 66px;
+        transform: translateY(-100%);
+      }
+
+      .step1_mid_box .arrow2 .img_box {
+        width: 0;
+        min-height: 18px;
+        transition: width 1s ease;
+        overflow: hidden;
+      }
+
+      .step1_mid_box .arrow2.on .img_box {
+        width: 662px;
+      }
+      
+      .step1_mid_box .arrow2 .img_box img {
+        width: 662px;
+        height: 18px;
+      }
+
+      .step1_mid_box .arrow > span {
+        text-align: left;
+        font-size: 30px;
+        color: rgba(231, 46, 38, 1);
+        position: absolute;
+      }
+
+      .step1_mid_box .arrow1 > span {
+        line-height: 30px;
+        letter-spacing: -0.02em;
+        top: 50%;
+        left: -5px;
+        transform: translate(-100%, -50%);
+      }
+
+      .step1_mid_box .arrow1 > span .lineH {
+        display: inline-block;
+        padding-bottom: 10px;
+      }
+
+      .step1_mid_box .arrow1 > span .num {
+        padding-left: 5px;
+      }
+
+      .step1_mid_box .arrow2 span {
+        white-space: nowrap;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -100%);
+      }
+
+      .step1_mid_box .step1_answer_box1 {
+        position: absolute;
+        bottom: 50px;
+        right: -70px;
+        transform: translateX(100%);
+      }
+
+      .step1_mid_box .step1_answer_box1 .answer {
+        width: 100px;
+        height: 80px;
+      }
+
+      .step1_mid_box .step1_answer_box1 .answer + .answer {
+        margin-left: 30px;
+      }
+
+      .step1_mid_box .txt_container {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+      }
+
+      .step1_mid_box .txt_container::after {
+        content: none;
+      }
+
+      .step1_mid_box .txt_container * {
+        font-size: 34px;
+      }
+
+      /* step2 */
+      .step2 .plus {
+        width: 23px;
+      }
+
+      .step2_right_box {
+        margin-left: 114px;
+      }
+
+      .step2 .sentence_box {
+        padding-bottom: 27px;
+        position: relative;
+        font-size: 36px;
+        line-height: 36px;
+      }
+
+      .step2 .sentence_box + .sentence_box {
+        margin-top: 116px;
+      }
+
+      .step2 .sentence_box .txt_container {
+        width: 60px;
+        height: 60px;
+        padding: 2px 0 0 2px;
+        margin: 0 4px 0 10px;
+      }
+
+      .step2 .sentence_box .txt_container,
+      .step2 .sentence_box .txt_container * {
+        font-size: 36px;
+      }
+      
+      .step2 .sentence_box .quiz_select_wrap {
+        position: absolute;
+        bottom: -20px;
+        right: 120px;
+        transform: translateY(100%);
+      }
+
+      .step2 .sentence_box .quiz_select_wrap .answer {
+        width: 95px;
+        height: 66px;
+        font-size: 36px;
+      }
+
+      .step2 .sentence_box .quiz_select_wrap .answer + .answer {
+        margin-left: 25px;
+      }
+
+      .step2_left_box {
+        position: relative;
+      }
+
+      .step2_left_box table {
+        position: relative;
+        z-index: 1;
+      }
+      
+      .step2 .touch_guide,
+      .step2 .arrow {
+        position: absolute;
+        z-index: 0;
+      }
+
+      .step2 .arrow {
+        transition: width, height 1s ease;
+      }
+
+      .step2 .arrow.blue.v_hidden {
+        height: 0;
+      }
+
+      .step2 .arrow.pink.v_hidden {
+        width: 0;
+      }
+
+      .step2 .touch_guide.blue,
+      .step2 .arrow.blue {
+        top: 66.08px;
+        left: 198.24px;
+        width: 66.08px;
+        height: 660.8px;
+      }
+
+      .step2 .touch_guide.blue {
+        background-color: rgba(190, 218, 255, 0.5);
+      }
+
+      .step2 .point.blue {
+        width: 66.08px;
+        height: 660.8px;
+        border: 5px solid rgba(103, 68, 243, 1);
+        position: absolute;
+        top: 66.08px;
+        left: 198.24px;
+        z-index: 2;
+      }
+
+      .step2 .arrow.blue {
+        background: url("../../../COMM/IMG/CONCEPT/SEASON2/2_6_4/STEP2_ARROW_BLUE.png") no-repeat top center;
+        background-size: 42px;
+      }
+
+      .step2 .touch_guide.pink,
+      .step2 .arrow.pink {
+        left: 66.08px;
+        top: 462.56px;
+        height: 66.08px;
+        width: 660.8px;
+      }
+
+      .step2 .touch_guide.pink {
+        background-color: rgba(255, 184, 239, 0.5);
+      }
+
+      .step2 .point.pink {
+        width: 660.8px;
+        height: 66.08px;
+        border: 5px solid rgba(103, 68, 243, 1);
+        position: absolute;
+        left: 66.08px;
+        top: 462.56px;
+        z-index: 2;
+      }
+
+      .step2 .arrow.pink {
+        background: url("../../../COMM/IMG/CONCEPT/SEASON2/2_6_4/STEP2_ARROW_PINK.png") no-repeat left center;
+        background-size: 660px;
+      }
+
+      /* step3 */
+      .step3 .plus {
+        width: 25px;
+      }
+
+      .step3 .full_content_comm {
+        transform: translate(0, -87px);
+        justify-content: space-evenly;
+      }
+
+      .step3 table {
+        width: 580px;
+        height: 580px;
+      }
+
+      .step3_calc_box .tit {
+        border-radius: 20px;
+        padding: 18px 30px 20px;
+        background-color: rgba(255, 211, 57, 0.44);
+        font-size: 36px;
+      }
+
+      .step3_calc_box .calc_box {
+        font-size: 40px;
+        margin-top: 50px;
+      }
+
+      .step3_calc_box .calc_box .calc + .calc {
+        margin-top: 30px;
+      }
+
+      /* step4 */
+      .step4 .plus {
+        width: 25px;
+      }
+
+      .step4 table,
+      .step5 table {
+        width: 443px;
+        height: 443px;
+      }
+
+      .step4 table th,
+      .step4 table td,
+      .step5 table th,
+      .step5 table td {
+        font-size: 36px;
+      }
+
+      .step4_left_box {
+        position: relative;
+      }
+
+      .step4_left_box .point {
+        border: 5px solid rgba(103, 68, 243, 1);
+        position: absolute;
+      }
+
+      .step4_left_box .point1,
+      .step4_left_box .point3 {
+        width: 73.66px;
+        height: calc(100% - 73.66px);
+        bottom: 0;
+        left: 0;
+      }
+
+      .step4_left_box .point2,
+      .step4_left_box .point4 {
+        width: calc(100% - 73.66px);
+        height: 73.66px;
+        top: 0;
+        right: 0;
+      }
+
+      .step4_left_box .point3 {
+        left: calc(73.66px * 2);
+      }
+
+      .step4_left_box .point4 {
+        top: calc(73.66px * 2);
+      }
+
+      .step4_left_box .point5 {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+
+      .step4_left_box .arrow1 {
+        position: absolute;
+        top: 73.66px;
+        left: -15px;
+        transform: translateX(-100%);
+      }
+
+      .step4_left_box .arrow1 .img_box {
+        min-width: 18px;
+        height: 0;
+        transition: height 1s ease;
+        overflow: hidden;
+      }
+
+      .step4_left_box .arrow1 .img_box img {
+        width: 18px;
+        height: 369px;
+      }
+
+      .step4_left_box .arrow1.on .img_box {
+        height: 369px;
+      }
+
+      .step4_left_box .arrow1 > span .num {
+        padding-left: 5px;
+      }
+
+      .step4_left_box .arrow1 > span .lineH {
+        display: inline-block;
+        padding-bottom: 10px;
+      }
+
+      .step4_left_box .arrow2 {
+        position: absolute;
+        top: -15px;
+        left: 66px;
+        transform: translateY(-100%);
+      }
+
+      .step4_left_box .arrow2 .img_box {
+        width: 0;
+        min-height: 18px;
+        transition: width 1s ease;
+        overflow: hidden;
+      }
+
+      .step4_left_box .arrow2 .img_box img {
+        width: 369px;
+        height: 18px;
+      }
+
+      .step4_left_box .arrow2.on .img_box {
+        width: 369px;
+      }
+
+      .step4_left_box .arrow > span {
+        text-align: left;
+        font-size: 30px;
+        color: rgba(231, 46, 38, 1);
+        position: absolute;
+      }
+
+      .step4_left_box .arrow1 > span {
+        line-height: 30px;
+        top: 50%;
+        left: -5px;
+        transform: translate(-100%, -50%);
+      }
+
+      .step4_left_box .arrow2 span {
+        white-space: nowrap;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -100%);
+      }
+
+      .step4_left_box .step4_answer_box1 {
+        position: absolute;
+        bottom: -44px;
+        left: 50%;
+        transform: translate(-50%, 100%);
+      }
+
+      .step4_left_box .step4_answer_box1 .answer {
+        width: 100px;
+        height: 75px;
+        font-size: 36px;
+      }
+
+      .step4_left_box .step4_answer_box1 .answer + .answer {
+        margin-left: 50px;
+      }
+
+      .step4_left_box .txt_container {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+      }
+
+      .step4_left_box .txt_container::after {
+        content: none;
+      }
+
+      .step4_left_box .txt_container * {
+        font-size: 36px;
+      }
+
+      .step4 .step2_right_box {
+        margin-left: 195px;
+      }
+
+      .step4 .sentence_box {
+        padding: 24.5px 82px;
+        font-size: 36px;
+      }
+
+      .step4 .sentence_box + .sentence_box {
+        margin-top: 87px;
+      }
+
+      .step4 .sentence_box .step4_point {
+        position: absolute;
+        top: 50px;
+        left: 450px;
+      }
+
+      /* step5 */
+      .step5 .plus {
+        width: 25px;
+      }
+
+      .step5 .full_content_comm {
+        gap: 160px;
+      }
+      
+      .step5 .step5_left_box {
+        position: relative;
+      }
+
+      .step5 .step5_left_box table {
+        position: relative;
+        z-index: 1;
+      }
+
+      .step5 .arrow {
+        transition: width 1s ease, height 1s ease;
+        z-index: 0;
+      }
+
+      .step5 .arrow.pink.v_hidden {
+        width: 0;
+      }
+
+      .step5 .arrow.pink {
+        width: 370px;
+        height: 63px;
+        position: absolute;
+        right: 0;
+        top: 227px;
+        background: url("../../../COMM/IMG/CONCEPT/SEASON2/2_6_4/STEP5_ARROW_PINK.png") no-repeat right center;
+        background-size: 370px;
+      }
+
+      .step5 .arrow.blue.v_hidden {
+        height: 0;
+      }
+
+      .step5 .arrow.blue {
+        width: 62px;
+        height: 369px;
+        position: absolute;
+        left: 227px;
+        bottom: 0;
+        z-index: 0;
+        background: url("../../../COMM/IMG/CONCEPT/SEASON2/2_6_4/STEP5_ARROW_BLUE.png") no-repeat left bottom;
+        background-size: 62px;
+      }
+
+      .step5 .arrow.red.v_hidden {
+        width: 0;
+        height: 0;
+      }
+
+      .step5 .arrow.red {
+        width: 361px;
+        height: 363px;
+        position: absolute;
+        left: 73.66px;
+        top: 73.66px;
+        z-index: 0;
+        background: url("../../../COMM/IMG/CONCEPT/SEASON2/2_6_4/STEP5_ARROW_DOWNRIGHT.png") no-repeat left top;
+        background-size: 361px;
+        z-index: 2;
+      }
+
+      .step5 .step5_right_box {
+        gap: 40px;
+        align-items: flex-start;
+      }
+
+      .step5 .step5_right_box .line {
+        padding-left: 40px;
+        position: relative;
+      }
+
+      .step5 .step5_right_box .line::after {
+        content: "";
+        width: 16px;
+        aspect-ratio: 1/1;
+        background-color: rgba(0, 0, 0, 1);
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+
+      .step5 .step5_right_box .line .img {
+        width: 44px;
+        height: 55px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div
+        id="contents-wrap"
+        class="concept"
+        style="position: absolute; display: flex"
+      ></div>
+      <div id="contents-main" style="display: none" class="concept-warp">
+        <div class="concept-warp_inner">
+          <header class="header" style="visibility: visible">
+            <div class="header_title">
+              <button class="sound-btn" onclick="titleSound()"></button>
+              <h3></h3>
+            </div>
+            <p class="header_page"><span>1</span>/2</p>
+          </header>
+          <main class="main">
+            <div class="main_content">
+              <!-- 콘텐츠영역 -->
+              <div class="step step1" style="display: block">
+                <!-- step1 시작부분 -->
+                <div class="main__container dp_flex">
+                  <div class="step1_mid_box">
+                    <div class="character_box character_box1 dp_flex dp_flex_column v_hidden">
+                      <div class="character_txt" style="display: block">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_6_4/STEP1_BUBBLE1.png" alt="캐릭터 말풍선" />
+                      </div>
+                      <div class="character_con dp_flex dp_flex_column">
+                        <div class="char_g_head"></div>
+                        <div class="char_g_body"></div>
+                      </div>
+                    </div>
+
+                    <table>
+                      <tr>
+                        <th class="row1 col1"><div class="plus"></div></th>
+                        <th class="row1 col2">0</th>
+                        <th class="row1 col3">1</th>
+                        <th class="row1 col4">2</th>
+                        <th class="row1 col5">3</th>
+                        <th class="row1 col6">4</th>
+                        <th class="row1 col7">5</th>
+                        <th class="row1 col8">6</th>
+                        <th class="row1 col9">7</th>
+                        <th class="row1 col10">8</th>
+                        <th class="row1 col11">9</th>
+                      </tr>
+                      <tr>
+                        <th class="row2 col1">0</th>
+                        <td class="row2 col2">0</td>
+                        <td class="row2 col3">1</td>
+                        <td class="row2 col4">2</td>
+                        <td class="row2 col5">3</td>
+                        <td class="row2 col6">4</td>
+                        <td class="row2 col7">5</td>
+                        <td class="row2 col8">6</td>
+                        <td class="row2 col9">7</td>
+                        <td class="row2 col10">8</td>
+                        <td class="row2 col11">9</td>
+                      </tr>
+                      <tr>
+                        <th class="row3 col1">1</th>
+                        <td class="row3 col2">1</td>
+                        <td class="row3 col3">2</td>
+                        <td class="row3 col4">3</td>
+                        <td class="row3 col5">4</td>
+                        <td class="row3 col6">5</td>
+                        <td class="row3 col7">6</td>
+                        <td class="row3 col8">7</td>
+                        <td class="row3 col9">8</td>
+                        <td class="row3 col10">9</td>
+                        <td class="row3 col11">10</td>
+                      </tr>
+                      <tr>
+                        <th class="row4 col1">2</th>
+                        <td class="row4 col2">2</td>
+                        <td class="row4 col3">3</td>
+                        <td class="row4 col4">4</td>
+                        <td class="row4 col5">5</td>
+                        <td class="row4 col6">6</td>
+                        <td class="row4 col7">7</td>
+                        <td class="row4 col8">8</td>
+                        <td class="row4 col9">9</td>
+                        <td class="row4 col10">10</td>
+                        <td class="row4 col11">11</td>
+                      </tr>
+                      <tr>
+                        <th class="row5 col1">3</th>
+                        <td class="row5 col2">3</td>
+                        <td class="row5 col3">4</td>
+                        <td class="row5 col4">5</td>
+                        <td class="row5 col5">6</td>
+                        <td class="row5 col6">7</td>
+                        <td class="row5 col7">8</td>
+                        <td class="row5 col8">9</td>
+                        <td class="row5 col9">10</td>
+                        <td class="row5 col10">11</td>
+                        <td class="row5 col11">12</td>
+                      </tr>
+                      <tr>
+                        <th class="row6 col1">4</th>
+                        <td class="row6 col2">4</td>
+                        <td class="row6 col3">5</td>
+                        <td class="row6 col4">6</td>
+                        <td class="row6 col5">7</td>
+                        <td class="row6 col6">8</td>
+                        <td class="row6 col7">9</td>
+                        <td class="row6 col8">10</td>
+                        <td class="row6 col9">11</td>
+                        <td class="row6 col10">12</td>
+                        <td class="row6 col11">13</td>
+                      </tr>
+                      <tr>
+                        <th class="row7 col1">5</th>
+                        <td class="row7 col2">5</td>
+                        <td class="row7 col3">6</td>
+                        <td class="row7 col4">7</td>
+                        <td class="row7 col5">8</td>
+                        <td class="row7 col6">9</td>
+                        <td class="row7 col7">10</td>
+                        <td class="row7 col8">11</td>
+                        <td class="row7 col9">12</td>
+                        <td class="row7 col10">13</td>
+                        <td class="row7 col11">14</td>
+                      </tr>
+                      <tr>
+                        <th class="row8 col1">6</th>
+                        <td class="row8 col2">6</td>
+                        <td class="row8 col3">7</td>
+                        <td class="row8 col4">8</td>
+                        <td class="row8 col5">9</td>
+                        <td class="row8 col6">10</td>
+                        <td class="row8 col7">11</td>
+                        <td class="row8 col8">12</td>
+                        <td class="row8 col9">13</td>
+                        <td class="row8 col10">14</td>
+                        <td class="row8 col11">15</td>
+                      </tr>
+                      <tr>
+                        <th class="row9 col1">7</th>
+                        <td class="row9 col2">7</td>
+                        <td class="row9 col3">8</td>
+                        <td class="row9 col4">9</td>
+                        <td class="row9 col5">10</td>
+                        <td class="row9 col6">11</td>
+                        <td class="row9 col7">12</td>
+                        <td class="row9 col8">13</td>
+                        <td class="row9 col9">14</td>
+                        <td class="row9 col10">15</td>
+                        <td class="row9 col11">16</td>
+                      </tr>
+                      <tr>
+                        <th class="row10 col1">8</th>
+                        <td class="row10 col2">8</td>
+                        <td class="row10 col3">9</td>
+                        <td class="row10 col4">10</td>
+                        <td class="row10 col5">11</td>
+                        <td class="row10 col6">12</td>
+                        <td class="row10 col7"><div class="txt_container txt_container1"></div></td>
+                        <td class="row10 col8"><div class="txt_container txt_container2"></div></td>
+                        <td class="row10 col9">15</td>
+                        <td class="row10 col10">16</td>
+                        <td class="row10 col11">17</td>
+                      </tr>
+                      <tr>
+                        <th class="row11 col1">9</th>
+                        <td class="row11 col2">9</td>
+                        <td class="row11 col3">10</td>
+                        <td class="row11 col4">11</td>
+                        <td class="row11 col5">12</td>
+                        <td class="row11 col6">13</td>
+                        <td class="row11 col7">14</td>
+                        <td class="row11 col8"><div class="txt_container txt_container3"></div></td>
+                        <td class="row11 col9">16</td>
+                        <td class="row11 col10">17</td>
+                        <td class="row11 col11">18</td>
+                      </tr>
+                    </table>
+
+                    <div class="character_box character_box2 dp_flex dp_flex_column v_hidden">
+                      <div class="character_txt" style="display: block">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_6_4/STEP1_BUBBLE2.png" alt="캐릭터 말풍선" />
+                      </div>
+                      <div class="character_con dp_flex dp_flex_column">
+                        <div class="char_y_head"></div>
+                        <div class="char_y_body"></div>
+                      </div>
+                    </div>
+
+                    <div class="step1_answer_box1 answer_box v_hidden">
+                      <div class="answer_list">
+                        <div class="answer answer1">13</div>
+                        <div class="answer answer2">14</div>
+                        <div class="answer answer3">15</div>
+                      </div>
+                    </div>
+
+                    <div class="point point1 v_hidden"></div>
+                    <div class="point point2 v_hidden"></div>
+                    <div class="arrow arrow1 v_hidden"><!--  -->
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_6_4/STEP1_ARROW_DOWN.png" alt="아래쪽 화살표">
+                      </div>
+                      <span class="v_hidden"><!--  -->
+                        <span class="num">1</span><br>
+                        <span class="lineH">씩</span><br>
+                        커<br>
+                        져<br>
+                        요.
+                      </span>
+                    </div>
+                    <div class="arrow arrow2 v_hidden">
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_6_4/STEP1_ARROW_LEFT.png" alt="오른쪽 화살표">
+                      </div>
+                      <span class="v_hidden">1씩 커져요.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step2" style="display: block">
+                <!-- step2 시작부분 -->
+                <div class="main__container dp_flex">
+                  <div class="step2_left_box">
+                    <div class="arrow blue v_hidden"></div>
+                    <div class="arrow pink v_hidden"></div>
+                    <div class="touch_guide blue"></div>
+                    <div class="touch_guide pink"></div>
+                    <div class="point blue v_hidden"></div>
+                    <div class="point pink v_hidden"></div>
+                    <table>
+                      <tr>
+                        <th class="row1 col1"><div class="plus"></div></th>
+                        <th class="row1 col2">0</th>
+                        <th class="row1 col3">1</th>
+                        <th class="row1 col4">2</th>
+                        <th class="row1 col5">3</th>
+                        <th class="row1 col6">4</th>
+                        <th class="row1 col7">5</th>
+                        <th class="row1 col8">6</th>
+                        <th class="row1 col9">7</th>
+                        <th class="row1 col10">8</th>
+                        <th class="row1 col11">9</th>
+                      </tr>
+                      <tr>
+                        <th class="row2 col1">0</th>
+                        <td class="row2 col2">0</td>
+                        <td class="row2 col3">1</td>
+                        <td class="row2 col4">2</td>
+                        <td class="row2 col5">3</td>
+                        <td class="row2 col6">4</td>
+                        <td class="row2 col7">5</td>
+                        <td class="row2 col8">6</td>
+                        <td class="row2 col9">7</td>
+                        <td class="row2 col10">8</td>
+                        <td class="row2 col11">9</td>
+                      </tr>
+                      <tr>
+                        <th class="row3 col1">1</th>
+                        <td class="row3 col2">1</td>
+                        <td class="row3 col3">2</td>
+                        <td class="row3 col4">3</td>
+                        <td class="row3 col5">4</td>
+                        <td class="row3 col6">5</td>
+                        <td class="row3 col7">6</td>
+                        <td class="row3 col8">7</td>
+                        <td class="row3 col9">8</td>
+                        <td class="row3 col10">9</td>
+                        <td class="row3 col11">10</td>
+                      </tr>
+                      <tr>
+                        <th class="row4 col1">2</th>
+                        <td class="row4 col2">2</td>
+                        <td class="row4 col3">3</td>
+                        <td class="row4 col4">4</td>
+                        <td class="row4 col5">5</td>
+                        <td class="row4 col6">6</td>
+                        <td class="row4 col7">7</td>
+                        <td class="row4 col8">8</td>
+                        <td class="row4 col9">9</td>
+                        <td class="row4 col10">10</td>
+                        <td class="row4 col11">11</td>
+                      </tr>
+                      <tr>
+                        <th class="row5 col1">3</th>
+                        <td class="row5 col2">3</td>
+                        <td class="row5 col3">4</td>
+                        <td class="row5 col4">5</td>
+                        <td class="row5 col5">6</td>
+                        <td class="row5 col6">7</td>
+                        <td class="row5 col7">8</td>
+                        <td class="row5 col8">9</td>
+                        <td class="row5 col9">10</td>
+                        <td class="row5 col10">11</td>
+                        <td class="row5 col11">12</td>
+                      </tr>
+                      <tr>
+                        <th class="row6 col1">4</th>
+                        <td class="row6 col2">4</td>
+                        <td class="row6 col3">5</td>
+                        <td class="row6 col4">6</td>
+                        <td class="row6 col5">7</td>
+                        <td class="row6 col6">8</td>
+                        <td class="row6 col7">9</td>
+                        <td class="row6 col8">10</td>
+                        <td class="row6 col9">11</td>
+                        <td class="row6 col10">12</td>
+                        <td class="row6 col11">13</td>
+                      </tr>
+                      <tr>
+                        <th class="row7 col1">5</th>
+                        <td class="row7 col2">5</td>
+                        <td class="row7 col3">6</td>
+                        <td class="row7 col4">7</td>
+                        <td class="row7 col5">8</td>
+                        <td class="row7 col6">9</td>
+                        <td class="row7 col7">10</td>
+                        <td class="row7 col8">11</td>
+                        <td class="row7 col9">12</td>
+                        <td class="row7 col10">13</td>
+                        <td class="row7 col11">14</td>
+                      </tr>
+                      <tr>
+                        <th class="row8 col1">6</th>
+                        <td class="row8 col2">6</td>
+                        <td class="row8 col3">7</td>
+                        <td class="row8 col4">8</td>
+                        <td class="row8 col5">9</td>
+                        <td class="row8 col6">10</td>
+                        <td class="row8 col7">11</td>
+                        <td class="row8 col8">12</td>
+                        <td class="row8 col9">13</td>
+                        <td class="row8 col10">14</td>
+                        <td class="row8 col11">15</td>
+                      </tr>
+                      <tr>
+                        <th class="row9 col1">7</th>
+                        <td class="row9 col2">7</td>
+                        <td class="row9 col3">8</td>
+                        <td class="row9 col4">9</td>
+                        <td class="row9 col5">10</td>
+                        <td class="row9 col6">11</td>
+                        <td class="row9 col7">12</td>
+                        <td class="row9 col8">13</td>
+                        <td class="row9 col9">14</td>
+                        <td class="row9 col10">15</td>
+                        <td class="row9 col11">16</td>
+                      </tr>
+                      <tr>
+                        <th class="row10 col1">8</th>
+                        <td class="row10 col2">8</td>
+                        <td class="row10 col3">9</td>
+                        <td class="row10 col4">10</td>
+                        <td class="row10 col5">11</td>
+                        <td class="row10 col6">12</td>
+                        <td class="row10 col7 highlight red2">13</td>
+                        <td class="row10 col8 highlight red2">14</td>
+                        <td class="row10 col9">15</td>
+                        <td class="row10 col10">16</td>
+                        <td class="row10 col11">17</td>
+                      </tr>
+                      <tr>
+                        <th class="row11 col1">9</th>
+                        <td class="row11 col2">9</td>
+                        <td class="row11 col3">10</td>
+                        <td class="row11 col4">11</td>
+                        <td class="row11 col5">12</td>
+                        <td class="row11 col6">13</td>
+                        <td class="row11 col7">14</td>
+                        <td class="row11 col8 highlight red2">15</td>
+                        <td class="row11 col9">16</td>
+                        <td class="row11 col10">17</td>
+                        <td class="row11 col11">18</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="step2_right_box dp_none">
+                    <div class="sentence_box dp_flex dp_flex_column">
+                      <div class="dp_flex">아래쪽으로 갈수록 <div class="txt_container txt_container1">?</div>씩 커지는</div>
+                      <div class="dp_flex">규칙이 있습니다.</div>
+
+                      <div class="quiz_select_wrap quiz_select_wrap1 v_hidden">
+                        <div class="select_list">
+                          <div class="answer answer1">1</div>
+                          <div class="answer answer2">2</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sentence_box pink dp_flex dp_flex_column v_hidden">
+                      <div class="dp_flex">오른쪽으로 갈수록 <div class="txt_container txt_container2">?</div>씩 커지는</div>
+                      <div class="dp_flex">규칙이 있습니다.</div>
+
+                      <div class="quiz_select_wrap quiz_select_wrap2 v_hidden">
+                        <div class="select_list">
+                          <div class="answer answer1">1</div>
+                          <div class="answer answer2">2</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step3" style="display: block">
+                <!-- step3 시작부분 -->
+                <div class="main__container">
+                  <div class="full_content_comm dp_flex">
+                    <div class="step3_left_box step3_calc_box dp_flex dp_flex_column v_hidden">
+                      <div class="tit">덧셈으로 찾은 수</div>
+                      <div class="calc_box">
+                        <div class="calc calc1">8 + 5 = <span class="point">13</span></div>
+                        <div class="calc calc2 v_hidden">8 + 6 = <span class="point">14</span></div>
+                        <div class="calc calc3 v_hidden">9 + 6 = <span class="point">15</span></div>
+                      </div>
+                    </div>
+                    <table>
+                      <tr>
+                        <th class="row1 col1"><div class="plus"></div></th>
+                        <th class="row1 col2">0</th>
+                        <th class="row1 col3">1</th>
+                        <th class="row1 col4">2</th>
+                        <th class="row1 col5">3</th>
+                        <th class="row1 col6">4</th>
+                        <th class="row1 col7">5</th>
+                        <th class="row1 col8">6</th>
+                        <th class="row1 col9">7</th>
+                        <th class="row1 col10">8</th>
+                        <th class="row1 col11">9</th>
+                      </tr>
+                      <tr>
+                        <th class="row2 col1">0</th>
+                        <td class="row2 col2">0</td>
+                        <td class="row2 col3">1</td>
+                        <td class="row2 col4">2</td>
+                        <td class="row2 col5">3</td>
+                        <td class="row2 col6">4</td>
+                        <td class="row2 col7">5</td>
+                        <td class="row2 col8">6</td>
+                        <td class="row2 col9">7</td>
+                        <td class="row2 col10">8</td>
+                        <td class="row2 col11">9</td>
+                      </tr>
+                      <tr>
+                        <th class="row3 col1">1</th>
+                        <td class="row3 col2">1</td>
+                        <td class="row3 col3">2</td>
+                        <td class="row3 col4">3</td>
+                        <td class="row3 col5">4</td>
+                        <td class="row3 col6">5</td>
+                        <td class="row3 col7">6</td>
+                        <td class="row3 col8">7</td>
+                        <td class="row3 col9">8</td>
+                        <td class="row3 col10">9</td>
+                        <td class="row3 col11">10</td>
+                      </tr>
+                      <tr>
+                        <th class="row4 col1">2</th>
+                        <td class="row4 col2">2</td>
+                        <td class="row4 col3">3</td>
+                        <td class="row4 col4">4</td>
+                        <td class="row4 col5">5</td>
+                        <td class="row4 col6">6</td>
+                        <td class="row4 col7">7</td>
+                        <td class="row4 col8">8</td>
+                        <td class="row4 col9">9</td>
+                        <td class="row4 col10">10</td>
+                        <td class="row4 col11">11</td>
+                      </tr>
+                      <tr>
+                        <th class="row5 col1">3</th>
+                        <td class="row5 col2">3</td>
+                        <td class="row5 col3">4</td>
+                        <td class="row5 col4">5</td>
+                        <td class="row5 col5">6</td>
+                        <td class="row5 col6">7</td>
+                        <td class="row5 col7">8</td>
+                        <td class="row5 col8">9</td>
+                        <td class="row5 col9">10</td>
+                        <td class="row5 col10">11</td>
+                        <td class="row5 col11">12</td>
+                      </tr>
+                      <tr>
+                        <th class="row6 col1">4</th>
+                        <td class="row6 col2">4</td>
+                        <td class="row6 col3">5</td>
+                        <td class="row6 col4">6</td>
+                        <td class="row6 col5">7</td>
+                        <td class="row6 col6">8</td>
+                        <td class="row6 col7">9</td>
+                        <td class="row6 col8">10</td>
+                        <td class="row6 col9">11</td>
+                        <td class="row6 col10">12</td>
+                        <td class="row6 col11">13</td>
+                      </tr>
+                      <tr>
+                        <th class="row7 col1">5</th>
+                        <td class="row7 col2">5</td>
+                        <td class="row7 col3">6</td>
+                        <td class="row7 col4">7</td>
+                        <td class="row7 col5">8</td>
+                        <td class="row7 col6">9</td>
+                        <td class="row7 col7">10</td>
+                        <td class="row7 col8">11</td>
+                        <td class="row7 col9">12</td>
+                        <td class="row7 col10">13</td>
+                        <td class="row7 col11">14</td>
+                      </tr>
+                      <tr>
+                        <th class="row8 col1">6</th>
+                        <td class="row8 col2">6</td>
+                        <td class="row8 col3">7</td>
+                        <td class="row8 col4">8</td>
+                        <td class="row8 col5">9</td>
+                        <td class="row8 col6">10</td>
+                        <td class="row8 col7">11</td>
+                        <td class="row8 col8">12</td>
+                        <td class="row8 col9">13</td>
+                        <td class="row8 col10">14</td>
+                        <td class="row8 col11">15</td>
+                      </tr>
+                      <tr>
+                        <th class="row9 col1">7</th>
+                        <td class="row9 col2">7</td>
+                        <td class="row9 col3">8</td>
+                        <td class="row9 col4">9</td>
+                        <td class="row9 col5">10</td>
+                        <td class="row9 col6">11</td>
+                        <td class="row9 col7">12</td>
+                        <td class="row9 col8">13</td>
+                        <td class="row9 col9">14</td>
+                        <td class="row9 col10">15</td>
+                        <td class="row9 col11">16</td>
+                      </tr>
+                      <tr>
+                        <th class="row10 col1">8</th>
+                        <td class="row10 col2">8</td>
+                        <td class="row10 col3">9</td>
+                        <td class="row10 col4">10</td>
+                        <td class="row10 col5">11</td>
+                        <td class="row10 col6">12</td>
+                        <td class="row10 col7 highlight red2">13</td>
+                        <td class="row10 col8 highlight red2">14</td>
+                        <td class="row10 col9">15</td>
+                        <td class="row10 col10">16</td>
+                        <td class="row10 col11">17</td>
+                      </tr>
+                      <tr>
+                        <th class="row11 col1">9</th>
+                        <td class="row11 col2">9</td>
+                        <td class="row11 col3">10</td>
+                        <td class="row11 col4">11</td>
+                        <td class="row11 col5">12</td>
+                        <td class="row11 col6">13</td>
+                        <td class="row11 col7">14</td>
+                        <td class="row11 col8 highlight red2">15</td>
+                        <td class="row11 col9">16</td>
+                        <td class="row11 col10">17</td>
+                        <td class="row11 col11">18</td>
+                      </tr>
+                    </table>
+                    <div class="step3_right_box step3_calc_box dp_flex dp_flex_column v_hidden">
+                      <div class="tit">규칙으로 찾은 수</div>
+                      <div class="calc_box">
+                        <div class="calc calc1">12 + 1 = <span class="point">13</span></div>
+                        <div class="calc calc2 v_hidden">13 + 1 = <span class="point">14</span></div>
+                        <div class="calc calc3 v_hidden">14 + 1 = <span class="point">15</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <footer class="check_footer">
+                    <div class="check_footer_inner">
+                      <div class="check_footer_text img_container">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_6_4/STEP3_FOOTER_TXT.png" class="img footer_img" />
+                      </div>
+                      <div class="check_footer_ch">
+                        <div class="check_footer_ch_head"></div>
+                        <div class="check_footer_ch_body"></div>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+              <div class="step step4" style="display: block">
+                <!-- step4 시작부분 -->
+                <div class="main__container dp_flex">
+                  <div class="step4_left_box">
+                    <table>
+                      <tr>
+                        <th class="row1 col1"><div class="plus"></div></th>
+                        <th class="row1 col2"><span>1</span></th>
+                        <th class="row1 col3"><span>3</span></th>
+                        <th class="row1 col4"><span>5</span></th>
+                        <th class="row1 col5"><span>7</span></th>
+                        <th class="row1 col6"><span>9</span></th>
+                      </tr>
+                      <tr>
+                        <th class="row2 col1"><span>1</span></th>
+                        <td class="row2 col2">2</td>
+                        <td class="row2 col3">4</td>
+                        <td class="row2 col4">6</td>
+                        <td class="row2 col5">8</td>
+                        <td class="row2 col6">10</td>
+                      </tr>
+                      <tr>
+                        <th class="row3 col1"><span>3</span></th>
+                        <td class="row3 col2">4</td>
+                        <td class="row3 col3">6</td>
+                        <td class="row3 col4">8</td>
+                        <td class="row3 col5">10</td>
+                        <td class="row3 col6">12</td>
+                      </tr>
+                      <tr>
+                        <th class="row4 col1"><span>5</span></th>
+                        <td class="row4 col2">6</td>
+                        <td class="row4 col3">8</td>
+                        <td class="row4 col4">10</td>
+                        <td class="row4 col5">12</td>
+                        <td class="row4 col6">14</td>
+                      </tr>
+                      <tr>
+                        <th class="row5 col1"><span>7</span></th>
+                        <td class="row5 col2">8</td>
+                        <td class="row5 col3">10</td>
+                        <td class="row5 col4"><div class="txt_container txt_container1"></div></td>
+                        <td class="row5 col5"><div class="txt_container txt_container2"></div></td>
+                        <td class="row5 col6"><div class="txt_container txt_container3"></div></td>
+                      </tr>
+                      <tr>
+                        <th class="row6 col1"><span>9</span></th>
+                        <td class="row6 col2"><div class="txt_container txt_container4"></div></td>
+                        <td class="row6 col3">12</td>
+                        <td class="row6 col4">14</td>
+                        <td class="row6 col5">16</td>
+                        <td class="row6 col6">18</td>
+                      </tr>
+                    </table>
+
+                    <div class="point point1 v_hidden"></div>
+                    <div class="point point2 v_hidden"></div>
+                    <div class="point point3 v_hidden"></div>
+                    <div class="point point4 v_hidden"></div>
+                    <div class="point point5 v_hidden"></div>
+                    <div class="arrow arrow1 v_hidden">
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_6_4/STEP4_ARROW_DOWN.png" alt="아래쪽 화살표">
+                      </div>
+                      <span class="v_hidden">
+                        <span class="num">2</span><br>
+                        <span class="lineH">씩</span><br>
+                        커<br>
+                        져<br>
+                        요.
+                      </span>
+                    </div>
+                    <div class="arrow arrow2 v_hidden">
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_6_4/STEP4_ARROW_LEFT.png" alt="오른쪽 화살표">
+                      </div>
+                      <span class="v_hidden">2씩 커져요.</span>
+                    </div>
+
+                    <div class="step4_answer_box1 answer_box v_hidden">
+                      <div class="answer_list">
+                        <div class="answer answer1">10</div>
+                        <div class="answer answer2">12</div>
+                        <div class="answer answer3">14</div>
+                        <div class="answer answer4">16</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="step2_right_box dp_none">
+                    <div class="sentence_box dp_flex dp_flex_column">
+                      <div class="dp_flex">아래쪽으로 갈수록 2씩 커지는</div>
+                      <div class="dp_flex">규칙이 있습니다.</div>
+
+                      <div class="step4_point step4_point1 img_point__wrap dp_none">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_6_4/STEP4_STAR.png?=v1" />
+                      </div>
+                    </div>
+                    <div class="sentence_box pink dp_flex dp_flex_column v_hidden">
+                      <div class="dp_flex">오른쪽으로 갈수록 2씩 커지는</div>
+                      <div class="dp_flex">규칙이 있습니다.</div>
+
+                      <div class="step4_point step4_point2 img_point__wrap dp_none">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_6_4/STEP4_STAR.png?=v1" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step5" style="display: block">
+                <!-- step5 시작부분 -->
+                <div class="main__container">
+                  <div class="full_content_comm dp_flex">
+                    <div class="step5_left_box">
+                      <div class="arrow blue v_hidden"></div>
+                      <div class="arrow pink v_hidden"></div>
+                      <div class="arrow red v_hidden"></div>
+                      <table>
+                        <tr>
+                          <th class="row1 col1"><div class="plus"></div></th>
+                          <th class="row1 col2">1</th>
+                          <th class="row1 col3">3</th>
+                          <th class="row1 col4">5</th>
+                          <th class="row1 col5">7</th>
+                          <th class="row1 col6">9</th>
+                        </tr>
+                        <tr>
+                          <th class="row2 col1">1</th>
+                          <td class="row2 col2">2</td>
+                          <td class="row2 col3">4</td>
+                          <td class="row2 col4">6</td>
+                          <td class="row2 col5">8</td>
+                          <td class="row2 col6">10</td>
+                        </tr>
+                        <tr>
+                          <th class="row3 col1">3</th>
+                          <td class="row3 col2">4</td>
+                          <td class="row3 col3">6</td>
+                          <td class="row3 col4">8</td>
+                          <td class="row3 col5">10</td>
+                          <td class="row3 col6">12</td>
+                        </tr>
+                        <tr>
+                          <th class="row4 col1">5</th>
+                          <td class="row4 col2">6</td>
+                          <td class="row4 col3">8</td>
+                          <td class="row4 col4">10</td>
+                          <td class="row4 col5">12</td>
+                          <td class="row4 col6">14</td>
+                        </tr>
+                        <tr>
+                          <th class="row5 col1">7</th>
+                          <td class="row5 col2">8</td>
+                          <td class="row5 col3">10</td>
+                          <td class="row5 col4">12</td>
+                          <td class="row5 col5">14</td>
+                          <td class="row5 col6">16</td>
+                        </tr>
+                        <tr>
+                          <th class="row6 col1">9</th>
+                          <td class="row6 col2">10</td>
+                          <td class="row6 col3">12</td>
+                          <td class="row6 col4">14</td>
+                          <td class="row6 col5">16</td>
+                          <td class="row6 col6">18</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="step5_right_box dp_flex dp_flex_column">
+                      <div class="line line1 v_hidden">
+                        <span>왼쪽으로 갈수록 2씩 작아지는 규칙이 있습니다.</span>
+                      </div>
+                      <div class="line line2 v_hidden">
+                        <span>위쪽으로 갈수록 2씩 작아지는 규칙이 있습니다.</span>
+                      </div>
+                      <div class="line line3 v_hidden">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_6_4/STEP5_TEXT_DOWNRIGHT.png" class="img" alt="오른쪽 아래 화살표">
+                        <span>방향으로 갈수록 4씩 커지는 규칙이 있습니다.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <footer class="check_footer">
+                    <div class="check_footer_inner">
+                      <div class="check_footer_text img_container">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_6_4/STEP5_FOOTER_TXT.png" class="img footer_img" />
+                      </div>
+                      <div class="check_footer_ch">
+                        <div class="check_footer_ch_head"></div>
+                        <div class="check_footer_ch_body"></div>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+            
+
+              <ul class="step-list">
+                <li class="step-list_item active"></li>
+                <li class="step-list_item"></li>
+              </ul>
+            </div>
+          </main>
+          <div class="main_prev-next">
+            <button class="btn-prev" style="display: none">이전버튼</button>
+            <!-- <button class="btn-next" style="display: block" disabled> -->
+            <button class="btn-next blinking" style="display: block">
+              다음버튼
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      crossorigin
+      src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"
+    ></script>
+    <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+    <script src="../../../COMM/JS/COMMON2.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNT3.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNTBTN.JS"></script>
+    <script src="../../../COMM/JS/GAME.JS"></script>
+    <script src="../../../COMM/JS/VIDEO.JS"></script>
+    <script src="../../../COMM/JS/VIDEO-HTTP-STREAMING.JS"></script>
+    <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+    <script>
+      /*
+       * 데이터
+       */
+      let intro = {
+        type: "concept", //concept 개념익히기, checkExam 확인문제
+        title: "덧셈표에서 규칙을 찾아볼까요",
+        subTitle: [
+          "덧셈표에서 다양한 규칙을 찾아 설명할 수 있어요.",
+        ],
+        sound: ["../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_001.mp3"],
+      };
+ 
+      //현재 페이지
+      let disStep = 1;
+
+      let pageData = [
+        {
+          step: 1,
+          title: "덧셈표에서 규칙을 찾아봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_001.mp3",
+          headerPage: [1, 2],
+          footerPage: [1, 2],
+          prev: 0,
+          next: 1,
+        },
+        {
+          step: 2,
+          title: "덧셈표에서 규칙을 찾아봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_001.mp3",
+          headerPage: [1, 2],
+          footerPage: [2, 2],
+          prev: 1,
+          next: 0,
+        },
+        {
+          step: 3,
+          title: "",
+          sound: "",
+          headerPage: [0, 0],
+          footerPage: [0, 0],
+          prev: 1,
+          next: 1,
+        },
+        {
+          step: 4,
+          title: "다른 덧셈표에서 규칙을 찾아봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_025.mp3",
+          headerPage: [2, 2],
+          footerPage: [1, 1],
+          prev: 3,
+          next: 0,
+        },
+        {
+          step: 5,
+          title: "",
+          sound: "",
+          headerPage: [0, 0],
+          footerPage: [0, 0],
+          prev: 1,
+          next: 0,
+        },
+      ];
+      
+      function pageAction() {
+        console.log("disStep ::: ", disStep);
+        //setTimeout 초기화
+        const TimeoutId = setTimeout(() => console.log("timeout clear"), 1);
+        for (let i = 0; i < TimeoutId; i++) {
+          clearTimeout(i);
+        }
+        stepSet();
+        switch (disStep) {
+          case 1:
+            step1.reset();
+            step1.start();
+            break;
+          case 2:
+            step2.reset();
+            step2.start();
+            break;
+          case 3:
+            step3.reset();
+            step3.start();
+            break;
+          case 4:
+            step4.reset();
+            step4.start();
+            break;
+          case 5:
+            step5.reset();
+            step5.start();
+            break;
+        }
+      }
+
+      //문제 시작
+      //================STEP1==============
+      const step1 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_001.mp3",
+            "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_002.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step1 .character_box1').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $('.step1 .step1_mid_box .step1_answer_box1').css('visibility', 'visible');
+                
+                stepDropList = [
+                  {
+                    dropEl: '.step1 .txt_container1',
+                    correct: 1
+                  },
+                  {
+                    dropEl: '.step1 .txt_container2',
+                    correct: 2
+                  },
+                  {
+                    dropEl: '.step1 .txt_container3',
+                    correct: 3
+                  },
+                ];
+                          
+                stepDropArr = ['13', '14', '15'];
+                
+                quizMultiDragDropSetOnNew(stepDropList, $('.step1 .step1_answer_box1'), stepDropArr, step1.dropppFn);
+              }
+            },
+          ]);
+        },
+        dropppFn: () => {
+          $('.step1 .step1_mid_box div.placeholder').html('');
+
+          $(".droppable")
+          .droppable({ disabled: false })
+          .on("droppable:drop", function (droppp, drag) {
+            let dragAnswer = drag.item[0].dataset.val;
+            let answer = droppp.currentTarget.dataset.val;
+
+            if (answer === dragAnswer) {
+              correctlyFlag++;
+              quizMultiDragDropSetCorrect(droppp.currentTarget);
+
+              if(correctlyFlag == stepDropList.length){
+                quizMultiDragDropSetCorrectly();
+                stepDropList = "";
+                stepDropArr = "";
+
+                // 정답 시 실행되는 코드
+                audioSet([
+                  "../../../COMM/SOUND/CORRECT.mp3",
+                  "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_003.mp3",
+                ], [
+                  {
+                    idx: 2,
+                    type: 'start',
+                    callback: () => {
+                      $('.step1 .step1_mid_box .txt_container .answer').addClass('highlight red2');
+                      $('.step1 .character_box2').css('visibility', 'visible');
+                    }
+                  },
+                  {
+                    idx: 2,
+                    type: 'end',
+                    callback: () => {
+                      $('.step1 .character_box').css('visibility', '');
+                      $('.step1 .character_box1 .character').css('visibility', 'hidden');
+                      timerSet(() => {
+                        $('.step1 .point1').css('visibility', 'visible').addClass('box_blink2');
+                        touchMotionSetOn(450, 509, step1.guideTouch, $('.step1 .point1'));
+                        timerInit();
+                      }, 1000);
+                    }
+                  },
+                ]);
+              } else {
+                  audioSet([
+                    "../../../COMM/SOUND/CORRECT.mp3",
+                  ]);
+              }
+            } else {
+              audioSet([
+                "../../../COMM/SOUND/WRONG.mp3",
+              ]);
+
+              return false;
+            }
+          });
+        },
+        guideTouch: (flag) => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_004.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step1 .arrow1').css('visibility', 'visible').addClass('on');
+                timerSet(() => {
+                  $('.step1 .arrow1 > span').css('visibility', 'visible');
+                  timerInit();
+                }, 1000);
+              }
+            },
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                $('.step1 .point1').css('visibility', '').removeClass('box_blink2');
+                $('.step1 .point2').css('visibility', 'visible').addClass('box_blink2');
+                touchMotionSetOn(85, 870, step1.guideTouch2, $('.step1 .point2'));
+              }
+            },
+          ]);
+        },
+        guideTouch2: (flag) => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_005.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step1 .arrow2').css('visibility', 'visible').addClass('on');
+                timerSet(() => {
+                  $('.step1 .arrow2 > span').css('visibility', 'visible');
+                  timerInit();
+                }, 1000);
+              }
+            },
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                $('.step1 .point2').css('visibility', '').removeClass('box_blink2');
+                correctly();
+              }
+            },
+          ]);
+        },
+        reset: () => {
+          correctlyFlag = 0;
+          touchMotionSetInit();
+
+          $('.step1 .dp_none').css('display', '');
+          $('.step1 .v_hidden').css('visibility', '');
+          $('.step1 .highlight').removeClass('highlight');
+          $('.step1 .red2').removeClass('red2');
+          $('.step1 .blinking').removeClass('blinking');
+          $('.step1 .box_blink2').removeClass('box_blink2');
+          $('.step1 .txt_container').html('');
+          $('.step1 .character_box1 .character').css('visibility', '');
+          $('.step1 .step1_mid_box .txt_container').html('');
+        },
+      };
+
+      //================STEP2==============
+      const step2 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_006.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                $('.step2 .point.blue').css('visibility', 'visible').addClass('box_blink2');
+                touchMotionSetOn(450, 705, step2.guideTouch, $('.step2 .point.blue'));
+              }
+            },
+          ]);
+        },
+        guideTouch: (flag) => {
+          $('.step2 .point.blue').css('visibility', '').removeClass('box_blink2');
+          $('.step2 .step2_right_box').css('display', 'block');
+          $('.step2 .sentence_box .quiz_select_wrap1').css('visibility', 'visible');
+          quizSelectSetInit($('.step2 .quiz_select_wrap1'), [1, 2]);
+          quizSelectSetOnNew(1, step2.quizSelectCorrect, $('.step2 .txt_container1'), true);
+        },
+        quizSelectCorrect: (flag) => {
+          if (flag) {
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+            "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_007.mp3",
+            "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_008.mp3",
+            "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_009.mp3",
+            ], [
+              {
+                idx: 2,
+                type: 'start',
+                callback: () => {
+                  $('.step2 .arrow.blue').removeClass('v_hidden');
+                }
+              },
+              {
+                idx: 4,
+                type: 'end',
+                callback: () => {
+                  $('.step2 .point.pink').css('visibility', 'visible').addClass('box_blink2');
+                  touchMotionSetOn(550, 525, step2.guideTouch2, $('.step2 .point.pink'));
+                }
+              },
+            ]);
+          } else {
+            audioSet([
+              "../../../COMM/SOUND/WRONG.mp3",
+            ]);
+          }
+        },
+        guideTouch2: (flag) => {
+          $('.step2 .point.pink').css('visibility', '').removeClass('box_blink2');
+          $('.step2 .step2_right_box .sentence_box:nth-child(2)').css('visibility', 'visible');
+          $('.step2 .sentence_box .quiz_select_wrap2').css('visibility', 'visible');
+          quizSelectSetInit($('.step2 .quiz_select_wrap2'), [1, 2]);
+          quizSelectSetOnNew(1, step2.quizSelectCorrect2, $('.step2 .txt_container2'), true);
+        },
+        quizSelectCorrect2: (flag) => {
+          if (flag) {
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+            "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_010.mp3",
+            "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_011.mp3",
+            ], [
+              {
+                idx: 2,
+                type: 'start',
+                callback: () => {
+                  $('.step2 .arrow.pink').removeClass('v_hidden');
+                }
+              },
+              {
+                idx: 3,
+                type: 'end',
+                callback: () => {
+                  disStep++;
+                  pageAction();
+                }
+              },
+            ]);
+          } else {
+            audioSet([
+              "../../../COMM/SOUND/WRONG.mp3",
+            ]);
+          }
+        },
+        reset: () => {
+          touchMotionSetInit();
+          
+          $('.step2 .dp_none').css('display', '');
+          $('.step2 .v_hidden').css('visibility', '');
+          $('.step2 .txt_container').html('<span>?</span>');
+          $('.step2 .arrow').addClass('v_hidden');
+          $('.step2 .box_blink2').removeClass('box_blink2');
+        },
+      };
+
+      //================STEP3==============
+      const step3 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_012.mp3",
+            "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_013.mp3",
+            "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_014.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step3 .step3_left_box').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 3,
+              type: 'end',
+              callback: () => {
+                $('.step3 table td.row10.col7').addClass('aniScale ani_once');
+                timerSet(() => {
+                  $('.step3 .step3_left_box .calc_box .calc2').css('visibility', 'visible');
+                  timerInit();
+                  timerSet(() => {
+                    audioSet([
+                      "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_015.mp3",
+                    ], [
+                      {
+                        idx: 1,
+                        type: 'end',
+                        callback: () => {
+                          $('.step3 table td.row10.col8').addClass('aniScale ani_once');
+                          timerSet(() => {
+                            $('.step3 .step3_left_box .calc_box .calc3').css('visibility', 'visible');
+                            timerInit();
+                            timerSet(() => {
+                              audioSet([
+                                "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_016.mp3",
+                              ], [
+                                {
+                                  idx: 1,
+                                  type: 'end',
+                                  callback: () => {
+                                    $('.step3 table td.row11.col8').addClass('aniScale ani_once');
+                                    timerSet(() => {
+                                      audioSet([
+                                        "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_017.mp3",
+                                        "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_018.mp3",
+                                        "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_019.mp3",
+                                      ], [
+                                        {
+                                          idx: 2,
+                                          type: 'start',
+                                          callback: () => {
+                                            $('.step3 .ani_once').removeClass('ani_once');
+                                            $('.step3 .aniScale').removeClass('aniScale');
+                                            $('.step3 .step3_right_box').css('visibility', 'visible');
+                                          }
+                                        },
+                                        {
+                                          idx: 3,
+                                          type: 'end',
+                                          callback: () => {
+                                            $('.step3 table td.row10.col7').addClass('aniScale ani_once');
+                                            timerSet(() => {
+                                              $('.step3 .step3_right_box .calc_box .calc2').css('visibility', 'visible');
+                                              timerInit();
+                                              timerSet(() => {
+                                                audioSet([
+                                                  "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_020.mp3",
+                                                ], [
+                                                  {
+                                                    idx: 1,
+                                                    type: 'end',
+                                                    callback: () => {
+                                                      $('.step3 table td.row10.col8').addClass('aniScale ani_once');
+
+                                                      timerSet(() => {
+                                                        audioSet([
+                                                          "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_021.mp3",
+                                                          "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_022.mp3",
+                                                        ], [
+                                                          {
+                                                            idx: 1,
+                                                            type: 'start',
+                                                            callback: () => {
+                                                              $('.step3 .step3_right_box .calc_box .calc3').css('visibility', 'visible');
+                                                            }
+                                                          },
+                                                          {
+                                                            idx: 2,
+                                                            type: 'end',
+                                                            callback: () => {
+                                                              $('.step3 table td.row11.col8').addClass('aniScale ani_once');
+                                                              timerSet(() => {
+                                                                audioSet([
+                                                                  "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_023.mp3",
+                                                                  "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_024.mp3",
+                                                                ], [
+                                                                  {
+                                                                    idx: 1,
+                                                                    type: 'start',
+                                                                    callback: () => {
+                                                                      $('.step3 .check_footer_inner').addClass('slideUp');
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    idx: 2,
+                                                                    type: 'start',
+                                                                    callback: () => {
+                                                                      $('.step3 .step3_calc_box .point').addClass('blinking ani_twice');
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    idx: 2,
+                                                                    type: 'end',
+                                                                    callback: () => {
+                                                                      correctly();
+                                                                    }
+                                                                  },
+                                                                ]);
+                                                                timerInit();
+                                                              }, 1000);
+                                                            }
+                                                          },
+                                                        ]);
+                                                        timerInit();
+                                                      }, 1000);
+                                                    }
+                                                  },
+                                                ]);
+                                                timerInit();
+                                              }, 1000);
+                                            }, 1000);
+                                          }
+                                        },
+                                      ]);
+                                      timerInit();
+                                    }, 1000);
+                                  }
+                                },
+                              ]);
+                              timerInit();
+                            }, 1000);
+                          }, 1000);
+                        }
+                      },
+                    ]);
+                    timerInit();
+                  }, 1000);
+                }, 1000);
+              }
+            },
+          ]);
+        },
+        reset: () => {
+          $('.step3 .dp_none').css('display', '');
+          $('.step3 .v_hidden').css('visibility', '');
+          $('.step3 .ani_once').removeClass('ani_once');
+          $('.step3 .ani_twice').removeClass('ani_twice');
+          $('.step3 .aniScale').removeClass('aniScale');
+          $('.step3 .blinking').removeClass('blinking');
+          $('.step3 .slideUp').removeClass('slideUp');
+        },
+      };
+
+      //================STEP4==============
+      const step4 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_025.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                $('.step4 .step4_left_box .point1').css('visibility', 'visible').addClass('box_blink2');
+                touchMotionSetOn(450, 655, step4.guideTouch, $('.step4 .step4_left_box .point1'));
+              }
+            },
+          ]);
+        },
+        guideTouch: (flag) => {
+          $('.step4 .step4_left_box .point1').css('visibility', '').removeClass('box_blink2');
+          $('.step4 .step4_left_box table tr th.col1:not(th.row1.col1) span').addClass('aniScale ani_once');
+          
+          timerSet(() => {
+            audioSet([
+              "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_026.mp3",
+            ], [
+              {
+                idx: 1,
+                type: 'start',
+                callback: () => {
+                  $('.step4 .step4_left_box .arrow1').css('visibility', 'visible').addClass('on');
+                  timerSet(() => {
+                    $('.step4 .step4_left_box .arrow1 > span').css('visibility', 'visible');
+                    timerInit();
+                  }, 1000);
+                }
+              },
+              {
+                idx: 1,
+                type: 'end',
+                callback: () => {
+                  $('.step4 .step4_left_box .point2').css('visibility', 'visible').addClass('box_blink2');
+                  touchMotionSetOn(230, 880, step4.guideTouch2, $('.step4 .step4_left_box .point2'));
+                }
+              },
+            ]);
+          }, 1000);
+        },
+        guideTouch2: (flag) => {
+          $('.step4 .step4_left_box .point2').css('visibility', '').removeClass('box_blink2');
+          $('.step4 .step4_left_box table tr th.row1:not(th.row1.col1) span').addClass('aniScale ani_once');
+          
+          timerSet(() => {
+            audioSet([
+              "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_027.mp3",
+              "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_028.mp3",
+            ], [
+              {
+                idx: 1,
+                type: 'start',
+                callback: () => {
+                  $('.step4 .step4_left_box .arrow2').css('visibility', 'visible').addClass('on');
+                  timerSet(() => {
+                    $('.step4 .step4_left_box .arrow2 > span').css('visibility', 'visible');
+                    timerInit();
+                  }, 1000);
+                }
+              },
+              {
+                idx: 2,
+                type: 'end',
+                callback: () => {
+                  $('.step4 .step4_left_box .step4_answer_box1').css('visibility', 'visible');
+                
+                  stepDropList = [
+                    {
+                      dropEl: '.step4 .txt_container1',
+                      correct: 2
+                    },
+                    {
+                      dropEl: '.step4 .txt_container2',
+                      correct: 3
+                    },
+                    {
+                      dropEl: '.step4 .txt_container3',
+                      correct: 4
+                    },
+                    {
+                      dropEl: '.step4 .txt_container4',
+                      correct: 1
+                    },
+                  ];
+                            
+                  stepDropArr = ['10', '12', '14', '16'];
+                  
+                  quizMultiDragDropSetOnNew(stepDropList, $('.step4 .step4_answer_box1'), stepDropArr, step4.dropppFn);
+                }
+              },
+            ]);
+          }, 1000);
+        },
+        dropppFn: () => {
+          $('.step4 .step4_left_box div.placeholder').html('');
+
+          $(".droppable")
+          .droppable({ disabled: false })
+          .on("droppable:drop", function (droppp, drag) {
+            let dragAnswer = drag.item[0].dataset.val;
+            let answer = droppp.currentTarget.dataset.val;
+
+            if (answer === dragAnswer) {
+              correctlyFlag++;
+              quizMultiDragDropSetCorrect(droppp.currentTarget);
+
+              if(correctlyFlag == stepDropList.length){
+                quizMultiDragDropSetCorrectly();
+                stepDropList = "";
+                stepDropArr = "";
+
+                // 정답 시 실행되는 코드
+                audioSet([
+                  "../../../COMM/SOUND/CORRECT.mp3",
+                  "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_029.mp3",
+                  "../../../COMM/SOUND/Eff_start.mp3",
+                  "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_030.mp3",
+                  "../../../COMM/SOUND/Eff_start.mp3",
+                  "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_031.mp3",
+                  "../../../COMM/SOUND/Eff_start.mp3",
+                  "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_032.mp3",
+                  "../../../COMM/SOUND/Eff_start.mp3",
+                  "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_033.mp3",
+                ], [
+                  {
+                    idx: 3,
+                    type: 'start',
+                    callback: () => {
+                      $('.step4 .txt_container1').addClass('blinking ani_twice');
+                    }
+                  },
+                  {
+                    idx: 5,
+                    type: 'start',
+                    callback: () => {
+                      $('.step4 .txt_container2').addClass('blinking ani_twice');
+                    }
+                  },
+                  {
+                    idx: 7,
+                    type: 'start',
+                    callback: () => {
+                      $('.step4 .txt_container3').addClass('blinking ani_twice');
+                    }
+                  },
+                  {
+                    idx: 9,
+                    type: 'start',
+                    callback: () => {
+                      $('.step4 .txt_container4').addClass('blinking ani_twice');
+                    }
+                  },
+                  {
+                    idx: 10,
+                    type: 'end',
+                    callback: () => {
+                      $('.step4 .step4_left_box .point5').css('visibility', 'visible').addClass('box_blink2');
+                      touchMotionSetOn(420, 840, step4.guideTouch3, $('.step4 .step4_left_box .point5'));
+                    }
+                  },
+                ]);
+              } else {
+                  audioSet([
+                    "../../../COMM/SOUND/CORRECT.mp3",
+                  ]);
+              }
+            } else {
+              audioSet([
+                "../../../COMM/SOUND/WRONG.mp3",
+              ]);
+
+              return false;
+            }
+          });
+        },
+        guideTouch3: (flag) => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_034.mp3",
+            "../../../COMM/SOUND/Eff_start.mp3",
+            "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_035.mp3",
+            "../../../COMM/SOUND/Eff_start.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step4_left_box .point5').css('visibility', '').removeClass('box_blink2');
+                $('.step4 .step2_right_box').css('display', 'block');
+                timerSet(() => {
+                  $('.step4 .step4_left_box .point3').css('visibility', 'visible').addClass('box_blink2');
+                  timerInit();
+                }, 1000);
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step4_left_box .point3').css('visibility', '').removeClass('box_blink2');
+                $('.step4 .step2_right_box .step4_point1').css('display', 'block');
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step2_right_box .sentence_box.pink').css('visibility', 'visible');
+                timerSet(() => {
+                  $('.step4 .step4_left_box .point4').css('visibility', 'visible').addClass('box_blink2');
+                  timerInit();
+                }, 3000);
+              }
+            },
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step4_left_box .point4').css('visibility', '').removeClass('box_blink2');
+                $('.step4 .step2_right_box .step4_point2').css('display', 'block');
+              }
+            },
+            {
+              idx: 4,
+              type: 'end',
+              callback: () => {
+                disStep++;
+                pageAction();
+              }
+            },
+          ]);
+        },
+        reset: () => {
+          touchMotionSetInit();
+          correctlyFlag = 0;
+
+          $('.step4 .dp_none').css('display', '');
+          $('.step4 .v_hidden').css('visibility', '');
+          $('.step4 .blinking').removeClass('blinking');
+          $('.step4 .box_blink2').removeClass('box_blink2');
+          $('.step4 .ani_twice').removeClass('ani_twice');
+          $('.step4 .aniScale').removeClass('aniScale');
+          $('.step4 .txt_container').html('');
+        },
+      };
+
+      //================STEP5==============
+      const step5 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_036.mp3",
+            "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_037.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step5_right_box .line1').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $('.step5 .step5_left_box .arrow.pink').removeClass('v_hidden');
+                timerSet(() => {
+                  audioSet([
+                    "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_038.mp3",
+                  ], [
+                    {
+                      idx: 1,
+                      type: 'start',
+                      callback: () => {
+                        $('.step5 .step5_right_box .line2').css('visibility', 'visible');
+                      }
+                    },
+                    {
+                      idx: 1,
+                      type: 'end',
+                      callback: () => {
+                        $('.step5 .step5_left_box .arrow.blue').removeClass('v_hidden');
+                        timerSet(() => {
+                          audioSet([
+                            "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_039.mp3",
+                          ], [
+                            {
+                              idx: 1,
+                              type: 'start',
+                              callback: () => {
+                                $('.step5 .step5_right_box .line3').css('visibility', 'visible');
+                              }
+                            },
+                            {
+                              idx: 1,
+                              type: 'end',
+                              callback: () => {
+                                $('.step5 .step5_left_box .arrow.red').removeClass('v_hidden');
+                                timerSet(() => {
+                                  audioSet([
+                                    "../../../COMM/SOUND/SEASON2/2_6_4/2_2_6-4_040.mp3",
+                                  ], [
+                                    {
+                                      idx: 1,
+                                      type: 'start',
+                                      callback: () => {
+                                        $('.step5 .check_footer_inner').addClass('slideUp');
+                                      }
+                                    },
+                                    {
+                                      idx: 1,
+                                      type: 'end',
+                                      callback: () => {
+                                        callFinish();
+                                      }
+                                    },
+                                  ]);
+                                  timerInit();
+                                }, 1000);
+                              }
+                            },
+                          ]);
+                          timerInit();
+                        }, 1000);
+                      }
+                    },
+                  ]);
+                  timerInit();
+                }, 1000);
+              }
+            },
+          ]);
+        },
+        reset: () => {
+          $('.step5 .dp_none').css('display', '');
+          $('.step5 .v_hidden').css('visibility', '');
+          $('.step5 .arrow').addClass('v_hidden');
+          $('.step5 .slideUp').removeClass('slideUp');
+        },
+      };
+      
+    </script>
+  </body>
+</html>

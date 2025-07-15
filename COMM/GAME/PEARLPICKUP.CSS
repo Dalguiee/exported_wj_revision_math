@@ -1,0 +1,781 @@
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "NanumSquareRound" !important;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrap {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.cSize{
+  /* width: 200px !important;
+  height: 200px !important; */
+}
+
+.tSize{
+  padding: 0 0 60px 0 !important;
+}
+
+.hide {
+  display: none !important;
+}
+.show {
+  display: flex !important;
+}
+.bottom {
+  bottom: 0px !important;
+}
+.top {
+  top: 0px !important;
+}
+.ani-pause {
+  animation-play-state: paused !important;
+}
+.ani-running {
+  animation-play-state: running !important;
+}
+.popup {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+}
+.dimmed {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+.correct {
+  width: 100%;
+  height: 80%;
+  z-index: 1;
+  background: center/contain no-repeat url("../../COMM/IMG/PEARLPICKUP/O.PNG");
+}
+.complete_popup {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+}
+.complete_bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/PEARLPICKUP/complete.PNG");
+}
+.complete_btn-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: 170px;
+  z-index: 1;
+}
+.complete_retry {
+  width: 100px;
+  height: 100%;
+  margin: 15px;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/PEARLPICKUP/RETRY.PNG");
+}
+.complete_playview {
+  width: 307px;
+  height: 100%;
+  border-radius: 100px;
+  background: #2dcabd;
+  margin: 15px;
+}
+.complete_playview p {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 800;
+}
+#touchBlock {
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+}
+
+/* 인트로 */
+.intro {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.intro > .intro_bg {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: center no-repeat url("../../COMM/IMG/PEARLPICKUP/INTRO_BG.PNG");
+}
+.intro > .intro_start {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  color: white;
+  font-size: 50px;
+  font-weight: 800;
+  width: 352px;
+  height: 130px;
+  bottom: 250px;
+  border-radius: 100px;
+  background: #e222b8;
+  box-shadow: 0px 5px 0px 1px #bb1651;
+}
+/* 테마 */
+.theme {
+  display: none;
+}
+/* 물고기 */
+@keyframes swimming_01 {
+  0% {
+    transform: translateY(2vh) translateX(0vw) scale(0.4);
+  }
+  20% {
+    transform: translateY(-2vh) translateX(30vw) scale(0.5);
+  }
+  40% {
+    transform: translateY(4vh) translateX(60vw) scale(0.6);
+  }
+  60% {
+    transform: translateY(2vh) translateX(80vw) scale(0.5);
+  }
+  80% {
+    transform: translateY(0vh) translateX(100vw) scale(0.4);
+  }
+  100% {
+    transform: translateY(2vh) translateX(110vw) scale(0.5);
+  }
+}
+.theme > .fish_01 {
+  display: flex;
+  position: absolute;
+  top: 300px;
+  width: 270px;
+  height: 200px;
+  left: -300px;
+  z-index: 1;
+  will-change: transform;
+  animation: swimming_01 50s 20s infinite linear;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/PEARLPICKUP/FISH1.PNG");
+}
+@keyframes swimming_02 {
+  0% {
+    transform: translateY(2vh) translateX(0vw) scale(0.4);
+  }
+  20% {
+    transform: translateY(-2vh) translateX(30vw) scale(0.5);
+  }
+  40% {
+    transform: translateY(4vh) translateX(60vw) scale(0.6);
+  }
+  60% {
+    transform: translateY(2vh) translateX(80vw) scale(0.5);
+  }
+  80% {
+    transform: translateY(0vh) translateX(100vw) scale(0.4);
+  }
+  100% {
+    transform: translateY(2vh) translateX(110vw) scale(0.5);
+  }
+}
+.theme > .fish_02 {
+  display: flex;
+  position: absolute;
+  top: 500px;
+  width: 450px;
+  height: 200px;
+  left: -300px;
+  z-index: 1;
+  will-change: transform;
+  animation: swimming_02 50s infinite linear;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/PEARLPICKUP/FISH2.PNG");
+}
+@keyframes swimming_03 {
+  0% {
+    transform: translate(0, -130px);
+  }
+  24% {
+    transform: translate(200px, 20px);
+  }
+  25% {
+    transform: translate(200px, 20px) rotateY(180deg);
+  }
+  50% {
+    transform: translate(0px, 60px) rotateY(180deg);
+  }
+  75% {
+    transform: translate(-120px, -60px) rotateY(180deg);
+  }
+  76% {
+    transform: translate(-120px, -60px);
+  }
+  100% {
+    transform: translate(0, -130px);
+  }
+}
+.theme > .fish_03 {
+  display: flex;
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  left: 160px;
+  top: 330px;
+  z-index: 1;
+  opacity: 0.7;
+  will-change: transform;
+  animation: swimming_03 20s infinite linear;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/PEARLPICKUP/FISH3.PNG");
+}
+@keyframes swimming_04 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0, 80px);
+  }
+  26% {
+    transform: translate(0, 80px) rotateY(180deg);
+  }
+  50% {
+    transform: translate(0, 0) rotateY(180deg);
+  }
+  75% {
+    transform: translate(0, 80px) rotateY(180deg);
+  }
+  76% {
+    transform: translate(0, 80px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.theme > .fish_04 {
+  display: flex;
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  left: 500px;
+  top: 780px;
+  z-index: 1;
+  opacity: 0.7;
+  animation: swimming_04 15s infinite linear;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/PEARLPICKUP/FISH4.PNG");
+}
+@keyframes swimming_05 {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.3);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.theme > .fish_05 {
+  display: flex;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 1665px;
+  top: 200px;
+  z-index: 1;
+  opacity: 0.7;
+  animation: swimming_05 15s infinite linear;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/PEARLPICKUP/FISH5.PNG");
+}
+/* 거품 */
+@keyframes bubble_01 {
+  0% {
+    filter: opacity(0);
+    transform: translate3d(0, 100%, 0) scale(0.1);
+  }
+  100% {
+    filter: opacity(0.9);
+    transform: translate3d(0, 60%, 0) scale(0.8);
+  }
+}
+.bubble_01 {
+  display: flex;
+  position: absolute;
+  width: 200px;
+  height: 270px;
+  left: 55px;
+  bottom: 300px;
+  z-index: 1;
+  filter: opacity(0.9);
+  mix-blend-mode: screen;
+  will-change: transform;
+  animation: bubble_01 8s infinite linear;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/PEARLPICKUP/BUBBLE1.png");
+}
+@keyframes bubble_02 {
+  0% {
+    filter: opacity(0);
+    transform: translate3d(0, 100%, 0) scale(0.1);
+  }
+  100% {
+    filter: opacity(0.9);
+    transform: translate3d(0, 50%, 0) scale(0.8);
+  }
+}
+.bubble_02 {
+  display: flex;
+  position: absolute;
+  width: 200px;
+  height: 350px;
+  right: 40px;
+  bottom: 250px;
+  z-index: 1;
+  mix-blend-mode: screen;
+  will-change: transform;
+  animation: bubble_02 5s infinite linear;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/PEARLPICKUP/BUBBLE2.png");
+}
+/* 물결 */
+@keyframes wave {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 2000px 0;
+  }
+}
+.wave_bg {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: wave 20s infinite linear reverse;
+  background: center/contain url("../../COMM/IMG/PEARLPICKUP/WAVE_BG.PNG");
+}
+
+/* 게임 */
+.game,
+.theme,
+.content {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.game_bg {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  animation: wave 40s infinite linear reverse;
+  background: center/contain url("../../COMM/IMG/PEARLPICKUP/GAME_BG.PNG");
+}
+.hold_start {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  color: white;
+  width: 480px;
+  height: 100px;
+  bottom: -100px;
+  font-size: 50px;
+  font-weight: 800;
+  background: #e222b8;
+  border-radius: 10px;
+  animation: borderChange 1s 0s infinite ease-in-out alternate;
+}
+@keyframes borderChange {
+  0% {
+    border: 5px solid white;
+  }
+  50% {
+    border: 0px solid white;
+  }
+  100% {
+    border: 5px solid white;
+  }
+}
+
+/* 잠수함 */
+.submarine {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 1050px;
+  height: 275px;
+  top: -400px;
+  will-change: transform;
+}
+.submarine_bg {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  will-change: transform;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/PEARLPICKUP/SUBMARINE.PNG");
+}
+.submarine_light {
+  display: flex;
+  position: absolute;
+  margin-left: 5%;
+  top: 30px;
+  width: 100%;
+  height: 100vh;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/PEARLPICKUP/SUBMARINERIGHT.PNG");
+}
+.crab {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  top: 20px;
+  margin-left: 5%;
+  width: 10%;
+  height: 100vh;
+  z-index: 2;
+}
+.crab_line {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  width: 12px;
+  height: 300px;
+  background: center/contain url("../../COMM/IMG/PEARLPICKUP/CRAB_LINE.PNG");
+}
+@keyframes catching {
+  0% {
+    height: 300px;
+  }
+  100% {
+    height: 785px;
+  }
+}
+.crab_line.action {
+  display: flex;
+  position: relative;
+  width: 12px;
+  height: 300px;
+  animation: catching 0.4s 2 alternate;
+  background: center/contain url("../../COMM/IMG/PEARLPICKUP/CRAB_LINE.PNG");
+}
+.crab_head {
+  display: flex;
+  position: absolute;
+  width: 110px;
+  height: 80px;
+  bottom: -45px;
+  left: -48px;
+  z-index: 1;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/PEARLPICKUP/CRAB_HEAD.PNG");
+}
+
+@keyframes spin {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.submarine_proppeller {
+  display: flex;
+  position: absolute;
+  left: -35px;
+  top: 77px;
+  width: 100px;
+  height: 100px;
+  will-change: transform;
+  animation: spin 0.3s infinite linear;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/PEARLPICKUP/PROPELLER.PNG");
+}
+.submarine_epilogue {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 4;
+  font-size: 55px;
+  font-weight: 800;
+  height: 250px;
+  text-align: center;
+  width: 850px;
+  margin-left: 5%;
+}
+.submarine_epilogue span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* top: 250px; */
+  padding-top: 10px;
+  line-height: 1.5;
+  color: black;
+  word-break: keep-all;
+}
+
+/* 낚시지역 */
+.fish_area {
+  display: flex;
+  position: absolute;
+  will-change: transform;
+  z-index: 1;
+  width: 100%;
+  height: 40%;
+  top: 40%;
+}
+@keyframes shaking {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(50px);
+  }
+  40% {
+    transform: translateX(-50px);
+  }
+  60% {
+    transform: translateX(50px);
+  }
+  80% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes pearl_move_01 {
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(-240vw);
+  }
+}
+@keyframes pearl_up_01 {
+  0% {
+    top: 100px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.pearl {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  width: 400px;
+  height: 400px;
+  right: -400px;
+  will-change: transform;
+}
+.pearl span {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 120px;
+  font-weight: 800;
+  color: #1b1a51;
+  will-change: transform;
+  text-align: center;
+  padding: 0 10%;
+  word-break: keep-all;
+  line-height: 1.2;
+}
+
+.pearl img {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 360px;
+  height: 360px;
+}
+
+.pearl.action {
+  will-change: transform;
+  animation: pearl_move_01 14s infinite linear,
+    pearl_up_01 2s infinite alternate;
+}
+.pearl.shaking {
+  will-change: transform;
+  animation: shaking 1s;
+}
+.pearl_bg {
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/PEARLPICKUP/PEARL_BG.PNG");
+}
+
+.pearl_bg > span {
+  will-change: transform;
+}
+
+#complete_popup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+#complete_popup .buttonArea {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  top: 940px;
+}
+#complete_popup .dimmed {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+#complete_popup .bg {
+  position: absolute;
+  top: 130px;
+  width: 100%;
+  height: 80%;
+  z-index: 1;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/PEARLPICKUP/LASTPOPUP.PNG");
+}
+#complete_popup .reload {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  color: blue;
+  z-index: 2;
+  border-radius: 100px;
+  background: center/contain no-repeat url("../../COMM/IMG/CRUNCHY/RETRY.PNG");
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#complete_popup .play_view {
+  display: flex;
+  width: 300px;
+  height: 100px;
+  color: white;
+  font-size: 32px;
+  font-weight: 800px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #2dcabd;
+  z-index: 2;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#complete_popup p {
+  display: flex;
+  position: absolute;
+  bottom: -50px;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.pearl-guide {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.pearl-guide-hand {
+  width: 120px;
+  height: 110px;
+  position: absolute;
+  z-index: 2;
+  background: url("../../COMM/IMG/TOUCH_GUIDE_HAND.PNG") no-repeat center;
+  left: 50%;
+  bottom: 5%;
+}
+.pearl-guide-point {
+  width: 120px;
+  height: 110px;
+  position: absolute;
+  z-index: 2;
+  background: url("../../COMM/IMG/TOUCH_GUIDE.PNG") no-repeat center;
+  left: 47%;
+  bottom: 8%;
+  animation: opa 1s infinite linear;
+}
+
+@keyframes opa {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

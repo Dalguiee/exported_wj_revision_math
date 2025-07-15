@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=2000, user-scalable=no" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <link rel="stylesheet" href="../../../COMM/GAME/RESET.CSS" />
+    <link rel="stylesheet" href="../../../COMM/GAME/MART.CSS" />
+    <title>골라골라 게임</title>
+  </head>
+
+  <body>
+    <div class="warp" id="wrap">
+      <section class="game">
+        <div class="page_num">
+          <span id="pageCnt">1</span>
+          <span>/</span>
+          <span id="pageCntAll">3</span>
+        </div>
+        <section class="osign"></section>
+        <section class="transparentWall"></section>
+        <!-- 앤딩팝업 (실력쏙쏙) -->
+        <section class="winPopup skill">
+          <img
+            src="../../../COMM/IMG/MART/ENDPOPUP_RE.PNG"
+            alt="앤딩 팝업 이미지 (실력쏙쏙)"
+          />
+          <button class="winPopup_restart">다시하기 버튼</button>
+          <button class="winPopup_btn" onclick="videoPlayer()">
+            앤딩 버튼
+          </button>
+        </section>
+        <!-- 앤딩팝업 (준비학습) -->
+        <section class="winPopup ready">
+          <img
+            src="../../../COMM/IMG/MART/ENDPOPUP.PNG"
+            alt="앤딩 팝업 이미지 (준비학습)"
+          />
+          <button class="winPopup_restart">앤딩 버튼</button>
+        </section>
+        <!-- -----인트로----- -->
+        <article class="game_intro">
+          <button class="game_intro_start">게임 시작</button>
+        </article>
+        <article class="game_title"></article>
+        <article class="quiz">
+          <!-- -----퀴즈 랜더링----- -->
+        </article>
+        <article class="dask"></article>
+        <ul class="view"></ul>
+        <article class="cart droppable"></article>
+        <article class="character">
+          <div class="wrong"></div>
+        </article>
+        <!-- 가이드 -->
+        <section class="mart-guide">
+          <div class="mart-guide-hand"></div>
+        </section>
+      </section>
+    </div>
+  </body>
+  <!-- <script
+    crossorigin
+    src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"
+  ></script> -->
+  <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+  <script src="../../../COMM/GAME/MART.JS"></script>
+  <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+  <script defer src="../../../COMM/JS/COMMONGAME.JS"></script>
+</html>

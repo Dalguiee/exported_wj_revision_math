@@ -1,0 +1,1512 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>개정교육과정-수학 수학 개념</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <meta name="KeyWORDs" content="" />
+  <meta name="Description" content="" />
+  <meta name="Robots" content="all" />
+  <meta http-equiv="Subject" content="" />
+  <meta http-equiv="Title" content="" />
+  <meta http-equiv="Author" content="onflou " />
+  <meta http-equiv="Publisher" content="" />
+
+  <!-- 브라우저 호환성을 지정 -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="shortcut icon" href="#" />
+  <link href="../../../COMM/CSS/COMMON.CSS" rel="stylesheet" />
+  <link href="../../../COMM/CSS/CONCEPTCOMMON2.CSS" rel="stylesheet" />
+  <link href="../../../COMM/CSS/VIDEO.CSS" rel="stylesheet" />
+
+  <style>
+    .calc_container {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      width: 360px;
+      height: 340px;
+    }
+
+    .calc_container>div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .calc_container .calc_arrow {
+      padding: 5px 0;
+    }
+
+    .icon_box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: rgba(255, 255, 255, 1);
+      border: solid 3px rgba(190, 218, 255, 1);
+      border-radius: 20px;
+      height: 100px;
+    }
+
+    .icon_box.point {
+      border-width: 5px !important;
+      border-color: rgba(103, 68, 243, 1) !important;
+    }
+
+    .icon_deer {
+      width: 55px;
+      height: 73px;
+      background-image: url('../../../COMM/IMG/CONCEPT/1_3_3/ICON_DEER.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .icon_deer_water {
+      width: 55px;
+      height: 73px;
+      background-image: url('../../../COMM/IMG/CONCEPT/1_3_3/ICON_DEER_WATER.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .icon_zebra {
+      width: 55px;
+      height: 73px;
+      background-image: url('../../../COMM/IMG/CONCEPT/1_3_3/ICON_ZEBRA.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .icon_zebra_water {
+      width: 55px;
+      height: 73px;
+      background-image: url('../../../COMM/IMG/CONCEPT/1_3_3/ICON_ZEBRA_WATER.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .icon_fish {
+      width: 154px;
+      height: 154px;
+      background-image: url('../../../COMM/IMG/CONCEPT/1_3_3/ICON_FISH.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .icon_block {
+      width: 59px;
+      height: 66px;
+
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .icon_block_green {
+      background-image: url('../../../COMM/IMG/CONCEPT/1_3_3/ICON_BLOCK_GREEN.png');
+    }
+
+    .icon_block_blue {
+      background-image: url('../../../COMM/IMG/CONCEPT/1_3_3/ICON_BLOCK_BLUE.png');
+    }
+
+    .icon_block_yellow {
+      background-image: url('../../../COMM/IMG/CONCEPT/1_3_3/ICON_BLOCK_YELLOW.png');
+    }
+
+    .icon_block_red {
+      width: 59px;
+      background-image: url('../../../COMM/IMG/CONCEPT/1_3_3/ICON_BLOCK_RED.png');
+    }
+
+    .img_quiz_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .img_quiz_container .hint_txt {
+      position: absolute;
+      top: 100%;
+      border-radius: 10px;
+      padding: 12px 16px;
+      background-color: rgba(255, 159, 233, 1);
+      font-size: 36px;
+      letter-spacing: -2;
+      line-height: 45px;
+      text-align: center;
+      display: none;
+    }
+
+    .img_quiz_container .img_box {
+      width: 540px;
+      position: relative;
+    }
+
+    .img_quiz_container .quiz_box {
+      visibility: hidden;
+      margin-left: 120px;
+    }
+
+    .img_quiz_container .quiz_box .select_list {
+      width: 890px;
+
+      display: flex;
+      flex-flow: column;
+      justify-items: center;
+      align-items: center;
+    }
+
+    .img_quiz_container .quiz_box .answer {
+      width: 100%;
+      height: auto;
+      padding: 30px 30px;
+
+      display: inline;
+      text-align: center;
+    }
+
+    .img_quiz_container .quiz_box .answer+.answer {
+      margin-top: 64px;
+      margin-left: 0;
+    }
+
+    .img_quiz_container .quiz_box .answer .highlight {
+      color: rgba(196, 22, 28, 1);
+    }
+
+    /* 1p */
+
+    /* 2,3p comm */
+    .step2_3_comm_btm {
+      width: 700px;
+      height: 533px;
+      background-color: rgba(242, 245, 255, 1);
+      border-radius: 30px;
+
+      visibility: hidden;
+    }
+
+    .step2_3_comm_btm .icon_box {
+      padding: 19px 30px 15px;
+    }
+
+    .step2_3_comm_btm .icon_box+.icon_box {
+      margin-left: 26px;
+    }
+
+    .step2_3_comm_btm .icon_block+.icon_block {
+      margin-left: 20px;
+    }
+
+    /* 2p */
+    .step2 .main__container>div {
+      width: 700px;
+    }
+
+    .step2 .step2_right_box {
+      margin-left: 36px;
+    }
+
+    .step2 .step2_top_box {
+      width: 100%;
+      height: 288px;
+      padding: 0 16px;
+
+      visibility: hidden;
+    }
+
+    .step2 .step2_top_box.dp_flex {
+      justify-content: space-between;
+    }
+
+    .step2 .step2_top_box .icon_box {
+      height: 95px;
+    }
+
+    .step2 .step2_top_box .icon_box_2 {
+      width: 192px;
+    }
+
+    .step2 .step2_top_box .icon_box_3 {
+      width: 277px;
+    }
+
+    .step2 .step2_top_box .icon_box_4 {
+      width: 356px;
+    }
+
+    .step2 .step2_top_box .icon_box_5 {
+      width: 439px;
+    }
+
+    .step2 .icon_animal+.icon_animal {
+      margin-left: 26px;
+    }
+
+    .step2 .step2_btm_top .icon_box:last-child {
+      visibility: hidden;
+    }
+
+    .step2 .step2_btm_btm {
+      visibility: hidden;
+    }
+
+    .step2 .touchMotion2-1 {
+      top: 673px;
+      left: 513px;
+    }
+
+    .step2 .touchMotion2-2 {
+      top: 673px;
+      left: 1250px;
+    }
+
+    /* 3p */
+    .step3 .step3_top_box {
+      width: 1600px;
+      height: 288px;
+    }
+
+    .step3 .step3_btm_right {
+      margin-left: 36px;
+    }
+
+    .step3 .icon_fish+.icon_fish {
+      margin-left: 28px;
+    }
+
+    .step3 .touchMotion3-2 {
+      top: 673px;
+      left: 565px;
+    }
+
+    .step3 .touchMotion3-3 {
+      top: 673px;
+      left: 1300px;
+    }
+
+    /* 4p */
+    .step4 .step4_top_box {
+      width: 1700px;
+      height: 595px;
+      transform: translate(0, -47px);
+    }
+
+    .step4 .step4_top_img {
+      width: 508px;
+      position: relative;
+    }
+
+    .step4 .step4_top_img .step4_txt_box {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      padding-top: 83px;
+    }
+
+    .step4 .step4_top_img .step4_txt_box .step4_txt_line {
+      width: 100%;
+      height: 103px;
+      position: relative;
+      visibility: hidden;
+    }
+
+    .step4 .step4_top_img .step4_txt_box .step4_txt_line .txt {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    .step4 .step4_top_img .step4_txt_box .step4_txt_line .txt:first-child {
+      right: calc(100% + 6px);
+    }
+
+    .step4 .step4_top_img .step4_txt_box .step4_txt_line .txt:last-child {
+      left: calc(100% + 6px);
+    }
+
+    .step4 .check_footer_text {
+      background: url("../../../COMM/IMG/CONCEPT/1_3_3/STEP4_FOOTER_TXT.png") no-repeat center;
+    }
+
+    /* 5p */
+    .step5 .hint_txt1 {
+      left: 104.5px;
+    }
+
+    .step5 .hint_txt2 {
+      left: 371.5px;
+    }
+
+    .step5 .character_txt {
+      background-image: url("../../../COMM/IMG/CONCEPT/1_3_3/STEP5_HINT.png");
+      width: 368px;
+      height: 159px;
+      top: 531px;
+      right: 15px;
+    }
+
+    /* 6p */
+    .step6 .hint_txt1 {
+      left: 87px;
+    }
+
+    .step6 .hint_txt2 {
+      left: 377px;
+    }
+
+    .step6 .character_txt {
+      background-image: url("../../../COMM/IMG/CONCEPT/1_3_3/STEP6_HINT.png");
+      width: 368px;
+      height: 159px;
+      top: 531px;
+      right: 53px;
+    }
+
+    /* 7p */
+    .step7 .hint_txt1 {
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 289px;
+    }
+
+    .step7 .character_txt {
+      background-image: url("../../../COMM/IMG/CONCEPT/1_3_3/STEP7_HINT.png");
+      width: 368px;
+      height: 233px;
+      top: 460px;
+      right: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="contents-wrap" class="concept" style="position: absolute; display: flex"></div>
+    <div id="contents-main" style="display: none" class="concept-warp">
+      <div class="concept-warp_inner">
+        <header class="header" style="visibility: visible">
+          <div class="header_title">
+            <button class="sound-btn" onclick="titleSound()"></button>
+            <h3>모으기와 가르기를 해 봅시다.</h3>
+          </div>
+          <p class="header_page"><span>1</span>/2</p>
+        </header>
+        <main class="main">
+          <div class="main_content">
+            <!-- 콘텐츠영역 -->
+            <div class="step step1" style="display: block">
+              <!-- step1 시작부분 -->
+              <div class="main__container dp_flex">
+                <div class="step1_img">
+                  <img src="../../../COMM/IMG/CONCEPT/1_3_3/STEP1_IMG.png" alt="초원 이미지" class="img" />
+                </div>
+              </div>
+            </div>
+            <div class="step step2" style="display: none">
+              <!-- step2 시작부분 -->
+              <div class="touchMotion touchMotion2-1">
+                <div class="touchMotion_point"></div>
+                <div class="touchMotion_hand"></div>
+              </div>
+
+              <div class="touchMotion touchMotion2-2">
+                <div class="touchMotion_point"></div>
+                <div class="touchMotion_hand"></div>
+              </div>
+
+              <div class="main__container dp_flex">
+                <div class="step2_left_box dp_flex dp_flex_column">
+                  <div class="step2_top_box dp_flex">
+                    <div class="icon_box icon_box_3">
+                      <div class="dp_flex">
+                        <div class="icon_animal icon_deer"></div>
+                        <div class="icon_animal icon_deer"></div>
+                        <div class="icon_animal icon_deer"></div>
+                      </div>
+                    </div>
+                    <div class="icon_box icon_box_4">
+                      <div class="dp_flex">
+                        <div class="icon_animal icon_zebra"></div>
+                        <div class="icon_animal icon_zebra"></div>
+                        <div class="icon_animal icon_zebra"></div>
+                        <div class="icon_animal icon_zebra"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step2_btm_box step2_3_comm_btm dp_flex dp_flex_column">
+                    <div class="step2_btm_top dp_flex">
+                      <div class="icon_box icon_box_3">
+                        <div class="dp_flex">
+                          <div class="icon_block icon_block_green"></div>
+                          <div class="icon_block icon_block_green"></div>
+                          <div class="icon_block icon_block_green"></div>
+                        </div>
+                      </div>
+                      <div class="icon_box icon_box_4">
+                        <div class="dp_flex">
+                          <div class="icon_block icon_block_red"></div>
+                          <div class="icon_block icon_block_red"></div>
+                          <div class="icon_block icon_block_red"></div>
+                          <div class="icon_block icon_block_red"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="step2_btm_btm calc_container">
+                      <div class="calc_top">
+                        <div class="txt_container green">3</div>
+                        <div class="txt_container green">4</div>
+                      </div>
+                      <div class="calc_arrow">
+                        <img src="../../../COMM/IMG/CONCEPT/1_3_3/ARROW_PLUS_GREEN.png" alt="모으기 화살표" />
+                      </div>
+                      <div class="calc_btm">
+                        <div class="txt_container keypad_txt keypad_txt1">?</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="step2_right_box dp_flex dp_flex_column">
+                  <div class="step2_top_box dp_flex">
+                    <div class="icon_box icon_box_5">
+                      <div class="dp_flex">
+                        <div class="icon_animal icon_deer_water"></div>
+                        <div class="icon_animal icon_deer_water"></div>
+                        <div class="icon_animal icon_zebra_water"></div>
+                        <div class="icon_animal icon_zebra_water"></div>
+                        <div class="icon_animal icon_zebra_water"></div>
+                      </div>
+                    </div>
+                    <div class="icon_box icon_box_2">
+                      <div class="dp_flex">
+                        <div class="icon_animal icon_deer"></div>
+                        <div class="icon_animal icon_zebra"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step2_btm_box step2_3_comm_btm dp_flex dp_flex_column">
+                    <div class="step2_btm_top dp_flex">
+                      <div class="icon_box icon_box_5">
+                        <div class="dp_flex">
+                          <div class="icon_block icon_block_green"></div>
+                          <div class="icon_block icon_block_green"></div>
+                          <div class="icon_block icon_block_green"></div>
+                          <div class="icon_block icon_block_green"></div>
+                          <div class="icon_block icon_block_green"></div>
+                        </div>
+                      </div>
+                      <div class="icon_box icon_box_2">
+                        <div class="dp_flex">
+                          <div class="icon_block icon_block_red"></div>
+                          <div class="icon_block icon_block_red"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="step2_btm_btm calc_container">
+                      <div class="calc_top">
+                        <div class="txt_container green">5</div>
+                        <div class="txt_container green">2</div>
+                      </div>
+                      <div class="calc_arrow">
+                        <img src="../../../COMM/IMG/CONCEPT/1_3_3/ARROW_PLUS_GREEN.png" alt="모으기 화살표" />
+                      </div>
+                      <div class="calc_btm">
+                        <div class="txt_container keypad_txt keypad_txt2">?</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step step3" style="display: none">
+              <!-- step3 시작부분 -->
+              <div class="touchMotion touchMotion3-2">
+                <div class="touchMotion_point"></div>
+                <div class="touchMotion_hand"></div>
+              </div>
+
+              <div class="touchMotion touchMotion3-3">
+                <div class="touchMotion_point"></div>
+                <div class="touchMotion_hand"></div>
+              </div>
+
+              <div class="main__container dp_flex dp_flex_column">
+                <div class="step3_top_box dp_flex">
+                  <div class="icon_fish"></div>
+                  <div class="icon_fish"></div>
+                  <div class="icon_fish"></div>
+                  <div class="icon_fish"></div>
+                  <div class="icon_fish"></div>
+                </div>
+                <div class="step3_btm_container dp_flex">
+                  <div class="step3_btm_left">
+                    <div class="step3_btm_box step2_3_comm_btm dp_flex dp_flex_column">
+                      <div class="step3_btm_top dp_flex">
+                        <div class="icon_box icon_box_1">
+                          <div class="dp_flex">
+                            <div class="icon_block icon_block_blue"></div>
+                          </div>
+                        </div>
+                        <div class="icon_box icon_box_4">
+                          <div class="dp_flex">
+                            <div class="icon_block icon_block_yellow"></div>
+                            <div class="icon_block icon_block_yellow"></div>
+                            <div class="icon_block icon_block_yellow"></div>
+                            <div class="icon_block icon_block_yellow"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="step3_btm_btm calc_container">
+                        <div class="calc_top">
+                          <div class="txt_container blue">5</div>
+                        </div>
+                        <div class="calc_arrow">
+                          <img src="../../../COMM/IMG/CONCEPT/1_3_3/ARROW_MINUS_BLUE.png" alt="나누기 화살표" />
+                        </div>
+                        <div class="calc_btm">
+                          <div class="txt_container blue">1</div>
+                          <div class="txt_container keypad_txt keypad_txt1">?</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step3_btm_right">
+                    <div class="step3_btm_box step2_3_comm_btm dp_flex dp_flex_column">
+                      <div class="step3_btm_top dp_flex">
+                        <div class="icon_box icon_box_2">
+                          <div class="dp_flex">
+                            <div class="icon_block icon_block_blue"></div>
+                            <div class="icon_block icon_block_blue"></div>
+                          </div>
+                        </div>
+                        <div class="icon_box icon_box_3">
+                          <div class="dp_flex">
+                            <div class="icon_block icon_block_yellow"></div>
+                            <div class="icon_block icon_block_yellow"></div>
+                            <div class="icon_block icon_block_yellow"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="step3_btm_btm calc_container">
+                        <div class="calc_top">
+                          <div class="txt_container blue">5</div>
+                        </div>
+                        <div class="calc_arrow">
+                          <img src="../../../COMM/IMG/CONCEPT/1_3_3/ARROW_MINUS_BLUE.png" alt="나누기 화살표" />
+                        </div>
+                        <div class="calc_btm">
+                          <div class="txt_container blue">2</div>
+                          <div class="txt_container keypad_txt keypad_txt2">?</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step step4" style="display: none">
+              <!-- step4 시작부분 -->
+              <div class="main__container">
+                <div class="full_content_comm dp_flex">
+                  <div class="step4_top_box dp_flex">
+                    <div class="step4_top_img">
+                      <img src="../../../COMM/IMG/CONCEPT/1_3_3/STEP4_TOP_IMG.png" alt="숫자 나누기 표" />
+                      <div class="step4_txt_box">
+                        <div class="step4_txt_line step4_txt_line_1"><span class="txt">1</span><span
+                            class="txt">4</span></div>
+                        <div class="step4_txt_line step4_txt_line_2"><span class="txt">2</span><span
+                            class="txt">3</span></div>
+                        <div class="step4_txt_line step4_txt_line_3"><span class="txt">3</span><span
+                            class="txt">2</span></div>
+                        <div class="step4_txt_line step4_txt_line_4"><span class="txt">4</span><span
+                            class="txt">1</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <footer class="check_footer">
+                  <div class="check_footer_inner">
+                    <div class="check_footer_text"></div>
+                    <div class="check_footer_ch">
+                      <div class="check_footer_ch_head"></div>
+                      <div class="check_footer_ch_body"></div>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="step step5" style="display: none">
+              <!-- step5 시작부분 -->
+              <div class="main__container dp_flex">
+                <div class="img_quiz_container">
+                  <div class="img_box">
+                    <img src="../../../COMM/IMG/CONCEPT/1_3_3/STEP5_IMG.png" alt="토마토 이미지" />
+                    <div class="hint_txt hint_txt1">2개</div>
+                    <div class="hint_txt hint_txt2">3개</div>
+                  </div>
+                  <div class="quiz_box"></div>
+                </div>
+
+                <div class="character_txt">토마토 5개를 2개와 3개로 가르기 했습니다.</div>
+                <div class="character">
+                  <div class="character_head">
+                    <img src="../../../COMM/IMG/CHARACTER_HEAD.PNG" alt="캐릭터 머리" />
+                  </div>
+                  <div class="character_body">
+                    <img src="../../../COMM/IMG/CHARACTER_BODY.PNG" alt="캐릭터 몸" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step step6" style="display: none">
+              <!-- step6 시작부분 -->
+              <div class="main__container dp_flex">
+                <div class="img_quiz_container">
+                  <div class="img_box">
+                    <img src="../../../COMM/IMG/CONCEPT/1_3_3/STEP6_IMG.png" alt="배추와 무 이미지" />
+                    <div class="hint_txt hint_txt1">4개</div>
+                    <div class="hint_txt hint_txt2">1개</div>
+                  </div>
+                  <div class="quiz_box"></div>
+                </div>
+
+                <div class="character_txt">무가 배추보다 3개 더 많습니다.</div>
+                <div class="character">
+                  <div class="character_head">
+                    <img src="../../../COMM/IMG/CHARACTER_HEAD.PNG" alt="캐릭터 머리" />
+                  </div>
+                  <div class="character_body">
+                    <img src="../../../COMM/IMG/CHARACTER_BODY.PNG" alt="캐릭터 몸" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step step7" style="display: none">
+              <!-- step7 시작부분 -->
+              <div class="main__container dp_flex">
+                <div class="img_quiz_container">
+                  <div class="img_box">
+                    <img src="../../../COMM/IMG/CONCEPT/1_3_3/STEP7_IMG.png" alt="귤을 먹고 있는 이미지" />
+                    <div class="hint_txt hint_txt1">먹고 있는 귤: 2개<br />남은 귤: 4개</div>
+                  </div>
+                  <div class="quiz_box"></div>
+                </div>
+
+                <div class="character_txt">먹고 있는 귤 2개와 남은 귤 4개를 모으면 모두 6개입니다.</div>
+                <div class="character">
+                  <div class="character_head">
+                    <img src="../../../COMM/IMG/CHARACTER_HEAD.PNG" alt="캐릭터 머리" />
+                  </div>
+                  <div class="character_body">
+                    <img src="../../../COMM/IMG/CHARACTER_BODY.PNG" alt="캐릭터 몸" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="step-list">
+              <li class="step-list_item active"></li>
+              <li class="step-list_item"></li>
+            </ul>
+          </div>
+        </main>
+        <div class="main_prev-next">
+          <button class="btn-prev" style="display: none">이전버튼</button>
+          <!-- <button class="btn-next" style="display: block" disabled> -->
+          <button class="btn-next blinking" style="display: block">
+            다음버튼
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script crossorigin src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+  <script src="../../../COMM/JS/COMMON2.JS"></script>
+  <script src="../../../COMM/JS/CONCEPTEVNT3.JS"></script>
+  <script src="../../../COMM/JS/CONCEPTEVNTBTN.JS"></script> <!-- 개념 익히기 공통 버튼 처리 (0424) -->
+  <script src="../../../COMM/JS/GAME.JS"></script>
+  <script src="../../../COMM/JS/VIDEO.JS"></script>
+  <script src="../../../COMM/JS/VIDEO-HTTP-STREAMING.JS"></script>
+  <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+  <script>
+    /*
+     * 데이터
+     */
+    let intro = {
+      type: "concept", //concept 개념익히기, checkExam 확인문제
+      title: "모으기와 가르기를 <br/>해 볼까요(2)",
+      subTitle: [
+        "9까지의 수의 모으기와 가르기를 해요.",
+        "그림을 보고 이야기를 만들 수 있어요.",
+      ],
+      sound: ["../../../COMM/SOUND/1_3_3/1_1_3-3_001.mp3"],
+    };
+
+    //현재 페이지
+    let disStep = 1;
+
+    let pageData = [
+      {
+        step: 1,
+        title: "모으기와 가르기를 해 봅시다.",
+        sound: "../../../COMM/SOUND/1_3_3/1_1_3-3_001.mp3",
+        headerPage: [1, 2],
+        footerPage: [1, 2],
+        prev: 0,
+        next: 1,
+      },
+      {
+        step: 2,
+        title: "모으기와 가르기를 해 봅시다.",
+        sound: "../../../COMM/SOUND/1_3_3/1_1_3-3_001.mp3",
+        headerPage: [1, 2],
+        footerPage: [1, 2],
+        prev: 0,
+        next: 1,
+      },
+      {
+        step: 3,
+        title: "모으기와 가르기를 해 봅시다.",
+        sound: "../../../COMM/SOUND/1_3_3/1_1_3-3_001.mp3",
+        headerPage: [1, 2],
+        footerPage: [2, 2],
+        prev: 2,
+        next: 0,
+      },
+      {
+        step: 4,
+        title: "",
+        sound: "",
+        headerPage: [0, 0],
+        footerPage: [0, 0],
+        prev: 3,
+        next: 1,
+      },
+      {
+        step: 5,
+        title: "이야기를 만들어 봅시다.",
+        sound: "../../../COMM/SOUND/1_3_3/1_1_3-3_023.mp3",
+        headerPage: [2, 2],
+        footerPage: [1, 3],
+        prev: 4,
+        next: 1,
+      },
+      {
+        step: 6,
+        title: "이야기를 만들어 봅시다.",
+        sound: "../../../COMM/SOUND/1_3_3/1_1_3-3_023.mp3",
+        headerPage: [2, 2],
+        footerPage: [2, 3],
+        prev: 1,
+        next: 1,
+      },
+      {
+        step: 7,
+        title: "이야기를 만들어 봅시다.",
+        sound: "../../../COMM/SOUND/1_3_3/1_1_3-3_023.mp3",
+        headerPage: [2, 2],
+        footerPage: [3, 3],
+        prev: 1,
+        next: 0,
+      },
+    ];
+
+    function pageAction() {
+      console.log("disStep ::: ", disStep);
+      //setTimeout 초기화
+      const TimeoutId = setTimeout(() => console.log("timeout clear"), 1);
+      for (let i = 0; i < TimeoutId; i++) {
+        clearTimeout(i);
+      }
+      stepSet();
+      switch (disStep) {
+        case 1:
+          step1.reset();
+          step1.start();
+          break;
+        case 2:
+          step2.reset();
+          step2.start();
+          break;
+        case 3:
+          step3.reset();
+          step3.start();
+          break;
+        case 4:
+          step4.reset();
+          step4.start();
+          break;
+        case 5:
+          step5.reset();
+          step5.start();
+          break;
+        case 6:
+          step6.reset();
+          step6.start();
+          break;
+        case 7:
+          step7.reset();
+          step7.start();
+          break;
+      }
+    }
+
+    //문제 시작
+    let correctlyFlag = 0;
+
+    //================STEP1==============
+    const step1 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/1_3_3/1_1_3-3_001.mp3",
+          "../../../COMM/SOUND/1_3_3/1_1_3-3_002.mp3",
+          "../../../COMM/SOUND/1_3_3/1_1_3-3_003.mp3",
+        ], [
+          {
+            idx: 3,
+            type: 'end',
+            callback: () => {
+              disStep++;
+              pageAction();
+            }
+          }
+        ]);
+      },
+      reset: () => {
+      },
+    };
+    //================STEP2==============
+    const step2 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/1_3_3/1_1_3-3_004.mp3",
+          "../../../COMM/SOUND/1_3_3/1_1_3-3_005.mp3",
+          "../../../COMM/SOUND/1_3_3/1_1_3-3_006.mp3",
+          "../../../COMM/SOUND/1_3_3/1_1_3-3_007.mp3",
+          "../../../COMM/SOUND/1_3_3/1_1_3-3_008.mp3",
+        ], [
+          {
+            idx: 1,
+            type: 'start',
+            callback: () => {
+              // 왼쪽 사슴 얼룩말 이미지
+              $('.step2 .step2_left_box .step2_top_box').css('visibility', 'visible');
+
+              timerSet(() => {
+                // 왼쪽 초록색 연결 모형 이미지
+                $('.step2 .step2_left_box .step2_btm_box').css('visibility', 'visible');
+                timerInit();
+              }, 600);
+            }
+          },
+          {
+            idx: 2,
+            type: 'start',
+            callback: () => {
+              timerSet(() => {
+                // 왼쪽 빨간색 연결 모형 이미지
+                $('.step2 .step2_left_box .step2_btm_box .step2_btm_top .icon_box:last-child').css('visibility', 'visible');
+                timerInit();
+              }, 600);
+            }
+          },
+          {
+            idx: 3,
+            type: 'start',
+            callback: () => {
+              // 오른쪽 사슴 얼룩말 이미지
+              $('.step2 .step2_right_box .step2_top_box').css('visibility', 'visible');
+
+              timerSet(() => {
+                // 오른쪽 초록색 연결 모형 이미지 
+                $('.step2 .step2_right_box .step2_btm_box').css('visibility', 'visible');
+                timerInit();
+              }, 3000);
+            }
+          },
+          {
+            idx: 4,
+            type: 'start',
+            callback: () => {
+              timerSet(() => {
+                // 오른쪽 빨간색 연결 모형 이미지
+                $('.step2 .step2_right_box .step2_btm_box .step2_btm_top .icon_box:last-child').css('visibility', 'visible');
+                timerInit();
+              }, 3000);
+            }
+          },
+          {
+            idx: 5,
+            type: 'end',
+            callback: () => {
+              // 모으기 박스 나타남
+              $('.step2 .step2_btm_btm').css('visibility', 'visible');
+
+              // 빈칸 깜빡이기 (키패드 노출)
+              let keypadTxtEl1 = $('.step2 .keypad_txt1');
+
+              keypadTxtEl1.addClass("blink").click(() => {
+                keypadTxtEl1.removeClass('blink');
+                keypadSetOn(keypadTxtEl1, 407, 103);
+                step2.keypadSetClick(keypadTxtEl1);
+              });
+
+              let keypadTxtEl2 = $('.step2 .keypad_txt2');
+
+              keypadTxtEl2.addClass("blink").click(() => {
+                keypadTxtEl2.removeClass('blink');
+                keypadSetOn(keypadTxtEl2, 653, 103);
+                step2.keypadSetClick2(keypadTxtEl2);
+              });
+            }
+          },
+        ]);
+      },
+      keypadSetClick: (btn) => {
+        $(document).on("click", keypadBtnCheckEl, (e) => {
+          e.stopPropagation();
+
+          if (keypadInput == 7) {
+            correctlyFlag++;
+            keypadSetCorrect(btn);
+
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.MP3"
+            ], [
+              {
+                idx: 1,
+                type: 'end',
+                callback: () => {
+                  step2.correctlyCheck();
+                }
+              }
+            ]);
+          } else {
+            keypadSetOff(btn);
+            btn.addClass('blink');
+
+            audioSet(["../../../COMM/SOUND/WRONG.MP3"]);
+          }
+        });
+      },
+      keypadSetClick2: (btn2) => {
+        $(document).on("click", keypadBtnCheckEl, (e) => {
+          e.stopPropagation();
+
+          if (keypadInput == 7) {
+            correctlyFlag++;
+            keypadSetCorrect(btn2);
+
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.MP3"
+            ], [
+              {
+                idx: 1,
+                type: 'end',
+                callback: () => {
+                  step2.correctlyCheck();
+                }
+              }
+            ]);
+          } else {
+            keypadSetOff(btn2);
+            btn2.addClass('blink');
+
+            audioSet(["../../../COMM/SOUND/WRONG.MP3"]);
+          }
+        });
+      },
+      correctlyCheck: () => {
+        if (correctlyFlag == 2) {
+          audioSet([
+            "../../../COMM/SOUND/1_3_3/1_1_3-3_009.mp3",
+            "../../../COMM/SOUND/1_3_3/1_1_3-3_010.mp3",
+            "../../../COMM/SOUND/1_3_3/1_1_3-3_011.mp3",
+          ], [
+            {
+              idx: 3,
+              type: 'end',
+              callback: () => {
+                correctly();
+              }
+            }
+          ]);
+        }
+      },
+      reset: () => {
+        keypadSetInit();
+        correctlyFlag = 0;
+
+        $('.step2 .step2_top_box').css('visibility', '');
+        $('.step2 .step2_btm_box').css('visibility', '');
+        $('.step2 .step2_btm_box .step2_btm_top .icon_box:last-child').css('visibility', '');
+        $('.step2 .step2_btm_btm').css('visibility', '');
+        $('.step2 .touchMotion').css('display', '');
+      },
+    };
+    //================STEP3==============
+    const step3 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/1_3_3/1_1_3-3_012.mp3",
+          "../../../COMM/SOUND/1_3_3/1_1_3-3_013.mp3",
+        ], [
+          {
+            idx: 2,
+            type: 'end',
+            callback: () => {
+              // 나레이션 끝나면 물고기 터치 유도
+              touchMotionSetOn('185', '781', step3.guideTouch, $('.step3 .step3_top_box'));
+            }
+          }
+        ]);
+      },
+      guideTouch: () => {
+        audioSet([
+          "../../../COMM/SOUND/1_3_3/1_1_3-3_014.mp3",
+        ], [
+          {
+            idx: 1,
+            type: 'start',
+            callback: () => {
+              // 터치하면 연결 모형, 가르기 박스 동시에 나타남
+              $('.step3 .step3_btm_box').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 1,
+            type: 'end',
+            callback: () => {
+              // 빈칸 깜빡이기 (키패드 노출)
+              let keypadTxtEl1 = $('.step3 .keypad_txt1');
+
+              keypadTxtEl1.addClass("blink").click(() => {
+                keypadTxtEl1.removeClass('blink');
+                keypadSetOn(keypadTxtEl1, 407, 103);
+                step3.keypadSetClick(keypadTxtEl1);
+              });
+
+              let keypadTxtEl2 = $('.step3 .keypad_txt2');
+
+              keypadTxtEl2.addClass("blink").click(() => {
+                keypadTxtEl2.removeClass('blink');
+                keypadSetOn(keypadTxtEl2, 653, 103);
+                step3.keypadSetClick2(keypadTxtEl2);
+              });
+            }
+          },
+        ]);
+      },
+      keypadSetClick: (btn) => {
+        $(document).on("click", keypadBtnCheckEl, (e) => {
+          e.stopPropagation();
+
+          if (keypadInput == 4) {
+            correctlyFlag++;
+            keypadSetCorrect(btn);
+            $('.step3 .step3_btm_left .step3_btm_top .icon_box').eq(1).removeClass('point');
+
+            audioSet(
+              [
+                "../../../COMM/SOUND/CORRECT.MP3"
+              ], [
+              {
+                idx: 1,
+                type: 'end',
+                callback: () => {
+                  step3.correctlyCheck();
+                }
+              }
+            ]
+            );
+          } else {
+            keypadSetOff(btn);
+            btn.addClass('blink');
+
+            audioSet(
+              [
+                "../../../COMM/SOUND/WRONG.MP3",
+                "../../../COMM/SOUND/1_3_3/1_1_3-3_015.mp3",
+              ], [
+              {
+                idx: 2,
+                type: 'start',
+                callback: () => {
+                  // 오답 시 노란색 연결 모형 강조 (왼쪽)
+                  $('.step3 .step3_btm_left .step3_btm_top .icon_box').eq(1).addClass('point');
+                }
+              }
+            ]
+            );
+          }
+        });
+      },
+      keypadSetClick2: (btn2) => {
+        $(document).on("click", keypadBtnCheckEl, (e) => {
+          e.stopPropagation();
+
+          if (keypadInput == 3) {
+            correctlyFlag++;
+            keypadSetCorrect(btn2);
+            $('.step3 .step3_btm_right .step3_btm_top .icon_box').eq(1).removeClass('point');
+
+            audioSet(
+              [
+                "../../../COMM/SOUND/CORRECT.MP3"
+              ], [
+              {
+                idx: 1,
+                type: 'end',
+                callback: () => {
+                  step3.correctlyCheck();
+                }
+              }
+            ]
+            );
+          } else {
+            keypadSetOff(btn2);
+            btn2.addClass('blink');
+
+            audioSet([
+              "../../../COMM/SOUND/WRONG.MP3",
+              "../../../COMM/SOUND/1_3_3/1_1_3-3_015.mp3",
+            ], [
+              {
+                idx: 2,
+                type: 'start',
+                callback: () => {
+                  // 오답 시 노란색 연결 모형 강조 (오른쪽)
+                  $('.step3 .step3_btm_right .step3_btm_top .icon_box').eq(1).addClass('point');
+                }
+              }
+            ]);
+          }
+        });
+      },
+      correctlyCheck: () => {
+        if (correctlyFlag == 2) {
+          audioSet([
+            "../../../COMM/SOUND/1_3_3/1_1_3-3_016.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                disStep++;
+                pageAction();
+              }
+            }
+          ]);
+        }
+      },
+      reset: () => {
+        touchMotionSetInit();
+        keypadSetInit();
+        correctlyFlag = 0;
+
+        $('.step3 .touchMotion').css('display', '');
+        $('.step3 .step3_btm_box').css('visibility', '');
+      },
+    };
+    //================STEP4==============
+    const step4 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/1_3_3/1_1_3-3_017.mp3",
+          "../../../COMM/SOUND/1_3_3/1_1_3-3_018.mp3",
+          "../../../COMM/SOUND/1_3_3/1_1_3-3_019.mp3",
+          "../../../COMM/SOUND/1_3_3/1_1_3-3_020.mp3",
+          "../../../COMM/SOUND/1_3_3/1_1_3-3_021.mp3",
+          "../../../COMM/SOUND/1_3_3/1_1_3-3_022.mp3",
+        ], [
+          {
+            idx: 2,
+            type: 'start',
+            callback: () => {
+              // 1, 4 나타남
+              $('.step4 .step4_txt_line_1').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 3,
+            type: 'start',
+            callback: () => {
+              // 2, 3 나타남
+              $('.step4 .step4_txt_line_2').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 4,
+            type: 'start',
+            callback: () => {
+              // 3, 2 나타남
+              $('.step4 .step4_txt_line_3').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 5,
+            type: 'start',
+            callback: () => {
+              // 4, 1 나타남
+              $('.step4 .step4_txt_line_4').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 6,
+            type: 'start',
+            callback: () => {
+              // 텍스트 나타남
+              $('.step4 .check_footer_inner').addClass('slideUp');
+            }
+          },
+          {
+            idx: 6,
+            type: 'end',
+            callback: () => {
+              correctly();
+            }
+          },
+        ]);
+      },
+      reset: () => {
+        $('.step4 .step4_txt_line').css('visibility', '');
+        $('.step4 .check_footer_inner').removeClass('slideUp');
+      },
+    };
+
+    //================STEP5==============
+    const step5 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/1_3_3/1_1_3-3_023.mp3",
+          "../../../COMM/SOUND/1_3_3/1_1_3-3_024.mp3",
+        ], [
+          {
+            idx: 2,
+            type: 'end',
+            callback: () => {
+              // 보기 2개 나타남
+              $('.step5 .quiz_box').css('visibility', 'visible');
+              quizSelectSetOn(1, step5);
+            }
+          }
+        ]);
+      },
+      quizSelectCorrect: (flag) => {
+        if (flag) {
+          audioSet([
+            "../../../COMM/SOUND/CORRECT.MP3",
+            "../../../COMM/SOUND/1_3_3/1_1_3-3_026.mp3",
+            "../../../COMM/SOUND/1_3_3/1_1_3-3_027.mp3",
+          ], [
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $(".step5 .character_txt").css('display', 'block');
+                $(".step5 .character").css('display', 'flex');
+              }
+            },
+            {
+              idx: 3,
+              type: 'end',
+              callback: () => {
+                $(".step5 .character_txt").css('display', 'none');
+                $(".step5 .character").css('display', 'none');
+
+                correctly();
+              }
+            },
+          ]);
+        } else {
+          audioSet([
+            "../../../COMM/SOUND/WRONG.MP3",
+            "../../../COMM/SOUND/1_3_3/1_1_3-3_025.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $(".step5 .character_txt").css('display', '');
+                $(".step5 .character").css('display', '');
+
+                $(".step5 .hint_txt").css('display', 'block');
+              }
+            }
+          ]);
+        }
+      },
+      reset: () => {
+        $('.step5 .hint_txt').css('display', '');
+        $('.step5 .quiz_box').css('visibility', '');
+        $('.step5 .character_txt').css('display', '');
+        $('.step5 .character').css('display', '');
+
+        let stepAnswerList = ['<span>토마토 2개와 3개를 </span><span class="highlight">모으면</span><span> 모두 5개입니다.</span>', '<span>토마토 5개를 3개와 3개로 </span><span class="highlight">가르기</span><span> 했습니다.</span>'];
+        quizSelectSetInit($('.step5 .quiz_box'), stepAnswerList);
+      },
+    };
+
+    //================STEP6==============
+    const step6 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/1_3_3/1_1_3-3_028.mp3",
+        ], [
+          {
+            idx: 1,
+            type: 'end',
+            callback: () => {
+              // 보기 2개 나타남
+              $('.step6 .quiz_box').css('visibility', 'visible');
+              quizSelectSetOn(2, step6);
+            }
+          }
+        ]);
+      },
+      quizSelectCorrect: (flag) => {
+        if (flag) {
+          audioSet([
+            "../../../COMM/SOUND/CORRECT.MP3",
+            "../../../COMM/SOUND/1_3_3/1_1_3-3_029.mp3",
+            "../../../COMM/SOUND/1_3_3/1_1_3-3_030.mp3",
+          ], [
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $(".step6 .character_txt").css('display', 'block');
+                $(".step6 .character").css('display', 'flex');
+              }
+            },
+            {
+              idx: 3,
+              type: 'end',
+              callback: () => {
+                $(".step6 .character_txt").css('display', 'none');
+                $(".step6 .character").css('display', 'none');
+
+                correctly();
+              }
+            },
+          ]);
+        } else {
+          audioSet([
+            "../../../COMM/SOUND/WRONG.MP3",
+            "../../../COMM/SOUND/1_3_3/1_1_3-3_025.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $(".step6 .character_txt").css('display', '');
+                $(".step6 .character").css('display', '');
+
+                $(".step6 .hint_txt").css('display', 'block');
+              }
+            }
+          ]);
+        }
+      },
+      reset: () => {
+        $('.step6 .hint_txt').css('display', '');
+        $('.step6 .quiz_box').css('visibility', '');
+        $('.step6 .character_txt').css('display', '');
+        $('.step6 .character').css('display', '');
+
+        let stepAnswerList = ['배추가 무보다 3개 <span class="highlight">더 많습니다</span>.', '배추가 무보다 3개 <span class="highlight">더 적습니다</span>.'];
+        quizSelectSetInit($('.step6 .quiz_box'), stepAnswerList);
+      },
+    };
+
+    //================STEP7==============
+    const step7 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/1_3_3/1_1_3-3_031.mp3",
+        ], [
+          {
+            idx: 1,
+            type: 'end',
+            callback: () => {
+              // 보기 2개 나타남
+              $('.step7 .quiz_box').css('visibility', 'visible');
+              quizSelectSetOn(2, step7);
+
+              let correct = 2;
+              $('.step7 .btn_answer').click(function () {
+                step7.quizAnswer(correct, $(this).data('val'));
+              });
+            }
+          }
+        ]);
+      },
+      quizSelectCorrect: (flag) => {
+        if (flag) {
+          audioSet([
+            "../../../COMM/SOUND/CORRECT.MP3",
+            "../../../COMM/SOUND/1_3_3/1_1_3-3_032.mp3",
+            "../../../COMM/SOUND/1_3_3/1_1_3-3_033.mp3",
+          ], [
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $(".step7 .character_txt").css('display', 'block');
+                $(".step7 .character").css('display', 'flex');
+              }
+            },
+            {
+              idx: 3,
+              type: 'end',
+              callback: () => {
+                $(".step7 .character_txt").css('display', 'none');
+                $(".step7 .character").css('display', 'none');
+                callFinish();
+              }
+            },
+          ]);
+        } else {
+          audioSet([
+            "../../../COMM/SOUND/WRONG.MP3",
+            "../../../COMM/SOUND/1_3_3/1_1_3-3_025.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $(".step7 .character_txt").css('display', '');
+                $(".step7 .character").css('display', '');
+
+                $(".step7 .hint_txt").css('display', 'block');
+              }
+            }
+          ]);
+        }
+      },
+      reset: () => {
+        $('.step7 .hint_txt').css('display', '');
+        $('.step7 .quiz_box').css('visibility', '');
+        $('.step7 .character_txt').css('display', '');
+        $('.step7 .character').css('display', '');
+
+        let stepAnswerList = ['귤은 모두 3개입니다.', '친구들이 귤을 2개 먹었더니 4개가 남았습니다.'];
+        quizSelectSetInit($('.step7 .quiz_box'), stepAnswerList);
+      },
+    };
+  </script>
+</body>
+
+</html>

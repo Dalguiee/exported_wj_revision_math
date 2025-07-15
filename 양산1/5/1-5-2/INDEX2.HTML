@@ -1,0 +1,1835 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>개정교육과정-수학 수학 개념</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="KeyWORDs" content="" />
+    <meta name="Description" content="" />
+    <meta name="Robots" content="all" />
+    <meta http-equiv="Subject" content="" />
+    <meta http-equiv="Title" content="" />
+    <meta http-equiv="Author" content="onflou " />
+    <meta http-equiv="Publisher" content="" />
+
+    <!-- 브라우저 호환성을 지정 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="#" />
+    <link href="../../../COMM/CSS/COMMON.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/COMMONLAYOUT.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/CONCEPTCOMMON3.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/VIDEO.CSS" rel="stylesheet" />
+
+    <style>
+      /* 1p */
+      .step1 .txt_box {
+        padding: 30px 80px;
+        border-radius: 20px;
+      }
+
+      .step1 .step1_top_box .sticker_box + .sticker_box {
+        margin-left: -30px;
+      }
+      
+      .step1 .step1_top_box .img_box {
+        position: relative;
+        width: 163px;
+        height: 163px;
+      }
+      
+      .step1 .step1_top_box .img_box .img2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+      }
+
+      .step1 .step1_top_box .text_box {
+        visibility: hidden;
+      }
+
+      .step1 .step1_btm_box {
+        margin-top: 125px;
+      }
+
+      .step1 .step1_btm_box .block_box {
+        width: 39px;
+        height: 309px;
+        position: relative;
+        visibility: hidden;
+      }
+
+      .step1 .step1_btm_box .block_box .img2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+      }
+
+      .step1 .step1_btm_box .number_box {
+        padding-top: 40px;
+        margin: 0 50px 0 170px;
+        font-size: 220px;
+        font-weight: 800;
+        visibility: hidden;
+      }
+
+      .step1 .step1_btm_box .speak_box .txt_box1 {
+        background-color: rgba(190, 218, 255, 1);
+      }
+
+      .step1 .step1_btm_box .speak_box .txt_box2 {
+        margin-top: 30px;
+        background-color: rgba(255, 184, 239, 1);
+      }
+
+      /* 2p, 3p */
+      .step2_top_box {
+        gap: 36px;
+      }
+
+      .step2_top_box .text_box,
+      .step2_btm_box .answer_list .answer,
+      .step2_btm_box .select_list .answer {
+        width: 133px;
+        height: 75px;
+        padding-right: 8px;
+        background-color: rgba(199, 230, 103, 1);
+        border-radius: 10px;
+      }
+
+      .step2_top_box .text_box,
+      .step2_top_box .dot_box {
+        visibility: hidden;
+      }
+
+      .step2_top_box .dot_box {
+        height: 75px;
+      }
+
+      .step2_top_box .dot_box .dot {
+        width: 6px;
+        height: 6px;
+        background-color: rgba(0, 0, 0, 1);
+        border-radius: 50%;
+      }
+
+      .step2_top_box .dot_box .dot + .dot {
+        margin-left: 15px;
+      }
+
+      .step2_btm_box .answer_list .answer {
+        position: relative;
+        z-index: 10;
+      }
+
+      .step2_top_box .txt_container {
+        width: 133px;
+        height: 75px;
+      }
+
+      .step2_top_box .img_box {
+        margin-top: 50px;
+        position: relative;
+      }
+
+      .step2_top_box .img_box .img1 {
+        position: relative;
+        z-index: 10;
+      }
+
+      .step2_btm_box {
+        width: 718px;
+        height: 262px;
+        margin-top: 125px;
+        background-color: rgba(248, 235, 232, 1);
+        border-radius: 30px;
+      }
+
+      .step2_btm_box .answer_list .answer + .answer {
+        margin-left: 50px;
+      }
+
+      .step2_btm_box .answer_list .answer::after {
+        border-radius: 10px;
+      }
+
+      .step2 .touchMotion_hand,
+      .step3 .touchMotion_hand {
+        z-index: 100;
+      }
+
+      .step2 .step2_top_box .img_box .img2 {
+        width: 130px;
+        height: 99px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        visibility: hidden;
+      }
+
+      .step3 .step2_top_box .img_box .img2 {
+        width: 112px;
+        height: 132px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        visibility: hidden;
+      }
+
+      /* 4p */
+      .step4 .full_content_comm {
+        gap: 120px;
+      }
+
+      .step4 .step4_left_box .number_box {
+        font-size: 140px;
+        font-weight: 700;
+      }
+
+      .step4 .step4_left_box .speak_box ul {
+        gap: 20px;
+      }
+
+      .step4 .step4_left_box .speak_box .txt_box {
+        padding: 10px 45px;
+        border-radius: 10px;
+      }
+
+      .step4 .step4_left_box .speak_box .txt_box1 {
+        background-color: rgba(255, 184, 239, 1);
+      }
+
+      .step4 .step4_left_box .speak_box .txt_box2 {
+        background-color: rgba(190, 218, 255, 1);
+      }
+      
+      .step4 .step4_right_box {
+        gap: 60px;
+      }
+      
+      .step4 .step4_right_box .img_box {
+        position: relative;
+      }
+
+      .step4 .step4_right_box .img_box .img1 {
+        position: relative;
+        z-index: 10;
+      }
+
+      .step4 .step4_right_box .img_box .img2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-49.6%, -50%);
+        visibility: hidden;
+      }
+      
+      .step4 .step4_right_box .img_box .bubble_box {
+        width: 207px;
+        height: 130px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(105%, -30%);
+      }
+
+      .step4 .step4_right_box .img_box2 .bubble_box {
+        transform: translate(105%, 38%);
+      }
+
+      .step4 .step4_right_box .img_box1 {
+        width: 799px;
+        height: 96px;
+      }
+
+      .step4 .step4_right_box .img_box1 .img2 {
+        width: 812px;
+        height: 115px;
+      }
+
+      .step4 .step4_right_box .img_box2 {
+        width: 215px;
+        height: 234px;
+      }
+
+      .step4 .step4_right_box .img_box2 .img2 {
+        width: 262px;
+        height: 282px;
+      }
+
+      /* 5p */
+      .quiz {
+        padding: 47px 65px;
+        border-radius: 20px;
+      }
+
+      .quiz .arrow_box {
+        width: 80px;
+        height: 40px;
+        margin: 5px 0;
+      }
+
+      .step5 .step5_top_box .img1 {
+        position: relative;
+        z-index: 10;
+      }
+
+      .step5 .step5_top_box .img2 {
+        margin-left: -34px;
+      }
+
+      .step5 .step5_top_box.show .img2 {
+        margin-left: 75px;
+      }
+
+      .step5 .step5_btm_box {
+        min-width: 1px;
+        height: 294px;
+        margin-top: 185px;
+      }
+
+      .step5 .select_list .answer {
+        width: 310px;
+        height: 294px;
+      }
+
+      .step5 .select_list .answer + .answer {
+        margin-left: 50px;
+      }
+
+      /* 6p */
+      .step6 .main__container {
+        gap: 160px;
+      }
+
+      .step6 .quiz {
+        padding: 75px 84px;
+        background-color: rgba(190, 218, 255, 1);
+      }
+
+      /* 7p */
+      .step7 .step7_left_box,
+      .step7 .step7_right_box {
+        position: relative;
+      }
+
+      .step7 .step7_left_box.opacity,
+      .step7 .step7_right_box.opacity {
+        filter: blur(5px);
+      }
+
+      .step7 .txt_container {
+        width: 121px;
+        height: 121px;
+        background-color: rgba(217, 217, 217, 1);
+        font-size: 60px;
+        line-height: 60px;
+      }
+
+      .step7 .txt_container.blink {
+        background-color: #fff;
+      }
+
+      .step7 .step7_mid_box {
+        position: relative;
+        margin: 0 100px;
+      }
+
+      .step7 .step7_left_box::after {
+        content: "";
+        width: 89px;
+        height: 180px;
+        background: url("../../../COMM/IMG/CONCEPT/1_5_2/STEP7_BLUEARROW.png?=t") no-repeat center;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(105%, -50%);
+      }
+
+      .step7 .step7_right_box::after {
+        content: "";
+        width: 89px;
+        height: 180px;
+        background: url("../../../COMM/IMG/CONCEPT/1_5_2/STEP7_GREENARROW.png?=t") no-repeat center;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(-105%, -50%);
+      }
+
+      .step7 .number_board_table2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .step7 .number_board_table1 .td {
+        width: 180px;
+        height: 140px;
+        font-size: 60px;
+        line-height: 60px;
+      }
+
+      .step7 .number_board_table2 .td {
+        width: 180px;
+        height: 284px;
+      }
+
+      .step7 .number_board_table1 > table td {
+        border: solid 4px rgba(0, 0, 0, 1);
+      }
+      .step7 .number_board_table2 > table td {
+        border: solid 4px transparent;
+      }
+
+      .step7 .number_board_table1 .td.pink {
+        background-color: rgba(248, 235, 232, 1);
+      }
+
+      .step7 .number_board_table1 .td.yellow {
+        background-color: rgba(255, 236, 167, 1);
+      }
+
+      .step7 .number_board_table1 .td.green {
+        background-color: rgba(199, 230, 103, 1);
+      }
+
+      .step7 .number_board_table1 .td.skyblue {
+        background-color: rgba(209, 229, 255, 1);
+      }
+
+      .step7 .number_board_table1 .td.blue {
+        background-color: rgba(168, 206, 255, 1);
+      }
+
+      .box_inner_blink {
+        animation: 1s boxShodowInnerBlink infinite;
+      }
+
+      @keyframes boxShodowInnerBlink {
+        0% {
+          box-shadow: inset 0px 0px 5px rgba(103, 68, 243, 0);
+        }
+      
+        50% {
+          box-shadow: inset 0px 0px 20px rgba(51, 0, 255, 1);
+        }
+      
+        100% {
+          box-shadow: inset 0px 0px 5px rgba(103, 68, 243, 0);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div id="contents-wrap" class="concept" style="position: absolute; display: flex"></div>
+      <div id="contents-main" style="display: none" class="concept-warp">
+        <div class="concept-warp_inner">
+          <header class="header" style="visibility: visible">
+            <div class="header_title">
+              <button class="sound-btn" onclick="titleSound()"></button>
+              <h3></h3>
+            </div>
+            <p class="header_page"><span>1</span>/2</p>
+          </header>
+          <main class="main">
+            <div class="main_content">
+              <!-- 콘텐츠영역 -->
+              <div class="step step1" style="display: block">
+                <!-- step1 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step1_top_box">
+                    <ul class="dp_flex">
+                      <li class="sticker_box sticker_box1 dp_flex dp_flex_column">
+                        <div class="img_box">
+                          <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP1_IMG_1.png?=t" alt="칭찬 스티커 이미지" class="img img1"/>
+                          <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP1_IMG_2.png?=t" alt="칭찬 스티커 강조 이미지" class="img img2"/>
+                        </div>
+                        <div class="text_box">1</div>
+                      </li>
+                      <li class="sticker_box sticker_box2 dp_flex dp_flex_column">
+                        <div class="img_box">
+                          <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP1_IMG_1.png?=t" alt="칭찬 스티커 이미지" class="img img1"/>
+                          <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP1_IMG_2.png?=t" alt="칭찬 스티커 강조 이미지" class="img img2"/>
+                        </div>
+                        <div class="text_box">2</div>
+                      </li>
+                      <li class="sticker_box sticker_box3 dp_flex dp_flex_column">
+                        <div class="img_box">
+                          <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP1_IMG_1.png?=t" alt="칭찬 스티커 이미지" class="img img1"/>
+                          <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP1_IMG_2.png?=t" alt="칭찬 스티커 강조 이미지" class="img img2"/>
+                        </div>
+                        <div class="text_box">3</div>
+                      </li>
+                      <li class="sticker_box sticker_box4 dp_flex dp_flex_column">
+                        <div class="img_box">
+                          <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP1_IMG_1.png?=t" alt="칭찬 스티커 이미지" class="img img1"/>
+                          <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP1_IMG_2.png?=t" alt="칭찬 스티커 강조 이미지" class="img img2"/>
+                        </div>
+                        <div class="text_box">4</div>
+                      </li>
+                      <li class="sticker_box sticker_box5 dp_flex dp_flex_column">
+                        <div class="img_box">
+                          <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP1_IMG_1.png?=t" alt="칭찬 스티커 이미지" class="img img1"/>
+                          <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP1_IMG_2.png?=t" alt="칭찬 스티커 강조 이미지" class="img img2"/>
+                        </div>
+                        <div class="text_box">5</div>
+                      </li>
+                      <li class="sticker_box sticker_box6 dp_flex dp_flex_column">
+                        <div class="img_box">
+                          <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP1_IMG_1.png?=t" alt="칭찬 스티커 이미지" class="img img1"/>
+                          <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP1_IMG_2.png?=t" alt="칭찬 스티커 강조 이미지" class="img img2"/>
+                        </div>
+                        <div class="text_box">6</div>
+                      </li>
+                      <li class="sticker_box sticker_box7 dp_flex dp_flex_column">
+                        <div class="img_box">
+                          <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP1_IMG_1.png?=t" alt="칭찬 스티커 이미지" class="img img1"/>
+                          <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP1_IMG_2.png?=t" alt="칭찬 스티커 강조 이미지" class="img img2"/>
+                        </div>
+                        <div class="text_box">7</div>
+                      </li>
+                      <li class="sticker_box sticker_box8 dp_flex dp_flex_column">
+                        <div class="img_box">
+                          <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP1_IMG_1.png?=t" alt="칭찬 스티커 이미지" class="img img1"/>
+                          <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP1_IMG_2.png?=t" alt="칭찬 스티커 강조 이미지" class="img img2"/>
+                        </div>
+                        <div class="text_box">8</div>
+                      </li>
+                      <li class="sticker_box sticker_box9 dp_flex dp_flex_column">
+                        <div class="img_box">
+                          <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP1_IMG_1.png?=t" alt="칭찬 스티커 이미지" class="img img1"/>
+                          <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP1_IMG_2.png?=t" alt="칭찬 스티커 강조 이미지" class="img img2"/>
+                        </div>
+                        <div class="text_box">9</div>
+                      </li>
+                      <li class="sticker_box sticker_box10 dp_flex dp_flex_column v_hidden">
+                        <div class="img_box">
+                          <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP1_IMG_1.png?=t" alt="칭찬 스티커 이미지" class="img img1"/>
+                          <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP1_IMG_2.png?=t" alt="칭찬 스티커 강조 이미지" class="img img2"/>
+                        </div>
+                        <div class="text_box">?</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="step1_btm_box dp_flex">
+                    <div class="block_box">
+                      <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP1_IMG_3.png?=t" alt="블럭 이미지" class="img img1"/>
+                      <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP1_IMG_4.png?=t" alt="블럭 분리 이미지" class="img img2"/>
+                    </div>
+                    <div class="number_box">10</div>
+                    <div class="speak_box v_hidden">
+                      <ul>
+                        <li class="txt_box txt_box1">
+                          <span>십</span>
+                        </li>
+                        <li class="txt_box txt_box2">
+                          <span>열</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step2" style="display: block">
+                <!-- step2 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step2_top_box dp_flex">
+                    <div class="icon_box icon_box1 dp_flex dp_flex_column">
+                      <div class="text_box dp_flex">하나</div>
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP2_IMG_1.png?=t" alt="니모 이미지" class="img img1"/>
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP2_IMG_1_POINT.png?=t" alt="니모 강조 이미지" class="img img2"/>
+                      </div>
+                    </div>
+                    <div class="icon_box icon_box2 dp_flex dp_flex_column">
+                      <div class="text_box dp_flex">둘</div>
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP2_IMG_1.png?=t" alt="니모 이미지" class="img img1"/>
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP2_IMG_1_POINT.png?=t" alt="니모 강조 이미지" class="img img2"/>
+                      </div>
+                    </div>
+                    <div class="icon_box icon_box3 dp_flex dp_flex_column">
+                      <div class="text_box dp_flex">셋</div>
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP2_IMG_1.png?=t" alt="니모 이미지" class="img img1"/>
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP2_IMG_1_POINT.png?=t" alt="니모 강조 이미지" class="img img2"/>
+                      </div>
+                    </div>
+                    <div class="icon_box icon_box4 dp_flex dp_flex_column">
+                      <div class="dot_box dp_flex">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <!-- 넷 -->
+                      </div>
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP2_IMG_1.png?=t" alt="니모 이미지" class="img img1"/>
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP2_IMG_1_POINT.png?=t" alt="니모 강조 이미지" class="img img2"/>
+                      </div>
+                    </div>
+                    <div class="icon_box icon_box5 dp_flex dp_flex_column">
+                      <div class="text_box dp_flex">다섯</div>
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP2_IMG_1.png?=t" alt="니모 이미지" class="img img1"/>
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP2_IMG_1_POINT.png?=t" alt="니모 강조 이미지" class="img img2"/>
+                      </div>
+                    </div>
+                    <div class="icon_box icon_box6 dp_flex dp_flex_column">
+                      <div class="text_box dp_flex">여섯</div>
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP2_IMG_1.png?=t" alt="니모 이미지" class="img img1"/>
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP2_IMG_1_POINT.png?=t" alt="니모 강조 이미지" class="img img2"/>
+                      </div>
+                    </div>
+                    <div class="icon_box icon_box7 dp_flex dp_flex_column">
+                      <div class="text_box dp_flex">일곱</div>
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP2_IMG_1.png?=t" alt="니모 이미지" class="img img1"/>
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP2_IMG_1_POINT.png?=t" alt="니모 강조 이미지" class="img img2"/>
+                      </div>
+                    </div>
+                    <div class="icon_box icon_box8 dp_flex dp_flex_column">
+                      <div class="text_box dp_flex">여덟</div>
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP2_IMG_1.png?=t" alt="니모 이미지" class="img img1"/>
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP2_IMG_1_POINT.png?=t" alt="니모 강조 이미지" class="img img2"/>
+                      </div>
+                    </div>
+                    <div class="icon_box icon_box9 dp_flex dp_flex_column">
+                      <div class="text_box dp_flex">아홉</div>
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP2_IMG_1.png?=t" alt="니모 이미지" class="img img1"/>
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP2_IMG_1_POINT.png?=t" alt="니모 강조 이미지" class="img img2"/>
+                      </div>
+                    </div>
+                    <div class="icon_box icon_box10 dp_flex dp_flex_column">
+                      <div class="txt_container txt_container1 v_hidden"><span>?</span></div>
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP2_IMG_1.png?=t" alt="니모 이미지" class="img img1"/>
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP2_IMG_1_POINT.png?=t" alt="니모 강조 이미지" class="img img2"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step2_btm_box dp_flex dp_flex_column v_hidden">
+                    <div class="quiz_select_wrap"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step3" style="display: none">
+                <!-- step3 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step2_top_box dp_flex">
+                    <div class="icon_box icon_box1 dp_flex dp_flex_column">
+                      <div class="text_box dp_flex">일</div>
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP3_IMG_1.png?=t" alt="인형 이미지" class="img img1"/>
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP3_IMG_1_POINT.png?=t" alt="인형 강조 이미지" class="img img2"/>
+                      </div>
+                    </div>
+                    <div class="icon_box icon_box2 dp_flex dp_flex_column">
+                      <div class="text_box dp_flex">이</div>
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP3_IMG_1.png?=t" alt="인형 이미지" class="img img1"/>
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP3_IMG_1_POINT.png?=t" alt="인형 강조 이미지" class="img img2"/>
+                      </div>
+                    </div>
+                    <div class="icon_box icon_box3 dp_flex dp_flex_column">
+                      <div class="text_box dp_flex">삼</div>
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP3_IMG_1.png?=t" alt="인형 이미지" class="img img1"/>
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP3_IMG_1_POINT.png?=t" alt="인형 강조 이미지" class="img img2"/>
+                      </div>
+                    </div>
+                    <div class="icon_box icon_box4 dp_flex dp_flex_column">
+                      <div class="dot_box dp_flex">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <!-- 사 -->
+                      </div>
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP3_IMG_1.png?=t" alt="인형 이미지" class="img img1"/>
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP3_IMG_1_POINT.png?=t" alt="인형 강조 이미지" class="img img2"/>
+                      </div>
+                    </div>
+                    <div class="icon_box icon_box5 dp_flex dp_flex_column">
+                      <div class="text_box dp_flex">오</div>
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP3_IMG_1.png?=t" alt="인형 이미지" class="img img1"/>
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP3_IMG_1_POINT.png?=t" alt="인형 강조 이미지" class="img img2"/>
+                      </div>
+                    </div>
+                    <div class="icon_box icon_box6 dp_flex dp_flex_column">
+                      <div class="text_box dp_flex">육</div>
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP3_IMG_1.png?=t" alt="인형 이미지" class="img img1"/>
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP3_IMG_1_POINT.png?=t" alt="인형 강조 이미지" class="img img2"/>
+                      </div>
+                    </div>
+                    <div class="icon_box icon_box7 dp_flex dp_flex_column">
+                      <div class="text_box dp_flex">칠</div>
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP3_IMG_1.png?=t" alt="인형 이미지" class="img img1"/>
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP3_IMG_1_POINT.png?=t" alt="인형 강조 이미지" class="img img2"/>
+                      </div>
+                    </div>
+                    <div class="icon_box icon_box8 dp_flex dp_flex_column">
+                      <div class="text_box dp_flex">팔</div>
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP3_IMG_1.png?=t" alt="인형 이미지" class="img img1"/>
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP3_IMG_1_POINT.png?=t" alt="인형 강조 이미지" class="img img2"/>
+                      </div>
+                    </div>
+                    <div class="icon_box icon_box9 dp_flex dp_flex_column">
+                      <div class="text_box dp_flex">구</div>
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP3_IMG_1.png?=t" alt="인형 이미지" class="img img1"/>
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP3_IMG_1_POINT.png?=t" alt="인형 강조 이미지" class="img img2"/>
+                      </div>
+                    </div>
+                    <div class="icon_box icon_box10 dp_flex dp_flex_column">
+                      <div class="txt_container txt_container1 v_hidden"><span>?</span></div>
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP3_IMG_1.png?=t" alt="인형 이미지" class="img img1"/>
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP3_IMG_1_POINT.png?=t" alt="인형 강조 이미지" class="img img2"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step2_btm_box dp_flex dp_flex_column v_hidden">
+                    <div class="quiz_select_wrap"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step4" style="display: none">
+                <!-- step4 시작부분 -->
+                <div class="main__container">
+                  <div class="full_content_comm dp_flex">
+                    <div class="step4_left_box">
+                      <div class="number_box">10</div>
+                      <div class="speak_box">
+                        <ul class="dp_flex dp_flex_column">
+                          <li class="txt_box txt_box1">
+                            <span>십</span>
+                          </li>
+                          <li class="txt_box txt_box2">
+                            <span>열</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="step4_right_box dp_flex dp_flex_column">
+                      <div class="img_box img_box1">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP4_IMG_1.png?=t" alt="사탕 이미지" class="img img1"/>
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP4_IMG_1_POINT.png?=t" alt="사탕 강조 이미지" class="img img2"/>
+                        <div class="bubble_box v_hidden">
+                          <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP4_IMG_1_BUBBLE.png?=t" alt="말풍선 이미지" class="img img1"/>
+                        </div>
+                      </div>
+                      <div class="img_box img_box2">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP4_IMG_2.png?=t" alt="달력 이미지" class="img img1"/>
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP4_IMG_2_POINT.png?=t" alt="달력 강조 이미지" class="img img2"/>
+                        <div class="bubble_box v_hidden">
+                          <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP4_IMG_2_BUBBLE.png?=t" alt="말풍선 이미지" class="img img1"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <footer class="check_footer">
+                    <div class="check_footer_inner">
+                      <div class="check_footer_text img_container">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP4_FOOTER_TXT1.png" class="img img1"/>
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP4_FOOTER_TXT2.png" class="img img2"/>
+                      </div>
+                      <div class="check_footer_ch">
+                        <div class="check_footer_ch_head"></div>
+                        <div class="check_footer_ch_body"></div>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+              <div class="step step5" style="display: none">
+                <!-- step5 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step5_top_box dp_flex">
+                    <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP5_IMG_1.png?=t" alt="블록 이미지" class="img img1"/>
+                    <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP5_IMG_2.png?=t" alt="블록 이미지" class="img img2"/>
+                  </div>
+                  <div class="step5_btm_box">
+                    <div class="quiz_select_wrap"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step6" style="display: none">
+                <!-- step6 시작부분 -->
+                <div class="main__container dp_flex">
+                  <div class="quiz quiz1 dp_flex dp_flex_column">
+                    <div class="number_top_box dp_flex">
+                      <div class="txt_container blue"><span>10</span></div>
+                    </div>
+                    <div class="arrow_box">
+                      <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP5_ARROW.png?=t" alt="화살표 이미지" class="img img1"/>
+                    </div>
+                    <div class="number_btm_box dp_flex">
+                      <div class="txt_container blue"><span>5</span></div>
+                      <div class="txt_container keypad_txt keypad_txt1"><span>?</span></div>
+                    </div>
+                  </div>
+                  <div class="quiz quiz2 dp_flex dp_flex_column">
+                    <div class="number_top_box dp_flex">
+                      <div class="txt_container blue"><span>10</span></div>
+                    </div>
+                    <div class="arrow_box">
+                      <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP5_ARROW.png?=t" alt="화살표 이미지" class="img img1"/>
+                    </div>
+                    <div class="number_btm_box dp_flex">
+                      <div class="txt_container keypad_txt keypad_txt2"><span>?</span></div>
+                      <div class="txt_container blue"><span>8</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step7" style="display: none">
+                <!-- step7 시작부분 -->
+                <div class="main__container">
+                  <div class="full_content_comm dp_flex">
+                    <div class="step7_left_box">
+                      <div class="txt_container blue blink"><span>10</span></div>
+                    </div>
+                    <div class="step7_mid_box">
+                      <div class="number_board_table number_board_table1">
+                        <table>
+                          <tr>
+                            <td>
+                              <div class="td pink">
+                                <span>1</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="td yellow">
+                                <span>2</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="td green">
+                                <span>3</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="td skyblue">
+                                <span>4</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="td blue">
+                                <span>5</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="td pink">
+                                <span>9</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="td yellow">
+                                <span>8</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="td green">
+                                <span>7</span>
+                              </div>
+                            </td>
+                            <td> 
+                              <div class="td skyblue">
+                                <span>6</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="td blue">
+                                <span>5</span>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="number_board_table number_board_table2">
+                        <table>
+                          <tr>
+                            <td>
+                              <div class="td pink"></div>
+                            </td>
+                            <td>
+                              <div class="td yellow"></div>
+                            </td>
+                            <td>
+                              <div class="td green"></div>
+                            </td>
+                            <td>
+                              <div class="td skyblue"></div>
+                            </td>
+                            <td>
+                              <div class="td blue"></div>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="step7_right_box opacity">
+                      <div class="txt_container green"><span>10</span></div>
+                    </div>
+                  </div>
+                  <footer class="check_footer">
+                    <div class="check_footer_inner slideUp">
+                      <div class="check_footer_text img_container">
+                        <img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP7_FOOTER_TXT1.png?=t1" class="img img1"/>
+                      </div>
+                      <div class="check_footer_ch">
+                        <div class="check_footer_ch_head"></div>
+                        <div class="check_footer_ch_body"></div>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+
+              <ul class="step-list">
+                <li class="step-list_item active"></li>
+                <li class="step-list_item"></li>
+              </ul>
+            </div>
+          </main>
+          <div class="main_prev-next">
+            <button class="btn-prev" style="display: none">이전버튼</button>
+            <!-- <button class="btn-next" style="display: block" disabled> -->
+            <button class="btn-next blinking" style="display: block">
+              다음버튼
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      crossorigin
+      src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"
+    ></script>
+    <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+    <script src="../../../COMM/JS/COMMON2.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNT3.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNTBTN.JS"></script>
+    <script src="../../../COMM/JS/GAME.JS"></script>
+    <script src="../../../COMM/JS/VIDEO.JS"></script>
+    <script src="../../../COMM/JS/VIDEO-HTTP-STREAMING.JS"></script>
+    <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+    <script>
+      /*
+       * 데이터
+       */
+      let intro = {
+        type: "concept", //concept 개념익히기, checkExam 확인문제
+        title: "9 다음 수를 알아볼까요",
+        subTitle: [
+          "10을 세고 읽을 수 있어요.",
+          "10을 여러 가지 방법으로 가르기 할 수 있어요.",
+        ],
+        sound: ["../../../COMM/SOUND/1_5_2/1_1_5-2_001.mp3"],
+      };
+
+      //현재 페이지
+      let disStep = 1;
+
+      let pageData = [
+        {
+          step: 1,
+          title: "9 다음 수를 알아봅시다.",
+          sound: "../../../COMM/SOUND/1_5_2/1_1_5-2_001.mp3",
+          headerPage: [1, 2],
+          footerPage: [1, 3],
+          prev: 0,
+          next: 1,
+        },
+        {
+          step: 2,
+          title: "9 다음 수를 알아봅시다.",
+          sound: "../../../COMM/SOUND/1_5_2/1_1_5-2_001.mp3",
+          headerPage: [1, 2],
+          footerPage: [2, 3],
+          prev: 1,
+          next: 1,
+        },
+        {
+          step: 3,
+          title: "9 다음 수를 알아봅시다.",
+          sound: "../../../COMM/SOUND/1_5_2/1_1_5-2_001.mp3",
+          headerPage: [1, 2],
+          footerPage: [3, 3],
+          prev: 1,
+          next: 0,
+        },
+        {
+          step: 4,
+          title: "",
+          sound: "",
+          headerPage: [0, 0],
+          footerPage: [0, 0],
+          prev: 1,
+          next: 1,
+        },
+        {
+          step: 5,
+          title: "여러 가지 방법으로 10을 가르기 해 봅시다.",
+          sound: "../../../COMM/SOUND/1_5_2/1_1_5-2_037.mp3",
+          headerPage: [2, 2],
+          footerPage: [1, 2],
+          prev: 4,
+          next: 1,
+        },
+        {
+          step: 6,
+          title: "여러 가지 방법으로 10을 가르기 해 봅시다.",
+          sound: "../../../COMM/SOUND/1_5_2/1_1_5-2_037.mp3",
+          headerPage: [2, 2],
+          footerPage: [2, 2],
+          prev: 1,
+          next: 0,
+        },
+        {
+          step: 7,
+          title: "",
+          sound: "",
+          headerPage: [0, 0],
+          footerPage: [0, 0],
+          prev: 1,
+          next: 0,
+        },
+      ];
+
+      function pageAction() {
+        console.log("disStep ::: ", disStep);
+        //setTimeout 초기화
+        const TimeoutId = setTimeout(() => console.log("timeout clear"), 1);
+        for (let i = 0; i < TimeoutId; i++) {
+          clearTimeout(i);
+        }
+        stepSet();
+        switch (disStep) {
+          case 1:
+            step1.reset();
+            step1.start();
+            break;
+          case 2:
+            step2.reset();
+            step2.start();
+            break;
+          case 3:
+            step3.reset();
+            step3.start();
+            break;
+          case 4:
+            step4.reset();
+            step4.start();
+            break;
+          case 5:
+            step5.reset();
+            step5.start();
+            break;
+          case 6:
+            step6.reset();
+            step6.start();
+            break;
+          case 7:
+            step7.reset();
+            step7.start();
+            break;
+        }
+      }
+
+      //문제 시작
+      //================STEP1==============
+      const step1 = {
+        start: () => {
+          audioSet(
+            [
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_001.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_002.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_003.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_004.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_005.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_006.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_007.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_008.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_009.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_010.mp3",
+            ],[
+              {
+                idx: 2,
+                type: "start",
+                callback: () => {
+                  timerSet(() => {
+                    $(".step1 .step1_top_box .sticker_box:not(.sticker_box10) .text_box").css("visibility", "visible");
+                    timerInit();
+                  }, 3000);
+                },
+              },
+              {
+                idx: 3,
+                type: "start",
+                callback: () => {
+                  $(".step1 .step1_top_box .sticker_box:not(.sticker_box10) .img2").css("visibility", "visible").addClass("blinking");
+                  timerSet(() => {
+                    timerInit();
+                    $(".step1 .step1_top_box .sticker_box:not(.sticker_box10) .img2").css("visibility", "hidden").removeClass("blinking");
+                    $(".step1 .step1_top_box .sticker_box10").css("visibility", "visible");
+                    timerSet(() => {
+                      $(".step1 .step1_top_box .img_box .img2").css("visibility", "visible").addClass("blinking");
+                      timerInit();
+                    }, 1000);
+                  }, 1500);
+                },
+              },
+              {
+                idx: 4,
+                type: "end",
+                callback: () => {
+                  $(".step1 .step1_top_box .sticker_box10 .text_box").css("visibility", "visible");
+                },
+              },
+              {
+                idx: 5,
+                type: "end",
+                callback: () => {
+                  $(".step1 .step1_top_box .img_box .img2").css("visibility", "hidden").removeClass("blinking");
+                  $(".step1 .step1_btm_box .block_box").css("visibility", "visible");
+                },
+              },
+              {
+                idx: 7,
+                type: "start",
+                callback: () => {
+                  $(".step1 .step1_btm_box .block_box .img2").css("visibility", "visible");
+                  $(".step1 .step1_btm_box .block_box .img1").css("visibility", "hidden");
+                },
+              },
+              {
+                idx: 8,
+                type: "end",
+                callback: () => {
+                  $(".step1 .step1_btm_box .number_box").css("visibility", "visible");
+                },
+              },
+              {
+                idx: 9,
+                type: "end",
+                callback: () => {
+                  $(".step1 .step1_top_box .sticker_box10 .text_box").html('').append('10');
+                },
+              },
+              {
+                idx: 10,
+                type: "start",
+                callback: () => {
+                  $(".step1 .step1_btm_box .speak_box").css("visibility", "visible");
+                  $(".step1 .step1_btm_box .speak_box .txt_box").addClass('box_blink');
+                },
+              },
+              {
+                idx: 10,
+                type: "end",
+                callback: () => {
+                  $(".step1 .step1_btm_box .speak_box .txt_box").removeClass('box_blink');
+                  correctly();
+                },
+              },
+            ]
+          );
+        },
+        reset: () => {
+          $(".step1 .dp_none").css("display", "");
+          $(".step1 .v_hidden").css("visibility", "");
+          $(".step1 .step1_top_box .text_box").css("visibility", "hidden");
+          $(".step1 .step1_top_box .img_box .img2").css("visibility", "hidden").removeClass("blinking");
+          $(".step1 .step1_top_box .sticker_box .question_box").css("visibility", "hidden");
+          $(".step1 .step1_btm_box .block_box").css("visibility", "hidden");
+          $(".step1 .step1_btm_box .block_box .img2").css("visibility", "hidden");
+          $(".step1 .step1_btm_box .block_box .img1").css("visibility", "");
+          $(".step1 .step1_btm_box .number_box").css("visibility", "hidden");
+          $(".step1 .step1_top_box .sticker_box10 .text_box").html('').append('?');
+          $(".step1 .step1_btm_box .speak_box .txt_box").removeClass('box_blink');
+        },
+      };
+      //================STEP2==============
+      const step2 = {
+        start: () => {
+          audioSet(
+            [
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_011.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_012.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_013.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_014.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_015.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_016.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_017.mp3",
+            ], [
+              {
+                idx: 2,
+                type: 'start',
+                callback: () => {
+                  $(".step2 .step2_top_box .icon_box1 .text_box").css("visibility", "visible");
+                }
+              },
+              {
+                idx: 3,
+                type: 'start',
+                callback: () => {
+                  $(".step2 .step2_top_box .icon_box2 .text_box").css("visibility", "visible");
+                }
+              },
+              {
+                idx: 4,
+                type: 'start',
+                callback: () => {
+                  $(".step2 .step2_top_box .icon_box3 .text_box").css("visibility", "visible");
+                }
+              },
+              {
+                idx: 5,
+                type: 'start',
+                callback: () => {
+                  $(".step2 .step2_top_box .icon_box4 .dot_box").css("visibility", "visible");
+                }
+              },
+              {
+                idx: 6,
+                type: 'end',
+                callback: () => {
+                  $(".step2 .step2_top_box .icon_box10 .txt_container").css("visibility", "visible");
+                }
+              },
+              {
+                idx: 7,
+                type: 'end',
+                callback: () => {
+                  $(".step2 .step2_top_box .icon_box10 .txt_container").addClass("blink");
+                  $(".step2 .step2_btm_box").css("visibility", "visible");
+
+                  stepDropList2 = [
+                    {
+                      dropEl: '.step2 .txt_container1',
+                      correct: 3
+                    }
+                  ];
+
+                  stepDropArr2 = ["아홉", "십", "열"];
+
+                  quizMultiDragDropSetOnNew(stepDropList2, $('.step2 .step2_btm_box .quiz_select_wrap'), stepDropArr2, step2.dropppFn);
+                }
+              },
+            ]
+          );
+        },
+        dropppFn: () => {
+          $(".droppable")
+          .droppable({ disabled: false })
+          .on("droppable:drop", function (droppp, drag) {
+            let dragAnswer = drag.item[0].dataset.val;
+            let answer = droppp.currentTarget.dataset.val;
+
+            if (answer === dragAnswer) {
+              $(".step2 .txt_container1").html('');
+              quizMultiDragDropSetCorrectly();
+              stepDropList = "";
+              stepDropArr = "";
+
+
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.mp3",
+                "../../../COMM/SOUND/1_5_2/1_1_5-2_019.mp3",
+                "../../../COMM/SOUND/1_5_2/1_1_5-2_020.mp3",
+              ], [
+                {
+                  idx: 1,
+                  type: 'start',
+                  callback: () => {
+                    $(".step2 .step2_top_box .icon_box10 .txt_container").removeClass("blink");
+                  }
+                },
+                {
+                  idx: 3,
+                  type: 'start',
+                  callback: () => {
+                    $(".step2 .step2_top_box .img_box .img2").css("visibility", "visible").addClass("blinking");
+                  }
+                },
+                {
+                  idx: 3,
+                  type: 'end',
+                  callback: () => {
+                    $(".step2 .step2_top_box .img_box .img2").css("visibility", "hidden").removeClass("blinking");
+                    correctly();
+                  }
+                },
+              ]);
+            } else {
+              audioSet([
+                "../../../COMM/SOUND/WRONG.mp3",
+                "../../../COMM/SOUND/1_5_2/1_1_5-2_018.mp3",
+              ]);
+
+              return false;
+            }
+          });
+        },
+        reset: () => {
+          $(".step2 .dp_none").css("display", "");
+          $(".step2 .v_hidden").css("visibility", "");
+          $(".step2 .txt_container1").html('').append('?');
+          $(".step2 .step2_top_box .text_box").css("visibility", "hidden");
+          $(".step2 .step2_top_box .dot_box").css("visibility", "hidden");
+          $(".step2 .step2_top_box .icon_box10 .txt_container").removeClass("blink");
+          $(".step2 .step2_top_box .img_box .img2").css("visibility", "hidden").removeClass("blinking");
+        },
+      };
+      //================STEP3==============
+      const step3 = {
+        start: () => {
+          audioSet(
+            [
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_021.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_022.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_023.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_024.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_025.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_026.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_027.mp3",
+            ], [
+              {
+                idx: 2,
+                type: "start",
+                callback: () => {
+                  $(".step3 .step2_top_box .icon_box1 .text_box").css("visibility", "visible");
+                },
+              },
+              {
+                idx: 3,
+                type: "start",
+                callback: () => {
+                  $(".step3 .step2_top_box .icon_box2 .text_box").css("visibility", "visible");
+                },
+              },
+              {
+                idx: 4,
+                type: "start",
+                callback: () => {
+                  $(".step3 .step2_top_box .icon_box3 .text_box").css("visibility", "visible");
+                },
+              },
+              {
+                idx: 5,
+                type: 'start',
+                callback: () => {
+                  $(".step3 .step2_top_box .icon_box4 .dot_box").css("visibility", "visible");
+                },
+              },
+              {
+                idx: 6,
+                type: "end",
+                callback: () => {
+                  $(".step3 .step2_top_box .icon_box10 .txt_container").css("visibility", "visible");
+                },
+              },
+              {
+                idx: 7,
+                type: 'end',
+                callback: () => {
+                  $(".step3 .step2_top_box .icon_box10 .txt_container").addClass("blink");
+                  $(".step3 .step2_btm_box").css("visibility", "visible");
+
+                  stepDropList = [
+                    {
+                      dropEl: '.step3 .txt_container1',
+                      correct: 2
+                    }
+                  ];
+
+                  stepDropArr = ["열", "십", "구"];
+
+                  quizMultiDragDropSetOnNew(stepDropList, $('.step3 .step2_btm_box .quiz_select_wrap'), stepDropArr, step3.dropppFn);
+                }
+              },
+            ]
+          );
+        },
+        dropppFn: () => {
+          $(".droppable")
+          .droppable({ disabled: false })
+          .on("droppable:drop", function (droppp, drag) {
+            let dragAnswer = drag.item[0].dataset.val;
+            let answer = droppp.currentTarget.dataset.val;
+
+            if (answer === dragAnswer) {
+              $(".step3 .txt_container1").html('');
+              quizMultiDragDropSetCorrectly();
+              stepDropList = "";
+              stepDropArr = "";
+
+
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.mp3",
+                "../../../COMM/SOUND/1_5_2/1_1_5-2_029.mp3",
+                "../../../COMM/SOUND/1_5_2/1_1_5-2_030.mp3",
+              ], [
+                {
+                  idx: 1,
+                  type: 'start',
+                  callback: () => {
+                    $(".step3 .step2_top_box .icon_box10 .txt_container").removeClass("blink");
+                  }
+                },
+                {
+                  idx: 3,
+                  type: 'start',
+                  callback: () => {
+                    $(".step3 .step2_top_box .img_box .img2").css("visibility", "visible").addClass("blinking");
+                  }
+                },
+                {
+                  idx: 3,
+                  type: 'end',
+                  callback: () => {
+                    $(".step3 .step2_top_box .img_box .img2").css("visibility", "hidden").removeClass("blinking");
+                    disStep++;
+                    pageAction();
+                  }
+                },
+              ]);
+            } else {
+              audioSet([
+                "../../../COMM/SOUND/WRONG.mp3",
+                "../../../COMM/SOUND/1_5_2/1_1_5-2_028.mp3",
+              ]);
+
+              return false;
+            }
+          });
+        },
+        reset: () => {
+          $(".step3 .dp_none").css("display", "");
+          $(".step3 .v_hidden").css("visibility", "");
+          $(".step3 .txt_container1").html('').append('?');
+          $(".step3 .step2_top_box .text_box").css("visibility", "hidden");
+          $(".step3 .step2_top_box .dot_box").css("visibility", "hidden");
+          $(".step3 .step2_top_box .icon_box10 .txt_container").removeClass("blink");
+          $(".step3 .step2_top_box .img_box .img2").css("visibility", "hidden").removeClass("blinking");
+        },
+      };
+      //================STEP4==============
+      const step4 = {
+        start: () => {
+          audioSet(
+            [
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_031.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_032.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_033.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_034.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_035.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_036.mp3",
+            ], [
+              {
+                idx: 2,
+                type: "start",
+                callback: () => {
+                  $(".step4 .step4_left_box .speak_box .txt_box").addClass('box_blink');
+                },
+              },
+              {
+                idx: 3,
+                type: "start",
+                callback: () => {
+                  $(".step4 .step4_left_box .speak_box .txt_box").removeClass('box_blink');
+                  $(".step4 .step4_right_box .img_box1 .img2").css("visibility","visible").addClass("blinking");
+                },
+              },
+              {
+                idx: 4,
+                type: "start",
+                callback: () => {
+                  $(".step4 .step4_right_box .img_box .img2").css("visibility", "hidden").removeClass("blinking");
+                  $(".step4 .step4_right_box .img_box1 .bubble_box").css("visibility","visible");
+                  $(".step4 .check_footer_inner").addClass("slideUp");
+                },
+              },
+              {
+                idx: 5,
+                type: "start",
+                callback: () => {
+                  $(".step4 .step4_right_box .img_box2 .img2").css("visibility","visible").addClass("blinking");
+                },
+              },
+              {
+                idx: 6,
+                type: "start",
+                callback: () => {
+                  $(".step4 .step4_right_box .img_box .img2").css("visibility", "hidden").removeClass("blinking");
+                  $(".step4 .step4_right_box .img_box2 .bubble_box").css("visibility","visible");
+                  $(".step4 .check_footer_inner .img1").css("display","none");
+                  $(".step4 .check_footer_inner .img2").css("display","block");
+                },
+              },
+              {
+                idx: 6,
+                type: "end",
+                callback: () => {
+                  correctly();
+                },
+              },
+            ]
+          );
+        },
+        reset: () => {
+          $(".step4 .dp_none").css("display", "");
+          $(".step4 .v_hidden").css("visibility", "");
+          $(".step4 .step4_left_box .speak_box .txt_box").removeClass('box_blink');
+          $(".step4 .step4_right_box .img_box .img2").css("visibility", "hidden").removeClass("blinking");
+          $(".step4 .step4_right_box .img_box .bubble_box").css("visibility","hidden");
+          $(".step4 .check_footer_inner").removeClass("slideUp");
+          $(".step4 .check_footer_inner .img").css("display","");
+        },
+      };
+      //================STEP5==============
+      const step5 = {
+        start: () => {
+          let stepAnswerList5 = [
+            '<div class="quiz quiz1 dp_flex  dp_flex_column"><div class="number_top_box dp_flex"><div class="txt_container blue"><span>10</span></div></div><div class="arrow_box"><img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP5_ARROW.png?=t" alt="화살표 이미지" class="img img1"/></div><div class="number_btm_box dp_flex"><div class="txt_container blue"><span>5</span></div><div class="txt_container blue"><span>5</span></div></div></div>',
+            '<div class="quiz quiz2 dp_flex dp_flex_column"><div class="number_top_box dp_flex"><div class="txt_container blue"><span>10</span></div></div><div class="arrow_box"><img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP5_ARROW.png?=t" alt="화살표 이미지" class="img img1"/></div><div class="number_btm_box dp_flex"><div class="txt_container blue"><span>4</span></div><div class="txt_container blue"><span>6</span></div></div></div>',
+            '<div class="quiz quiz3 dp_flex dp_flex_column"><div class="number_top_box dp_flex"><div class="txt_container blue"><span>10</span></div></div><div class="arrow_box"><img src="../../../COMM/IMG/CONCEPT/1_5_2/STEP5_ARROW.png?=t" alt="화살표 이미지" class="img img1"/></div><div class="number_btm_box dp_flex"><div class="txt_container blue"><span>7</span></div><div class="txt_container blue"><span>3</span></div></div></div>'
+          ];
+          quizSelectSetInit($('.step5 .step5_btm_box .quiz_select_wrap'), stepAnswerList5);
+
+          audioSet(
+            [
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_037.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_038.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_039.mp3",
+            ], [
+              {
+                idx: 3,
+                type: "end",
+                callback: () => {
+                  $(".step5 .step5_top_box .img2").css("margin-left", "77px");
+                  timerSet(() => {
+                    timerInit();
+                    quizSelectSetOnNew(3, step5.quizSelectCorrect);
+                  }, 1000);
+                },
+              },
+            ]
+          );
+        },
+        quizSelectCorrect: (flag) => {
+          $(".step5 .select_list .answer .txt_container").removeClass("blue");
+          $(".step5 .select_list .answer.selected .arrow_box").find("img").attr("src", "../../../COMM/IMG/CONCEPT/1_5_2/STEP5_ARROW2.png?=t");
+
+          if(flag){
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_041.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_042.mp3",
+            ], [
+              {
+                idx: 3,
+                type: 'end',
+                callback: () => {
+                  correctly();
+                }
+              },
+            ]);
+          }else{
+            audioSet([
+              "../../../COMM/SOUND/WRONG.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_040.mp3",
+            ], [
+              {
+                idx: 1,
+                type: 'start',
+                callback: () => {
+                  $(".step5 .select_list .answer .txt_container").removeClass("white").addClass("blue");
+                  $(".step5 .select_list .answer .arrow_box").find("img").attr("src", "../../../COMM/IMG/CONCEPT/1_5_2/STEP5_ARROW.png?=t");
+                  $('.step5 .step5_btm_box .quiz_select_wrap button').removeClass('selected').addClass('unselected');
+                }
+              },
+            ]);
+          }
+        },
+        reset: () => {
+          $(".step2 .dp_none").css("display", "");
+          $(".step2 .v_hidden").css("visibility", "");
+          $(".step5 .step5_top_box .img2").css("margin-left", "-34px");
+          $(".step5 .select_list .answer .txt_container").removeClass("white").addClass("blue");
+          $(".step5 .select_list .answer .arrow_box").find("img").attr("src", "../../../COMM/IMG/CONCEPT/1_5_2/STEP5_ARROW.png?=t");
+        },
+      };
+      //================STEP6==============
+      const step6 = {
+        start: () => {
+          audioSet(
+            [
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_043.mp3",
+            ], [
+              {
+                idx: 1,
+                type: "end",
+                callback: () => {
+                  // 빈칸 깜빡이기 (키패드 노출)
+                  let keypadTxtEl1 = $('.step6 .keypad_txt1');
+
+                  keypadTxtEl1.addClass("blink").click(() => {
+                    keypadTxtEl1.removeClass('blink');
+                    keypadSetOn(keypadTxtEl1, 14, 14);
+                    step6.keypadSetClick(keypadTxtEl1);
+                  });
+                },
+              },
+            ]
+          );
+        },
+        keypadSetClick: (btn) => {
+          $(document).on("click", keypadBtnCheckEl, (e) => {
+            e.stopPropagation();
+
+            if (keypadInput == 5) {
+              keypadSetCorrect(btn);
+
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.MP3",
+              ], [
+                {
+                  idx: 1,
+                  type: 'end',
+                  callback: () => {
+                    // 두 번째 빈칸이 깜빡이며 정답 유도 (키패드)
+                    let keypadTxtEl = $(".step6 .keypad_txt2");
+
+                    keypadTxtEl.addClass("blink").click(() => {
+                      keypadTxtEl.removeClass("blink");
+                      keypadSetOn(keypadTxtEl);
+                      step6.keypadSetClick2(keypadTxtEl);
+                    });
+                  }
+                }
+              ]);
+            } else {
+              keypadSetOff(btn);
+              btn.addClass('blink');
+
+              audioSet([
+                "../../../COMM/SOUND/WRONG.MP3",
+                "../../../COMM/SOUND/1_5_2/1_1_5-2_044.mp3",
+              ]);
+            }
+          });
+        },
+        keypadSetClick2: (btn) => {
+          $(document).on("click", keypadBtnCheckEl, (e) => {
+            e.stopPropagation();
+
+            if (keypadInput == 2) {
+              keypadSetCorrect(btn);
+
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.MP3",
+                "../../../COMM/SOUND/1_5_2/1_1_5-2_046.mp3",
+                "../../../COMM/SOUND/1_5_2/1_1_5-2_047_1.mp3",
+              ], [
+                {
+                  idx: 3,
+                  type: 'start',
+                  callback: () => {
+                    $(".step6 .quiz").addClass("box_blink");
+                  }
+                },
+                {
+                  idx: 3,
+                  type: 'end',
+                  callback: () => {
+                    $(".step6 .quiz").removeClass("box_blink");
+                    disStep++;
+                    pageAction();
+                  }
+                },
+              ]);
+            } else {
+              keypadSetOff(btn);
+              btn.addClass('blink');
+
+              audioSet([
+                "../../../COMM/SOUND/WRONG.MP3",
+                "../../../COMM/SOUND/1_5_2/1_1_5-2_045.mp3",
+              ]);
+            }
+          });
+        },
+        reset: () => {
+          keypadSetInit();
+
+          $(".step2 .dp_none").css("display", "");
+          $(".step2 .v_hidden").css("visibility", "");
+          $(".step6 .quiz").removeClass("box_blink");
+        },
+      };
+      //================STEP7==============
+      const step7 = {
+        start: () => {
+          audioSet(
+            [
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_049.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_050.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_051.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_052.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_053.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_054.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_055.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_056.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_057.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_058.mp3",
+              "../../../COMM/SOUND/1_5_2/1_1_5-2_059.mp3",
+            ], [
+              {
+                idx: 1,
+                type: "start",
+                callback: () => {
+                  $(".step7 .number_board_table2 .td.pink").addClass("box_inner_blink");
+                },
+              },
+              {
+                idx: 2,
+                type: "start",
+                callback: () => {
+                  $(".step7 .number_board_table2 .td.pink").removeClass("box_inner_blink");
+                  $(".step7 .number_board_table2 .td.yellow").addClass("box_inner_blink");
+                },
+              },
+              {
+                idx: 3,
+                type: "start",
+                callback: () => {
+                  $(".step7 .number_board_table2 .td.yellow").removeClass("box_inner_blink");
+                  $(".step7 .number_board_table2 .td.green").addClass("box_inner_blink");
+                },
+              },
+              {
+                idx: 4,
+                type: "start",
+                callback: () => {
+                  $(".step7 .number_board_table2 .td.green").removeClass("box_inner_blink");
+                  $(".step7 .number_board_table2 .td.skyblue").addClass("box_inner_blink");
+                },
+              },
+              {
+                idx: 5,
+                type: "start",
+                callback: () => {
+                  $(".step7 .number_board_table2 .td.skyblue").removeClass("box_inner_blink");
+                  $(".step7 .number_board_table2 .td.blue").addClass("box_inner_blink");
+                },
+              },
+              {
+                idx: 5,
+                type: "end",
+                callback: () => {
+                  $(".step7 .number_board_table2 .td").removeClass("box_inner_blink");
+                  $(".step7 .step7_left_box .txt_container").removeClass("blink");
+                  $(".step7 .step7_right_box").removeClass("opacity");
+                  $(".step7 .step7_right_box .txt_container").addClass("blink");
+                  $(".step7 .step7_left_box").addClass("opacity");
+                },
+              },
+              {
+                idx: 7,
+                type: "start",
+                callback: () => {
+                  $(".step7 .number_board_table2 .td.pink").addClass("box_inner_blink");
+                },
+              },
+              {
+                idx: 8,
+                type: "start",
+                callback: () => {
+                  $(".step7 .number_board_table2 .td.pink").removeClass("box_inner_blink");
+                  $(".step7 .number_board_table2 .td.yellow").addClass("box_inner_blink");
+                },
+              },
+              {
+                idx: 9,
+                type: "start",
+                callback: () => {
+                  $(".step7 .number_board_table2 .td.yellow").removeClass("box_inner_blink");
+                  $(".step7 .number_board_table2 .td.green").addClass("box_inner_blink");
+                },
+              },
+              {
+                idx: 10,
+                type: "start",
+                callback: () => {
+                  $(".step7 .number_board_table2 .td.green").removeClass("box_inner_blink");
+                  $(".step7 .number_board_table2 .td.skyblue").addClass("box_inner_blink");
+                },
+              },
+              {
+                idx: 11,
+                type: "start",
+                callback: () => {
+                  $(".step7 .number_board_table2 .td.skyblue").removeClass("box_inner_blink");
+                  $(".step7 .number_board_table2 .td.blue").addClass("box_inner_blink");
+                },
+              },
+              {
+                idx: 11,
+                type: "end",
+                callback: () => {
+                  $(".step7 .number_board_table2 .td").removeClass("box_inner_blink");
+                  $(".step7 .step7_right_box .txt_container").css("background-color", "#fff").removeClass("blink");
+                  callFinish();
+                },
+              },
+            ]
+          );
+        },
+        reset: () => {
+          $(".step2 .dp_none").css("display", "");
+          $(".step2 .v_hidden").css("visibility", "");
+          $(".step7 .step7_left_box .txt_container").addClass("blink");
+          $(".step7 .step7_right_box .txt_container").removeClass("blink");
+          $(".step7 .number_board_table2 .td").removeClass("box_inner_blink");
+          $(".step7 .step7_right_box .txt_container").css("background-color", "");
+          $(".step7 .step7_left_box").removeClass("opacity");
+          $(".step7 .step7_right_box").addClass("opacity");
+        },
+      };
+    </script>
+  </body>
+</html>

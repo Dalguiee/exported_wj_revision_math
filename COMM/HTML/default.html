@@ -1,0 +1,297 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>개정교육과정-수학 확인문제</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="KeyWORDs" content="" />
+    <meta name="Description" content="" />
+    <meta name="Robots" content="all" />
+    <meta http-equiv="Subject" content="" />
+    <meta http-equiv="Title" content="" />
+    <meta http-equiv="Author" content="onflou " />
+    <meta http-equiv="Publisher" content="" />
+
+    <!-- 브라우저 호환성을 지정 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="#" />
+    <link href="../../../COMM/CSS/COMMON.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/CHECK-QUESTION.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/VIDEO.CSS" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div id="contents-wrap" class="test" style="position: absolute"></div>
+      <div id="contents-main" style="display: none" class="check-questions">
+        <div class="check-questions_inner">
+          <header class="header">
+            <div class="header_title">
+              <button class="sound-btn"></button>
+              <h3>삼각형을 찾아보세요.</h3>
+            </div>
+            <ul class="step-list">
+              <li class="step-list_item active">1</li>
+              <li class="step-list_item">2</li>
+              <li class="step-list_item">3</li>
+              <li class="step-list_item">4</li>
+              <li class="step-list_item">5</li>
+            </ul>
+          </header>
+          <main class="main">
+            <div class="main_content">
+              <!-- 콘텐츠영역 -->
+              <div class="step step1" style="display: block">
+                <div class="btn-warp">
+                  <button class="btn btn1"></button>
+                  <button class="btn btn2"></button>
+                  <button class="btn btn3"></button>
+                </div>
+              </div>
+              <div class="step step2" style="display: none">
+                <div class="view-warp">
+                  <div class="view-warp-drop droppable" data-val="2">
+                    <p class="placeholder">?</p>
+                  </div>
+                  <div class="view-warp-drop droppable" data-val="1">
+                    <p class="placeholder">?</p>
+                  </div>
+                </div>
+                <div class="btn-warp">
+                  <div class="btn btn1 draggable" data-val="1">꼭짓점</div>
+                  <div class="btn btn2 draggable" data-val="2">변</div>
+                </div>
+              </div>
+              <div class="step step3" style="display: none">
+                <div class="view-warp">
+                  <div class="view-warp-drop droppable" data-val="1">
+                    <p class="placeholder">?</p>
+                  </div>
+                  <div class="view-warp-drop droppable" data-val="2">
+                    <p class="placeholder">?</p>
+                  </div>
+                </div>
+                <div class="btn-warp">
+                  <div class="btn btn1 draggable" data-val="1">꼭짓점</div>
+                  <div class="btn btn2 draggable" data-val="2">변</div>
+                </div>
+              </div>
+              <div class="step step4" style="display: none">
+                <div class="view-warp">
+                  <div class="view-warp-drop droppable" data-val="1">
+                    <p class="placeholder">?</p>
+                  </div>
+                  <div class="view-warp-drop droppable" data-val="2">
+                    <p class="placeholder">?</p>
+                  </div>
+                </div>
+                <div class="btn-warp">
+                  <div class="btn btn1 draggable" data-val="1">꼭짓점</div>
+                  <div class="btn btn2 draggable" data-val="2">변</div>
+                </div>
+              </div>
+              <div class="step step5" style="display: none">
+                <div class="view-warp">
+                  <div class="view-warp-drop droppable" data-val="1">
+                    <p class="placeholder">?</p>
+                  </div>
+                  <div class="view-warp-drop droppable" data-val="2">
+                    <p class="placeholder">?</p>
+                  </div>
+                </div>
+                <div class="btn-warp">
+                  <div class="btn btn1 draggable" data-val="1">꼭짓점</div>
+                  <div class="btn btn2 draggable" data-val="2">변</div>
+                </div>
+              </div>
+              <!-- ---------- -->
+            </div>
+            <div class="main_prev-next">
+              <button class="btn-prev" disabled="true">이전버튼</button>
+              <button class="btn-next" disabled="true">다음버튼</button>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <script
+      crossorigin
+      src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"
+    ></script>
+    <script src="../../../COMM/JS/COMMON2.JS"></script>
+    <script src="../../../COMM/JS/GAME.JS"></script>
+    <script src="../../../COMM/JS/VIDEO.JS"></script>
+    <script src="../../../COMM/JS/VIDEO-HTTP-STREAMING.JS"></script>
+    <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+    <script>
+      /*
+       * 데이터
+       */
+      let intro = {
+        title: "타이틀",
+        subTitle: ["1부터 5까지의 수를 알아봐요.", "수를 세어 읽고 써 봐요."],
+      };
+      //현재 페이지
+      let disPage = 1;
+      //현재까지 맞춘 문항
+      let clearPage = 0;
+
+      //각 스탭 별 스코어 (필요할 경우에만 존재)
+      let step2Score = 0;
+      let step3Score = 0;
+      let step4Score = 0;
+      let step5Score = 0;
+
+      let pageData = [
+        { title: "삼각형을 찾아보세요.", sound: "" },
+        { title: "□ 안에 알맞은 말을 찾아보세요.", sound: "" },
+        { title: "□ 안에 알맞은 말을 찾아보세요", sound: "" },
+        { title: "□ 안에 알맞은 말을 찾아보세요", sound: "" },
+        { title: "□ 안에 알맞은 말을 찾아보세요", sound: "" },
+      ];
+
+      $(document).ready(function () {
+        dregFn();
+        dropppFn();
+      });
+
+      // =====================step1=====================
+      $(".step1 .btn.btn1").click(() => {
+        correctly();
+      });
+      $(".step1 .btn.btn2").click(() => {});
+      $(".step1 .btn.btn3").click(() => {});
+
+      // =====================step2=====================
+      $(".step2 .btn.btn1").click(() => {});
+      $(".step2 .btn.btn2").click(() => {});
+
+      // =====================step3=====================
+
+      //이전 버튼
+      $(".btn-prev").click(() => {
+        pageMove("prev");
+      });
+      //다음 버튼
+      $(".btn-next").click(() => {
+        pageMove("next");
+      });
+
+      //이전, 다음버튼 함수
+      const pageMove = (e) => {
+        if (e === "prev") {
+          disPage -= 1;
+        }
+        if (e === "next") {
+          disPage += 1;
+        }
+        stepSet();
+        nextPrevBtnSet();
+      };
+
+      //상단 스텝, 페이지 set
+      const stepSet = () => {
+        $(".step-list_item").removeClass("active");
+        $(".step-list_item")
+          .eq(disPage - 1)
+          .addClass("active");
+        $(".step").css("display", "none");
+        $(".step")
+          .eq(disPage - 1)
+          .css("display", "block");
+        headerSet(pageData[disPage - 1].title);
+      };
+
+      //정답 맞춘 경우
+      const correctly = () => {
+        clearPage += 1;
+        //맞춘 페이지 전체 버튼 disabled;
+        $(`.step${clearPage} button`).attr("disabled", true);
+        nextPrevBtnSet();
+      };
+
+      //뒤로가기, 앞으로가기 disabled set
+      const nextPrevBtnSet = () => {
+        if (disPage <= clearPage) {
+          $(".main_prev-next .btn-next").attr("disabled", false);
+        }
+        if (disPage >= clearPage) {
+          $(".main_prev-next .btn-prev").attr("disabled", false);
+        }
+        if (disPage <= 1) {
+          $(".main_prev-next .btn-prev").attr("disabled", true);
+        }
+        if (disPage > clearPage) {
+          $(".main_prev-next .btn-next").attr("disabled", true);
+        }
+        if (disPage === 5) {
+          $(".main_prev-next .btn-next").attr("disabled", true);
+        }
+      };
+
+      //헤더 타이틀, 사운드 셋팅
+      const headerSet = (title = "", sound = "") => {
+        $(".header_title h3").html(title);
+      };
+
+      // 드래그 할 경우 함수
+      const dregFn = () => {
+        $(".draggable")
+          .draggable()
+          .on("draggable:start", function (droppp, drag) {})
+          .on("draggable:stop", function (droppp, drag) {});
+      };
+
+      //드롭 할 경우 함수
+      const dropppFn = () => {
+        $(".droppable")
+          .droppable()
+          .on("droppable:drop", function (droppp, drag) {
+            let dragAnswer = drag.item[0].dataset.val;
+            let answer = droppp.currentTarget.dataset.val;
+            if (answer === dragAnswer) {
+              $(droppp.currentTarget)
+                .find(".placeholder")
+                .css("display", "none");
+              if (disPage === 2) {
+                step2Score += 1;
+                if (step2Score === 2) {
+                  correctly();
+                }
+              }
+              if (disPage === 3) {
+                step3Score += 1;
+                if (step3Score === 2) {
+                  correctly();
+                }
+              }
+              if (disPage === 4) {
+                step4Score += 1;
+                if (step4Score === 2) {
+                  correctly();
+                }
+              }
+              if (disPage === 5) {
+                step5Score += 1;
+                if (step5Score === 2) {
+                  correctly();
+                }
+              }
+            } else {
+              return false;
+            }
+            drag.item.addClass("pointerNone");
+          });
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,392 @@
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "NanumSquareRound" !important;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.main_bg {
+  display: flex;
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: center/contain no-repeat url("../../COMM/IMG/CRUNCHY/BG.png");
+  background-size: cover;
+}
+
+/* 팝업 */
+.popup {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.popup_intro {
+  background-image: url("../../COMM/IMG/CRUNCHY/INTRO.PNG");
+  width: 1376px;
+  height: 886px;
+  position: relative;
+  transform: translateX(-36px) translateY(-66px);
+}
+.popup_intro-start {
+  background-image: url("../../COMM/IMG/CRUNCHY/GAMESTART_BTN.PNG");
+  width: 353px;
+  height: 140px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(calc(-50% + 24px));
+  bottom: -1px;
+}
+.dimmed {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+#popup2 .correct {
+  display: flex;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: center/contain no-repeat url("../../COMM/IMG/CRUNCHY/O.PNG");
+}
+/* 완료 팝업 */
+#complete_popup .bg {
+  position: absolute;
+  top: 140px;
+  width: 100%;
+  height: 80%;
+  z-index: 1;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/CRUNCHY/LASTPOPUP.PNG");
+}
+#complete_popup .buttonArea {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  top: 940px;
+}
+#complete_popup .reload {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  color: blue;
+  z-index: 2;
+  border-radius: 100px;
+  background: center/contain no-repeat url("../../COMM/IMG/CRUNCHY/RETRY.PNG");
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#complete_popup .play_view {
+  display: flex;
+  width: 300px;
+  height: 100px;
+  color: white;
+  font-size: 32px;
+  font-weight: 800px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #2dcabd;
+  z-index: 2;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#complete_popup p {
+  display: flex;
+  position: absolute;
+  bottom: -50px;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* 발문 */
+.epilogue {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 126px;
+  top: 62px;
+}
+.epilogue_inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.epilogue p {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 32px 100px;
+  background-color: #fe487a;
+  box-shadow: 0 7px #cf2353;
+  border-radius: 100px;
+  color: white;
+  font-size: 55px;
+  font-weight: 800;
+  letter-spacing: -1.1px;
+}
+
+/* 질문 */
+.question {
+  display: none;
+  position: absolute;
+  top: 80px;
+  width: 1060px;
+  height: 162px;
+  font-size: 60px;
+  font-weight: 800;
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+  color: black;
+}
+
+.question p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  width: 100%;
+  height: 100%;
+  font-weight: 800;
+}
+
+/* 발사대 */
+.fire {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+}
+.fire.shaking {
+  animation: shaking 1s;
+  -webkit-animation: shaking 1s;
+}
+.fire .fire_head {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  top: -90px;
+  width: 125px;
+  height: 125px;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/CRUNCHY/FIREHEAD.PNG");
+}
+.fire .fire_pad {
+  width: 100%;
+  height: 100%;
+  background: center/contain no-repeat url("../../COMM/IMG/CRUNCHY/FIREPAD.PNG");
+}
+
+/* 발사 물 */
+.fire_water {
+  position: absolute;
+  display: none;
+  width: 80px;
+  height: 80px;
+  z-index: 2;
+}
+.fire_water-obj {
+  position: absolute;
+  /* display: none; */
+  width: 100%;
+  height: 100%;
+  background: center/contain no-repeat url("../../COMM/IMG/CRUNCHY/WATER.PNG");
+}
+.fire_water-boom {
+  position: absolute;
+  /* display: none; */
+  width: 80px;
+  height: 80px;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/CRUNCHY/WATERBOMB.PNG");
+}
+
+/* 손 */
+.hand {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: -1500px;
+  background: url("../../COMM/IMG/CRUNCHY/HAND.PNG") no-repeat top;
+  background-size: 1930px;
+}
+/* 바이러스 */
+.virusArea {
+  display: none;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 60%;
+  z-index: 3;
+  top: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.virus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 400px;
+  top: 185px;
+  z-index: 1;
+}
+.virus_btn {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.virus_target {
+  display: flex;
+  position: absolute;
+}
+.virus p {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 400%;
+  justify-content: center;
+  top: 68px;
+  font-weight: 800;
+  color: black;
+}
+
+.virus .img {
+  position: absolute;
+  top: 40px;
+  left: 70px;
+  width: 250px;
+  height: 120px;
+}
+
+.virus .img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* COMMON.CSS */
+
+.hide {
+  display: none !important;
+}
+.show {
+  display: flex !important;
+}
+
+@keyframes shaking {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(50px);
+  }
+  20% {
+    transform: translateX(-50px);
+  }
+  30% {
+    transform: translateX(50px);
+  }
+  40% {
+    transform: translateX(-50px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  60% {
+    transform: translateX(-50px);
+  }
+  70% {
+    transform: translateX(50px);
+  }
+  80% {
+    transform: translateX(-50px);
+  }
+  90% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.pearl-guide {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.pearl-guide-hand {
+  width: 120px;
+  height: 110px;
+  position: absolute;
+  z-index: 2;
+  background: url("../../COMM/IMG/TOUCH_GUIDE_HAND.PNG") no-repeat center;
+  left: 27.6%;
+  bottom: 34.3%;
+}
+.pearl-guide-point {
+  width: 120px;
+  height: 110px;
+  position: absolute;
+  z-index: 2;
+  background: url("../../COMM/IMG/TOUCH_GUIDE.PNG") no-repeat center;
+  left: 25%;
+  bottom: 38%;
+  animation: opa 1s infinite linear;
+}
+
+@keyframes opa {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

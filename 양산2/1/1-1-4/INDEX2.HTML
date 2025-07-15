@@ -1,0 +1,2217 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>개정교육과정-수학 수학 개념</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="KeyWORDs" content="" />
+    <meta name="Description" content="" />
+    <meta name="Robots" content="all" />
+    <meta http-equiv="Subject" content="" />
+    <meta http-equiv="Title" content="" />
+    <meta http-equiv="Author" content="onflou " />
+    <meta http-equiv="Publisher" content="" />
+
+    <!-- 브라우저 호환성을 지정 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="#" />
+    <link href="../../../COMM/CSS/COMMON.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/COMMONLAYOUT.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/CONCEPTCOMMON3.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/VIDEO.CSS" rel="stylesheet" />
+ 
+    <style>
+      .number_board_table .td {
+        width: 116px;
+        height: 90px;
+      }
+
+      .number_board_table > table td {
+        border: 4px solid #000000;
+      }
+
+      /* 1p, 2p */
+      .step1_mid_box {
+        margin-top: 80px;
+      }
+
+      .step1_mid_box .circle_box,
+      .step1_btm_box .circle_box {
+        width: 104px;
+        aspect-ratio: 1 / 1;
+        background-color: #ffffff;
+        border: 4px solid rgba(249, 166, 12, 1);
+        border-radius: 50%;
+        line-height: 1;
+        position: relative;
+        z-index: 10;
+      }
+
+      .step1_mid_box .circle_box.on {
+        animation: 1.5s border_blinking infinite;
+      }
+
+      .step1_mid_box .circle_box + .circle_box {
+        margin-left: 34px;
+        position: relative;
+      }
+      
+      .step1_mid_box .circle_box + .circle_box::before {
+        content: "";
+        width: 34px;
+        height: 4px;
+        background-color: rgba(249, 166, 12, 1);
+        position: absolute;
+        left: -4px;
+        top: 50%;
+        transform: translateX(-100%);
+      }
+
+      .step1_mid_box .circle_box + .circle_box.onBefore::before {
+        animation: 1.5s background_blinking infinite;
+      }
+
+      .step1_btm_box {
+        margin-top: 140px;
+        gap: 210px;
+        position: relative;
+      }
+
+      .step1_btm_box::after {
+        content: "";
+        width: calc(100% + 100px);
+        height: 4px;
+        background-color: rgba(217, 217, 217, 1);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .step1_btm_box .circle_box {
+        position: relative;
+      }
+
+      .step1_btm_box .circle_box1 {
+        border: 4px solid rgba(255, 184, 239, 1);
+      }
+
+      .step1_btm_box .circle_box2 {
+        background-color: rgba(255, 211, 57, 1);
+      }
+
+      .step1_btm_box .circle_box3 {
+        border: 4px solid rgba(190, 218, 255, 1);
+      }
+
+      .step1_btm_box .circle_box .title_box {
+        width: auto;
+        padding: 15px 24px;
+        border-radius: 10px;
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        white-space: nowrap;
+      }
+
+      .step1_btm_box .circle_box1 .title_box {
+        background-color: rgba(255, 184, 239, 1);
+      }
+
+      .step1_btm_box .circle_box3 .title_box {
+        background-color: rgba(190, 218, 255, 1);
+      }
+
+      .step1_btm_box .txt_container {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        border-radius: 50%;
+        border: none;
+      }
+
+      .step1_btm_box .txt_container::after {
+        border-radius: 50%;
+      }
+
+      /* 3p */
+      .step3 .step3_point {
+        width: 153px;
+        height: 153px;
+        top: 53.8%;
+      }
+
+      .step3 .step3_point1 {
+        left: 30%;
+      }
+
+      .step3 .step3_point1_2 {
+        left: 34%;
+      }
+
+      .step3 .step3_point2 {
+        left: 58%;
+      }
+
+      .step3 .step3_point2_2 {
+        left: 61.6%;
+      }
+
+      .step3 .tag {
+        padding: 15px;
+        border-radius: 10px;
+        position: absolute;
+        line-height: 1;
+      }
+
+      .step3 .tag1 {
+        background-color: rgba(255, 184, 239, 1);
+        top: 130px;
+        left: 460px;
+      }
+
+      .step3 .tag2 {
+        background-color: rgba(190, 218, 255, 1);
+        top: 440px;
+        left: 870px;
+      }
+
+      .step3 .add {
+        position: absolute;
+        top: 97px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .step3 .add span {
+        font-size: 40px;
+        color: rgba(231, 46, 38, 1);
+      }
+
+      .step3 .add .arrow {
+        width: 303px;
+        height: 15px;
+        margin-right: 20px;
+        background-color: rgba(237, 28, 36, 1);
+        position: relative;
+      }
+
+      .step3 .add .arrow::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(100%, -50%);
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 20px solid rgba(237, 28, 36, 1);
+      }
+
+      .step3 .subtract {
+        position: absolute;
+        top: 450px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .step3 .subtract span {
+        font-size: 40px;
+        color: rgba(2, 119, 255, 1);
+      }
+
+      .step3 .subtract .arrow {
+        width: 303px;
+        height: 15px;
+        margin-right: 20px;
+        background-color: rgba(2, 119, 255, 1);
+        position: relative;
+      }
+
+      .step3 .subtract .arrow::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(-100%, -50%);
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-right: 20px solid rgba(2, 119, 255, 1);
+      }
+
+      /* 4p, 6p */
+      .step4 .number_board_table,
+      .step6 .number_board_table {
+        position: relative;
+      }
+
+      .step4 .number_board_table .point,
+      .step6 .number_board_table .point {
+        width: 125px;
+        height: 99px;
+        border-radius: 4px;
+        border: 5px solid rgba(103, 68, 243, 1);
+        position: absolute;
+        top: calc(94px * var(--point-top));
+        left: calc(120px * var(--point-left));
+      }
+
+      .step4 .number_board_table .point1 {
+        --point-top: 1;
+        --point-left: 4;
+      }
+
+      .step4 .number_board_table .point2 {
+        --point-top: 1;
+        --point-left: 6;
+      }
+
+      .step4 .number_board_table .point3 {
+        --point-top: 3;
+        --point-left: 7;
+      }
+
+      .step4 .number_board_table .point4 {
+        --point-top: 3;
+        --point-left: 9;
+      }
+
+      .step6 .number_board_table .point1 {
+        --point-top: 4;
+        --point-left: 9;
+        border: none;
+      }
+
+      .step4 .number_board_table .td.pink {
+        animation: 1.5s pink_blinking infinite;
+      }
+
+      .step4 .step4_quiz_box {
+        min-height: 114px;
+        margin-top: 55px;
+      }
+
+      .step4 .step4_quiz_box .answer {
+        width: 200px;
+        height: 114px;
+        border-radius: 20px;
+      }
+
+      .step4 .step4_quiz_box .answer::after {
+        border-radius: 20px;
+      }
+
+      .step4 .step4_quiz_box .answer + .answer {
+        margin-left: 50px;
+      }
+
+      .step4 .step4_point {
+        width: 177px;
+        aspect-ratio: 1 / 1;
+      }
+
+      .step4 .step4_point1 {
+        top: 30.8%;
+        left: 65.2%;
+      }
+
+      .step4 .step4_point2 {
+        top: 70.8%;
+        left: 94.7%;
+      }
+
+      .step4 .step4_point3 {
+        top: 30.8%;
+        left: 45.2%;
+      }
+
+      .step4 .step4_point4 {
+        top: 70.8%;
+        left: 75%;
+      }
+
+      /* 5p */
+      .step5 .main__container {
+        gap: 210px;
+      }
+
+      .step5 .step5_left_box {
+        align-items: flex-end;
+        gap: 25px;
+      }
+
+      .step5 .step5_left_box .img {
+        object-fit: none;
+      }
+
+      .step5 .step5_left_box .ten_box {
+        gap: 15px;
+      }
+
+      .step5 .step5_left_box .one_box {
+        position: relative;
+      }
+
+      .step5 .step5_left_box .one_box .effect_box {
+        width: 88px;
+        height: 76px;
+        position: absolute;
+        top: 0;
+        right: 30px;
+        transform: translate(100%, -100%);
+      }
+
+      .step5 .step5_right_box .number_box {
+        font-size: 140px;
+        line-height: 140px;
+      }
+
+      .step5 .step5_right_box .speak_box {
+        margin-top: 28px;
+        margin-left: 28px;
+      }
+
+      .step5 .step5_right_box .speak_box .txt_box {
+        width: 155px;
+        height: 75px;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        font-size: 44px;
+        line-height: 1;
+      }
+
+      .step5 .step5_right_box .speak_box .txt_box1 {
+        background-color: rgba(131, 174, 0, 1);
+      }
+
+      /* 6p */
+      .step6 .number_board_table .td.pink {
+        background-color: rgba(255, 184, 239, 0.64);
+      }
+
+      .step6 .number_board_table .point1 {
+        border: 5px solid rgba(103, 68, 243, 1);
+      }
+
+      .step6 .step6_point {
+        width: 177px;
+        aspect-ratio: 1 / 1;
+        top: 89.8%;
+        left: 95.2%;
+      }
+
+      /* 7p */
+      .step7 .full_content_comm {
+        gap: 130px;
+      }
+
+      .step7 .step7_top_box,
+      .step7 .step7_btm_box {
+        gap: 70px;
+      }
+
+      .step7 .text_box {
+        width: 200px;
+        font-size: 100px;
+      }
+
+      .step7 .arrow {
+        width: 278px;
+        height: 34px;
+        margin-right: 40px;
+        background-color: rgba(255, 211, 57, 1);
+        position: relative;
+      }
+
+      .step7 .arrow .point {
+        color: rgba(231, 46, 38, 1);
+        position: absolute;
+        top: -5px;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        white-space: nowrap;
+      }
+
+      .step7 .arrow::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(100%, -50%);
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;
+        border-left: 40px solid rgba(255, 211, 57, 1);
+      }
+
+      .step7 .check_footer_text .hint {
+        width: 278px;
+        height: 85px;
+        position: absolute;
+        background: url("../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP7_FOOTER_HINT.png") no-repeat center;
+        left: 330px;
+        top: 50px;
+      }
+
+      @keyframes border_blinking {
+        0% {
+          border: 4px solid rgba(249, 166, 12, 1);
+        }
+        50% {
+          border: 4px solid rgba(103, 68, 243, 1);
+        }
+        100% {
+          border: 4px solid rgba(249, 166, 12, 1);
+        }
+      }
+
+      @keyframes background_blinking {
+        0% {
+          background-color: rgba(249, 166, 12, 1);
+        }
+        50% {
+          background-color: rgba(103, 68, 243, 1);
+        }
+        100% {
+          background-color: rgba(249, 166, 12, 1);
+        }
+      }
+
+      @keyframes pink_blinking {
+        0% {
+          background-color: rgba(255, 184, 239, 0.64);
+        }
+        50% {
+          background-color: transparent;
+        }
+        100% {
+          background-color: rgba(255, 184, 239, 0.64);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div
+        id="contents-wrap"
+        class="concept"
+        style="position: absolute; display: flex"
+      ></div>
+      <div id="contents-main" style="display: none" class="concept-warp">
+        <div class="concept-warp_inner">
+          <header class="header" style="visibility: visible">
+            <div class="header_title">
+              <button class="sound-btn" onclick="titleSound()"></button>
+              <h3></h3>
+            </div>
+            <p class="header_page"><span>1</span>/2</p>
+          </header>
+          <main class="main">
+            <div class="main_content">
+              <!-- 콘텐츠영역 -->
+              <div class="step step1" style="display: block">
+                <!-- step1 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step1_top_box">
+                    <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP1_IMG1.png?=t" alt="책 이미지" class="img img1"/>
+                  </div>
+                  <div class="step1_mid_box dp_flex dp_none">
+                    <div class="circle_box circle_box1 dp_flex">90</div>
+                    <div class="circle_box circle_box2 dp_flex">?</div>
+                    <div class="circle_box circle_box3 dp_flex">92</div>
+                    <div class="circle_box circle_box4 dp_flex">?</div>
+                    <div class="circle_box circle_box5 dp_flex">94</div>
+                    <div class="circle_box circle_box6 dp_flex">95</div>
+                    <div class="circle_box circle_box7 dp_flex">?</div>
+                    <div class="circle_box circle_box8 dp_flex">97</div>
+                    <div class="circle_box circle_box9 dp_flex">?</div>
+                    <div class="circle_box circle_box10 dp_flex">99</div>
+                  </div>
+                  <div class="step1_btm_box dp_flex dp_none">
+                    <div class="circle_box circle_box1 dp_flex">
+                      <div class="title_box"><span>1만큼 더 작은 수</span></div>
+                      <div class="txt_container two keypad_txt keypad_txt1" data-val="91" data-length="2"><span>?</span></div>
+                    </div>
+                    <div class="circle_box circle_box2 dp_flex">92</div>
+                    <div class="circle_box circle_box3 dp_flex">
+                      <div class="title_box"><span>1만큼 더 큰 수</span></div>
+                      <div class="txt_container two keypad_txt keypad_txt2" data-val="93" data-length="2"><span>?</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step2" style="display: block">
+                <!-- step2 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step1_top_box">
+                    <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP2_IMG1.png?=t" alt="책 이미지" class="img img1"/>
+                  </div>
+                  <div class="step1_mid_box dp_flex">
+                    <div class="circle_box circle_box1 dp_flex">90</div>
+                    <div class="circle_box circle_box2 dp_flex">91</div>
+                    <div class="circle_box circle_box3 dp_flex">92</div>
+                    <div class="circle_box circle_box4 dp_flex">93</div>
+                    <div class="circle_box circle_box5 dp_flex">94</div>
+                    <div class="circle_box circle_box6 dp_flex">95</div>
+                    <div class="circle_box circle_box7 dp_flex">?</div>
+                    <div class="circle_box circle_box8 dp_flex">97</div>
+                    <div class="circle_box circle_box9 dp_flex">?</div>
+                    <div class="circle_box circle_box10 dp_flex">99</div>
+                  </div>
+                  <div class="step1_btm_box dp_flex dp_none">
+                    <div class="circle_box circle_box1 dp_flex">
+                      <div class="title_box"><span>1만큼 더 작은 수</span></div>
+                      <div class="txt_container two keypad_txt keypad_txt1" data-val="96" data-length="2"><span>?</span></div>
+                    </div>
+                    <div class="circle_box circle_box2 dp_flex">97</div>
+                    <div class="circle_box circle_box3 dp_flex">
+                      <div class="title_box"><span>1만큼 더 큰 수</span></div>
+                      <div class="txt_container two keypad_txt keypad_txt2" data-val="98" data-length="2"><span>?</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step3" style="display: none">
+                <!-- step3 시작부분 -->
+                <div class="main__container">
+                  <div class="full_content_comm dp_flex">
+                    <div class="img_box">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP3_IMG1.png?=t" alt="책 이미지" class="img img1"/>
+                    </div>
+                    <div class="step3_point step3_point1 img_point__wrap dp_none">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP3_POINT1.png?=t1" class="img" />
+                    </div>
+                    <div class="step3_point step3_point1_2 img_point__wrap dp_none">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP3_POINT1.png?=t1" class="img" />
+                    </div>
+                    <div class="step3_point step3_point2 img_point__wrap dp_none">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP3_POINT1.png?=t1" class="img" />
+                    </div>
+                    <div class="step3_point step3_point2_2 img_point__wrap dp_none">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP3_POINT1.png?=t1" class="img" />
+                    </div>
+                    <div class="tag tag1 v_hidden">1만큼 더 큰 수</div>
+                    <div class="tag tag2 v_hidden">1만큼 더 작은 수</div>
+                    <div class="add dp_flex dp_flex_column v_hidden">
+                      <span>1씩 커집니다.</span>
+                      <div class="arrow"></div>
+                    </div>
+                    <div class="subtract dp_flex dp_flex_column v_hidden">
+                      <div class="arrow"></div>
+                      <span>1씩 작아집니다.</span>
+                    </div>
+                  </div>
+                  <footer class="check_footer">
+                    <div class="check_footer_inner">
+                      <div class="hint"></div>
+                      <div class="check_footer_text img_container">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP3_FOOTER_TXT.png?=t" class="img img1" />
+                      </div>
+                      <div class="check_footer_ch">
+                        <div class="check_footer_ch_head"></div>
+                        <div class="check_footer_ch_body"></div>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+              <div class="step step4" style="display: none">
+                <!-- step4 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="number_board_table number_board_table1">
+                    <table>
+                      <tr class="tr tr1">
+                        <td>
+                          <div class="td td1">
+                            <span>51</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td2">
+                            <span>52</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td3">
+                            <span>53</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td4">
+                            <span>54</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td5">
+                            <span>55</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td6">
+                            <span>56</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td7">
+                            <span>57</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td8">
+                            <span>58</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td9">
+                            <span>59</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td10">
+                            <span>60</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="tr tr2">
+                        <td>
+                          <div class="td td1">
+                            <span>61</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td2">
+                            <span>62</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td3">
+                            <span>63</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td4">
+                            <span>64</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td5">
+                            <span>?</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td6">
+                            <span>66</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td7">
+                            <span>?</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td8">
+                            <span>68</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td9">
+                            <span>69</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td10">
+                           <span>70</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="tr tr3">
+                        <td>
+                          <div class="td td1">
+                           <span>71</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td2">
+                           <span>72</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td3">
+                           <span>73</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td4">
+                           <span>74</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td5">
+                           <span>75</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td6">
+                           <span>76</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td7">
+                           <span>77</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td8">
+                           <span>78</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td9">
+                           <span>79</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td10">
+                            <span>80</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="tr tr4">
+                        <td>
+                          <div class="td td1">
+                            <span>81</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td2">
+                            <span>82</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td3">
+                            <span>83</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td4">
+                            <span>84</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td5">
+                            <span>85</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td6">
+                            <span>86</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td7">
+                            <span>87</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td8">
+                            <span>?</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td9">
+                            <span>89</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td10">
+                            <span>?</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="tr tr5">
+                        <td>
+                          <div class="td td1">
+                           <span>91</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td2">
+                           <span>92</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td3">
+                           <span>93</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td4">
+                           <span>94</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td5">
+                           <span>95</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td6">
+                           <span>96</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td7">
+                           <span>97</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td8">
+                           <span>98</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td9">
+                           <span>99</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td10">
+                            <span>?</span>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                    <div class="point point1 v_hidden"></div>
+                    <div class="point point2 v_hidden"></div>
+                    <div class="point point3 v_hidden"></div>
+                    <div class="point point4 v_hidden"></div>
+                    <div class="step4_point step4_point1 img_point__wrap dp_none">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP4_POINT1.png" class="img" />
+                    </div>
+                    <div class="step4_point step4_point2 img_point__wrap dp_none">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP4_POINT1.png" class="img" />
+                    </div>
+                    <div class="step4_point step4_point3 img_point__wrap dp_none">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP4_POINT1.png" class="img" />
+                    </div>
+                    <div class="step4_point step4_point4 img_point__wrap dp_none">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP4_POINT1.png" class="img" />
+                    </div>
+                  </div>
+                  <div class="step4_quiz_box step4_quiz_box1 v_hidden"></div>
+                </div>
+              </div>
+              <div class="step step5" style="display: none">
+                <!-- step5 시작부분 -->
+                <div class="main__container dp_flex">
+                  <div class="step5_left_box dp_flex v_hidden">
+                    <div class="ten_box dp_flex">
+                      <div class="icon_box icon_box1">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP5_10BLOCK.png?=t" alt="십의 자리 블록 이미지" class="img img1"/>
+                      </div>
+                      <div class="icon_box icon_box2">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP5_10BLOCK.png?=t" alt="십의 자리 블록 이미지" class="img img1"/>
+                      </div>
+                      <div class="icon_box icon_box3">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP5_10BLOCK.png?=t" alt="십의 자리 블록 이미지" class="img img1"/>
+                      </div>
+                      <div class="icon_box icon_box4">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP5_10BLOCK.png?=t" alt="십의 자리 블록 이미지" class="img img1"/>
+                      </div>
+                      <div class="icon_box icon_box5">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP5_10BLOCK.png?=t" alt="십의 자리 블록 이미지" class="img img1"/>
+                      </div>
+                      <div class="icon_box icon_box6">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP5_10BLOCK.png?=t" alt="십의 자리 블록 이미지" class="img img1"/>
+                      </div>
+                      <div class="icon_box icon_box7">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP5_10BLOCK.png?=t" alt="십의 자리 블록 이미지" class="img img1"/>
+                      </div>
+                      <div class="icon_box icon_box8">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP5_10BLOCK.png?=t" alt="십의 자리 블록 이미지" class="img img1"/>
+                      </div>
+                      <div class="icon_box icon_box9">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP5_10BLOCK.png?=t" alt="십의 자리 블록 이미지" class="img img1"/>
+                      </div>
+                    </div>
+                    <div class="one_box">
+                      <div class="effect_box v_hidden">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP5_IMG3.png?=t" alt="일의 자리 블록 이미지" class="img img1"/>
+                      </div>
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP5_IMG1.png?=t" alt="일의 자리 블록 이미지" class="img img1"/>
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP5_IMG2.png?=t" alt="일의 자리 블록 이미지" class="img img2 dp_none"/>
+                    </div>
+                  </div>
+                  <div class="step5_right_box v_hidden">
+                    <div class="letter_box letter_box1">
+                      <div class="number_box">
+                        100
+                      </div>
+                      <div class="speak_box v_hidden">
+                        <ul>
+                          <li class="txt_box txt_box1 dp_flex dp_flex_column">
+                            <span>
+                              백
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step6" style="display: none">
+                <!-- step6 시작부분 -->
+                <div class="main__container dp_flex">
+                  <div class="number_board_table number_board_table1">
+                    <table>
+                      <tr class="tr tr1">
+                        <td>
+                          <div class="td td1">
+                            <span>51</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td2">
+                            <span>52</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td3">
+                            <span>53</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td4">
+                            <span>54</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td5">
+                            <span>55</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td6">
+                            <span>56</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td7">
+                            <span>57</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td8">
+                            <span>58</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td9">
+                            <span>59</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td10">
+                            <span>60</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="tr tr2">
+                        <td>
+                          <div class="td td1">
+                            <span>61</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td2">
+                            <span>62</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td3">
+                            <span>63</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td4">
+                            <span>64</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td5">
+                            <span>65</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td6">
+                            <span>66</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td7">
+                            <span>67</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td8">
+                            <span>68</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td9">
+                            <span>69</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td10">
+                           <span> 70</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="tr tr3">
+                        <td>
+                          <div class="td td1">
+                           <span> 71</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td2">
+                           <span> 72</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td3">
+                           <span> 73</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td4">
+                           <span> 74</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td5">
+                           <span> 75</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td6">
+                           <span> 76</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td7">
+                           <span> 77</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td8">
+                           <span> 78</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td9">
+                           <span> 79</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td10">
+                            <span>80</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="tr tr4">
+                        <td>
+                          <div class="td td1">
+                            <span>81</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td2">
+                            <span>82</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td3">
+                            <span>83</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td4">
+                            <span>84</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td5">
+                            <span>85</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td6">
+                            <span>86</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td7">
+                            <span>87</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td8">
+                            <span>88</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td9">
+                            <span>89</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td10">
+                           <span>90</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="tr tr5">
+                        <td>
+                          <div class="td td1">
+                           <span>91</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td2">
+                           <span>92</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td3">
+                           <span>93</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td4">
+                           <span>94</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td5">
+                           <span>95</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td6">
+                           <span>96</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td7">
+                           <span>97</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td8">
+                           <span>98</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td9">
+                           <span>99</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="td td10 pink">
+                            <span>?</span>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                    <div class="point point1 v_hidden"></div>
+                    <div class="step6_point step6_point1 img_point__wrap dp_none">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP4_POINT1.png" class="img" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step7" style="display: none">
+                <!-- step7 시작부분 -->
+                <div class="main__container">
+                  <div class="full_content_comm dp_flex dp_flex_column">
+                    <div class="step7_top_box dp_flex">
+                      <div class="text_box left_text_box dp_flex v_hidden">9</div>
+                      <div class="arrow v_hidden">
+                        <div class="point">바로 뒤의 수</div>
+                      </div>
+                      <div class="text_box right_text_box dp_flex v_hidden">10</div>
+                    </div>
+                    <div class="step7_btm_box dp_flex">
+                      <div class="text_box left_text_box dp_flex v_hidden">99</div>
+                      <div class="arrow v_hidden">
+                        <div class="point">바로 뒤의 수</div>
+                      </div>
+                      <div class="text_box right_text_box dp_flex v_hidden">100</div>
+                    </div>
+                  </div>
+                  <footer class="check_footer">
+                    <div class="check_footer_inner">
+                      <div class="check_footer_text">
+                        <div class="hint"></div>
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_1_4/STEP7_FOOTER_TXT.png?=t" class="img img1" />
+                      </div>
+                      <div class="check_footer_ch">
+                        <div class="check_footer_ch_head"></div>
+                        <div class="check_footer_ch_body"></div>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+
+              <ul class="step-list">
+                <li class="step-list_item active"></li>
+                <li class="step-list_item"></li>
+              </ul>
+            </div>
+          </main>
+          <div class="main_prev-next">
+            <button class="btn-prev" style="display: none">이전버튼</button>
+            <!-- <button class="btn-next" style="display: block" disabled> -->
+            <button class="btn-next blinking" style="display: block">
+              다음버튼
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      crossorigin
+      src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"
+    ></script>
+    <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+    <script src="../../../COMM/JS/COMMON2.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNT3.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNTBTN.JS"></script>
+    <script src="../../../COMM/JS/GAME.JS"></script>
+    <script src="../../../COMM/JS/VIDEO.JS"></script>
+    <script src="../../../COMM/JS/VIDEO-HTTP-STREAMING.JS"></script>
+    <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+    <script>
+      /*
+       * 데이터
+       */
+      let intro = {
+        type: "concept", //concept 개념익히기, checkExam 확인문제
+        title: "수의 순서를 알아볼까요",
+        subTitle: [
+          "1만큼 더 작은 수, 1만큼 더 큰 수를 알 수 있어요.",
+          "100까지의 수의 순서를 알 수 있어요.",
+        ],
+        sound: ["../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_001.mp3"],
+      };
+
+      //현재 페이지
+      let disStep = 1;
+
+      let pageData = [
+        {
+          step: 1,
+          title: "책의 번호를 알아봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_001.mp3",
+          headerPage: [1, 2],
+          footerPage: [1, 2],
+          prev: 0,
+          next: 1,
+        },
+        {
+          step: 2,
+          title: "책의 번호를 알아봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_001.mp3",
+          headerPage: [1, 2],
+          footerPage: [2, 2],
+          prev: 1,
+          next: 0,
+        },
+        {
+          step: 3,
+          title: "",
+          sound: "",
+          headerPage: [0, 0],
+          footerPage: [0, 0],
+          prev: 1,
+          next: 1,
+        },
+        {
+          step: 4,
+          title: "수의 순서를 알아봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_027.mp3",
+          headerPage: [2, 2],
+          footerPage: [1, 3],
+          prev: 3,
+          next: 1,
+        },
+        {
+          step: 5,
+          title: "수의 순서를 알아봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_027.mp3",
+          headerPage: [2, 2],
+          footerPage: [2, 3],
+          prev: 1,
+          next: 1,
+        },
+        {
+          step: 6,
+          title: "수의 순서를 알아봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_027.mp3",
+          headerPage: [2, 2],
+          footerPage: [3, 3],
+          prev: 1,
+          next: 0,
+        },
+        {
+          step: 7,
+          title: "",
+          sound: "",
+          headerPage: [0, 0],
+          footerPage: [0, 0],
+          prev: 1,
+          next: 0,
+        },
+      ];
+      
+      function pageAction() {
+        console.log("disStep ::: ", disStep);
+        //setTimeout 초기화
+        const TimeoutId = setTimeout(() => console.log("timeout clear"), 1);
+        for (let i = 0; i < TimeoutId; i++) {
+          clearTimeout(i);
+        }
+        stepSet();
+        switch (disStep) {
+          case 1:
+            step1.reset();
+            step1.start();
+            break;
+          case 2:
+            step2.reset();
+            step2.start();
+            break;
+          case 3:
+            step3.reset();
+            step3.start();
+            break;
+          case 4:
+            step4.reset();
+            step4.start();
+            break;
+          case 5:
+            step5.reset();
+            step5.start();
+            break;
+          case 6:
+            step6.reset();
+            step6.start();
+            break;
+          case 7:
+            step7.reset();
+            step7.start();
+            break;
+        }
+      }
+
+      //문제 시작
+      //================STEP1==============
+      const step1 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_001.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_002.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_003.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_004.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_005.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step1 .step1_top_box').addClass('blinking');
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step1 .step1_top_box').removeClass('blinking');
+              }
+            },
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                $('.step1 .step1_mid_box').css('display', 'flex');
+              }
+            },
+            {
+              idx: 5,
+              type: 'start',
+              callback: () => {
+                $('.step1 .step1_mid_box .circle_box2').addClass('on');
+                $('.step1 .step1_mid_box .circle_box3').addClass('on onBefore');
+                $('.step1 .step1_mid_box .circle_box4').addClass('on onBefore');
+                timerSet(() => {
+                  timerInit();
+                  $('.step1 .step1_mid_box .circle_box').removeClass('on onBefore');
+                  $('.step1 .step1_btm_box').css('display', 'flex');
+                }, 4000);
+              }
+            },
+            {
+              idx: 5,
+              type: 'end',
+              callback: () => {
+                // 빈칸 깜빡이기 (키패드 노출)
+                let keypadTxtEl1 = $('.step1 .keypad_txt1');
+                keypadTxtEl1.addClass("blink").click(() => {
+                  keypadTxtEl1.removeClass('blink');
+                  keypadSetOn(keypadTxtEl1, 14, 14);
+                  step1.keypadSetClick(keypadTxtEl1);
+                });
+              }
+            },
+          ]);
+        },
+        keypadSetClick: (btn) => {
+          $(document).on('click', keypadBtnCheckEl, () => {
+            if (keypadInput == btn.data('val')) {
+              keypadSetCorrect(btn);
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.MP3",
+              ], [
+                {
+                  idx: 1,
+                  type: 'end',
+                  callback: () => {
+                    // 빈칸 깜빡이기 (키패드 노출)
+                    let keypadTxtEl3 = $('.step1 .keypad_txt2');
+
+                    keypadTxtEl3.addClass("blink").click(() => {
+                      keypadTxtEl3.removeClass('blink');
+                      keypadSetOn(keypadTxtEl3, 984, 14);
+                      step1.keypadSetClick2(keypadTxtEl3);
+                    });
+                  }
+                }
+              ]);
+            } else {
+              keypadSetOff(btn);
+              btn.addClass('blink');
+
+              audioSet([
+                "../../../COMM/SOUND/WRONG.MP3",
+                "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_006.mp3",
+              ]);
+            }
+          });
+        },
+        keypadSetClick2: (btn) => {
+          $(document).on('click', keypadBtnCheckEl, () => {
+            if (keypadInput == btn.data('val')) {
+              keypadSetCorrect(btn);
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.MP3",
+                "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_008.mp3",
+                "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_009.mp3",
+                "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_010.mp3",
+              ], [
+                {
+                  idx: 3,
+                  type: 'start',
+                  callback: () => {
+                    $('.step1 .step1_mid_box .circle_box2').empty().html('<span>91</span>');
+                    $('.step1 .step1_mid_box .circle_box2 span').addClass('blinking');
+                  }
+                },
+                {
+                  idx: 4,
+                  type: 'start',
+                  callback: () => {
+                    $('.step1 .step1_mid_box .circle_box span').removeClass('blinking');
+                    $('.step1 .step1_mid_box .circle_box4').empty().html('<span>93</span>');
+                    $('.step1 .step1_mid_box .circle_box4 span').addClass('blinking');
+                  }
+                },
+                {
+                  idx: 4,
+                  type: 'end',
+                  callback: () => {
+                    $('.step1 .step1_mid_box .circle_box span').removeClass('blinking');
+                    correctly();
+                  }
+                },
+              ]);
+            } else {
+              keypadSetOff(btn);
+              btn.addClass('blink');
+
+              audioSet([
+                "../../../COMM/SOUND/WRONG.MP3",
+                "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_007.mp3",
+              ]);
+            }
+          });
+        },
+        reset: () => {
+          keypadSetInit();
+
+          $('.step1 .dp_none').css('display', '');
+          $('.step1 .v_hidden').css('visibility', '');
+          $('.step1 .step1_mid_box .circle_box').removeClass('on onBefore');
+          $('.step1 .step1_mid_box .circle_box span').removeClass('blinking');
+          $('.step1 .step1_mid_box .circle_box2').empty().html('?');
+          $('.step1 .step1_mid_box .circle_box4').empty().html('?');
+        },
+      };
+      //================STEP2==============
+      const step2 = {
+        start: () => {
+          timerSet(() => {
+            timerInit();
+            audioSet([
+              "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_011.mp3",
+            ], [
+              {
+                idx: 1,
+                type: 'start',
+                callback: () => {
+                  $('.step2 .step1_mid_box .circle_box7').addClass('on');
+                  $('.step2 .step1_mid_box .circle_box8').addClass('on onBefore');
+                  $('.step2 .step1_mid_box .circle_box9').addClass('on onBefore');
+                  timerSet(() => {
+                    timerInit();
+                    $('.step2 .step1_mid_box .circle_box').removeClass('on onBefore');
+                    $('.step2 .step1_btm_box').css('display', 'flex');
+                  }, 4000);
+                }
+              },
+              {
+                idx: 1,
+                type: 'end',
+                callback: () => {
+                  // 빈칸 깜빡이기 (키패드 노출)
+                  let keypadTxtEl1 = $('.step2 .keypad_txt1');
+                  keypadTxtEl1.addClass("blink").click(() => {
+                    keypadTxtEl1.removeClass('blink');
+                    keypadSetOn(keypadTxtEl1, 14, 14);
+                    step2.keypadSetClick(keypadTxtEl1);
+                  });
+                }
+              },
+            ]);
+          }, 500);
+        },
+        keypadSetClick: (btn) => {
+          $(document).on('click', keypadBtnCheckEl, () => {
+            if (keypadInput == btn.data('val')) {
+              keypadSetCorrect(btn);
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.MP3",
+              ], [
+                {
+                  idx: 1,
+                  type: 'end',
+                  callback: () => {
+                    // 빈칸 깜빡이기 (키패드 노출)
+                    let keypadTxtEl3 = $('.step2 .keypad_txt2');
+
+                    keypadTxtEl3.addClass("blink").click(() => {
+                      keypadTxtEl3.removeClass('blink');
+                      keypadSetOn(keypadTxtEl3, 984, 14);
+                      step2.keypadSetClick2(keypadTxtEl3);
+                    });
+                  }
+                }
+              ]);
+            } else {
+              keypadSetOff(btn);
+              btn.addClass('blink');
+
+              audioSet([
+                "../../../COMM/SOUND/WRONG.MP3",
+                "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_012.mp3",
+              ]);
+            }
+          });
+        },
+        keypadSetClick2: (btn) => {
+          $(document).on('click', keypadBtnCheckEl, () => {
+            if (keypadInput == btn.data('val')) {
+              keypadSetCorrect(btn);
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.MP3",
+                "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_014.mp3",
+                "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_015.mp3",
+                "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_016.mp3",
+              ], [
+                {
+                  idx: 3,
+                  type: 'start',
+                  callback: () => {
+                    $('.step2 .step1_mid_box .circle_box7').empty().html('<span>96</span>');
+                    $('.step2 .step1_mid_box .circle_box7 span').addClass('blinking');
+                  }
+                },
+                {
+                  idx: 4,
+                  type: 'start',
+                  callback: () => {
+                    $('.step2 .step1_mid_box .circle_box span').removeClass('blinking');
+                    $('.step2 .step1_mid_box .circle_box9').empty().html('<span>98</span>');
+                    $('.step2 .step1_mid_box .circle_box9 span').addClass('blinking');
+                  }
+                },
+                {
+                  idx: 4,
+                  type: 'end',
+                  callback: () => {
+                    $('.step2 .step1_mid_box .circle_box span').removeClass('blinking');
+                    disStep++;
+                    pageAction();
+                  }
+                },
+              ]);
+            } else {
+              keypadSetOff(btn);
+              btn.addClass('blink');
+
+              audioSet([
+                "../../../COMM/SOUND/WRONG.MP3",
+                "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_013.mp3",
+              ]);
+            }
+          });
+        },
+        reset: () => {
+          keypadSetInit();
+
+          $('.step2 .dp_none').css('display', '');
+          $('.step2 .v_hidden').css('visibility', '');
+          $('.step2 .step1_mid_box .circle_box').removeClass('on onBefore');
+          $('.step2 .step1_mid_box .circle_box span').removeClass('blinking');
+          $('.step2 .step1_mid_box .circle_box7').empty().html('?');
+          $('.step2 .step1_mid_box .circle_box9').empty().html('?');
+        },
+      };
+      //================STEP3==============
+      const step3 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_017.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_018.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_019.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_020.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_021.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_022.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_023.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_024.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_025.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_026.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step3 .step3_point1').css('display', 'block').addClass('spining');
+                $('.step3 .step3_point1_2').css('display', 'block').addClass('spining');
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step3 .step3_point1').css('display', 'none').removeClass('spining');
+                $('.step3 .step3_point1_2').css('display', 'none').removeClass('spining');
+                $('.step3 .tag1').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step3 .tag1').css('visibility', 'hidden');
+                $('.step3 .add').css('visibility', 'visible').addClass('blinking');
+                timerSet(() => {
+                  timerInit();
+                  $('.step3 .add').removeClass('blinking');
+                }, 3000);
+              }
+            },
+            {
+              idx: 6,
+              type: 'start',
+              callback: () => {
+                $('.step3 .step3_point2').css('display', 'block').addClass('spining');
+                $('.step3 .step3_point2_2').css('display', 'block').addClass('spining');
+              }
+            },
+            {
+              idx: 7,
+              type: 'start',
+              callback: () => {
+                $('.step3 .step3_point2').css('display', 'none').removeClass('spining');
+                $('.step3 .step3_point2_2').css('display', 'none').removeClass('spining');
+                $('.step3 .tag2').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 8,
+              type: 'start',
+              callback: () => {
+                $('.step3 .tag2').css('visibility', 'hidden');
+                $('.step3 .subtract').css('visibility', 'visible').addClass('blinking');
+                timerSet(() => {
+                  timerInit();
+                  $('.step3 .subtract').removeClass('blinking');
+                }, 3000);
+              }
+            },
+            {
+              idx: 9,
+              type: 'start',
+              callback: () => {
+                $('.step3 .check_footer_inner').addClass('slideUp');
+              }
+            },
+            {
+              idx: 10,
+              type: 'end',
+              callback: () => {
+                correctly();
+              }
+            },
+          ]);
+        },
+        reset: () => {
+          $('.step3 .dp_none').css('display', '');
+          $('.step3 .v_hidden').css('visibility', '');
+          $('.step3 .step3_point').removeClass('spining');
+          $('.step3 .add').removeClass('blinking');
+          $('.step3 .check_footer_inner').removeClass('slideUp');
+        },
+      };
+      //================STEP4==============
+      const step4 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_027.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_028.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_029.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step4 .number_board_table .td span').addClass('blinking');
+                timerSet(() => {
+                  timerInit();
+                  $('.step4 .number_board_table .td span').removeClass('blinking');
+                }, 4000);
+              }
+            },
+            {
+              idx: 3,
+              type: 'end',
+              callback: () => {
+                $('.step4 .step4_quiz_box1').css('visibility', 'visible');
+                $('.step4 .number_board_table .point1').css('visibility', 'visible').addClass('box_blink2');
+                quizSelectSetInit($('.step4 .step4_quiz_box1'), ["88", "67", "90", "65"]);
+                quizSelectSetOnNew(4, step4.quizSelectCorrect, $('.step4 .number_board_table .tr2 .td5 span'), false);
+              }
+            },
+          ]);
+        },
+        quizSelectCorrect: (flag) =>{
+          if(flag){
+            $('.step4 .number_board_table .point').css('visibility', 'hidden').removeClass('box_blink2');
+
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+            ], [
+              {
+                idx: 1, 
+                type: 'end',
+                callback: () => {
+                  $('.step4 .number_board_table .point2').css('visibility', 'visible').addClass('box_blink2');
+                  quizSelectSetInit($('.step4 .step4_quiz_box1'), ["88", "67", "90", "65"]);
+                  quizSelectSetOnNew(2, step4.quizSelectCorrect2, $('.step4 .number_board_table .tr2 .td7 span'), false);
+                }
+              }
+            ]);
+          }else{
+            audioSet([
+              "../../../COMM/SOUND/WRONG.mp3",
+              "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_030.mp3",
+            ], [
+              {
+                idx: 1,
+                type: 'start',
+                callback: () => {
+                  $('.step4 button').removeClass('selected').addClass('unselected');
+                }
+              },
+            ]);
+          }
+        },
+        quizSelectCorrect2: (flag) =>{
+          if(flag){
+            $('.step4 .number_board_table .point').css('visibility', 'hidden').removeClass('box_blink2');
+
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+            ], [
+              {
+                idx: 1, 
+                type: 'end',
+                callback: () => {
+                  $('.step4 .number_board_table .point3').css('visibility', 'visible').addClass('box_blink2');
+                  quizSelectSetInit($('.step4 .step4_quiz_box1'), ["88", "67", "90", "65"]);
+                  quizSelectSetOnNew(1, step4.quizSelectCorrect3, $('.step4 .number_board_table .tr4 .td8 span'), false);
+                }
+              }
+            ]);
+          }else{
+            audioSet([
+              "../../../COMM/SOUND/WRONG.mp3",
+              "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_031.mp3",
+            ], [
+              {
+                idx: 1,
+                type: 'start',
+                callback: () => {
+                  $('.step4 button').removeClass('selected').addClass('unselected');
+                }
+              },
+            ]);
+          }
+        },
+        quizSelectCorrect3: (flag) =>{
+          if(flag){
+            $('.step4 .number_board_table .point').css('visibility', 'hidden').removeClass('box_blink2');
+
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+            ], [
+              {
+                idx: 1, 
+                type: 'end',
+                callback: () => {
+                  $('.step4 .number_board_table .point4').css('visibility', 'visible').addClass('box_blink2');
+                  quizSelectSetInit($('.step4 .step4_quiz_box1'), ["88", "67", "90", "65"]);
+                  quizSelectSetOnNew(3, step4.quizSelectCorrect4, $('.step4 .number_board_table .tr4 .td10 span'), true);
+                }
+              }
+            ]);
+          }else{
+            audioSet([
+              "../../../COMM/SOUND/WRONG.mp3",
+              "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_032.mp3",
+            ], [
+              {
+                idx: 1,
+                type: 'start',
+                callback: () => {
+                  $('.step4 button').removeClass('selected').addClass('unselected');
+                }
+              },
+            ]);
+          }
+        },
+        quizSelectCorrect4: (flag) =>{
+          if(flag){
+            $('.step4 .number_board_table .point').css('visibility', 'hidden').removeClass('box_blink2');
+
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+              "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_034.mp3",
+              "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_035.mp3",
+              "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_036.mp3",
+              "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_037.mp3",
+              "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_038.mp3",
+              "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_039.mp3",
+            ], [
+              {
+                idx: 3, 
+                type: 'start',
+                callback: () => {
+                  $('.step4 .tr2 .td6 span, .step4 .tr4 .td9 span').addClass('highlight red');
+                  $('.step4 .step4_point1').css('display', 'block').addClass('spining');
+                  $('.step4 .step4_point2').css('display', 'block').addClass('spining');
+                }
+              },
+              {
+                idx: 4, 
+                type: 'start',
+                callback: () => {
+                  $('.step4 .step4_point1').css('display', 'none').removeClass('spining');
+                  $('.step4 .step4_point2').css('display', 'none').removeClass('spining');
+                  $('.step4 .step4_point3').css('display', 'block').addClass('spining');
+                  $('.step4 .step4_point4').css('display', 'block').addClass('spining');
+                }
+              },
+              {
+                idx: 5, 
+                type: 'start',
+                callback: () => {
+                  $('.step4 .step4_point3').css('display', 'none').removeClass('spining');
+                  $('.step4 .step4_point4').css('display', 'none').removeClass('spining');
+                  $('.step4 .tr2 .td6 span, .step4 .tr4 .td9 span').removeClass('highlight red');
+                }
+              },
+              {
+                idx: 6, 
+                type: 'start',
+                callback: () => {
+                  $('.step4 .number_board_table .tr5 .td10').addClass('pink');
+                }
+              },
+              {
+                idx: 7, 
+                type: 'start',
+                callback: () => {
+                  $('.step4 .number_board_table .tr5 .td10').removeClass('pink');
+                }
+              },
+              {
+                idx: 7, 
+                type: 'end',
+                callback: () => {
+                  correctly();
+                }
+              },
+            ]);
+          }else{
+            audioSet([
+              "../../../COMM/SOUND/WRONG.mp3",
+              "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_033.mp3",
+            ], [
+              {
+                idx: 1,
+                type: 'start',
+                callback: () => {
+                  $('.step4 button').removeClass('selected').addClass('unselected');
+                }
+              },
+            ]);
+          }
+        },
+        reset: () => {
+          $('.step4 .dp_none').css('display', '');
+          $('.step4 .v_hidden').css('visibility', '');
+          $('.step4 .number_board_table .td span').removeClass('blinking');
+          $('.step4 .number_board_table .point').removeClass('box_blink2');
+          $('.step4 .step4_point').removeClass('spining');
+          $('.step4 .number_board_table .tr5 .td10').removeClass('pink');
+          $('.step4 .tr2 .td6 span, .step4 .tr4 .td9 span').removeClass('highlight red');
+        },
+      };
+      //================STEP5==============
+      const step5 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_040.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_041.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_042.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_043.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_044.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step5_left_box').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step5_left_box .one_box .effect_box').css('visibility', 'visible').addClass("blinking");
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step5_left_box .one_box .effect_box').css('visibility', 'hidden').removeClass("blinking");
+                $('.step5 .step5_left_box .one_box .img1').css('display', 'none');
+                $('.step5 .step5_left_box .one_box .img2').css('display', 'block');
+              }
+            },
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                timerSet(() => {
+                  timerInit();
+                  $('.step5 .step5_right_box').css('visibility', 'visible');
+                }, 2000);
+              }
+            },
+            {
+              idx: 5,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step5_right_box .speak_box').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 5,
+              type: 'end',
+              callback: () => {
+                correctly();
+              }
+            },
+          ]);
+        },
+        reset: () => {
+          $('.step5 .dp_none').css('display', '');
+          $('.step5 .v_hidden').css('visibility', '');
+          $('.step5 .step5_left_box .one_box .effect_box').removeClass("blinking");
+          $('.step5 .step5_left_box .one_box .img1').css('display', 'block');
+        },
+      };
+      //================STEP6==============
+      const step6 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_045.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_046.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_048.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step6 .number_board_table .tr5 .td10 span').empty().html('100');
+                $('.step6 .step6_point1').css('display', 'block').addClass('spining');
+                timerSet(() => {
+                  timerInit();
+                  $('.step6 .step6_point1').css('display', 'none').removeClass('spining');
+                }, 3000);
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                timerSet(() => {
+                  timerInit();
+                  $('.step6 .number_board_table .td span').addClass('blinking');
+                  timerSet(() => {
+                    timerInit();
+                    $('.step6 .number_board_table .td span').removeClass('blinking');
+                  }, 4000);
+                }, 1000);
+              }
+            },
+            {
+              idx: 3,
+              type: 'end',
+              callback: () => {
+                timerSet(() => {
+                  timerInit();
+                  disStep++;
+                  pageAction();
+                }, 1000);
+              }
+            },
+          ]);
+        },
+        reset: () => {
+          $('.step6 .dp_none').css('display', '');
+          $('.step6 .v_hidden').css('visibility', '');
+          $('.step6 .number_board_table .point1').removeClass('box_blink2');
+          $('.step6 .number_board_table .tr5 .td10 span').empty().html('?');
+          $('.step6 .number_board_table .td span').removeClass('blinking');
+          $('.step6 .step6_point').removeClass('spining');
+        },
+      };
+      //================STEP7==============
+      const step7 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_049.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_050.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_051.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_052.mp3",
+            "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_053.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step7 .step7_top_box .left_text_box').css('visibility', 'visible');
+                timerSet(() => {
+                  timerInit();
+                  $('.step7 .step7_top_box .arrow').css('visibility', 'visible');
+                  timerSet(() => {
+                    timerInit();
+                    $('.step7 .step7_top_box .right_text_box').css('visibility', 'visible');
+                  }, 1500);
+                }, 500);
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                timerSet(() => {
+                  timerInit();
+                  $('.step7 .step7_btm_box .left_text_box').css('visibility', 'visible');
+                  timerSet(() => {
+                    timerInit();
+                    $('.step7 .step7_btm_box .arrow').css('visibility', 'visible');
+                  }, 1000);
+                }, 1000);
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step7 .step7_btm_box .right_text_box').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                $('.step7 .check_footer_inner').addClass('slideUp');
+              }
+            },
+            {
+              idx: 5,
+              type: 'end',
+              callback: () => {
+                callFinish();
+              }
+            },
+          ]);
+        },
+        reset: () => {
+          $('.step7 .dp_none').css('display', '');
+          $('.step7 .v_hidden').css('visibility', '');
+          $('.step7 .check_footer_inner').removeClass('slideUp');
+        },
+      };
+    </script>
+  </body>
+</html>

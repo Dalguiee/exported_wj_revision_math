@@ -1,0 +1,1431 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>개정교육과정-확인문제</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="KeyWORDs" content="" />
+    <meta name="Description" content="" />
+    <meta name="Robots" content="all" />
+    <meta http-equiv="Subject" content="" />
+    <meta http-equiv="Title" content="" />
+    <meta http-equiv="Author" content="onflou " />
+    <meta http-equiv="Publisher" content="" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="Pragma" content="no-cache" />
+
+    <!-- 브라우저 호환성을 지정 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="#" />
+    <link href="../../../COMM/CSS/VIDEO.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/COMMON.CSS" rel="stylesheet" />
+    <!-- 개념익히기, 확인문제 공통 css -->
+    <link href="../../../COMM/CSS/COMMONLAYOUT.CSS" rel="stylesheet" />
+    <!-- 확인문제 공통 css-->
+    <link href="../../../COMM/CSS/CHECKEXAM.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/CHECKEXAM2.CSS" rel="stylesheet" />
+
+    <style>
+      .checkexam-warp .content-warp {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: flex;
+        /* justify-content: flex-start; */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(-50%) translateY(-50%);
+        width: 100%;
+        height: 100%;
+      }
+
+      /* hint */
+      .hint.blinking {
+        animation: 1.4s blinking infinite;
+        animation-iteration-count: 5;
+      }
+
+      /* 키패드박스 */
+      .keypadWrap.quiz-warp .quiz {
+        background-color: #fff;
+        padding: 0;
+        height: 75px;
+        width: 133px;
+      }
+
+      .keypadWrap.quiz-warp .quiz.active {
+        background-color: #fff;
+        color: #000;
+      }
+
+      .epilogue-warp {
+        margin-bottom: 167px;
+      }
+
+      /* -----------------step1------------------ */
+      .step1 .step1_line {
+        border: 1px solid #d9d9d9;
+        display: block;
+        width: 1378px;
+      }
+
+      .step1 .step1_circle {
+        position: relative;
+        bottom: 90px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .step1 .step1_circle span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 4px solid #f9a60c;
+        background-color: #ffd339;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+      }
+
+      .step1 .step1_circle span:first-of-type {
+        position: relative;
+        border: 4px solid #ff64dc;
+        background-color: #fff;
+      }
+
+      .step1 .step1_circle span:last-of-type {
+        border: 4px solid #0277ff;
+        background-color: #fff;
+      }
+
+      .step1 .step1_circle span .hint {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 4px solid #6744f3;
+        background-color: transparent;
+        left: 456px;
+      }
+
+      /* .step1 .step1_circle span .hint1 {
+        filter: blur(2px);
+      }
+      .step1 .step1_circle span .hint1 {
+        filter: blur(5px);
+      } */
+
+      .step1 .step1_circle span:first-of-type button,
+      .step1 .step1_circle span:last-of-type button {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: none;
+        position: relative;
+        z-index: 99;
+      }
+
+      .step1 .quiz.active {
+        background-color: transparent;
+        color: #000;
+      }
+
+      .step1 .epilogue-warp .step1_circle span.quizText {
+        position: absolute;
+        top: 230px;
+        width: 443px;
+        height: 96px;
+        border-radius: 10px;
+      }
+
+      .step1 .epilogue-warp .step1_circle span.quizText1 {
+        border: none;
+        background-color: #feb7ef;
+      }
+
+      .step1 .epilogue-warp .step1_circle span.quizText2 {
+        border: none;
+        background-color: #bedaff;
+      }
+      /* -----------------step2------------------ */
+      .step2 .quiz-warp {
+        background-color: #f2f5ff;
+        border-radius: 20px;
+        width: 1184px;
+        padding: 20px;
+        text-align: center;
+        line-height: 100px;
+      }
+
+      .step2 .epilogue-warp {
+        margin-bottom: 80px;
+      }
+
+      .step2 .examTextDiv {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      .step2 .examTextDiv span:nth-of-type(1) {
+        position: absolute;
+        left: 362px;
+        top: 87px;
+      }
+      .step2 .examTextDiv span:nth-of-type(2) {
+        position: absolute;
+        left: 566px;
+        top: 87px;
+      }
+      .step2 .examTextDiv span:nth-of-type(3) {
+        position: absolute;
+        left: 770px;
+        top: 87px;
+      }
+      .step2 .examTextDiv span:nth-of-type(4) {
+        position: absolute;
+        left: 976px;
+        top: 87px;
+      }
+
+      .step2 .examTextDiv span:nth-of-type(5) {
+        position: absolute;
+      }
+
+      /* -----------------step3,step4------------------ */
+
+      .step3 .epilogue-warp,
+      .step4 .epilogue-warp {
+        margin-bottom: 70px;
+      }
+      .step3 .droppable,
+      .step4 .droppable {
+        position: absolute;
+        bottom: 137px;
+        border: none;
+        z-index: 999;
+      }
+
+      .step3 .quiz-warp .quiz,
+      .step4 .quiz-warp .quiz {
+        width: 200px;
+        height: 114px;
+        padding: 32px, 60px, 32px, 60px;
+        border-radius: 20px;
+      }
+
+      .step3 .quiz-warp,
+      .step4 .quiz-warp {
+        gap: 48px;
+      }
+
+      .step3 .quiz-warp,
+      .step4 .quiz-warp {
+        height: 114px;
+        z-index: 999;
+      }
+
+      .step3 .epilogue-warp img:first-of-type,
+      .step4 .epilogue-warp img:first-of-type {
+        z-index: 99;
+      }
+
+      /* -----------------step5------------------ */
+      .step5 .quiz-warp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 603px;
+      }
+
+      .step5 .quiz-warp span {
+        margin-right: 24px;
+      }
+
+      .step5 .hint {
+        width: 160px;
+        height: 132px;
+      }
+
+      .step5 .epilogue-warp .hint {
+        left: unset;
+        top: unset;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div
+        id="contents-wrap"
+        class="test"
+        style="position: absolute; display: flex"
+      ></div>
+      <div id="contents-main" style="display: none" class="checkexam-warp">
+        <div class="checkexam-warp_inner">
+          <header class="header">
+            <div class="header_title">
+              <button class="sound-btn" onclick="titleSound()"></button>
+              <h3>그림을 보고 알맞은 것을 골라 보세요.</h3>
+            </div>
+            <ul class="step-list">
+              <li class="step-list_item active">1</li>
+              <li class="step-list_item">2</li>
+              <li class="step-list_item">3</li>
+              <li class="step-list_item">4</li>
+              <li class="step-list_item">5</li>
+            </ul>
+          </header>
+          <main class="main">
+            <div class="main_content">
+              <!-- 콘텐츠영역 -->
+              <!----------- step1 ----------->
+              <div class="step step1" style="display: none">
+                <div class="content-warp">
+                  <div class="epilogue-warp"></div>
+                  <div class="quiz-warp dp_flex keypadWrap"></div>
+                </div>
+              </div>
+              <!----------- step2 ----------->
+              <div class="step step2" style="display: none">
+                <div class="content-warp">
+                  <div class="epilogue-warp"></div>
+                  <div class="quiz-warp keypadWrap"></div>
+                </div>
+              </div>
+              <!----------- step3 ----------->
+              <div class="step step3" style="display: none">
+                <div class="content-warp">
+                  <div class="epilogue-warp dp_flex"></div>
+                  <div class="answer-warp dp_flex"></div>
+                  <div class="quiz-warp dp_flex"></div>
+                </div>
+              </div>
+              <!----------- step4 ----------->
+              <div class="step step4" style="display: none">
+                <div class="content-warp">
+                  <div class="epilogue-warp dp_flex"></div>
+                  <div class="answer-warp dp_flex"></div>
+                  <div class="quiz-warp dp_flex"></div>
+                </div>
+              </div>
+              <!----------- step5 ----------->
+              <div class="step step5" style="display: none">
+                <div class="content-warp">
+                  <div class="epilogue-warp"></div>
+                  <div class="quiz-warp keypadWrap"></div>
+                </div>
+              </div>
+              <!----------- step 끝 ----------->
+            </div>
+          </main>
+          <div class="main_prev-next">
+            <button class="btn-prev" style="display: none">이전버튼</button>
+            <button class="btn-next" style="display: block" disabled>
+              다음버튼
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- 키패드 -->
+      <div class="key-pad" style="display: none">
+        <button class="key-pad_btn">1</button>
+        <button class="key-pad_btn">2</button>
+        <button class="key-pad_btn">3</button>
+        <button class="key-pad_btn">4</button>
+        <button class="key-pad_btn">5</button>
+        <button class="key-pad_btn-back"></button>
+        <button class="key-pad_btn">6</button>
+        <button class="key-pad_btn">7</button>
+        <button class="key-pad_btn">8</button>
+        <button class="key-pad_btn">9</button>
+        <button class="key-pad_btn">0</button>
+        <button class="key-pad_btn-check"></button>
+      </div>
+      <!-- 정답 시 나타나는 캐릭터 -->
+      <div class="reaction">
+        <div class="re-body"></div>
+      </div>
+      <!-- 힌트 박스 -->
+      <div class="hintBox-warp">
+        <div class="hintBox">
+          <div class="hintBox_character">
+            <div class="hintBox_character_inner"></div>
+          </div>
+          <div class="hintBox_text-box"></div>
+        </div>
+      </div>
+    </div>
+    <script
+      crossorigin
+      src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"
+    ></script>
+    <script src="../../../COMM/JS/COMMON2.JS"></script>
+    <script src="../../../COMM/JS/CHECKEXAM2.JS"></script>
+    <script src="../../../COMM/JS/GAME.JS"></script>
+    <script src="../../../COMM/JS/VIDEO.JS"></script>
+    <script src="../../../COMM/JS/VIDEO-HTTP-STREAMING.JS"></script>
+    <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+    <script src="../../../COMM/JS/GAMEDATASET2.JSON"></script>
+    <script>
+      // Y - 전체 문제 확인
+      // (공백) - 랜덤 문제 (운영 단계 필수)
+      const developMode = "";
+
+      /*
+       * 데이터
+       */
+      const videoURL =
+        "http://hlsmedia.wjthinkbig.com/hlsmedia/_definst_/smil:hlsmedia/BOOKCLUB/NFTF/MP4/MATH/GR11/1/GR11_1_5713025.SMIL/playlist.m3u8";
+
+      //페이지 정보
+      const grade = "grade1"; //학년
+      const unit = "unit1"; //단원
+      const chapter = 4; //차시
+
+      // if (dataset[grade][unit][chapter]) {
+      const gameData = JSON.parse(
+        JSON.stringify(dataset[grade][unit][chapter])
+      );
+      // }
+
+      let intro = {
+        type: "checkExam", //concept 개념익히기, checkExam 확인문제
+        title: "수의 순서를 알아볼까요",
+        subTitle: [
+          "1만큼 더 작은 수, 1만큼 더 큰 수를 알 수 있어요.",
+          "100까지의 수의 순서를 알 수 있어요.",
+        ],
+        sound: "../../../COMM/SOUND/2_5_3/2_1_5-3_029.mp3",
+      };
+
+      let pageData = [
+        // 1문항
+        {
+          title: "빈칸에 알맞은 수를 써넣으세요.",
+          sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_054.mp3",
+          quiz: {
+            type: "keypad",
+            hint: "",
+            sound: "",
+            data: [
+              {
+                type1Hint: [
+                  {
+                    hint: "63 바로 앞의 수는 62야.",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_055.mp3",
+                  },
+                  {
+                    hint: "63 바로 뒤의 수는 64야.",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_056.mp3",
+                  },
+                ],
+                sound: "../../../COMM/SOUND/1_1_2/1_1_1-2_001.mp3",
+                answer: [62, 64],
+                markup: {
+                  examImg: "../../../COMM/IMG/TEST3/1_1_3/TYPE1_EXAM_1.png",
+                  quizText: 63,
+                },
+              },
+              {
+                type1Hint: [
+                  {
+                    hint: "75 바로 앞의 수는 74야.",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_057.mp3",
+                  },
+                  {
+                    hint: "75 바로 뒤의 수는 76이야.",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_058.mp3",
+                  },
+                ],
+                sound: "../../../COMM/SOUND/1_1_2/1_1_1-2_001.mp3",
+                answer: [74, 76],
+                markup: {
+                  examImg: "../../../COMM/IMG/TEST3/1_1_3/TYPE1_EXAM_1.png",
+                  quizText: 75,
+                },
+              },
+              {
+                type1Hint: [
+                  {
+                    hint: "79 바로 앞의 수는 78이야.",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_059.mp3",
+                  },
+                  {
+                    hint: "79 바로 뒤의 수는 80이야.",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_060.mp3",
+                  },
+                ],
+                sound: "../../../COMM/SOUND/1_1_2/1_1_1-2_001.mp3",
+                answer: [78, 80],
+                markup: {
+                  examImg: "../../../COMM/IMG/TEST3/1_1_3/TYPE1_EXAM_1.png",
+                  quizText: 79,
+                },
+              },
+              {
+                type1Hint: [
+                  {
+                    hint: "85 바로 앞의 수는 84야.",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_061.mp3",
+                  },
+                  {
+                    hint: "85 바로 뒤의 수는 86이야.",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_062.mp3",
+                  },
+                ],
+                sound: "../../../COMM/SOUND/1_1_2/1_1_1-2_001.mp3",
+                answer: [84, 86],
+                markup: {
+                  examImg: "../../../COMM/IMG/TEST3/1_1_3/TYPE1_EXAM_1.png",
+                  quizText: 85,
+                },
+              },
+              {
+                type1Hint: [
+                  {
+                    hint: "90 바로 앞의 수는 89야.",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_063.mp3",
+                  },
+                  {
+                    hint: "90 바로 뒤의 수는 91이야.",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_064.mp3",
+                  },
+                ],
+                sound: "../../../COMM/SOUND/1_1_2/1_1_1-2_001.mp3",
+                answer: [89, 91],
+                markup: {
+                  examImg: "../../../COMM/IMG/TEST3/1_1_3/TYPE1_EXAM_1.png",
+                  quizText: 90,
+                },
+              },
+            ],
+          },
+        },
+
+        // 2문항
+        {
+          title: "□ 안에 알맞은 수를 써넣으세요.",
+          sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_065.mp3",
+          quiz: {
+            type: "keypad",
+            data: [
+              {
+                id: 1,
+                answer: [72, 74],
+                type2Hint: [
+                  {
+                    hint: "73 바로 앞의 수는 72야. ",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_066.mp3",
+                    txt: 9,
+                  },
+                  {
+                    hint: "73 바로 뒤의 수는 74야.",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_067.mp3",
+                    txt: 8,
+                  },
+                ],
+                markup: {
+                  quizText:
+                    "<span>73보다 1만큼 더 작은 수는</span> <button class='quiz key-pad-on quizbtn_1' data-val='1' data-max='2'>?</button>이고,",
+                  examText: [71, 72, 73, 74, 75],
+                },
+              },
+
+              {
+                id: 2,
+                answer: [67, 69],
+                type2Hint: [
+                  {
+                    hint: "68 바로 앞의 수는 67이야. ",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_068.mp3",
+                    txt: 9,
+                  },
+                  {
+                    hint: "68 바로 뒤의 수는 69야.",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_069.mp3",
+                    txt: 8,
+                  },
+                ],
+                markup: {
+                  quizText:
+                    "<span>68보다 1만큼 더 작은 수는</span> <button class='quiz key-pad-on quizbtn_1' data-val='1' data-max='2'>?</button>이고,",
+                  examText: [66, 67, 68, 69, 70],
+                },
+              },
+
+              {
+                id: 3,
+                answer: [53, 55],
+                type2Hint: [
+                  {
+                    hint: "54 바로 앞의 수는 53이야. ",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_070.mp3",
+                    txt: 9,
+                  },
+                  {
+                    hint: "54 바로 뒤의 수는 55야.",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_071.mp3",
+                    txt: 8,
+                  },
+                ],
+                markup: {
+                  quizText:
+                    "<span>54보다 1만큼 더 작은 수는</span> <button class='quiz key-pad-on quizbtn_1' data-val='1' data-max='2'>?</button>이고,",
+                  examText: [52, 53, 54, 55, 56],
+                },
+              },
+
+              {
+                id: 4,
+                answer: [88, 90],
+                type2Hint: [
+                  {
+                    hint: "89 바로 앞의 수는 88이야. ",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_072.mp3",
+                    txt: 9,
+                  },
+                  {
+                    hint: "89 바로 뒤의 수는 90이야.",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_073.mp3",
+                    txt: 8,
+                  },
+                ],
+                markup: {
+                  quizText:
+                    "<span>89보다 1만큼 더 작은 수는</span> <button class='quiz key-pad-on quizbtn_1' data-val='1' data-max='2'>?</button>이고,",
+                  examText: [87, 88, 89, 90, 91],
+                },
+              },
+              {
+                id: 5,
+                answer: [98, 100],
+                type2Hint: [
+                  {
+                    hint: "99 바로 앞의 수는 98이야. ",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_074.mp3",
+                    txt: 9,
+                  },
+                  {
+                    hint: "99 바로 뒤의 수는 100이야.",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_075.mp3",
+                    txt: 8,
+                  },
+                ],
+                markup: {
+                  quizText:
+                    "<span>99보다 1만큼 더 작은 수는</span> <button class='quiz key-pad-on quizbtn_1' data-val='1' data-max='2'>?</button>이고,",
+                  examText: [96, 97, 98, 99, 100],
+                },
+              },
+            ],
+          },
+        },
+
+        // 3문항
+        {
+          title: "수의 순서대로 빈칸에 알맞은 수를 넣으세요.",
+          sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_076.mp3",
+          quiz: {
+            type: "dnd",
+            data: [
+              {
+                hint: "66부터 수를 순서대로 쓰면 66, 67, 68, 69, 70이야.",
+                sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_077.mp3",
+                answer: [3, 2],
+                answerTxt: [68, 70],
+                id: 1,
+                list: [
+                  { text: 71, val: 1 },
+                  { text: 70, val: 2 },
+                  { text: 68, val: 3 },
+                  { text: 60, val: 4 },
+                ],
+                markup: {
+                  img: "../../../COMM/IMG/TEST3/1_1_4/TYPE3_EXAM_1.png",
+                },
+              },
+              {
+                hint: "57부터 수를 순서대로 쓰면 57, 58, 59, 60, 61이야.",
+                sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_078.mp3",
+                answer: [3, 1],
+                answerTxt: [58, 60],
+                id: 2,
+                list: [
+                  { text: 60, val: 1 },
+                  { text: 50, val: 2 },
+                  { text: 58, val: 3 },
+                  { text: 56, val: 4 },
+                ],
+                markup: {
+                  img: "../../../COMM/IMG/TEST3/1_1_4/TYPE3_EXAM_2.png",
+                },
+              },
+              {
+                hint: "73부터 수를 순서대로 쓰면 73, 74, 75, 76, 77이야.",
+                sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_079.mp3",
+                answer: [2, 3],
+                answerTxt: [74, 75],
+                id: 3,
+                list: [
+                  { text: 72, val: 1 },
+                  { text: 74, val: 2 },
+                  { text: 75, val: 3 },
+                  { text: 78, val: 4 },
+                ],
+                markup: {
+                  img: "../../../COMM/IMG/TEST3/1_1_4/TYPE3_EXAM_3.png",
+                },
+              },
+              {
+                hint: "89부터 수를 순서대로 쓰면 89, 90, 91, 92, 93이야.",
+                sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_080.mp3",
+                answer: [3, 1],
+                answerTxt: [90, 93],
+                id: 4,
+                list: [
+                  { text: 93, val: 1 },
+                  { text: 88, val: 2 },
+                  { text: 90, val: 3 },
+                  { text: 87, val: 4 },
+                ],
+                markup: {
+                  img: "../../../COMM/IMG/TEST3/1_1_4/TYPE3_EXAM_4.png",
+                },
+              },
+              {
+                hint: "96부터 수를 순서대로 쓰면 96, 97, 98, 99, 100이야.",
+                sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_081.mp3",
+                answer: [2, 4],
+                answerTxt: [98, 100],
+                id: 5,
+                list: [
+                  { text: 89, val: 1 },
+                  { text: 98, val: 2 },
+                  { text: 95, val: 3 },
+                  { text: 100, val: 4 },
+                ],
+                markup: {
+                  img: "../../../COMM/IMG/TEST3/1_1_4/TYPE3_EXAM_5.png",
+                },
+              },
+            ],
+          },
+        },
+
+        // 4문항
+        {
+          title: "수를 거꾸로 세어 빈칸에 알맞은 수를 넣으세요.",
+          sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_082.mp3",
+          quiz: {
+            type: "dnd",
+            data: [
+              {
+                hint: "88부터 수를 거꾸로 세면 88, 87, 86, 85, 84야.",
+                sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_083.mp3",
+                answer: [2, 4],
+                answerTxt: [87, 84],
+                id: 1,
+                list: [
+                  { text: 83, val: 1 },
+                  { text: 87, val: 2 },
+                  { text: 89, val: 3 },
+                  { text: 84, val: 4 },
+                ],
+                markup: {
+                  img: "../../../COMM/IMG/TEST3/1_1_4/TYPE4_EXAM_1.png",
+                },
+              },
+              {
+                hint: "56부터 수를 거꾸로 세면 56, 55, 54, 53, 52야.",
+                sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_084.mp3",
+                answer: [1, 3],
+                answerTxt: [55, 54],
+                id: 2,
+                list: [
+                  { text: 55, val: 1 },
+                  { text: 51, val: 2 },
+                  { text: 54, val: 3 },
+                  { text: 49, val: 4 },
+                ],
+                markup: {
+                  img: "../../../COMM/IMG/TEST3/1_1_4/TYPE4_EXAM_2.png",
+                },
+              },
+              {
+                hint: "71부터 수를 거꾸로 세면 71, 70, 69, 68, 67이야.",
+                sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_085.mp3",
+                answer: [1, 4],
+                answerTxt: [70, 69],
+                id: 3,
+                list: [
+                  { text: 70, val: 1 },
+                  { text: 72, val: 2 },
+                  { text: 66, val: 3 },
+                  { text: 69, val: 4 },
+                ],
+                markup: {
+                  img: "../../../COMM/IMG/TEST3/1_1_4/TYPE4_EXAM_3.png",
+                },
+              },
+              {
+                hint: "100부터 수를 거꾸로 세면 100, 99, 98, 97, 96이야.",
+                sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_086.mp3",
+                answer: [1, 4],
+                answerTxt: [98, 97],
+                id: 4,
+                list: [
+                  { text: 98, val: 1 },
+                  { text: 89, val: 2 },
+                  { text: 95, val: 3 },
+                  { text: 97, val: 4 },
+                ],
+                markup: {
+                  img: "../../../COMM/IMG/TEST3/1_1_4/TYPE4_EXAM_4.png",
+                },
+              },
+              {
+                hint: "63부터 수를 거꾸로 세면 63, 62, 61, 60, 59야.",
+                sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_087.mp3",
+                answer: [3, 2],
+                answerTxt: [62, 59],
+                id: 5,
+                list: [
+                  { text: 58, val: 1 },
+                  { text: 59, val: 2 },
+                  { text: 62, val: 3 },
+                  { text: 64, val: 4 },
+                ],
+                markup: {
+                  img: "../../../COMM/IMG/TEST3/1_1_4/TYPE4_EXAM_5.png",
+                },
+              },
+            ],
+          },
+        },
+
+        // 5문항
+        {
+          title: "㉠과 ㉡에 알맞은 수를 써넣으세요.",
+          sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_088.mp3",
+          quiz: {
+            type: "keypad",
+            data: [
+              {
+                type5Hint: [
+                  {
+                    hint: "52보다 1만큼 더 큰 수야. ",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_089.mp3",
+                    txt: 9,
+                  },
+                  {
+                    hint: "68보다 1만큼 더 작은 수야.",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_090.mp3",
+                    txt: 8,
+                  },
+                ],
+                answer: [53, 67],
+                id: 1,
+                markup: {
+                  img: "../../../COMM/IMG/TEST3/1_1_4/TYPE5_EXAM_1.png",
+                },
+              },
+              {
+                type5Hint: [
+                  {
+                    hint: "62보다 1만큼 더 큰 수야.",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_091.mp3",
+                    txt: 9,
+                  },
+                  {
+                    hint: "75보다 1만큼 더 큰 수야.",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_092.mp3",
+                    txt: 8,
+                  },
+                ],
+                answer: [63, 76],
+                id: 2,
+                markup: {
+                  img: "../../../COMM/IMG/TEST3/1_1_4/TYPE5_EXAM_2.png",
+                },
+              },
+              {
+                type5Hint: [
+                  {
+                    hint: "75보다 1만큼 더 작은 수야.",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_093.mp3",
+                    txt: 9,
+                  },
+                  {
+                    hint: "87보다 1만큼 더 큰 수야.",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_094.mp3",
+                    txt: 8,
+                  },
+                ],
+                answer: [74, 88],
+                id: 3,
+                markup: {
+                  img: "../../../COMM/IMG/TEST3/1_1_4/TYPE5_EXAM_3.png",
+                },
+              },
+              {
+                type5Hint: [
+                  {
+                    hint: "88보다 1만큼 더 큰 수야.",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_095.mp3",
+                    txt: 9,
+                  },
+                  {
+                    hint: "99보다 1만큼 더 큰 수야.",
+                    sound: "../../../COMM/SOUND/SEASON2/1_1_4/1_2_1-4_096.mp3",
+                    txt: 8,
+                  },
+                ],
+                answer: [89, 100],
+                id: 4,
+                markup: {
+                  img: "../../../COMM/IMG/TEST3/1_1_4/TYPE5_EXAM_4.png",
+                },
+              },
+            ],
+          },
+        },
+      ];
+
+      let audio = new Audio();
+      //현재 페이지
+      let disStep = 1;
+      //완료된 페이지
+      let completeStep = 0;
+
+      let disQuiz = 1; // 해당 코드 수정 X
+      if (developMode == "Y") {
+        // 문제 번호 별로 확인 시 해당 코드 수정!
+        disQuiz = 1;
+      }
+      // 완료된 스텝
+      let completeQuiz = [];
+
+      //각 문항별 정답
+      let answerArr = [];
+      //정답 입력
+      let answerInput = [];
+      //몇 번 틀렸는지 체크
+      let wrongCheck = 0;
+
+      // droppable element 생성
+      const createDroppableEl = (val, idx) => {
+        let html = `
+                  <div class="epilogue droppable" data-val="${val}" data-index="${idx}">
+                    <p class="placeholder">?</p>
+                  </div>
+                `;
+
+        return html;
+      };
+
+      // 연결된 점 카운트 (선긋기형)
+      let dotToDotCount = 0;
+      let dotToDotLength = 0;
+
+      const answerSet = (idx, i = 0) => {
+        answerArr[idx] = typeData[idx][i];
+
+        // 힌트 & 힌트 사운드 setting
+        // 각 quiz data 별 hint 와 sound 있을 경우 각 quiz data의 hint 와 sound 사용
+        // 없을 경우 퀴즈 공통의 hint 와 sound 사용
+        answerArr[idx].hint = typeData[idx][i].hint
+          ? typeData[idx][i].hint
+          : pageData[idx].quiz.hint;
+        answerArr[idx].sound = typeData[idx][i].sound
+          ? typeData[idx][i].sound
+          : pageData[idx].quiz.sound;
+      };
+      // 연결된 점 카운트 (선긋기형) 끝
+
+      //힌트 힌트 여러개 일 경우 메시지
+      const showHintMessage = (text, sound) => {
+        if (text && sound) {
+          audioPlayExam(audio, [sound], (idx) => {
+            if (idx === 2) {
+              $(".hintBox-warp").removeClass("show");
+              $(".hintBox").removeClass("slideUp");
+              $(".hintBox").addClass("slideDown");
+              // $(".hint").hide();
+              $(".quiz").removeClass("key-hint");
+            }
+          });
+          $(".hintBox-warp").addClass("show");
+          $(".hintBox_text-box").html(text);
+          $(".hintBox").removeClass("slideDown");
+          $(".hintBox").addClass("slideUp");
+        }
+      };
+
+      //마지막으로 활성화 된 키패드 저장(힌트 여러개 일 경우)
+      const keyPadOnClick = (index) => {
+        $(`.step${index} .key-pad-on`).click(function () {
+          if (!lastKeyPad) {
+            lastKeyPad = $(this).data("val");
+          }
+        });
+      };
+
+      // ----------shuffle----------
+      let typeData = new Array();
+      pageData.forEach((element, idx) => {
+        if (developMode != "Y") {
+          typeData[idx] = new Array();
+          typeData[idx].push(shuffle(element.quiz.data)[0]);
+          answerSet(idx, 0);
+        } else {
+          typeData.push(element.quiz.data);
+        }
+      });
+
+      //문제 시작
+      //================STEP1==============
+      const step1 = {
+        start: () => {
+          audioPlayExam(audio, [pageData[0].sound]);
+          keyPadOnClick(1);
+          let stepClass = "step1_" + disQuiz;
+          $(`.${stepClass} .myQuizText p`).removeClass("blinking");
+        },
+        hint: () => {
+          let stepClass = "step1_" + disQuiz;
+          let hintArr = pageData[0].quiz.data[disQuiz - 1].type1Hint;
+
+          showHintMessage(
+            hintArr[lastKeyPad - 1].hint,
+            hintArr[lastKeyPad - 1].sound
+          );
+
+          $(`.${stepClass} .myQuizText p`).addClass("blinking");
+        },
+        wrong: () => {
+          // audioPlayExam(audio, ["../../../COMM/SOUND/WRONG.MP3"]);
+        },
+        complete: () => {
+          let anwer1 = answerArr[0].answer;
+          let stepClass = "step1_" + disQuiz;
+
+          $(`.${stepClass} .quizbtn_1`).html(anwer1[0]);
+          $(`.${stepClass} .quizbtn_2`).html(anwer1[1]);
+          $(`.${stepClass} .quizbtn_3`).html(anwer1[2]);
+
+          $(`.${stepClass} .hint`).css("display", "none");
+          $(`.${stepClass} .quiz`).attr("disabled", true);
+        },
+      };
+      //================STEP2==============
+      const step2 = {
+        start: () => {
+          audioPlayExam(audio, [pageData[1].sound]);
+          keyPadOnClick(2);
+          let stepClass = "step2_" + disQuiz;
+          $(`.${stepClass} .examTextDiv span`).removeClass("blinking");
+        },
+        hint: () => {
+          let stepClass = "step2_" + disQuiz;
+          let hintArr = pageData[1].quiz.data[disQuiz - 1].type2Hint;
+
+          showHintMessage(
+            hintArr[lastKeyPad - 1].hint,
+            hintArr[lastKeyPad - 1].sound
+          );
+
+          if (lastKeyPad == 1) {
+            if (pageData[1].quiz.data[disQuiz - 1].id == 1) {
+              $(`.${stepClass} .examTextDiv .examText2`).addClass("blinking");
+              $(`.${stepClass} .examTextDiv .examText4`).addClass("blinking");
+            }
+            if (
+              pageData[1].quiz.data[disQuiz - 1].id >= 2 &&
+              pageData[1].quiz.data[disQuiz - 1].id <= 4
+            ) {
+              $(`.${stepClass} .examTextDiv .examText2`).addClass("blinking");
+              $(`.${stepClass} .examTextDiv .examText3`).addClass("blinking");
+            }
+            if (pageData[1].quiz.data[disQuiz - 1].id == 5) {
+              $(`.${stepClass} .examTextDiv .examText3`).addClass("blinking");
+              $(`.${stepClass} .examTextDiv .examText4`).addClass("blinking");
+            }
+          } else {
+            pageData[1].quiz.data.forEach((el) => {
+              if (
+                pageData[1].quiz.data[disQuiz - 1].id >= 1 &&
+                pageData[1].quiz.data[disQuiz - 1].id <= 4
+              ) {
+                $(`.${stepClass} .examTextDiv span:nth-of-type(3)`).addClass(
+                  "blinking"
+                );
+                $(`.${stepClass} .examTextDiv span:nth-of-type(4)`).addClass(
+                  "blinking"
+                );
+              }
+              if (pageData[1].quiz.data[disQuiz - 1].id == 5) {
+                $(`.${stepClass} .examTextDiv span:nth-of-type(4)`).addClass(
+                  "blinking"
+                );
+                $(`.${stepClass} .examTextDiv span:nth-of-type(5)`).addClass(
+                  "blinking"
+                );
+              }
+            });
+          }
+        },
+        wrong: () => {},
+        complete: () => {
+          let anwer2 = answerArr[1].answer;
+          let stepClass = "step2_" + disQuiz;
+
+          $(`.${stepClass} .quizbtn_1`).html(anwer2[0]);
+          $(`.${stepClass} .quizbtn_2`).html(anwer2[1]);
+
+          $(`.${stepClass} .hint`).css("display", "none");
+          $(`.${stepClass} .quiz`).attr("disabled", true);
+        },
+      };
+      //================STEP3==============
+      const step3 = {
+        start: () => {
+          audioPlayExam(audio, [pageData[2].sound]);
+          let stepClass = "step3_" + disQuiz;
+        },
+        hint: () => {
+          let stepClass = "step3_" + disQuiz;
+          $(`.${stepClass} .hint`).css("display", "block");
+          $(`.${stepClass} .hint`).addClass("blinking");
+        },
+        wrong: () => {
+          audioPlayExam(audio, ["../../../COMM/SOUND/WRONG.MP3"]);
+        },
+        complete: () => {
+          let anwer3 = answerArr[2].answer;
+          let stepClass = "step3_" + disQuiz;
+
+          $(`.${stepClass} .quiz`).css("display", "none");
+          $(`.${stepClass} .hint`).css("display", "none");
+          $(`.${stepClass} .answer_box0`).html(answerArr[2].answerTxt[0]);
+          $(`.${stepClass} .answer_box1`).html(answerArr[2].answerTxt[1]);
+        },
+      };
+      //================STEP4==============
+      const step4 = {
+        start: () => {
+          let stepClass = "step4_" + disQuiz;
+          $(`.${stepClass} .hint_text`).css("display", "none");
+          audioPlayExam(audio, [pageData[3].sound]);
+        },
+        hint: () => {
+          let stepClass = "step4_" + disQuiz;
+          $(`.${stepClass} .hint`).css("display", "block");
+          $(`.${stepClass} .hint`).addClass("blinking");
+        },
+        wrong: () => {
+          audioPlayExam(audio, ["../../../COMM/SOUND/WRONG.MP3"]);
+        },
+        complete: () => {
+          let anwer4 = answerArr[3].answer;
+          let stepClass = "step4_" + disQuiz;
+
+          $(`.${stepClass} .quiz`).css("display", "none");
+          $(`.${stepClass} .hint`).css("display", "none");
+          $(`.${stepClass} .answer_box0`).html(answerArr[3].answerTxt[0]);
+          $(`.${stepClass} .answer_box1`).html(answerArr[3].answerTxt[1]);
+        },
+      };
+      //================STEP5==============
+      const step5 = {
+        start: () => {
+          audioPlayExam(audio, [pageData[4].sound]);
+          keyPadOnClick(5);
+        },
+        hint: () => {
+          let stepClass = "step5_" + disQuiz;
+          let hintArr = pageData[4].quiz.data[disQuiz - 1].type5Hint;
+
+          showHintMessage(
+            hintArr[lastKeyPad - 1].hint,
+            hintArr[lastKeyPad - 1].sound
+          );
+
+          if (lastKeyPad == 1) {
+            $(`.${stepClass} .hint1`).css("display", "block");
+            $(`.${stepClass} .hint1`).addClass("blinking");
+          } else {
+            $(`.${stepClass} .hint2`).css("display", "block");
+            $(`.${stepClass} .hint2`).addClass("blinking");
+          }
+        },
+        wrong: () => {},
+        complete: () => {
+          let stepClass = "step5_" + disQuiz;
+          let anwer5 = answerArr[4].answer;
+
+          $(`.${stepClass} .quizbtn_1`).html(anwer5[0]);
+          $(`.${stepClass} .quizbtn_2`).html(anwer5[1]);
+          $(`.${stepClass} .hint`).css("display", "none");
+          $(`.${stepClass} .quiz`).attr("disabled", true);
+
+          createNextStep();
+        },
+      };
+
+      // =====RENDER=====
+      const render = () => {
+        pageData.forEach((step, idx) => {
+          /* S: 키패드형 문제 처리 */
+          if (step.quiz.type == "keypad") {
+            keyPadEvent(idx + 1);
+          }
+          /* E: 키패드형 문제 처리 */
+          typeData[idx].forEach((q, i) => {
+            let stepClass = `step${idx + 1}_${i + 1}`;
+            let stepEl = $(`.${stepClass}`);
+            let renderData = typeData[idx][i];
+            /* S: 선택형 문제 처리 */
+            if (step.quiz.type == "select") {
+              $(document).on("click", `.${stepClass} .quiz`, function () {
+                btnClickAudioEx.play();
+                answerInput[0] = $(this).data("val");
+                answerCheckEx(idx + 1);
+              });
+            }
+            /* E: 선택형 문제 처리 */
+
+            /* S: 다중선택형 문제 처리 */
+            if (step.quiz.type == "multiselect") {
+              let selectAnswerCheckFlag = false;
+              $(document).on("click", `.${stepClass} .select`, function () {
+                btnClickAudioEx.play();
+                answerInput[0] = $(this).data("val");
+                selectAnswerCheckFlag = multiSelectAnswerCheckEx(idx + 1);
+
+                if (selectAnswerCheckFlag) {
+                  $(this).addClass("active");
+                } else {
+                  $(this).removeClass("active");
+                }
+              });
+            }
+            /* E: 다중선택형 문제 처리 */
+
+            switch (idx) {
+              // ==========step1==========
+              case 0:
+                stepEl.find(".epilogue-warp").html(`
+                          <span class="step1_line"></span>
+                          <div class="step1_circle">
+                            <span>
+                                <button class="quiz key-pad-on quizbtn_1" data-val="1" data-max="2">?</button>
+                                <span class="quizText quizText1">1만큼 더 작은 수</span>
+                            </span>
+                            <span class="myQuizText"><p>${renderData.markup.quizText}</p></span>
+                            <span>
+                                <button class="quiz key-pad-on quizbtn_2" data-val="2" data-max="2">?</button>
+                                <span class="quizText quizText2">1만큼 더 큰 수</span>
+                            </span>
+                          </div>
+                        `);
+                break;
+              // ==========step2==========
+              case 1:
+                stepEl.find(".epilogue-warp").html(`
+                          <img src="../../../COMM/IMG/TEST3/1_1_4/TYPE2_EXAM.png" class="img" />
+                          <div class="examTextDiv">
+                            <span class="examText1">${renderData.markup.examText[0]}</span>
+                            <span class="examText2">${renderData.markup.examText[1]}</span>
+                            <span class="examText3">${renderData.markup.examText[2]}</span>
+                            <span class="examText4">${renderData.markup.examText[3]}</span>
+                            <span class="examText5">${renderData.markup.examText[4]}</span>
+                          </div>
+                        `);
+                stepEl.find(".quiz-warp").append(`
+                              ${renderData.markup.quizText}</br>
+                              <span>1만큼 더 큰 수는</span>
+                              <button class="quiz key-pad-on quizbtn_2" data-val="2" data-max="3">?</button>입니다.
+                            `);
+
+                if (
+                  renderData.id == 1 ||
+                  renderData.id == 2 ||
+                  renderData.id == 3 ||
+                  renderData.id == 4
+                ) {
+                  $(`.${stepClass} .examTextDiv span:nth-of-type(5)`)
+                    .css("left", "1181px")
+                    .css("top", "87px");
+                } else {
+                  $(`.${stepClass} .examTextDiv span:nth-of-type(5)`)
+                    .css("left", "1169px")
+                    .css("top", "87px");
+                }
+                break;
+
+              // ==========step3==========
+              case 2:
+                stepEl.find(".epilogue-warp").html(`
+                  <img
+                      src=${renderData.markup.img}
+                      class="img"
+                    />
+                    <img
+                      src=../../../COMM/IMG/TEST3/1_1_4/TYPE3_HINT.png
+                      class="hint"
+                    />
+                `);
+
+                for (let i = 0; i < renderData.answer.length; i++) {
+                  stepEl.find(".epilogue-warp").append(`
+                  <div class="answer_box answer_box${i} droppable dp_flex" data-val="${
+                    renderData.answer[i]
+                  }" data-index="${i + 1}"><p class="placeholder">?</p></div>
+                  `);
+                }
+
+                renderData.list.forEach((element, idx) => {
+                  stepEl.find(".quiz-warp").append(`
+                    <button class="quiz draggable" data-val="${parseInt(
+                      element.val
+                    )}">${element.text}</button>
+                  `);
+                });
+                if (renderData.id == 1) {
+                  $(`.${stepClass} .answer_box0`).css("right", "733px");
+                  $(`.${stepClass} .answer_box1`).css("right", "323px");
+                } else if (renderData.id == 2) {
+                  $(`.${stepClass} .answer_box0`).css("right", "938px");
+                  $(`.${stepClass} .answer_box1`).css("right", "528px");
+                } else if (renderData.id == 3) {
+                  $(`.${stepClass} .answer_box0`).css("right", "938px");
+                  $(`.${stepClass} .answer_box1`).css("right", "733px");
+                } else if (renderData.id == 4) {
+                  $(`.${stepClass} .answer_box0`).css("right", "939px");
+                  $(`.${stepClass} .answer_box1`).css("right", "323px");
+                } else {
+                  $(`.${stepClass} .answer_box0`).css("right", "734px");
+                  $(`.${stepClass} .answer_box1`).css("right", "324px");
+                }
+                break;
+
+              // ==========step4==========
+              case 3:
+                stepEl.find(".epilogue-warp").html(`
+                  <img
+                      src=${renderData.markup.img}
+                      class="img"
+                    />
+                    <img
+                      src=../../../COMM/IMG/TEST3/1_1_4/TYPE3_HINT.png
+                      class="hint"
+                    />
+                `);
+
+                for (let i = 0; i < renderData.answer.length; i++) {
+                  stepEl.find(".epilogue-warp").append(`
+                  <div class="answer_box answer_box${i} droppable dp_flex" data-val="${
+                    renderData.answer[i]
+                  }" data-index="${i + 1}"><p class="placeholder">?</p></div>
+                  `);
+                }
+
+                renderData.list.forEach((element, idx) => {
+                  stepEl.find(".quiz-warp").append(`
+                    <button class="quiz draggable" data-val="${parseInt(
+                      element.val
+                    )}">${element.text}</button>
+                  `);
+                });
+
+                if (renderData.id == 1) {
+                  $(`.${stepClass} .answer_box0`).css("right", "938px");
+                  $(`.${stepClass} .answer_box1`).css("right", "323px");
+                } else if (renderData.id == 2) {
+                  $(`.${stepClass} .answer_box0`).css("right", "938px");
+                  $(`.${stepClass} .answer_box1`).css("right", "733px");
+                } else if (renderData.id == 3) {
+                  $(`.${stepClass} .answer_box0`).css("right", "938px");
+                  $(`.${stepClass} .answer_box1`).css("right", "733px");
+                } else if (renderData.id == 4) {
+                  $(`.${stepClass} .answer_box0`).css("right", "733px");
+                  $(`.${stepClass} .answer_box1`).css("right", "528px");
+                } else {
+                  $(`.${stepClass} .answer_box0`).css("right", "938px");
+                  $(`.${stepClass} .answer_box1`).css("right", "324px");
+                }
+                break;
+
+              // ==========step5==========
+
+              case 4:
+                stepEl.find(".epilogue-warp").html(`
+                          <img src="${renderData.markup.img}" class="img" />
+                          <img src="../../../COMM/IMG/TEST3/1_1_4/TYPE5_HINT.png" class="hint hint1"/>
+                          <img src="../../../COMM/IMG/TEST3/1_1_4/TYPE5_HINT.png" class="hint hint2"/>
+                        `);
+                stepEl.find(".quiz-warp").append(`
+                            <div>
+                              <span>㉠</span><button class="quiz key-pad-on quizbtn_1" data-val="1" data-max="2">?</button>
+                            </div>
+                            <div>
+                              <span>㉡</span><button class="quiz key-pad-on quizbtn_2" data-val="2" data-max="3">?</button>
+                            </div>
+                            `);
+
+                if (renderData.id == 1) {
+                  $(`.${stepClass} .epilogue-warp .hint1`).css({
+                    right: "1017px",
+                    bottom: "100px",
+                  });
+                  $(`.${stepClass} .epilogue-warp .hint2`).css({
+                    right: "542px",
+                    bottom: "10px",
+                  });
+                } else if (renderData.id == 2) {
+                  $(`.${stepClass} .epilogue-warp .hint1`).css({
+                    right: "1017px",
+                    bottom: "100px",
+                  });
+                  $(`.${stepClass} .epilogue-warp .hint2`).css({
+                    right: "662px",
+                    bottom: "10px",
+                  });
+                } else if (renderData.id == 3) {
+                  $(`.${stepClass} .epilogue-warp .hint1`).css({
+                    right: "898px",
+                    bottom: "100px",
+                  });
+                  $(`.${stepClass} .epilogue-warp .hint2`).css({
+                    right: "425px",
+                    bottom: "10px",
+                  });
+                } else {
+                  $(`.${stepClass} .epilogue-warp .hint1`).css({
+                    right: "306px",
+                    bottom: "100px",
+                  });
+                  $(`.${stepClass} .epilogue-warp .hint2`).css({
+                    right: "188px",
+                    bottom: "10px",
+                  });
+                }
+                break;
+            }
+          });
+        });
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=2000, user-scalable=no" /> -->
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <link rel="stylesheet" href="../../../COMM/GAME/RESET.CSS" />
+    <link rel="stylesheet" href="../../../COMM/GAME/CRUNCHY.CSS" />
+    <link rel="shortcut icon" href="#" />
+    <title>뽀득뽀득</title>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="content">
+        <div class="page_num">
+          <span id="pageCnt">1</span>
+          <span>/</span>
+          <span id="pageCntAll">3</span>
+        </div>
+        <div class="epilogue">
+          <div class="epilogue_inner">
+            <p>정답을 들고 있는 균을 없애봐요!</p>
+          </div>
+        </div>
+        <div class="fire">
+          <div class="fire_head"></div>
+
+          <div class="fire_pad"></div>
+          <div class="question">
+            <p id="question">376+45= ?</p>
+          </div>
+        </div>
+      </div>
+      <div class="virusArea">
+        <div class="fire_water">
+          <div class="fire_water-obj"></div>
+          <div class="fire_water-boom"></div>
+        </div>
+      </div>
+
+      <div class="hand"></div>
+      <div class="main_bg"></div>
+      <!-- Start 팝업 -->
+      <div id="popup1" class="popup">
+        <div class="popup_intro">
+          <button class="popup_intro-start" onclick="gameStart()"></button>
+        </div>
+      </div>
+      <div id="popup2" class="popup">
+        <div class="dimmed"></div>
+        <div class="correct"></div>
+      </div>
+      <div id="complete_popup" class="popup">
+        <div class="dimmed"></div>
+        <div class="bg"></div>
+        <div class="buttonArea">
+          <button class="reload" onclick="gameRetry()"></button>
+          <button class="play_view" onclick="videoPlayer()">
+            개념 영상 보기
+          </button>
+          <!-- <p>
+            더 공부하고 싶다면 개념영상 보러 가보자!
+          </p> -->
+        </div>
+      </div>
+      <div id="touchBlock" class="popup"></div>
+      <!-- 가이드 -->
+      <section class="pearl-guide">
+        <div class="pearl-guide-point"></div>
+        <div class="pearl-guide-hand"></div>
+      </section>
+    </div>
+    <script
+      crossorigin
+      src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"
+    ></script>
+    <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+    <script src="../../../COMM/GAME/CRUNCHY.JS"></script>
+    <script defer src="../../../COMM/JS/COMMONGAME.JS"></script>
+  </body>
+</html>

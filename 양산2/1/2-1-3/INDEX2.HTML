@@ -1,0 +1,1654 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>개정교육과정-수학 수학 개념</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="KeyWORDs" content="" />
+    <meta name="Description" content="" />
+    <meta name="Robots" content="all" />
+    <meta http-equiv="Subject" content="" />
+    <meta http-equiv="Title" content="" />
+    <meta http-equiv="Author" content="onflou " />
+    <meta http-equiv="Publisher" content="" />
+
+    <!-- 브라우저 호환성을 지정 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="#" />
+    <link href="../../../COMM/CSS/COMMON.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/COMMONLAYOUT.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/CONCEPTCOMMON3.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/VIDEO.CSS" rel="stylesheet" />
+ 
+    <style>
+      * {
+        /* 숫자 위 수직선 간의 간격 */
+        --vertical-line-interval: 130px;
+        /* 숫자 수직선 가로 */
+        --vertical-line-num-thick: 2.5px;
+        /* 숫자 수직선 세로 */
+        --vertical-line-num-height: 40px;
+        /* 전체 수직선 높이 */
+        --vertical-line-thick: 5px;
+        /* 수직선 색상 */
+        --vertical-line-color: #000000;
+        /* 수직선과 숫자 사이 여백 */
+        --vertical-line-number-marginTop: 19px;
+        /* 숫자 폰트 크기 */
+        --vertical-line-fontSize: 44px;
+        /* 디테일 눈금 가로 */
+        --vertical-line-detail-thick: 1.5px;
+        /* 디테일 눈금 세로 */
+        --vertical-line-detail-height: 16px;
+      }
+
+      .blinking_once {
+        animation: 1s blinking 1;
+      }
+
+      .aniScale_once {
+        animation: 1s aniScale 1;
+      }
+
+      /* 1p */
+      .step1 .step1_top_box {
+        gap: 24px;
+      }
+
+      .step1 .step1_top_box .icon_box {
+        position: relative;
+      }
+
+      .step1 .step1_top_box .icon_box .img1 {
+        width: 188px;
+        position: relative;
+        z-index: 10;
+      }
+
+      .step1 .step1_top_box .icon_box .img2 {
+        width: 237px;
+        height: 235px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .step1 .step1_mid_box {
+        margin-top: 70px;
+        gap: 20px;
+      }
+
+      .step1 .step1_mid_box .text_box {
+        line-height: 74px;
+      }
+
+      .step1 .step1_mid_box .text_box2 {
+        font-size: 74px;
+      }
+
+      .step1 .step1_mid_box .tag {
+        padding: 17.5px 15px;
+        background-color: rgba(255, 184, 239, 1);
+        border-radius: 15px;
+        font-size: 44px;
+        line-height: 1;
+      }
+
+      .step1 .step1_mid_box .arrow {
+        width: 61px;
+        height: 56px;
+        background-image: url(../../../COMM/IMG/CONCEPT/SEASON2/2_1_3/STEP1_ARROW2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .step1 .step1_btm_box {
+        margin-top: 140px;
+        position: relative;
+      }
+
+      .step1 .step1_btm_box .arrow_box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(calc(100% / 3 / 4), calc(-100% + 23px));
+      }
+
+      .step1 .step1_btm_box .arrow {
+        width: 130px;
+        aspect-ratio: 142 / 40;
+        background-image: url(../../../COMM/IMG/CONCEPT/SEASON2/2_1_3/STEP1_ARROW.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .step1 .step1_btm_box .circle {
+        width: 131px;
+        height: 63px;
+        border: 3px solid rgba(103, 68, 243, 1);
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+        left: calc(130px * 3);
+        transform: translateX(-25%);
+      }
+
+      /* 2p */
+      .step2 .step2_left_box .thousand_box {
+        gap: 30px;
+      }
+
+      .step2 .step2_left_box .thousand_box .line {
+        gap: 30px;
+      }
+
+      .step2 .step2_left_box .hundred_box {
+        margin-left: 53px;
+        gap: 16px;
+      }
+
+      .step2 .step2_left_box .hundred_box .line {
+        gap: 8px;
+      }
+
+      .step2 .step2_left_box .hundred_box .line .img_box {
+        border-radius: 50%;
+      }
+
+      .step2 .step2_right_box {
+        min-width: 642px;
+        margin-left: 60px;
+        position: relative;
+        align-items: flex-start;
+        gap: 24px;
+      }
+
+      .step2 .step2_right_box .text_box {
+        padding-left: 40px;
+        margin-left: 100px;
+        position: relative;
+      }
+
+      .step2 .step2_right_box .text_box::before {
+        content: "";
+        width: 16px;
+        aspect-ratio: 1 / 1;
+        background-color: rgba(0, 0, 0, 1);
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+
+      .step2 .step2_right_box .txt {
+        line-height: 75px;
+      }
+
+      .step2 .step2_right_box .txt_container {
+        margin-left: 12px;
+      }
+
+      .step2 .step2_answer_box {
+        z-index: 100;
+      }
+
+      .step2 .step2_answer_box .answer {
+        width: 150px;
+        height: 85px;
+        border-radius: 15px;
+      }
+
+      .step2 .step2_answer_box .answer + .answer {
+        margin-left: 14px;
+      }
+
+      .step2 .step2_answer_box .answer::after {
+        border-radius: 15px;
+      }
+
+      .step2 .touchMotion_hand {
+        z-index: 200;
+      }
+
+      .step2 .step2_point1 {
+        width: 517px;
+        height: 517px;
+        top: 50%;
+        left: 40%;
+      }
+
+      /* 3p */
+      .step3 {
+        --table-width: 1305px;
+        --table-height: 481px;
+        --table-title-height: 162px;
+        --table-border-color: rgba(151, 196, 255, 1);
+        --table-title-color: rgba(190, 218, 255, 1);
+      }
+
+      .step3 .step3_table_box {
+        position: relative;
+      }
+
+      .step3 .step3_table_box .text_td span {
+        text-align: center;
+        line-height: 50px;
+      }
+
+      .step3 .effect_box {
+        width: 1305px;
+        height: 481px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        justify-content: flex-end;
+        align-items: flex-start;
+      }
+
+      .step3 .effect_box .effect {
+        width: 217.03px;
+        height: 162px;
+        border: 5px solid rgba(103, 68, 243, 1);
+        border-radius: 4px;
+      }
+
+      /* 4p */
+      .step4_top_box {
+        width: 1600px;
+        height: 288px;
+        background-color: rgba(242, 245, 255, 1);
+        border-radius: 30px;
+      }
+
+      .step4_top_box .click_box {
+        width: 206px;
+        height: 240px;
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 20px;
+      }
+
+      .step4_top_box .thousand_circle_box {
+        width: 120px;
+        aspect-ratio: 1 / 1;
+        background-color: rgba(255, 211, 57, 1);
+        border: 4px solid rgba(249, 166, 12, 1);
+        border-radius: 50%;
+        font-size: 44px;
+        line-height: 55px;
+      }
+
+      .step4_top_box .hundred_circle_box {
+        width: 100px;
+        aspect-ratio: 1 / 1;
+        background-color: rgba(214, 235, 156, 1);
+        border: 4px solid rgba(131, 174, 0, 1);
+        border-radius: 50%;
+        font-size: 44px;
+        line-height: 55px;
+      }
+
+      .step4_btm_box {
+        line-height: 74px;
+      }
+
+      .step4_btm_box .txt_container {
+        margin: 0 3px 0 20px;
+      }
+
+      .step4 .step4_answer_box,
+      .step5 .step5_answer_box {
+        margin-top: 115px;
+        z-index: 100;
+      }
+
+      .step4 .step4_answer_box .answer,
+      .step5 .step5_answer_box .answer {
+        width: 240px;
+        height: 114px;
+      }
+
+      .step4 .step4_answer_box .answer + .answer,
+      .step5 .step5_answer_box .answer + .answer {
+        margin-left: 48px;
+      }
+
+      .step4 .touchMotion_hand,
+      .step5 .touchMotion_hand {
+        z-index: 200;
+      }
+
+      .step4 .step4_top_box {
+        gap: 96px;
+      }
+
+      .step4 .step4_top_box .show_box {
+        gap: 40px;
+      }
+
+      .step4  .step4_btm_box {
+        margin-top: 115px;
+      }
+
+      /* 5p */
+      .step5 .step4_top_box .click_box + .click_box {
+        margin-left: 32px;
+      }
+
+      .step5 .step4_top_box .show_box {
+        margin-left: 75px;
+      }
+
+      .step5 .step4_top_box .show_box .thousand_box {
+        gap: 3px;
+      }
+
+      .step5 .step4_top_box .show_box .thousand_box .line {
+        gap: 16px;
+      }
+
+      .step5 .step4_top_box .show_box .hundred_box {
+        margin-left: 57px;
+        gap: 23px;
+      }
+
+      .step5 .step4_top_box .show_box .hundred_box .line {
+        gap: 24px;
+      }
+
+      .step5 .step4_btm_box {
+        margin-top: 72px;
+        align-items: flex-start;
+        gap: 14px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div
+        id="contents-wrap"
+        class="concept"
+        style="position: absolute; display: flex"
+      ></div>
+      <div id="contents-main" style="display: none" class="concept-warp">
+        <div class="concept-warp_inner">
+          <header class="header" style="visibility: visible">
+            <div class="header_title">
+              <button class="sound-btn" onclick="titleSound()"></button>
+              <h3></h3>
+            </div>
+            <p class="header_page"><span>1</span>/2</p>
+          </header>
+          <main class="main">
+            <div class="main_content">
+              <!-- 콘텐츠영역 -->
+              <div class="step step1" style="display: block">
+                <!-- step1 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step1_top_box dp_flex">
+                    <div class="icon_box icon_box1">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/COMM/BLOCK_100_1000.svg" class="img1" />
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_3/BLOCK_100_1000_POINT.png" class="img2 v_hidden" />
+                    </div>
+                    <div class="icon_box icon_box2">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/COMM/BLOCK_100_1000.svg" class="img1" />
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_3/BLOCK_100_1000_POINT.png" class="img2 v_hidden" />
+                    </div>
+                    <div class="icon_box icon_box3">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/COMM/BLOCK_100_1000.svg" class="img1" />
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_3/BLOCK_100_1000_POINT.png" class="img2 v_hidden" />
+                    </div>
+                  </div>
+                  <div class="step1_mid_box dp_flex v_hidden">
+                    <div class="text_box text_box1">
+                      <span>1000이 3개</span>
+                    </div>
+                    <div class="arrow"></div>
+                    <div class="text_box text_box2">
+                      <span class="highlight red">3000</span>
+                    </div>
+                    <div class="tag dp_flex v_hidden">
+                      <span>삼천</span>
+                    </div>
+                  </div>
+                  <div class="step1_btm_box dp_none">
+                    <div class="vertical_line_box" data-start="0" data-end="9000" data-interval="1000" data-detail="false"></div>
+                    <div class="arrow_box dp_flex">
+                      <div class="arrow arrow1 v_hidden"></div>
+                      <div class="arrow arrow2 v_hidden"></div>
+                      <div class="arrow arrow3 v_hidden"></div>
+                    </div>
+                    <div class="circle v_hidden"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step2" style="display: block">
+                <!-- step2 시작부분 -->
+                <div class="main__container dp_flex">
+                  <div class="step2_left_box dp_flex">
+                    <div class="thousand_box dp_flex dp_flex_column">
+                      <div class="line line1 dp_flex">
+                          <div class="img_box img_box1">
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_3/STEP2_IMG1.png?=t" alt="천원 이미지" class="img img1"/>
+                          </div>
+                          <div class="img_box img_box2">
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_3/STEP2_IMG1.png?=t" alt="천원 이미지" class="img img1"/>
+                          </div>
+                      </div>
+                      <div class="line line2 dp_flex">
+                        <div class="img_box img_box1">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_3/STEP2_IMG1.png?=t" alt="천원 이미지" class="img img1"/>
+                        </div>
+                        <div class="img_box img_box2 v_hidden">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_3/STEP2_IMG1.png?=t" alt="천원 이미지" class="img img1"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hundred_box dp_flex dp_flex_column">
+                      <div class="line line1 dp_flex">
+                        <div class="img_box img_box1">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_3/STEP2_IMG2.png?=t" alt="백원 이미지" class="img img1"/>
+                        </div>
+                        <div class="img_box img_box2">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_3/STEP2_IMG2.png?=t" alt="백원 이미지" class="img img1"/>
+                        </div>
+                        <div class="img_box img_box3">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_3/STEP2_IMG2.png?=t" alt="백원 이미지" class="img img1"/>
+                        </div>
+                        <div class="img_box img_box4">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_3/STEP2_IMG2.png?=t" alt="백원 이미지" class="img img1"/>
+                        </div>
+                        <div class="img_box img_box5">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_3/STEP2_IMG2.png?=t" alt="백원 이미지" class="img img1"/>
+                        </div>
+                      </div>
+                      <div class="line line2 dp_flex">
+                        <div class="img_box img_box1">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_3/STEP2_IMG2.png?=t" alt="백원 이미지" class="img img1"/>
+                        </div>
+                        <div class="img_box img_box2">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_3/STEP2_IMG2.png?=t" alt="백원 이미지" class="img img1"/>
+                        </div>
+                        <div class="img_box img_box3">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_3/STEP2_IMG2.png?=t" alt="백원 이미지" class="img img1"/>
+                        </div>
+                        <div class="img_box img_box4">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_3/STEP2_IMG2.png?=t" alt="백원 이미지" class="img img1"/>
+                        </div>
+                        <div class="img_box img_box5">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_3/STEP2_IMG2.png?=t" alt="백원 이미지" class="img img1"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step2_right_box dp_flex dp_flex_column dp_none">
+                    <div class="text_box text_box1 dp_flex">
+                      <div class="txt">쓰기 :</div>
+                      <div class="txt_container txt_container1 two">?</div>
+                    </div>
+                    <div class="text_box text_box2 dp_flex">
+                      <div class="txt">읽기 :</div>
+                      <div class="txt_container txt_container2 two">?</div>
+                    </div>
+                    <div class="step2_answer_box answer_box dp_none">
+                      <div class="answer_list">
+                        <div class="answer answer1">3000</div>
+                        <div class="answer answer2">이천</div>
+                        <div class="answer answer3">4000</div>
+                        <div class="answer answer4">사천</div>
+                      </div>
+                    </div>
+                    <div class="step2_point step2_point1 img_point__wrap dp_none">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_3/STEP2_STAR.png" class="img" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step3" style="display: none">
+                <!-- step3 시작부분 -->
+                <div class="main__container">
+                  <div class="full_content_comm dp_flex">
+                    <div class="step3_table_box table_box dp_flex dp_flex_column"> 
+                      <div class="tr tr1 dp_flex">
+                        <div class="td title_td title_td1 dp_flex">
+                          <span>수</span>
+                        </div>
+                        <div class="td text_td text_td1 dp_flex">
+                          <span>
+                            1000이<br>
+                            <span class="highlight red">5</span>개
+                          </span>
+                        </div>
+                        <div class="td text_td text_td2 dp_flex">
+                          <span>
+                            1000이<br>
+                            <span class="highlight red">6</span>개
+                          </span>
+                        </div>
+                        <div class="td text_td text_td3 dp_flex">
+                          <span>
+                            1000이<br>
+                            <span class="highlight red">7</span>개
+                          </span>
+                        </div>
+                        <div class="td text_td text_td4 dp_flex">
+                          <span>
+                            1000이<br>
+                            <span class="highlight red">8</span>개
+                          </span>
+                        </div>
+                        <div class="td text_td text_td5 dp_flex">
+                          <span>
+                            1000이<br>
+                            <span class="highlight red">9</span>개
+                          </span>
+                        </div>
+                      </div>
+                      <div class="tr tr2 dp_flex">
+                        <div class="td title_td title_td2 dp_flex">
+                          <span>쓰기</span>
+                        </div>
+                        <div class="td text_td text_td1 dp_flex">
+                          <span class="v_hidden">
+                            <span class="highlight red">5</span>000
+                          </span>
+                        </div>
+                        <div class="td text_td text_td2 dp_flex">
+                          <span class="v_hidden">
+                            <span class="highlight red">6</span>000
+                          </span>
+                        </div>
+                        <div class="td text_td text_td3 dp_flex">
+                          <span class="v_hidden">
+                            <span class="highlight red">7</span>000
+                          </span>
+                        </div>
+                        <div class="td text_td text_td4 dp_flex">
+                          <span class="v_hidden">
+                            <span class="highlight red">8</span>000
+                          </span>
+                        </div>
+                        <div class="td text_td text_td5 dp_flex">
+                          <span class="v_hidden">
+                            <span class="highlight red">9</span>000
+                          </span>
+                        </div>
+                      </div>
+                      <div class="tr tr3 dp_flex">
+                        <div class="td title_td title_td3 dp_flex">
+                          <span>읽기</span>
+                        </div>
+                        <div class="td text_td text_td1 dp_flex">
+                          <span class="v_hidden">
+                            <span class="highlight red">오</span>천
+                          </span>
+                        </div>
+                        <div class="td text_td text_td2 dp_flex">
+                          <span class="v_hidden">
+                            <span class="highlight red">육</span>천
+                          </span>
+                        </div>
+                        <div class="td text_td text_td3 dp_flex">
+                          <span class="v_hidden">
+                            <span class="highlight red">칠</span>천
+                          </span>
+                        </div>
+                        <div class="td text_td text_td4 dp_flex">
+                          <span class="v_hidden">
+                            <span class="highlight red">팔</span>천
+                          </span>
+                        </div>
+                        <div class="td text_td text_td5 dp_flex">
+                          <span class="v_hidden">
+                            <span class="highlight red">구</span>천
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="effect_box dp_flex">
+                      <div class="effect effect1 v_hidden"></div>
+                      <div class="effect effect2 v_hidden"></div>
+                      <div class="effect effect3 v_hidden"></div>
+                      <div class="effect effect4 v_hidden"></div>
+                      <div class="effect effect5 v_hidden"></div>
+                    </div>
+                  </div>
+                  <footer class="check_footer">
+                    <div class="check_footer_inner">
+                      <div class="check_footer_text img_container">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_3/STEP3_FOOTER_TXT.png?=t" class="img img1" />
+                      </div>
+                      <div class="check_footer_ch">
+                        <div class="check_footer_ch_head"></div>
+                        <div class="check_footer_ch_body"></div>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+              <div class="step step4" style="display: none">
+                <!-- step4 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step4_top_box dp_flex">
+                    <div class="click_box dp_flex">
+                      <div class="thousand_circle_box dp_flex">
+                        <span>1000</span>
+                      </div>
+                    </div>
+                    <div class="show_box dp_flex">
+                      <div class="thousand_circle_box thousand_circle_box1 dp_flex v_hidden">
+                        <span>1000</span>
+                      </div>
+                      <div class="thousand_circle_box thousand_circle_box2 dp_flex v_hidden">
+                        <span>1000</span>
+                      </div>
+                      <div class="thousand_circle_box thousand_circle_box3 dp_flex v_hidden">
+                        <span>1000</span>
+                      </div>
+                      <div class="thousand_circle_box thousand_circle_box4 dp_flex v_hidden">
+                        <span>1000</span>
+                      </div>
+                      <div class="thousand_circle_box thousand_circle_box5 dp_flex v_hidden">
+                        <span>1000</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step4_btm_box dp_flex v_hidden">
+                    <div class="txt">1000이</div>
+                    <div class="txt_container txt_container1">?</div>
+                    <div class="txt">개이면 5000입니다.</div>
+                  </div>
+                  <div class="step4_answer_box answer_box v_hidden">
+                    <div class="answer_list">
+                      <div class="answer answer1">3</div>
+                      <div class="answer answer2">4</div>
+                      <div class="answer answer3">5</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step5" style="display: none">
+                <!-- step5 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step4_top_box dp_flex">
+                    <div class="click_box click_box1 dp_flex">
+                      <div class="thousand_circle_box dp_flex">
+                        <span>1000</span>
+                      </div>
+                    </div>
+                    <div class="click_box click_box2 dp_flex">
+                      <div class="hundred_circle_box dp_flex">
+                        <span>100</span>
+                      </div>
+                    </div>
+                    <div class="show_box dp_flex">
+                      <div class="thousand_box dp_flex dp_flex_column">
+                        <div class="line line1 dp_flex">
+                          <div class="thousand_circle_box thousand_circle_box1 dp_flex v_hidden">
+                            <span>1000</span>
+                          </div>
+                          <div class="thousand_circle_box thousand_circle_box2 dp_flex v_hidden">
+                            <span>1000</span>
+                          </div>
+                        </div>
+                        <div class="line line2 dp_flex">
+                          <div class="thousand_circle_box thousand_circle_box3 dp_flex v_hidden">
+                            <span>1000</span>
+                          </div>
+                          <div class="thousand_circle_box thousand_circle_box4 dp_flex v_hidden">
+                            <span>1000</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="hundred_box dp_flex dp_flex_column">
+                        <div class="line line1 dp_flex">
+                          <div class="hundred_circle_box hundred_circle_box1 dp_flex v_hidden">
+                            <span>100</span>
+                          </div>
+                          <div class="hundred_circle_box hundred_circle_box2 dp_flex v_hidden">
+                            <span>100</span>
+                          </div>
+                          <div class="hundred_circle_box hundred_circle_box3 dp_flex v_hidden">
+                            <span>100</span>
+                          </div>
+                          <div class="hundred_circle_box hundred_circle_box4 dp_flex v_hidden">
+                            <span>100</span>
+                          </div>
+                          <div class="hundred_circle_box hundred_circle_box5 dp_flex v_hidden">
+                            <span>100</span>
+                          </div>
+                        </div>
+                        <div class="line line2 dp_flex">
+                          <div class="hundred_circle_box hundred_circle_box6 dp_flex v_hidden">
+                            <span>100</span>
+                          </div>
+                          <div class="hundred_circle_box hundred_circle_box7 dp_flex v_hidden">
+                            <span>100</span>
+                          </div>
+                          <div class="hundred_circle_box hundred_circle_box8 dp_flex v_hidden">
+                            <span>100</span>
+                          </div>
+                          <div class="hundred_circle_box hundred_circle_box9 dp_flex v_hidden">
+                            <span>100</span>
+                          </div>
+                          <div class="hundred_circle_box hundred_circle_box10 dp_flex v_hidden">
+                            <span>100</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step4_btm_box dp_flex dp_flex_column v_hidden">
+                    <div class="text_box text_box1 dp_flex">
+                      <div class="txt">1000이 4개이면</div>
+                      <div class="txt_container txt_container1 two">?</div>
+                      <div class="txt">이고, 100이 10개이면 1000이므로</div>
+                    </div>
+                    <div class="text_box text_box2 dp_flex">
+                      <div class="txt">1000이</div>
+                      <div class="txt_container txt_container2">?</div>
+                      <div class="txt">개이면 5000입니다.</div>
+                    </div>
+                  </div>
+                  <div class="step5_answer_box answer_box v_hidden">
+                    <div class="answer_list">
+                      <div class="answer answer1">5</div>
+                      <div class="answer answer2">4000</div>
+                      <div class="answer answer3">4</div>
+                      <div class="answer answer4">5000</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="step-list">
+                <li class="step-list_item active"></li>
+                <li class="step-list_item"></li>
+              </ul>
+            </div>
+          </main>
+          <div class="main_prev-next">
+            <button class="btn-prev" style="display: none">이전버튼</button>
+            <!-- <button class="btn-next" style="display: block" disabled> -->
+            <button class="btn-next blinking" style="display: block">
+              다음버튼
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      crossorigin
+      src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"
+    ></script>
+    <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+    <script src="../../../COMM/JS/COMMON2.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNT3.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNTBTN.JS"></script>
+    <script src="../../../COMM/JS/GAME.JS"></script>
+    <script src="../../../COMM/JS/VIDEO.JS"></script>
+    <script src="../../../COMM/JS/VIDEO-HTTP-STREAMING.JS"></script>
+    <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+    <script>
+      /*
+       * 데이터
+       */
+      let intro = {
+        type: "concept", //concept 개념익히기, checkExam 확인문제
+        title: "몇천을 알아볼까요",
+        subTitle: [
+          "몇천을 쓰고 읽을 수 있어요.",
+          "여러 가지 방법으로 몇천을 나타낼 수 있어요.",
+        ],
+        sound: ["../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_001.mp3"],
+      };
+
+      //현재 페이지
+      let disStep = 1;
+
+      let pageData = [
+        {
+          step: 1,
+          title: "수를 쓰고 읽어 봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_001.mp3",
+          headerPage: [1, 2],
+          footerPage: [1, 2],
+          prev: 0,
+          next: 1,
+        },
+        {
+          step: 2,
+          title: "수를 쓰고 읽어 봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_001.mp3",
+          headerPage: [1, 2],
+          footerPage: [2, 2],
+          prev: 1,
+          next: 0,
+        },
+        {
+          step: 3,
+          title: "",
+          sound: "",
+          headerPage: [0, 0],
+          footerPage: [0, 0],
+          prev: 1,
+          next: 1,
+        },
+        {
+          step: 4,
+          title: "여러 가지 방법으로 5000을 나타내 봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_019.mp3",
+          headerPage: [2, 2],
+          footerPage: [1, 2],
+          prev: 3,
+          next: 1,
+        },
+        {
+          step: 5,
+          title: "여러 가지 방법으로 5000을 나타내 봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_019.mp3",
+          headerPage: [2, 2],
+          footerPage: [2, 2],
+          prev: 1,
+          next: 0,
+        },
+      ];
+      
+      function pageAction() {
+        console.log("disStep ::: ", disStep);
+        //setTimeout 초기화
+        const TimeoutId = setTimeout(() => console.log("timeout clear"), 1);
+        for (let i = 0; i < TimeoutId; i++) {
+          clearTimeout(i);
+        }
+        stepSet();
+        switch (disStep) {
+          case 1:
+            step1.reset();
+            step1.start();
+            break;
+          case 2:
+            step2.reset();
+            step2.start();
+            break;
+          case 3:
+            step3.reset();
+            step3.start();
+            break;
+          case 4:
+            step4.reset();
+            step4.start();
+            break;
+          case 5:
+            step5.reset();
+            step5.start();
+            break;
+        }
+      }
+
+      //문제 시작
+      //================STEP1==============
+      const step1 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_001.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_002.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step1 .step1_top_box .icon_box .img2').css('visibility', 'visible').addClass('blinking');
+              }
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                touchMotionSetOn(350, 830, step1.guideTouch, $('.step1 .step1_top_box'));
+              }
+            },
+          ]);
+        },
+        guideTouch: () => {
+          $('.step1 .step1_top_box .icon_box .img2').css('visibility', 'hidden').removeClass('blinking');
+          $('.step1 .step1_mid_box').css('visibility', 'visible');
+
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_003.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_004.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                timerSet(() => {
+                  timerInit();
+                  $('.step1 .step1_mid_box .tag').css('visibility', 'visible');
+                }, 4000);
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step1 .step1_btm_box').css('display', 'block');
+              }
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                touchMotionSetOn(650, 830, step1.guideTouch2, $('.step1 .step1_btm_box'));
+              }
+            },
+          ]);
+        },
+        guideTouch2: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_005.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_006.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step1 .step1_btm_box .arrow1').css('visibility', 'visible');
+                timerSet(() => {
+                  timerInit();
+                  $('.step1 .step1_btm_box .arrow2').css('visibility', 'visible');
+                  timerSet(() => {
+                    timerInit();
+                    $('.step1 .step1_btm_box .arrow3').css('visibility', 'visible');
+                    $('.step1 .step1_btm_box .circle').css('visibility', 'visible');
+                  }, 1000);
+                }, 2000);
+              }
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                correctly();
+              }
+            },
+          ]);
+        },
+        reset: () => {
+          touchMotionSetInit();
+
+          $('.step1 .dp_none').css('display', '');
+          $('.step1 .v_hidden').css('visibility', '');
+          $('.step1 .step1_top_box .icon_box .img2').removeClass('blinking');
+        },
+      };
+      //================STEP2==============
+      const step2 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_007.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step2 .step2_left_box .hundred_box .line .img_box').addClass('box_blink');
+              }
+            },
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                touchMotionSetOn(410, 1200, step2.guideTouch, $('.step2 .step2_left_box .hundred_box'));
+              }
+            },
+          ]);
+        },
+        guideTouch: () => {
+          $('.step2 .step2_left_box .hundred_box .line .img_box').removeClass('box_blink2');
+          $('.step2 .step2_left_box .hundred_box').css('display', 'none');
+          $('.step2 .step2_left_box .thousand_box .line2 .img_box2').css('visibility', 'visible');
+
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_008.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step2 .step2_left_box .thousand_box .line2 .img_box2').addClass('blinking');
+                timerSet(() => {
+                  timerInit();
+                  $('.step2 .step2_left_box .thousand_box .line2 .img_box2').removeClass('blinking');
+                }, 3000);
+              }
+            },
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                $('.step2 .step2_right_box').css('display', 'flex');
+                $('.step2 .step2_answer_box').css('display', 'block');
+
+                stepDropList = [
+                  {
+                    dropEl: '.step2 .txt_container1',
+                    correct: 3
+                  },
+                  {
+                    dropEl: '.step2 .txt_container2',
+                    correct: 4
+                  },
+                ];
+
+                stepDropArr = ["3000", "이천", "4000", "사천"];
+                
+                quizMultiDragDropSetOnNew(stepDropList, $('.step2 .step2_answer_box'), stepDropArr, step2.dropppFn);
+              }
+            },
+          ]);
+        },
+        dropppFn: () => {
+          $(".droppable")
+            .droppable({ disabled: false })
+            .on("droppable:drop", function (droppp, drag) {
+              let dragAnswer = drag.item[0].dataset.val;
+              let answer = droppp.currentTarget.dataset.val;
+
+              if (answer === dragAnswer) {
+                correctlyFlag++;
+                quizMultiDragDropSetCorrect(droppp.currentTarget);
+
+                if (correctlyFlag == stepDropList.length) {
+                  quizMultiDragDropSetCorrectly();
+                  stepDropList = "";
+                  stepDropArr = "";
+
+                  $('.step2 .step2_answer_box').css('display', 'none');
+
+                  audioSet([
+                    "../../../COMM/SOUND/CORRECT.mp3",
+                    "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_009.mp3",
+                    "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_010.mp3",
+                    "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_011.mp3",
+                  ], [
+                    {
+                      idx: 2,
+                      type: 'end',
+                      callback: () => {
+                        $('.step2 .step2_point1').css('display', 'block').addClass('spining');
+                      }
+                    },
+                    {
+                      idx: 4,
+                      type: 'start',
+                      callback: () => {
+                        $('.step2 .step2_point1').css('display', 'none').removeClass('spining');
+                      }
+                    },
+                    {
+                      idx: 4,
+                      type: 'end',
+                      callback: () => {
+                        disStep++;
+                        pageAction();
+                      }
+                    },
+                  ]);
+                } else {
+                  audioSet([
+                    "../../../COMM/SOUND/CORRECT.mp3",
+                  ]);
+                }
+              } else {
+                audioSet([
+                  "../../../COMM/SOUND/WRONG.mp3",
+                ]);
+
+                return false;
+              }
+            });
+        },
+        reset: () => {
+          touchMotionSetInit();
+          correctlyFlag = 0;
+
+          $('.step2 .dp_none').css('display', '');
+          $('.step2 .v_hidden').css('visibility', '');
+          $('.step2 .step2_left_box .hundred_box .line .img_box').removeClass('box_blink');
+          $('.step2 .step2_point1').css('display', 'none').removeClass('spining');
+          $('.step2 .txt_container').html('?');
+        },
+      };
+      //================STEP3==============
+      const step3 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_012.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                $('.step3 .effect_box .effect1').css('visibility', 'visible').addClass('box_blink2');
+                touchMotionSetOn(55, 505, step3.guideTouch, $('.step3 .effect_box .effect1'));
+              }
+            },
+          ]);
+        },
+        guideTouch: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_013.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step3 .effect_box .effect1').css('visibility', 'hidden').removeClass('box_blink2');
+                $('.step3 .step3_table_box .text_td1 span').css('visibility', 'visible');
+                $('.step3 .step3_table_box .text_td1 span .highlight').addClass('aniScale');
+              }
+            },
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                $('.step3 .step3_table_box .text_td1 span .highlight').removeClass('aniScale');
+                $('.step3 .effect_box .effect2').css('visibility', 'visible').addClass('box_blink2');
+                touchMotionSetOn(55, 730, step3.guideTouch2, $('.step3 .effect_box .effect2'));
+              }
+            },
+          ]);
+        },
+        guideTouch2: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_014.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step3 .effect_box .effect2').css('visibility', 'hidden').removeClass('box_blink2');
+                $('.step3 .step3_table_box .text_td2 span').css('visibility', 'visible');
+                $('.step3 .step3_table_box .text_td2 span .highlight').addClass('aniScale');
+              }
+            },
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                $('.step3 .step3_table_box .text_td2 span .highlight').removeClass('aniScale');
+                $('.step3 .effect_box .effect3').css('visibility', 'visible').addClass('box_blink2');
+                touchMotionSetOn(55, 955, step3.guideTouch3, $('.step3 .effect_box .effect3'));
+              }
+            },
+          ]);
+        },
+        guideTouch3: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_015.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step3 .effect_box .effect3').css('visibility', 'hidden').removeClass('box_blink2');
+                $('.step3 .step3_table_box .text_td3 span').css('visibility', 'visible');
+                $('.step3 .step3_table_box .text_td3 span .highlight').addClass('aniScale');
+              }
+            },
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                $('.step3 .step3_table_box .text_td3 span .highlight').removeClass('aniScale');
+                $('.step3 .effect_box .effect4').css('visibility', 'visible').addClass('box_blink2');
+                touchMotionSetOn(55, 1160, step3.guideTouch4, $('.step3 .effect_box .effect4'));
+              }
+            },
+          ]);
+        },
+        guideTouch4: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_016.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step3 .effect_box .effect4').css('visibility', 'hidden').removeClass('box_blink2');
+                $('.step3 .step3_table_box .text_td4 span').css('visibility', 'visible');
+                $('.step3 .step3_table_box .text_td4 span .highlight').addClass('aniScale');
+              }
+            },
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                $('.step3 .step3_table_box .text_td4 span .highlight').removeClass('aniScale');
+                $('.step3 .effect_box .effect5').css('visibility', 'visible').addClass('box_blink2');
+                touchMotionSetOn(55, 1380, step3.guideTouch5, $('.step3 .effect_box .effect5'));
+              }
+            },
+          ]);
+        },
+        guideTouch5: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_017.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_018.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step3 .effect_box .effect5').css('visibility', 'hidden').removeClass('box_blink2');
+                $('.step3 .step3_table_box .text_td5 span').css('visibility', 'visible');
+                $('.step3 .step3_table_box .text_td5 span .highlight').addClass('aniScale');
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step3 .step3_table_box .text_td5 span .highlight').removeClass('aniScale');
+                $('.step3 .check_footer_inner').addClass('slideUp');
+              }
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                correctly();
+              }
+            },
+          ]);
+        },
+        reset: () => {
+          touchMotionSetInit();
+
+          $('.step3 .dp_none').css('display', '');
+          $('.step3 .v_hidden').css('visibility', '');
+          $('.step3 .effect_box .effect').removeClass('box_blink2');
+          $('.step3 .step3_table_box span .highlight').removeClass('aniScale');
+          $('.step3 .check_footer_inner').removeClass('slideUp');
+        },
+      };
+      //================STEP4==============
+      const step4 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_019.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_020.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                touchMotionSetOn(205, 413, step4.guideTouch, $('.step4 .step4_top_box .click_box'));
+              }
+            },
+          ]);
+        },
+        guideTouch: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_021_NEW.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_022.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_023.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_024.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_025.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step4_top_box .show_box .thousand_circle_box1').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step4_top_box .show_box .thousand_circle_box2').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step4_top_box .show_box .thousand_circle_box3').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step4_top_box .show_box .thousand_circle_box4').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 5,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step4_top_box .show_box .thousand_circle_box5').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 5,
+              type: 'end',
+              callback: () => {
+                $('.step4 .step4_btm_box').css('visibility', 'visible');
+                $('.step4 .step4_answer_box').css('visibility', 'visible');
+                
+                stepDropList = [
+                  {
+                    dropEl: '.step4 .txt_container1',
+                    correct: 3
+                  },
+                ];
+
+                stepDropArr = ["3", "4", "5"];
+                
+                quizMultiDragDropSetOnNew(stepDropList, $('.step4_answer_box'), stepDropArr, step4.dropppFn);
+              }
+            },
+          ]);
+        },
+        dropppFn: () => {
+          $(".droppable")
+            .droppable({ disabled: false })
+            .on("droppable:drop", function (droppp, drag) {
+              let dragAnswer = drag.item[0].dataset.val;
+              let answer = droppp.currentTarget.dataset.val;
+
+              if (answer === dragAnswer) {
+                correctlyFlag++;
+                quizMultiDragDropSetCorrect(droppp.currentTarget);
+
+                if (correctlyFlag == stepDropList.length) {
+                  quizMultiDragDropSetCorrectly();
+                  stepDropList = "";
+                  stepDropArr = "";
+                  
+                  audioSet([
+                    "../../../COMM/SOUND/CORRECT.mp3",
+                    "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_026.mp3",
+                  ], [
+                    {
+                      idx: 1,
+                      type: 'start',
+                      callback: () => {
+                        $('.step4 .step4_answer_box').css('visibility', 'hidden');
+                      }
+                    },
+                    {
+                      idx: 2,
+                      type: 'end',
+                      callback: () => {
+                        correctly();
+                      }
+                    },
+                  ]);
+                } else {
+                  audioSet([
+                    "../../../COMM/SOUND/CORRECT.mp3",
+                  ]);
+                }
+              } else {
+                audioSet([
+                  "../../../COMM/SOUND/WRONG.mp3",
+                ]);
+
+                return false;
+              }
+            });
+        },
+        reset: () => {
+          touchMotionSetInit();
+          correctlyFlag = 0;
+
+          $('.step4 .dp_none').css('display', '');
+          $('.step4 .v_hidden').css('visibility', '');
+          $('.step4 .txt_container').html('?');
+        },
+      };
+      //================STEP5==============
+      const step5 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_027.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                touchMotionSetOn(185, 230, step5.guideTouch, $('.step5 .step5_top_box .click_box1'));
+              }
+            },
+          ]);
+        },
+        guideTouch: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_021.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_022.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_023.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_024.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step4_top_box .show_box .thousand_circle_box1').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step4_top_box .show_box .thousand_circle_box2').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step4_top_box .show_box .thousand_circle_box3').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step4_top_box .show_box .thousand_circle_box4').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 4,
+              type: 'end',
+              callback: () => {
+                touchMotionSetOn(185, 465, step5.guideTouch2, $('.step5 .step5_top_box .click_box2'));
+              }
+            },
+          ]);
+        },
+        guideTouch2: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_028.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_029.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_030.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_031.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_032.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_033.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_034.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_035.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_036.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_037.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step4_top_box .show_box .hundred_circle_box1').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step4_top_box .show_box .hundred_circle_box2').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step4_top_box .show_box .hundred_circle_box3').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step4_top_box .show_box .hundred_circle_box4').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 5,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step4_top_box .show_box .hundred_circle_box5').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 6,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step4_top_box .show_box .hundred_circle_box6').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 7,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step4_top_box .show_box .hundred_circle_box7').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 8,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step4_top_box .show_box .hundred_circle_box8').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 9,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step4_top_box .show_box .hundred_circle_box9').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 10,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step4_top_box .show_box .hundred_circle_box10').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 10,
+              type: 'end',
+              callback: () => {
+                $('.step5 .step4_btm_box').css('visibility', 'visible');
+                $('.step5 .step5_answer_box').css('visibility', 'visible');
+                
+                stepDropList = [
+                  {
+                    dropEl: '.step5 .txt_container1',
+                    correct: 2
+                  },
+                  {
+                    dropEl: '.step5 .txt_container2',
+                    correct: 1
+                  },
+                ];
+
+                stepDropArr = ["5", "4000", "4", "5000"];
+                
+                quizMultiDragDropSetOnNew(stepDropList, $('.step5_answer_box'), stepDropArr, step5.dropppFn);
+              }
+            },
+          ]);
+        },
+        dropppFn: () => {
+          $(".droppable")
+            .droppable({ disabled: false })
+            .on("droppable:drop", function (droppp, drag) {
+              let dragAnswer = drag.item[0].dataset.val;
+              let answer = droppp.currentTarget.dataset.val;
+
+              if (answer === dragAnswer) {
+                correctlyFlag++;
+                quizMultiDragDropSetCorrect(droppp.currentTarget);
+
+                if (correctlyFlag == stepDropList.length) {
+                  quizMultiDragDropSetCorrectly();
+                  stepDropList = "";
+                  stepDropArr = "";
+                  
+                  audioSet([
+                    "../../../COMM/SOUND/CORRECT.mp3",
+                    "../../../COMM/SOUND/SEASON2/2_1_3/2_2_1-3_038.mp3",
+                  ], [
+                    {
+                      idx: 1,
+                      type: 'start',
+                      callback: () => {
+                        $('.step5 .step5_answer_box').css('visibility', 'hidden');
+                      }
+                    },
+                    {
+                      idx: 2,
+                      type: 'end',
+                      callback: () => {
+                        callFinish();
+                      }
+                    },
+                  ]);
+                } else {
+                  audioSet([
+                    "../../../COMM/SOUND/CORRECT.mp3",
+                  ]);
+                }
+              } else {
+                audioSet([
+                  "../../../COMM/SOUND/WRONG.mp3",
+                ]);
+
+                return false;
+              }
+            });
+        },
+        reset: () => {
+          touchMotionSetInit();
+          correctlyFlag = 0;
+
+          $('.step5 .dp_none').css('display', '');
+          $('.step5 .v_hidden').css('visibility', '');
+          $('.step5 .txt_container').html('?');
+        },
+      };
+    </script>
+  </body>
+</html>

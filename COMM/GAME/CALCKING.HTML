@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=2000, user-scalable=no" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <link rel="stylesheet" href="../../../COMM/GAME/RESET.CSS" />
+    <link rel="stylesheet" href="../../../COMM/GAME/CALCKING.CSS" />
+    <link rel="shortcut icon" href="#" />
+    <title>나는 계산왕!</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <section id="complete_popup" style="display: none">
+        <div class="dimmed"></div>
+        <div class="bg"></div>
+        <div class="buttonArea">
+          <button class="reload" onclick="gameRetry()"></button>
+          <button class="play_view" onclick="videoPlayer()">
+            개념 영상 보기
+          </button>
+          <!-- <p>
+            더 공부하고 싶다면 개념영상 보러 가보자!
+          </p> -->
+        </div>
+      </section>
+      <div class="overlay">
+        <div class="answer"></div>
+      </div>
+      <div class="popup__wrap">
+        <div class="popup__overlay">
+          <div class="popup__complete"></div>
+          <div class="popup__backbg"></div>
+          <button class="popup__btn"></button>
+          <!-- <span>
+            더 공부하고 싶다면 개념영상 보러 가보자!
+          </span> -->
+        </div>
+      </div>
+
+      <div class="calcking__wrapper">
+        <div class="page_num">
+          <span id="pageCnt">1</span>
+          <span>/</span>
+          <span id="pageCntAll">3</span>
+        </div>
+
+        <div class="calcking_bg">
+          <div class="calcking__intro__wrapper">
+            <button
+              class="calcking__intro__startbtn"
+              onclick="gameStart()"
+            ></button>
+          </div>
+        </div>
+
+        <div class="calcking__gamestart__bg"></div>
+
+        <div class="calc__title__wrapper">
+          <span>물음표에 들어갈 숫자를 입력해봐!</span>
+        </div>
+
+        <div class="calculator__wrapper">
+          <div class="calculator__container">
+            <div class="calculator__container_inner">
+              <!-- 발문 랜더링 -->
+            </div>
+          </div>
+
+          <div class="calculator__keypad__contents">
+            <div class="calc-screen"></div>
+            <div class="calculator__keypad__box">
+              <div>
+                <button
+                  class="keypad__top__box"
+                  onclick="onKeyboard(this)"
+                  value="1"
+                >
+                  1
+                </button>
+                <button
+                  class="keypad__top__box"
+                  onclick="onKeyboard(this)"
+                  value="2"
+                >
+                  2
+                </button>
+                <button
+                  class="keypad__top__box"
+                  onclick="onKeyboard(this)"
+                  value="3"
+                >
+                  3
+                </button>
+                <button
+                  class="keypad__top__box"
+                  onclick="onKeyboard(this)"
+                  value="4"
+                >
+                  4
+                </button>
+                <button
+                  class="keypad__top__box"
+                  onclick="onKeyboard(this)"
+                  value="5"
+                >
+                  5
+                </button>
+
+                <button class="keypad__top__backbtn" onclick="textDel()">
+                  <img
+                    src="../../../COMM/IMG/CALCKING/BACK_BTN.png"
+                    alt="BACK버튼"
+                  />
+                </button>
+              </div>
+              <div>
+                <button
+                  class="keypad__top__box"
+                  onclick="onKeyboard(this)"
+                  value="6"
+                >
+                  6
+                </button>
+                <button
+                  class="keypad__top__box"
+                  onclick="onKeyboard(this)"
+                  value="7"
+                >
+                  7
+                </button>
+                <button
+                  class="keypad__top__box"
+                  onclick="onKeyboard(this)"
+                  value="8"
+                >
+                  8
+                </button>
+                <button
+                  class="keypad__top__box"
+                  onclick="onKeyboard(this)"
+                  value="9"
+                >
+                  9
+                </button>
+                <button
+                  class="keypad__top__box"
+                  onclick="onKeyboard(this)"
+                  value="0"
+                >
+                  0
+                </button>
+
+                <button class="keypad__top__checkbtn" onclick="answerCheck()">
+                  <img
+                    src="../../../COMM/IMG/CALCKING/CHECK_BTN.png"
+                    alt="CHECK버튼"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 가이드 -->
+      <section class="pearl-guide">
+        <div class="pearl-guide-point"></div>
+        <div class="pearl-guide-hand"></div>
+      </section>
+    </div>
+    <script
+      crossorigin
+      src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"
+    ></script>
+    <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+    <script src="../../../COMM/GAME/CALCKING.JS"></script>
+    <script defer src="../../../COMM/JS/COMMONGAME.JS"></script>
+  </body>
+</html>

@@ -1,0 +1,1521 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>개정교육과정-수학 수학 개념</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="KeyWORDs" content="" />
+    <meta name="Description" content="" />
+    <meta name="Robots" content="all" />
+    <meta http-equiv="Subject" content="" />
+    <meta http-equiv="Title" content="" />
+    <meta http-equiv="Author" content="onflou " />
+    <meta http-equiv="Publisher" content="" />
+
+    <!-- 브라우저 호환성을 지정 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="#" />
+    <link href="../../../COMM/CSS/COMMON.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/COMMONLAYOUT.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/CONCEPTCOMMON3.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/VIDEO.CSS" rel="stylesheet" />
+
+    <style>
+      /* 1p, 2p, 3p, 4p */
+      .step1,
+      .step2 {
+        --table-width: 1248px;
+        --table-height: 218px;
+        --table-title-height: 63px;
+        --table-border-color: rgba(217, 217, 217, 1);
+        --table-title-color: transparent;
+      }
+
+      .step3,
+      .step4 {
+        --table-width: 1248px;
+        --table-height: 322px;
+        --table-title-height: 63px;
+        --table-border-color: rgba(217, 217, 217, 1);
+        --table-title-color: transparent;
+      }
+
+      .step1 .examText,
+      .step2 .examText{
+        height: 218px;
+      }
+
+      .step3 .examText,
+      .step4 .examText{
+        height: 322px;
+      }
+
+      .table_box .tr .title_td1 {
+        background-color: #ffeca7;
+      }
+      .table_box .tr .title_td2 {
+        background-color: #c7e667;
+      }
+      .table_box .tr .title_td3 {
+        background-color: #d1e5ff;
+      }
+      .table_box .tr .title_td4 {
+        background-color: #ffd8f6;
+      }
+
+      .table_box .tr {
+        position: relative;
+      }
+
+      .table_box .tr .title_td {
+        font-size: 35px;
+      }
+
+      img {width: unset;}
+
+      .step1_top_box {
+        position: relative;
+        align-items: flex-start;
+      }
+
+      .step1_top_box .examText {
+        height: 100%;
+        width: 260px;
+        margin-right: 27px;
+        justify-content: flex-end;
+      }
+
+      .step1_top_box .examTextDiv {
+        width: 100%;
+        height: 77px;
+        margin-bottom: 13px;
+      }
+
+      .step1_top_box .examTextDiv:last-of-type {
+        margin-bottom: 0px;
+      }
+
+      .step1_top_box .examTextDiv span {
+        border: 3px solid #bedaff;
+        border-radius: 14px;
+        font-size: 44px;
+        font-weight: 700;
+        height: 100%;
+        width: 165px;
+        padding: 17px 30px;
+      }
+
+      .step1_top_box .arrowImg {
+        width: 62px;
+        height: 63px;
+        margin-left: 33px;
+      }
+
+      .step1_btm_box {
+        width: 967px;
+        height: 183px;
+        border-radius: 20px;
+        background-color: #f2f5ff;
+        margin: 82px 0px 32px 0px;
+      }
+
+      .step1_btm_box .quizCircle {
+        width: 72px;
+        height: 72px;
+        border: 4px solid #0277ff;
+        background-color: #fff;
+        border-radius: 50%;
+        margin: 0 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+      }
+
+      .step1_btm_box .txt_container.two {
+        margin: 0 4px 0 20px;
+      }
+
+      .step1_btm_box .txt {
+        line-height: 74px;
+      }
+      
+      .quiz_select_wrap .select_list .answer {
+        width: 200px;
+        height: 114px;
+      }
+
+      .select_list{
+        gap:48px;
+      }
+
+      .step1 .effect_box,
+      .step2 .effect_box {
+        width: 1248px;
+        height: 218px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        justify-content: flex-start;
+      }
+
+      .step3 .effect_box,
+      .step4 .effect_box {
+        width: 1248px;
+        height: 322px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        justify-content: flex-start;
+      }
+
+      .step1 .effect_box .effect,
+      .step2 .effect_box .effect {
+        width: 311px;
+        height: 75.5px;
+      }
+
+      .step3 .effect_box .effect,
+      .step4 .effect_box .effect {
+        width: 311px;
+        height: 86.33px;
+      }
+
+      .step1 .effect_box .effect1,
+      .step2 .effect_box .effect1,
+      .step3 .effect_box .effect1,
+      .step4 .effect_box .effect1 {
+        height: 63px;
+        border: 5px solid rgba(103, 68, 243, 1);
+      }
+
+      .bgEffect {
+        animation: 1s bgEffectBlink infinite;
+      }
+
+      @keyframes bgEffectBlink {
+        0% {
+          background-color: rgba(255, 255, 255, 1);
+        }
+      
+        50% {
+          background-color: rgba(211, 201, 252, 1);
+        }
+      
+        100% {
+          background-color: rgba(255, 255, 255, 1);
+        }
+      }
+
+      /* 1p */
+      .step1 .effect_box .effect3 {
+        border-bottom-left-radius: 20px;
+      }
+
+      /* 2p */
+      .step2 .effect_box .line1 .effect3 {
+        border-bottom-left-radius: 20px;
+      }
+
+      /* 3p */
+      .step3_btm_box span{
+        line-height: 75px;
+        margin-left: unset;
+      }
+
+      .step3 .effect_box .effect4 {
+        border-bottom-left-radius: 20px;
+      }
+
+      /* 4p */
+      .step4 .borderBlink {
+        left: 710px;
+        top: 94px;
+      }
+
+      /* 5p */
+      .step5 .full_content_comm{
+        display: flex;
+        justify-content: flex-start;
+        align-items: normal;
+        height: 100%;
+        transform: unset;
+      }
+
+      .step5 .full_content_comm h1{
+        text-indent: 70px;
+        font-size: 44px;
+        font-weight: bold;
+        margin-bottom: 94px;
+        color: #000;
+      }
+
+      .step5 .topDiv {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 142px;
+      }
+
+      .step5 .topDiv img {
+        width: 295px;
+        height: 101px;
+      }
+
+      .step5 .belowDiv {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 46px;
+      }
+
+      .step5 .belowDiv img {
+        width: 72px;
+        height: 72px;
+      }
+
+      .step5 .belowDiv p {
+        width: 286px;
+        height: 152px;
+        font-size: 44px;
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .step5 .belowDiv p:nth-of-type(1) {
+        background-color: #ffeca7;
+      }
+      .step5 .belowDiv p:nth-of-type(2) {
+        background-color: #c7e667;
+      }
+      .step5 .belowDiv p:nth-of-type(3) {
+        background-color: #d1e5ff;
+      }
+      .step5 .belowDiv p:nth-of-type(4) {
+        background-color: #ffd8f6;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div
+        id="contents-wrap"
+        class="concept"
+        style="position: absolute; display: flex"
+      ></div>
+      <div id="contents-main" style="display: none" class="concept-warp">
+        <div class="concept-warp_inner">
+          <header class="header" style="visibility: visible">
+            <div class="header_title">
+              <button class="sound-btn" onclick="titleSound()"></button>
+              <h3></h3>
+            </div>
+            <p class="header_page"><span>1</span>/2</p>
+          </header>
+          <main class="main">
+            <div class="main_content">
+              <!-- 콘텐츠영역 -->
+              <div class="step step1" style="display: block">
+                <!-- step1 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step1_top_box dp_flex">
+                    <div class="examText dp_flex dp_flex_column">
+                      <div class="examTextDiv examTextDiv1 dp_flex">
+                        <span class="dp_flex">3459</span>
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_7/STEP_ARROW_BLUE.png" alt="" class="arrowImg" />
+                      </div>
+                      <div class="examTextDiv examTextDiv2 dp_flex">
+                        <span class="dp_flex">2748</span>
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_7/STEP_ARROW_BLUE.png" alt="" class="arrowImg" />
+                      </div>
+                    </div>
+                    <div class="step1_table_box step1_table_box1 table_box dp_flex dp_flex_column">
+                      <div class="tr tr1 dp_flex">
+                        <div class="td title_td title_td1 dp_flex">
+                          천의 자리
+                        </div>
+                        <div class="td title_td title_td2 dp_flex">
+                          백의 자리
+                        </div>
+                        <div class="td title_td title_td3 dp_flex">
+                          십의 자리
+                        </div>
+                        <div class="td title_td title_td4 dp_flex">
+                          일의 자리
+                        </div>
+                      </div>
+                      <div class="tr tr2 dp_flex">
+                        <div class="td text_td text_td1 dp_flex">
+                          <span class="v_hidden">3</span>
+                        </div>
+
+                        <div class="td text_td text_td2 dp_flex">
+                          <span class="v_hidden">4</span>
+                        </div>
+
+                        <div class="td text_td text_td3 dp_flex">
+                          <span class="v_hidden">5</span>
+                        </div>
+
+                        <div class="td text_td text_td4 dp_flex">
+                          <span class="v_hidden">9</span>
+                        </div>
+                      </div>
+                      <div class="tr tr3 dp_flex">
+                        <div class="td text_td text_td1 dp_flex">
+                          <span class="v_hidden">2</span>
+                        </div>
+
+                        <div class="td text_td text_td2 dp_flex">
+                          <span class="v_hidden">7</span>
+                        </div>
+
+                        <div class="td text_td text_td3 dp_flex">
+                          <span class="v_hidden">4</span>
+                        </div>
+
+                        <div class="td text_td text_td4 dp_flex">
+                          <span class="v_hidden">8</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="effect_box">
+                      <div class="effect effect1 v_hidden"></div>
+                    </div>
+                  </div>
+                  <div class="step1_btm_box dp_flex v_hidden">
+                    <span>3459</span>
+                    <div class="txt_container txt_container1 quizCircle">?</div>
+                    <span>2748</span>
+                  </div>
+                  <div class="quiz_select_wrap v_hidden">
+                    <div class="select_list">
+                      <div class="answer answer1"><span class="sign">&gt;</span></div>
+                      <div class="answer answer2">=</div>
+                      <div class="answer answer3"><span class="sign">&lt;</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step2" style="display: block">
+                <!-- step2 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step1_top_box dp_flex">
+                    <div class="examText dp_flex dp_flex_column">
+                      <div class="examTextDiv examTextDiv1 dp_flex">
+                        <span class="dp_flex">5162</span>
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_7/STEP_ARROW_BLUE.png" alt="" class="arrowImg" />
+                      </div>
+                      <div class="examTextDiv examTextDiv2 dp_flex">
+                        <span class="dp_flex">5341</span>
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_7/STEP_ARROW_BLUE.png" alt="" class="arrowImg" />
+                      </div>
+                    </div>
+                    <div class="step1_table_box step1_table_box1 table_box dp_flex dp_flex_column">
+                      <div class="tr tr1 dp_flex">
+                        <div class="td title_td title_td1 dp_flex">
+                          천의 자리
+                        </div>
+                        <div class="td title_td title_td2 dp_flex">
+                          백의 자리
+                        </div>
+                        <div class="td title_td title_td3 dp_flex">
+                          십의 자리
+                        </div>
+                        <div class="td title_td title_td4 dp_flex">
+                          일의 자리
+                        </div>
+                      </div>
+                      <div class="tr tr2 dp_flex">
+                        <div class="td text_td text_td1 dp_flex">
+                          <span class="v_hidden">5</span>
+                        </div>
+
+                        <div class="td text_td text_td2 dp_flex">
+                          <span class="v_hidden">1</span>
+                        </div>
+
+                        <div class="td text_td text_td3 dp_flex">
+                          <span class="v_hidden">6</span>
+                        </div>
+
+                        <div class="td text_td text_td4 dp_flex">
+                          <span class="v_hidden">2</span>
+                        </div>
+                      </div>
+                      <div class="tr tr3 dp_flex">
+                        <div class="td text_td text_td1 dp_flex">
+                          <span class="v_hidden">5</span>
+                        </div>
+
+                        <div class="td text_td text_td2 dp_flex">
+                          <span class="v_hidden">3</span>
+                        </div>
+
+                        <div class="td text_td text_td3 dp_flex">
+                          <span class="v_hidden">4</span>
+                        </div>
+
+                        <div class="td text_td text_td4 dp_flex">
+                          <span class="v_hidden">1</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="effect_box dp_flex">
+                      <div class="line line1">
+                        <div class="effect effect1 v_hidden"></div>
+                        <div class="effect effect2 v_hidden"></div>
+                        <div class="effect effect3 v_hidden"></div>
+                      </div>
+                      <div class="line line2">
+                        <div class="effect effect1 v_hidden"></div>
+                        <div class="effect effect2 v_hidden"></div>
+                        <div class="effect effect3 v_hidden"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step1_btm_box dp_flex v_hidden">
+                      <span>5162</span>
+                      <div class="txt_container txt_container1 quizCircle">?</div>
+                      <span>5341</span>
+                  </div>
+                  <div class="quiz_select_wrap v_hidden">
+                    <div class="select_list">
+                      <div class="answer answer1">&gt;</div>
+                      <div class="answer answer2">=</div>
+                      <div class="answer answer3">>&lt;</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step3" style="display: none">
+                <!-- step3 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step1_top_box dp_flex">
+                    <div class="examText dp_flex dp_flex_column">
+                      <div class="examTextDiv examTextDiv1 dp_flex">
+                        <span class="dp_flex">4319</span>
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_7/STEP_ARROW_BLUE.png" alt="" class="arrowImg" />
+                      </div>
+                      <div class="examTextDiv examTextDiv2 dp_flex">
+                        <span class="dp_flex">4187</span>
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_7/STEP_ARROW_BLUE.png" alt="" class="arrowImg" />
+                      </div>
+                      <div class="examTextDiv examTextDiv3 dp_flex">
+                        <span class="dp_flex">5038</span>
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_7/STEP_ARROW_BLUE.png" alt="" class="arrowImg" />
+                      </div>
+                    </div>
+                    <div class="step1_table_box step3_table_box1 table_box dp_flex dp_flex_column">
+                      <div class="tr tr1 dp_flex">
+                        <div class="td title_td title_td1 dp_flex">
+                          천의 자리
+                        </div>
+                        <div class="td title_td title_td2 dp_flex">
+                          백의 자리
+                        </div>
+                        <div class="td title_td title_td3 dp_flex">
+                          십의 자리
+                        </div>
+                        <div class="td title_td title_td4 dp_flex">
+                          일의 자리
+                        </div>
+                      </div>
+                      <div class="tr tr2 dp_flex">
+                        <div class="td text_td text_td1 dp_flex">
+                          <span>4</span>
+                        </div>
+
+                        <div class="td text_td text_td2 dp_flex">
+                          <span>3</span>
+                        </div>
+
+                        <div class="td text_td text_td3 dp_flex">
+                          <span>1</span>
+                        </div>
+
+                        <div class="td text_td text_td4 dp_flex">
+                          <span>9</span>
+                        </div>
+                      </div>
+
+                      <div class="tr tr3 dp_flex">
+                        <div class="td text_td text_td1 dp_flex">
+                          <span>4</span>
+                        </div>
+
+                        <div class="td text_td text_td2 dp_flex">
+                          <span>1</span>
+                        </div>
+
+                        <div class="td text_td text_td3 dp_flex">
+                          <span>8</span>
+                        </div>
+
+                        <div class="td text_td text_td4 dp_flex">
+                          <span>7</span>
+                        </div>
+                      </div>
+
+                      <div class="tr tr4 dp_flex">
+                        <div class="td text_td text_td1 dp_flex">
+                          <span>5</span>
+                        </div>
+
+                        <div class="td text_td text_td2 dp_flex">
+                          <span>0</span>
+                        </div>
+
+                        <div class="td text_td text_td3 dp_flex">
+                          <span>3</span>
+                        </div>
+
+                        <div class="td text_td text_td4 dp_flex">
+                          <span>8</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="effect_box">
+                      <div class="effect effect1 v_hidden"></div>
+                      <div class="effect effect2 v_hidden"></div>
+                      <div class="effect effect3 v_hidden"></div>
+                      <div class="effect effect4 v_hidden"></div>
+                    </div>
+                  </div>
+                  <div class="step1_btm_box dp_flex v_hidden">
+                    <div class="txt">가장 큰 수는</div>
+                    <div class="txt_container txt_container1 two">?</div>
+                    <div class="txt">입니다.</div>
+                  </div>
+                  <div class="quiz_select_wrap v_hidden">
+                    <div class="select_list">
+                      <div class="answer answer1">&gt;</div>
+                      <div class="answer answer2">=</div>
+                      <div class="answer answer3">&lt;</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step4" style="display: none">
+                <!-- step4 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step1_top_box dp_flex">
+                    <div class="examText dp_flex dp_flex_column">
+                      <div class="examTextDiv examTextDiv1 dp_flex">
+                        <span class="dp_flex">4319</span>
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_7/STEP_ARROW_BLUE.png" alt="" class="arrowImg" />
+                      </div>
+                      <div class="examTextDiv examTextDiv2 dp_flex">
+                        <span class="dp_flex">4187</span>
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_7/STEP_ARROW_BLUE.png" alt="" class="arrowImg" />
+                      </div>
+                      <div class="examTextDiv examTextDiv3 dp_flex">
+                        <span class="dp_flex">5038</span>
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_7/STEP_ARROW_BLUE.png" alt="" class="arrowImg" />
+                      </div>
+                    </div>
+                    <div class="step1_table_box step3_table_box1 table_box dp_flex dp_flex_column">
+                      <div class="tr tr1 dp_flex">
+                        <div class="td title_td title_td1 dp_flex">
+                          천의 자리
+                        </div>
+                        <div class="td title_td title_td2 dp_flex">
+                          백의 자리
+                        </div>
+                        <div class="td title_td title_td3 dp_flex">
+                          십의 자리
+                        </div>
+                        <div class="td title_td title_td4 dp_flex">
+                          일의 자리
+                        </div>
+                      </div>
+                      <div class="tr tr2 dp_flex">
+                        <div class="td text_td text_td1 dp_flex">
+                          <span>4</span>
+                        </div>
+
+                        <div class="td text_td text_td2 dp_flex">
+                          <span>3</span>
+                        </div>
+
+                        <div class="td text_td text_td3 dp_flex">
+                          <span>1</span>
+                        </div>
+
+                        <div class="td text_td text_td4 dp_flex">
+                          <span>9</span>
+                        </div>
+                      </div>
+                      <div class="tr tr3 dp_flex">
+                        <div class="td text_td text_td1 dp_flex">
+                          <span>4</span>
+                        </div>
+
+                        <div class="td text_td text_td2 dp_flex">
+                          <span>1</span>
+                        </div>
+
+                        <div class="td text_td text_td3 dp_flex">
+                          <span>8</span>
+                        </div>
+
+                        <div class="td text_td text_td4 dp_flex">
+                          <span>7</span>
+                        </div>
+                      </div>
+                      <div class="tr tr4 dp_flex">
+                        <div class="td text_td text_td1 dp_flex">
+                          <span>5</span>
+                        </div>
+
+                        <div class="td text_td text_td2 dp_flex">
+                          <span>0</span>
+                        </div>
+
+                        <div class="td text_td text_td3 dp_flex">
+                          <span>3</span>
+                        </div>
+
+                        <div class="td text_td text_td4 dp_flex">
+                          <span>8</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="effect_box dp_flex">
+                      <div class="line line1">
+                        <div class="effect effect1 v_hidden"></div>
+                        <div class="effect effect2 v_hidden"></div>
+                        <div class="effect effect3 v_hidden"></div>
+                        <div class="effect effect4 v_hidden"></div>
+                      </div>
+                      <div class="line line2">
+                        <div class="effect effect1 v_hidden"></div>
+                        <div class="effect effect2 v_hidden"></div>
+                        <div class="effect effect3 v_hidden"></div>
+                        <div class="effect effect4 v_hidden"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="step1_btm_box dp_flex v_hidden">
+                    <div class="txt">가장 작은 수는</div>
+                    <div class="txt_container txt_container1 two">?</div>
+                    <div class="txt">입니다.</div>
+                  </div>
+
+                  <div class="quiz_select_wrap v_hidden">
+                    <div class="select_list">
+                      <div class="answer answer1">4319</div>
+                      <div class="answer answer2">4187</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step5" style="display: none">
+                <!-- step5 시작부분 -->
+                <div class="main__container">
+                  <div class="full_content_comm dp_flex_column">
+                    <h1>• 네 자리 수의 크기 비교 방법</h1>
+                    <div class="contentDiv">
+                      <div class="topDiv">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_7/STEP5_BUBBLE1.png" alt="말풍선 이미지" class="img img1 v_hidden" />
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_7/STEP5_BUBBLE2.png" alt="말풍선 이미지" class="img img2 v_hidden" />
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_7/STEP5_BUBBLE3.png" alt="말풍선 이미지" class="img img3 v_hidden" />
+                      </div>
+                      <div class="belowDiv">
+                        <p class="txt txt1 v_hidden">천의 자리 수</br>비교</p>
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_7/STEP_ARROW_GRAY.png" alt="화살표 이미지" class="arrow arrow1 v_hidden"/>
+                        <p class="txt txt2 v_hidden">백의 자리 수</br>비교</p>
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_7/STEP_ARROW_GRAY.png" alt="화살표 이미지" class="arrow arrow2 v_hidden"/>
+                        <p class="txt txt3 v_hidden">십의 자리 수</br>비교</p>
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_7/STEP_ARROW_GRAY.png" alt="화살표 이미지" class="arrow arrow3 v_hidden"/>
+                        <p class="txt txt4 v_hidden">일의 자리 수</br>비교</p>
+                      </div>
+                    </div>
+                  </div>
+                  <footer class="check_footer">
+                    <div class="check_footer_inner">
+                      <div class="check_footer_text dp_flex">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_1_7/STEP5_FOOTER_TXT.png?=t" class="img img1" />
+                      </div>
+                      <div class="check_footer_ch">
+                        <div class="check_footer_ch_head"></div>
+                        <div class="check_footer_ch_body"></div>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+
+              <ul class="step-list">
+                <li class="step-list_item active"></li>
+                <li class="step-list_item"></li>
+              </ul>
+            </div>
+          </main>
+          <div class="main_prev-next">
+            <button class="btn-prev" style="display: none">이전버튼</button>
+            <!-- <button class="btn-next" style="display: block" disabled> -->
+            <button class="btn-next blinking" style="display: block">
+              다음버튼
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      crossorigin
+      src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"
+    ></script>
+    <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+    <script src="../../../COMM/JS/COMMON2.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNT3.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNTBTN.JS"></script>
+    <script src="../../../COMM/JS/GAME.JS"></script>
+    <script src="../../../COMM/JS/VIDEO.JS"></script>
+    <script src="../../../COMM/JS/VIDEO-HTTP-STREAMING.JS"></script>
+    <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+    <script>
+      /*
+       * 데이터
+       */
+      let intro = {
+        type: "concept", //concept 개념익히기, checkExam 확인문제
+        title: "수의 크기를 비교해 볼까요",
+        subTitle: [
+          "네 자리 수의 크기 비교하는 방법을 알 수 있어요.",
+          "수의 크기를 비교할 수 있어요.",
+        ],
+        sound: ["../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_001.mp3"],
+      };
+
+      //현재 페이지
+      let disStep = 1;
+
+      let pageData = [
+        {
+          step: 1,
+          title: "3459와 2748의 크기를 비교해 봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_001.mp3",
+          headerPage: [1, 2],
+          footerPage: [1, 2],
+          prev: 0,
+          next: 1,
+        },
+        {
+          step: 2,
+          title: "5162와 5341의 크기를 비교해 봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_008.mp3",
+          headerPage: [1, 2],
+          footerPage: [2, 2],
+          prev: 1,
+          next: 1,
+        },
+        {
+          step: 3,
+          title: "세 수의 크기를 비교해 봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_017.mp3",
+          headerPage: [2, 2],
+          footerPage: [1, 2],
+          prev: 2,
+          next: 1,
+        },
+        {
+          step: 4,
+          title: "세 수의 크기를 비교해 봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_017.mp3",
+          headerPage: [2, 2],
+          footerPage: [2, 2],
+          prev: 1,
+          next: 0,
+        },
+        {
+          step: 5,
+          title: "",
+          sound: "",
+          headerPage: [0, 0],
+          footerPage: [0, 0],
+          prev: 1,
+          next: 0,
+        },
+      ];
+
+      function pageAction() {
+        console.log("disStep ::: ", disStep);
+        //setTimeout 초기화
+        const TimeoutId = setTimeout(() => console.log("timeout clear"), 1);
+        for (let i = 0; i < TimeoutId; i++) {
+          clearTimeout(i);
+        }
+        stepSet();
+        switch (disStep) {
+          case 1:
+            step1.reset();
+            step1.start();
+            break;
+          case 2:
+            step2.reset();
+            step2.start();
+            break;
+          case 3:
+            step3.reset();
+            step3.start();
+            break;
+          case 4:
+            step4.reset();
+            step4.start();
+            break;
+          case 5:
+            step5.reset();
+            step5.start();
+            break;
+        }
+      }
+
+      //문제 시작
+      //================STEP1==============
+      const step1 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_001.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_002.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $('.step1 .step1_top_box .examTextDiv1 span').addClass('box_blink2');
+                touchMotionSetOn(190, 155, step1.guideTouch, $('.step1 .step1_top_box .examTextDiv1'));
+              }
+            },
+          ]);
+        },
+        guideTouch: () => {
+          $('.step1 .step1_top_box .examTextDiv1 span').removeClass('box_blink2');
+
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_003.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                timerSet(() => {
+                  timerInit();
+                  $('.step1 .step1_table_box .tr2 .text_td1 span').css('visibility', 'visible');
+                  timerSet(() => {
+                    timerInit();
+                    $('.step1 .step1_table_box .tr2 .text_td2 span').css('visibility', 'visible');
+                    timerSet(() => {
+                      timerInit();
+                      $('.step1 .step1_table_box .tr2 .text_td3 span').css('visibility', 'visible');
+                      timerSet(() => {
+                        timerInit();
+                        $('.step1 .step1_table_box .tr2 .text_td4 span').css('visibility', 'visible');
+                      }, 2000);
+                    }, 2000);
+                  }, 2000);
+                }, 2000);
+              }
+            },
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                $('.step1 .step1_top_box .examTextDiv2 span').addClass('box_blink2');
+                touchMotionSetOn(280, 155, step1.guideTouch2, $('.step1 .step1_top_box .examTextDiv2'));
+              }
+            }
+          ]);
+        },
+        guideTouch2: () => {
+          $('.step1 .step1_top_box .examTextDiv2 span').removeClass('box_blink2');
+
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_004.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_005.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                timerSet(() => {
+                  timerInit();
+                  $('.step1 .step1_table_box .tr3 .text_td1 span').css('visibility', 'visible');
+                  timerSet(() => {
+                    timerInit();
+                    $('.step1 .step1_table_box .tr3 .text_td2 span').css('visibility', 'visible');
+                    timerSet(() => {
+                      timerInit();
+                      $('.step1 .step1_table_box .tr3 .text_td3 span').css('visibility', 'visible');
+                      timerSet(() => {
+                        timerInit();
+                        $('.step1 .step1_table_box .tr3 .text_td4 span').css('visibility', 'visible');
+                      }, 2000);
+                    }, 2000);
+                  }, 2000);
+                }, 2000);
+              }
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $('.step1 .step1_top_box .effect1').css('visibility', 'visible').addClass('box_blink2');
+                touchMotionSetOn(130, 520, step1.guideTouch3, $('.step1 .step1_top_box .effect1'));
+              }
+            }
+          ]);
+        },
+        guideTouch3: () => {
+          $('.step1 .step1_top_box .effect1').css('visibility', 'hidden').removeClass('box_blink2');
+
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_006.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_007.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step1 .step1_table_box .text_td1 span').addClass('aniScale');
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step1 .step1_table_box .text_td1 span').removeClass('aniScale');
+                $('.step1 .step1_table_box .text_td1').addClass('bgEffect');
+              }
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $('.step1 .step1_table_box .text_td1').removeClass('bgEffect');
+                $('.step1 .step1_btm_box').css('visibility', 'visible');
+                $('.step1 .quiz_select_wrap').css('visibility', 'visible');
+                quizSelectSetInit($('.step1 .quiz_select_wrap'), [`&gt;`, '=', `&lt;`]);
+                quizSelectSetOnNew(1, step1.quizSelectCorrect, $('.step1 .txt_container1'), false);
+              }
+            }
+          ]);
+        },
+        quizSelectCorrect: (flag) => {
+          if (flag) {
+            $('.step1 .txt_container').css({'padding-left':'4px', 'padding-top':'4px'});
+
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+            ], [
+              {
+                idx: 1,
+                type: 'start',
+                callback: () => {
+                  $('.step1 .quiz_select_wrap').css('visibility', 'hidden');
+                }
+              },
+              {
+                idx: 1,
+                type: 'end',
+                callback: () => {
+                  correctly();
+                }
+              },
+            ]);
+          } else {
+            audioSet([
+              "../../../COMM/SOUND/WRONG.mp3",
+            ]);
+          }
+        },
+        reset: () => {
+          touchMotionSetInit();
+
+          $('.step1 .dp_none').css('display', '');
+          $('.step1 .v_hidden').css('visibility', '');
+          $('.step1 .step1_top_box .examTextDiv span').removeClass('box_blink2');
+          $('.step1 .step1_top_box .effect').removeClass('box_blink2');
+          $('.step1 .step1_table_box .text_td').removeClass('bgEffect');
+          $('.step1 .step1_table_box .text_td span').removeClass('aniScale');
+          $('.step1 .txt_container').html('?').css({'padding-left':'0', 'padding-top':'0'});
+        },
+      };
+      //================STEP2==============
+      const step2 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_008.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_009.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $('.step2 .step1_top_box .examTextDiv1 span').addClass('box_blink2');
+                touchMotionSetOn(190, 155, step2.guideTouch, $('.step2 .step1_top_box .examTextDiv1'));
+              }
+            },
+          ]);
+        },
+        guideTouch: () => {
+          $('.step2 .step1_top_box .examTextDiv1 span').removeClass('box_blink2');
+
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_010.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                timerSet(() => {
+                  timerInit();
+                  $('.step2 .step1_table_box .tr2 .text_td1 span').css('visibility', 'visible');
+                  timerSet(() => {
+                    timerInit();
+                    $('.step2 .step1_table_box .tr2 .text_td2 span').css('visibility', 'visible');
+                    timerSet(() => {
+                      timerInit();
+                      $('.step2 .step1_table_box .tr2 .text_td3 span').css('visibility', 'visible');
+                      timerSet(() => {
+                        timerInit();
+                        $('.step2 .step1_table_box .tr2 .text_td4 span').css('visibility', 'visible');
+                      }, 2000);
+                    }, 2000);
+                  }, 2000);
+                }, 2000);
+              }
+            },
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                $('.step2 .step1_top_box .examTextDiv2 span').addClass('box_blink2');
+                touchMotionSetOn(280, 155, step2.guideTouch2, $('.step2 .step1_top_box .examTextDiv2'));
+              }
+            }
+          ]);
+        },
+        guideTouch2: () => {
+          $('.step2 .step1_top_box .examTextDiv2 span').removeClass('box_blink2');
+
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_011.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_012.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                timerSet(() => {
+                  timerInit();
+                  $('.step2 .step1_table_box .tr3 .text_td1 span').css('visibility', 'visible');
+                  timerSet(() => {
+                    timerInit();
+                    $('.step2 .step1_table_box .tr3 .text_td2 span').css('visibility', 'visible');
+                    timerSet(() => {
+                      timerInit();
+                      $('.step2 .step1_table_box .tr3 .text_td3 span').css('visibility', 'visible');
+                      timerSet(() => {
+                        timerInit();
+                        $('.step2 .step1_table_box .tr3 .text_td4 span').css('visibility', 'visible');
+                      }, 2000);
+                    }, 2000);
+                  }, 2000);
+                }, 2000);
+              }
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $('.step2 .step1_top_box .line1 .effect1').css('visibility', 'visible').addClass('box_blink2');
+                touchMotionSetOn(130, 520, step2.guideTouch3, $('.step2 .step1_top_box .effect1'));
+              }
+            }
+          ]);
+        },
+        guideTouch3: () => {
+          $('.step2 .step1_top_box .line1 .effect1').css('visibility', 'hidden').removeClass('box_blink2');
+
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_013.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_014.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step2 .step1_table_box .text_td1 span').addClass('aniScale');
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step2 .step1_table_box .text_td1 span').removeClass('aniScale');
+                $('.step2 .step1_table_box .text_td1').addClass('bgEffect');
+                timerSet(() => {
+                  timerInit();
+                  $('.step2 .step1_table_box .text_td1').removeClass('bgEffect');
+                }, 3000);
+              }
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $('.step2 .step1_top_box .line2 .effect1').css('visibility', 'visible').addClass('box_blink2');
+                touchMotionSetOn(130, 830, step2.guideTouch4, $('.step2 .step1_top_box .effect1'));
+              }
+            }
+          ]);
+        },
+        guideTouch4: () => {
+          $('.step2 .step1_top_box .line2 .effect1').css('visibility', 'hidden').removeClass('box_blink2');
+
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_015.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_016.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step2 .step1_table_box .text_td2 span').addClass('aniScale');
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step2 .step1_table_box .text_td2 span').removeClass('aniScale');
+                $('.step2 .step1_table_box .text_td2').addClass('bgEffect');
+              }
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $('.step2 .step1_table_box .text_td2').removeClass('bgEffect');
+                $('.step2 .step1_btm_box').css('visibility', 'visible');
+                $('.step2 .quiz_select_wrap').css('visibility', 'visible');
+                quizSelectSetInit($('.step2 .quiz_select_wrap'), ['>', '=', '<']);
+                quizSelectSetOnNew(3, step2.quizSelectCorrect, $('.step2 .txt_container1'), false);
+              }
+            }
+          ]);
+        },
+        quizSelectCorrect: (flag) => {
+          $('.step2 .txt_container').css({'padding-right':'4px', 'padding-top':'4px'});
+
+          if (flag) {
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+            ], [
+              {
+                idx: 1,
+                type: 'start',
+                callback: () => {
+                  $('.step2 .quiz_select_wrap').css('visibility', 'hidden');
+                }
+              },
+              {
+                idx: 1,
+                type: 'end',
+                callback: () => {
+                  correctly();
+                }
+              },
+            ]);
+          } else {
+            audioSet([
+              "../../../COMM/SOUND/WRONG.mp3",
+            ]);
+          }
+        },
+        reset: () => {
+          touchMotionSetInit();
+
+          $('.step2 .dp_none').css('display', '');
+          $('.step2 .v_hidden').css('visibility', '');
+          $('.step2 .step1_top_box .examTextDiv span').removeClass('box_blink2');
+          $('.step2 .step1_top_box .effect').removeClass('box_blink2');
+          $('.step2 .step1_table_box .text_td').removeClass('bgEffect');
+          $('.step2 .step1_table_box .text_td span').removeClass('aniScale');
+          $('.step2 .txt_container').html('?').css({'padding-right':'0', 'padding-top':'0'});
+        },
+      };
+      //================STEP3==============
+      const step3 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_017.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_018.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $('.step3 .step1_top_box .effect1').css('visibility', 'visible').addClass('box_blink2');
+                touchMotionSetOn(80, 520, step3.guideTouch, $('.step3 .step1_top_box .effect1'));
+              }
+            },
+          ]);
+        },
+        guideTouch: () => {
+          $('.step3 .step1_top_box .effect1').css('visibility', 'hidden').removeClass('box_blink2');
+
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_019.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_020.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step3 .step1_table_box .text_td1 span').addClass('aniScale');
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step3 .step1_table_box .text_td1 span').removeClass('aniScale');
+                $('.step3 .step1_table_box .text_td1').addClass('bgEffect');
+              }
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $('.step3 .step1_table_box .text_td1').removeClass('bgEffect');
+                $('.step3 .step1_btm_box').css('visibility', 'visible');
+                $('.step3 .quiz_select_wrap').css('visibility', 'visible');
+                quizSelectSetInit($('.step3 .quiz_select_wrap'), [4319, 4187, 5038]);
+                quizSelectSetOnNew(3, step3.quizSelectCorrect, $('.step3 .txt_container1'), false);
+              }
+            }
+          ]);
+        },
+        quizSelectCorrect: (flag) => {
+          if (flag) {
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+              "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_021.mp3",
+            ], [
+              {
+                idx: 1,
+                type: 'start',
+                callback: () => {
+                  $('.step3 .quiz_select_wrap').css('visibility', 'hidden');
+                }
+              },
+              {
+                idx: 2,
+                type: 'end',
+                callback: () => {
+                  correctly();
+                }
+              },
+            ]);
+          } else {
+            audioSet([
+              "../../../COMM/SOUND/WRONG.mp3",
+            ]);
+          }
+        },
+        reset: () => {
+          touchMotionSetInit();
+
+          $('.step3 .dp_none').css('display', '');
+          $('.step3 .v_hidden').css('visibility', '');
+          $('.step3 .step1_top_box .effect').removeClass('box_blink2');
+          $('.step3 .step1_table_box .text_td').removeClass('bgEffect');
+          $('.step3 .step1_table_box .text_td span').removeClass('aniScale');
+          $('.step3 .txt_container').html('?');
+        },
+      };
+      //================STEP4==============
+      const step4 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_022.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_023.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $('.step4 .step1_top_box .line2 .effect1').css('visibility', 'visible').addClass('box_blink2');
+                touchMotionSetOn(80, 820, step4.guideTouch, $('.step4 .step1_top_box .line2 .effect1'));
+              }
+            },
+          ]);
+        },
+        guideTouch: () => {
+          $('.step4 .step1_top_box .line2 .effect1').css('visibility', 'hidden').removeClass('box_blink2');
+
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_024.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_025.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step1_table_box .tr:not(.tr4) .text_td2 span').addClass('aniScale');
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step1_table_box .tr:not(.tr4) .text_td2 span').removeClass('aniScale');
+                $('.step4 .step1_table_box .tr:not(.tr4) .text_td2').addClass('bgEffect');
+              }
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $('.step4 .step1_table_box .tr:not(.tr4) .text_td2').removeClass('bgEffect');
+                $('.step4 .step1_btm_box').css('visibility', 'visible');
+                $('.step4 .quiz_select_wrap').css('visibility', 'visible');
+                quizSelectSetInit($('.step4 .quiz_select_wrap'), [4319, 4187]);
+                quizSelectSetOnNew(2, step4.quizSelectCorrect, $('.step4 .txt_container1'), false);
+              }
+            }
+          ]);
+        },
+        quizSelectCorrect: (flag) => {
+          if (flag) {
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+              "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_026.mp3",
+            ], [
+              {
+                idx: 1,
+                type: 'start',
+                callback: () => {
+                  $('.step4 .quiz_select_wrap').css('visibility', 'hidden');
+                }
+              },
+              {
+                idx: 2,
+                type: 'end',
+                callback: () => {
+                  disStep++;
+                  pageAction();
+                }
+              },
+            ]);
+          } else {
+            audioSet([
+              "../../../COMM/SOUND/WRONG.mp3",
+            ]);
+          }
+        },
+        reset: () => {
+          touchMotionSetInit();
+
+          $('.step4 .dp_none').css('display', '');
+          $('.step4 .v_hidden').css('visibility', '');
+          $('.step4 .step1_top_box .effect').removeClass('box_blink2');
+          $('.step4 .step1_table_box .text_td').removeClass('bgEffect');
+          $('.step4 .step1_table_box .text_td span').removeClass('aniScale');
+          $('.step4 .txt_container').html('?');
+        },
+      };
+      //================STEP5==============
+      const step5 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_027.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_028.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_029.mp3",
+            "../../../COMM/SOUND/SEASON2/2_1_7/2_2_1-7_030.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step5 .check_footer_inner').addClass('slideUp');
+                timerSet(() => {
+                  timerInit();
+                  $('.step5 .belowDiv .txt1').css('visibility', 'visible');
+                }, 4000);
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step5 .topDiv .img1').css('visibility', 'visible');
+                $('.step5 .belowDiv .arrow1').css('visibility', 'visible');
+                timerSet(() => {
+                  timerInit();
+                  $('.step5 .belowDiv .txt2').css('visibility', 'visible');
+                }, 2000);
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step5 .topDiv .img2').css('visibility', 'visible');
+                $('.step5 .belowDiv .arrow2').css('visibility', 'visible');
+                timerSet(() => {
+                  timerInit();
+                  $('.step5 .belowDiv .txt3').css('visibility', 'visible');
+                }, 3000);
+              }
+            },
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                $('.step5 .topDiv .img3').css('visibility', 'visible');
+                $('.step5 .belowDiv .arrow3').css('visibility', 'visible');
+                timerSet(() => {
+                  timerInit();
+                  $('.step5 .belowDiv .txt4').css('visibility', 'visible');
+                }, 5500);
+              }
+            },
+            {
+              idx: 4,
+              type: 'end',
+              callback: () => {
+                callFinish();
+              }
+            },
+          ]);
+        },
+        reset: () => {
+          $('.step5 .dp_none').css('display', '');
+          $('.step5 .v_hidden').css('visibility', '');
+          $('.step5 .check_footer_inner').removeClass('slideUp');
+        },
+      };
+    </script>
+  </body>
+</html>

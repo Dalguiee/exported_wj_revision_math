@@ -1,0 +1,1305 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>개정교육과정-수학 수학 개념</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="KeyWORDs" content="" />
+    <meta name="Description" content="" />
+    <meta name="Robots" content="all" />
+    <meta http-equiv="Subject" content="" />
+    <meta http-equiv="Title" content="" />
+    <meta http-equiv="Author" content="onflou " />
+    <meta http-equiv="Publisher" content="" />
+
+    <!-- 브라우저 호환성을 지정 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="#" />
+    <link href="../../../COMM/CSS/COMMON.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/CONCEPTCOMMON2.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/VIDEO.CSS" rel="stylesheet" />
+ 
+    <style>
+      .img_container .img {
+        z-index: 1;
+      }
+
+      .img_container .img_point {
+        z-index: 0;
+        width: auto;
+      }
+
+      .step4 .step4_btm_box .select_list .answer,
+      .step5 .step5_top_box .select_list .answer {
+        background-color: transparent !important;
+        width: auto;
+        height: auto;
+      }
+
+      .step4 .step4_btm_box .select_list .answer + .answer,
+      .step5 .step5_top_box .select_list .answer + .answer {
+        margin-left: 0;
+      }
+
+      .step4 .step4_btm_box .select_list .answer::after,
+      .step5 .step5_top_box .select_list .answer::after {
+        display: none !important;
+      }
+
+      .step4 .step4_btm_box .select_list .answer.unselected .img_point,
+      .step5 .step5_top_box .select_list .answer.unselected .img_point {
+        display: block;
+        opacity: 0;
+        animation: 1s opacityBlink infinite;
+      }
+
+      /* 1p */
+      .step1 .step1_top_box {
+        position: relative;
+      }
+
+      .step1 .step1_top_box .step1_img {
+        width: 200px;
+        height: 200px;
+      }
+
+      .step1 .step1_top_box .step1_img + .step1_img {
+        margin-left: 70px;
+      }
+
+      .step1 .step1_top_box .step1_img .img {
+        width: auto;
+        top: auto;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+
+      .step1 .step1_top_box .step1_img1 .img_point {
+        bottom: -24px;
+      }
+
+      .step1 .step1_top_box .step1_img2 .img_point {
+        bottom: -24px;
+        left: calc(50% + 5px);
+      }
+
+      .step1 .step1_btm_box {
+        width: 1600px;
+        height: 400px;
+        margin-top: 36px;
+      }
+
+      .step1 .step1_btm_box .sentence {
+        position: relative;
+      }
+
+      .step1 .step1_btm_box .sentence + .sentence {
+        margin-top: 33px;
+      }
+
+      .step1 .step1_btm_box .sentence .txt + .icon,
+      .step1 .step1_btm_box .sentence .txt_container {
+        margin-left: 25px;
+      }
+
+      .step1 .step1_btm_box .sentence .txt_container {
+        width: 195px;
+      }
+
+      .step1 .step1_btm_box .sentence .txt_container + span {
+        margin-left: 0;
+      }
+
+      .step1 .step1_btm_box .sentence .txt {
+        display: block;
+        line-height: 1.5;
+      }
+
+      .step1 .step1_btm_box .sentence .step1_quiz_box {
+        position: absolute;
+        right: calc(195px / 2);
+        transform: translate(50%, 0);
+      }
+
+      .step1 .step1_btm_box .sentence .step1_quiz_box .answer {
+        width: 163px;
+        font-size: 36px;
+      }
+
+      .step1 .step1_btm_box .sentence .step1_quiz_box1 {
+        bottom: calc(100% + 10px);
+        
+      }
+
+      .step1 .step1_btm_box .sentence .step1_quiz_box2 {
+        top: calc(100% + 10px);
+      }
+
+      .step1 .step1_btm_box .icon_cup1 {
+        width: 115px;
+      }
+
+      .step1 .step1_btm_box .icon_cup2 {
+        width: 83px;
+      }
+
+      /* 2p */
+      .step2 .step2_top_box {
+        width: 1600px;
+        height: 470px;
+        align-items: baseline;
+        position: relative;
+      }
+
+      .step2 .step2_img {
+        width: 716px;
+        height: 318px;
+      }
+
+      .step2 .step2_img .img {
+        width: auto;
+        top: auto;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+
+      .step2 .step2_img .img_point {
+        transform: none;
+      }
+
+      .step2 .step2_img .img_point1 {
+        left: -12px;
+        bottom: -16px;
+      }
+
+      .step2 .step2_img .img_point2 {
+        bottom: -24px;
+        left: auto;
+        right: -24px;
+      }
+
+      .step2 .step2_img .img4 {
+        transform: none;
+        right: 44px;
+        left: auto;
+        bottom: 1px;
+      }
+
+      .step2 .step2_top_box .step2_quiz_box .select_list .answer {
+        position: absolute;
+        bottom: 30px;
+        width: 168px;
+        height: 93px;
+        margin: 0;
+        font-size: 36px;
+      }
+
+      .step2 .step2_top_box .step2_quiz_box .select_list .answer:nth-child(1) {
+        left: 450px;
+      }
+
+      .step2 .step2_top_box .step2_quiz_box .select_list .answer:nth-child(2) {
+        left: 880px;
+      }
+
+      /* 3p */
+      .step3 .step3_top_box {
+        position: relative;
+      }
+
+      .step3 .step3_img {
+        width: 1700px;
+        height: 595px;
+      }
+
+      .step3 .step3_top_box .txt {
+        position: absolute;
+        padding: 12px 16px;
+        border-radius: 10px;
+        background-color: rgba(199, 230, 103, 1);
+        bottom: 453px;
+        right: 1159px;
+        font-size: 36px;
+      }
+
+      .step3 .step3_top_box .txt2 {
+        right: 689px;
+      }
+
+      .step3 .check_footer_text {
+        position: relative;
+        background: url("../../../COMM/IMG/CONCEPT/1_4_5/STEP3_FOOTER_TXT.png")
+          no-repeat center;
+        left: 88px;
+      }
+
+      .step3 .check_footer_text .hint {
+        width: 271px;
+        height: 122px;
+        position: absolute;
+        background: url("../../../COMM/IMG/CONCEPT/1_4_5/STEP3_FOOTER_HINT.png")
+          no-repeat center;
+        top: 55px;
+        left: -25px;
+      }
+
+      /* 4p */
+      .step4 .step4_character {
+        position: relative;
+      }
+
+      .step4 .step4_character + .step4_character {
+        margin-left: 100px;
+      }
+
+      .step4 .step4_character .character_img {
+        width: 300px;
+        height: 310px;
+      }
+
+      .step4 .step4_character .character_img .img {
+        width: auto;
+        top: auto;
+        bottom: 0;
+      }
+
+      .step4 .step4_character .character_img .img_point {
+        bottom: -25px;
+      }
+
+      .step4 .step4_character1 .character_img .img {
+        left: auto;
+        right: 0;
+      }
+
+      .step4 .step4_character1 .character_img .img_point {
+        right: -20px;
+      }
+
+      .step4 .step4_character2 .character_img .img_point {
+        left: -20px;
+        right: auto;
+      }
+
+      .step4 .step4_character .character_name {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .step4 .step4_character1 .character_name {
+        width: 215px;
+        margin-left: auto;
+      }
+      
+      .step4 .step4_character2 .character_name {
+        width: 204px;
+        margin-right: auto;
+      }
+
+      .step4 .step4_character .character_bubble {
+        position: absolute;
+        width: 284px;
+        height: 208px;
+        top: 60px;
+      }
+
+      .step4 .step4_character .character_bubble .img_point {
+        top: -24px;
+      }
+
+      .step4 .step4_character1 .character_bubble {
+        right: calc(100% - 77px);
+      }
+
+      .step4 .step4_character1 .character_bubble .img_point {
+        left: -24px;
+      }
+
+      .step4 .step4_character2 .character_bubble {
+        left: calc(100% - 85px);
+      }
+
+      .step4 .step4_character2 .character_bubble .img_point {
+        left: -24px;
+      }
+
+      .step4 .step4_btm_box {
+        margin-top: 60px;
+        width: 1200px;
+        padding: 78px 0;
+        border-radius: 20px;
+        background-color: rgba(248, 235, 232, 1);
+        position: relative;
+      }
+
+      .step4 .step4_btm_box,
+      .step4 .step4_btm_box .select_list {
+        align-items: end;
+        gap: 85px;
+      }
+
+      .step4 .step4_btm_box .select_list .answer:nth-child(1),
+      .step4 .step4_img1 {
+        width: 190px;
+        height: 116px;
+      }
+
+      .step4 .step4_btm_box .select_list .answer:nth-child(2),
+      .step4 .step4_img2 {
+        width: 223px;
+        height: 135px;
+      }
+
+      .step4 .step4_btm_box .select_list .answer:nth-child(3),
+      .step4 .step4_img3 {
+        width: 269px;
+        height: 162px;
+      }
+
+      .step4 .tag {
+        width: 200px;
+        padding: 12px 16px;
+        border-radius: 10px;
+        background-color: rgba(255, 232, 147, 1);
+        text-align: center;
+        font-size: 36px;
+        position: absolute;
+        bottom: 0;
+        left: 445px;
+        transform: translateY(-50%);
+        visibility: hidden;
+      }
+
+      .step4 .tag2 {
+        left: auto;
+        right: 490px;
+      }
+
+      .step4 .step4_img .img_point {
+        top: auto;
+        left: -24px;
+        bottom: -25px;
+      }
+
+      /* 5p */
+      .step5 .step5_top_box,
+      .step5 .step5_top_box .select_list {
+        gap: 150px;
+      }
+
+      .step5 .step5_img {
+        width: 242px;
+        height: 351px;
+        position: relative;
+      }
+
+      .step5 .step5_img .img {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+      }
+
+      .step5 .step5_img .img2 {
+        bottom: 45px;
+        top: auto;
+        transform: none;
+      }
+
+      .step5 .step5_img1 .img2 {
+        left: 215px;
+      }
+
+      .step5 .step5_img2 .img2 {
+        left: 205px;
+      }
+
+      .step5 .step5_img3 .img2 {
+        left: 210px;
+      }
+
+      /* 6p */
+      .step6 .step6_img_box {
+        position: relative;
+        border-radius: 20px;
+        background-color: rgba(255, 246, 253, 1);
+        z-index: 1;
+      }
+
+      .step6 .step6_img_box::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px 5px rgba(103, 68, 243, 0.8);
+        z-index: 0;
+        opacity: 0;
+      }
+
+      .step6 .step6_img_box.blink::before {
+        animation: 1s opacityBlink infinite;
+      }
+
+      .step6 .step6_img_box + .step6_img_box {
+        margin-left: 115px;
+      }
+
+      .step6 .step6_img {
+        width: 735px;
+        height: 355px;
+      }
+
+      .step6 .check_footer_text {
+        position: relative;
+        background: url("../../../COMM/IMG/CONCEPT/1_4_5/STEP6_FOOTER_TXT.png")
+          no-repeat center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div
+        id="contents-wrap"
+        class="concept"
+        style="position: absolute; display: flex"
+      ></div>
+      <div id="contents-main" style="display: none" class="concept-warp">
+        <div class="concept-warp_inner">
+          <header class="header" style="visibility: visible">
+            <div class="header_title">
+              <button class="sound-btn" onclick="titleSound()"></button>
+              <h3></h3>
+            </div>
+            <p class="header_page"><span>1</span>/2</p>
+          </header>
+          <main class="main">
+            <div class="main_content">
+              <!-- 콘텐츠영역 -->
+              <div class="step step1" style="display: block">
+                <!-- step1 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step1_top_box dp_flex">
+                    <div class="step1_img step1_img1 img_container">
+                      <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP1_IMG_CUP1.png" class="img" />
+                      <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP1_IMG_CUP1_POINT.png" class="img img_point" />
+                    </div>
+                    <div class="step1_img step1_img2 img_container">
+                      <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP1_IMG_CUP2.png" class="img" />
+                      <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP1_IMG_CUP2_POINT.png" class="img img_point" />
+                    </div>
+                  </div>
+                  <div class="step1_btm_box dp_flex dp_flex_column v_hidden">
+                    <div class="sentence sentence1 dp_flex">
+                      <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP1_IMG_CUP1.png" class="icon icon_cup1" />
+                      <span class="txt">은</span>
+                      <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP1_IMG_CUP2.png" class="icon icon_cup2" />
+                      <span class="txt">보다 담을 수 있는 양이 더</span>
+                      <div class="txt_container">?</div>
+                      <span class="txt">.</span>
+                      <div class="step1_quiz_box step1_quiz_box1 dp_none"></div>
+                    </div>
+                    <div class="sentence sentence2 dp_flex">
+                      <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP1_IMG_CUP2.png" class="icon icon_cup2" />
+                      <span class="txt">은</span>
+                      <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP1_IMG_CUP1.png" class="icon icon_cup1" />
+                      <span class="txt">보다 담을 수 있는 양이 더</span>
+                      <div class="txt_container">?</div>
+                      <span class="txt">.</span>
+                      <div class="step1_quiz_box step1_quiz_box2 dp_none"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step2" style="display: block">
+                <!-- step2 시작부분 -->
+                <div class="main__container dp_flex">
+                  <div class="step2_top_box dp_flex">
+                    <div class="step2_img img_container">
+                      <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP2_IMG1.png" class="img img1" />
+                      <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP2_IMG2.png" class="img img2" />
+                      <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP2_IMG3.png" class="img img3" />
+                      <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP2_IMG_POINT_LFET.png" class="img img_point img_point1" />
+                      <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP2_IMG_POINT_RIGHT1.png" class="img img_point img_point2" />
+                      <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP2_IMG_POINT_RIGHT2.png" class="img img4" />
+                    </div>
+                    <div class="step2_quiz_box v_hidden"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step3" style="display: none">
+                <!-- step3 시작부분 -->
+                <div class="main__container">
+                  <div class="full_content_comm dp_flex dp_flex_column">
+                    <div class="step3_top_box">
+                      <div class="step3_img img_container">
+                        <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP3_IMG1.png" class="img img1" />
+                        <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP3_IMG2.png" class="img img2" />
+                        <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP3_IMG3.png" class="img img3" />
+                      </div>
+                      <div class="txt txt1">양동이</div>
+                      <div class="txt txt2">바가지</div>
+                    </div>
+                  </div>
+                  <footer class="check_footer">
+                    <div class="check_footer_inner">
+                      <div class="check_footer_text"><div class="hint"></div></div>
+                      <div class="check_footer_ch">
+                        <div class="check_footer_ch_head"></div>
+                        <div class="check_footer_ch_body"></div>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+              <div class="step step4" style="display: block">
+                <!-- step4 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step4_top_box dp_flex">
+                    <div class="step4_character step4_character1 dp_flex dp_flex_column">
+                      <div class="character_img img_container">
+                        <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP4_CHARACTER1.png" class="img img1" />
+                        <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP4_CHARACTER1_POINT.png" class="img img_point" />
+                      </div>
+                      <div class="character_bubble img_container dp_none">
+                        <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP4_HINT1.png" class="img img1" />
+                        <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP4_HINT1_POINT.png" class="img img_point" />
+                      </div>
+                      <div class="character_name">현준</div>
+                    </div>
+                    <div class="step4_character step4_character2 dp_flex dp_flex_column">
+                      <div class="character_img img_container">
+                        <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP4_CHARACTER2.png" class="img img1" />
+                        <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP4_CHARACTER2_POINT.png" class="img img_point" />
+                      </div>
+                      <div class="character_bubble img_container dp_none">
+                        <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP4_HINT2.png" class="img img1" />
+                        <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP4_HINT2_POINT.png" class="img img_point" />
+                      </div>
+                      <div class="character_name">윤아</div>
+                    </div>
+                  </div>
+                  <div class="step4_btm_box dp_flex"></div>
+                  <div class="tag tag1">가장 적다</div>
+                  <div class="tag tag2">가장 많다</div>
+                </div>
+              </div>
+              <div class="step step5" style="display: block">
+                <!-- step5 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step5_top_box dp_flex"></div>
+                </div>
+              </div>
+              <div class="step step6" style="display: none">
+                <!-- step6 시작부분 -->
+                <div class="main__container">
+                  <div class="full_content_comm dp_flex dp_flex_column">
+                    <div class="step6_top_box dp_flex">
+                      <div class="step6_img_box step6_img_box1">
+                        <div class="step6_img step6_img1 img_container">
+                          <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP6_IMG1.png" class="img img1" />
+                          <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP6_IMG1_ARROW.png?=v1" class="img img2" />
+                        </div>
+                      </div>
+                      <div class="step6_img_box step6_img_box2">
+                        <div class="step6_img step6_img2 img_container">
+                          <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP6_IMG2.png" class="img img1" />
+                          <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP6_IMG2_ARROW.png?=v1" class="img img2" />
+                          <img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP6_IMG2_POINT.png" class="img img3" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <footer class="check_footer">
+                    <div class="check_footer_inner slideUp">
+                      <div class="check_footer_text"></div>
+                      <div class="check_footer_ch">
+                        <div class="check_footer_ch_head"></div>
+                        <div class="check_footer_ch_body"></div>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+
+              <ul class="step-list">
+                <li class="step-list_item active"></li>
+                <li class="step-list_item"></li>
+              </ul>
+            </div>
+          </main>
+          <div class="main_prev-next">
+            <button class="btn-prev" style="display: none">이전버튼</button>
+            <!-- <button class="btn-next" style="display: block" disabled> -->
+            <button class="btn-next blinking" style="display: block">
+              다음버튼
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      crossorigin
+      src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"
+    ></script>
+    <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+    <script src="../../../COMM/JS/COMMON2.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNT3.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNTBTN.JS"></script>
+    <script src="../../../COMM/JS/GAME.JS"></script>
+    <script src="../../../COMM/JS/VIDEO.JS"></script>
+    <script src="../../../COMM/JS/VIDEO-HTTP-STREAMING.JS"></script>
+    <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+    <script>
+      /*
+       * 데이터
+       */
+      let intro = {
+        type: "concept", //concept 개념익히기, checkExam 확인문제
+        title: "어느 것에 더 많이 <br/>담을 수 있을까요",
+        subTitle: [
+          "담을 수 있는 양을 비교하는 방법을 알 수 있어요.",
+          "세 그릇에 담긴 양을 비교할 수 있어요.",
+        ],
+        sound: ["../../../COMM/SOUND/1_4_5/1_1_4-5_001.mp3"],
+      };
+
+      //현재 페이지
+      let disStep = 1;
+
+      let pageData = [
+        {
+          step: 1,
+          title: "두 그릇에 담을 수 있는 양을 비교해 봅시다.",
+          sound: "../../../COMM/SOUND/1_4_5/1_1_4-5_001.mp3",
+          headerPage: [1, 2],
+          footerPage: [1, 2],
+          prev: 0,
+          next: 1,
+        },
+        {
+          step: 2,
+          title: "두 그릇에 담을 수 있는 양을 비교해 봅시다.",
+          sound: "../../../COMM/SOUND/1_4_5/1_1_4-5_001.mp3",
+          headerPage: [1, 2],
+          footerPage: [2, 2],
+          prev: 1,
+          next: 0,
+        },
+        {
+          step: 3,
+          title: "",
+          sound: "",
+          headerPage: [0, 0],
+          footerPage: [0, 0],
+          prev: 2,
+          next: 1,
+        },
+        {
+          step: 4,
+          title: "세 그릇에 담긴 양을 비교해 봅시다.",
+          sound: "../../../COMM/SOUND/1_4_5/1_1_4-5_028.mp3",
+          headerPage: [2, 2],
+          footerPage: [1, 2],
+          prev: 3,
+          next: 1,
+        },
+        {
+          step: 5,
+          title: "세 그릇에 담긴 양을 비교해 봅시다.",
+          sound: "../../../COMM/SOUND/1_4_5/1_1_4-5_028.mp3",
+          headerPage: [2, 2],
+          footerPage: [2, 2],
+          prev: 1,
+          next: 0,
+        },
+        {
+          step: 6,
+          title: "",
+          sound: "",
+          headerPage: [0, 0],
+          footerPage: [0, 0],
+          prev: 1,
+          next: 0,
+        },
+      ];
+
+      function pageAction() {
+        console.log("disStep ::: ", disStep);
+        //setTimeout 초기화
+        const TimeoutId = setTimeout(() => console.log("timeout clear"), 1);
+        for (let i = 0; i < TimeoutId; i++) {
+          clearTimeout(i);
+        }
+        stepSet();
+        switch (disStep) {
+          case 1:
+            step1.reset();
+            step1.start();
+            break;
+          case 2:
+            step2.reset();
+            step2.start();
+            break;
+          case 3:
+            step3.reset();
+            step3.start();
+            break;
+          case 4:
+            step4.reset();
+            step4.start();
+            break;
+          case 5:
+            step5.reset();
+            step5.start();
+            break;
+          case 6:
+            step6.reset();
+            step6.start();
+            break;
+        }
+      }
+
+      //문제 시작
+      //================STEP1==============
+      const step1 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_001.mp3",
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_002.mp3",
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_003.mp3",
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_004.mp3",
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_005.mp3",
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_006.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step1 .step1_top_box .step1_img .img_point').css('display', 'block').addClass('blinking');
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step1 .step1_top_box .step1_img .img_point').css('display', 'none').removeClass('blinking');
+              }
+            },
+            {
+              idx: 5,
+              type: 'start',
+              callback: () => {
+                $('.step1 .step1_top_box .step1_img1 .img_point').css('display', 'block').addClass('blinking');
+              }
+            },
+            {
+              idx: 6,
+              type: 'start',
+              callback: () => {
+                $('.step1 .step1_top_box .step1_img1 .img_point').css('display', 'none').removeClass('blinking');
+                $('.step1 .step1_btm_box').css('visibility', 'visible');
+
+                quizSelectSetInit($('.step1 .step1_quiz_box1'), ["많습니다", "적습니다"]);
+                quizSelectSetOnNew(1, step1.quizSelectCorrect, $('.step1 .step1_btm_box .sentence1 .txt_container'), true);
+                $('.step1 .step1_quiz_box1').css('display', 'block');
+              }
+            }
+          ]);
+        },
+        quizSelectCorrect: (flag) =>{
+          if(flag){
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+            ], [
+              {
+                idx: 1, 
+                type: 'end',
+                callback: () => {
+                  quizSelectSetInit($('.step1 .step1_quiz_box2'), ["많습니다", "적습니다"]);
+                  quizSelectSetOnNew(2, step1.quizSelectCorrect2, $('.step1 .step1_btm_box .sentence2 .txt_container'), true);
+                  $('.step1 .step1_quiz_box2').css('display', 'block');
+                }
+              }
+            ]);
+          }else{
+            audioSet([
+              "../../../COMM/SOUND/WRONG.mp3",
+              "../../../COMM/SOUND/1_4_5/1_1_4-5_007.mp3",
+            ]);
+          }
+        },
+        quizSelectCorrect2: (flag) =>{
+          if(flag){
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+              "../../../COMM/SOUND/1_4_5/1_1_4-5_009.mp3",
+              "../../../COMM/SOUND/1_4_5/1_1_4-5_010.mp3",
+            ], [
+              {
+                idx: 2,
+                type: 'start',
+                callback: () => {
+                  $('.step1 .step1_btm_box .sentence1').addClass('blinking');
+                }
+              },
+              {
+                idx: 3,
+                type: 'start',
+                callback: () => {
+                  $('.step1 .step1_btm_box .sentence1').removeClass('blinking');
+                  $('.step1 .step1_btm_box .sentence2').addClass('blinking');
+                }
+              },
+              {
+                idx: 3, 
+                type: 'end',
+                callback: () => {
+                  $('.step1 .step1_btm_box .sentence2').removeClass('blinking');
+                  correctly();
+                }
+              }
+            ]);
+          }else{
+            audioSet([
+              "../../../COMM/SOUND/WRONG.mp3",
+              "../../../COMM/SOUND/1_4_5/1_1_4-5_008.mp3",
+            ]);
+          }
+        },
+        reset: () => {
+          $('.step1 .dp_none').css('display', '');
+          $('.step1 .v_hidden').css('visibility', '');
+
+          $('.step1 .img').css('display', '').removeClass('blinking');
+        },
+      };
+      //================STEP2==============
+      const step2 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_011.mp3",
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_012.mp3",
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_013.mp3",
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_014.mp3",
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_015.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step2 .step2_img .img1').css('display', 'none');
+                $('.step2 .step2_img .img2').css('display', 'block');
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step2 .step2_img .img2').css('display', 'none');
+                $('.step2 .step2_img .img3').css('display', 'block');
+              }
+            },
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                $('.step2 .step2_img .img4').css('display', 'block').addClass('blinking');
+              }
+            },
+            {
+              idx: 5,
+              type: 'start',
+              callback: () => {
+                $('.step2 .step2_img .img4').css('display', 'none').removeClass('blinking');
+              }
+            },
+            {
+              idx: 5,
+              type: 'end',
+              callback: () => {
+                quizSelectSetInit($('.step2 .step2_quiz_box'), ["컵", "냄비"]);
+                quizSelectSetOnNew(1, step2.quizSelectCorrect);
+                $('.step2 .step2_quiz_box').css('visibility', 'visible');
+              }
+            },
+          ]);
+        },
+        quizSelectCorrect: (flag) =>{
+          if(flag){
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+              "../../../COMM/SOUND/1_4_5/1_1_4-5_017.mp3",
+              "../../../COMM/SOUND/1_4_5/1_1_4-5_018.mp3",
+              "../../../COMM/SOUND/1_4_5/1_1_4-5_019.mp3",
+              "../../../COMM/SOUND/1_4_5/1_1_4-5_020.mp3",
+            ], [
+              {
+                idx: 4, 
+                type: 'start',
+                callback: () => {
+                  $('.step2 .step2_img .img_point2').css('display', 'block').addClass('blinking');
+                }
+              },
+              {
+                idx: 5, 
+                type: 'start',
+                callback: () => {
+                  $('.step2 .step2_img .img_point2').css('display', 'none').removeClass('blinking');
+                  $('.step2 .step2_img .img_point1').css('display', 'block').addClass('blinking');
+                }
+              },
+              {
+                idx: 5, 
+                type: 'end',
+                callback: () => {
+                  $('.step2 .step2_img .img_point1').css('display', 'none').removeClass('blinking');
+                  disStep++;
+                  pageAction();
+                }
+              },
+            ]);
+          }else{
+            audioSet([
+              "../../../COMM/SOUND/WRONG.mp3",
+              "../../../COMM/SOUND/1_4_5/1_1_4-5_016.mp3",
+            ]);
+          }
+        },
+        reset: () => {
+          $('.step2 .dp_none').css('display', '');
+          $('.step2 .v_hidden').css('visibility', '');
+          $('.step2 .img').css('display', '').removeClass('blinking');
+        },
+      };
+      //================STEP3==============
+      const step3 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_021.mp3",
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_022.mp3",
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_023.mp3",
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_024.mp3",
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_025.mp3",
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_026.mp3",
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_027.mp3",
+          ], [
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step3 .step3_img .img1').css('display', 'none');
+                $('.step3 .step3_img .img2').css('display', 'block');
+              }
+            },
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                $('.step3 .step3_img .img2').css('display', 'none');
+                $('.step3 .step3_img .img3').css('display', 'block');
+              }
+            },
+            {
+              idx: 5,
+              type: 'start',
+              callback: () => {
+                $('.step3 .check_footer_inner').addClass('slideUp');
+              }
+            },
+            {
+              idx: 7,
+              type: 'end',
+              callback: () => {
+                correctly();
+              }
+            }
+          ]);
+        },
+        reset: () => {
+          $('.step3 .dp_none').css('display', '');
+          $('.step3 .v_hidden').css('visibility', '');
+          $('.step3 .img').css('display', '');
+          $('.step3 .check_footer_inner').removeClass('slideUp');
+        },
+      };
+      //================STEP4==============
+      const step4 = {
+        quizAnswerList: [
+          '<div class="step4_img step4_img1 img_container"><img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP4_IMG1.png" class="img" /><img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP4_IMG1_POINT.png" class="img img_point" /></div>',
+          '<div class="step4_img step4_img2 img_container"><img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP4_IMG2.png" class="img" /><img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP4_IMG2_POINT.png" class="img img_point" /></div>',
+          '<div class="step4_img step4_img3 img_container"><img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP4_IMG3.png" class="img" /><img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP4_IMG3_POINT.png" class="img img_point" /></div>'
+        ],
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_028.mp3",
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_029.mp3",
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_030.mp3",
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_031.mp3",
+          ], [
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                $('.step4 .step4_character1 .character_bubble').css('display', 'block');
+                $('.step4 .step4_character1 .img_point').css('display', 'block').addClass('blinking');
+              }
+            },
+            {
+              idx: 4,
+              type: 'end',
+              callback: () => {
+                $('.step4 .step4_character1 .img_point').css('display', 'none').removeClass('blinking');
+
+                quizSelectSetInit($('.step4 .step4_btm_box'), step4.quizAnswerList);
+                quizSelectSetOnNew(1, step4.quizSelectCorrect);
+              }
+            }
+          ]);
+        },
+        quizSelectCorrect: (flag) => {
+          if(flag){
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+              "../../../COMM/SOUND/1_4_5/1_1_4-5_032.mp3",
+            ], [
+              {
+                idx: 2, 
+                type: 'start',
+                callback: () => {
+                  $('.step4 .step4_character2 .character_bubble').css('display', 'block');
+                  $('.step4 .step4_character2 .img_point').css('display', 'block').addClass('blinking');
+                }
+              },
+              {
+                idx: 2, 
+                type: 'end',
+                callback: () => {
+                  $('.step4 .step4_character2 .img_point').css('display', 'none').removeClass('blinking');
+                  quizSelectSetInit($('.step4 .step4_btm_box'), step4.quizAnswerList);
+                  quizSelectSetOnNew(3, step4.quizSelectCorrect2);
+                }
+              },
+            ]);
+          }else{
+            audioSet([
+              "../../../COMM/SOUND/WRONG.mp3",
+            ]);
+          }
+        },
+        quizSelectCorrect2: (flag) => {
+          if(flag){
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+              "../../../COMM/SOUND/1_4_5/1_1_4-5_033.mp3",
+              "../../../COMM/SOUND/1_4_5/1_1_4-5_034.mp3",
+              "../../../COMM/SOUND/1_4_5/1_1_4-5_035.mp3",
+              "../../../COMM/SOUND/1_4_5/1_1_4-5_036.mp3",
+            ], [
+              {
+                idx: 2, 
+                type: 'start',
+                callback: () => {
+                  timerSet(() => {
+                    timerInit();
+                    $('.step4 .tag1').css('visibility', 'visible');
+                    $('.step4 .tag2').css('visibility', 'visible');
+                  }, 2000);
+                }
+              },
+              {
+                idx: 4, 
+                type: 'start',
+                callback: () => {
+                  $('.step4 .step4_img1 .img_point').css('display', 'block').addClass('blinking');
+                }
+              },
+              {
+                idx: 5, 
+                type: 'start',
+                callback: () => {
+                  $('.step4 .step4_img1 .img_point').css('display', 'none').removeClass('blinking');
+                  $('.step4 .step4_img3 .img_point').css('display', 'block').addClass('blinking');
+                }
+              },
+              {
+                idx: 5, 
+                type: 'end',
+                callback: () => {
+                  $('.step4 .step4_img3 .img_point').css('display', 'none').removeClass('blinking');
+                  correctly();
+                }
+              },
+            ]);
+          }else{
+            audioSet([
+              "../../../COMM/SOUND/WRONG.mp3",
+            ]);
+          }
+        },
+        reset: () => {
+          $('.step4 .dp_none').css('display', '');
+          $('.step4 .v_hidden').css('visibility', '');
+          $('.step4 .img').css('display', '').removeClass('blinking');
+          $('.step4 .tag').css('visibility', 'hidden');
+
+          $('.step4 .step4_btm_box').html('');
+          step4.quizAnswerList.forEach((img) => {
+            $('.step4 .step4_btm_box').append(img);
+          });
+        },
+      };
+      //================STEP5==============
+      const step5 = {
+        quizAnswerList: [
+          '<div class="step5_img step5_img1 img_container"><img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP5_IMG1.png" class="img" /><img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP5_IMG_POINT.png" class="img img_point" /><img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP5_IMG1_ARROW.png?=v2" class="img img2" /></div>',
+          '<div class="step5_img step5_img2 img_container"><img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP5_IMG2.png" class="img" /><img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP5_IMG_POINT.png" class="img img_point" /><img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP5_IMG2_ARROW.png?=v2" class="img img2" /></div>',
+          '<div class="step5_img step5_img3 img_container"><img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP5_IMG3.png" class="img" /><img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP5_IMG_POINT.png" class="img img_point" /><img src="../../../COMM/IMG/CONCEPT/1_4_5/STEP5_IMG3_ARROW.png?=v2" class="img img2" /></div>',
+        ],
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_037.mp3",
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_038.mp3",
+          ], [
+            {
+              idx: 2, 
+              type: 'end',
+              callback: () => {
+                quizSelectSetInit($('.step5 .step5_top_box'), step5.quizAnswerList);
+                quizSelectSetOnNew(2, step5.quizSelectCorrect);
+              }
+            },
+          ]);
+        },
+        quizSelectCorrect: (flag) => {
+          if(flag){
+            $('.step5 .step5_top_box .img2').css('display', 'none');
+
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+              "../../../COMM/SOUND/1_4_5/1_1_4-5_040.mp3",
+              "../../../COMM/SOUND/1_4_5/1_1_4-5_041.mp3",
+            ], [
+              {
+                idx: 2, 
+                type: 'start',
+                callback: () => {
+                  $('.step5 .step5_top_box .img2').css('display', 'block');
+                }
+              },
+              {
+                idx: 3, 
+                type: 'start',
+                callback: () => {
+                  $('.step5 .step5_top_box .step5_img2 .img_point').css('display', 'block').addClass('blinking');
+                }
+              },
+              {
+                idx: 3, 
+                type: 'end',
+                callback: () => {
+                  $('.step5 .step5_top_box .step5_img2 .img_point').removeClass('blinking');
+                  disStep++;
+                  pageAction();
+                }
+              },
+            ]);
+          }else{
+            audioSet([
+              "../../../COMM/SOUND/WRONG.mp3",
+              "../../../COMM/SOUND/1_4_5/1_1_4-5_039.mp3",
+            ], [
+              {
+                idx: 2,
+                type: 'start',
+                callback: () => {
+                  $('.step5 .step5_top_box .img2').css('display', 'block');
+                }
+              }
+            ]);
+          }
+        },
+        reset: () => {
+          $('.step5 .dp_none').css('display', '');
+          $('.step5 .v_hidden').css('visibility', '');
+          $('.step5 .img').css('display', '').removeClass('blinking');
+
+          $('.step5 .step5_top_box').html('');
+          step5.quizAnswerList.forEach((img) => {
+            $('.step5 .step5_top_box').append(img);
+          });
+        },
+      };
+      //================STEP6==============
+      const step6 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_042.mp3",
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_043.mp3",
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_044.mp3",
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_045.mp3",
+            "../../../COMM/SOUND/1_4_5/1_1_4-5_046.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step6 .step6_img_box1').addClass('blink');
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step6 .step6_img_box1 .img2').css('display', 'block');
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step6 .step6_img_box1').removeClass('blink');
+                $('.step6 .step6_img_box2').addClass('blink');
+                $('.step6 .step6_img_box2 .img2').css('display', 'block');
+              }
+            },
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                $('.step6 .step6_img_box2').removeClass('blink');
+                $('.step6 .step6_img_box2 .img3').css('display', 'block').addClass('blinking');
+              }
+            },
+            {
+              idx: 5,
+              type: 'end',
+              callback: () => {
+                $('.step6 .step6_img_box2 .img3').removeClass('blinking');
+                callFinish();
+              }
+            },
+          ]);
+        },
+        reset: () => {
+          $('.step6 .dp_none').css('display', '');
+          $('.step6 .v_hidden').css('visibility', '');
+          $('.step6 .img').css('display', '').removeClass('blinking');
+          $('.step6 .step6_img_box').removeClass('blink');
+        },
+      };
+    </script>
+  </body>
+</html>

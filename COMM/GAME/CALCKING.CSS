@@ -1,0 +1,460 @@
+#container {
+  width: 100%;
+  height: 1200px;
+}
+
+.calcking__wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.ansBox{
+  border: 5px solid black;
+  border-radius: 11px;
+  margin: 0 25px;
+  padding: 10px;
+}
+
+.calcking_bg {
+  position: absolute;
+  background-image: url(../../COMM/IMG/CALCKING/BG.png);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator__container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+  width: 1340px;
+  height: 300px;
+  font-size: 60px;
+  color: white;
+}
+
+.calculator__container_inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator__container img {
+  width: 100%;
+  height: 100%;
+}
+
+.calcking__intro__wrapper {
+  background-image: url(../../COMM/IMG/CALCKING/INTRO_VER1.png);
+  width: 1303px;
+  height: 830px;
+  position: relative;
+  top: -100px;
+}
+
+.calcking__intro__startbtn {
+  background-image: url(../../COMM/IMG/CALCKING/GAMESTART_BTN.png);
+  width: 353px;
+  height: 140px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -50px;
+}
+
+.calcking__gamestart__bg {
+  background-image: url(../../COMM/IMG/CALCKING/START_BG.png);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 계산기 */
+
+.calculator__wrapper {
+  display: none;
+  flex-direction: column;
+  width: 1340px;
+  height: 923px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.calc__action {
+  transition: all 0.5s;
+  animation: calcAni 1s;
+  animation-fill-mode: forwards;
+}
+
+.calc__wrong {
+  animation: shake 1s infinite alternate;
+  animation-fill-mode: forwards;
+}
+
+#complete_popup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+#complete_popup .buttonArea {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  height: 10px;
+  top: 940px;
+}
+#complete_popup .dimmed {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+#complete_popup .bg {
+  position: absolute;
+  top: 140px;
+  width: 100%;
+  height: 80%;
+  z-index: 1;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/CALCKING/LASTPOPUP.png");
+}
+#complete_popup .reload {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  color: blue;
+  z-index: 2;
+  border-radius: 100px;
+  background: center/contain no-repeat url("../../COMM/IMG/CALCKING/RETRY.png");
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#complete_popup .play_view {
+  display: flex;
+  width: 300px;
+  height: 100px;
+  color: white;
+  font-size: 32px;
+  font-weight: 800px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #2dcabd;
+  z-index: 2;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#complete_popup p {
+  display: flex;
+  position: absolute;
+  bottom: -50px;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+@keyframes calcAni {
+  from {
+    transform: translate(-50%, 923px);
+  }
+
+  to {
+    transform: translate(-50%, 0);
+  }
+}
+
+.keypad__top__box {
+  background-color: #f5f5f5;
+  width: 160px;
+  height: 160px;
+  border-radius: 20px;
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.1);
+  font-size: 110px;
+  font-weight: 800;
+  font-family: "NanumSquareRound";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #211007;
+  z-index: 10;
+  padding-top: 7px;
+}
+
+.calculator__keypad__box button:not(:last-child) {
+  margin-right: 40px;
+}
+
+.calculator__keypad__box button:nth-child(6n) {
+  margin-right: 0;
+}
+
+.calculator__keypad__box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1160px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 8px;
+}
+
+.calculator__keypad__box > div {
+  display: flex;
+}
+
+.calculator__keypad__box > div:first-child {
+  margin-bottom: 12px;
+}
+
+.calculator__keypad__box .wrongBg {
+  background-color: #ff7070;
+  color: #ffffff;
+}
+
+.calculator__keypad__contents {
+  position: absolute;
+  bottom: 0;
+  background: url(../../COMM/IMG/CALCKING/CALCULATOR.png);
+  width: 1340px;
+  height: 610px;
+  z-index: 100;
+}
+
+.card__checked {
+  border: 5px solid black;
+}
+
+.calc-screen {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  margin-top: 24px;
+  height: 170px;
+  padding: 0 80px;
+  font-size: 100px;
+  font-weight: 800;
+  color: black;
+}
+
+.calc__title__wrapper {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 50px;
+  width: auto;
+  height: 133px;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 200px;
+  background: #fe487a;
+  box-shadow: 0px 8px #cf2453;
+  padding: 0 72px;
+}
+
+.calc__title__wrapper span {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  font-weight: 800;
+  font-family: "NanumSquareRound";
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.small__number__bg {
+  background-color: #ffb8ef;
+}
+
+.big__number__bg {
+  background-color: #9ec8ff;
+}
+
+/* 큰수 작은수 박스 */
+.problem__number__box {
+  min-width: 304px;
+  padding: 24px 32px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #000000;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  margin-bottom: 24px;
+  letter-spacing: -2px;
+}
+
+/* 문제 숫자박스 */
+.calc__problem__number > .keypad__top__box {
+  background-color: #ffffff;
+  width: 230px;
+  height: 160px;
+  border-radius: 10px;
+  font-size: 120px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* 오버레이 */
+
+#container > .overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#container .overlay > .answer {
+  width: 800px;
+  height: 800px;
+  background-image: url("../../COMM/IMG/CALCKING/ANSWER.png");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* popup */
+.popup__wrap {
+  position: relative;
+  display: none;
+}
+
+.popup__overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.popup__complete {
+  background-image: url("../../COMM/IMG/CALCKING/POPUP.png");
+  width: 855px;
+  height: 758px;
+  z-index: 10;
+}
+
+.popup__btn {
+  background-image: url("../../COMM/IMG/CALCKING/VIDEO_BTN.png");
+  width: 341px;
+  height: 100px;
+  margin: 48px 0 24px;
+  z-index: 10;
+}
+
+.popup__overlay > span {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "NanumSquareRound";
+  color: #ffffff;
+}
+
+.popup__backbg {
+  background-image: url("../../COMM/IMG/CALCKING/POPUP_BG.png");
+  width: 1440px;
+  height: 990px;
+  position: absolute;
+}
+
+/* 계산기 좌우로 흔들리는 애니메이션 */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(50px);
+  }
+
+  40% {
+    transform: translateX(-50px);
+  }
+
+  60% {
+    transform: translateX(50px);
+  }
+
+  80% {
+    transform: translateX(-50px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.pearl-guide {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.pearl-guide-hand {
+  width: 120px;
+  height: 110px;
+  position: absolute;
+  z-index: 2;
+  background: url("../../COMM/IMG/TOUCH_GUIDE_HAND.PNG") no-repeat center;
+  left: 68%;
+  bottom: 19%;
+}
+.pearl-guide-point {
+  width: 120px;
+  height: 110px;
+  position: absolute;
+  z-index: 2;
+  background: url("../../COMM/IMG/TOUCH_GUIDE.PNG") no-repeat center;
+  left: 65%;
+  bottom: 23%;
+  animation: opa 1s infinite linear;
+}
+
+@keyframes opa {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

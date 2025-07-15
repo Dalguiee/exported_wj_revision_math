@@ -1,0 +1,1358 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>개정교육과정-수학 수학 개념</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="KeyWORDs" content="" />
+    <meta name="Description" content="" />
+    <meta name="Robots" content="all" />
+    <meta http-equiv="Subject" content="" />
+    <meta http-equiv="Title" content="" />
+    <meta http-equiv="Author" content="onflou " />
+    <meta http-equiv="Publisher" content="" />
+
+    <!-- 브라우저 호환성을 지정 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="#" />
+    <link href="../../../COMM/CSS/COMMON.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/COMMONLAYOUT.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/CONCEPTCOMMON3.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/VIDEO.CSS" rel="stylesheet" />
+ 
+    <style>
+      /* 1p */
+      .step1 .step1_top_box .img_box {
+        position: relative;
+      }
+
+      .step1 .step1_top_box .img_box .img:not(.img1) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+      }
+
+      .step1 .step1_btm_box {
+        margin-top: 70px;
+        align-items: flex-start;
+        gap: 40px;
+      }
+
+      .step1 .step1_btm_box .line {
+        position: relative;
+        gap: 20px;
+      }
+
+      .step1 .step1_btm_box .line > .circle {
+        width: 90px;
+        aspect-ratio: 1/1;
+        border: 5px solid rgba(231, 46, 38, 1);
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .step1 .step1_btm_box .line > .circle1 {
+        top: 58%;
+        left: 381px;
+      }
+
+      .step1 .step1_btm_box .line > .circle2 {
+        left: 448px;
+      }
+
+      .step1 .step1_btm_box .line > .circle3 {
+        left: 275px;
+      }
+
+      .step1 .step1_btm_box .line span {
+        line-height: 54px;
+      }
+
+      .step1 .select_list .answer::after {
+        content: none;
+      }
+
+      .step1 .select_list .answer {
+        width: auto;
+        height: 50px;
+        background-color: transparent;
+        position: relative;
+      }
+
+      .step1 .select_list .answer.disabled,
+      .step1 .select_list .answer.selected {
+        background-color: transparent !important;
+        color: #000000 !important;
+      }
+
+      .step1 .select_list .answer + .answer {
+        margin-left: 52px;
+      }
+
+      .step1 .select_list .answer + .answer::before {
+        content: ",";
+        position: absolute;
+        bottom: 0;
+        left: -35px;
+      }
+
+      .step1 .select_list .answer img {
+        width: auto;
+        height: 100%;
+      }
+
+      /* 2p */
+      .step2 .dino_container{
+        width: 1300px;
+        height: 612px;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        bottom: 45px;
+      }
+
+      .step2 .ques_box{
+        width: 1297px;
+        height: 70px;
+        margin-top: 50px;
+      }
+
+      .step2 .txt_container1{
+        position: absolute;
+        left: 219px;
+      }
+
+      .step2 .txt_container2{
+        position: absolute;
+        left: 700px;
+      }
+
+      .step2 .txt_container3{
+        position: absolute;
+        right: 52px;
+      }
+
+      .step2 .check{
+        position: absolute;
+        width: 406px;
+        height: 331px;
+        top: 135px;
+        left: 659px;
+      }
+      .step2 .wrong{
+        position: absolute;
+        width: 484px;
+        height: 158px;
+        top: 177px;
+        left: 625px;
+      }
+      .step2 .eye_red{
+        position: absolute;
+        width: 43px;
+        height: 43px;
+        top: 190px;
+        left: 775px;
+      }
+      /* 3p */
+      .step3 .flower_container{
+        width: 1014px;
+        height: 552px;
+        justify-content: space-between;
+        position: relative;
+        bottom: 230px;
+      }
+
+      .step3 .flower{
+        width: 268px;
+        height: 552px;
+        position: relative;
+      }
+
+      .step3 .txt_container1{
+        position: absolute;
+        top: 60px;
+        right: 50px;
+      }
+
+      .step3 .txt_container2{
+        position: absolute;
+        top: 236px;
+        right: 50px;
+      }
+
+      .step3 .txt_container3{
+        position: absolute;
+        top: 408px;
+        right: 50px;
+      }
+
+      .step3 .wrong{
+        width: 205px;
+        height: 230px;
+        position: absolute;
+        top: -17px;
+        left: 405px;
+      }
+
+      .step3 .check{
+        width: 190px;
+        height: 40px;
+        position: absolute;
+        top: 285px;
+        left: 410px;
+      }
+
+      .step3 .x{
+        width: 37px;
+        height: 205px;
+        bottom: 428px;
+        left: 487px;
+        position: absolute;
+      }
+
+      .step3 .footer{
+        width: 1400px;
+        height: 270px;
+        position: absolute;
+      }
+    
+      /* 4p */
+      .step4 .bear_container{
+        width: 1700px;
+        height: 804px;
+        justify-content: space-between;
+      } 
+
+      .step4 .bear{
+        width: 260px;
+        height: 348px;
+        position: relative;
+      }
+
+      .step4 .ques_box{
+        width: 1300px;
+        height: 370px;
+        border: 5px solid #BEDAFF;
+        border-radius: 50px;
+        align-items: center;
+        position: relative;
+      }
+
+      .step4 .ques{
+        width: 1049px;
+        height: 284px;
+      }
+
+      .step4 .txt_container1{
+        position: absolute;
+        top: 24px;
+        right: 573px;
+      }
+
+      
+
+      .step4 .txt_container2{
+        position: absolute;
+        top: 140px;
+        right: 609px;
+      }
+
+      .step4 .txt_container3{
+        position: absolute;
+        bottom: 30px;
+        right: 532px;
+      }
+
+      .step4 .bear_head{
+        width: 121px;
+        height: 124px;
+        position: absolute;
+        top: 82px;
+        left: 50%;
+        translate: -50%;
+      }
+
+      .step4 .bear_mid{
+        width: 169px;
+        height: 169px;
+        top: 206px;
+        position: absolute;
+        left: 50%;
+    translate: -50%;
+      }
+
+      .step4 .bear_arm{
+        width: 260px;
+        height: 229px;
+        top: 200px;
+        position: absolute;
+        left: 50%;
+    translate: -50%;
+      }
+
+      .step4 .circle{
+        position: absolute;
+        width: auto;
+        top: 82px;
+        translate: -50%;
+      }
+
+      .step4 .triangle{
+        position: absolute;
+        width: auto;
+        top: 119px;
+        translate: -50%;
+      }
+
+      .step4 .ractangle{
+        position: absolute;
+        width: auto;
+        top: 200px;
+        translate: -50%;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div
+        id="contents-wrap"
+        class="concept"
+        style="position: absolute; display: flex"
+      ></div>
+      <div id="contents-main" style="display: none" class="concept-warp">
+        <div class="concept-warp_inner">
+          <header class="header" style="visibility: visible">
+            <div class="header_title">
+              <button class="sound-btn" onclick="titleSound()"></button>
+              <h3></h3>
+            </div>
+            <p class="header_page"><span>1</span>/2</p>
+          </header>
+          <main class="main">
+            <div class="main_content">
+              <!-- 콘텐츠영역 -->
+              <div class="step step1" style="display: block">
+                <!-- step1 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step1_top_box">
+                    <div class="img_box">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP1_IMG1.png" class="img img1" alt="공룡 이미지">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP1_IMG2.png" class="img img2 v_hidden" alt="삼각형 강조 이미지">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP1_IMG3.png" class="img img3 v_hidden" alt="원 강조 이미지">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP1_IMG4.png" class="img img4 v_hidden" alt="네모 강조 이미지">
+                    </div>
+                  </div>
+
+                  <div class="step1_btm_box dp_flex dp_flex_column">
+                    <div class="line line1 dp_flex v_hidden">
+                      <div class="txt txt1">
+                        <span>악어의 이빨은 &#40;</span>
+                      </div>
+                      <div class="quiz_select_wrap quiz_select_wrap1">
+                        <div class="select_list">
+                          <div class="answer answer1">
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP1_ANSWER1.png" alt="네모">
+                          </div>
+                          <div class="answer answer2">
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP1_ANSWER2.png" alt="세모">
+                          </div>
+                          <div class="answer answer3">
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP1_ANSWER3.png" alt="동그라미">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="txt txt2">
+                        <span>&#41; 모양입니다.</span>
+                      </div>
+                      <div class="circle circle1 v_hidden"></div>
+                    </div>
+                    <div class="line line2 dp_flex v_hidden">
+                      <div class="txt txt1">
+                        <span>악어의 눈은 &#40;</span>
+                      </div>
+                      <div class="quiz_select_wrap quiz_select_wrap2">
+                        <div class="select_list">
+                          <div class="answer answer1">
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP1_ANSWER1.png" alt="네모">
+                          </div>
+                          <div class="answer answer2">
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP1_ANSWER2.png" alt="세모">
+                          </div>
+                          <div class="answer answer3">
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP1_ANSWER3.png" alt="동그라미">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="txt txt2">
+                        <span>&#41; 모양입니다.</span>
+                      </div>
+                      <div class="circle circle2 v_hidden"></div>
+                    </div>
+                    <div class="line line3 dp_flex v_hidden">
+                      <div class="txt txt1">
+                        <span>악어의 다리는 &#40;</span>
+                      </div>
+                      <div class="quiz_select_wrap quiz_select_wrap3">
+                        <div class="select_list">
+                          <div class="answer answer1">
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP1_ANSWER1.png" alt="네모">
+                          </div>
+                          <div class="answer answer2">
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP1_ANSWER2.png" alt="세모">
+                          </div>
+                          <div class="answer answer3">
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP1_ANSWER3.png" alt="동그라미">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="txt txt2">
+                        <span>&#41; 모양입니다.</span>
+                      </div>
+                      <div class="circle circle3 v_hidden"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step2" style="display: block">
+                <!-- step2 시작부분 -->
+                <div class="main__container dp_flex">
+                  <div class="dino_container dp_flex dp_flex_column">
+                    <div class="img_box img_box1" style="position: relative; width: 498px; height: 363px;">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP2_DINO.png?=v1" class="img dino" style="width: 100%; height: 100%;"/>
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP2_DINO_X.png?=v4" class="img check dino v_hidden" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"/>
+                    </div>
+                    <div class="ques_box dp_flex dp_flex_column v_hidden">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP2_NOTICE.png?=v4" class="img first_ques"/>
+                      <div class="txt_container txt_container1 keypad_txt keypad_txt1 two" data-val="11" data-length="2"><span>?</span></div>
+                      <div class="txt_container txt_container2 keypad_txt keypad_txt2" data-val="6"><span>?</span></div>
+                      <div class="txt_container txt_container3 keypad_txt keypad_txt3" data-val="1"><span>?</span></div>
+                    </div>
+                  </div>
+                  <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP2_DINO_WRONG.png?=v3" class="img wrong v_hidden"/>
+                  <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP2_DINO_EYE_RED.png?=v3" class="img eye_red v_hidden"/>
+                </div>
+              </div>
+              <div class="step step3" style="display: none">
+                <!-- step3 시작부분 -->
+                <div class="main__container dp_flex">
+                  <div class="flower_container dp_flex">
+                    <div class="img_box">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP3_FLOWER.png?=v3" class="img flower">
+                    </div>
+                    <div class="ques_box dp_flex dp_none">
+                      <div class="txt_container txt_container1">
+                        <span>?</span>
+                        <!-- <span class="v_hidden">3</span> -->
+                      </div>
+                      <div class="txt_container txt_container2">
+                        <span>?</span>
+                        <!-- <span class="v_hidden">2</span> -->
+                      </div>
+                      <div class="txt_container txt_container3">
+                        <span>?</span>
+                        <!-- <span class="v_hidden">7</span> -->
+                      </div>
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP3_QUES.png?=v3" class="img ques"/>
+                    </div>
+                  </div>
+                  <div class="flower_effect">
+                    <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP3_WORONG.png?=v3" class="img wrong v_hidden">
+                    <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP3_CHECK.png?=v3" class="img check v_hidden">
+                    <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP3_X.png?=v3" class="img x v_hidden">
+                  </div>
+                  <footer class="check_footer dp_none">
+                    <div class="check_footer_inner slideup">
+                      <div class="check_footer_text img_container">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP3_FOOTER_TXT.png?=v3" class="img footer" />
+                      </div>
+                      <div class="check_footer_ch">
+                        <div class="check_footer_ch_head"></div>
+                        <div class="check_footer_ch_body"></div>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+              <div class="step step4" style="display: none">
+                <!-- step4 시작부분 -->
+                <div class="main__container dp_flex">
+                  <div class="first_bear v_hidden">
+                    <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP4_BEAR_HEAD.png" class="img bear_head dp_none">
+                    <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP4_BEAR_MID.png" class="img bear_mid dp_none">
+                    <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP4_BEAR_ARM.png" class="img bear_arm dp_none">
+                  </div>
+                  <div class="bear_container dp_flex dp_flex_column v_hidden">
+                    <div class="img_box">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP5_BEAR_CIRCLE.png?=v3" class="img circle">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP5_BEAR_RACTANGLE.png?=v3" class="img ractangle">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP5_BEAR_TRIANGLE.png?=v3" class="img triangle">
+                    </div>
+                    <div class="ques_box dp_flex">
+                      <div class="txt_container txt_container1 keypad_txt keypad_txt1" data-val="4"><span>?</span></div>
+                      <div class="txt_container txt_container2 keypad_txt keypad_txt2" data-val="3"><span>?</span></div>
+                      <div class="txt_container txt_container3 keypad_txt keypad_txt3" data-val="4"><span>?</span></div>
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP4_QUES.png?=v5" class="img ques">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="step-list">
+                <li class="step-list_item active"></li>
+                <li class="step-list_item"></li>
+              </ul>
+            </div>
+          </main>
+          <div class="main_prev-next">
+            <button class="btn-prev" style="display: none">이전버튼</button>
+            <!-- <button class="btn-next" style="display: block" disabled> -->
+            <button class="btn-next blinking" style="display: block">
+              다음버튼
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      crossorigin
+      src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"
+    ></script>
+    <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+    <script src="../../../COMM/JS/COMMON2.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNT3.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNTBTN.JS"></script>
+    <script src="../../../COMM/JS/GAME.JS"></script>
+    <script src="../../../COMM/JS/VIDEO.JS"></script>
+    <script src="../../../COMM/JS/VIDEO-HTTP-STREAMING.JS"></script>
+    <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+    <script>
+      /*
+       * 데이터
+       */
+      let intro = {
+        type: "concept", //concept 개념익히기, checkExam 확인문제
+        title: "여러 가지 모양을</br>만들어 볼까요",
+        subTitle: [
+          "■, ▲, ● 모양으로 여러 가지 모양을 만들고, 만든 모양을 이야기할 수 있어요."
+        ],
+        sound: ["../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_001.mp3"],
+      };
+
+      //현재 페이지
+      let disStep = 1;
+
+      let pageData = [
+        {
+          step: 1,
+          title: "만든 모양에서 ■, ▲, ● 모양이 몇 개 있는지 세어 봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_001.mp3",
+          headerPage: [1, 2],
+          footerPage: [1, 2],
+          prev: 0,
+          next: 1,
+        },
+        {
+          step: 2,
+          title: "만든 모양에서 ■, ▲, ● 모양이 몇 개 있는지 세어 봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_001.mp3",
+          headerPage: [1, 2],
+          footerPage: [2, 2],
+          prev: 1,
+          next: 0,
+        },
+        {
+          step: 3,
+          title: "",
+          sound: "",
+          headerPage: [0, 0],
+          footerPage: [0, 0],
+          prev: 2,
+          next: 1,
+        },
+        {
+          step: 4,
+          title: "■, ▲, ● 모양으로 여러 가지 모양을 만들어 봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_023.mp3",
+          headerPage: [2, 2],
+          footerPage: [1, 1],
+          prev: 3,
+          next: 0,
+        }
+      ];
+      
+      function pageAction() {
+        console.log("disStep ::: ", disStep);
+        //setTimeout 초기화
+        const TimeoutId = setTimeout(() => console.log("timeout clear"), 1);
+        for (let i = 0; i < TimeoutId; i++) {
+          clearTimeout(i);
+        }
+        stepSet();
+        switch (disStep) {
+          case 1:
+            step1.reset();
+            step1.start();
+            break;
+          case 2:
+            step2.reset();
+            step2.start();
+            break;
+          case 3:
+            step3.reset();
+            step3.start();
+            break;
+          case 4:
+            step4.reset();
+            step4.start();
+            break;
+        }
+      }
+
+      //문제 시작
+      //================STEP1 s1ren==============
+      const step1 = {
+        quizAnswerList: [
+          '<img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP1_ANSWER1.png" alt="네모">',
+          '<img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP1_ANSWER2.png" alt="세모">',
+          '<img src="../../../COMM/IMG/CONCEPT/SEASON2/1_3_4/STEP1_ANSWER3.png" alt="동그라미">',
+        ],
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_001.mp3", // 만든 모양에서 네모 세모 동그라미 모양이 몇개 있는지 세어 봅시다.
+            "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_002.mp3", // 네모 세모 동그라미 모양으로 ... 만든 모양을 살펴보자!
+            "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_003.mp3", // 악어의 이빨은 어떤 모양일까
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step1 .step1_top_box').addClass('blinking');
+                timerSet(() => {
+                  $('.step1 .step1_top_box').removeClass('blinking');
+                  timerInit();
+                }, 2800);
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                quizSelectSetInit($('.step1 .quiz_select_wrap1'), step1.quizAnswerList);
+                quizSelectSetOnNew(2, step1.quizSelectCorrect);
+                $('.step1 .step1_btm_box .line1').css('visibility', 'visible');
+                $('.step1 .quiz_select_wrap1 .answer img').addClass('blinking');
+
+                timerSet(() => {
+                  $('.step1 .quiz_select_wrap1 .answer img').removeClass('blinking');
+                  timerInit();
+                }, 2000);
+              }
+            },
+          ]);
+        },
+        quizSelectCorrect: (flag) => {
+          if (flag) {
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+              "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_005.mp3",
+            ], [
+                {
+                  idx: 1,
+                  type: 'start',
+                  callback: () => {
+                    $('.step1 .step1_top_box .img_box .img2').css('visibility', '').removeClass('blinking');
+                    $('.step1 .step1_btm_box .line > .circle1').css('visibility', 'visible');
+                  }
+                },
+                {
+                  idx: 2,
+                  type: 'start',
+                  callback: () => {
+                    quizSelectSetInit($('.step1 .quiz_select_wrap2'), step1.quizAnswerList);
+                    quizSelectSetOnNew(3, step1.quizSelectCorrect2);
+                    $('.step1 .step1_btm_box .line2').css('visibility', 'visible');
+                    $('.step1 .quiz_select_wrap2 .answer img').addClass('blinking');
+
+                    timerSet(() => {
+                      $('.step1 .quiz_select_wrap2 .answer img').removeClass('blinking');
+                      timerInit();
+                    }, 2000);
+                  }
+                },
+            ]);
+          } else {
+            audioSet([
+              "../../../COMM/SOUND/WRONG.mp3",
+              "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_004.mp3",
+            ], [
+              {
+                idx: 2,
+                type: 'start',
+                callback: () => {
+                  $('.step1 .step1_top_box .img_box .img2').css('visibility', 'visible').addClass('blinking');
+                  timerSet(() => {
+                    $('.step1 .step1_top_box .img_box .img2').css('visibility', '').removeClass('blinking');
+                    timerInit();
+                  }, 3000);
+                }
+              },
+            ]);
+          }
+        },
+        quizSelectCorrect2: (flag) => {
+          if (flag) {
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+              "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_007.mp3", // 악어의 다리는 어떤 모양일까?
+            ], [
+                {
+                  idx: 1,
+                  type: 'start',
+                  callback: () => {
+                    $('.step1 .step1_top_box .img_box .img3').css('visibility', '').removeClass('blinking');
+                    $('.step1 .step1_btm_box .line > .circle2').css('visibility', 'visible');
+                  }
+                },
+                {
+                  idx: 2,
+                  type: 'start',
+                  callback: () => {
+                    quizSelectSetInit($('.step1 .quiz_select_wrap3'), step1.quizAnswerList);
+                    quizSelectSetOnNew(1, step1.quizSelectCorrect3);
+                    $('.step1 .step1_btm_box .line3').css('visibility', 'visible');
+                    $('.step1 .quiz_select_wrap3 .answer img').addClass('blinking');
+
+                    timerSet(() => {
+                      $('.step1 .quiz_select_wrap3 .answer img').removeClass('blinking');
+                      timerInit();
+                    }, 2000);
+                  }
+                },
+            ]);
+          } else {
+            audioSet([
+              "../../../COMM/SOUND/WRONG.mp3",
+              "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_006.mp3",
+            ], [
+              {
+                idx: 2,
+                type: 'start',
+                callback: () => {
+                  $('.step1 .step1_top_box .img_box .img3').css('visibility', 'visible').addClass('blinking');
+                  timerSet(() => {
+                    $('.step1 .step1_top_box .img_box .img3').css('visibility', '').removeClass('blinking');
+                    timerInit();
+                  }, 3000);
+                }
+              },
+            ]);
+          }
+        },
+        quizSelectCorrect3: (flag) => {
+          if (flag) {
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+              "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_009.mp3",
+              "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_010_1.mp3",
+              "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_010_2.mp3",
+              "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_010_3.mp3",
+            ], [
+                {
+                  idx: 1,
+                  type: 'start',
+                  callback: () => {
+                    $('.step1 .step1_top_box .img_box .img4').css('visibility', '').removeClass('blinking');
+                    $('.step1 .step1_btm_box .line > .circle3').css('visibility', 'visible');
+                  }
+                },
+                {
+                  idx: 3,
+                  type: 'start',
+                  callback: () => {
+                    $('.step1 .step1_top_box .img_box .img2').css('visibility', 'visible').addClass('blinking');
+                  }
+                },
+                {
+                  idx: 4,
+                  type: 'start',
+                  callback: () => {
+                    $('.step1 .step1_top_box .img_box .img2').css('visibility', '').removeClass('blinking');
+                    $('.step1 .step1_top_box .img_box .img3').css('visibility', 'visible').addClass('blinking');
+                  }
+                },
+                {
+                  idx: 5,
+                  type: 'start',
+                  callback: () => {
+                    $('.step1 .step1_top_box .img_box .img3').css('visibility', '').removeClass('blinking');
+                    $('.step1 .step1_top_box .img_box .img4').css('visibility', 'visible').addClass('blinking');
+                  }
+                },
+                {
+                  idx: 5,
+                  type: 'end',
+                  callback: () => {
+                    $('.step1 .step1_top_box .img_box .img4').css('visibility', '').removeClass('blinking');
+                    setTimeout(() => {
+                      correctly();
+                    }, 1000);
+                  }
+                },
+            ]);
+          } else {
+            audioSet([
+              "../../../COMM/SOUND/WRONG.mp3",
+              "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_008.mp3",
+            ], [
+              {
+                idx: 2,
+                type: 'start',
+                callback: () => {
+                  $('.step1 .step1_top_box .img_box .img4').css('visibility', 'visible').addClass('blinking');
+                  timerSet(() => {
+                    $('.step1 .step1_top_box .img_box .img4').css('visibility', '').removeClass('blinking');
+                    timerInit();
+                  }, 3000);
+                }
+              },
+            ]);
+          }
+        },
+        reset: () => {
+          $('.step1 .dp_none').css('display', '');
+          $('.step1 .v_hidden').css('visibility', '');
+          $('.step1 .blinking').removeClass('blinking');
+        },
+      };
+      //================STEP2==============
+      const step2 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_011.mp3",
+            "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_012.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step2 .ques_box').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                // 빈칸 깜빡이기 (키패드 노출)
+                let keypadTxtEl1 = $('.step2 .keypad_txt1');
+                keypadTxtEl1.addClass("blink").click(() => {
+                  keypadTxtEl1.removeClass('blink');
+                  keypadSetOn(keypadTxtEl1, 14, 14);
+                  step2.keypadSetClick(keypadTxtEl1);
+                });
+              }
+            },
+          ]);
+        },
+        keypadSetClick: (btn) => {
+          $(document).on('click', keypadBtnCheckEl, () => {
+            if (keypadInput == btn.data('val')) {
+              keypadSetCorrect(btn);
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.MP3",
+              ], [
+                {
+                idx: 1,
+                type: 'end',
+                callback: () => {
+                  $('.step2 .check').css('visibility','')
+                  // 빈칸 깜빡이기 (키패드 노출)
+                  let keypadTxtEl2 = $('.step2 .keypad_txt2');
+                  keypadTxtEl2.addClass("blink").click(() => {
+                    keypadTxtEl2.removeClass('blink');
+                    keypadSetOn(keypadTxtEl2, 14, 14);
+                    step2.keypadSetClick2(keypadTxtEl2);
+                  });
+                }
+              },
+            ]);
+            } else {
+              keypadSetOff(btn);
+              btn.addClass('blink');
+
+              audioSet([
+                "../../../COMM/SOUND/WRONG.MP3",
+                "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_013.mp3"
+              ], [
+                {
+                idx: 2,
+                type: 'start',
+                callback: () => {
+                  $('.step2 .check').css('visibility','visible')
+                }
+              },
+            ]);
+            }
+          });
+        },
+        keypadSetClick2: (btn) => {
+          $(document).on('click', keypadBtnCheckEl, () => {
+            if (keypadInput == btn.data('val')) {
+              $('.step2 .check').css('visibility','')
+              keypadSetCorrect(btn);
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.MP3",
+              ], [{
+                idx: 1,
+                type: 'end',
+                callback: () => {
+                  $('.step2 .wrong').css('visibility','')
+                  // 빈칸 깜빡이기 (키패드 노출)
+                  let keypadTxtEl3 = $('.step2 .keypad_txt3');
+                  keypadTxtEl3.addClass("blink").click(() => {
+                    keypadTxtEl3.removeClass('blink');
+                    keypadSetOn(keypadTxtEl3, 14, 14);
+                    step2.keypadSetClick3(keypadTxtEl3);
+                  });
+                }
+              },
+              ]);
+            } else {
+              keypadSetOff(btn);
+              btn.addClass('blink');
+
+              audioSet([
+                "../../../COMM/SOUND/WRONG.MP3",
+                "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_014.mp3"
+              ], [
+                {
+                idx: 2,
+                type: 'start',
+                callback: () => {
+                  $('.step2 .wrong').css('visibility','visible')
+                }
+              },
+            ]);
+            }
+          });
+        },
+        keypadSetClick3: (btn) => {
+          $(document).on('click', keypadBtnCheckEl, () => {
+            if (keypadInput == btn.data('val')) {
+              $('.step2 .wrong').css('visibility','')
+              $('.step2 .eye_red').css('visibility','')
+              keypadSetCorrect(btn);
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.MP3",
+                "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_016.mp3"
+              ], [
+                {
+                  idx: 2,
+                  type: 'end',
+                  callback: () => {
+                    disStep++;
+                    pageAction();
+                  }
+                },
+              ]);
+            } else {
+              keypadSetOff(btn);
+              btn.addClass('blink');
+
+              audioSet([
+                "../../../COMM/SOUND/WRONG.MP3",
+                "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_015.mp3"
+              ], [
+                {
+                idx: 2,
+                type: 'start',
+                callback: () => {
+                  $('.step2 .eye_red').css('visibility','visible')
+                }
+              },
+            ]);
+            }
+          });
+        },
+        reset: () => {
+          $('.step2 .dp_none').css('display', '');
+          $('.step2 .v_hidden').css('visibility', '');
+          $(".step2 .txt_container").html("?");
+          keypadSetInit();
+        },
+      };
+      //================STEP3==============
+      const step3 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_017.mp3",
+            "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_018.mp3",
+            "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_019.mp3",
+            "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_020.mp3",
+            "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_021.mp3",
+            "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_022.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step3 .img_box').addClass('blinking');
+                timerSet(() => {
+                  $('.step3 .img_box').removeClass('blinking');
+                  timerInit();
+                }, 3000);
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step3 .x').css('visibility', 'visible');
+                $('.step3 .ques_box').css('display', 'block');
+                $('.step3 .x').addClass('blinking');
+              }
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $(".step3 .txt_container1").html("3");
+                $('.step3 .x').removeClass('blinking');
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step3 .check').css('visibility', 'visible');
+                $('.step3 .check').addClass('blinking');
+              }
+            },
+            {
+              idx: 3,
+              type: 'end',
+              callback: () => {
+                $(".step3 .txt_container2").html("2");
+                $('.step3 .check').removeClass('blinking');
+              }
+            },
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                $('.step3 .wrong').css('visibility', 'visible');
+                $('.step3 .wrong').addClass('blinking');
+              }
+            },
+            {
+              idx: 4,
+              type: 'end',
+              callback: () => {
+                $(".step3 .txt_container3").html("7");
+                $('.step3 .wrong').removeClass('blinking');
+              }
+            },
+            {
+              idx: 6,
+              type: 'start',
+              callback: () => {
+                $('.step3 .check_footer').css('display', 'block');
+              }
+            },
+            {
+              idx: 6,
+              type: 'end',
+              callback: () => {
+                correctly();
+              }
+            },
+          ]);
+        },
+        reset: () => {
+          $(".step3 .txt_container").html("?");
+          $('.step3 .dp_none').css('display', '');
+          $('.step3 .v_hidden').css('visibility', '');
+        },
+      };
+      //================STEP4==============
+      const step4 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_023.mp3",
+            "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_024.mp3",
+            "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_025.mp3",
+            "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_026.mp3",
+            "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_027.mp3",
+            "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_028.mp3",
+            "../../../COMM/SOUND/Eff_Start.mp3",
+            "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_029.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step4 .first_bear').css('visibility', 'visible');
+                $('.step4 .bear_head').css('display', 'block');
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step4 .bear_head').css('display', 'block');
+                $('.step4 .bear_head').addClass('blinking');
+              }
+            },
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                $('.step4 .bear_head').removeClass('blinking');
+                timerSet(() => {
+                  $('.step4 .bear_mid').css('display', 'block');
+                  timerInit();
+                }, 1500);
+                
+              }
+            },
+            {
+              idx: 5,
+              type: 'start',
+              callback: () => {
+                timerSet(() => {
+                  $('.step4 .bear_arm').css('display', 'block');
+                  timerInit();
+                }, 2000);
+                
+              }
+            },
+            {
+              idx: 7,
+              type: 'start',
+              callback: () => {
+                $('.step4 .first_bear').addClass('blinking');
+              }
+            },
+            {
+              idx: 8,
+              type: 'start',
+              callback: () => {
+                timerSet(() => {
+                  $('.step4 .first_bear').css('display','none');
+                  $('.step4 .first_bear').removeClass('blinking');
+                  $('.step4 .bear_container').css('visibility','visible');
+                  timerSet(() => {
+                    // 빈칸 깜빡이기 (키패드 노출)
+                    let keypadTxtEl1 = $('.step4 .keypad_txt1');
+                    keypadTxtEl1.addClass("blink").click(() => {
+                      keypadTxtEl1.removeClass('blink');
+                      keypadSetOn(keypadTxtEl1, 14, 14);
+                      step4.keypadSetClick(keypadTxtEl1);
+                    });
+
+                    timerInit();
+                  }, 1000);
+                  timerInit();
+                }, 1000);
+              }
+            },
+          ]);
+        },
+        keypadSetClick: (btn) => {
+          $(document).on('click', keypadBtnCheckEl, () => {
+            if (keypadInput == btn.data('val')) {
+              keypadSetCorrect(btn);
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.MP3",
+              ], [
+                {
+                idx: 1,
+                type: 'start',
+                callback: () => {
+                  $('.step4 .ractangle').removeClass('blinking')
+                }
+              },
+                {
+                idx: 1,
+                type: 'end',
+                callback: () => {
+                  // 빈칸 깜빡이기 (키패드 노출)
+                  let keypadTxtEl2 = $('.step4 .keypad_txt2');
+                  keypadTxtEl2.addClass("blink").click(() => {
+                    keypadTxtEl2.removeClass('blink');
+                    keypadSetOn(keypadTxtEl2, 14, 14);
+                    step4.keypadSetClick2(keypadTxtEl2);
+                  });
+                }
+              },
+              ]);
+            } else {
+              keypadSetOff(btn);
+              btn.addClass('blink');
+              audioSet([
+                "../../../COMM/SOUND/WRONG.MP3",
+                "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_013.mp3",
+              ], [
+                {
+                  idx: 2,
+                  type: 'start',
+                  callback: () => {
+                    $('.step4 .ractangle').addClass('blinking')
+                  }
+                },
+                {
+                  idx: 2,
+                  type: 'end',
+                  callback: () => {
+                    $('.step4 .ractangle').removeClass('blinking')
+                  }
+                },
+              ]);
+            }
+          });
+        },
+        keypadSetClick2: (btn) => {
+          $(document).on('click', keypadBtnCheckEl, () => {
+            if (keypadInput == btn.data('val')) {
+              keypadSetCorrect(btn);
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.MP3",
+              ], [
+              {
+                idx: 1,
+                type: 'start',
+                callback: () => {
+                  $('.step4 .triangle').removeClass('blinking')
+                }
+              },
+              {
+                idx: 1,
+                type: 'end',
+                callback: () => {
+                  // 빈칸 깜빡이기 (키패드 노출)
+                  let keypadTxtEl3 = $('.step4 .keypad_txt3');
+                  keypadTxtEl3.addClass("blink").click(() => {
+                    keypadTxtEl3.removeClass('blink');
+                    keypadSetOn(keypadTxtEl3, 14, 14);
+                    step4.keypadSetClick3(keypadTxtEl3);
+                  });
+                }
+              },
+              ]);
+            } else {
+              keypadSetOff(btn);
+              btn.addClass('blink');
+              audioSet([
+                "../../../COMM/SOUND/WRONG.MP3",
+                "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_014.mp3",
+              ], [
+                {
+                  idx: 2,
+                  type: 'start',
+                  callback: () => {
+                    $('.step4 .triangle').addClass('blinking')
+                  }
+                },
+                {
+                  idx: 2,
+                  type: 'end',
+                  callback: () => {
+                    $('.step4 .triangle').removeClass('blinking')
+                  }
+                },
+              ]);
+            }
+          });
+        },
+        keypadSetClick3: (btn) => {
+          $(document).on('click', keypadBtnCheckEl, () => {
+            if (keypadInput == btn.data('val')) {
+              keypadSetCorrect(btn);
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.MP3",
+                "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_030.mp3",
+              ], [
+                {
+                  idx: 1,
+                  type: 'start',
+                  callback: () => {
+                    $('.step4 .circle').removeClass('blinking')
+                  }
+                },
+                {
+                  idx: 2,
+                  type: 'end',
+                  callback: () => {
+                    callFinish();
+                  }
+                },
+              ]);
+            } else {
+              keypadSetOff(btn);
+              btn.addClass('blink');
+              audioSet([
+                "../../../COMM/SOUND/WRONG.MP3",
+                "../../../COMM/SOUND/SEASON2/1_3_4/1_2_3-4_015.mp3",
+              ], [
+                {
+                  idx: 2,
+                  type: 'start',
+                  callback: () => {
+                    $('.step4 .circle').addClass('blinking')
+                  }
+                },
+                {
+                  idx: 2,
+                  type: 'end',
+                  callback: () => {
+                    $('.step4 .circle').removeClass('blinking')
+                  }
+                },
+              ]);
+            }
+          });
+        },
+        reset: () => {
+          $('.step4 .dp_none').css('display', '');
+          $('.step4 .v_hidden').css('visibility', '');
+          $(".step4 .txt_container").html("?");
+
+          $('.step4 .first_bear').css('visibility', '');
+          $('.step4 .first_bear').css('display', '');
+          $('.step4 .bear_head').css('display', '');
+          $('.step4 .bear_mid').css('display', '');
+          $('.step4 .bear_arm').css('display', '');
+          $('.step4 .bear_container').css('visibility', '');
+          $('.step4 .txt_container').html('?');
+          $('.step4 .dp_none').css('display', '');
+          $('.step4 .v_hidden').css('visibility', '');
+          
+          // 모든 blinking 클래스 제거
+          $('.step4 .first_bear').removeClass('blinking');
+          $('.step4 .bear_head').removeClass('blinking');
+          $('.step4 .bear_mid').removeClass('blinking');
+          $('.step4 .bear_arm').removeClass('blinking');
+          $('.step4 .circle').removeClass('blinking');
+          $('.step4 .triangle').removeClass('blinking');
+          $('.step4 .ractangle').removeClass('blinking');
+          
+          keypadSetInit();
+        },
+      };
+    </script>
+  </body>
+</html>

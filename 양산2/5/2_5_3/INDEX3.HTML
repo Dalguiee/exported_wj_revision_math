@@ -1,0 +1,1443 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>개정교육과정-확인문제</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="KeyWORDs" content="" />
+    <meta name="Description" content="" />
+    <meta name="Robots" content="all" />
+    <meta http-equiv="Subject" content="" />
+    <meta http-equiv="Title" content="" />
+    <meta http-equiv="Author" content="onflou " />
+    <meta http-equiv="Publisher" content="" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="Pragma" content="no-cache" />
+
+    <!-- 브라우저 호환성을 지정 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="#" />
+    <link href="../../../COMM/CSS/VIDEO.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/COMMON.CSS" rel="stylesheet" />
+    <!-- 개념익히기, 확인문제 공통 css -->
+    <link href="../../../COMM/CSS/COMMONLAYOUT.CSS" rel="stylesheet" />
+    <!-- 확인문제 공통 css-->
+    <link href="../../../COMM/CSS/CHECKEXAM2.CSS" rel="stylesheet" />
+
+    <style>
+      .checkexam-warp .content-warp {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(-50%) translateY(-50%);
+        width: 100%;
+        height: 100%;
+      }
+
+      .quiz {
+        width: 200px;
+        height: 114px;
+        border-radius: 20px;
+        background-color: #bedaff;
+      }
+
+      .quiz.active {
+        color: #fff;
+      }
+
+      .placeholder {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* hint */
+
+      .blinking {
+        animation: 1.4s blinking infinite;
+        animation-iteration-count: 3;
+      }
+
+      .hint.blinking {
+        animation: 1.2s blinking infinite;
+        animation-iteration-count: 5;
+      }
+
+      .hintText.blinking {
+        animation: 1s blinking infinite;
+        animation-iteration-count: 3;
+      }
+
+      .quizBox {
+        box-sizing: border-box;
+        border: 4px solid #ff64dc;
+        border-radius: 10px;
+        width: 133px;
+        height: 75px;
+      }
+
+      .draggable-warp {
+        position: unset;
+        transform: unset;
+        width: 100%;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 114px;
+        z-index: 9999;
+      }
+
+      .hintImg {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      .quizBoxs {
+        margin: 0 20px;
+      }
+
+      /* 차시 공통 사용 */
+
+      .arrowImg {
+        width: 45px;
+      }
+
+      .tableTitle {
+        padding: 10px 16px 12px;
+        border-radius: 10px;
+        background-color: #dbd8fa;
+        font-size: 36px;
+        display: flex;
+      }
+
+      /* -----------------step1------------------ */
+
+      .step1 .epilogue-warp {
+        width: 1250px;
+        height: 340px;
+        background-color: #ffd33970;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .step1 .epilogue-warp .innerepilogue {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .step1 .pinkBox {
+        /* font-size: 40px; */
+        font-weight: 800;
+        color: black;
+        border-radius: 10px;
+        /* border: 5px solid #ff6fde; */
+        background: white;
+        width: 75px;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        font-size: 48px;
+      }
+
+      .step1 .text-warp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 55px 0;
+      }
+
+      .step1 .text-warp .droppable {
+        width: 75px;
+      }
+
+      .step1 .arrowImg {
+        width: 52px;
+      }
+
+      /* -----------------step2------------------ */
+
+      .step2 .epilogue-warp {
+        margin-bottom: 40px;
+        position: relative;
+      }
+
+      .step2 .epilogue-warp .tableTitle {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+      }
+
+      .step2 .quiz-warp {
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+      }
+
+      .step2 .text-warp {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .step2 .text-warp .tableTitle {
+        margin-bottom: 25px;
+      }
+
+      .step2 .quiz-warp .quiz-box {
+        position: absolute;
+        bottom: 84px;
+      }
+
+      .step2 .quiz-warp .quiz-box-1 {
+        left: 714px;
+      }
+      .step2 .quiz-warp .quiz-box-2 {
+        left: 990px;
+      }
+      .step2 .quiz-warp .quiz-box-3 {
+        left: 1266px;
+      }
+      .step2 .quiz-warp .quiz-box-4 {
+        left: 1513px;
+      }
+
+      .step2 .hint {
+        position: absolute;
+        right: 30px;
+        bottom: 200px;
+        width: 217px;
+        height: 127px;
+      }
+
+      /* -----------------step3------------------ */
+      .step3 .epilogue-warp {
+        position: relative;
+      }
+
+      .step3 .epilogue-warp .tableTitle {
+        position: absolute;
+        top: 18px;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+      }
+
+      .step3 .text-warp {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .step3 .text-warp .tableTitle {
+        margin-bottom: 25px;
+      }
+
+      .step3 .select-warp {
+        margin-top: 38px;
+      }
+
+      .step3 .hint {
+        position: absolute;
+        border: 5px solid #e72e26;
+        width: 192px;
+        height: 154px;
+        top: 102px;
+      }
+
+      /* -----------------step4------------------ */
+
+      .step4 .select-warp {
+        margin-top: 38px;
+      }
+
+      .step4 .tableTitle {
+        font-size: 32px;
+      }
+
+      .step4 .epilogue-warp {
+        position: relative;
+      }
+
+      .step4 .epilogue-warp .tableTitle {
+        position: absolute;
+        left: 50%;
+        top: 18px;
+        transform: translateX(-50%);
+      }
+
+      .step4 .text-warp {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .step4 .text-warp .tableTitle {
+        margin-bottom: 16px;
+      }
+
+      .step4 .tableCont {
+        position: relative;
+      }
+
+      .step4 .tableCont .tableCate,
+      .step4 .tableCont .tableText {
+        position: absolute;
+        left: 2px;
+        width: 146px;
+      }
+
+      .step4 .tableCont .tableText {
+        height: 67px;
+        text-align: center;
+        font-size: 36px;
+        line-height: 67px;
+        top: 2px;
+      }
+
+      .step4 .tableCont .tableDash {
+        position: absolute;
+        left: 148px;
+        width: 830px;
+        height: 67px;
+        display: flex;
+        top: 2px;
+      }
+
+      .step4 .tableCont .tableDash .dash {
+        width: 138px;
+        line-height: 67px;
+        text-align: center;
+      }
+
+      .step4 .tableCont .tableText2,
+      .step4 .tableCont .tableDash2 {
+        top: 68px;
+      }
+
+      .step4 .tableCont .tableText3,
+      .step4 .tableCont .tableDash3 {
+        top: 134px;
+      }
+
+      .step4 .tableCont .tableText4,
+      .step4 .tableCont .tableDash4 {
+        top: 201px;
+      }
+
+      .step4 .tableCont .tableCate {
+        top: 275px;
+        font-size: 32px;
+        left: 13px;
+      }
+
+      /* -----------------step5------------------ */
+
+      .step5 .textBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 54px 0;
+      }
+
+      .step5 .quizBoxs {
+        font-size: 40px;
+        font-weight: 800;
+        color: black;
+        border-radius: 10px;
+        border: 5px solid #ff6fde;
+        background: white;
+        width: 175px;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2px;
+      }
+
+      .step5 .epilogue-warp {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .step5 .epilogue-warp .tableTitle {
+        margin-bottom: 16px;
+      }
+
+      .step5 .tableCont {
+        position: relative;
+      }
+
+      .step5 .tableCont .tableCate,
+      .step5 .tableCont .tableText {
+        position: absolute;
+        left: 2px;
+        width: 146px;
+      }
+
+      .step5 .tableCont .tableText {
+        height: 67px;
+        text-align: center;
+        font-size: 36px;
+        line-height: 67px;
+        top: 2px;
+      }
+
+      .step5 .tableCont .tableDash {
+        position: absolute;
+        left: 148px;
+        width: 830px;
+        height: 67px;
+        display: flex;
+        top: 2px;
+      }
+
+      .step5 .tableCont .tableDash .dash {
+        width: 138px;
+        line-height: 67px;
+        text-align: center;
+      }
+
+      .step5 .tableCont .tableText2,
+      .step5 .tableCont .tableDash2 {
+        top: 68px;
+      }
+
+      .step5 .tableCont .tableText3,
+      .step5 .tableCont .tableDash3 {
+        top: 134px;
+      }
+
+      .step5 .tableCont .tableText4,
+      .step5 .tableCont .tableDash4 {
+        top: 201px;
+      }
+
+      .step5 .tableCont .tableCate {
+        top: 275px;
+        font-size: 32px;
+        left: 13px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div
+        id="contents-wrap"
+        class="test"
+        style="position: absolute; display: flex"
+      ></div>
+      <div id="contents-main" style="display: none" class="checkexam-warp">
+        <div class="checkexam-warp_inner">
+          <header class="header">
+            <div class="header_title">
+              <button class="sound-btn" onclick="titleSound()"></button>
+              <h3>그림을 보고 알맞은 것을 골라 보세요.</h3>
+            </div>
+            <ul class="step-list">
+              <li class="step-list_item active">1</li>
+              <li class="step-list_item">2</li>
+              <li class="step-list_item">3</li>
+              <li class="step-list_item">4</li>
+              <li class="step-list_item">5</li>
+            </ul>
+          </header>
+          <main class="main">
+            <div class="main_content">
+              <!-- 콘텐츠영역 -->
+              <!----------- step1 ----------->
+              <div class="step step1" style="display: none">
+                <div class="content-warp">
+                  <div class="epilogue-warp"></div>
+                  <div class="text-warp"></div>
+                  <div class="draggable-warp"></div>
+                </div>
+              </div>
+              <!----------- step2 ----------->
+              <div class="step step2" style="display: none">
+                <div class="content-warp">
+                  <div class="epilogue-warp"></div>
+                  <div class="text-warp"></div>
+                  <div class="quiz-warp">
+                    <div class="quiz-box quiz-box-1"></div>
+                    <div class="quiz-box quiz-box-2"></div>
+                    <div class="quiz-box quiz-box-3"></div>
+                    <div class="quiz-box quiz-box-4"></div>
+                  </div>
+                </div>
+              </div>
+              <!----------- step3 ----------->
+              <div class="step step3" style="display: none">
+                <div class="content-warp">
+                  <div class="epilogue-warp"></div>
+                  <div class="text-warp"></div>
+                  <div class="select-warp"></div>
+                </div>
+              </div>
+              <!----------- step4 ----------->
+              <div class="step step4" style="display: none">
+                <div class="content-warp">
+                  <div class="epilogue-warp"></div>
+                  <div class="text-warp"></div>
+                  <div class="select-warp"></div>
+                </div>
+              </div>
+              <!----------- step5 ----------->
+              <div class="step step5" style="display: none">
+                <div class="content-warp">
+                  <div class="epilogue-warp"></div>
+                  <div class="text-warp"></div>
+                  <div class="select-warp"></div>
+                </div>
+              </div>
+              <!----------- step 끝 ----------->
+            </div>
+          </main>
+          <div class="main_prev-next">
+            <button class="btn-prev" style="display: none">이전버튼</button>
+            <button class="btn-next" style="display: block" disabled>
+              다음버튼
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- 키패드 -->
+      <div class="key-pad" style="display: none">
+        <button class="key-pad_btn">1</button>
+        <button class="key-pad_btn">2</button>
+        <button class="key-pad_btn">3</button>
+        <button class="key-pad_btn">4</button>
+        <button class="key-pad_btn">5</button>
+        <button class="key-pad_btn-back"></button>
+        <button class="key-pad_btn">6</button>
+        <button class="key-pad_btn">7</button>
+        <button class="key-pad_btn">8</button>
+        <button class="key-pad_btn">9</button>
+        <button class="key-pad_btn">0</button>
+        <button class="key-pad_btn-check"></button>
+      </div>
+      <!-- 정답 시 나타나는 캐릭터 -->
+      <div class="reaction">
+        <div class="re-body"></div>
+      </div>
+      <!-- 힌트 박스 -->
+      <div class="hintBox-warp">
+        <div class="hintBox">
+          <div class="hintBox_character">
+            <div class="hintBox_character_inner"></div>
+          </div>
+          <div class="hintBox_text-box"></div>
+        </div>
+      </div>
+    </div>
+    <script
+      crossorigin
+      src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"
+    ></script>
+    <script src="../../../COMM/JS/COMMON2.JS"></script>
+    <script src="../../../COMM/JS/CHECKEXAM2.JS"></script>
+    <script src="../../../COMM/JS/GAME.JS"></script>
+    <script src="../../../COMM/JS/VIDEO.JS"></script>
+    <script src="../../../COMM/JS/VIDEO-HTTP-STREAMING.JS"></script>
+    <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+    <script src="../../../COMM/JS/GAMEDATASET2.JSON"></script>
+    <script>
+      // Y - 전체 문제 확인
+      // (공백) - 랜덤 문제 (운영 단계 필수)
+      const developMode = "";
+
+      /*
+       * 데이터
+       */
+      const videoURL =
+        "http://hlsmedia.wjthinkbig.com/hlsmedia/_definst_/smil:hlsmedia/BOOKCLUB/NFTF/MP4/MATH/GR12/5/GR12_5_5713359.SMIL/playlist.m3u8";
+
+      //페이지 정보
+      const grade = "grade2"; //학년
+      const unit = "unit5"; //단원
+      const chapter = 3; //차시
+
+      // if (dataset[grade][unit][chapter]) {
+      const gameData = JSON.parse(
+        JSON.stringify(dataset[grade][unit][chapter])
+      );
+      // }
+
+      let intro = {
+        type: "checkExam", //concept 개념익히기, checkExam 확인문제
+        title: "자료를 분류하여 그래프로 나타내 볼까요",
+        subTitle: ["자료를 분류하여 그래프로 나타낼 수 있어요."],
+        sound: "../../../COMM/SOUND/2_5_3/2_1_5-3_029.mp3",
+      };
+
+      let pageData = [
+        // 1문항
+        {
+          title: "그래프로 나타내는 순서를 기호로 써 보세요.",
+          sound: "../../../COMM/SOUND/SEASON2/2_5_3/2_2_5-3_34.mp3",
+          quiz: {
+            type: "dnd",
+            hint: "자료를 그래프로 나타내는 순서를 떠올려 봐.",
+            sound: "../../../COMM/SOUND/SEASON2/2_5_3/2_2_5-3_35.mp3",
+            data: [
+              {
+                id: 1,
+                answer: ["㉠", "㉣", "㉡"],
+                list: ["㉠", "㉡", "㉣"],
+                markup: {
+                  examText: [
+                    `㉠ 가로와 세로에 무엇을 쓸지 정해요.`,
+                    `㉡ 그래프에 ○, ×, / 중 하나로 표시해요.`,
+                    `㉢ 조사한 자료를 살펴봐요.`,
+                    `㉣ 가로와 세로를 각각 몇 칸으로 할지 정해요.`,
+                  ],
+                },
+              },
+              {
+                id: 2,
+                answer: ["㉣", "㉠", "㉢"],
+                list: ["㉠", "㉢", "㉣"],
+                markup: {
+                  examText: [
+                    `㉠ 가로와 세로를 각각 몇 칸으로 할지 정해요.`,
+                    `㉡ 조사한 자료를 살펴봐요.`,
+                    `㉢ 그래프에 ○, ×, / 중 하나로 표시해요.`,
+                    `㉣ 가로와 세로에 무엇을 쓸지 정해요.`,
+                  ],
+                },
+              },
+              {
+                id: 3,
+                answer: ["㉡", "㉢", "㉠"],
+                list: ["㉠", "㉡", "㉢"],
+                markup: {
+                  examText: [
+                    `㉠ 그래프에 ○, ×, / 중 하나로 표시해요.`,
+                    `㉡ 가로와 세로에 무엇을 쓸지 정해요.`,
+                    `㉢ 가로와 세로를 각각 몇 칸으로 할지 정해요.`,
+                    `㉣ 조사한 자료를 살펴봐요.`,
+                  ],
+                },
+              },
+            ],
+          },
+        },
+
+        // 2문항
+        {
+          title: "자료를 보고 표로 나타내 보세요.",
+          sound: "../../../COMM/SOUND/SEASON2/2_5_3/2_2_5-3_36.mp3",
+          quiz: {
+            type: "keypad",
+            data: [
+              {
+                id: 1,
+                next: 1,
+                hint: "농구, 야구, 배구를 좋아하는 학생 수를 빠뜨리지 않고<br>쓴 다음, 전체 학생 수를 구해 봐.",
+                sound: "../../../COMM/SOUND/SEASON2/2_5_3/2_2_5-3_37.mp3",
+                answer: [4, 4, 2, 15],
+                markup: {
+                  examImg: `../../../COMM/IMG/TEST7/2_5_3/TYPE2_EXAM_1_ver2.png`,
+                  quizImg: `../../../COMM/IMG/TEST7/2_5_3/TYPE2_QUIZ_1_ver2.png`,
+                  tableTitle: `선우네 반 학생들이 좋아하는 운동`,
+                },
+              },
+              {
+                id: 2,
+                next: 2,
+                hint: "수국, 개나리, 튤립을 좋아하는 학생 수를 빠뜨리지 않고<br>쓴 다음, 전체 학생 수를 구해 봐.",
+                sound: "../../../COMM/SOUND/SEASON2/2_5_3/2_2_5-3_38.mp3",
+                answer: [2, 4, 3, 12],
+                markup: {
+                  examImg: `../../../COMM/IMG/TEST7/2_5_3/TYPE2_EXAM_2_ver2.png`,
+                  quizImg: `../../../COMM/IMG/TEST7/2_5_3/TYPE2_QUIZ_2_ver2.png`,
+                  tableTitle: `현수네 반 학생들이 좋아하는 꽃`,
+                },
+              },
+              {
+                id: 3,
+                next: 3,
+                hint: "고양이, 고슴도치, 거북을 좋아하는 학생 수를 빠뜨리지<br>않고 쓴 다음, 전체 학생 수를 구해 봐.",
+                sound: "../../../COMM/SOUND/SEASON2/2_5_3/2_2_5-3_39.mp3",
+                answer: [4, 2, 3, 15],
+                markup: {
+                  examImg: `../../../COMM/IMG/TEST7/2_5_3/TYPE2_EXAM_3_ver2.png`,
+                  quizImg: `../../../COMM/IMG/TEST7/2_5_3/TYPE2_QUIZ_3_ver2.png`,
+                  tableTitle: `세희네 반 학생들이 좋아하는 반려동물`,
+                },
+              },
+            ],
+          },
+        },
+
+        // 3문항
+        {
+          title: "빈 곳에 그려야 할 ○는 몇 개일까요?",
+          sound: "../../../COMM/SOUND/SEASON2/2_5_3/2_2_5-3_40.mp3",
+          quiz: {
+            type: "select",
+            data: [
+              {
+                id: 1,
+                hint: "표를 보고 농구를 좋아하는 학생은 몇 명인지 알아봐.",
+                sound: "../../../COMM/SOUND/SEASON2/2_5_3/2_2_5-3_41.mp3",
+                answer: [2],
+                list: [
+                  { text: "2개", val: 1 },
+                  { text: "4개", val: 2 },
+                  { text: "5개", val: 3 },
+                ],
+                markup: {
+                  examImg: `../../../COMM/IMG/TEST7/2_5_3/TYPE3_EXAM_1_ver2.png`,
+                  quizImg: `../../../COMM/IMG/TEST7/2_5_3/TYPE3_QUIZ_1_ver2.png`,
+                  tableTitle: `선우네 반 학생들이 좋아하는 운동별 학생 수`,
+                },
+              },
+              {
+                id: 2,
+                hint: "표를 보고 튤립을 좋아하는 학생은 몇 명인지 알아봐.",
+                sound: "../../../COMM/SOUND/SEASON2/2_5_3/2_2_5-3_42.mp3",
+                answer: [2],
+                list: [
+                  { text: "2개", val: 1 },
+                  { text: "3개", val: 2 },
+                  { text: "4개", val: 3 },
+                ],
+                markup: {
+                  examImg: `../../../COMM/IMG/TEST7/2_5_3/TYPE3_EXAM_2_ver2.png`,
+                  quizImg: `../../../COMM/IMG/TEST7/2_5_3/TYPE3_QUIZ_2_ver2.png`,
+                  tableTitle: `현수네 반 학생들이 좋아하는 꽃별 학생 수`,
+                },
+              },
+              {
+                id: 3,
+                hint: "표를 보고 고슴도치를 좋아하는 학생은 몇 명인지 알아봐.",
+                sound: "../../../COMM/SOUND/SEASON2/2_5_3/2_2_5-3_43.mp3",
+                answer: [1],
+                list: [
+                  { text: "2개", val: 1 },
+                  { text: "3개", val: 2 },
+                  { text: "4개", val: 3 },
+                ],
+                markup: {
+                  examImg: `../../../COMM/IMG/TEST7/2_5_3/TYPE3_EXAM_3_ver2.png`,
+                  quizImg: `../../../COMM/IMG/TEST7/2_5_3/TYPE3_QUIZ_3_ver2.png`,
+                  tableTitle: `세희네 반 학생들이 좋아하는 좋아하는 반려동물별 학생 수`,
+                },
+              },
+            ],
+          },
+        },
+        // 4문항
+        {
+          title: "그래프에서 잘못 나타낸 것은 무엇인가요?",
+          sound: "../../../COMM/SOUND/SEASON2/2_5_3/2_2_5-3_51.mp3",
+          quiz: {
+            type: "select",
+            data: [
+              {
+                id: 1,
+                next: 1,
+                hint: "표에 적힌 혈액형별 학생 수와 그래프의 혈액형별 <br/>/의 수를 비교해 봐.",
+                sound: "../../../COMM/SOUND/SEASON2/2_5_3/2_2_5-3_45.mp3",
+                answer: [2],
+                list: [
+                  { text: "A형", val: 1 },
+                  { text: "B형", val: 2 },
+                  { text: "O형", val: 3 },
+                  { text: "AB형", val: 4 },
+                ],
+                markup: {
+                  examImg: `../../../COMM/IMG/TEST7/2_5_3/TYPE4_EXAM_1_ver2.png`,
+                  quizImg: `../../../COMM/IMG/TEST7/2_5_3/TYPE4_QUIZ_TABLE.png`,
+                  tableTitle: `희주네 반 학생들의 혈액형별 학생 수`,
+                  tableCate: `혈액형`,
+                  tableData: [
+                    {
+                      text: "AB형",
+                      dash: `<div class="dash">/</div><div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                    {
+                      text: "O형",
+                      dash: `<div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                    {
+                      text: "B형",
+                      dash: `<div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                    {
+                      text: "A형",
+                      dash: `<div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                  ],
+                },
+              },
+              {
+                id: 2,
+                next: 2,
+                hint: "표에 적힌 좋아하는 색깔별 학생 수와 그래프의 <br/>좋아하는 색깔별 /의 수를 비교해 봐.",
+                sound: "../../../COMM/SOUND/SEASON2/2_5_3/2_2_5-3_46.mp3",
+                answer: [1],
+                list: [
+                  { text: "파란색", val: 1 },
+                  { text: "빨간색", val: 2 },
+                  { text: "노란색", val: 3 },
+                  { text: "초록색", val: 4 },
+                ],
+                markup: {
+                  examImg: `../../../COMM/IMG/TEST7/2_5_3/TYPE4_EXAM_2_ver2.png`,
+                  quizImg: `../../../COMM/IMG/TEST7/2_5_3/TYPE4_QUIZ_TABLE.png`,
+                  tableTitle: `서윤이네 반 학생들의 좋아하는 색깔별 학생 수`,
+                  tableCate: `색깔`,
+                  tableData: [
+                    {
+                      text: "초록색",
+                      dash: `<div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                    {
+                      text: "노란색",
+                      dash: `<div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                    {
+                      text: "빨간색",
+                      dash: `<div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                    {
+                      text: "파란색",
+                      dash: `<div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                  ],
+                },
+              },
+              {
+                id: 3,
+                next: 3,
+                hint: "표에 적힌 취미별 학생 수와 그래프의 취미별 <br/>/의 수를 비교해 봐.",
+                sound: "../../../COMM/SOUND/SEASON2/2_5_3/2_2_5-3_47.mp3",
+                answer: [4],
+                list: [
+                  { text: "독서", val: 1 },
+                  { text: "운동", val: 2 },
+                  { text: "악기 연주", val: 3 },
+                  { text: "음악 감상", val: 4 },
+                ],
+                markup: {
+                  examImg: `../../../COMM/IMG/TEST7/2_5_3/TYPE4_EXAM_3_ver2.png`,
+                  quizImg: `../../../COMM/IMG/TEST7/2_5_3/TYPE4_QUIZ_TABLE.png`,
+                  tableTitle: `은우네 반 학생들의 취미별 학생 수`,
+                  tableCate: `취미`,
+                  tableData: [
+                    {
+                      text: "음악 감상",
+                      dash: `<div class="dash">/</div><div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                    {
+                      text: "악기 연주",
+                      dash: `<div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                    {
+                      text: "운동",
+                      dash: `<div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                    {
+                      text: "독서",
+                      dash: `<div class="dash">/</div><div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                  ],
+                },
+              },
+            ],
+          },
+        },
+
+        // 5문항
+        {
+          title: "□ 안에 알맞은 말을 고르세요.",
+          sound: "../../../COMM/SOUND/SEASON2/2_5_3/2_2_5-3_48.mp3",
+          quiz: {
+            type: "select",
+            data: [
+              {
+                id: 1,
+                hint: "그래프에서 /이 가장 많은 것을 찾아봐.",
+                sound: "../../../COMM/SOUND/SEASON2/2_5_3/2_2_5-3_49.mp3",
+                answer: [1],
+                list: [
+                  { text: "A형", val: 1 },
+                  { text: "B형", val: 2 },
+                  { text: "O형", val: 3 },
+                  { text: "AB형", val: 4 },
+                ],
+                markup: {
+                  examImg: `../../../COMM/IMG/TEST7/2_5_3/TYPE4_QUIZ_TABLE.png`,
+                  text: `가장 많은 학생들의 혈액형은 <span class="quizBoxs quizBoxs1"><span class="placeholder">?</span></span>입니다.`,
+                  tableTitle: `희주네 반 학생들의 혈액형별 학생 수`,
+                  tableCate: `혈액형`,
+                  tableData: [
+                    {
+                      text: "AB형",
+                      dash: `<div class="dash">/</div><div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                    {
+                      text: "O형",
+                      dash: `<div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                    {
+                      text: "B형",
+                      dash: `<div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                    {
+                      text: "A형",
+                      dash: `<div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                  ],
+                },
+              },
+              {
+                id: 2,
+                hint: "그래프에서 /이 가장 많은 것을 찾아봐.",
+                sound: "../../../COMM/SOUND/SEASON2/2_5_3/2_2_5-3_49.mp3",
+                answer: [3],
+                list: [
+                  { text: "파란색", val: 1 },
+                  { text: "빨간색", val: 2 },
+                  { text: "노란색", val: 3 },
+                  { text: "초록색", val: 4 },
+                ],
+                markup: {
+                  examImg: `../../../COMM/IMG/TEST7/2_5_3/TYPE4_QUIZ_TABLE.png`,
+                  text: `가장 많은 학생들이 좋아하는 색깔은 <span class="quizBoxs quizBoxs1"><span class="placeholder">?</span></span>입니다.`,
+                  tableTitle: `서윤이네 반 학생들의 좋아하는 색깔별 학생 수`,
+                  tableCate: `색깔`,
+                  tableData: [
+                    {
+                      text: "초록색",
+                      dash: `<div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                    {
+                      text: "노란색",
+                      dash: `<div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                    {
+                      text: "빨간색",
+                      dash: `<div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                    {
+                      text: "파란색",
+                      dash: `<div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                  ],
+                },
+              },
+              {
+                id: 3,
+                hint: "그래프에서 /이 가장 적은 것을 찾아봐.",
+                sound: "../../../COMM/SOUND/SEASON2/2_5_3/2_2_5-3_50.mp3",
+                answer: [4],
+                list: [
+                  { text: "독서", val: 1 },
+                  { text: "운동", val: 2 },
+                  { text: "악기 연주", val: 3 },
+                  { text: "음악 감상", val: 4 },
+                ],
+                markup: {
+                  examImg: `../../../COMM/IMG/TEST7/2_5_3/TYPE4_QUIZ_TABLE.png`,
+                  text: `가장 적은 학생들의 취미는 <span class="quizBoxs quizBoxs1"><span class="placeholder">?</span></span>입니다.`,
+                  tableTitle: `은우네 반 학생들의 취미별 학생 수`,
+                  tableCate: `취미`,
+                  tableData: [
+                    {
+                      text: "음악 감상",
+                      dash: `<div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                    {
+                      text: "악기 연주",
+                      dash: `<div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                    {
+                      text: "운동",
+                      dash: `<div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                    {
+                      text: "독서",
+                      dash: `<div class="dash">/</div><div class="dash">/</div><div class="dash">/</div>`,
+                    },
+                  ],
+                },
+              },
+            ],
+          },
+        },
+      ];
+
+      let audio = new Audio();
+      //현재 페이지
+      let disStep = 1;
+      //완료된 페이지
+      let completeStep = 0;
+
+      let disQuiz = 1; // 해당 코드 수정 X
+      if (developMode == "Y") {
+        // 문제 번호 별로 확인 시 해당 코드 수정!
+        disQuiz = 1;
+      }
+      // 완료된 스텝
+      let completeQuiz = [];
+
+      //각 문항별 정답
+      let answerArr = [];
+      //정답 입력
+      let answerInput = [];
+      //몇 번 틀렸는지 체크
+      let wrongCheck = 0;
+
+      // 연결된 점 카운트 (선긋기형)
+      let dotToDotCount = 0;
+      let dotToDotLength = 0;
+
+      let tempTime;
+
+      const createKeypadEl = (idx, max) => {
+        return `<div class="question-box question-box-max-${max} key-pad-on quizbtn_${idx}" data-val="${idx}" data-max="${max}">?</div>`;
+      };
+
+      const answerSet = (idx, i = 0) => {
+        answerArr[idx] = typeData[idx][i];
+
+        // 힌트 & 힌트 사운드 setting
+        // 각 quiz data 별 hint 와 sound 있을 경우 각 quiz data의 hint 와 sound 사용
+        // 없을 경우 퀴즈 공통의 hint 와 sound 사용
+        answerArr[idx].hint = typeData[idx][i].hint
+          ? typeData[idx][i].hint
+          : pageData[idx].quiz.hint;
+        answerArr[idx].sound = typeData[idx][i].sound
+          ? typeData[idx][i].sound
+          : pageData[idx].quiz.sound;
+      };
+
+      //힌트 힌트 여러개 일 경우 메시지
+      const showHintMessage = (text, sound) => {
+        if (text && sound) {
+          audioPlayExam(audio, [sound], (idx) => {
+            if (idx === 2) {
+              $(".hintBox-warp").removeClass("show");
+              $(".hintBox").removeClass("slideUp");
+              $(".hintBox").addClass("slideDown");
+              $(".hint").hide();
+              $(".quiz").removeClass("key-hint");
+            }
+          });
+          $(".hintBox-warp").addClass("show");
+          $(".hintBox_text-box").html(text);
+          $(".hintBox").removeClass("slideDown");
+          $(".hintBox").addClass("slideUp");
+        }
+      };
+
+      // ----------shuffle----------
+      let typeData = new Array();
+      pageData.forEach((element, idx) => {
+        if (developMode != "Y") {
+          //랜덤문제
+          typeData[idx] = new Array();
+          if (idx !== 0) {
+            if (typeData[idx - 1][0].next) {
+              typeData[idx].push(
+                element.quiz.data[typeData[idx - 1][0].next - 1]
+              );
+            } else {
+              typeData[idx].push(shuffle(element.quiz.data)[0]);
+            }
+          } else {
+            typeData[idx].push(shuffle(element.quiz.data)[0]);
+          }
+
+          answerSet(idx, 0);
+        } else {
+          //developMode 일때
+          typeData.push(element.quiz.data);
+        }
+      });
+
+      //마지막으로 활성화 된 키패드 저장(힌트 여러개 일 경우)
+      const keyPadOnClick = (index) => {
+        $(`.step${index} .key-pad-on`).click(function () {
+          if (!lastKeyPad) {
+            lastKeyPad = $(this).data("val");
+          }
+        });
+      };
+
+      //dnd일 경우힌트 다르게 나오기(마지막으로 터치한 draggable의 val값)
+      let mydragOn;
+      const dragOn = (index) => {
+        $(`.step${index} .draggable`).on("touchstart click", function (event) {
+          event.preventDefault();
+          mydragOn = $(this).data("val");
+        });
+      };
+
+      //문제 시작
+      //================STEP1==============
+      const step1 = {
+        start: () => {
+          audioPlayExam(audio, [pageData[0].sound]);
+          let stepClass = "step1_" + disQuiz;
+        },
+
+        hint: () => {
+          let stepClass = "step1_" + disQuiz;
+          $(`.${stepClass} .hintWrap`).css("display", "block");
+          $(`.${stepClass} .hintWrap`).addClass("blinking");
+        },
+        wrong: () => {
+          audioPlayExam(audio, ["../../../COMM/SOUND/WRONG.MP3"]);
+        },
+
+        complete: () => {
+          let stepClass = "step1_" + disQuiz;
+          $(`.${stepClass} .question-box`).each((idx, el) => {
+            $(el).html($(el).attr("data-val"));
+          });
+          $(`.${stepClass} .draggable`).css("display", "none");
+        },
+      };
+      //================STEP2==============
+      const step2 = {
+        start: () => {
+          audioPlayExam(audio, [pageData[1].sound]);
+          let stepClass = "step2_" + disQuiz;
+        },
+
+        hint: () => {
+          let stepClass = "step2_" + disQuiz;
+          $(`.${stepClass} .hint`).css("display", "block");
+          $(`.${stepClass} .hint`).addClass("blinking");
+        },
+
+        wrong: () => {},
+
+        complete: () => {
+          let stepClass = "step2_" + disQuiz;
+          $(`.${stepClass} .question-box`).each((idx, el) => {
+            $(el).html(
+              answerArr[1].answer[parseInt($(el).attr("data-val")) - 1]
+            );
+          });
+
+          $(`.${stepClass} .hint`).css("display", "none");
+          $(`.${stepClass} .question-box`).attr("disabled", true);
+          $(`.${stepClass} .key-pad-on`).removeClass("key-pad-on");
+        },
+      };
+      //================STEP3==============
+      const step3 = {
+        start: () => {
+          audioPlayExam(audio, [pageData[2].sound]);
+          let stepClass = "step3_" + disQuiz;
+        },
+        hint: () => {
+          let stepClass = "step3_" + disQuiz;
+          $(`.${stepClass} .hint`).css("display", "block");
+          $(`.${stepClass} .hint`).addClass("blinking");
+        },
+        wrong: () => {
+          audioPlayExam(audio, ["../../../COMM/SOUND/WRONG.MP3"]);
+        },
+        complete: () => {
+          let stepClass = "step3_" + disQuiz;
+          answerArr[2].answer.forEach((a, i) => {
+            $(`.${stepClass} .select-warp .quiz`)
+              .eq(a - 1)
+              .addClass("active");
+          });
+          $(`.${stepClass} .hint`).css("display", "none");
+          $(`.${stepClass} .quiz`).attr("disabled", true);
+        },
+      };
+      //================STEP4==============
+      const step4 = {
+        start: () => {
+          audioPlayExam(audio, [pageData[3].sound]);
+          let stepClass = "step4_" + disQuiz;
+        },
+        hint: () => {
+          let stepClass = "step4_" + disQuiz;
+        },
+        wrong: () => {
+          audioPlayExam(audio, ["../../../COMM/SOUND/WRONG.MP3"]);
+        },
+        complete: () => {
+          let stepClass = "step4_" + disQuiz;
+          answerArr[3].answer.forEach((a, i) => {
+            $(`.${stepClass} .select-warp .quiz`)
+              .eq(a - 1)
+              .addClass("active");
+          });
+
+          $(`.${stepClass} .quiz`).attr("disabled", true);
+        },
+      };
+      //================STEP5==============
+      const step5 = {
+        start: () => {
+          audioPlayExam(audio, [pageData[4].sound]);
+        },
+        hint: () => {
+          let stepClass = "step5_" + disQuiz;
+        },
+        wrong: () => {
+          audioPlayExam(audio, ["../../../COMM/SOUND/WRONG.MP3"]);
+        },
+        complete: () => {
+          let stepClass = "step5_" + disQuiz;
+          answerArr[4].answer.forEach((a, i) => {
+            $(`.${stepClass} .select-warp .quiz`)
+              .eq(a - 1)
+              .addClass("active");
+          });
+
+          const filterList = answerArr[4].list.filter(
+            (item) => item.val == answerArr[4].answer
+          );
+
+          $(`.${stepClass} .quiz`).attr("disabled", true);
+          $(`.${stepClass} .quizBoxs`).html(filterList[0].text);
+          createNextStep();
+        },
+      };
+
+      // =====RENDER=====
+      const render = () => {
+        pageData.forEach((step, idx) => {
+          /* S: 키패드형 문제 처리 */
+          if (step.quiz.type == "keypad") {
+            keyPadEvent(idx + 1);
+          }
+          /* E: 키패드형 문제 처리 */
+
+          typeData[idx].forEach((q, i) => {
+            let stepClass = `step${idx + 1}_${i + 1}`;
+            let stepEl = $(`.${stepClass}`);
+            let renderData = typeData[idx][i];
+
+            /* S: 선택형 문제 처리 */
+            if (step.quiz.type == "select") {
+              $(document).on("click", `.${stepClass} .quiz`, function () {
+                btnClickAudioEx.play();
+                answerInput[0] = $(this).data("val");
+                answerCheckEx(idx + 1);
+              });
+            }
+            /* E: 선택형 문제 처리 */
+            /* S: 다중선택형 문제 처리 */
+            if (step.quiz.type == "multiselect") {
+              let selectAnswerCheckFlag = false;
+              $(document).on("click", `.${stepClass} .select`, function () {
+                btnClickAudioEx.play();
+                answerInput[0] = $(this).data("val");
+                selectAnswerCheckFlag = multiSelectAnswerCheckEx(idx + 1);
+
+                if (selectAnswerCheckFlag) {
+                  // 정답 일때(O표시)
+                  $(this).addClass("active");
+
+                  $(`.${stepClass} .step3anwser1 .quiz`)
+                    .not(".active")
+                    .on("click", function () {
+                      $(this).css("color", "#d9d9d9");
+                    });
+                } else {
+                  // 오답 일때(O표시)
+                  $(this).removeClass("active");
+                }
+              });
+            }
+            /* E: 다중선택형 선택형 문제 처리 */
+
+            switch (idx) {
+              // ==========step1==========
+              case 0:
+                stepEl.find(`.epilogue-warp`).html(`
+                <div class="innerepilogue">
+                  <div class="text text1">${renderData.markup.examText[0]}</div>
+                  <div class="text text2">${renderData.markup.examText[1]}</div>
+                  <div class="text text3">${renderData.markup.examText[2]}</div>
+                  <div class="text text4">${renderData.markup.examText[3]}</div>
+                </div>
+
+            `);
+
+                stepEl.find(`.text-warp`).html(`
+              <div class="pinkBox"></div>
+              <img src="../../../COMM/IMG/TEST7/2_5_3/arrow.png" class="img arrowImg"/>
+              <div class="quizBoxs quizBoxs1"></div>
+              <img src="../../../COMM/IMG/TEST7/2_5_3/arrow.png" class="img arrowImg"/>
+              <div class="quizBoxs quizBoxs2"></div>
+              <img src="../../../COMM/IMG/TEST7/2_5_3/arrow.png" class="img arrowImg"/>
+              <div class="quizBoxs quizBoxs3"></div>
+            `);
+
+                if (renderData.id == 1) {
+                  $(`.${stepClass} .text-warp .pinkBox`).html("㉢");
+                } else if (renderData.id == 2) {
+                  $(`.${stepClass} .text-warp .pinkBox`).html("㉡");
+                } else {
+                  $(`.${stepClass} .text-warp .pinkBox`).html("㉣");
+                }
+
+                for (let z = 0; z < q.answer.length; z++) {
+                  stepEl.find(`.quizBoxs${z + 1}`).html(`
+              <div class="question-box droppable" data-val="${
+                q.answer[z]
+              }" data-index="${z + 1}"><span class="placeholder">?</span></div>
+            `);
+                }
+
+                q.list.forEach((item) => {
+                  stepEl
+                    .find(`.draggable-warp`)
+                    .append(
+                      `<div class="btn draggable" data-val="${item}">${item}</div>`
+                    );
+                });
+
+                break;
+              // ==========step2==========
+              case 1:
+                stepEl.find(`.epilogue-warp`).html(`
+              <div class="tableTitle">${renderData.markup.tableTitle}</div>
+              <img src="${renderData.markup.examImg}" class="img" />
+            `);
+                stepEl.find(`.text-warp`).html(`
+              <div class="tableTitle">${renderData.markup.tableTitle}별 학생 수</div>
+              <img src="${renderData.markup.quizImg}" class="img" />
+              <img src="../../../COMM/IMG/TEST7/2_5_3/TYPE2_hint.png" class="img hint" />
+            `);
+
+                for (let z = 0; z < q.answer.length; z++) {
+                  stepEl
+                    .find(`.quiz-box-${z + 1}`)
+                    .append(
+                      createKeypadEl(z + 1, q.answer[z].toString().length)
+                    );
+                }
+                break;
+
+              // ==========step3==========
+              case 2:
+                stepEl.find(`.epilogue-warp`).html(`
+              <div class="tableTitle">${renderData.markup.tableTitle}</div>
+              <img src="${renderData.markup.examImg}" class="img" />
+              <div class="hint"></div>
+            `);
+                stepEl.find(`.text-warp`).html(`
+              <div class="tableTitle">${renderData.markup.tableTitle}</div>
+              <img src="${renderData.markup.quizImg}" class="img" />
+            `);
+                q.list.forEach((li, num) => {
+                  stepEl.find(".select-warp").append(`
+              <button class="quiz select" data-val="${li.val}">${li.text}</button>
+            `);
+                });
+
+                if (renderData.id == 1) {
+                  $(`.${stepClass} .hint`).css("left", "614px");
+                } else if (renderData.id == 2) {
+                  $(`.${stepClass} .hint`).css("left", "997px");
+                } else {
+                  $(`.${stepClass} .hint`).css("left", "805px");
+                }
+                break;
+
+              // ==========step4==========
+              case 3:
+                stepEl.find(`.epilogue-warp`).html(`
+                  <div class="tableTitle">${renderData.markup.tableTitle}</div>
+                  <img src="${renderData.markup.examImg}" class="img" />
+                `);
+
+                stepEl.find(`.text-warp`).html(`
+                  <div class="tableTitle">${renderData.markup.tableTitle}</div>
+                  <div class="tableCont">
+                    <div class="tableCate">${renderData.markup.tableCate}</div>
+                    <div class="tableText tableText1">${renderData.markup.tableData[0].text}</div>
+                    <div class="tableDash tableDash1">${renderData.markup.tableData[0].dash}</div>
+                    <div class="tableText tableText2">${renderData.markup.tableData[1].text}</div>
+                    <div class="tableDash tableDash2">${renderData.markup.tableData[1].dash}</div>
+                    <div class="tableText tableText3">${renderData.markup.tableData[2].text}</div>
+                    <div class="tableDash tableDash3">${renderData.markup.tableData[2].dash}</div>
+                    <div class="tableText tableText4">${renderData.markup.tableData[3].text}</div>
+                    <div class="tableDash tableDash4">${renderData.markup.tableData[3].dash}</div>
+                    <img src="${renderData.markup.quizImg}" class="img" />
+                  </div>
+                `);
+                q.list.forEach((li, num) => {
+                  stepEl
+                    .find(".select-warp")
+                    .append(
+                      `<button class="quiz select" data-val="${li.val}">${li.text}</button>`
+                    );
+                });
+                break;
+              // ==========step5==========
+              case 4:
+                stepEl.find(`.epilogue-warp`).html(`
+                  <div class="tableTitle">${renderData.markup.tableTitle}</div>
+                  <div class="tableCont">
+                    <div class="tableCate">${renderData.markup.tableCate}</div>
+                    <div class="tableText tableText1">${renderData.markup.tableData[0].text}</div>
+                    <div class="tableDash tableDash1">${renderData.markup.tableData[0].dash}</div>
+                    <div class="tableText tableText2">${renderData.markup.tableData[1].text}</div>
+                    <div class="tableDash tableDash2">${renderData.markup.tableData[1].dash}</div>
+                    <div class="tableText tableText3">${renderData.markup.tableData[2].text}</div>
+                    <div class="tableDash tableDash3">${renderData.markup.tableData[2].dash}</div>
+                    <div class="tableText tableText4">${renderData.markup.tableData[3].text}</div>
+                    <div class="tableDash tableDash4">${renderData.markup.tableData[3].dash}</div>
+                    <img src="${renderData.markup.examImg}" class="img" />
+                  </div>
+                `);
+                stepEl.find(`.text-warp`).html(`
+              <div class="textBox">${renderData.markup.text}</div>
+            `);
+                q.list.forEach((li, num) => {
+                  stepEl.find(".select-warp").append(`
+              <button class="quiz select" data-val="${li.val}">${li.text}</button>
+            `);
+                });
+                break;
+            }
+          });
+        });
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=2000, user-scalable=no" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <link rel="stylesheet" href="../../../COMM/GAME/RESET.CSS" />
+    <link rel="stylesheet" href="../../../COMM/GAME/QUIZBATTLE.CSS" />
+    <title>퀴즈 대결 게임</title>
+  </head>
+
+  <body>
+    <div class="warp">
+      <section class="osign"></section>
+      <section id="complete_popup" style="display: none">
+        <div class="dimmed"></div>
+        <div class="bg"></div>
+        <div class="buttonArea">
+          <button class="reload" onclick="gameRetry()"></button>
+          <button class="play_view" onclick="videoPlayer()">
+            개념 영상 보기
+          </button>
+          <!-- <p>
+            더 공부하고 싶다면 개념영상 보러 가보자!
+          </p> -->
+        </div>
+      </section>
+      <section class="game">
+        <!-- -----인트로----- -->
+        <article class="game_intro">
+          <button class="game_intro_start">게임 시작</button>
+        </article>
+        <!-- -----타이틀----- -->
+        <article class="game_title title-drop"></article>
+        <!-- -----문제 스크린 영역----- -->
+        <div class="page_num">
+          <span id="pageCnt">1</span>
+          <span>/</span>
+          <span id="pageCntAll">3</span>
+        </div>
+        <article class="quiz-screen quiz-screen-closeup">
+          <ul class="quiz-screen_list">
+            <!-- -----문제 슬라이드 랜더링 되는 영역----- -->
+          </ul>
+        </article>
+        <!-- -----정답 선택지 리스트----- -->
+        <ul class="quiz-list">
+          <li class="quiz-list_item quiz-list-up">
+            <button class="quiz-list_item_btn"></button>
+            <!-- -----정답버튼 내용 랜더링 영역----- -->
+          </li>
+          <li class="quiz-list_item quiz-list-up">
+            <button class="quiz-list_item_btn">
+              <!-- -----정답버튼 내용 랜더링 영역----- -->
+            </button>
+          </li>
+          <li class="quiz-list_item quiz-list-up">
+            <button class="quiz-list_item_btn">
+              <!-- -----정답버튼 내용 랜더링 영역----- -->
+            </button>
+          </li>
+        </ul>
+        <!-- -----캐릭터 영역----- -->`
+        <article class="character-warp">
+          <div class="character1 character1-slide">
+            <div class="charac default"></div>
+            <div class="charac wrong"></div>
+            <div class="charac correct"></div>
+            <div class="desk"></div>
+            <div class="star-list">
+              <img
+                class="star-list_img"
+                src="../../../COMM/IMG/QUIZBATTLE/STAR.PNG"
+              />
+              <img
+                class="star-list_img"
+                src="../../../COMM/IMG/QUIZBATTLE/STAR.PNG"
+              />
+              <img
+                class="star-list_img"
+                src="../../../COMM/IMG/QUIZBATTLE/STAR.PNG"
+              />
+              <img
+                class="star-list_img"
+                src="../../../COMM/IMG/QUIZBATTLE/STAR.PNG"
+              />
+              <img
+                class="star-list_img"
+                src="../../../COMM/IMG/QUIZBATTLE/STAR.PNG"
+              />
+            </div>
+          </div>
+          <div class="character2 character2-slide">
+            <div class="osignsmall"></div>
+            <div class="charac default"></div>
+            <div class="charac wrong"></div>
+            <div class="charac correct"></div>
+            <div class="desk"></div>
+            <div class="desk on"></div>
+            <div class="star-list">
+              <img
+                class="star-list_img"
+                src="../../../COMM/IMG/QUIZBATTLE/STAR.PNG"
+              />
+              <img
+                class="star-list_img"
+                src="../../../COMM/IMG/QUIZBATTLE/STAR.PNG"
+              />
+              <img
+                class="star-list_img"
+                src="../../../COMM/IMG/QUIZBATTLE/STAR.PNG"
+              />
+              <img
+                class="star-list_img"
+                src="../../../COMM/IMG/QUIZBATTLE/STAR.PNG"
+              />
+              <img
+                class="star-list_img"
+                src="../../../COMM/IMG/QUIZBATTLE/STAR.PNG"
+              />
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- 가이드 -->
+      <section class="pearl-guide">
+        <div class="pearl-guide-point no1"></div>
+        <div class="pearl-guide-point no2"></div>
+        <div class="pearl-guide-point no3"></div>
+        <div class="pearl-guide-hand no1"></div>
+        <div class="pearl-guide-hand no2"></div>
+        <div class="pearl-guide-hand no3"></div>
+      </section>
+    </div>
+  </body>
+  <script
+    crossorigin
+    src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"
+  ></script>
+  <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+  <script src="../../../COMM/GAME/QUIZBATTLE.JS"></script>
+  <script defer src="../../../COMM/JS/COMMONGAME.JS"></script>
+</html>

@@ -1,0 +1,260 @@
+button:focus {
+  border: none;
+  outline: none;
+}
+
+.check-questions {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8ebe8;
+}
+
+.check-questions_inner {
+  width: 1840px;
+  height: 1040px;
+  background: white;
+  border-radius: 50px;
+  transform: translateY(-24px);
+}
+
+.check-questions .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: #6744f3;
+  height: 127px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 0 80px 0 60px;
+}
+
+.check-questions .header_title {
+  display: flex;
+  align-items: center;
+}
+
+.check-questions .header_title h3 {
+  color: white;
+  letter-spacing: -2%;
+  font-weight: 700;
+  font-size: 44px;
+  font-family: "NanumSquareRound";
+}
+
+.check-questions .header_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 58px;
+  font-size: 36px;
+  color: #d2d2d2;
+  background: #502fd3;
+  border-radius: 100px;
+}
+.check-questions .header_page span {
+  color: white;
+  font-weight: 800;
+}
+/* 페이징 */
+
+.page__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background-color: #502fd3;
+  border-radius: 100px;
+}
+
+.page__wrapper > span:last-child {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.page__wrapper > span,
+.page__wrapper > p {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 18px;
+  font-family: Pretendard;
+}
+
+.page__wrapper > p {
+  font-weight: 400;
+  margin: 0 6px;
+}
+
+.check-questions .header_title .sound-btn {
+  width: 96px;
+  height: 96px;
+  background: url("../IMG/PLAYBTN.PNG");
+  margin-right: 40px;
+}
+
+.check-questions .main {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 127px);
+}
+
+.main_prev-next {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.main_prev-next .btn-prev,
+.main_prev-next .btn-next {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0;
+  background: url("../IMG/NEXT_ON.PNG") no-repeat center;
+  margin-top: -35px;
+}
+
+.main_prev-next .btn-prev:disabled,
+.main_prev-next .btn-next:disabled {
+  background: url("../IMG/NEXT_OFF.PNG") no-repeat center;
+}
+
+.main_prev-next .btn-prev {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.main_prev-next .btn-next {
+  right: 0;
+}
+
+.main .step-list {
+  position: absolute;
+  left: 50%;
+  bottom: -70px;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.main .step-list_item {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .step-list_item::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #b1b8c6;
+  border-radius: 50%;
+}
+
+.main .step-list_item.active::after {
+  width: 100%;
+  height: 100%;
+  background: url("../../COMM/IMG/STAR.SVG") no-repeat center;
+}
+
+.pointerNone {
+  pointer-events: none;
+}
+
+.character {
+  position: absolute;
+  bottom: -3.2vw;
+  right: 0.5vw;
+  width: 15.6vw;
+  height: 17.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.character .character_head {
+  margin-bottom: -0.5vw;
+  animation: 2s shake3 infinite;
+  transform-origin: 0 50% 100%;
+  position: relative;
+}
+
+.draggable-warp {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.draggable-warp .btn {
+  background: #bedaff;
+  font-weight: 800;
+  font-size: 44px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 114px;
+  border-radius: 20px;
+  margin-right: 48px;
+}
+.draggable-warp .btn:last-of-type {
+  margin-right: 0;
+}
+
+.blinking {
+  animation: 1.4s blinking infinite;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.touchMotionWarp {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.touchMotion {
+  position: absolute;
+  width: 163px;
+  height: 149px;
+}
+.touchMotion_point {
+  width: 80px;
+  height: 80px;
+  background: url("../../COMM/IMG/TOUCH_GUIDE.PNG") no-repeat center;
+  background-size: cover;
+  animation: guideScale 1s 1s infinite alternate;
+}
+.touchMotion_hand {
+  position: absolute;
+  background-image: url("../../COMM/IMG/TOUCH_GUIDE_HAND.PNG");
+  top: 25px;
+  left: 35px;
+  width: 120px;
+  height: 120px;
+}

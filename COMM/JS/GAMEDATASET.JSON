@@ -1,0 +1,4649 @@
+// 게임 타입
+// BRUSHING : 치카치카
+// CALCKING : 나는 계산왕
+// CARDFLIP : 뒤집어라
+// CRUNCHY : 뽀득뽀득
+// DOTTODOT : 그어그어
+// MART : 골라골라
+// OXQUIZ : 딩동댕동
+// PEARLPICKUP : 진주줍줍
+// QUIZBATTLE : 퀴즈대결
+// TIMEATTACK : 나는 운전왕
+
+const dataset = {
+	//1학년
+	"grade1": {
+		//단원
+		"unit4": {
+			//차시
+			"1": {
+				"id": 1,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "소매 길이가 짧은 것을 고르세요.",
+							"view": [
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_1_4_1_01.png?=t",
+									"txt": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_1_4_1_02.png?=t",
+									"txt": "2"
+								}
+							],
+							"answer": [
+								"2"
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "더 무거운 것을 고르세요.",
+							"view": [
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_1_4_1_03.png?=t",
+									"txt": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_1_4_1_04.png?=t",
+									"txt": "2"
+								}
+							],
+							"answer": [
+								"2"
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "양이 더 많은 것을 고르세요.",
+							"view": [
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_1_4_1_05.png?=t",
+									"txt": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_1_4_1_06.png?=t",
+									"txt": "2"
+								}
+							],
+							"answer": [
+								"2"
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "더 큰 것을 고르세요.",
+							"view": [
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_1_4_1_07.png?=t",
+									"txt": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_1_4_1_08.png?=t",
+									"txt": "2"
+								}
+							],
+							"answer": [
+								"1"
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "큰 동물을 고르세요.",
+							"view": [
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_1_4_1_09.png?=t",
+									"txt": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_1_4_1_10.png?=t",
+									"txt": "2"
+								}
+							],
+							"answer": [
+								"1"
+							],
+						},
+					],
+					"type": "OXQUIZ",
+				},
+			},
+			"2": {
+				"id": 2,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_1_4_2_01.png?=t",
+									"txt": "길이가 가장 긴 것을 찾아보세요.",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "가위",
+									"val": "가위"
+								},
+								{
+									"img": "",
+									"txt": "연필",
+									"val": "연필"
+								},
+								{
+									"img": "",
+									"txt": "풀",
+									"val": "풀"
+								}
+							],
+							"answer": [
+								"연필"
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_1_4_2_02.png?=t1",
+									"txt": "길이가 가장 긴 것을 찾아보세요.",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "크레파스",
+									"val": "크레파스"
+								},
+								{
+									"img": "",
+									"txt": "자",
+									"val": "자"
+								},
+								{
+									"img": "",
+									"txt": "색연필",
+									"val": "색연필"
+								}
+							],
+							"answer": [
+								"색연필"
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_1_4_2_03.png?=t",
+									"txt": "길이가 가장 긴 것을 찾아보세요.",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "기차",
+									"val": "기차"
+								},
+								{
+									"img": "",
+									"txt": "자동차",
+									"val": "자동차"
+								},
+								{
+									"img": "",
+									"txt": "버스",
+									"val": "버스"
+								}
+							],
+							"answer": [
+								"기차"
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_1_4_2_04.png?=t",
+									"txt": "길이가 가장 짧은 것을 찾아보세요.",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "리코더",
+									"val": "리코더"
+								},
+								{
+									"img": "",
+									"txt": "머리핀",
+									"val": "머리핀"
+								},
+								{
+									"img": "",
+									"txt": "풀",
+									"val": "풀"
+								}
+							],
+							"answer": [
+								"머리핀"
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_1_4_2_05.png?=t",
+									"txt": "길이가 가장 짧은 것을 찾아보세요.",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "붓",
+									"val": "붓"
+								},
+								{
+									"img": "",
+									"txt": "크레파스",
+									"val": "크레파스"
+								},
+								{
+									"img": "",
+									"txt": "지우개",
+									"val": "지우개"
+								}
+							],
+							"answer": [
+								"지우개"
+							],
+						},
+					],
+					"type": "QUIZBATTLE",
+				},
+			},
+			"3": {
+				"id": 3,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "더 무거운 물건을 고르세요.",
+							"view": [
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_1_4_3_01.png?=t",
+									"txt": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_1_4_3_02.png?=t",
+									"txt": "2"
+								}
+							],
+							"answer": [
+								"1"
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "더 무거운 물건을 고르세요.",
+							"view": [
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_1_4_3_03.png?=t",
+									"txt": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_1_4_3_04.png?=t",
+									"txt": "2"
+								}
+							],
+							"answer": [
+								"2"
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "더 가벼운 물건을 고르세요.",
+							"view": [
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_1_4_3_05.png?=t",
+									"txt": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_1_4_3_06.png?=t",
+									"txt": "2"
+								}
+							],
+							"answer": [
+								"1"
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "더 가벼운 과일을 고르세요.",
+							"view": [
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_1_4_3_07.png?=t",
+									"txt": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_1_4_3_08.png?=t",
+									"txt": "2"
+								}
+							],
+							"answer": [
+								"2"
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "더 가벼운 동물을 고르세요.",
+							"view": [
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_1_4_3_09.png?=t",
+									"txt": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_1_4_3_10.png?=t",
+									"txt": "2"
+								}
+							],
+							"answer": [
+								"1"
+							],
+						},
+					],
+					"type": "OXQUIZ",
+				},
+			},
+			"4": {
+				"id": 4,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "넓이를 비교하여 관계있는 것끼리 이어 보세요.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "가장<br/>넓다",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "가장<br/>좁다",
+									"val": "3"
+								},
+							],
+							"view": [
+								{
+									"img": "../../../COMM/IMG/DOTTODOT/QUE_IMG_1_4_4_01.png?=t1",
+									"txt": "",
+									"val": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/DOTTODOT/QUE_IMG_1_4_4_02.png?=t1",
+									"txt": "",
+									"val": "2"
+								},
+								{
+									"img": "../../../COMM/IMG/DOTTODOT/QUE_IMG_1_4_4_03.png?=t1",
+									"txt": "",
+									"val": "3"
+								}
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "넓이를 비교하여 관계있는 것끼리 이어 보세요.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "가장<br/>넓다",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "가장<br/>좁다",
+									"val": "3"
+								},
+							],
+							"view": [
+								{
+									"img": "../../../COMM/IMG/DOTTODOT/QUE_IMG_1_4_4_04.png?=t1",
+									"txt": "",
+									"val": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/DOTTODOT/QUE_IMG_1_4_4_05.png?=t1",
+									"txt": "",
+									"val": "2"
+								},
+								{
+									"img": "../../../COMM/IMG/DOTTODOT/QUE_IMG_1_4_4_06.png?=t1",
+									"txt": "",
+									"val": "3"
+								}
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "넓이를 비교하여 관계있는 것끼리 이어 보세요.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "가장<br/>넓다",
+									"val": "3"
+								},
+								{
+									"img": "",
+									"txt": "가장<br/>좁다",
+									"val": "1"
+								},
+							],
+							"view": [
+								{
+									"img": "../../../COMM/IMG/DOTTODOT/QUE_IMG_1_4_4_07.png?=t1",
+									"txt": "",
+									"val": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/DOTTODOT/QUE_IMG_1_4_4_08.png?=t1",
+									"txt": "",
+									"val": "2"
+								},
+								{
+									"img": "../../../COMM/IMG/DOTTODOT/QUE_IMG_1_4_4_09.png?=t1",
+									"txt": "",
+									"val": "3"
+								}
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "넓이를 비교하여 관계있는 것끼리 이어 보세요.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "가장<br/>넓다",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "가장<br/>좁다",
+									"val": "1"
+								},
+							],
+							"view": [
+								{
+									"img": "../../../COMM/IMG/DOTTODOT/QUE_IMG_1_4_4_10.png?=t1",
+									"txt": "",
+									"val": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/DOTTODOT/QUE_IMG_1_4_4_11.png?=t1",
+									"txt": "",
+									"val": "2"
+								},
+								{
+									"img": "../../../COMM/IMG/DOTTODOT/QUE_IMG_1_4_4_12.png?=t1",
+									"txt": "",
+									"val": "3"
+								}
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "넓이를 비교하여 관계있는 것끼리 이어 보세요.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "가장<br/>넓다",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "가장<br/>좁다",
+									"val": "2"
+								},
+							],
+							"view": [
+								{
+									"img": "../../../COMM/IMG/DOTTODOT/QUE_IMG_1_4_4_13.png?=t1",
+									"txt": "",
+									"val": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/DOTTODOT/QUE_IMG_1_4_4_14.png?=t1",
+									"txt": "",
+									"val": "2"
+								},
+								{
+									"img": "../../../COMM/IMG/DOTTODOT/QUE_IMG_1_4_4_15.png?=t1",
+									"txt": "",
+									"val": "3"
+								}
+							],
+						},
+					],
+					"type": "DOTTODOT",
+				},
+			},
+			"5": {
+				"id": 5,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "알맞은 그림을 찾아보세요.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "담을 수 있는 양이<br />가장 많은 것",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_01.png?=t",
+									"txt": "",
+									"val": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_02.png?=t",
+									"txt": "",
+									"val": "2"
+								},
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_03.png?=t",
+									"txt": "",
+									"val": "3"
+								},
+							],
+							"answer": [
+								"1"
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "알맞은 그림을 찾아보세요.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "담을 수 있는 양이<br />가장 많은 것",
+									"val": "2"
+								}
+							],
+							"view": [
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_04.png?=t",
+									"txt": "",
+									"val": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_05.png?=t",
+									"txt": "",
+									"val": "2"
+								},
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_06.png?=t",
+									"txt": "",
+									"val": "3"
+								},
+							],
+							"answer": [
+								"2"
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "알맞은 그림을 찾아보세요.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "담을 수 있는 양이<br />가장 많은 것",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_07.png?=t",
+									"txt": "",
+									"val": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_08.png?=t",
+									"txt": "",
+									"val": "2"
+								},
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_09.png?=t",
+									"txt": "",
+									"val": "3"
+								},
+							],
+							"answer": [
+								"1"
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "알맞은 그림을 찾아보세요.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "담긴 양이 가장 많은 것",
+									"val": "2"
+								}
+							],
+							"view": [
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_10.png?=t",
+									"txt": "",
+									"val": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_11.png?=t",
+									"txt": "",
+									"val": "2"
+								},
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_12.png?=t",
+									"txt": "",
+									"val": "3"
+								},
+							],
+							"answer": [
+								"2"
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "알맞은 그림을 찾아보세요.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "담긴 양이 가장 많은 것",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_13.png?=t",
+									"txt": "",
+									"val": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_14.png?=t",
+									"txt": "",
+									"val": "2"
+								},
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_15.png?=t",
+									"txt": "",
+									"val": "3"
+								},
+							],
+							"answer": [
+								"1"
+							],
+						},
+						{
+							"id": 6,
+							"epilogue": "알맞은 그림을 찾아보세요.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "담을 수 있는 양이<br />가장 적은 것",
+									"val": "3"
+								}
+							],
+							"view": [
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_01.png?=t",
+									"txt": "",
+									"val": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_02.png?=t",
+									"txt": "",
+									"val": "2"
+								},
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_03.png?=t",
+									"txt": "",
+									"val": "3"
+								},
+							],
+							"answer": [
+								"3"
+							],
+						},
+						{
+							"id": 7,
+							"epilogue": "알맞은 그림을 찾아보세요.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "담을 수 있는 양이<br />가장 적은 것",
+									"val": "3"
+								}
+							],
+							"view": [
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_04.png?=t",
+									"txt": "",
+									"val": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_05.png?=t",
+									"txt": "",
+									"val": "2"
+								},
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_06.png?=t",
+									"txt": "",
+									"val": "3"
+								},
+							],
+							"answer": [
+								"3"
+							],
+						},
+						{
+							"id": 8,
+							"epilogue": "알맞은 그림을 찾아보세요.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "담을 수 있는 양이<br />가장 적은 것",
+									"val": "2"
+								}
+							],
+							"view": [
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_07.png?=t",
+									"txt": "",
+									"val": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_08.png?=t",
+									"txt": "",
+									"val": "2"
+								},
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_09.png?=t",
+									"txt": "",
+									"val": "3"
+								},
+							],
+							"answer": [
+								"2"
+							],
+						},
+						{
+							"id": 9,
+							"epilogue": "알맞은 그림을 찾아보세요.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "담긴 양이 가장 적은 것",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_10.png?=t",
+									"txt": "",
+									"val": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_11.png?=t",
+									"txt": "",
+									"val": "2"
+								},
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_12.png?=t",
+									"txt": "",
+									"val": "3"
+								},
+							],
+							"answer": [
+								"1"
+							],
+						},
+						{
+							"id": 10,
+							"epilogue": "알맞은 그림을 찾아보세요.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "담긴 양이 가장 적은 것",
+									"val": "2"
+								}
+							],
+							"view": [
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_13.png?=t",
+									"txt": "",
+									"val": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_14.png?=t",
+									"txt": "",
+									"val": "2"
+								},
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_1_4_5_15.png?=t",
+									"txt": "",
+									"val": "3"
+								},
+							],
+							"answer": [
+								"2"
+							],
+						},
+					],
+					"type": "TIMEATTACK",
+				},
+			},
+		},
+		"unit5": {
+			"1": {
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"exam": [
+								{
+									"img": "",
+									"txt": "1",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "2",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "",
+									"val": "3"
+								},
+								{
+									"img": "",
+									"txt": "4",
+									"val": "4"
+								},
+								{
+									"img": "",
+									"txt": "5",
+									"val": "5"
+								},
+								{
+									"img": "",
+									"txt": "6",
+									"val": "6"
+								},
+								{
+									"img": "",
+									"txt": "",
+									"val": "7"
+								},
+								{
+									"img": "",
+									"txt": "8",
+									"val": "8"
+								},
+								{
+									"img": "",
+									"txt": "",
+									"val": "9"
+								},
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "9",
+									"val": "9"
+								},
+								{
+									"img": "",
+									"txt": "3",
+									"val": "3"
+								},
+								{
+									"img": "",
+									"txt": "7",
+									"val": "7"
+								},
+							],
+						},
+						{
+							"id": 2,
+							"exam": [
+								{
+									"img": "",
+									"txt": "",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "2",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "3",
+									"val": "3"
+								},
+								{
+									"img": "",
+									"txt": "4",
+									"val": "4"
+								},
+								{
+									"img": "",
+									"txt": "",
+									"val": "5"
+								},
+								{
+									"img": "",
+									"txt": "",
+									"val": "6"
+								},
+								{
+									"img": "",
+									"txt": "7",
+									"val": "7"
+								},
+								{
+									"img": "",
+									"txt": "8",
+									"val": "8"
+								},
+								{
+									"img": "",
+									"txt": "9",
+									"val": "9"
+								},
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "5",
+									"val": "5"
+								},
+								{
+									"img": "",
+									"txt": "1",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "6",
+									"val": "6"
+								},
+							],
+						},
+						{
+							"id": 3,
+							"exam": [
+								{
+									"img": "",
+									"txt": "1",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "2",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "3",
+									"val": "3"
+								},
+								{
+									"img": "",
+									"txt": "",
+									"val": "4"
+								},
+								{
+									"img": "",
+									"txt": "5",
+									"val": "5"
+								},
+								{
+									"img": "",
+									"txt": "6",
+									"val": "6"
+								},
+								{
+									"img": "",
+									"txt": "",
+									"val": "7"
+								},
+								{
+									"img": "",
+									"txt": "8",
+									"val": "8"
+								},
+								{
+									"img": "",
+									"txt": "",
+									"val": "9"
+								},
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "4",
+									"val": "4"
+								},
+								{
+									"img": "",
+									"txt": "9",
+									"val": "9"
+								},
+								{
+									"img": "",
+									"txt": "7",
+									"val": "7"
+								},
+							],
+						},
+						{
+							"id": 4,
+							"exam": [
+								{
+									"img": "",
+									"txt": "9",
+									"val": "9"
+								},
+								{
+									"img": "",
+									"txt": "",
+									"val": "8"
+								},
+								{
+									"img": "",
+									"txt": "7",
+									"val": "7"
+								},
+								{
+									"img": "",
+									"txt": "6",
+									"val": "6"
+								},
+								{
+									"img": "",
+									"txt": "5",
+									"val": "5"
+								},
+								{
+									"img": "",
+									"txt": "",
+									"val": "4"
+								},
+								{
+									"img": "",
+									"txt": "3",
+									"val": "3"
+								},
+								{
+									"img": "",
+									"txt": "",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "1",
+									"val": "1"
+								},
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "2",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "8",
+									"val": "8"
+								},
+								{
+									"img": "",
+									"txt": "4",
+									"val": "4"
+								},
+							],
+						},
+						{
+							"id": 5,
+							"exam": [
+								{
+									"img": "",
+									"txt": "",
+									"val": "9"
+								},
+								{
+									"img": "",
+									"txt": "8",
+									"val": "8"
+								},
+								{
+									"img": "",
+									"txt": "7",
+									"val": "7"
+								},
+								{
+									"img": "",
+									"txt": "",
+									"val": "6"
+								},
+								{
+									"img": "",
+									"txt": "5",
+									"val": "5"
+								},
+								{
+									"img": "",
+									"txt": "4",
+									"val": "4"
+								},
+								{
+									"img": "",
+									"txt": "",
+									"val": "3"
+								},
+								{
+									"img": "",
+									"txt": "2",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "1",
+									"val": "1"
+								},
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "3",
+									"val": "3"
+								},
+								{
+									"img": "",
+									"txt": "6",
+									"val": "6"
+								},
+								{
+									"img": "",
+									"txt": "9",
+									"val": "9"
+								},
+							],
+						}
+					],
+					"type": "BRUSHING",
+				},
+			},
+			"2": {
+				"id": 2,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "모으기 또는 가르기를 해 보세요.",
+							"view": {
+								"img": "../../../COMM/IMG/CALCKING/EP_IMG26.png?=t",
+								"txt": ""
+							},
+							"answer": "6",
+						},
+						{
+							"id": 2,
+							"epilogue": "모으기 또는 가르기를 해 보세요.",
+							"view": {
+								"img": "../../../COMM/IMG/CALCKING/EP_IMG27.png?=t",
+								"txt": ""
+							},
+							"answer": "5",
+						},
+						{
+							"id": 3,
+							"epilogue": "모으기 또는 가르기를 해 보세요.",
+							"view": {
+								"img": "../../../COMM/IMG/CALCKING/EP_IMG28.png?=t",
+								"txt": ""
+							},
+							"answer": "2",
+						},
+						{
+							"id": 4,
+							"epilogue": "모으기 또는 가르기를 해 보세요.",
+							"view": {
+								"img": "../../../COMM/IMG/CALCKING/EP_IMG29.png?=t1",
+								"txt": ""
+							},
+							"answer": "3",
+						},
+						{
+							"id": 5,
+							"epilogue": "모으기 또는 가르기를 해 보세요.",
+							"view": {
+								"img": "../../../COMM/IMG/CALCKING/EP_IMG30.png?=t1",
+								"txt": ""
+							},
+							"answer": "9",
+						},
+					],
+					"type": "CALCKING",
+				},
+			},
+			"3": {
+				"id": 3,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "수가 같은 것을 찾아보세요.",
+							"view": [
+								{
+									"img": "",
+									"txt": "13",
+									"val": "13"
+								},
+								{
+									"img": "",
+									"txt": "십삼",
+									"val": "13"
+								},
+								{
+									"img": "",
+									"txt": "십칠",
+									"val": "17"
+								},
+								{
+									"img": "",
+									"txt": "11",
+									"val": "11"
+								},
+								{
+									"img": "",
+									"txt": "17",
+									"val": "17"
+								},
+								{
+									"img": "",
+									"txt": "십일",
+									"val": "11"
+								},
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "수가 같은 것을 찾아보세요.",
+							"view": [
+								{
+									"img": "",
+									"txt": "열둘",
+									"val": "12"
+								},
+								{
+									"img": "",
+									"txt": "십구",
+									"val": "19"
+								},
+								{
+									"img": "",
+									"txt": "16",
+									"val": "16"
+								},
+								{
+									"img": "",
+									"txt": "열여섯",
+									"val": "16"
+								},
+								{
+									"img": "",
+									"txt": "19",
+									"val": "19"
+								},
+								{
+									"img": "",
+									"txt": "12",
+									"val": "12"
+								},
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "수가 같은 것을 찾아보세요.",
+							"view": [
+								{
+									"img": "",
+									"txt": "15",
+									"val": "15"
+								},
+								{
+									"img": "",
+									"txt": "열여덟",
+									"val": "18"
+								},
+								{
+									"img": "",
+									"txt": "십사",
+									"val": "14"
+								},
+								{
+									"img": "",
+									"txt": "십오",
+									"val": "15"
+								},
+								{
+									"img": "",
+									"txt": "14",
+									"val": "14"
+								},
+								{
+									"img": "",
+									"txt": "18",
+									"val": "18"
+								},
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "수가 같은 것을 찾아보세요.",
+							"view": [
+								{
+									"img": "",
+									"txt": "십육",
+									"val": "16"
+								},
+								{
+									"img": "",
+									"txt": "13",
+									"val": "13"
+								},
+								{
+									"img": "",
+									"txt": "16",
+									"val": "16"
+								},
+								{
+									"img": "",
+									"txt": "열셋",
+									"val": "13"
+								},
+								{
+									"img": "",
+									"txt": "12",
+									"val": "12"
+								},
+								{
+									"img": "",
+									"txt": "십이",
+									"val": "12"
+								},
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "수가 같은 것을 찾아보세요.",
+							"view": [
+								{
+									"img": "",
+									"txt": "열하나",
+									"val": "11"
+								},
+								{
+									"img": "",
+									"txt": "십사",
+									"val": "14"
+								},
+								{
+									"img": "",
+									"txt": "십구",
+									"val": "19"
+								},
+								{
+									"img": "",
+									"txt": "열넷",
+									"val": "14"
+								},
+								{
+									"img": "",
+									"txt": "11",
+									"val": "11"
+								},
+								{
+									"img": "",
+									"txt": "열아홉",
+									"val": "19"
+								},
+							],
+						},
+					],
+					"type": "CARDFLIP",
+				},
+			},
+			"4": {
+				"id": 4,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "9와 2를 모으기 한 수는?",
+							"view": [
+								{
+									"img": "",
+									"txt": "10"
+								},
+								{
+									"img": "",
+									"txt": "11"
+								},
+								{
+									"img": "",
+									"txt": "12"
+								},
+							],
+							"answer": [
+								"11"
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "7과 7을 모으기 한 수는?",
+							"view": [
+								{
+									"img": "",
+									"txt": "14"
+								},
+								{
+									"img": "",
+									"txt": "15"
+								},
+								{
+									"img": "",
+									"txt": "17"
+								},
+							],
+							"answer": [
+								"14"
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "5와 8을 모으기 한 수는?",
+							"view": [
+								{
+									"img": "",
+									"txt": "11"
+								},
+								{
+									"img": "",
+									"txt": "12"
+								},
+								{
+									"img": "",
+									"txt": "13"
+								},
+							],
+							"answer": [
+								"13"
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "17을 가르기 한 두 수는?",
+							"view": [
+								{
+									"img": "",
+									"txt": "8, 8"
+								},
+								{
+									"img": "",
+									"txt": "9, 8"
+								},
+								{
+									"img": "",
+									"txt": "9, 9"
+								},
+							],
+							"answer": [
+								"9, 8"
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "14를 가르기 한 두 수는?",
+							"view": [
+								{
+									"img": "",
+									"txt": "6, 8"
+								},
+								{
+									"img": "",
+									"txt": "7, 5"
+								},
+								{
+									"img": "",
+									"txt": "8, 7"
+								},
+							],
+							"answer": [
+								"6, 8"
+							],
+						},
+					],
+					"type": "PEARLPICKUP",
+				},
+			},
+			"5": {
+				"id": 5,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "같은 수끼리 이으세요.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "20",
+									"val": "3"
+								},
+								{
+									"img": "",
+									"txt": "30",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "40",
+									"val": "2"
+								},
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "삼십",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "사십",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "이십",
+									"val": "3"
+								}
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "같은 수끼리 이으세요.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "30",
+									"val": "3"
+								},
+								{
+									"img": "",
+									"txt": "40",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "50",
+									"val": "1"
+								},
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "오십",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "사십",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "삼십",
+									"val": "3"
+								}
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "같은 수끼리 이으세요.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "20",
+									"val": "3"
+								},
+								{
+									"img": "",
+									"txt": "40",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "50",
+									"val": "2"
+								},
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "마흔",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "쉰",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "스물",
+									"val": "3"
+								}
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "같은 수끼리 이으세요.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "30",
+									"val": "3"
+								},
+								{
+									"img": "",
+									"txt": "40",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "50",
+									"val": "1"
+								},
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "쉰",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "마흔",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "서른",
+									"val": "3"
+								}
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "같은 수끼리 이으세요.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "50",
+									"val": "3"
+								},
+								{
+									"img": "",
+									"txt": "30",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "20",
+									"val": "1"
+								},
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "스물",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "서른",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "쉰",
+									"val": "3"
+								}
+							],
+						},
+					],
+					"type": "DOTTODOT",
+				},
+			},
+			"6": {
+				"id": 6,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "10개씩 묶음 2개와 낱개 4개인 수",
+							"exam": "설명하는 수를 찾아보세요.",
+							"view": [
+								{
+									"img": "",
+									"txt": "이십오",
+									"val": "이십오"
+								},
+								{
+									"img": "",
+									"txt": "42",
+									"val": "42"
+								},
+								{
+									"img": "",
+									"txt": "스물넷",
+									"val": "스물넷"
+								},
+							],
+							"answer": [
+								"스물넷"
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "10개씩 묶음 4개와 낱개 1개인 수",
+							"exam": "설명하는 수를 찾아보세요.",
+							"view": [
+								{
+									"img": "",
+									"txt": "14",
+									"val": "14"
+								},
+								{
+									"img": "",
+									"txt": "이십사",
+									"val": "이십사"
+								},
+								{
+									"img": "",
+									"txt": "41",
+									"val": "41"
+								},
+							],
+							"answer": [
+								"41"
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "10개씩 묶음 3개와 낱개 5개인 수",
+							"exam": "설명하는 수를 찾아보세요.",
+							"view": [
+								{
+									"img": "",
+									"txt": "마흔셋",
+									"val": "마흔셋"
+								},
+								{
+									"img": "",
+									"txt": "삼십오",
+									"val": "삼십오"
+								},
+								{
+									"img": "",
+									"txt": "25",
+									"val": "25"
+								},
+							],
+							"answer": [
+								"삼십오"
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "10개씩 묶음 2개와 낱개 9개인 수",
+							"exam": "설명하는 수를 찾아보세요.",
+							"view": [
+								{
+									"img": "",
+									"txt": "29",
+									"val": "29"
+								},
+								{
+									"img": "",
+									"txt": "스물여덟",
+									"val": "스물여덟"
+								},
+								{
+									"img": "",
+									"txt": "십구",
+									"val": "십구"
+								},
+							],
+							"answer": [
+								"29"
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "10개씩 묶음 3개와 낱개 3개인 수",
+							"exam": "설명하는 수를 찾아보세요.",
+							"view": [
+								{
+									"img": "",
+									"txt": "삼십",
+									"val": "삼십"
+								},
+								{
+									"img": "",
+									"txt": "서른셋",
+									"val": "서른셋"
+								},
+								{
+									"img": "",
+									"txt": "34",
+									"val": "34"
+								},
+							],
+							"answer": [
+								"서른셋"
+							],
+						},
+					],
+					"type": "CRUNCHY",
+				},
+			},
+			"7": {
+				"id": 7,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "설명에 알맞은 수를 담아 보자.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "38보다 1만큼 더 큰 수",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "37",
+									"val": "37"
+								},
+								{
+									"img": "apple",
+									"txt": "38",
+									"val": "38"
+								},
+								{
+									"img": "watermelon",
+									"txt": "39",
+									"val": "39"
+								},
+							],
+							"answer": [
+								"39"
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "설명에 알맞은 수를 담아 보자.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "43보다 1만큼 더 큰 수",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "44",
+									"val": "44"
+								},
+								{
+									"img": "apple",
+									"txt": "45",
+									"val": "45"
+								},
+								{
+									"img": "watermelon",
+									"txt": "46",
+									"val": "46"
+								},
+							],
+							"answer": [
+								"44"
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "설명에 알맞은 수를 담아 보자.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "27보다 1만큼 더 작은 수",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "25",
+									"val": "25"
+								},
+								{
+									"img": "apple",
+									"txt": "26",
+									"val": "26"
+								},
+								{
+									"img": "watermelon",
+									"txt": "27",
+									"val": "27"
+								},
+							],
+							"answer": [
+								"26"
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "설명에 알맞은 수를 담아 보자.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "33보다 1만큼 더 작은 수",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "30",
+									"val": "30"
+								},
+								{
+									"img": "apple",
+									"txt": "31",
+									"val": "31"
+								},
+								{
+									"img": "watermelon",
+									"txt": "32",
+									"val": "32"
+								},
+							],
+							"answer": [
+								"32"
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "설명에 알맞은 수를 담아 보자.",
+							"exam": [
+								{
+									"img": "",
+									"txt": "48보다 1만큼 더 작은 수",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "45",
+									"val": "45"
+								},
+								{
+									"img": "apple",
+									"txt": "47",
+									"val": "47"
+								},
+								{
+									"img": "watermelon",
+									"txt": "49",
+									"val": "49"
+								},
+							],
+							"answer": [
+								"47"
+							],
+						},
+					],
+					"type": "MART",
+				},
+			},
+			"8": {
+				"id": 8,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "31은 29보다 작습니다.",
+							"view": [
+								{
+									"img": "",
+									"txt": "O"
+								},
+								{
+									"img": "",
+									"txt": "X"
+								}
+							],
+							"answer": [
+								"X"
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "22는 45보다 작습니다.",
+							"view": [
+								{
+									"img": "",
+									"txt": "O"
+								},
+								{
+									"img": "",
+									"txt": "X"
+								}
+							],
+							"answer": [
+								"O"
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "19는 16보다 큽니다.",
+							"view": [
+								{
+									"img": "",
+									"txt": "O"
+								},
+								{
+									"img": "",
+									"txt": "X"
+								}
+							],
+							"answer": [
+								"O"
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "37은 31보다 작습니다.",
+							"view": [
+								{
+									"img": "",
+									"txt": "O"
+								},
+								{
+									"img": "",
+									"txt": "X"
+								}
+							],
+							"answer": [
+								"X"
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "44는 48보다 큽니다.",
+							"view": [
+								{
+									"img": "",
+									"txt": "O"
+								},
+								{
+									"img": "",
+									"txt": "X"
+								}
+							],
+							"answer": [
+								"X"
+							],
+						},
+					],
+					"type": "OXQUIZ",
+				},
+			}
+		},
+		"unit6": {}
+	},
+	//2학년
+	"grade2": {
+		"unit4": {
+			"1": {
+				"id": 1,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "길이가 더 짧은 것을 고르세요.",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_4_1_01.png?=t",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "크레파스",
+									"val": "크레파스"
+								},
+								{
+									"img": "apple",
+									"txt": "수수깡",
+									"val": "수수깡"
+								},
+							],
+							"answer": [
+								"크레파스"
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "길이가 더 긴 것을 고르세요.",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_4_1_02.png?=t",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "자",
+									"val": "자"
+								},
+								{
+									"img": "apple",
+									"txt": "가위",
+									"val": "가위"
+								},
+							],
+							"answer": [
+								"자"
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "길이가 가장 짧은 것을 고르세요.",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_4_1_03.png?=t1",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "우산",
+									"val": "우산"
+								},
+								{
+									"img": "apple",
+									"txt": "빗자루",
+									"val": "빗자루"
+								},
+								{
+									"img": "watermelon",
+									"txt": "지팡이",
+									"val": "지팡이"
+								},
+							],
+							"answer": [
+								"빗자루"
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "길이가 가장 긴 것을 고르세요.",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_4_1_04.png?=t1",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "풀",
+									"val": "풀"
+								},
+								{
+									"img": "apple",
+									"txt": "붓",
+									"val": "붓"
+								},
+								{
+									"img": "watermelon",
+									"txt": "물감",
+									"val": "물감"
+								},
+							],
+							"answer": [
+								"붓"
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "나무 막대보다 더 긴 것을 고르세요.",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_4_1_05.png?=t",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "색연필",
+									"val": "색연필"
+								},
+								{
+									"img": "apple",
+									"txt": "줄넘기",
+									"val": "줄넘기"
+								},
+							],
+							"answer": [
+								"줄넘기"
+							],
+						}
+					],
+					"type": "MART",
+				},
+			},
+			"2": {
+				"id": 2,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "더 긴 길이",
+							"view": [
+								{
+									"img": "../../../COMM/IMG/PEARLPICKUP/QUE_IMG_2_4_2_01.png?=t",
+									"txt": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/PEARLPICKUP/QUE_IMG_2_4_2_02.png?=t",
+									"txt": "2"
+								},
+							],
+							"answer": [
+								"2"
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "더 짧은 길이",
+							"view": [
+								{
+									"img": "../../../COMM/IMG/PEARLPICKUP/QUE_IMG_2_4_2_03.png?=t",
+									"txt": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/PEARLPICKUP/QUE_IMG_2_4_2_04.png?=t",
+									"txt": "2"
+								},
+							],
+							"answer": [
+								"1"
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "액자 긴 쪽과 짧은 쪽의 길이는 어떻게 비교할까요?",
+							"view": [
+								{
+									"img": "",
+									"txt": "종이띠로 비교"
+								},
+								{
+									"img": "",
+									"txt": "맞대어 비교"
+								},
+							],
+							"answer": [
+								"종이띠로 비교"
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "책상 긴 쪽의 길이와 높이는 어떻게 비교할까요?",
+							"view": [
+								{
+									"img": "",
+									"txt": "맞대어 비교"
+								},
+								{
+									"img": "",
+									"txt": "끈으로 비교"
+								},
+							],
+							"answer": [
+								"끈으로 비교"
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "끈으로 비교할 때 끈 한쪽 끝의 무엇을 맞출까요?",
+							"view": [
+								{
+									"img": "",
+									"txt": "시작점"
+								},
+								{
+									"img": "",
+									"txt": "중간점"
+								},
+							],
+							"answer": [
+								"시작점"
+							],
+						}
+					],
+					"type": "PEARLPICKUP",
+				},
+			},
+			"3": {
+				"id": 3,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_4_3_01.png?=t",
+									"txt": "형광펜의 길이는 단추로 몇 번일까요?",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "7번",
+									"val": "7번"
+								},
+								{
+									"img": "",
+									"txt": "8번",
+									"val": "8번"
+								},
+								{
+									"img": "",
+									"txt": "9번",
+									"val": "9번"
+								}
+							],
+							"answer": [
+								"8번"
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_4_3_02.png?=t2",
+									"txt": "지팡이의 길이는 뼘으로 몇 번일까요?",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "5번",
+									"val": "5번"
+								},
+								{
+									"img": "",
+									"txt": "6번",
+									"val": "6번"
+								},
+								{
+									"img": "",
+									"txt": "7번",
+									"val": "7번"
+								}
+							],
+							"answer": [
+								"5번"
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_4_3_03.png?=t",
+									"txt": "젓가락의 길이는 종이집게로 몇 번일까요?",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "4번",
+									"val": "4번"
+								},
+								{
+									"img": "",
+									"txt": "5번",
+									"val": "5번"
+								},
+								{
+									"img": "",
+									"txt": "6번",
+									"val": "6번"
+								}
+							],
+							"answer": [
+								"5번"
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_4_3_04.png?=t1",
+									"txt": "물건의 길이를 잴 때 잰 횟수가 가장 적은 것을 고르세요.",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "옷핀",
+									"val": "옷핀"
+								},
+								{
+									"img": "",
+									"txt": "지우개",
+									"val": "지우개"
+								},
+								{
+									"img": "",
+									"txt": "뼘",
+									"val": "뼘"
+								}
+							],
+							"answer": [
+								"뼘"
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_4_3_05.png?=t",
+									"txt": "다음 길이를 잴 때 적당하지 않은 것을 고르세요.",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "양팔",
+									"val": "양팔"
+								},
+								{
+									"img": "",
+									"txt": "옷핀",
+									"val": "옷핀"
+								},
+								{
+									"img": "",
+									"txt": "바둑돌",
+									"val": "바둑돌"
+								}
+							],
+							"answer": [
+								"양팔"
+							],
+						},
+					],
+					"type": "QUIZBATTLE",
+				},
+			},
+			"4": {
+				"id": 4,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "1 센티미터를 바르게 쓴 것은 어느 것일까요?",
+							"view": [
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_2_4_4_01.png?=t",
+									"txt": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_2_4_4_02.png?=t",
+									"txt": "2"
+								}
+							],
+							"answer": [
+								"2"
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "8 cm는 1 cm가 몇 번인 길이일까요?",
+							"view": [
+								{
+									"img": "",
+									"txt": "8"
+								},
+								{
+									"img": "",
+									"txt": "9"
+								}
+							],
+							"answer": [
+								"8"
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "1 cm가 7번인 길이는 어느 것일까요?",
+							"view": [
+								{
+									"img": "",
+									"txt": "7 cm"
+								},
+								{
+									"img": "",
+									"txt": "8 cm"
+								}
+							],
+							"answer": [
+								"7 cm"
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "5 cm는 1 cm가 4번인 길이입니다.",
+							"view": [
+								{
+									"img": "",
+									"txt": "O"
+								},
+								{
+									"img": "",
+									"txt": "X"
+								}
+							],
+							"answer": [
+								"X"
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "9 cm는 1 cm가 9번인 길이입니다.",
+							"view": [
+								{
+									"img": "",
+									"txt": "O"
+								},
+								{
+									"img": "",
+									"txt": "X"
+								}
+							],
+							"answer": [
+								"O"
+							],
+						},
+					],
+					"type": "OXQUIZ",
+				},
+			},
+			"5": {
+				"id": 5,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "머리핀의 길이는 몇 cm일까요?",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_4_5_01.png?=t",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "2 cm",
+									"val": "2 cm"
+								},
+								{
+									"img": "apple",
+									"txt": "3 cm",
+									"val": "3 cm"
+								},
+								{
+									"img": "watermelon",
+									"txt": "4 cm",
+									"val": "4 cm"
+								},
+							],
+							"answer": [
+								"4 cm"
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "옷핀의 길이는 몇 cm일까요?",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_4_5_02.png?=t",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "5 cm",
+									"val": "5 cm"
+								},
+								{
+									"img": "apple",
+									"txt": "6 cm",
+									"val": "6 cm"
+								},
+								{
+									"img": "watermelon",
+									"txt": "7 cm",
+									"val": "7 cm"
+								},
+							],
+							"answer": [
+								"5 cm"
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "크레파스의 길이는 약 몇 cm일까요?",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_4_5_03.png?=t",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "약 5 cm",
+									"val": "약 5 cm"
+								},
+								{
+									"img": "apple",
+									"txt": "약 6 cm",
+									"val": "약 6 cm"
+								},
+								{
+									"img": "watermelon",
+									"txt": "약 7 cm",
+									"val": "약 7 cm"
+								},
+							],
+							"answer": [
+								"약 6 cm"
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "나무 막대의 길이는 약 몇 cm일까요?",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_4_5_04.png?=t",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "약 5 cm",
+									"val": "약 5 cm"
+								},
+								{
+									"img": "apple",
+									"txt": "약 6 cm",
+									"val": "약 6 cm"
+								},
+								{
+									"img": "watermelon",
+									"txt": "약 13 cm",
+									"val": "약 13 cm"
+								},
+							],
+							"answer": [
+								"약 5 cm"
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "사탕의 길이는 약 몇 cm일까요?",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_4_5_05.png?=t",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "약 5 cm",
+									"val": "약 5 cm"
+								},
+								{
+									"img": "apple",
+									"txt": "약 6 cm",
+									"val": "약 6 cm"
+								},
+								{
+									"img": "watermelon",
+									"txt": "약 7 cm",
+									"val": "약 7 cm"
+								},
+							],
+							"answer": [
+								"약 5 cm"
+							],
+						}
+					],
+					"type": "MART",
+				},
+			},
+			"6": {
+				"id": 6,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_4_6_01.png?=v2",
+									"txt": "연필의 길이를 어림하면 몇 cm일까요?",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "5 cm",
+									"val": "5 cm"
+								},
+								{
+									"img": "",
+									"txt": "8 cm",
+									"val": "8 cm"
+								},
+								{
+									"img": "",
+									"txt": "10 cm",
+									"val": "10 cm"
+								}
+							],
+							"answer": [
+								"10 cm"
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_4_6_02.png?=t2",
+									"txt": "머리핀의 길이를 어림하면 몇 cm일까요?",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "4 cm",
+									"val": "4 cm"
+								},
+								{
+									"img": "",
+									"txt": "6 cm",
+									"val": "6 cm"
+								},
+								{
+									"img": "",
+									"txt": "9 cm",
+									"val": "9 cm"
+								}
+							],
+							"answer": [
+								"6 cm"
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_4_6_03.png?=t1",
+									"txt": "풀의 실제 길이에 가장 가까운 길이는 무엇일까요?",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "1 cm",
+									"val": "1 cm"
+								},
+								{
+									"img": "",
+									"txt": "5 cm",
+									"val": "5 cm"
+								},
+								{
+									"img": "",
+									"txt": "30 cm",
+									"val": "30 cm"
+								}
+							],
+							"answer": [
+								"5 cm"
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_4_6_04.png?=t2",
+									"txt": "실제 길이에 더 가깝게 어림한 사람은 누구일까요?",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "미연",
+									"val": "미연"
+								},
+								{
+									"img": "",
+									"txt": "희경",
+									"val": "희경"
+								},
+								{
+									"img": "",
+									"txt": "세나",
+									"val": "세나"
+								}
+							],
+							"answer": [
+								"희경"
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_4_6_05.png?=t2",
+									"txt": "실제 길이에 더 가깝게 어림한 사람은 누구일까요?",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "지환",
+									"val": "지환"
+								},
+								{
+									"img": "",
+									"txt": "우진",
+									"val": "우진"
+								},
+								{
+									"img": "",
+									"txt": "다혜",
+									"val": "다혜"
+								}
+							],
+							"answer": [
+								"우진"
+							],
+						},
+					],
+					"type": "QUIZBATTLE",
+				},
+			},
+		},
+		"unit5": {
+			"1": {
+				"id": 1,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_1_01.png?=t",
+									"txt": "모양이 다른 것은 무엇일까요?",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_1_02.png?=t",
+									"txt": "1",
+									"val": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_1_03.png?=t",
+									"txt": "2",
+									"val": "2"
+								},
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_1_04.png?=t",
+									"txt": "3",
+									"val": "3"
+								}
+							],
+							"answer": [
+								"2"
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_1_05.png?=t",
+									"txt": "모양이 다른 것은 무엇일까요?",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_1_06.png?=t",
+									"txt": "1",
+									"val": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_1_07.png?=t",
+									"txt": "2",
+									"val": "2"
+								},
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_1_08.png?=t",
+									"txt": "3",
+									"val": "3"
+								}
+							],
+							"answer": [
+								"3"
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_1_09.png?=t",
+									"txt": "사용한 원의 개수는 몇 개일까요?",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "6개",
+									"val": "6개"
+								},
+								{
+									"img": "",
+									"txt": "7개",
+									"val": "7개"
+								},
+								{
+									"img": "",
+									"txt": "8개",
+									"val": "8개"
+								}
+							],
+							"answer": [
+								"7개"
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_1_10.png?=t",
+									"txt": "사용한 삼각형의 개수는 몇 개일까요?",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "3개",
+									"val": "3개"
+								},
+								{
+									"img": "",
+									"txt": "4개",
+									"val": "4개"
+								},
+								{
+									"img": "",
+									"txt": "5개",
+									"val": "5개"
+								}
+							],
+							"answer": [
+								"4개"
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_1_11.png?=t",
+									"txt": "사용한 사각형의 개수는 몇 개일까요?",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "5개",
+									"val": "5개"
+								},
+								{
+									"img": "",
+									"txt": "6개",
+									"val": "6개"
+								},
+								{
+									"img": "",
+									"txt": "7개",
+									"val": "7개"
+								}
+							],
+							"answer": [
+								"7개"
+							],
+						},
+					],
+					"type": "QUIZBATTLE",
+				},
+			},
+			"2": {
+				"id": 2,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "모양을 기준으로 분류할 수 있는 것을 고르세요.",
+							"view": [
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_2_5_2_01.png?=t",
+									"txt": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_2_5_2_02.png?=t",
+									"txt": "2"
+								}
+							],
+							"answer": [
+								"1"
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "무늬를 기준으로 분류할 수 있는 것을 고르세요.",
+							"view": [
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_2_5_2_03.png?=t",
+									"txt": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_2_5_2_04.png?=t",
+									"txt": "2"
+								}
+							],
+							"answer": [
+								"1"
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "크기를 기준으로 분류할 수 있는 것을 고르세요.",
+							"view": [
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_2_5_2_05.png?=t",
+									"txt": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_2_5_2_06.png?=t",
+									"txt": "2"
+								}
+							],
+							"answer": [
+								"2"
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "모양을 기준으로 분류할 수 있는 것을 고르세요.",
+							"view": [
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_2_5_2_07.png?=t",
+									"txt": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_2_5_2_08.png?=t",
+									"txt": "2"
+								}
+							],
+							"answer": [
+								"2"
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "색깔을 기준으로 분류할 수 있는 것을 고르세요.",
+							"view": [
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_2_5_2_09.png?=t",
+									"txt": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/OXQUIZ/QUE_IMG_2_5_2_10.png?=t",
+									"txt": "2"
+								}
+							],
+							"answer": [
+								"1"
+							],
+						},
+					],
+					"type": "OXQUIZ",
+				},
+			},
+			"3": {
+				"id": 3,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "분류 기준으로 알맞지 않은 것을 고르세요.",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_5_3_01.png?=t1",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "색깔",
+									"val": "색깔"
+								},
+								{
+									"img": "apple",
+									"txt": "모양",
+									"val": "모양"
+								},
+								{
+									"img": "watermelon",
+									"txt": "구멍 수",
+									"val": "구멍 수"
+								},
+							],
+							"answer": [
+								"구멍 수"
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "분류 기준으로 알맞지 않은 것을 고르세요.",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_5_3_02.png?=t1",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "모양",
+									"val": "모양"
+								},
+								{
+									"img": "apple",
+									"txt": "구멍 수",
+									"val": "구멍 수"
+								},
+								{
+									"img": "watermelon",
+									"txt": "색깔",
+									"val": "색깔"
+								},
+							],
+							"answer": [
+								"색깔"
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "분류 기준을 보고 다르게 분류되는 것을 고르세요.",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_5_3_03.png?=t2",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "고래",
+									"val": "고래"
+								},
+								{
+									"img": "apple",
+									"txt": "상어",
+									"val": "상어"
+								},
+								{
+									"img": "watermelon",
+									"txt": "뱀",
+									"val": "뱀"
+								},
+							],
+							"answer": [
+								"뱀"
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "분류 기준을 보고 다르게 분류되는 것을 고르세요.",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_5_3_04.png?=t2",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "호랑이",
+									"val": "호랑이"
+								},
+								{
+									"img": "apple",
+									"txt": "곰",
+									"val": "곰"
+								},
+								{
+									"img": "watermelon",
+									"txt": "플라밍고",
+									"val": "플라밍고"
+								},
+							],
+							"answer": [
+								"플라밍고"
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "분류 기준을 보고 다르게 분류되는 것을 고르세요.",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_5_3_05.png?=t2",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "애호박",
+									"val": "애호박"
+								},
+								{
+									"img": "apple",
+									"txt": "멜론",
+									"val": "멜론"
+								},
+								{
+									"img": "watermelon",
+									"txt": "파프리카",
+									"val": "파프리카"
+								},
+							],
+							"answer": [
+								"파프리카"
+							],
+						}
+					],
+					"type": "MART",
+				},
+			},
+			"4": {
+				"id": 4,
+				"game": {
+					"random": "N",
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_4_Q1.png?=t",
+									"txt": "㉠에 들어갈 알맞은 것을 고르세요.",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_4_A1.png?=t",
+									"txt": "1",
+									"val": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_4_A2.png?=t",
+									"txt": "2",
+									"val": "2"
+								},
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_4_A3.png?=t",
+									"txt": "3",
+									"val": "3"
+								}
+							],
+							"answer": [
+								"3"
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_4_Q1.png?=t",
+									"txt": "㉡에 들어갈 알맞은 것을 고르세요.",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_4_A1.png?=t",
+									"txt": "1",
+									"val": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_4_A2.png?=t",
+									"txt": "2",
+									"val": "2"
+								},
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_4_A3.png?=t",
+									"txt": "3",
+									"val": "3"
+								}
+							],
+							"answer": [
+								"2"
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_4_Q1.png?=t",
+									"txt": "㉢에 들어갈 알맞은 것을 고르세요.",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_4_A1.png?=t",
+									"txt": "1",
+									"val": "1"
+								},
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_4_A2.png?=t",
+									"txt": "2",
+									"val": "2"
+								},
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_4_A3.png?=t",
+									"txt": "3",
+									"val": "3"
+								}
+							],
+							"answer": [
+								"1"
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_4_Q2.png?=t",
+									"txt": "㉣에 들어갈 알맞은 수를 고르세요.",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "4",
+									"val": "4"
+								},
+								{
+									"img": "",
+									"txt": "5",
+									"val": "5"
+								},
+								{
+									"img": "",
+									"txt": "6",
+									"val": "6"
+								}
+							],
+							"answer": [
+								"5"
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_5_4_Q2.png?=t",
+									"txt": "㉤에 들어갈 알맞은 수를 고르세요.",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "4",
+									"val": "4"
+								},
+								{
+									"img": "",
+									"txt": "5",
+									"val": "5"
+								},
+								{
+									"img": "",
+									"txt": "6",
+									"val": "6"
+								}
+							],
+							"answer": [
+								"4"
+							],
+						},
+					],
+					"type": "QUIZBATTLE",
+				},
+			},
+			"5": {
+				"id": 5,
+				"game": {
+					"random": "N",
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "가장 많은 학생이 받고 싶은 선물을 고르세요.",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_2_5_5_Q1.png?=t1",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "로봇",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "인형",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "책",
+									"val": "3"
+								},
+								{
+									"img": "",
+									"txt": "게임기",
+									"val": "4"
+								},
+							],
+							"answer": [
+								"2"
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "가장 적은 학생이 받고 싶은 선물을 고르세요.",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_2_5_5_Q1.png?=t1",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "로봇",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "인형",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "책",
+									"val": "3"
+								},
+								{
+									"img": "",
+									"txt": "게임기",
+									"val": "4"
+								},
+							],
+							"answer": [
+								"4"
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "인형과 책을 받고 싶은 학생 수는 모두 몇 명일까요?",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_2_5_5_Q1.png?=t2",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "3명",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "5명",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "7명",
+									"val": "3"
+								},
+								{
+									"img": "",
+									"txt": "9명",
+									"val": "4"
+								},
+							],
+							"answer": [
+								"3"
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "학생들의 선물로 무엇을 준비해야 가장 좋을까요?",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_2_5_5_Q1.png?=t2",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "로봇",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "인형",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "책",
+									"val": "3"
+								},
+								{
+									"img": "",
+									"txt": "게임기",
+									"val": "4"
+								},
+							],
+							"answer": [
+								"2"
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "조사한 전체 학생 수는 모두 몇 명일까요?",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_2_5_5_Q1.png?=t2",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "10명",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "11명",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "12명",
+									"val": "3"
+								},
+								{
+									"img": "",
+									"txt": "13명",
+									"val": "4"
+								},
+							],
+							"answer": [
+								"3"
+							],
+						},
+						{
+							"id": 6,
+							"epilogue": "가장 많은 학생이 좋아하는 운동을 고르세요.",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_2_5_5_Q2.png?=t2",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "축구",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "야구",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "배구",
+									"val": "3"
+								},
+								{
+									"img": "",
+									"txt": "농구",
+									"val": "4"
+								},
+							],
+							"answer": [
+								"1"
+							],
+						},
+						{
+							"id": 7,
+							"epilogue": "가장 적은 학생이 좋아하는 운동을 고르세요.",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_2_5_5_Q2.png?=t2",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "축구",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "야구",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "배구",
+									"val": "3"
+								},
+								{
+									"img": "",
+									"txt": "농구",
+									"val": "4"
+								},
+							],
+							"answer": [
+								"4"
+							],
+						},
+						{
+							"id": 8,
+							"epilogue": "야구와 배구를 좋아하는 학생은 모두 몇 명일까요?",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_2_5_5_Q2.png?=t2",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "13명",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "14명",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "15명",
+									"val": "3"
+								},
+								{
+									"img": "",
+									"txt": "16명",
+									"val": "4"
+								},
+							],
+							"answer": [
+								"3"
+							],
+						},
+						{
+							"id": 9,
+							"epilogue": "체육시간에 어떤 운동을 하는게 가장 좋을까요?",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_2_5_5_Q2.png?=t2",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "축구",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "야구",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "배구",
+									"val": "3"
+								},
+								{
+									"img": "",
+									"txt": "농구",
+									"val": "4"
+								},
+							],
+							"answer": [
+								"1"
+							],
+						},
+						{
+							"id": 10,
+							"epilogue": "조사한 전체 학생 수는 모두 몇 명일까요?",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/TIMEATTACK/QUE_IMG_2_5_5_Q2.png?=t2",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "23명",
+									"val": "1"
+								},
+								{
+									"img": "",
+									"txt": "25명",
+									"val": "2"
+								},
+								{
+									"img": "",
+									"txt": "27명",
+									"val": "3"
+								},
+								{
+									"img": "",
+									"txt": "29명",
+									"val": "4"
+								},
+							],
+							"answer": [
+								"4"
+							],
+						},
+					],
+					"type": "TIMEATTACK",
+				},
+			}
+		},
+		"unit6": {
+			"1": {
+				"id": 1,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "구슬의 개수로 알맞은 것이 아닌 것은?",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_6_1_01.png?=t2",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "50개",
+									"val": "50개"
+								},
+								{
+									"img": "apple",
+									"txt": "10개씩 5묶음",
+									"val": "10개씩 5묶음"
+								},
+								{
+									"img": "watermelon",
+									"txt": "60개",
+									"val": "60개"
+								},
+							],
+							"answer": [
+								"60개"
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "㉠에 알맞은 수를 고르세요.",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_6_1_02.png?=t",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "50",
+									"val": "50"
+								},
+								{
+									"img": "apple",
+									"txt": "70",
+									"val": "70"
+								},
+								{
+									"img": "watermelon",
+									"txt": "100",
+									"val": "100"
+								},
+							],
+							"answer": [
+								"70"
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "덧셈을 해 보세요.",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_6_1_03.png?=t",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "36",
+									"val": "36"
+								},
+								{
+									"img": "apple",
+									"txt": "42",
+									"val": "42"
+								},
+								{
+									"img": "watermelon",
+									"txt": "46",
+									"val": "46"
+								},
+							],
+							"answer": [
+								"46"
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "계산해 보세요.",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_6_1_04.png?=t",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "16",
+									"val": "16"
+								},
+								{
+									"img": "apple",
+									"txt": "20",
+									"val": "20"
+								},
+								{
+									"img": "watermelon",
+									"txt": "24",
+									"val": "24"
+								},
+							],
+							"answer": [
+								"16"
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "계산해 보세요.",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_6_1_05.png?=t",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "12",
+									"val": "12"
+								},
+								{
+									"img": "apple",
+									"txt": "18",
+									"val": "18"
+								},
+								{
+									"img": "watermelon",
+									"txt": "24",
+									"val": "24"
+								},
+							],
+							"answer": [
+								"18"
+							],
+						},
+					],
+					"type": "MART",
+				},
+			},
+			"2": {
+				"id": 2,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_6_2_01.png?=t",
+									"txt": "공은 모두 몇 개인지 세어 보세요.",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "9개",
+									"val": "9개"
+								},
+								{
+									"img": "",
+									"txt": "12개",
+									"val": "12개"
+								},
+								{
+									"img": "",
+									"txt": "15개",
+									"val": "15개"
+								}
+							],
+							"answer": [
+								"12개"
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_6_2_02.png?=t2",
+									"txt": "몇 개인지 뛰어 세어 보세요.",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "8개",
+									"val": "8개"
+								},
+								{
+									"img": "",
+									"txt": "10개",
+									"val": "10개"
+								},
+								{
+									"img": "",
+									"txt": "12개",
+									"val": "12개"
+								}
+							],
+							"answer": [
+								"8개"
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_6_2_03.png?=t",
+									"txt": "화분을 3씩 묶으면 몇 묶음일까요?",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "4묶음",
+									"val": "4묶음"
+								},
+								{
+									"img": "",
+									"txt": "5묶음",
+									"val": "5묶음"
+								},
+								{
+									"img": "",
+									"txt": "6묶음",
+									"val": "6묶음"
+								}
+							],
+							"answer": [
+								"6묶음"
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_6_2_03.png?=t1",
+									"txt": "화분을 6씩 묶으면 몇 묶음일까요?",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "3묶음",
+									"val": "3묶음"
+								},
+								{
+									"img": "",
+									"txt": "4묶음",
+									"val": "4묶음"
+								},
+								{
+									"img": "",
+									"txt": "5묶음",
+									"val": "5묶음"
+								}
+							],
+							"answer": [
+								"3묶음"
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/QUIZBATTLE/QUE_IMG_2_6_2_03.png?=t",
+									"txt": "화분은 모두 몇 개일까요?",
+									"val": ""
+								}
+							],
+							"view": [
+								{
+									"img": "",
+									"txt": "12개",
+									"val": "12개"
+								},
+								{
+									"img": "",
+									"txt": "18개",
+									"val": "18개"
+								},
+								{
+									"img": "",
+									"txt": "24개",
+									"val": "24개"
+								}
+							],
+							"answer": [
+								"18개"
+							],
+						},
+					],
+					"type": "QUIZBATTLE",
+				},
+			},
+			"3": {
+				"id": 3,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "몇씩 몇 묶음과 몇의 몇 배를 알맞게 맞춰 보세요.",
+							"view": [
+								{
+									"img": "",
+									"txt": "2씩 3묶음",
+									"val": "6"
+								},
+								{
+									"img": "",
+									"txt": "3의 5배",
+									"val": "15"
+								},
+								{
+									"img": "",
+									"txt": "5씩 2묶음",
+									"val": "10"
+								},
+								{
+									"img": "",
+									"txt": "3씩 5묶음",
+									"val": "15"
+								},
+								{
+									"img": "",
+									"txt": "5의 2배",
+									"val": "10"
+								},
+								{
+									"img": "",
+									"txt": "2의 3배",
+									"val": "6"
+								},
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "그림과 몇의 몇 배를 알맞게 맞춰 보세요.",
+							"view": [
+								{
+									"img": "",
+									"txt": "3의 2배",
+									"val": "6"
+								},
+								{
+									"img": "",
+									"img": "../../../COMM/IMG/CARDFLIP/QUE_IMG_2_6_2_2_1.png?=t",
+									"val": "6"
+								},
+								{
+									"img": "",
+									"img": "../../../COMM/IMG/CARDFLIP/QUE_IMG_2_6_2_2_2.png?=t1",
+									"val": "16"
+								},
+								{
+									"img": "",
+									"img": "../../../COMM/IMG/CARDFLIP/QUE_IMG_2_6_2_2_3.png?=t",
+									"val": "8"
+								},
+								{
+									"img": "",
+									"txt": "2의 8배",
+									"val": "16"
+								},
+								{
+									"img": "",
+									"txt": "4의 2배",
+									"val": "8"
+								},
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "그림과 몇의 몇 배를 알맞게 맞춰 보세요.",
+							"view": [
+								{
+									"img": "",
+									"img": "../../../COMM/IMG/CARDFLIP/QUE_IMG_2_6_2_3_1.png?=t",
+									"val": "10"
+								},
+								{
+									"img": "",
+									"txt": "4의 4배",
+									"val": "16"
+								},
+								{
+									"img": "",
+									"img": "../../../COMM/IMG/CARDFLIP/QUE_IMG_2_6_2_3_2.png?=t",
+									"val": "4"
+								},
+								{
+									"img": "",
+									"txt": "2의 2배",
+									"val": "4"
+								},
+								{
+									"img": "",
+									"img": "../../../COMM/IMG/CARDFLIP/QUE_IMG_2_6_2_3_3.png?=t",
+									"val": "16"
+								},
+								{
+									"img": "",
+									"txt": "5의 2배",
+									"val": "10"
+								},
+							],
+						},
+					],
+					"type": "CARDFLIP",
+				},
+			},
+			"4": {
+				"id": 4,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "나타내는 수가 다른 것을 고르세요.",
+							"view": [
+								{
+									"img": "",
+									"txt": "7의 4배"
+								},
+								{
+									"img": "",
+									"txt": "7×7"
+								},
+								{
+									"img": "",
+									"txt": "7+7+7+7"
+								},
+							],
+							"answer": [
+								"7×7"
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "나타내는 수가 다른 것을 고르세요.",
+							"view": [
+								{
+									"img": "",
+									"txt": "6+6+6+6"
+								},
+								{
+									"img": "",
+									"txt": "6×3"
+								},
+								{
+									"img": "",
+									"txt": "6씩 3묶음"
+								},
+							],
+							"answer": [
+								"6+6+6+6"
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "나타내는 수가 다른 것을 고르세요.",
+							"view": [
+								{
+									"img": "",
+									"txt": "5+5+5+5"
+								},
+								{
+									"img": "",
+									"txt": "5씩 5묶음"
+								},
+								{
+									"img": "",
+									"txt": "5×4"
+								},
+							],
+							"answer": [
+								"5씩 5묶음"
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "나타내는 수가 다른 것을 고르세요.",
+							"view": [
+								{
+									"img": "",
+									"txt": "8의 4배"
+								},
+								{
+									"img": "",
+									"txt": "8+8+8+8"
+								},
+								{
+									"img": "",
+									"txt": "8×3"
+								},
+							],
+							"answer": [
+								"8×3"
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "나타내는 수가 다른 것을 고르세요.",
+							"view": [
+								{
+									"img": "",
+									"txt": "9씩 4묶음"
+								},
+								{
+									"img": "",
+									"txt": "9+9+9"
+								},
+								{
+									"img": "",
+									"txt": "9×3"
+								},
+							],
+							"answer": [
+								"9씩 4묶음"
+							],
+						},
+					],
+					"type": "PEARLPICKUP",
+				},
+			},
+			"5": {
+				"id": 5,
+				"game": {
+					"data": [
+						{
+							"id": 1,
+							"epilogue": "나비의 수를 바르게 나타낸 것을 고르세요.",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_6_5_01.png?=t",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "4씩 3묶음",
+									"val": "4씩 3묶음"
+								},
+								{
+									"img": "apple",
+									"txt": "4×4=16",
+									"val": "4×4=16"
+								},
+								{
+									"img": "watermelon",
+									"txt": "3의 4배",
+									"val": "3의 4배"
+								},
+							],
+							"answer": [
+								"4×4=16"
+							],
+						},
+						{
+							"id": 2,
+							"epilogue": "구슬의 수를 바르게 나타낸 것을 고르세요.",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_6_5_02.png?=t",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "7+7=14",
+									"val": "7+7=14"
+								},
+								{
+									"img": "apple",
+									"txt": "7의 3배",
+									"val": "7의 3배"
+								},
+								{
+									"img": "watermelon",
+									"txt": "7×3=14",
+									"val": "7×3=14"
+								},
+							],
+							"answer": [
+								"7의 3배"
+							],
+						},
+						{
+							"id": 3,
+							"epilogue": "전체 수를 곱셈식으로 잘못 나타낸 것을 고르세요.",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_6_5_03.png?=t1",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "8×3=24",
+									"val": "8×3=24"
+								},
+								{
+									"img": "apple",
+									"txt": "4×7=24",
+									"val": "4×7=24"
+								},
+								{
+									"img": "watermelon",
+									"txt": "6×4=24",
+									"val": "6×4=24"
+								},
+							],
+							"answer": [
+								"4×7=24"
+							],
+						},
+						{
+							"id": 4,
+							"epilogue": "전체 수를 곱셈식으로 잘못 나타낸 것을 고르세요.",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_6_5_04.png?=t",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "2×8=18",
+									"val": "2×8=18"
+								},
+								{
+									"img": "apple",
+									"txt": "3×6=18",
+									"val": "3×6=18"
+								},
+								{
+									"img": "watermelon",
+									"txt": "9×2=18",
+									"val": "9×2=18"
+								},
+							],
+							"answer": [
+								"2×8=18"
+							],
+						},
+						{
+							"id": 5,
+							"epilogue": "전체 수를 곱셈식으로 잘못 나타낸 것을 고르세요.",
+							"exam": [
+								{
+									"img": "../../../COMM/IMG/MART/QUE_IMG_2_6_5_05.png?=t1",
+									"txt": "",
+									"val": "1"
+								}
+							],
+							"view": [
+								{
+									"img": "grape",
+									"txt": "4×3=12",
+									"val": "4×3=12"
+								},
+								{
+									"img": "apple",
+									"txt": "2×6=12",
+									"val": "2×6=12"
+								},
+								{
+									"img": "watermelon",
+									"txt": "3×5=12",
+									"val": "3×5=12"
+								},
+							],
+							"answer": [
+								"3×5=12"
+							],
+						},
+					],
+					"type": "MART",
+				},
+			}
+		},
+	},
+}

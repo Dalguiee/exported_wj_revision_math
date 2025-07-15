@@ -1,0 +1,1420 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>개정교육과정-확인문제</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="KeyWORDs" content="" />
+    <meta name="Description" content="" />
+    <meta name="Robots" content="all" />
+    <meta http-equiv="Subject" content="" />
+    <meta http-equiv="Title" content="" />
+    <meta http-equiv="Author" content="onflou " />
+    <meta http-equiv="Publisher" content="" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="Pragma" content="no-cache" />
+
+    <!-- 브라우저 호환성을 지정 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="#" />
+    <link href="../../../COMM/CSS/VIDEO.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/COMMON.CSS" rel="stylesheet" />
+    <!-- 개념익히기, 확인문제 공통 css -->
+    <link href="../../../COMM/CSS/COMMONLAYOUT.CSS" rel="stylesheet" />
+    <!-- 확인문제 공통 css-->
+    <link href="../../../COMM/CSS/CHECKEXAM2.CSS" rel="stylesheet" />
+
+    <style>
+      .checkexam-warp .content-warp {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(-50%) translateY(-50%);
+        width: 100%;
+        height: 100%;
+      }
+
+      .quiz {
+        width: 200px;
+        height: 114px;
+        border-radius: 20px;
+        background-color: #bedaff;
+      }
+
+      .quiz.active {
+        color: #fff;
+      }
+
+      .placeholder {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* hint */
+
+      .blinking {
+        animation: 1.4s blinking infinite;
+        animation-iteration-count: 3;
+      }
+
+      .hint.blinking {
+        animation: 1.2s blinking infinite;
+        animation-iteration-count: 5;
+      }
+
+      .hintText.blinking {
+        animation: 1s blinking infinite;
+        animation-iteration-count: 3;
+      }
+
+      .quizBox {
+        box-sizing: border-box;
+        border: 4px solid #ff64dc;
+        border-radius: 10px;
+        width: 133px;
+        height: 75px;
+      }
+
+      .draggable-warp {
+        position: unset;
+        transform: unset;
+        width: 100%;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 114px;
+        z-index: 9999;
+      }
+
+      .hintImg {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      .quizBoxs {
+        margin: 0 20px;
+      }
+
+      /* 차시 공통 사용 */
+      .tableTitle {
+        padding: 10px 16px 12px;
+        border-radius: 10px;
+        background-color: #dbd8fa;
+        font-size: 36px;
+        display: flex;
+      }
+
+      .tableTitle.green {
+        background-color: #c7e667;
+      }
+
+      .tableTitle.blue {
+        background-color: #bedaff;
+      }
+
+      .quiz-warp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+      }
+
+      .quiz-warp .tableTitle {
+        margin-bottom: 20px;
+      }
+
+      .tableWrap {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        border: solid 2px #c4bffd;
+        overflow: hidden;
+        font-size: 36px;
+      }
+
+      .tableWrap .tr {
+        display: flex;
+      }
+
+      .tableWrap .tr + .tr {
+        border-top: 2px solid #c4bffd;
+      }
+
+      .tableWrap .tr1 {
+        height: 92px;
+      }
+
+      .tableWrap .tr2 {
+        height: 100px;
+      }
+
+      .tableWrap .tr .td {
+        width: 136px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .tableWrap .tr .th {
+        background-color: #dbd8fa;
+      }
+
+      .tableWrap .tr .td + .td {
+        border-left: 2px solid #c4bffd;
+      }
+
+      .tableWrap .tr .td_cate {
+        width: 145px;
+      }
+
+      .tableWrap .tr .td_sum {
+        width: 168px;
+      }
+
+      .tableWrap.green,
+      .tableWrap.green .tr + .tr,
+      .tableWrap.green .tr .td + .td {
+        border-color: #a3bb58;
+      }
+
+      .tableWrap.green .tr .th {
+        background-color: rgba(199, 230, 103, 0.7);
+      }
+
+      .tableWrap.blue,
+      .tableWrap.blue .tr + .tr,
+      .tableWrap.blue .tr .td + .td {
+        border-color: #a0bce1;
+      }
+
+      .tableWrap.blue .tr .th {
+        background-color: #bedaff;
+      }
+
+      .epilogue-warp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .epilogue-warp .tableTitle {
+        margin-bottom: 20px;
+      }
+
+      /* -----------------step1------------------ */
+      .step1 .innerConWrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 118px;
+      }
+
+      .step1 .quiz-warp .innerQuizWarp {
+        padding: 32px 60px;
+        border-radius: 20px;
+        background-color: #ffd339b2;
+      }
+      .step1 .quiz-warp .innerQuizWarp p:last-of-type {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 20px;
+      }
+
+      .step1 .quiz-warp .innerQuizWarp .quizBoxs {
+        margin-left: 0px;
+        margin-right: 2px;
+      }
+
+      /* -----------------step2------------------ */
+      .step2 .content-warp {
+        flex-direction: unset;
+        align-items: flex-start;
+        gap: 58px;
+        margin-top: 150px;
+      }
+
+      /* -----------------step3------------------ */
+      .step3 .tableTitle,
+      .step4 .tableTitle,
+      .step5 .tableTitle {
+        font-size: 28.84px;
+        padding: 8px 12.5px 10px;
+      }
+
+      .step3 .tableWrap,
+      .step4 .tableWrap,
+      .step5 .tableWrap {
+        font-size: 34.68px;
+      }
+
+      .step3 .tableWrap .tr .td,
+      .step4 .tableWrap .tr .td,
+      .step5 .tableWrap .tr .td {
+        width: 120px;
+      }
+
+      .step3 .tableWrap .tr .td1,
+      .step4 .tableWrap .tr .td1,
+      .step5 .tableWrap .tr .td1 {
+        width: 125px;
+      }
+
+      .step3 .hint {
+        position: relative;
+        /* top: 215px; */
+        font-size: 36px;
+        font-weight: 700;
+      }
+
+      .step3 .hint.red {
+        color: #e72e26;
+      }
+
+      .step3 .innerConWrap {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 42px;
+        margin-bottom: 80px;
+      }
+
+      /* -----------------step4------------------ */
+      /* -----------------step5------------------ */
+      .step4 .innerConWrap,
+      .step5 .innerConWrap {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 42px;
+        margin-bottom: 80px;
+      }
+
+      .step4 .innerConWrap {
+        margin-bottom: 0;
+      }
+
+      .step4 .quizBoxs {
+        font-size: 40px;
+        font-weight: 800;
+        color: black;
+        border-radius: 10px;
+        border: 5px solid #ff6fde;
+        background: white;
+        width: 133px;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+      }
+
+      .step4 .text-warp,
+      .step5 .text-warp {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        margin: 70px;
+      }
+
+      .step4 .text-warp .quizBoxs,
+      .step5 .text-warp .quizBoxs {
+        margin-right: 3px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div
+        id="contents-wrap"
+        class="test"
+        style="position: absolute; display: flex"
+      ></div>
+      <div id="contents-main" style="display: none" class="checkexam-warp">
+        <div class="checkexam-warp_inner">
+          <header class="header">
+            <div class="header_title">
+              <button class="sound-btn" onclick="titleSound()"></button>
+              <h3>그림을 보고 알맞은 것을 골라 보세요.</h3>
+            </div>
+            <ul class="step-list">
+              <li class="step-list_item active">1</li>
+              <li class="step-list_item">2</li>
+              <li class="step-list_item">3</li>
+              <li class="step-list_item">4</li>
+              <li class="step-list_item">5</li>
+            </ul>
+          </header>
+          <main class="main">
+            <div class="main_content">
+              <!-- 콘텐츠영역 -->
+              <!----------- step1 ----------->
+              <div class="step step1" style="display: none">
+                <div class="content-warp">
+                  <div class="innerConWrap">
+                    <div class="epilogue-warp">
+                      <div class="tableTitle"></div>
+                      <div class="epilogueImg"></div>
+                    </div>
+                    <div class="quiz-warp"></div>
+                  </div>
+                </div>
+              </div>
+              <!----------- step2 ----------->
+              <div class="step step2" style="display: none">
+                <div class="content-warp">
+                  <div class="epilogue-warp">
+                    <div class="tableTitle"></div>
+                    <div class="epilogueImg"></div>
+                  </div>
+                  <div class="quiz-warp">
+                    <div class="tableTitle"></div>
+                    <div class="tableWrap">
+                      <div class="tr tr1">
+                        <div class="th td td_cate"></div>
+                        <div class="th td td1"></div>
+                        <div class="th td td2"></div>
+                        <div class="th td td3"></div>
+                        <div class="th td td4"></div>
+                        <div class="th td td_sum">합계</div>
+                      </div>
+                      <div class="tr tr2">
+                        <div class="th td td_cate">학생 수<br />(명)</div>
+                        <div class="td td1"></div>
+                        <div class="td td2">
+                          <div class="quiz-box quiz-box-1"></div>
+                        </div>
+                        <div class="td td3">
+                          <div class="quiz-box quiz-box-2"></div>
+                        </div>
+                        <div class="td td4">
+                          <div class="quiz-box quiz-box-3"></div>
+                        </div>
+                        <div class="td td_sum">
+                          <div class="quiz-box quiz-box-4"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!----------- step3 ----------->
+              <div class="step step3" style="display: none">
+                <div class="content-warp">
+                  <div class="innerConWrap">
+                    <div class="epilogue-warp">
+                      <div class="tableTitle"></div>
+                      <div class="tableWrap">
+                        <div class="tr tr1">
+                          <div class="th td td1"></div>
+                          <div class="th td td2"></div>
+                          <div class="th td td3"></div>
+                          <div class="th td td4"></div>
+                          <div class="th td td5"></div>
+                          <div class="th td td6">합계</div>
+                        </div>
+                        <div class="tr tr2">
+                          <div class="th td td1">학생 수<br />(명)</div>
+                          <div class="td td2">
+                            <div class="hint hint1"></div>
+                          </div>
+                          <div class="td td3">
+                            <div class="hint hint2"></div>
+                          </div>
+                          <div class="td td4">
+                            <div class="hint hint3"></div>
+                          </div>
+                          <div class="td td5">
+                            <div class="hint hint4"></div>
+                          </div>
+                          <div class="td td_sum"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="quiz-warp">
+                      <div class="tableTitle"></div>
+                      <div class="quizImg"></div>
+                    </div>
+                  </div>
+                  <div class="select-warp"></div>
+                </div>
+              </div>
+              <!----------- step4 ----------->
+              <div class="step step4" style="display: none">
+                <div class="content-warp">
+                  <div class="innerConWrap">
+                    <div class="epilogue-warp">
+                      <div class="tableTitle"></div>
+                      <div class="tableWrap">
+                        <div class="tr tr1">
+                          <div class="th td td1"></div>
+                          <div class="th td td2"></div>
+                          <div class="th td td3"></div>
+                          <div class="th td td4"></div>
+                          <div class="th td td5"></div>
+                          <div class="th td td6">합계</div>
+                        </div>
+                        <div class="tr tr2">
+                          <div class="th td td1">학생 수<br />(명)</div>
+                          <div class="td td2"></div>
+                          <div class="td td3"></div>
+                          <div class="td td4"></div>
+                          <div class="td td5"></div>
+                          <div class="td td_sum"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="quiz-warp">
+                      <div class="tableTitle"></div>
+                      <div class="quizImg"></div>
+                    </div>
+                  </div>
+                  <div class="text-warp"></div>
+                  <div class="select-warp"></div>
+                </div>
+              </div>
+              <!----------- step5 ----------->
+              <div class="step step5" style="display: none">
+                <div class="content-warp">
+                  <div class="innerConWrap">
+                    <div class="epilogue-warp">
+                      <div class="tableTitle"></div>
+                      <div class="tableWrap">
+                        <div class="tr tr1">
+                          <div class="th td td1"></div>
+                          <div class="th td td2"></div>
+                          <div class="th td td3"></div>
+                          <div class="th td td4"></div>
+                          <div class="th td td5"></div>
+                          <div class="th td td6">합계</div>
+                        </div>
+                        <div class="tr tr2">
+                          <div class="th td td1">학생 수<br />(명)</div>
+                          <div class="td td2"></div>
+                          <div class="td td3"></div>
+                          <div class="td td4"></div>
+                          <div class="td td5"></div>
+                          <div class="td td_sum"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="quiz-warp">
+                      <div class="tableTitle"></div>
+                      <div class="quizImg"></div>
+                    </div>
+                  </div>
+                  <div class="text-warp"></div>
+                </div>
+              </div>
+              <!----------- step 끝 ----------->
+            </div>
+          </main>
+          <div class="main_prev-next">
+            <button class="btn-prev" style="display: none">이전버튼</button>
+            <button class="btn-next" style="display: block" disabled>
+              다음버튼
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- 키패드 -->
+      <div class="key-pad" style="display: none">
+        <button class="key-pad_btn">1</button>
+        <button class="key-pad_btn">2</button>
+        <button class="key-pad_btn">3</button>
+        <button class="key-pad_btn">4</button>
+        <button class="key-pad_btn">5</button>
+        <button class="key-pad_btn-back"></button>
+        <button class="key-pad_btn">6</button>
+        <button class="key-pad_btn">7</button>
+        <button class="key-pad_btn">8</button>
+        <button class="key-pad_btn">9</button>
+        <button class="key-pad_btn">0</button>
+        <button class="key-pad_btn-check"></button>
+      </div>
+      <!-- 정답 시 나타나는 캐릭터 -->
+      <div class="reaction">
+        <div class="re-body"></div>
+      </div>
+      <!-- 힌트 박스 -->
+      <div class="hintBox-warp">
+        <div class="hintBox">
+          <div class="hintBox_character">
+            <div class="hintBox_character_inner"></div>
+          </div>
+          <div class="hintBox_text-box"></div>
+        </div>
+      </div>
+    </div>
+    <script
+      crossorigin
+      src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"
+    ></script>
+    <script src="../../../COMM/JS/COMMON2.JS"></script>
+    <script src="../../../COMM/JS/CHECKEXAM2.JS"></script>
+    <script src="../../../COMM/JS/GAME.JS"></script>
+    <script src="../../../COMM/JS/VIDEO.JS"></script>
+    <script src="../../../COMM/JS/VIDEO-HTTP-STREAMING.JS"></script>
+    <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+    <script src="../../../COMM/JS/GAMEDATASET2.JSON"></script>
+    <script>
+      // Y - 전체 문제 확인
+      // (공백) - 랜덤 문제 (운영 단계 필수)
+      const developMode = "";
+
+      /*
+       * 데이터
+       */
+      const videoURL =
+        "http://hlsmedia.wjthinkbig.com/hlsmedia/_definst_/smil:hlsmedia/BOOKCLUB/NFTF/MP4/MATH/GR12/5/GR12_5_5713367.SMIL/playlist.m3u8";
+
+      //페이지 정보
+      const grade = "grade2"; //학년
+      const unit = "unit5"; //단원
+      const chapter = 5; //차시
+
+      // if (dataset[grade][unit][chapter]) {
+      const gameData = JSON.parse(
+        JSON.stringify(dataset[grade][unit][chapter])
+      );
+      // }
+
+      let intro = {
+        type: "checkExam", //concept 개념익히기, checkExam 확인문제
+        title: "표와 그래프로 나타내 볼까요",
+        subTitle: ["자료를 조사하여 표와 그래프로 나타낼 수 있어요."],
+        sound: "../../../COMM/SOUND/2_5_3/2_1_5-3_029.mp3",
+      };
+
+      let pageData = [
+        // 1문항
+        {
+          title: "조사한 자료를 보고 □ 안에 알맞은 수를 써넣으세요.",
+          sound: "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_43.mp3",
+          quiz: {
+            hint: "조사한 학생은 모두 몇 명인지 세어 봐.",
+            sound: "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_44.mp3",
+            type: "keypad",
+            data: [
+              {
+                id: 1,
+                next: 1,
+                answer: [15],
+                markup: {
+                  examImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE1_EXAM_1_ver4.png`,
+                  quizTexts: `<p>선영이네 반 학생은 모두</p><p><span class="quizBoxs quizBoxs1"></span>명입니다.</p>`,
+                  tableTitle: `선영이네 반 학생들이 좋아하는 계절`,
+                  tableColor: "purple",
+                },
+              },
+              {
+                id: 2,
+                next: 2,
+                answer: [12],
+                markup: {
+                  examImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE1_EXAM_2_ver5.png`,
+                  quizTexts: `<p>명수네 반 학생은 모두</p><p><span class="quizBoxs quizBoxs1"></span>명입니다.</p>`,
+                  tableTitle: `명수네 반 학생들이 좋아하는 간식`,
+                  tableColor: "green",
+                },
+              },
+              {
+                id: 3,
+                next: 3,
+                answer: [20],
+                markup: {
+                  examImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE1_EXAM_3_ver4.png`,
+                  quizTexts: `<p>원재네 반 학생은 모두</p><p><span class="quizBoxs quizBoxs1"></span>명입니다.</p>`,
+                  tableTitle: `원재네 반 학생들이 좋아하는 과일`,
+                  tableColor: "blue",
+                },
+              },
+            ],
+          },
+        },
+
+        // 2문항
+        {
+          title: "조사한 자료를 보고 표로 나타내 보세요.",
+          sound: "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_45.mp3",
+          quiz: {
+            type: "keypad",
+            data: [
+              {
+                id: 1,
+                next: 1,
+                hint: "좋아하는 계절별 학생 수를 세어서 표에 쓰고, <br/>전체 학생 수를 합계에 써 봐.",
+                sound: "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_46.mp3",
+                answer: [5, 5, 2, 15],
+                markup: {
+                  examImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE1_EXAM_1_ver4.png`,
+                  quizImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE2_QUIZ_1_ver2.png`,
+                  tableTitle: `선영이네 반 학생들이 좋아하는 계절`,
+                  tableData: ["계절", "봄", "여름", "가을", "겨울", "3"],
+                  tableColor: "purple",
+                },
+              },
+              {
+                id: 2,
+                next: 2,
+                hint: "좋아하는 간식별 학생 수를 세어서 표에 쓰고, <br/>전체 학생 수를 합계에 써 봐.",
+                sound: "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_47.mp3",
+                answer: [4, 3, 5, 12],
+                markup: {
+                  examImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE1_EXAM_2_ver5.png`,
+                  quizImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE2_QUIZ_2_ver2.png`,
+                  tableTitle: `명수네 반 학생들이 좋아하는 간식`,
+                  tableData: ["간식", "닭튀김", "햄버거", "피자"],
+                  tableColor: "green",
+                },
+              },
+              {
+                id: 3,
+                next: 3,
+                hint: "좋아하는 과일별 학생 수를 세어서 표에 쓰고, <br/>전체 학생 수를 합계에 써 봐.",
+                sound: "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_48.mp3",
+                answer: [6, 4, 5, 20],
+                markup: {
+                  examImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE1_EXAM_3_ver4.png`,
+                  quizImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE2_QUIZ_3_ver2.png`,
+                  tableTitle: `원재네 반 학생들이 좋아하는 과일`,
+                  tableData: ["과일", "포도", "사과", "바나나", "복숭아", "5"],
+                  tableColor: "blue",
+                },
+              },
+            ],
+          },
+        },
+
+        // 3문항
+        {
+          title: "그래프에서 잘못 나타낸 것은 무엇인가요?",
+          sound: "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_59.mp3",
+          quiz: {
+            type: "select",
+            data: [
+              {
+                id: 1,
+                next: 1,
+                hint: "좋아하는 계절별 학생 수를 보고 그래프로 <br/>잘못 나타낸 계절을 찾아봐.",
+                sound: "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_50.mp3",
+                answer: [3],
+                list: [
+                  { text: "봄", val: 1 },
+                  { text: "여름", val: 2 },
+                  { text: "가을", val: 3 },
+                  { text: "겨울", val: 4 },
+                ],
+                markup: {
+                  tableTitle: `선영이네 반 학생들이 좋아하는 계절별 학생 수`,
+                  tableText: [3, 5, 5, 2],
+                  tableSum: 15,
+                  tableData: ["계절", "봄", "여름", "가을", "겨울"],
+                  tableColor: "purple",
+                  examImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE3_EXAM_1_ver2.png`,
+                  quizImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE3_QUIZ_1_1_ver3.png`,
+                },
+              },
+              {
+                id: 2,
+                next: 2,
+                hint: "좋아하는 간식별 학생 수를 보고 그래프로 <br/>잘못 나타낸 간식을 찾아봐.",
+                sound: "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_51.mp3",
+                answer: [1],
+                list: [
+                  { text: "닭튀김", val: 1 },
+                  { text: "햄버거", val: 2 },
+                  { text: "피자", val: 3 },
+                ],
+                markup: {
+                  tableTitle: `명수네 반 학생들이 좋아하는 간식별 학생 수`,
+                  tableText: [4, 3, 5],
+                  tableSum: 12,
+                  tableData: ["간식", "닭튀김", "햄버거", "피자"],
+                  tableColor: "green",
+                  examImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE3_EXAM_2_ver2.png`,
+                  quizImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE3_QUIZ_2_1_ver3.png`,
+                },
+              },
+              {
+                id: 3,
+                next: 3,
+                hint: "좋아하는 과일별 학생 수를 보고 그래프로 <br/>잘못 나타낸 과일을 찾아봐.",
+                sound: "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_52.mp3",
+                answer: [4],
+                list: [
+                  { text: "포도", val: 1 },
+                  { text: "사과", val: 2 },
+                  { text: "바나나", val: 3 },
+                  { text: "복숭아", val: 4 },
+                ],
+                markup: {
+                  tableTitle: `원재네 반 학생들이 좋아하는 과일별 학생 수`,
+                  tableText: [5, 6, 4, 5],
+                  tableSum: 20,
+                  tableData: ["과일", "포도", "사과", "바나나", "복숭아"],
+                  tableColor: "blue",
+                  examImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE3_EXAM_3_ver2.png`,
+                  quizImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE3_QUIZ_3_1_ver3.png`,
+                },
+              },
+            ],
+          },
+        },
+        // 4문항
+        {
+          title: "표와 그래프를 보고 □ 안에 알맞은 말을 고르세요.",
+          sound: "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_60.mp3",
+          quiz: {
+            type: "select",
+            hint: "표에서 학생 수를 비교해서 알 수도 있고, <br/>그래프에서 ○의 수를 보고 알 수도 있어.",
+            sound: "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_54.mp3",
+            data: [
+              {
+                id: 1,
+                next: 1,
+                answer: [2],
+                list: [
+                  { text: "봄", val: 1 },
+                  { text: "가을", val: 2 },
+                  { text: "겨울", val: 3 },
+                ],
+                markup: {
+                  tableTitle: `선영이네 반 학생들이 좋아하는 계절별 학생 수`,
+                  tableText: [3, 5, 5, 2],
+                  tableSum: 15,
+                  tableData: ["계절", "봄", "여름", "가을", "겨울"],
+                  tableColor: "purple",
+                  texts: `여름, <span class="quizBoxs quizBoxs1"><span class="placeholder">?</span></span>을 좋아하는 학생 수는 같습니다.`,
+                  examImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE4_EXAM_1_ver2.png`,
+                  quizImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE3_QUIZ_1_ver3.png`,
+                },
+              },
+              {
+                id: 2,
+                next: 2,
+                answer: [2],
+                list: [
+                  { text: "닭튀김", val: 1 },
+                  { text: "햄버거", val: 2 },
+                  { text: "피자", val: 3 },
+                ],
+                markup: {
+                  tableTitle: `명수네 반 학생들이 좋아하는 간식별 학생 수`,
+                  tableText: [4, 3, 5],
+                  tableSum: 12,
+                  tableData: ["간식", "닭튀김", "햄버거", "피자"],
+                  tableColor: "green",
+                  texts: `가장 적은 학생들이 좋아하는 간식은 <span class="quizBoxs quizBoxs1"><span class="placeholder">?</span></span>입니다.`,
+                  examImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE4_EXAM_2_ver2.png`,
+                  quizImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE3_QUIZ_2_ver3.png`,
+                },
+              },
+              {
+                id: 3,
+                next: 3,
+                answer: [3],
+                list: [
+                  { text: "사과", val: 1 },
+                  { text: "바나나", val: 2 },
+                  { text: "복숭아", val: 3 },
+                ],
+                markup: {
+                  tableTitle: `원재네 반 학생들이 좋아하는 과일별 학생 수`,
+                  tableText: [5, 6, 4, 5],
+                  tableSum: 20,
+                  tableData: ["과일", "포도", "사과", "바나나", "복숭아"],
+                  tableColor: "blue",
+                  texts: `포도, <span class="quizBoxs quizBoxs1"><span class="placeholder">?</span></span>를 좋아하는 학생 수는 같습니다.`,
+                  examImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE4_EXAM_3_ver2.png`,
+                  quizImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE3_QUIZ_3_ver3.png`,
+                },
+              },
+            ],
+          },
+        },
+
+        // 5문항
+        {
+          title: "표와 그래프를 보고 □ 안에 알맞은 수를 써넣으세요.",
+          sound: "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_55.mp3",
+          quiz: {
+            type: "keypad",
+            data: [
+              {
+                id: 1,
+                next: 1,
+                hint: "표 또는 그래프를 보고 가을을 좋아하는 학생 수와 겨울을 좋아하는 학생 수를 알아봐.",
+                sound: "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_56.mp3",
+                answer: [3],
+                markup: {
+                  tableTitle: `선영이네 반 학생들이 좋아하는 계절별 학생 수`,
+                  tableText: [3, 5, 5, 2],
+                  tableSum: 15,
+                  tableData: ["계절", "봄", "여름", "가을", "겨울"],
+                  tableColor: "purple",
+                  texts: `가을을 좋아하는 학생은 겨울을 좋아하는 학생보다 <span class="quizBoxs quizBoxs1"></span>명 더 많습니다.`,
+                  examImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE4_EXAM_1_ver2.png`,
+                  quizImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE3_QUIZ_1_ver3.png`,
+                },
+              },
+              {
+                id: 2,
+                next: 2,
+                hint: "표 또는 그래프를 보고 피자를 좋아하는 학생 수와 닭튀김을 좋아하는 학생 수를 알아봐.",
+                sound: "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_57.mp3",
+                answer: [1],
+                markup: {
+                  tableTitle: `명수네 반 학생들이 좋아하는 간식별 학생 수`,
+                  tableText: [4, 3, 5],
+                  tableSum: 12,
+                  tableData: ["간식", "닭튀김", "햄버거", "피자"],
+                  tableColor: "green",
+                  texts: `피자를 좋아하는 학생은 닭튀김을 좋아하는 학생보다 <span class="quizBoxs quizBoxs1"></span>명 더 많습니다.`,
+                  examImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE4_EXAM_2_ver2.png`,
+                  quizImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE3_QUIZ_2_ver3.png`,
+                },
+              },
+              {
+                id: 3,
+                next: 3,
+                hint: "표 또는 그래프를 보고 사과를 좋아하는 학생 수와 바나나를 좋아하는 학생 수를 알아봐.",
+                sound: "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_58.mp3",
+                answer: [2],
+                markup: {
+                  tableTitle: `원재네 반 학생들이 좋아하는 과일별 학생 수`,
+                  tableText: [5, 6, 4, 5],
+                  tableSum: 20,
+                  tableData: ["과일", "포도", "사과", "바나나", "복숭아"],
+                  tableColor: "blue",
+                  texts: `사과를 좋아하는 학생은 바나나를 좋아하는 학생보다 <span class="quizBoxs quizBoxs1"></span>명 더 많습니다.`,
+                  examImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE4_EXAM_3_ver2.png`,
+                  quizImg: `../../../COMM/IMG/TEST7/2_5_5/TYPE3_QUIZ_3_ver3.png`,
+                },
+              },
+            ],
+          },
+        },
+      ];
+
+      let audio = new Audio();
+      //현재 페이지
+      let disStep = 1;
+      //완료된 페이지
+      let completeStep = 0;
+
+      let disQuiz = 1; // 해당 코드 수정 X
+      if (developMode == "Y") {
+        // 문제 번호 별로 확인 시 해당 코드 수정!
+        disQuiz = 1;
+      }
+      // 완료된 스텝
+      let completeQuiz = [];
+
+      //각 문항별 정답
+      let answerArr = [];
+      //정답 입력
+      let answerInput = [];
+      //몇 번 틀렸는지 체크
+      let wrongCheck = 0;
+
+      // 연결된 점 카운트 (선긋기형)
+      let dotToDotCount = 0;
+      let dotToDotLength = 0;
+
+      let tempTime;
+
+      const createKeypadEl = (idx, max) => {
+        return `<div class="question-box question-box-max-${max} key-pad-on quizbtn_${idx}" data-val="${idx}" data-max="${max}">?</div>`;
+      };
+
+      const answerSet = (idx, i = 0) => {
+        answerArr[idx] = typeData[idx][i];
+
+        // 힌트 & 힌트 사운드 setting
+        // 각 quiz data 별 hint 와 sound 있을 경우 각 quiz data의 hint 와 sound 사용
+        // 없을 경우 퀴즈 공통의 hint 와 sound 사용
+        answerArr[idx].hint = typeData[idx][i].hint
+          ? typeData[idx][i].hint
+          : pageData[idx].quiz.hint;
+        answerArr[idx].sound = typeData[idx][i].sound
+          ? typeData[idx][i].sound
+          : pageData[idx].quiz.sound;
+      };
+
+      //힌트 힌트 여러개 일 경우 메시지
+      const showHintMessage = (text, sound) => {
+        if (text && sound) {
+          audioPlayExam(audio, [sound], (idx) => {
+            if (idx === 2) {
+              $(".hintBox-warp").removeClass("show");
+              $(".hintBox").removeClass("slideUp");
+              $(".hintBox").addClass("slideDown");
+              $(".hint").hide();
+              $(".quiz").removeClass("key-hint");
+            }
+          });
+          $(".hintBox-warp").addClass("show");
+          $(".hintBox_text-box").html(text);
+          $(".hintBox").removeClass("slideDown");
+          $(".hintBox").addClass("slideUp");
+        }
+      };
+
+      // ----------shuffle----------
+      let typeData = new Array();
+      pageData.forEach((element, idx) => {
+        if (developMode != "Y") {
+          //랜덤문제
+          typeData[idx] = new Array();
+          if (idx !== 0) {
+            if (typeData[idx - 1][0].next) {
+              typeData[idx].push(
+                element.quiz.data[typeData[idx - 1][0].next - 1]
+              );
+            } else {
+              typeData[idx].push(shuffle(element.quiz.data)[0]);
+            }
+          } else {
+            typeData[idx].push(shuffle(element.quiz.data)[0]);
+          }
+
+          answerSet(idx, 0);
+        } else {
+          //developMode 일때
+          typeData.push(element.quiz.data);
+        }
+      });
+
+      //마지막으로 활성화 된 키패드 저장(힌트 여러개 일 경우)
+      const keyPadOnClick = (index) => {
+        $(`.step${index} .key-pad-on`).click(function () {
+          if (!lastKeyPad) {
+            lastKeyPad = $(this).data("val");
+          }
+        });
+      };
+
+      //dnd일 경우힌트 다르게 나오기(마지막으로 터치한 draggable의 val값)
+      let mydragOn;
+      const dragOn = (index) => {
+        $(`.step${index} .draggable`).on("touchstart click", function (event) {
+          event.preventDefault();
+          mydragOn = $(this).data("val");
+        });
+      };
+
+      //문제 시작
+      //================STEP1==============
+      const step1 = {
+        start: () => {
+          audioPlayExam(audio, [pageData[0].sound]);
+          let stepClass = "step1_" + disQuiz;
+        },
+
+        hint: () => {
+          let stepClass = "step1_" + disQuiz;
+        },
+        wrong: () => {},
+
+        complete: () => {
+          let stepClass = "step1_" + disQuiz;
+          $(`.${stepClass} .question-box`).each((idx, el) => {
+            $(el).html(
+              answerArr[0].answer[parseInt($(el).attr("data-val")) - 1]
+            );
+          });
+
+          $(`.${stepClass} .question-box`).attr("disabled", true);
+          $(`.${stepClass} .key-pad-on`).removeClass("key-pad-on");
+        },
+      };
+      //================STEP2==============
+      const step2 = {
+        start: () => {
+          audioPlayExam(audio, [pageData[1].sound]);
+          let stepClass = "step2_" + disQuiz;
+        },
+
+        hint: () => {
+          let stepClass = "step2_" + disQuiz;
+        },
+
+        wrong: () => {},
+
+        complete: () => {
+          let stepClass = "step2_" + disQuiz;
+          $(`.${stepClass} .question-box`).each((idx, el) => {
+            $(el).html(
+              answerArr[1].answer[parseInt($(el).attr("data-val")) - 1]
+            );
+          });
+
+          $(`.${stepClass} .question-box`).attr("disabled", true);
+          $(`.${stepClass} .key-pad-on`).removeClass("key-pad-on");
+        },
+      };
+      //================STEP3==============
+      const step3 = {
+        start: () => {
+          audioPlayExam(audio, [pageData[2].sound]);
+          let stepClass = "step3_" + disQuiz;
+          $(`.${stepClass} .hint`).css("display", "block");
+        },
+        hint: () => {
+          let stepClass = "step3_" + disQuiz;
+          $(`.${stepClass} .hint`).addClass("red");
+        },
+        wrong: () => {
+          audioPlayExam(audio, ["../../../COMM/SOUND/WRONG.MP3"]);
+        },
+        complete: () => {
+          let stepClass = "step3_" + disQuiz;
+          answerArr[2].answer.forEach((a, i) => {
+            $(`.${stepClass} .select-warp .quiz`)
+              .eq(a - 1)
+              .addClass("active");
+          });
+
+          $(`.${stepClass} .hint`).removeClass("red");
+          $(`.${stepClass} .quiz`).attr("disabled", true);
+        },
+      };
+      //================STEP4==============
+      const step4 = {
+        start: () => {
+          audioPlayExam(audio, [pageData[3].sound]);
+          let stepClass = "step4_" + disQuiz;
+        },
+        hint: () => {
+          let stepClass = "step4_" + disQuiz;
+        },
+        wrong: () => {
+          audioPlayExam(audio, ["../../../COMM/SOUND/WRONG.MP3"]);
+        },
+        complete: () => {
+          let stepClass = "step4_" + disQuiz;
+          answerArr[3].answer.forEach((a, i) => {
+            $(`.${stepClass} .select-warp .quiz`)
+              .eq(a - 1)
+              .addClass("active");
+          });
+          const filterList = answerArr[3].list.filter(
+            (item) => item.val == answerArr[3].answer
+          );
+
+          $(`.${stepClass} .quizBoxs`).html(filterList[0].text);
+
+          $(`.${stepClass} .quiz`).attr("disabled", true);
+        },
+      };
+      //================STEP5==============
+      const step5 = {
+        start: () => {
+          audioPlayExam(audio, [pageData[4].sound]);
+        },
+        hint: () => {
+          let stepClass = "step5_" + disQuiz;
+        },
+        wrong: () => {},
+        complete: () => {
+          let stepClass = "step5_" + disQuiz;
+          $(`.${stepClass} .question-box`).each((idx, el) => {
+            $(el).html(
+              answerArr[4].answer[parseInt($(el).attr("data-val")) - 1]
+            );
+          });
+
+          $(`.${stepClass} .question-box`).attr("disabled", true);
+          $(`.${stepClass} .key-pad-on`).removeClass("key-pad-on");
+          createNextStep();
+        },
+      };
+
+      // =====RENDER=====
+      const render = () => {
+        pageData.forEach((step, idx) => {
+          /* S: 키패드형 문제 처리 */
+          if (step.quiz.type == "keypad") {
+            keyPadEvent(idx + 1);
+          }
+          /* E: 키패드형 문제 처리 */
+
+          typeData[idx].forEach((q, i) => {
+            let stepClass = `step${idx + 1}_${i + 1}`;
+            let stepEl = $(`.${stepClass}`);
+            let renderData = typeData[idx][i];
+
+            /* S: 선택형 문제 처리 */
+            if (step.quiz.type == "select") {
+              $(document).on("click", `.${stepClass} .quiz`, function () {
+                btnClickAudioEx.play();
+                answerInput[0] = $(this).data("val");
+                answerCheckEx(idx + 1);
+              });
+            }
+            /* E: 선택형 문제 처리 */
+            /* S: 다중선택형 문제 처리 */
+            if (step.quiz.type == "multiselect") {
+              let selectAnswerCheckFlag = false;
+              $(document).on("click", `.${stepClass} .select`, function () {
+                btnClickAudioEx.play();
+                answerInput[0] = $(this).data("val");
+                selectAnswerCheckFlag = multiSelectAnswerCheckEx(idx + 1);
+
+                if (selectAnswerCheckFlag) {
+                  // 정답 일때(O표시)
+                  $(this).addClass("active");
+
+                  $(`.${stepClass} .step3anwser1 .quiz`)
+                    .not(".active")
+                    .on("click", function () {
+                      $(this).css("color", "#d9d9d9");
+                    });
+                } else {
+                  // 오답 일때(O표시)
+                  $(this).removeClass("active");
+                }
+              });
+            }
+            /* E: 다중선택형 선택형 문제 처리 */
+
+            switch (idx) {
+              // ==========step1==========
+              case 0:
+                stepEl
+                  .find(`.tableTitle`)
+                  .html(renderData.markup.tableTitle)
+                  .addClass(renderData.markup.tableColor);
+                if (renderData.id == 2) {
+                  stepEl
+                    .find(`.epilogue-warp .tableTitle`)
+                    .css("margin-left", "111px");
+                }
+
+                stepEl.find(`.epilogue-warp .epilogueImg`).html(`
+              <img src="${renderData.markup.examImg}" class="img" />
+            `);
+
+                stepEl.find(`.quiz-warp`).html(`
+              <div class="innerQuizWarp">
+              ${renderData.markup.quizTexts}
+              </div>
+            `);
+
+                for (let z = 0; z < q.answer.length; z++) {
+                  stepEl
+                    .find(`.quizBoxs${z + 1}`)
+                    .append(
+                      createKeypadEl(z + 1, q.answer[z].toString().length)
+                    );
+                }
+                break;
+              // ==========step2==========
+              case 1:
+                stepEl
+                  .find(`.tableTitle`)
+                  .html(renderData.markup.tableTitle)
+                  .addClass(renderData.markup.tableColor);
+                if (renderData.id == 2) {
+                  stepEl
+                    .find(`.epilogue-warp .tableTitle`)
+                    .css("margin-left", "111px");
+                }
+                stepEl.find(`.quiz-warp .tableTitle`).append("별 학생 수");
+                stepEl
+                  .find(`.tableWrap`)
+                  .addClass(renderData.markup.tableColor);
+
+                stepEl.find(`.epilogue-warp .epilogueImg`).append(`
+                  <img src="${renderData.markup.examImg}" class="img" />
+                `);
+
+                for (let z = 0; z < q.answer.length; z++) {
+                  stepEl
+                    .find(`.quiz-box-${z + 1}`)
+                    .append(
+                      createKeypadEl(z + 1, q.answer[z].toString().length)
+                    );
+                }
+
+                renderData.markup.tableData.forEach((txt, num) => {
+                  var tr = Math.floor(num / 5) + 1;
+                  var td = num % 5;
+
+                  if (td > 0) {
+                    if (renderData.id == 2) td += 1;
+                    stepEl.find(`.tableWrap .tr${tr} .td${td}`).html(txt);
+                  } else {
+                    if (tr == 1) {
+                      stepEl.find(`.tableWrap .tr${tr} .td_cate`).html(txt);
+                    } else {
+                      stepEl.find(`.tableWrap .tr${tr} .td1`).html(txt);
+                    }
+                  }
+                });
+
+                if (renderData.id == 2) {
+                  stepEl.find(`.tableWrap .td1`).css("display", "none");
+                }
+
+                break;
+
+              // ==========step3==========
+              case 2:
+                stepEl
+                  .find(`.tableTitle`)
+                  .html(renderData.markup.tableTitle)
+                  .addClass(renderData.markup.tableColor);
+                stepEl
+                  .find(`.tableWrap`)
+                  .addClass(renderData.markup.tableColor);
+
+                stepEl.find(`.quiz-warp .quizImg`).append(`
+                  <img src="${renderData.markup.quizImg}" class="img" />
+                `);
+
+                for (i = 0; i < renderData.markup.tableText.length; i++) {
+                  stepEl
+                    .find(`.epilogue-warp .hint${i + 1}`)
+                    .html(renderData.markup.tableText[i]);
+                }
+
+                for (i = 0; i < renderData.markup.tableData.length; i++) {
+                  stepEl
+                    .find(`.epilogue-warp .tableWrap .tr1 .td${i + 1}`)
+                    .html(renderData.markup.tableData[i]);
+                }
+
+                if (renderData.id == 2) {
+                  stepEl.find(`.tableWrap .td5`).css("display", "none");
+                }
+
+                stepEl
+                  .find(`.tableWrap .td_sum`)
+                  .html(renderData.markup.tableSum);
+
+                q.list.forEach((li, num) => {
+                  stepEl.find(".select-warp").append(`
+                    <button class="quiz select" data-val="${li.val}">${li.text}</button>
+                  `);
+                });
+
+                break;
+
+              // ==========step4==========
+              case 3:
+                stepEl
+                  .find(`.tableTitle`)
+                  .html(renderData.markup.tableTitle)
+                  .addClass(renderData.markup.tableColor);
+                stepEl
+                  .find(`.tableWrap`)
+                  .addClass(renderData.markup.tableColor);
+
+                stepEl.find(`.quiz-warp .quizImg`).append(`
+                  <img src="${renderData.markup.quizImg}" class="img" />
+                `);
+
+                for (i = 0; i < renderData.markup.tableText.length; i++) {
+                  stepEl
+                    .find(`.epilogue-warp .tr2 .td${i + 2}`)
+                    .html(renderData.markup.tableText[i]);
+                }
+
+                for (i = 0; i < renderData.markup.tableData.length; i++) {
+                  stepEl
+                    .find(`.epilogue-warp .tableWrap .tr1 .td${i + 1}`)
+                    .html(renderData.markup.tableData[i]);
+                }
+
+                if (renderData.id == 2) {
+                  stepEl.find(`.tableWrap .td5`).css("display", "none");
+                }
+
+                stepEl
+                  .find(`.tableWrap .td_sum`)
+                  .html(renderData.markup.tableSum);
+
+                stepEl.find(`.text-warp`).append(`
+                  ${renderData.markup.texts}
+                `);
+                q.list.forEach((li, num) => {
+                  stepEl.find(".select-warp").append(`
+              <button class="quiz select" data-val="${li.val}">${li.text}</button>
+            `);
+                });
+                break;
+              // ==========step5==========
+              case 4:
+                stepEl
+                  .find(`.tableTitle`)
+                  .html(renderData.markup.tableTitle)
+                  .addClass(renderData.markup.tableColor);
+                stepEl
+                  .find(`.tableWrap`)
+                  .addClass(renderData.markup.tableColor);
+
+                stepEl.find(`.quiz-warp .quizImg`).append(`
+                  <img src="${renderData.markup.quizImg}" class="img" />
+                `);
+
+                for (i = 0; i < renderData.markup.tableText.length; i++) {
+                  stepEl
+                    .find(`.epilogue-warp .tr2 .td${i + 2}`)
+                    .html(renderData.markup.tableText[i]);
+                }
+
+                for (i = 0; i < renderData.markup.tableData.length; i++) {
+                  stepEl
+                    .find(`.epilogue-warp .tableWrap .tr1 .td${i + 1}`)
+                    .html(renderData.markup.tableData[i]);
+                }
+
+                if (renderData.id == 2) {
+                  stepEl.find(`.tableWrap .td5`).css("display", "none");
+                }
+
+                stepEl
+                  .find(`.tableWrap .td_sum`)
+                  .html(renderData.markup.tableSum);
+
+                stepEl.find(`.text-warp`).append(`
+                  ${renderData.markup.texts}
+                `);
+
+                for (let z = 0; z < q.answer.length; z++) {
+                  stepEl
+                    .find(`.quizBoxs${z + 1}`)
+                    .append(
+                      createKeypadEl(z + 1, q.answer[z].toString().length)
+                    );
+                }
+                break;
+            }
+          });
+        });
+      };
+    </script>
+  </body>
+</html>

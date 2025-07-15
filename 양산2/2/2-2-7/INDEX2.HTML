@@ -1,0 +1,2391 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>개정교육과정-수학 수학 개념</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="KeyWORDs" content="" />
+    <meta name="Description" content="" />
+    <meta name="Robots" content="all" />
+    <meta http-equiv="Subject" content="" />
+    <meta http-equiv="Title" content="" />
+    <meta http-equiv="Author" content="onflou " />
+    <meta http-equiv="Publisher" content="" />
+
+    <!-- 브라우저 호환성을 지정 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="#" />
+    <link href="../../../COMM/CSS/COMMON.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/COMMONLAYOUT.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/CONCEPTCOMMON3.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/VIDEO.CSS" rel="stylesheet" />
+ 
+    <style>
+      * {
+      /* 숫자 위 수직선 간의 간격 */
+      --vertical-line-interval: 129px;
+      /* 숫자 수직선 가로 */
+      --vertical-line-num-thick: 3px;
+      /* 숫자 수직선 세로 */
+      --vertical-line-num-height: 40px;
+      /* 전체 수직선 높이 */
+      --vertical-line-thick: 3px;
+      /* 수직선 색상 */
+      --vertical-line-color: #000000;
+      /* 수직선과 숫자 사이 여백 */
+      --vertical-line-number-marginTop: 20px;
+      /* 숫자 폰트 크기 */
+      --vertical-line-fontSize: 44px;
+    }
+
+      .txt_container + span {
+        margin-left: 0;
+      }
+
+      .index_box,
+      .road_box {
+        gap: 4px;
+      }
+
+      .start {
+        width: 114px;
+        height: 90px;
+        position: relative;
+      }
+
+      .distance {
+        width: 183px;
+        height: 90px;
+        position: relative;
+        text-align: center;
+      }
+
+      .distance.on::after {
+        content: "";
+        width: 100%;
+        height: auto;
+        aspect-ratio: 187/31;
+        background: url("../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_DISTANCE.png?=t") no-repeat;
+        background-size: contain;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .start .img_box,
+      .distance .img_box {
+        position: absolute;
+        bottom: 0;
+        right: -3px;
+        transform: translateX(50%);
+      }
+
+      .start .img_box {
+        width: 83px;
+        height: 76px;
+      }
+
+      .distance .img_box {
+        width: 69px;
+        height: 99px;
+      }
+
+      .distance .img_box .img1 {
+        position: relative;
+        z-index: 10;
+      }
+
+      .distance .img_box .img:not(.img1) {
+        width: 126px;
+        height: 159px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .distance .num {
+        padding-top: 30px;
+      }
+
+      .road_box {
+        position: relative;
+      }
+
+      .road_box .start {
+        background-color: rgba(220, 221, 221, 1);
+      }
+
+      .road_box .distance {
+        background-color: rgba(211, 237, 251, 1);
+        box-sizing: content-box;
+      }
+
+      .road_box .distance::before {
+        content: "";
+        width: 4px;
+        height: 100%;
+        background-color: rgba(255, 219, 0, 1);
+        position: absolute;
+        top: 50%;
+        left: -4px;
+        transform: translateY(-50%);
+      }
+
+      .road_box .car {
+        position: absolute;
+        top: 50%;
+        left: 116px;
+        transform: translate(-50%, -50%);
+      }
+
+      .road_box .car .img2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .road_box .car .img1 {
+        position: relative;
+        z-index: 10;
+      }
+      .road_box .car.green .img1 {
+        position: relative;
+        z-index: 10;
+        width: 100px;
+      }
+
+      .road_box .car.red .img2 {
+        width: 165px;
+        height: 105px;
+      }
+
+      .road_box .car.purple .img2 {
+        width: 154px;
+        height: 114px;
+      }
+
+      .road_box .car.green .img2 {
+        width: 148px;
+        height: 111px;
+      }
+
+      /* 1p */
+      .step1 .road_box + .road_box {
+        margin-top: 4px;
+      }
+
+      .step1 .road_box .car{
+        transition: left ease-in-out 1s;
+      } 
+
+      .step1 .road_box .car.red .img{
+        transition: left ease-in-out 1s;
+      }
+      
+      /* 2p */
+      .step2 .main__container {
+        gap: 180px;
+      }
+
+      .step2 .step2_left_box {
+        align-items: flex-start;
+        gap: 40px;
+      }
+
+      .step2 .road_box .distance:nth-last-child(2)::after {
+        content: "";
+        width: 4px;
+        height: 100%;
+        background-color: rgba(255, 219, 0, 1);
+        position: absolute;
+        top: 50%;
+        right: -4px;
+        transform: translateY(-50%);
+      }
+
+      .step2 .step2_right_box {
+        gap: 100px;
+      }
+
+      .step2 .step2_right_box .text_box {
+        width: 377px;
+        height: 114px;
+        background-color: rgba(255, 236, 168, 1);
+        border-radius: 20px;
+        position: relative;
+        top: 44px;
+      }
+
+      .step2 .step2_right_box .text_box > span {
+        line-height: 74px;
+      }
+
+      .step2 .step2_right_box .text_box .txt_container {
+        margin-left: 20px;
+        width: 120px;
+      }
+
+      .step2 .step2_right_box .text_box .arrow {
+        position: absolute;
+        top: calc(50% - 75px);
+        right: -50px;
+        transform: translate(100%, -100%);
+      }
+
+      .step2 .step2_right_box .text_box .arrow::before {
+        content: "";
+        width: 40px;
+        height: 213px;
+        background: url("../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/ARROW.png?=t") no-repeat;
+        position: absolute;
+        top: 50%;
+        left: -5px;
+        transform: translate(-100%, -50%);
+      }
+
+      .step2 .road_box .car.red .img1{
+        width: 106px;
+        height: 51px;
+      }
+      .step2 .road_box .car.purple .img1{
+        width: 97px;
+        height: 59px;
+      }
+      .step2 .road_box .car.green .img1{
+        width: 99px;
+        height: 62px;
+      }
+
+      .step2 .text_box1 .seven{
+        position: absolute;
+        left: 86px;
+      }
+
+      .step2 .text_box2 .seven_two{
+        position: absolute;
+        left: 82px;
+      }
+
+      .step2 .num_14{
+        position: absolute;
+        right: 88px;
+      }
+
+      .step2 .seven_three{
+        position: absolute;
+        left: 79px;
+      }
+
+      .step2 .num7{
+        position: absolute;
+        right: 108px;
+      }
+
+      .step2 .txt_container2{
+        position: absolute;
+        right: 25px;
+        width: 106px;
+        height: 60px;
+      }
+
+      .step2 .quiz_select_wrap1{
+        position: absolute;
+        top: 135px;
+        left: 150px;
+      }
+      .step2 .text_box1{
+        top: 40px;
+      }
+      .step2 .text_box3{
+        top: 51px;
+      }
+      /* 3p */
+      .step3 .road_box {
+        position: relative;
+      }
+
+      .step3 .road_box .car.green {
+        left: 677px;
+      }
+
+      .step3 .road_box .text_box {
+        position: absolute;
+        right: 327px;
+        bottom: -44px;
+        transform: translateY(100%);
+      }
+
+      .step3 .road_box .text_box::before {
+        content: "";
+        width: 374px;
+        height: auto;
+        aspect-ratio: 428/40;
+        background: url("../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/ARROW2.png?=t") no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: -25px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .step3 .step3_btm_box {
+        width: 1184px;
+        height: 159px;
+        margin-top: 140px;
+        background-color: rgba(255, 211, 57, 0.44);
+        border-radius: 20px;
+        position: relative;
+      }
+
+      .step3 .step3_btm_box .img {
+        width: 50px;
+        margin-right: 3px;
+      }
+
+      .step3 .step3_btm_box > span {
+        line-height: 74px;
+      }
+
+      .step3 .step3_btm_box span + .img {
+        margin-left: 20px;
+      }
+
+      .step3 .step3_btm_box .txt_container {
+        margin: 0 3px 0 20px;
+      }
+
+      .step3 .step3_btm_box .select_list {
+        position: absolute;
+        bottom: -24px;
+        left: 50%;
+        transform: translate(-50%, 100%);
+      }
+
+      .step3 .step3_btm_box .select_list .answer {
+        width: 150px;
+        height: 85px;
+      }
+
+      .step3 .step3_btm_box .select_list .answer + .answer {
+        margin-left: 48px;
+      }
+
+      .step .more{
+        margin-left: 10px;
+      }
+
+      /* 4p */
+      .step4 .txt_container {
+        width: 106px;
+        height: 60px;
+      }
+
+      .step4 .contents_box {
+        align-items: flex-start;
+        gap: 185px;
+      }
+
+      .step4 .contents_box > .line {
+        width: 3px;
+        height: 620px;
+        background: url("../../../COMM/IMG/CONCEPT/SEASON2/COMM/DOTTEDLINE.png?=t") repeat-y;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .step4 .bubble_box {
+        gap: 10px;
+      }
+
+      .step4 .step4_left_box .bubble_box .bubble {
+        width: 523px;
+        height: 114px;
+        padding-left: 22px;
+        background: url("../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/STEP4_IMG1.png?=t") no-repeat;
+        line-height: 1;
+      }
+      
+      .step4 .step4_left_box .bubble_box .ch_y_head_small {
+        width: 100px;
+      }
+
+      .step4 .step4_right_box .bubble_box .bubble {
+        width: 523px;
+        height: 114px;
+        padding-right: 22px;
+        background: url("../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/STEP4_IMG2.png?=t") no-repeat;
+        line-height: 1;
+      }
+
+      .step4 .step4_right_box .bubble_box .ch_g_head_small {
+        width: 122px;
+      }
+
+      .step4 .step4_left_box .content_box {
+        margin-top: 223px;
+        position: relative;
+      }
+
+      .step4 .step4_left_box .content_box .quiz_box {
+        position: absolute;
+        bottom: 0;
+        right: 44px;
+      }
+
+      .step4 .step4_left_box .content_box .quiz_box .select_list {
+        position: absolute;
+        bottom: -28px;
+        right: -20px;
+        transform: translateY(100%);
+      }
+
+      .step4 .step4_left_box .content_box .pink_arrow {
+        position: absolute;
+        top: 0;
+        left: 32.5px;
+        transform: translateY(-44%);
+        text-align: center;
+      }
+
+      .step4 .step4_left_box .content_box .pink_arrow .arrow {
+        width: 129px;
+        height: auto;
+        aspect-ratio: 136/43;
+        background: url("../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/ARROW3.png?=t") no-repeat;
+      }
+
+      .step4 .step4_left_box .content_box .pink_arrow .arrow div {
+        margin-top: -50px;
+      }
+
+      .step4 .step4_left_box .content_box .blue_arrow {
+        width: 518px;
+        height: auto;
+        aspect-ratio: 442/84;
+        background: url("../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/ARROW4.png?=t") no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 24px;
+        left: 34.5px;
+        transform: translateY(-114%);
+        text-align: center;
+      }
+      
+      .step4 .step4_left_box .content_box .blue_arrow div {
+        margin-top: -40px;
+      }
+
+      .step4 .step4_right_box .content_box {
+        margin-top: 70px;
+        gap: 30px;
+      }
+
+      .step4 .step4_right_box .content_box .num_box span {
+        line-height: 60px;
+      }
+
+      .step4 .step4_right_box .content_box .num_box .txt_container {
+        margin-left: 20px;
+      }
+
+      /* 5p */
+      .step5 .txt_container {
+        width: 60px;
+        height: 60px;
+        padding: 2px 2px 0 0;
+      }
+
+      .step5 .txt_container.two {
+        width: 106px;
+      }
+
+      .step5 .content {
+        align-items: flex-end;
+      }
+
+      .step5 .table_box {
+        position: relative;
+      }
+
+      .step5 .table_box .effect {
+        width: 427px;
+        height: 81px;
+        border: 5px solid rgba(103, 68, 243, 1);
+        position: absolute;
+        right: -2.5px;
+        top: 0;
+      }
+      .step5 .table_box .effect2{
+        top: 78px;
+      }
+      .step5 .table_box .effect3{
+        top: 156px;
+      }
+      .step5 .table_box .effect4{
+        top: 233px;
+      }
+      .step5 .table_box .effect5{
+        top: 312px;
+      }
+      .step5 .table_box .effect6{
+        top: 390px;
+      }
+      .step5 .table_box .effect7{
+        top: 468px;
+      } 
+      .step5 .table_box .effect8{
+        top: 547px;
+      }
+      .step5 .table_box .effect9{
+        top: 625px;
+      }
+
+      .table_box table td {
+        border: 4px solid rgba(249, 166, 12, 1);
+      }
+
+      .table_box table tr td {
+        height: 78px;
+      }
+
+      .table_box table .calc_td {
+        width: 421px;
+      }
+
+      .table_box table .calc_td .mul {
+        padding-left: 70px;
+        line-height: 60px;
+        justify-content: flex-start;
+        gap: 20px;
+        position: relative;
+      }
+
+      .step5 .select_list {
+        width: 348px;
+        flex-wrap: wrap;
+        gap: 40px;
+        position: absolute;
+        top: 210px;
+        right: 145px;
+        transform: translate(100%, -50%);
+      }
+
+      .step5 .select_list .answer,
+      .step5 .select_list .answer::after {
+        border-radius: 15px;
+      }
+
+      .step5 .select_list .answer + .answer {
+        margin-left: 0px;
+      }
+
+      .step5 .select_list1 .answer,
+      .step5 .select_list3 .answer {
+        width: 150px;
+        height: 85px;
+      }
+
+      .step5 .select_list2 .answer,
+      .step5 .select_list4 .answer {
+        width: 105px;
+        height: 85px;
+      }
+
+      .step5 .txt_container2, .txt_container3 {
+        position: absolute;
+        left: 175px;
+        width: 60px;
+        height: 60px;
+        padding: 2px 2px 0 0;
+      }
+
+      .step5 .txt_container.two {
+        position: absolute;
+        height: 60px;
+        width: 95px;
+        left: 290px;
+      }
+
+      .step5 .sign{
+        margin: 0 15px;
+      }
+      .step5 .sign2{
+        margin-left: 62px;
+      }
+
+      .step5 .table_box .answer_box {
+        position: absolute;
+        top: 325px;
+        left: 825px;
+        transform: translateX(-100%);
+      }
+
+      .step5 .table_box .answer_box .answer_list {
+        width: 348px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 48px;
+      }
+
+      .step5 .answer_list .answer + .answer {
+        margin-left: 0;
+      }
+      /* 6p */
+      .step6 .table_box {
+        padding-bottom: 60px;
+        position: relative;
+      }
+
+      .step6 .table_box .hint {
+        position: absolute;
+        top: 162px;
+        right: -89px;
+        transform: translateX(100%);
+      }
+
+      .step6 .table_box .effect {
+        position: absolute;
+        top: 4px;
+        width: 53px;
+        height: 10px;
+        transition: height 1s ease;
+      }
+
+      .step6 .table_box .effect.on {
+        height: 538px;
+      }
+
+      .step6 .table_box .effect::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 42px solid transparent;
+        border-right: 42px solid transparent;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 100%);
+      }
+      
+      .step6 .table_box .effect1::after {
+        border-top: 42px solid rgba(37, 116, 252, 0.3);
+      }
+
+      .step6 .table_box .effect2::after {
+        border-top: 42px solid rgba(332, 70, 239, 0.3);
+      }
+
+      .step6 .table_box .effect1 {
+        background-color: rgba(37, 116, 252, 0.3);
+        left: 139px;
+      }
+
+      .step6 .table_box .effect2 {
+        background-color: rgba(332, 70, 239, 0.3);
+        right: 80px;
+      }
+
+      .step6 .table_box table {
+        position: relative;
+        z-index: 10;
+      }
+
+      .step6 .table_box table tr td {
+        height: 65px;
+      }
+
+      .step6 .table_box table .calc_td {
+        width: 363px;
+      }
+
+      .step6 .table_box table .calc_td .mul {
+        padding-left: 60px;
+        gap: 0;
+      }
+
+      .step6 .table_box table .calc_td .mul .sign {
+        margin: 0 20px;
+      }
+
+      .step6 .table_box table .calc_td .mul .sign2 {
+        margin: 0 8px 0 20px;
+      }
+
+      .step6 .num7{
+        margin-left: 14px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div
+        id="contents-wrap"
+        class="concept"
+        style="position: absolute; display: flex"
+      ></div>
+      <div id="contents-main" style="display: none" class="concept-warp">
+        <div class="concept-warp_inner">
+          <header class="header" style="visibility: visible">
+            <div class="header_title">
+              <button class="sound-btn" onclick="titleSound()"></button>
+              <h3></h3>
+            </div>
+            <p class="header_page"><span>1</span>/2</p>
+          </header>
+          <main class="main">
+            <div class="main_content">
+              <!-- 콘텐츠영역 -->
+              <div class="step step1" style="display: block">
+                <!-- step1 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="index_box dp_flex">
+                    <div class="start">
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_START.png?=t" class="img img1" />
+                      </div>
+                    </div>
+                    <div class="distance distance1 on">
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG1.png?=t" class="img img1" />
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG_POINT.png?=t" class="img img2 v_hidden" />
+                      </div>
+                      <div class="num num1">7 cm</div>
+                    </div>
+                    <div class="distance distance2 on">
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG2.png?=t" class="img img1" />
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG_POINT.png?=t" class="img img2 v_hidden" />
+                      </div>
+                      <div class="num num2">7 cm</div>
+                    </div>
+                    <div class="distance distance3 on">
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG3.png?=t" class="img img1" />
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG_POINT.png?=t" class="img img2 v_hidden" />
+                      </div>
+                      <div class="num num3">7 cm</div>
+                    </div>
+                    <div class="distance distance4 on">
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG4.png?=t" class="img img1" />
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG_POINT.png?=t" class="img img2 v_hidden" />
+                      </div>
+                      <div class="num num4">7 cm</div>
+                    </div>
+                    <div class="distance distance5 on">
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG5.png?=t" class="img img1" />
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG_POINT.png?=t" class="img img2 v_hidden" />
+                      </div>
+                      <div class="num num5">7 cm</div>
+                    </div>
+                    <div class="distance distance6"></div>
+                  </div>
+                  <div class="road_box road_box1 dp_flex">
+                    <div class="start"></div>
+                    <div class="distance distance1"></div>
+                    <div class="distance distance2"></div>
+                    <div class="distance distance3"></div>
+                    <div class="distance distance4"></div>
+                    <div class="distance distance5"></div>
+                    <div class="distance distance6"></div>
+                    <div class="car red">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/RED_CAR.png?=t" class="img img1" />
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/RED_CAR_POINT.png?=t" class="img img2 v_hidden" />
+                    </div>
+                  </div>
+                  <div class="road_box road_box2 dp_flex">
+                    <div class="start"></div>
+                    <div class="distance distance1"></div>
+                    <div class="distance distance2"></div>
+                    <div class="distance distance3"></div>
+                    <div class="distance distance4"></div>
+                    <div class="distance distance5"></div>
+                    <div class="distance distance6"></div>
+                    <div class="car purple">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/PURPLE_CAR.png?=t" class="img img1" />
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/PURPLE_CAR_PURPLE.png?=t" class="img img2 v_hidden" />
+                    </div>
+                  </div>
+                  <div class="road_box road_box3 dp_flex">
+                    <div class="start"></div>
+                    <div class="distance distance1"></div>
+                    <div class="distance distance2"></div>
+                    <div class="distance distance3"></div>
+                    <div class="distance distance4"></div>
+                    <div class="distance distance5"></div>
+                    <div class="distance distance6"></div>
+                    <div class="car green">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/GREEN_CAR.png?=t" class="img img1" />
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/GREEN_CAR_POINT.png?=t" class="img img2 v_hidden" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step2" style="display: block">
+                <!-- step2 시작부분 -->
+                <div class="main__container dp_flex">
+                  <div class="step2_left_box dp_flex dp_flex_column">
+                    <div class="line line1">
+                      <div class="index_box dp_flex">
+                        <div class="start">
+                          <div class="img_box">
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_START.png?=t" class="img img1" />
+                          </div>
+                        </div>
+                        <div class="distance distance1 on">
+                          <div class="img_box">
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG1.png?=t" class="img img1" />
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG_POINT.png?=t" class="img img2 v_hidden" />
+                          </div>
+                          <div class="num">7 cm</div>
+                        </div>
+                      </div>
+                      <div class="road_box road_box1 dp_flex">
+                        <div class="start"></div>
+                        <div class="distance distance1"></div>
+
+                        <div class="car red">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/RED_CAR.png?=t" class="img img1" />
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/RED_CAR_POINT.png?=t" class="img img2 v_hidden" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="line line2">
+                      <div class="index_box dp_flex">
+                        <div class="start">
+                          <div class="img_box">
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_START.png?=t" class="img img1" />
+                          </div>
+                        </div>
+                        <div class="distance distance1 on">
+                          <div class="img_box">
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG1.png?=t" class="img img1" />
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG_POINT.png?=t" class="img img2 v_hidden" />
+                          </div>
+                          <div class="num">7 cm</div>
+                        </div>
+                        <div class="distance distance2 on">
+                          <div class="img_box">
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG2.png?=t" class="img img1" />
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG_POINT.png?=t" class="img img2 v_hidden" />
+                          </div>
+                          <div class="num">7 cm</div>
+                        </div>
+                      </div>
+
+                      <div class="road_box road_box2 dp_flex">
+                        <div class="start"></div>
+                        <div class="distance distance1"></div>
+                        <div class="distance distance2"></div>
+                        <div class="car purple">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/PURPLE_CAR.png?=t" class="img img1" />
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/PURPLE_CAR_PURPLE.png?=t" class="img img2 v_hidden" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="line line3">
+                      <div class="index_box dp_flex">
+                        <div class="start">
+                          <div class="img_box">
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_START.png?=t" class="img img1" />
+                          </div>
+                        </div>
+                        <div class="distance distance1 on">
+                          <div class="img_box">
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG1.png?=t" class="img img1" />
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG_POINT.png?=t" class="img img2 v_hidden" />
+                          </div>
+                          <div class="num">7 cm</div>
+                        </div>
+                        <div class="distance distance2 on">
+                          <div class="img_box">
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG2.png?=t" class="img img1" />
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG_POINT.png?=t" class="img img2 v_hidden" />
+                          </div>
+                          <div class="num">7 cm</div>
+                        </div>
+                        <div class="distance distance3 on">
+                          <div class="img_box">
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG3.png?=t" class="img img1" />
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG_POINT.png?=t" class="img img2 v_hidden" />
+                          </div>
+                          <div class="num">7 cm</div>
+                        </div>
+                      </div>
+
+                      <div class="road_box road_box3 dp_flex">
+                        <div class="start"></div>
+                        <div class="distance distance1"></div>
+                        <div class="distance distance2"></div>
+                        <div class="distance distance3"></div>
+                        <div class="car green">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/GREEN_CAR.png?=t" class="img img1" />
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/GREEN_CAR_POINT.png?=t" class="img img2 v_hidden" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step2_right_box dp_flex dp_flex_column v_hidden">
+                    <div class="text_box text_box1 dp_flex v_hidden">
+                      <span class="seven">7 × 1 =</span>
+                      <span class="num7">7</span>
+                    </div>
+                    <div class="text_box text_box2 dp_flex v_hidden">
+                      <span class="seven_two">7 × 2</span>
+                      <span class="num_14 v_hidden">
+                        <span class="equl">=</span>
+                        <span class="num14">14</span>
+                      </span>
+                      <div class="arrow arrow1 v_hidden">+7</div>
+                    </div>
+                    <div class="text_box text_box3 dp_flex v_hidden">
+                      <span class="seven_three">7 × 3 =</span>
+                      <div class="txt_container txt_container2 two keypad_txt keypad_txt1" data-val="21" data-length="2"><span>?</span></div>
+                      <di class="arrow arrow2 v_hidden">+7</di>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step3" style="display: none">
+                <!-- step3 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step3_top_box">
+                    <div class="index_box dp_flex">
+                      <div class="start">
+                        <div class="img_box">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_START.png?=t" class="img img1" />
+                        </div>
+                      </div>
+                      <div class="distance distance1 on">
+                        <div class="img_box">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG1.png?=t" class="img img1" />
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG_POINT.png?=t" class="img img2 v_hidden" />
+                        </div>
+                        <div class="num">7 cm</div>
+                      </div>
+                      <div class="distance distance2 on">
+                        <div class="img_box">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG2.png?=t" class="img img1" />
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG_POINT.png?=t" class="img img2 v_hidden" />
+                        </div>
+                        <div class="num">7 cm</div>
+                      </div>
+                      <div class="distance distance3 on">
+                        <div class="img_box">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG3.png?=t" class="img img1" />
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG_POINT.png?=t" class="img img2 v_hidden" />
+                        </div>
+                        <div class="num">7 cm</div>
+                      </div>
+                      <div class="distance distance4 on">
+                        <div class="img_box">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG4.png?=t" class="img img1" />
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG_POINT.png?=t" class="img img2 v_hidden" />
+                        </div>
+                        <div class="num num4">7 cm</div>
+                      </div>
+                      <div class="distance distance5 on">
+                        <div class="img_box">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG5.png?=t" class="img img1" />
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG_POINT.png?=t" class="img img2 v_hidden" />
+                        </div>
+                        <div class="num num5">7 cm</div>
+                      </div>
+                      <div class="distance distance6"></div>
+                    </div>
+                    <div class="road_box road_box1 dp_flex">
+                      <div class="start"></div>
+                      <div class="distance distance1"></div>
+                      <div class="distance distance2"></div>
+                      <div class="distance distance3"></div>
+                      <div class="distance distance4"></div>
+                      <div class="distance distance5"></div>
+                      <div class="distance distance6"></div>
+                      <div class="car green">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/GREEN_CAR.png?=t" class="img img1" />
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/GREEN_CAR_POINT.png?=t" class="img img2 v_hidden" />
+                      </div>
+                      <div class="text_box v_hidden">7 × 2</div>
+                    </div>
+                  </div>
+                  <div class="step3_btm_box dp_flex v_hidden">
+                    <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG3.png?=t" class="img img1" />
+                    <span>에서</span>
+                    <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/INDEX_IMG5.png?=t" class="img img1" />
+                    <span>까지 가려면</span>
+                    <div class="txt_container txt_container1 two v_hidden"><span>?</span></div>
+                    <span class="more">cm 더 가야 합니다.</span>
+
+                    <div class="select_list select_list1 v_hidden">
+                      <div class="answer answer1 brd">14</div>
+                      <div class="answer answer2 brd">21</div>
+                      <div class="answer answer3 brd">35</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step4" style="display: none">
+                <!-- step4 시작부분 -->
+                <div class="main__container dp_flex">
+                  <div class="contents_box dp_flex">
+                    <div class="step4_left_box">
+                      <div class="bubble_box bubble_box1 dp_flex">
+                        <div class="img_box">
+                          <div class="ch_y_head_small"></div>
+                        </div>
+                        <div class="bubble bubble1 dp_flex">
+                          <span class="buble_txt1">7 × 3에 7을 더하기</span>
+                        </div>
+                      </div>
+                      <div class="content_box content_box1 v_hidden">
+                        <div class="vertical_line_box" data-start="0" data-end="28" data-interval="7" data-detail="false"></div>
+                        <div class="quiz_box">
+                          <div class="txt_container txt_container1 two"><span>?</span></div>
+
+                          <div class="select_list select_list1 v_hidden">
+                            <div class="answer answer1 brd">28</div>
+                            <div class="answer answer2 brd">29</div>
+                          </div>
+                        </div>
+                        <div class="pink_arrow dp_flex v_hidden">
+                          <div class="arrow"></div>
+                          <div class="arrow"></div>
+                          <div class="arrow"></div>
+                          <div class="arrow">
+                            <!-- <div class="num7 v_hidden">+7</div> -->
+                          </div>
+                        </div>
+                        <div class="blue_arrow v_hidden">
+                          <!-- <div>7 × 3 = 21</div> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="step4_right_box">
+                      <div class="bubble_box bubble_box2 dp_flex">
+                        <div class="bubble bubble2 dp_flex">
+                          <span class="bubble_txt2">
+                            4개씩 7줄로 생각하기
+                          </span>
+                        </div>
+                        <div class="img_box">
+                          <div class="ch_g_head_small"></div>
+                        </div>
+                      </div>
+                      <div class="content_box content_box2 dp_flex v_hidden">
+                        <div class="img_box">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/STEP4_IMG3.png?=v1" class="img img1" />
+                        </div>
+                        <div class="num_box dp_flex v_hidden">
+                          <span>4 × 7 = </span>
+                          <div class="txt_container keypad_txt keypad_txt1 txt_container2 two" data-val="28" data-length="2"><span>?</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="line"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step5" style="display: none">
+                <!-- step5 시작부분 -->
+                <div class="main__container dp_flex">
+                  <div class="content dp_flex">
+                    <div class="table_box">
+                      <table>
+                        <tbody>
+                          <tr class="tr_1">
+                            <td class="calc_td calc_td1">
+                              <div class="mul mul_1 dp_flex">
+                                <span class="num2_1">7</span>
+                                <span class="sign">×</span>
+                                <span class="num1">1</span>
+                                <span class="sign">=</span>
+                                <span class="num2_2">7</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="tr_2">
+                            <td class="calc_td calc_td2">
+                              <div class="mul dp_flex">
+                                <span>7</span>
+                                <span class="sign">×</span>
+                                <span>2</span>
+                                <span class="sign">=</span>
+                                <div class="txt_container txt_container1 two"><span>?</span></div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="tr_3">
+                            <td class="calc_td calc_td3">
+                              <div class="mul dp_flex">
+                                <span>7</span>
+                                <span class="sign">×</span>
+                                <span>3</span>
+                                <span class="sign">=</span>
+                                <span>21</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="tr_4">
+                            <td class="calc_td calc_td4">
+                              <div class="mul dp_flex">
+                                <span>7</span>
+                                <span class="sign">×</span>
+                                <div class="txt_container txt_container2"><span>?</span></div>
+                                <span class="sign sign2">=</span>
+                                <span>28</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="tr_5">
+                            <td class="calc_td calc_td5">
+                              <div class="mul dp_flex">
+                                <span>7</span>
+                                <span class="sign">×</span>
+                                <span>5</span>
+                                <span class="sign">=</span>
+                                <span>35</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="tr_6">
+                            <td class="calc_td calc_td6">
+                              <div class="mul dp_flex">
+                                <span>7</span>
+                                <span class="sign">×</span>
+                                <span>6</span>
+                                <span class="sign">=</span>
+                                <span>42</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="tr_7">
+                            <td class="calc_td calc_td7">
+                              <div class="mul dp_flex">
+                                <span>7</span>
+                                <span class="sign">×</span>
+                                <div class="txt_container txt_container3"><span>?</span></div>
+                                <span class="sign sign2">=</span>
+                                <span>49</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="tr_8">
+                            <td class="calc_td calc_td8">
+                              <div class="mul dp_flex">
+                                <span>7</span>
+                                <span class="sign">×</span>
+                                <span>8</span>
+                                <span class="sign">=</span>
+                                <div class="txt_container txt_container4 two"><span>?</span></div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="tr_9">
+                            <td class="calc_td calc_td9">
+                              <div class="mul dp_flex">
+                                <span>7</span>
+                                <span class="sign">×</span>
+                                <span>9</span>
+                                <span class="sign">=</span>
+                                <span>63</span>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="eff v_hidden">
+                        <div class="effect effect1 "></div>
+                        <div class="effect effect2 "></div>
+                        <div class="effect effect3 "></div>
+                        <div class="effect effect4 "></div>
+                        <div class="effect effect5 "></div>
+                        <div class="effect effect6 "></div>
+                        <div class="effect effect7 "></div>
+                        <div class="effect effect8 "></div>
+                        <div class="effect effect9 "></div>
+                      </div>
+                      <div class="step5_answer_box1 answer_box"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step6" style="display: none">
+                <!-- step6 시작부분 -->
+                <div class="main__container">
+                  <div class="full_content_comm dp_flex">
+                    <div class="table_box">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td class="calc_td">
+                              <div class="mul dp_flex">
+                                <span>7</span>
+                                <span class="sign">×</span>
+                                <span>1</span>
+                                <span class="sign sign2">=</span>
+                                <span class="num7">7</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="calc_td">
+                              <div class="mul dp_flex">
+                                <span>7</span>
+                                <span class="sign">×</span>
+                                <span>2</span>
+                                <span class="sign sign2">=</span>
+                                <span>14</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="calc_td">
+                              <div class="mul dp_flex">
+                                <span>7</span>
+                                <span class="sign">×</span>
+                                <span>3</span>
+                                <span class="sign sign2">=</span>
+                                <span>21</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="calc_td">
+                              <div class="mul dp_flex">
+                                <span>7</span>
+                                <span class="sign">×</span>
+                                <span>4</span>
+                                <span class="sign sign2">=</span>
+                                <span>28</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="calc_td">
+                              <div class="mul dp_flex">
+                                <span>7</span>
+                                <span class="sign">×</span>
+                                <span>5</span>
+                                <span class="sign sign2">=</span>
+                                <span>35</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="calc_td">
+                              <div class="mul dp_flex">
+                                <span>7</span>
+                                <span class="sign">×</span>
+                                <span>6</span>
+                                <span class="sign sign2">=</span>
+                                <span>42</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="calc_td">
+                              <div class="mul dp_flex">
+                                <span>7</span>
+                                <span class="sign">×</span>
+                                <span>7</span>
+                                <span class="sign sign2">=</span>
+                                <span>49</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="calc_td">
+                              <div class="mul dp_flex">
+                                <span>7</span>
+                                <span class="sign">×</span>
+                                <span>8</span>
+                                <span class="sign sign2">=</span>
+                                <span>56</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="calc_td">
+                              <div class="mul dp_flex">
+                                <span>7</span>
+                                <span class="sign">×</span>
+                                <span>9</span>
+                                <span class="sign sign2">=</span>
+                                <span>63</span>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="effect effect1 v_hidden"></div>
+                      <div class="effect effect2 v_hidden"></div>
+                    </div>
+                  </div>
+                  <footer class="check_footer v_hidden">
+                    <div class="check_footer_inner">
+                      <div class="check_footer_text img_container">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_2_7/STEP6_FOOTER_TXT.png?=t" class="img img1" />
+                      </div>
+                      <div class="check_footer_ch">
+                        <div class="check_footer_ch_head"></div>
+                        <div class="check_footer_ch_body"></div>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+
+              <ul class="step-list">
+                <li class="step-list_item active"></li>
+                <li class="step-list_item"></li>
+              </ul>
+            </div>
+          </main>
+          <div class="main_prev-next">
+            <button class="btn-prev" style="display: none">이전버튼</button>
+            <!-- <button class="btn-next" style="display: block" disabled> -->
+            <button class="btn-next blinking" style="display: block">
+              다음버튼
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      crossorigin
+      src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"
+    ></script>
+    <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+    <script src="../../../COMM/JS/COMMON2.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNT3.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNTBTN.JS"></script>
+    <script src="../../../COMM/JS/GAME.JS"></script>
+    <script src="../../../COMM/JS/VIDEO.JS"></script>
+    <script src="../../../COMM/JS/VIDEO-HTTP-STREAMING.JS"></script>
+    <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+    <script>
+      /*
+       * 데이터
+       */
+      let intro = {
+        type: "concept", //concept 개념익히기, checkExam 확인문제
+        title: "7단 곱셈구구를 알아볼까요",
+        subTitle: [
+          "7단 곱셈구구를 이해할 수 있어요.",
+          "여러 가지 방법으로 7단 곱셈구구를 완성할 수 있어요.",
+        ],
+        sound: ["../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_001.mp3"],
+      };
+
+      //현재 페이지
+      let disStep = 1;
+
+      let pageData = [
+        {
+          step: 1,
+          title: "장난감 자동차가 이동한 거리를 알아봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_001.mp3",
+          headerPage: [1, 2],
+          footerPage: [1, 3],
+          prev: 0,
+          next: 1,
+        },
+        {
+          step: 2,
+          title: "장난감 자동차가 이동한 거리를 알아봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_001.mp3",
+          headerPage: [1, 2],
+          footerPage: [2, 3],
+          prev: 1,
+          next: 1,
+        },
+        {
+          step: 3,
+          title: "장난감 자동차가 이동한 거리를 알아봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_001.mp3",
+          headerPage: [1, 2],
+          footerPage: [3, 3],
+          prev: 1,
+          next: 1,
+        },
+        {
+          step: 4,
+          title: "7×4를 계산하는 방법을 알아봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_001.mp3",
+          headerPage: [2, 2],
+          footerPage: [1, 2],
+          prev: 3,
+          next: 1,
+        },
+        {
+          step: 5,
+          title: "7단 곱셈구구를 알아봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_001.mp3",
+          headerPage: [2, 2],
+          footerPage: [2, 2],
+          prev: 1,
+          next: 0,
+        },
+        {
+          step: 6,
+          title: "",
+          sound: "",
+          headerPage: [0, 0],
+          footerPage: [0, 0],
+          prev: 2,
+          next: 0,
+        },
+      ];
+      
+      function pageAction() {
+        console.log("disStep ::: ", disStep);
+        //setTimeout 초기화
+        const TimeoutId = setTimeout(() => console.log("timeout clear"), 1);
+        for (let i = 0; i < TimeoutId; i++) {
+          clearTimeout(i);
+        }
+        stepSet();
+        switch (disStep) {
+          case 1:
+            step1.reset();
+            step1.start();
+            break;
+          case 2:
+            step2.reset();
+            step2.start();
+            break;
+          case 3:
+            step3.reset();
+            step3.start();
+            break;
+          case 4:
+            step4.reset();
+            step4.start();
+            break;
+          case 5:
+            step5.reset();
+            step5.start();
+            break;
+          case 6:
+            step6.reset();
+            step6.start();
+            break;
+        }
+      }
+
+      //문제 시작
+      //================STEP1==============
+      const step1 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_001.mp3",
+            "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_002.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $('.step1 .red .img2').css('visibility', 'visible');
+                $('.step1 .red .img2').addClass('blink');
+                touchMotionSetOn(370, 340, step1.guideTouch, $('.step1 .red img'));  
+              }
+            },
+          ]);
+        },
+        guideTouch: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_003.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step1 .road_box .car.red ').css({
+                  'transition': 'left 1s ease-in-out',
+                  'left': '310px'
+                });
+                $('.step1 .distance1 .img_box .img2').css('visibility', 'visible');
+                $('.step1 .num1').addClass('aniScale');
+              }
+            },
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                $('.step1 .red .img2').css('visibility', '');
+                $('.step1 .red .img2').removeClass('blink');
+                $('.step1 .distance1 .img_box .img2').css('visibility', '');
+                $('.step1 .num1').removeClass('aniScale');
+                timerSet(() => {
+                  timerInit();
+                  touchMotionSetOn(465, 340, step1.guideTouch1, $('.step1 .purple img'));  
+                  $('.step1 .purple .img2').css('visibility', 'visible');
+                  $('.step1 .purple .img2').addClass('blink');
+                }, 1000);
+              }
+            },
+          ]);
+        },
+        guideTouch1: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_004.mp3",
+            "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_005.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step1 .road_box .car.purple').css('left','490px');
+                $('.step1 .num1').addClass('aniScale');
+                $('.step1 .num2').addClass('aniScale');
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                  $('.step1 .distance2 .img_box .img2').css('visibility', 'visible');
+                  $('.step1 .num1').removeClass('aniScale');
+                  $('.step1 .num2').removeClass('aniScale');
+              }
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $('.step1 .road_box .car.purple').css('left','490px');
+                $('.step1 .purple .img2').css('visibility', '');
+                $('.step1 .purple .img2').removeClass('blink');
+                $('.step1 .green .img2').css('visibility', 'visible');
+                $('.step1 .green .img2').addClass('blink');
+                $('.step1 .distance2 .img_box .img2').css('visibility', '');
+                  touchMotionSetOn(555, 340, step1.guideTouch2, $('.step1 .green img'));  
+              }
+            },
+          ]);
+        },
+        guideTouch2: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_006.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step1 .road_box .car.green').css('left','678px');
+                $('.step1 .distance3 .img_box .img2').css('visibility', 'visible');
+
+                timerSet(() => {
+                  timerInit();
+                  $('.step1 .distance3 .img_box .img2').css('visibility', '');
+                  $('.step1 .green .img2').css('visibility', '');
+                  $('.step1 .green .img2').removeClass('blink');
+                  $('.step1 .num1').addClass('aniScale');
+                  $('.step1 .num2').addClass('aniScale');
+                  $('.step1 .num3').addClass('aniScale');
+                }, 2500);
+              }
+            },
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                timerSet(() => {
+                  timerInit();
+                  $('.step1 .num1').removeClass('aniScale');
+                  $('.step1 .num2').removeClass('aniScale');
+                  $('.step1 .num3').removeClass('aniScale');
+                  correctly();
+                }, 2000);
+              }
+            },
+          ]);
+        },
+        reset: () => {
+          $('.step1 .dp_none').css('display', '');
+          $('.step1 .v_hidden').css('visibility', '');
+          $('.step1 .road_box .car').css('left', '');
+        },
+      };
+      //================STEP2==============
+      const step2 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_008.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                $('.step2 .line1 .distance1 .img_box .img2').css('visibility', 'visible');
+                touchMotionSetOn(130, 527, step2.guideTouch, $('.step2 .car.red')); 
+              }
+            },
+          ]);
+        },
+        guideTouch: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_009.mp3", 
+            "../../../COMM/SOUND/Eff_start.mp3", 
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step2 .road_box .car.red ').css({
+                  'transition': 'left 1s ease-in-out',
+                  'left': '310px'
+                });
+              }
+            },
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                $('.step2 .text_box1').css('visibility', 'visible');
+                $('.step2 .red .img2').removeClass('blink');
+                $('.step2 .line1 .distance1 .img_box .img2').css('visibility', '');
+                timerSet(() => {
+                  timerInit();
+                  touchMotionSetOn(350, 715, step2.guideTouch2, $('.step2 .purple img'));  
+                  $('.step2 .line2 .distance2 .img_box .img2').css('visibility', 'visible');
+                }, 1000);
+              }
+            },
+          ]);
+        },
+        guideTouch2: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_010.mp3",
+            "../../../COMM/SOUND/Eff_start.mp3", 
+            "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_011.mp3",
+            "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_012.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step2 .road_box .car.purple ').css({
+                  'transition': 'left 1s ease-in-out',
+                  'left': '490px'
+                });
+              }
+            },
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                $('.step2 .text_box2').css('visibility', 'visible');
+                $('.step2 .line2 .distance2 .img_box .img2').css('visibility', '');
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                timerSet(() => {
+                  timerInit();
+                  $('.step2 .text_box2 .arrow1').css('visibility', 'visible');
+                  timerSet(() => {
+                    timerInit();
+                    $('.step2 .num7').addClass('blinking');
+                  }, 900);
+                }, 1000);
+              }
+            },
+            {
+              idx: 3,
+              type: 'end',
+              callback: () => {
+                $('.step2 .num7').removeClass('blinking');
+                $('.step2 .num_14').css('visibility', 'visible');
+                $('.step2 .num14').addClass('blinking');
+                timerSet(() => {
+                  timerInit();
+                  $('.step2 .num14').removeClass('blinking');
+                }, 2000);
+              }
+            },
+            {
+              idx: 4,
+              type: 'end',
+              callback: () => {
+                  $('.step2 .line3 .distance3 .img_box .img2').css('visibility', 'visible');
+                touchMotionSetOn(572, 900, step2.guideTouch3, $('.step2 .green img'));  
+              }
+            },
+          ]);
+        },
+        guideTouch3: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_013.mp3", 
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step2 .road_box .car.green ').css({
+                  'transition': 'left 1s ease-in-out',
+                  'left': '680px'
+                });
+              }
+            },
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                $('.step2 .text_box3').css('visibility', 'visible');
+                $('.step2 .line3 .distance3 .img_box .img2').css('visibility', '');
+                // 빈칸 깜빡이기 (키패드 노출)
+                let keypadTxtEl1 = $('.step2 .keypad_txt1');
+                keypadTxtEl1.addClass("blink").click(() => {
+                  keypadTxtEl1.removeClass('blink');
+                  keypadSetOn(keypadTxtEl1, 700, 14);
+                  step2.keypadSetClick(keypadTxtEl1);
+                });
+              }
+            },
+          ]);
+        },
+        keypadSetClick: (btn) => {
+          $(document).on('click', keypadBtnCheckEl, () => {
+            if (keypadInput == btn.data('val')) {
+              keypadSetCorrect(btn);
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.mp3",
+                "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_014.mp3", 
+                "../../../COMM/SOUND/Eff_Start.mp3",
+                "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_015.mp3"
+              ], [
+                {
+                  idx: 1,
+                  type: 'start',
+                  callback: () => {
+                    $('.step2 .txt_container2').html(`<span class="num21">21</span>`);
+                    timerSet(() => {
+                    timerInit();
+                        timerSet(() => {
+                      timerInit();
+                      $('.step2 .arrow2').css('visibility','visible');
+                    }, 3000);
+                  }, 1000);
+                  }
+                },
+                {
+                  idx: 4,
+                  type: 'start',
+                  callback: () => {
+                    $('.step2 .txt_container2 span').addClass('blinking');
+                  }
+                },
+                {
+                  idx: 4,
+                  type: 'end',
+                  callback: () => {
+                    $('.step2 .txt_container2 span').removeClass('blinking');
+                    correctly();
+                  }
+                },
+              ]);
+            } else {
+              keypadSetOff(btn);
+              btn.addClass('blink');
+
+              audioSet([
+                "../../../COMM/SOUND/WRONG.MP3",
+              ]);
+            }
+          });
+        },
+        
+        reset: () => {
+          keypadSetInit();
+          $('.step2 .dp_none').css('display', '');
+          $('.step2 .v_hidden').css('visibility', '');
+          $('.step2 .txt_container').html('?');
+        },
+      };
+      //================STEP3==============
+      const step3 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_001.mp3",
+            "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_016.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step3 .road_box1 .car.green img').addClass('blinking');
+              }
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $('.step3 .road_box1 .car.green img').removeClass('blinking');
+                $('.step3 .distance3 .img2').css('visibility','');
+                $('.step3 .distance3 .img2').removeClass('blink');
+                $('.step3 .distance5 .img2').css('visibility','visible');
+                $('.step3 .distance5 .img2').addClass('blink');
+                touchMotionSetOn(203, 1273, step3.guideTouch, $('.step3 .distance5 img'));  
+              }
+            },
+          ]);
+        },
+        guideTouch: () => {
+          audioSet([
+          "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_017.mp3",
+          "../../../COMM/SOUND/Eff_start.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step3 .road_box .car.green').css({
+                  'transition': 'left 1s ease-in-out',
+                  'left': '1055px'
+                });
+                $('.step3 .distance5 .img2').css('visibility','');
+                $('.step3 .distance5 .img2').removeClass('blink');
+                timerSet(() => {
+                  timerInit();
+                  $('.num4 ,.num5').addClass('aniScale');
+                }, 800);
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step3 .text_box').css('visibility','visible');
+              },
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $('.step3 .step3_btm_box').css('visibility','visible');
+                $('.step3 .distance5 .img2').css('visibility','');
+                $('.step3 .txt_container1').css('visibility','visible');
+                // $('.step3 .txt_container1').addClass('blink');
+                $('.step3 .distance5 .img2').removeClass('blink');
+                $('.step3 .distance5 .img2').css('visibility','');
+                $('.step3 .select_list1').css('visibility','visible');
+                $('.step3 .road_box1 .car.green .img2').css('visibility','');
+                $('.num4 ,.num5').removeClass('aniScale');
+                quizSelectSetInit($('.step3 .select_list1'), [14, 21, 35]);
+                quizSelectSetOnNew(1, step3.quizSelectCorrect, $('.step3 .txt_container1'), true);
+              }
+            },
+          ]);
+        },
+        quizSelectCorrect: (flag) => {
+          if (flag) {
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+            ], [
+            {
+                idx: 1,
+                type: 'end',
+                callback: () => {
+                  $('.step3 .text_box').css('visibility','');
+                  $('.step3 .txt_container1').removeClass('blink');
+                  $('.step3 .select_list1').css('visibility','');
+                  correctly();
+                }
+              },
+            ]);
+          } else {
+            audioSet([
+              "../../../COMM/SOUND/WRONG.mp3",
+            ]);
+          }
+        },
+        reset: () => {
+          $('.step3 .dp_none').css('display', '');
+          $('.step3 .v_hidden').css('visibility', '');
+          $('.step3 .txt_container').html('?');
+        },
+      };
+      //================STEP4==============
+      const step4 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_018.mp3",
+            "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_019.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                timerSet(() => {
+                  timerInit();
+                  $('.step4 .buble_txt1').addClass('aniScale2');
+                }, 1000);
+              }
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                touchMotionSetOn(175, 479, step4.guideTouch, $('.step4 .bubble_box1'));
+              }
+            },
+          ]);
+        },
+        guideTouch: () => {
+          audioSet([
+          "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_020.mp3",
+          "../../../COMM/SOUND/Eff_start.mp3", 
+          "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_021.mp3",
+          "../../../COMM/SOUND/Eff_start.mp3"
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step4 .buble_txt1').removeClass('aniScale2');
+                $('.step4 .content_box1').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                $('.step4 .pink_arrow').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 3,
+              type: 'end',
+              callback: () => {
+                $('.step4 .blue_arrow').css('visibility', 'visible');
+                $('.step4 .num7').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 4,
+              type: 'end',
+              callback: () => {
+                $('.step4 .select_list1').css('visibility', 'visible');
+                
+                quizSelectSetInit($('.step4 .select_list1'), [28, 29]);
+                quizSelectSetOnNew(1, step4.quizSelectCorrect2, $('.step4 .txt_container1'), true); // 정답 400 인 경우
+              }
+            },
+          ]);
+        },
+        quizSelectCorrect2: (flag) => {
+          if (flag) {
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+              "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_022.mp3",
+              "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_023.mp3"
+            ], [
+              {
+                idx: 1,
+                type: 'start',
+                callback: () => {
+                  $('.step4 .txt_container1').removeClass('blink');
+                }
+              },
+              {
+                idx: 3,
+                type: 'start',
+                callback: () => {
+                    timerSet(() => {
+                    timerInit();
+                    $('.step4 .buble_txt2').addClass('aniScale2');
+                  }, 1000);
+                }
+              },
+              {
+                idx: 3,
+                type: 'end',
+                callback: () => {
+                  touchMotionSetOn(175, 1182, step4.guideTouch2, $('.step4 .bubble_box2'));
+                }
+              },
+            ]);
+          } else {
+            audioSet([
+              "../../../COMM/SOUND/WRONG.mp3",
+            ]);
+          }
+        },
+        guideTouch2: () => {
+          audioSet([
+              "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_024.mp3"
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step4 .buble_txt2').removeClass('aniScale2');
+                $('.step4 .content_box2').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                $('.step4 .bubble_box2').removeClass('aniScale2');
+                $('.step4 .content_box2').css('visibility', 'visible');
+                $('.step4 .num_box').css('visibility', 'visible');
+                 // 빈칸 깜빡이기 (키패드 노출)
+                let keypadTxtEl1 = $('.step4 .keypad_txt1');
+                keypadTxtEl1.addClass("blink").click(() => {
+                  keypadTxtEl1.removeClass('blink');
+                  keypadSetOn(keypadTxtEl1, 14, 14);
+                  step4.keypadSetClick(keypadTxtEl1);
+                });
+              }
+            },
+          ]);
+        },
+        keypadSetClick: (btn) => {
+          $(document).on('click', keypadBtnCheckEl, () => {
+            if (keypadInput == btn.data('val')) {
+              keypadSetCorrect(btn);
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.MP3",
+              ], [
+                {
+                idx: 1,
+                type: 'end',
+                callback: () => {
+                  correctly();
+                }
+              },
+              ]);
+            } else {
+              keypadSetOff(btn);
+              btn.addClass('blink');
+
+              audioSet([
+                "../../../COMM/SOUND/WRONG.MP3",
+              ]);
+            }
+          });
+        },
+        reset: () => {
+          keypadSetInit();
+          $('.step4 .dp_none').css('display', '');
+          $('.step4 .v_hidden').css('visibility', '');
+          $('.step4 .txt_container').html('?');
+        },
+      };
+      //================STEP5==============
+      const step5 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_025.mp3",
+            "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_026.mp3",
+
+          ], [
+          {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $(".step5 .step5_answer_box1").css("visibility", "visible");
+
+                stepDropList = [
+	                {
+	                  dropEl: '.step5 .txt_container1',
+	                  correct: 3
+	                },
+	                {
+	                  dropEl: '.step5 .txt_container2',
+	                  correct: 1
+	                },
+	                {
+	                  dropEl: '.step5 .txt_container3',
+	                  correct: 2
+	                },
+	                {
+	                  dropEl: '.step5 .txt_container4',
+	                  correct: 4
+	                },
+		            ];
+
+		            stepDropArr = [4, 7, 14, 56];
+
+		            quizMultiDragDropSetOnNew(stepDropList, $('.step5 .step5_answer_box1'), stepDropArr, step5.dropppFn);
+              }
+            },
+          ]);
+        },
+        dropppFn: () => {
+	      	$(".droppable")
+	      	.droppable({ disabled: false })
+	      	.on("droppable:drop", function (droppp, drag) {
+	      		let dragAnswer = drag.item[0].dataset.val;
+	      		let answer = droppp.currentTarget.dataset.val;
+
+	      		if (answer === dragAnswer) {
+              correctlyFlag++;
+              quizMultiDragDropSetCorrect(droppp.currentTarget);
+
+              if (correctlyFlag == stepDropList.length) {
+                
+                quizMultiDragDropSetCorrectly();
+                stepDropList = "";
+                stepDropArr = "";
+
+                audioSet([
+                "../../../COMM/SOUND/CORRECT.mp3",
+                "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_027.mp3",
+                "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_028.mp3",
+                "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_029.mp3",
+                "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_030.mp3",
+                "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_031.mp3",
+                "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_032.mp3",
+                "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_033.mp3",
+                "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_034.mp3",
+                "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_035.mp3",
+                "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_036.mp3",
+                ], [
+                {
+                  idx: 1,
+                  type: 'start',
+                  callback: () => {
+                    $('.step5 .txt_container4').removeClass("blink");
+                  }
+                },
+                {
+                  idx: 2,
+                  type: 'start',
+                  callback: () => {
+                    $('.step5 .select_list1').css('visibility','');
+                  }
+                },
+                {
+                  idx: 3,
+                  type: 'start',
+                  callback: () => {
+                    $('.step5 .effect1').css('visibility', 'visible');
+                    $('.step5 .effect1').addClass('box_blink2');
+                    timerSet(() => {
+                      timerInit();
+                      $('.step5 .effect1').css('visibility', '');
+                      $('.step5 .effect1').removeClass('box_blink2');
+                    }, 1500);
+                  }
+                },
+                {
+                  idx: 4,
+                  type: 'start',
+                  callback: () => {
+                    $('.step5 .effect2').css('visibility', 'visible');
+                    $('.step5 .effect2').addClass('box_blink2');
+                    timerSet(() => {
+                      timerInit();
+                      $('.step5 .effect2').css('visibility', '');
+                      $('.step5 .effect2').removeClass('box_blink2');
+                    }, 1500);
+                  }
+                },
+                {
+                  idx: 5,
+                  type: 'start',
+                  callback: () => {
+                    $('.step5 .effect3').addClass('box_blink2');
+                    $('.step5 .effect3').css('visibility', 'visible');
+                    timerSet(() => {
+                      timerInit();
+                      $('.step5 .effect3').css('visibility', '');
+                      $('.step5 .effect3').removeClass('box_blink2');
+                    }, 1500);
+                  }
+                },
+                {
+                  idx: 6,
+                  type: 'start',
+                  callback: () => {
+                    $('.step5 .effect4').css('visibility', 'visible');
+                    $('.step5 .effect4').addClass('box_blink2');
+                    timerSet(() => {
+                      timerInit();
+                      $('.step5 .effect4').css('visibility', '');
+                      $('.step5 .effect4').removeClass('box_blink2');
+                    }, 1500);
+                  }
+                },
+                {
+                  idx: 7,
+                  type: 'start',
+                  callback: () => {
+                    $('.step5 .effect5').addClass('box_blink2');
+                    $('.step5 .effect5').css('visibility', 'visible');
+                    timerSet(() => {
+                      timerInit();
+                      $('.step5 .effect5').css('visibility', '');
+                      $('.step5 .effect5').removeClass('box_blink2');
+                    }, 1500);
+                  }
+                },
+                {
+                  idx: 8,
+                  type: 'start',
+                  callback: () => {
+                    $('.step5 .effect6').css('visibility', 'visible');
+                    $('.step5 .effect6').addClass('box_blink2');
+                    timerSet(() => {
+                      timerInit();
+                      $('.step5 .effect6').css('visibility', '');
+                      $('.step5 .effect6').removeClass('box_blink2');
+                    }, 1500);
+                  }
+                },
+                {
+                  idx: 9,
+                  type: 'start',
+                  callback: () => {
+                    $('.step5 .effect7').css('visibility', 'visible');
+                    $('.step5 .effect7').addClass('box_blink2');
+                    timerSet(() => {
+                      timerInit();
+                      $('.step5 .effect7').css('visibility', '');
+                      $('.step5 .effect7').removeClass('box_blink2');
+                    }, 1500);
+                  }
+                },
+                {
+                  idx: 10,
+                  type: 'start',
+                  callback: () => {
+                    $('.step5 .effect8').css('visibility', 'visible');
+                    $('.step5 .effect8').addClass('box_blink2');
+                    timerSet(() => {
+                      timerInit();
+                      $('.step5 .effect8').css('visibility', '');
+                      $('.step5 .effect8').removeClass('box_blink2');
+                    }, 1500);
+                  }
+                },
+                {
+                  idx: 11,
+                  type: 'start',
+                  callback: () => {
+                    $('.step5 .effect9').css('visibility', 'visible');
+                    $('.step5 .effect9').addClass('box_blink2');
+                    timerSet(() => {
+                      timerInit();
+                      $('.step5 .effect9').css('visibility', '');
+                      $('.step5 .effect9').removeClass('box_blink2');
+                    }, 1500);
+                  }
+                },
+                {
+                  idx: 11,
+                  type: 'end',
+                  callback: () => {
+                    disStep++;
+                    pageAction();
+                  }
+                },
+                ]);
+              } else {
+                audioSet([
+                  "../../../COMM/SOUND/CORRECT.mp3",
+                ]);
+              }
+            } else {
+              audioSet([
+                "../../../COMM/SOUND/WRONG.mp3",
+              ]);
+
+              return false;
+            }
+	      	});
+	      },
+        reset: () => {
+          $('.step5 .dp_none').css('display', '');
+          $('.step5 .v_hidden').css('visibility', '');
+          $('.step5 .txt_container').html('?');
+          $('.step5 .txt_container').removeClass('blink');
+          correctlyFlag = 0;
+        },
+      };
+      //================STEP6==============
+      const step6 = {
+        start: () => {
+          audioSet([
+            "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_037.mp3",
+            "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_038.mp3",
+            "../../../COMM/SOUND/SEASON2/2_2_7/2_2_2-7_039.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                $(".check_footer").css('visibility', "visible");
+                $(".step6 .check_footer_inner").addClass("slideUp");          
+              }
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                timerSet(() => {
+                  timerInit();
+                  $(`.step6 .effect1`).css("visibility", "visible").addClass(`on`);
+                    timerSet(() => {
+                    timerInit();
+                    $(`.step6 .effect1`).addClass(`blinking`);
+                  }, 1000);
+                }, 2000);
+                timerSet(() => {
+                  timerInit();
+                  // $(`.step5 .effect1`).addClass(`blinking`);
+                  $(`.step6 .effect2`).css("visibility", "visible").addClass(`on`);
+                  timerSet(() => {
+                    timerInit();
+                    $(`.step6 .effect2`).addClass(`blinking`);
+                    $(`.step6 .effect1`).removeClass(`blinking`)
+                  }, 1000);
+                }, 4000);
+              }
+            },
+            {
+              idx: 3,
+              type: "start",
+              callback: () => {
+                $(`.step6 .effect1`).css('visibility', "visible").addClass(`on`).removeClass(`blinking`);
+                $(`.step6 .effect2`).css('visibility', "visible").addClass(`on`).removeClass(`blinking`);
+              }
+            },
+            {
+              idx: 3,
+              type: 'end',
+              callback: () => {
+                callFinish();  
+              }
+            },
+          ]);
+        },
+        reset: () => {
+          $('.step6 .dp_none').css('display', '');
+          $('.step6 .v_hidden').css('visibility', '');
+        },
+      };
+    </script>
+  </body>
+</html>

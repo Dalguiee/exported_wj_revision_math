@@ -1,0 +1,2321 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>개정교육과정-수학 수학 개념</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <meta name="KeyWORDs" content="" />
+  <meta name="Description" content="" />
+  <meta name="Robots" content="all" />
+  <meta http-equiv="Subject" content="" />
+  <meta http-equiv="Title" content="" />
+  <meta http-equiv="Author" content="onflou " />
+  <meta http-equiv="Publisher" content="" />
+
+  <!-- 브라우저 호환성을 지정 -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="shortcut icon" href="#" />
+  <link href="../../../COMM/CSS/COMMON.CSS" rel="stylesheet" />
+  <link href="../../../COMM/CSS/CONCEPTCOMMON2.CSS" rel="stylesheet" />
+  <link href="../../../COMM/CSS/VIDEO.CSS" rel="stylesheet" />
+
+  <style>
+    .calc_box_comm {
+      padding: 30px 60px;
+      border-radius: 20px;
+      background-color: rgba(255, 184, 239, 1);
+      text-align: center;
+    }
+
+    .column_calc_comm {
+      padding: 50px 0;
+    }
+
+    .column_calc_comm .column_calc_ceil .txt,
+    .column_calc_comm .row .txt {
+      padding-top: 2px;
+      padding-right: 4px;
+    }
+
+    .number_model_table {
+      width: 487px;
+      height: 288px;
+      background: url("../../../COMM/IMG/CONCEPT/2_3_3/NUMBER_MODEL_TABLE.png") no-repeat;
+      padding-top: 82px;
+
+      margin: 30px;
+      position: relative;
+    }
+
+    .number_model_table .tr {
+      width: 100%;
+      height: 206px;
+
+      display: flex;
+    }
+
+    .number_model_table .td {
+      width: 50%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .number_model_table .td .img_container {
+      width: 100px;
+      height: 200px;
+    }
+
+    .number_model_table .hint {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+
+      display: none;
+    }
+
+    .number_model_table_double {
+      width: 464px;
+      height: 470px;
+      padding-top: 78px;
+      background: url("../../../COMM/IMG/CONCEPT/2_3_3/NUMBER_MODEL_TABLE2.png") no-repeat;
+    }
+
+    .number_model_table_double .tr {
+      width: 100%;
+      height: 195px;
+
+      display: flex;
+    }
+
+    .number_model_table_double .td {
+      width: 50%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .number_model_table_double .td .img_container {
+      width: 95px;
+      height: 195px;
+    }
+
+    /* 1p */
+    .step1 .step1_top_box {
+      width: 1200px;
+      height: 288px;
+      text-align: center;
+      line-height: 70px;
+    }
+
+    .step1 .step1_mid_box {
+      margin-top: 60px;
+    }
+
+    .step1 .step1_img_box {
+      width: 878px;
+      height: 220px;
+    }
+
+    .step1 .step1_btm_box {
+      margin-top: 60px;
+      visibility: hidden;
+    }
+
+    /* 2p */
+    .step2 .step2_top_box {
+      position: relative;
+    }
+
+    .step2 .step2_mid_box {
+      margin-top: 240px;
+      position: relative;
+    }
+
+    .step2 .step2_mid_box .step2_img_box {
+      width: 1485px;
+      height: 132px;
+    }
+
+    .step2 .step2_mid_box .arrow {
+      position: absolute;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      display: none;
+    }
+
+    .step2 .step2_mid_box .arrow .txt {
+      position: absolute;
+      bottom: calc(100% + 5px);
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    .step2 .step2_mid_box .arrow_blue {
+      width: 737px;
+      height: 82px;
+      background-image: url("../../../COMM/IMG/CONCEPT/2_3_3/STEP2_ARROW_BLUE.png");
+
+      top: -46px;
+      left: 48px;
+    }
+
+    .step2 .step2_mid_box .arrow_blue .txt {
+      color: rgba(37, 116, 252, 1);
+    }
+
+    .step2 .step2_mid_box .arrow_red {
+      width: 71px;
+      height: 21px;
+      background-image: url("../../../COMM/IMG/CONCEPT/2_3_3/STEP2_ARROW_PINK1.png");
+
+      top: 3px;
+    }
+
+    .step2 .step2_mid_box .arrow_red_last {
+      width: 80px;
+      height: 30px;
+      background-image: url("../../../COMM/IMG/CONCEPT/2_3_3/STEP2_ARROW_PINK2.png");
+
+      top: 3px;
+    }
+
+    .step2 .step2_mid_box .arrow2 {
+      left: 785px;
+    }
+
+    .step2 .step2_mid_box .arrow3 {
+      left: 860px;
+    }
+
+    .step2 .step2_mid_box .arrow4 {
+      left: 935px;
+    }
+
+    .step2 .step2_mid_box .arrow5 {
+      left: 1006px;
+    }
+
+    .step2 .step2_mid_box .arrow6 {
+      left: 1083px;
+    }
+
+    .step2 .step2_mid_box .arrow7 {
+      left: 1156px;
+    }
+
+    .step2 .step2_mid_box .arrow8 {
+      left: 1230px;
+    }
+
+    .step2 .step2_mid_box .arrow9 {
+      left: 1304px;
+    }
+
+    .step2 .step2_btm_box {
+      margin-top: 80px;
+      visibility: hidden;
+    }
+
+    /* 3p */
+    .step3_left_box {
+      position: relative;
+    }
+
+    .step3_left_box .hint {
+      position: absolute;
+      top: 85px;
+      right: 0px;
+
+      width: 121px;
+      height: 112px;
+
+      display: none;
+    }
+
+    .step3 .step3_right_box {
+      margin-left: 80px;
+      position: relative;
+    }
+
+    .step3 .step3_right_box table td {
+      border: solid 2px rgba(233, 114, 2, 1);
+    }
+
+    .step3 .step3_right_box .td {
+      width: 110px;
+      height: 90px;
+      padding-top: 8px;
+      position: relative;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .step3 .step3_right_box .td .circle {
+      width: 78px;
+      height: 78px;
+      border-radius: 50%;
+      border: solid 4px rgba(255, 100, 220, 1);
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      display: none;
+    }
+
+    .step3 .step3_right_box .td span {
+      position: relative;
+      z-index: 1;
+    }
+
+    .step3 .step3_right_box .td .arrow {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+
+      background-position: center;
+      background-repeat: no-repeat;
+
+      display: none;
+    }
+
+    .step3 .step3_right_box .td .arrow_blue {
+      background-image: url("../../../COMM/IMG/CONCEPT/2_3_3/STEP3_ARROW_BLUE.png");
+    }
+
+    .step3 .step3_right_box .td .arrow_pink {
+      background-image: url("../../../COMM/IMG/CONCEPT/2_3_3/STEP3_ARROW_PINK.png");
+    }
+
+    .step3 .step3_right_box .td .arrow1 {
+      top: -19px;
+    }
+
+    .step3 .step3_right_box .td .arrow2 {
+      top: -34px;
+    }
+
+    .step3 .step3_right_box .td .arrow3 {
+      left: 35px;
+    }
+
+    .step3 .step3_right_box .td .arrow4 {
+      left: 36px;
+    }
+
+    .step3 .step3_right_btm {
+      margin-top: 55px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      visibility: hidden;
+    }
+
+    /* 4p */
+    .step4_left_box {
+      position: relative;
+    }
+
+    .step4_left_box .hint {
+      position: absolute;
+      top: 85px;
+      right: 0;
+
+      width: 121px;
+      height: 112px;
+    }
+
+    .step4 .step4_right_box {
+      margin-left: 80px;
+      position: relative;
+    }
+
+    .step4 .step4_right_box table td {
+      border: solid 2px rgba(233, 114, 2, 1);
+    }
+
+    .step4 .step4_right_box .td {
+      width: 110px;
+      height: 90px;
+      padding-top: 8px;
+      position: relative;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .step4 .step4_right_box .td .circle {
+      width: 78px;
+      height: 78px;
+      border-radius: 50%;
+      border: solid 4px rgba(255, 100, 220, 1);
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .step4 .step4_right_box .td span {
+      position: relative;
+      z-index: 1;
+    }
+
+    .step4 .step4_right_box .td .arrow {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .step4 .step4_right_box .td .arrow_blue {
+      background-image: url("../../../COMM/IMG/CONCEPT/2_3_3/STEP4_ARROW_BLUE.png");
+    }
+
+    .step4 .step4_right_box .td .arrow_pink {
+      background-image: url("../../../COMM/IMG/CONCEPT/2_3_3/STEP4_ARROW_PINK.png");
+    }
+
+    .step4 .step4_right_box .td .arrow1 {
+      top: -19px;
+    }
+
+    .step4 .step4_right_box .td .arrow2 {
+      top: -34px;
+    }
+
+    .step4 .step4_right_box .td .arrow3 {
+      left: 35px;
+    }
+
+    .step4 .step4_right_box .td .arrow4 {
+      left: 36px;
+    }
+
+    .step4 .step4_right_btm {
+      margin-top: 55px;
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+
+    .step4 .check_footer_text {
+      background: url("../../../COMM/IMG/CONCEPT/2_3_3/STEP4_FOOTER_TXT.png") no-repeat center;
+    }
+
+    /* 5p */
+    .step5 .step5_container {
+      position: relative;
+    }
+
+    .step5 .step5_left_box {
+      position: absolute;
+      top: 141px;
+      left: 292px;
+    }
+
+    .step5 .step5_right_box {
+      position: relative;
+    }
+
+    .step5 .step5_right_box .step5_right_top {
+      width: 1700px;
+      height: 595px;
+    }
+
+    .step5 .step5_right_box .step5_right_btm {
+      position: absolute;
+      top: 425px;
+      left: 1025px;
+      transform: translate(-50%, 0);
+    }
+
+    .step5 .step5_right_btm {
+      visibility: hidden;
+    }
+
+    .step5 .step5_right_btm .calc_comm .txt_container {
+      width: 133px;
+      padding-top: 5px;
+      position: relative;
+    }
+
+    .step5 .step5_right_btm .quiz_select_wrap {
+      position: absolute;
+      top: calc(100% + 15px);
+      display: none;
+    }
+
+    .step5 .step5_right_btm .quiz_select_wrap1 {
+      right: 177px;
+    }
+
+    .step5 .step5_right_btm .quiz_select_wrap2 {
+      right: -153px;
+    }
+
+    .step5 .step5_right_btm .quiz_select_wrap .answer {
+      width: 133px;
+      height: 75px;
+      border-radius: 10px;
+    }
+
+    .step5 .step5_right_btm .quiz_select_wrap .answer+.answer {
+      margin-left: 20px;
+    }
+
+    .step5 .select_list .answer::after {
+      border-radius: 10px;
+    }
+
+    .step5 .check_footer_text {
+      position: relative;
+      background: url("../../../COMM/IMG/CONCEPT/2_3_3/STEP5_FOOTER_TXT.png") no-repeat center;
+    }
+
+    .step5 .check_footer_text .hint {
+      position: absolute;
+      top: 205px;
+      width: 114px;
+      height: 112px;
+
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .step5 .check_footer_text .hint1 {
+      left: 695px;
+      background-image: url("../../../COMM/IMG/CONCEPT/2_3_3/STEP5_HINT1.png");
+    }
+
+    .step5 .check_footer_text .hint2 {
+      left: 835px;
+      background-image: url("../../../COMM/IMG/CONCEPT/2_3_3/STEP5_HINT2.png");
+    }
+
+    .step5 .touchMotion5-1 {
+      top: 200px;
+      left: 1180px;
+    }
+
+    .step5 .step5_btm_box {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    /* 6p */
+    .step6 .full_content_comm {
+      position: relative;
+    }
+
+    .step6 .step6_left_box {
+      position: absolute;
+      top: 141px;
+      left: 292px;
+    }
+
+    .step6 .step6_right_box {
+      position: relative;
+    }
+
+    .step6 .step6_right_box .step6_right_top {
+      width: 1700px;
+      height: 595px;
+    }
+
+    .step6 .step6_right_box .step6_right_btm {
+      position: absolute;
+      top: 416px;
+      left: 1058px;
+      transform: translate(-50%, 0);
+    }
+
+    .step6 .step6_right_btm .calc_comm .txt_container {
+      width: 133px;
+      /* padding-top: 5px; */
+      position: relative;
+    }
+
+    .step6 .step6_right_btm .quiz_select_wrap {
+      position: absolute;
+      top: calc(100% + 15px);
+      display: none;
+    }
+
+    .step6 .step6_right_btm .quiz_select_wrap1 {
+      right: 177px;
+    }
+
+    .step6 .step6_right_btm .quiz_select_wrap2 {
+      right: -153px;
+    }
+
+    .step6 .step6_right_btm .quiz_select_wrap .answer {
+      width: 133px;
+      height: 75px;
+      border-radius: 10px;
+    }
+
+    .step6 .step6_right_btm .quiz_select_wrap .answer+.answer {
+      margin-left: 20px;
+    }
+
+    .step6 .select_list .answer::after {
+      border-radius: 10px;
+    }
+
+    .step6 .check_footer_text {
+      position: relative;
+      background: url("../../../COMM/IMG/CONCEPT/2_3_3/STEP5_FOOTER_TXT.png") no-repeat center;
+    }
+
+    .step6 .check_footer_text .hint {
+      position: absolute;
+      top: 205px;
+      width: 114px;
+      height: 112px;
+
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .step6 .check_footer_text .hint1 {
+      left: 688px;
+      background-image: url("../../../COMM/IMG/CONCEPT/2_3_3/STEP6_HINT1_1.png");
+    }
+
+    .step6 .check_footer_text .hint2 {
+      left: 837px;
+      background-image: url("../../../COMM/IMG/CONCEPT/2_3_3/STEP6_HINT2_1.png");
+    }
+
+    .step6 .touchMotion6-1 {
+      top: 120px;
+      left: 1180px;
+    }
+
+    .step6 .step6_btm_box {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    /* 7p */
+    .step7 .step7_top_box {
+      width: 1600px;
+
+      display: flex;
+      flex-wrap: wrap;
+
+      justify-content: center;
+    }
+
+    .step7 .step7_top_box .number_model_table1,
+    .step7 .step7_top_box .number_model_table2 {
+      margin-top: 0;
+    }
+
+    .step7 .step7_top_box .number_model_table3 {
+      margin-bottom: 0;
+      visibility: hidden;
+    }
+
+    .step7 .number_model_table3 .td .img_container {
+      width: 160px;
+    }
+
+    .step7 .step7_top_box .calc_txt_box {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .step7 .step7_top_box .calc_txt_box .tooltip {
+      visibility: hidden;
+    }
+
+    .step7 .step7_top_box .number_model_table1 .calc_txt_box {
+      right: calc(100% + 70px);
+      width: 133px;
+      height: 143px;
+    }
+
+    .step7 .step7_top_box .number_model_table2 .calc_txt_box {
+      left: calc(100% + 70px);
+      width: 133px;
+      height: 143px;
+    }
+
+    .step7 .step7_top_box .number_model_table3 .hint {
+      width: 279px;
+      height: 285px;
+    }
+
+    .step7 .step7_top_box .number_model_table3 .hint1 {
+      right: calc(100% + 5px)
+    }
+
+    .step7 .step7_top_box .number_model_table3 .hint2 {
+      left: calc(100% + 5px)
+    }
+
+    .step7 .step7_img_box5,
+    .step7 .step7_img_box6 {
+      visibility: hidden;
+    }
+
+    .step7 .step7_btm_box {
+      margin-top: 60px;
+      visibility: hidden;
+    }
+
+    .step7 .touchMotion7-1 {
+      top: 570px;
+      left: 770px;
+    }
+
+    .step7 .touchMotion7-2 {
+      top: 570px;
+      left: 1010px;
+    }
+
+    /* 8p */
+    .step8 .step8_left_btm {
+      width: 554px;
+      height: 220px;
+      border-radius: 30px;
+      border: solid 4px rgba(233, 114, 2, 1);
+      margin-top: 25px;
+
+      visibility: hidden;
+    }
+
+    .step8 .step8_left_btm .box {
+      width: 50%;
+      height: 100%;
+    }
+
+    .step8 .step8_left_btm .box+.box {
+      border-left: solid 4px rgba(233, 114, 2, 1);
+    }
+
+    .step8 .step8_left_btm .step8_img_box {
+      width: 240px;
+      height: 195px;
+
+      visibility: hidden;
+    }
+
+    .step8 .step8_right_box {
+      margin-left: 150px;
+    }
+
+    .step8 .step8_right_box .column_calc_ceil {
+      visibility: hidden;
+    }
+
+    .step8 .step8_right_box .column_calc_result .txt {
+      visibility: hidden;
+    }
+
+    .step8 .touchMotion8-1 {
+      top: 670px;
+      left: 730px;
+    }
+
+    .step8 .touchMotion8-2 {
+      top: 670px;
+      left: 830px;
+    }
+
+    /* 9p */
+    .step9 .step9_top_box {
+      width: 1600px;
+      height: 470px;
+    }
+
+    .step9 .step9_top_box .calc_box {
+      position: relative;
+      visibility: hidden;
+    }
+
+    .step9 .step9_top_box .calc_box+.calc_box {
+      padding-left: 187px;
+      background: url("../../../COMM/IMG/CONCEPT/COMM/ARROW_GRAY.png") no-repeat 66px center;
+    }
+
+    .step9 .step9_top_box .calc_box .hint {
+      position: absolute;
+      bottom: -50px;
+      display: none;
+    }
+
+    .step9 .step9_top_box .calc_box .hint1 {
+      width: 147px;
+      height: 112px;
+      right: -72px;
+
+      background: url("../../../COMM/IMG/CONCEPT/2_3_3/STEP9_HINT1_1.png") no-repeat;
+    }
+
+    .step9 .step9_top_box .calc_box .hint2 {
+      width: 168px;
+      height: 112px;
+      right: -40px;
+
+      background: url("../../../COMM/IMG/CONCEPT/2_3_3/STEP9_HINT2_1.png") no-repeat;
+    }
+
+    .step9 .step9_top_box .calc_box1 {
+      visibility: visible;
+    }
+
+    .step9 .step9_top_box .calc_box2 .column_calc_ceil,
+    .step9 .step9_top_box .calc_box2 .column_calc_result .txt {
+      visibility: hidden;
+    }
+
+    .step9 .step9_top_box .calc_box3 .column_calc_result .txt10 {
+      visibility: hidden;
+    }
+
+    .step9 .touchMotion9-1 {
+      top: 450px;
+      left: 900px;
+    }
+
+    .step9 .touchMotion9-2 {
+      top: 450px;
+      left: 1250px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="contents-wrap" class="concept" style="position: absolute; display: flex"></div>
+    <div id="contents-main" style="display: none" class="concept-warp">
+      <div class="concept-warp_inner">
+        <header class="header" style="visibility: visible">
+          <div class="header_title">
+            <button class="sound-btn" onclick="titleSound()"></button>
+            <h3></h3>
+          </div>
+          <p class="header_page"><span>1</span>/2</p>
+        </header>
+        <main class="main">
+          <div class="main_content">
+            <!-- 콘텐츠영역 -->
+            <div class="step step1" style="display: block">
+              <!-- step1 시작부분 -->
+              <div class="main__container dp_flex dp_flex_column">
+                <div class="step1_top_box content_box_comm dp_flex">귤을 어제 27개 따고 오늘 18개를 땄습니다.<br />어제와 오늘 딴 귤은 모두 몇
+                  개일까요?</div>
+                <div class="step1_btm_box calc_box_comm dp_flex">
+                  <div class="txt txt1">27</div>
+                  <div class="txt txt2 plus">+</div>
+                  <div class="txt txt3">18</div>
+                </div>
+              </div>
+            </div>
+            <div class="step step2" style="display: none">
+              <!-- step2 시작부분 -->
+              <div class="main__container dp_flex dp_flex_column">
+                <div class="step2_top_box calc_box_comm dp_flex">
+                  <div class="txt txt1">27</div>
+                  <div class="txt txt2 plus">+</div>
+                  <div class="txt txt3 number_split_tooltip_wrap">18
+                    <div class="tooltip number_split_tooltip dp_none">
+                      <div class="tooltip_left">10</div>
+                      <div class="tooltip_right">8</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="step2_mid_box dp_flex">
+                  <div class="step2_img_box img_container">
+                    <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP2_IMG_2.png" class="img img1" />
+                  </div>
+                  <div class="arrow arrow_blue arrow1"><span class="txt">10</span></div>
+                  <div class="arrow arrow_red arrow2"></div>
+                  <div class="arrow arrow_red arrow3"></div>
+                  <div class="arrow arrow_red arrow4"></div>
+                  <div class="arrow arrow_red arrow5"></div>
+                  <div class="arrow arrow_red arrow6"></div>
+                  <div class="arrow arrow_red arrow7"></div>
+                  <div class="arrow arrow_red arrow8"></div>
+                  <div class="arrow arrow_red_last arrow9"></div>
+                </div>
+                <div class="step2_btm_box">
+                  <div class="calc_arrow_comm dp_flex">
+                    <div class="txt txt1">27</div>
+                    <div class="txt txt2">+</div>
+                    <div class="txt txt3">18</div>
+                    <div class="txt txt4">=</div>
+                    <div class="txt txt5">37</div>
+                    <div class="txt txt6">+</div>
+                    <div class="txt txt7">8</div>
+                    <div class="txt txt8">=</div>
+                    <div class="txt txt9">45</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step step3" style="display: none">
+              <!-- step3 시작부분 -->
+              <div class="main__container">
+                <div class="full_content_comm dp_flex dp_flex_column">
+                  <div class="step3_top_box dp_flex">
+                    <div class="step3_left_box calc_box_comm dp_flex">
+                      <div class="txt txt1">27</div>
+                      <div class="txt txt2 plus">+</div>
+                      <div class="txt txt3">18</div>
+                      <div class="hint"><img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP4_HINT.png" class="img img1" />
+                      </div>
+                    </div>
+                    <div class="step3_right_box">
+                      <div class="step3_right_top">
+                        <table>
+                          <tr>
+                            <td>
+                              <div class="td"><span>21</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>22</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>23</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>24</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>25</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>26</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>27</span>
+                                <div class="circle"></div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="td"><span>28</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>29</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>30</span></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="td"><span>31</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>32</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>33</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>34</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>35</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>36</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>37</span>
+                                <div class="arrow arrow1 arrow_blue"></div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="td"><span>38</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>39</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>40</span></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="td"><span>41</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>42</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>43</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>44</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>45</span>
+                                <div class="arrow arrow4 arrow_pink"></div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="td"><span>46</span>
+                                <div class="arrow arrow3 arrow_pink"></div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="td"><span>47</span>
+                                <div class="arrow arrow2 arrow_blue"></div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="td"><span>48</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>49</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>50</span></div>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step3_btm_box">
+                    <div class="step3_right_btm dp_flex">
+                      <div class="calc_arrow_comm dp_flex">
+                        <div class="txt txt1">27</div>
+                        <div class="txt txt2">+</div>
+                        <div class="txt txt3">18</div>
+                        <div class="txt txt4">=</div>
+                        <div class="txt txt5">47</div>
+                        <div class="txt txt6">-</div>
+                        <div class="txt txt7">2</div>
+                        <div class="txt txt8">=</div>
+                        <div class="txt txt9">45</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step step4" style="display: none">
+              <!-- step4 시작부분 -->
+              <div class="main__container">
+                <div class="full_content_comm dp_flex dp_flex_column">
+                  <div class="step4_top_box dp_flex">
+                    <div class="step4_left_box calc_box_comm dp_flex">
+                      <div class="txt txt1">27</div>
+                      <div class="txt txt2 plus">+</div>
+                      <div class="txt txt3">18</div>
+                      <div class="hint"><img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP4_HINT.png" class="img img1" />
+                      </div>
+                    </div>
+                    <div class="step4_right_box">
+                      <div class="step4_right_top">
+                        <table>
+                          <tr>
+                            <td>
+                              <div class="td"><span>21</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>22</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>23</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>24</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>25</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>26</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>27</span>
+                                <div class="circle"></div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="td"><span>28</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>29</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>30</span></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="td"><span>31</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>32</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>33</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>34</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>35</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>36</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>37</span>
+                                <div class="arrow arrow1 arrow_blue"></div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="td"><span>38</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>39</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>40</span></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="td"><span>41</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>42</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>43</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>44</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>45</span>
+                                <div class="arrow arrow4 arrow_pink"></div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="td"><span>46</span>
+                                <div class="arrow arrow3 arrow_pink"></div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="td"><span>47</span>
+                                <div class="arrow arrow2 arrow_blue"></div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="td"><span>48</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>49</span></div>
+                            </td>
+                            <td>
+                              <div class="td"><span>50</span></div>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step4_btm_box">
+                    <div class="step4_right_btm dp_flex">
+                      <div class="calc_arrow_comm dp_flex">
+                        <div class="txt txt1">27</div>
+                        <div class="txt txt2">+</div>
+                        <div class="txt txt3">18</div>
+                        <div class="txt txt4">=</div>
+                        <div class="txt txt5">47</div>
+                        <div class="txt txt6">-</div>
+                        <div class="txt txt7">2</div>
+                        <div class="txt txt8">=</div>
+                        <div class="txt txt9">45</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <footer class="check_footer">
+                  <div class="check_footer_inner">
+                    <div class="check_footer_text"></div>
+                    <div class="check_footer_ch">
+                      <div class="check_footer_ch_head"></div>
+                      <div class="check_footer_ch_body"></div>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="step step5" style="display: none">
+              <!-- step5 시작부분 -->
+              <div class="main__container dp_flex dp_flex_column">
+                <div class="touchMotion touchMotion5-1">
+                  <div class="touchMotion_point"></div>
+                  <div class="touchMotion_hand"></div>
+                </div>
+
+                <div class="step5_container dp_flex dp_flex_column">
+                  <div class="step5_top_box dp_flex">
+                    <div class="step5_left_box calc_box_comm dp_flex">
+                      <div class="txt txt1">27</div>
+                      <div class="txt txt2">+</div>
+                      <div class="txt txt3">18</div>
+                    </div>
+                    <div class="step5_right_box">
+                      <div class="step5_right_top img_container">
+                        <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP5_IMG1_1.png" class="img img1" />
+                        <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP5_IMG2.png" class="img img2" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step5_btm_box">
+                    <div class="step5_right_btm">
+                      <div class="calc_arrow_comm calc_comm">
+                        <div class="txt txt1">27</div>
+                        <div class="txt txt2">+</div>
+                        <div class="txt txt3">18</div>
+                        <div class="txt txt4">=</div>
+                        <div class="txt txt5">30</div>
+                        <div class="txt txt6">+</div>
+                        <div class="txt_container txt_container1">?</div>
+                        <div class="txt">=</div>
+                        <div class="txt_container txt_container2">?</div>
+                        <div class="quiz_select_wrap quiz_select_wrap1"></div>
+                        <div class="quiz_select_wrap quiz_select_wrap2"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step step6" style="display: none">
+              <!-- step6 시작부분 -->
+              <div class="main__container">
+                <div class="touchMotion touchMotion6-1">
+                  <div class="touchMotion_point"></div>
+                  <div class="touchMotion_hand"></div>
+                </div>
+
+                <div class="full_content_comm dp_flex dp_flex_column">
+                  <div class="step6_top_box dp_flex">
+                    <div class="step6_left_box calc_box_comm dp_flex">
+                      <div class="txt txt1">27</div>
+                      <div class="txt txt2">+</div>
+                      <div class="txt txt3">18</div>
+                    </div>
+                    <div class="step6_right_box">
+                      <div class="step6_right_top img_container">
+                        <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP6_IMG1_1.png" class="img img1" />
+                        <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP6_IMG2.png" class="img img2" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="step6_btm_box">
+                    <div class="step6_right_btm">
+                      <div class="calc_arrow_comm calc_comm">
+                        <div class="txt txt1">27</div>
+                        <div class="txt txt2">+</div>
+                        <div class="txt txt3">18</div>
+                        <div class="txt txt4">=</div>
+                        <div class="txt txt5">30</div>
+                        <div class="txt txt6">+</div>
+                        <div class="txt_container txt_container1">15</div>
+                        <div class="txt">=</div>
+                        <div class="txt_container txt_container2">45</div>
+                        <div class="quiz_select_wrap quiz_select_wrap1"></div>
+                        <div class="quiz_select_wrap quiz_select_wrap2"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <footer class="check_footer">
+                  <div class="check_footer_inner">
+                    <div class="check_footer_text">
+                      <div class="hint hint1"></div>
+                      <div class="hint hint2"></div>
+                    </div>
+                    <div class="check_footer_ch">
+                      <div class="check_footer_ch_head"></div>
+                      <div class="check_footer_ch_body"></div>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="step step7" style="display: none">
+              <!-- step7 시작부분 -->
+              <div class="main__container dp_flex dp_flex_column">
+                <div class="touchMotion touchMotion7-1">
+                  <div class="touchMotion_point"></div>
+                  <div class="touchMotion_hand"></div>
+                </div>
+                <div class="touchMotion touchMotion7-2">
+                  <div class="touchMotion_point"></div>
+                  <div class="touchMotion_hand"></div>
+                </div>
+
+                <div class="step7_top_box">
+                  <div class="number_model_table number_model_table1">
+                    <div class="tr">
+                      <div class="td">
+                        <div class="step7_img_box step7_img_box1 img_container">
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP7_BLOCK1.png" class="img img1" />
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP7_BLOCK1_POINT.png" class="img img1_1" />
+                        </div>
+                      </div>
+                      <div class="td">
+                        <div class="step7_img_box step7_img_box2 img_container">
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP7_BLOCK2.png" class="img img2" />
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP7_BLOCK2_POINT.png" class="img img2_1" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="calc_txt_box">
+                      <div class="txt number_split_tooltip_wrap">39
+                        <div class="tooltip number_split_tooltip v_hidden">
+                          <div class="tooltip_left">30</div>
+                          <div class="tooltip_right">9</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="number_model_table number_model_table2">
+                    <div class="tr">
+                      <div class="td">
+                        <div class="step7_img_box step7_img_box3 img_container">
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP7_BLOCK3.png" class="img img3" />
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP7_BLOCK3_POINT.png" class="img img3_1" />
+                        </div>
+                      </div>
+                      <div class="td">
+                        <div class="step7_img_box step7_img_box4 img_container">
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP7_BLOCK4.png" class="img img4" />
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP7_BLOCK4_POINT.png" class="img img4_1" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="calc_txt_box">
+                      <div class="txt number_split_tooltip_wrap">28
+                        <div class="tooltip number_split_tooltip v_hidden">
+                          <div class="tooltip_left">20</div>
+                          <div class="tooltip_right">8</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="number_model_table number_model_table3">
+                    <div class="tr">
+                      <div class="td">
+                        <div class="step7_img_box step7_img_box5 img_container">
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP7_BLOCK5.png" class="img img5" />
+                        </div>
+                      </div>
+                      <div class="td">
+                        <div class="step7_img_box step7_img_box6 img_container">
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP7_BLOCK6.png" class="img img6" />
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP7_BLOCK6_POINT.png" class="img img6_1" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hint hint1"><img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP7_HINT_LEFT_1.png"
+                        class="img" /></div>
+                    <div class="hint hint2"><img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP7_HINT_RIGHT_1.png"
+                        class="img" /></div>
+                  </div>
+                </div>
+                <div class="step7_btm_box">
+                  <div class="calc_arrow_comm dp_flex">
+                    <div class="txt txt1">39</div>
+                    <div class="txt txt2">+</div>
+                    <div class="txt txt3">28</div>
+                    <div class="txt txt4">=</div>
+                    <div class="txt txt5">67</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step step8" style="display: none">
+              <!-- step8 시작부분 -->
+              <div class="main__container dp_flex">
+                <div class="touchMotion touchMotion8-1">
+                  <div class="touchMotion_point"></div>
+                  <div class="touchMotion_hand"></div>
+                </div>
+                <div class="touchMotion touchMotion8-2">
+                  <div class="touchMotion_point"></div>
+                  <div class="touchMotion_hand"></div>
+                </div>
+
+                <div class="step8_left_box dp_flex dp_flex_column">
+                  <div class="number_model_table_double number_model_table1">
+                    <div class="tr">
+                      <div class="td">
+                        <div class="step8_img_box step8_img_box1 img_container">
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP8_BLOCK1.png" class="img img1" />
+                        </div>
+                      </div>
+                      <div class="td">
+                        <div class="step8_img_box step8_img_box2 img_container">
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP8_BLOCK2.png" class="img img2" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tr">
+                      <div class="td">
+                        <div class="step8_img_box step8_img_box3 img_container">
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP8_BLOCK3.png" class="img img3" />
+                        </div>
+                      </div>
+                      <div class="td">
+                        <div class="step8_img_box step8_img_box4 img_container">
+                          <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP8_BLOCK4.png" class="img img4" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step8_left_btm dp_flex">
+                    <div class="box box1 dp_flex">
+                      <div class="step8_img_box step8_img_box5 img_container">
+                        <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP8_BLOCK5.png" class="img img5" />
+                        <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP8_BLOCK5_1.png" class="img img5_1" />
+                      </div>
+                    </div>
+                    <div class="box box2 dp_flex">
+                      <div class="step8_img_box step8_img_box6 img_container">
+                        <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP8_BLOCK6.png" class="img img6" />
+                        <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP8_BLOCK6_POINT.png" class="img img6_1" />
+                        <img src="../../../COMM/IMG/CONCEPT/2_3_3/STEP8_BLOCK6_1.png" class="img img6_2" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="step8_right_box">
+                  <div class="column_calc_comm plus">
+                    <div class="column_calc">
+                      <div class="row">
+                        <div class="txt txt10 txt10_1">1</div>
+                        <div class="txt txt1 txt1_1">7</div>
+                      </div>
+                      <div class="row">
+                        <div class="txt txt10 txt10_2">2</div>
+                        <div class="txt txt1 txt1_2">9</div>
+                      </div>
+                    </div>
+                    <div class="column_calc_result">
+                      <div class="row">
+                        <div class="txt txt10 txt10_3">4</div>
+                        <div class="txt txt1 txt1_3">6</div>
+                      </div>
+                    </div>
+                    <div class="column_calc_ceil">
+                      <div class="txt txt10 point">1</div>
+                    </div>
+                    <div class="column_calc_point point1"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step step9" style="display: none">
+              <!-- step9 시작부분 -->
+              <div class="main__container dp_flex">
+                <div class="touchMotion touchMotion9-1">
+                  <div class="touchMotion_point"></div>
+                  <div class="touchMotion_hand"></div>
+                </div>
+                <div class="touchMotion touchMotion9-2">
+                  <div class="touchMotion_point"></div>
+                  <div class="touchMotion_hand"></div>
+                </div>
+
+                <div class="step9_top_box dp_flex">
+                  <div class="calc_box calc_box1">
+                    <div class="column_calc_comm plus">
+                      <div class="column_calc">
+                        <div class="row">
+                          <div class="txt txt10 txt10_1">1</div>
+                          <div class="txt txt1 txt1_1">7</div>
+                        </div>
+                        <div class="row">
+                          <div class="txt txt10 txt10_2">2</div>
+                          <div class="txt txt1 txt1_2">9</div>
+                        </div>
+                      </div>
+                      <div class="column_calc_result">
+                        <div class="row">
+                          <div class="txt txt1 txt1_3">&nbsp;</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="calc_box calc_box2">
+                    <div class="column_calc_comm plus">
+                      <div class="column_calc">
+                        <div class="row">
+                          <div class="txt txt10 txt10_1">1</div>
+                          <div class="txt txt1 txt1_1 highlight pink">7</div>
+                        </div>
+                        <div class="row">
+                          <div class="txt txt10 txt10_2">2</div>
+                          <div class="txt txt1 txt1_2 highlight pink">9</div>
+                        </div>
+                      </div>
+                      <div class="column_calc_result">
+                        <div class="row">
+                          <div class="txt txt1 txt1_3 highlight pink">6</div>
+                        </div>
+                      </div>
+                      <div class="column_calc_ceil">
+                        <div class="txt txt10 highlight pink">1</div>
+                      </div>
+                    </div>
+                    <div class="hint hint1"></div>
+                  </div>
+                  <div class="calc_box calc_box3">
+                    <div class="column_calc_comm plus">
+                      <div class="column_calc">
+                        <div class="row">
+                          <div class="txt txt10 txt10_1">1</div>
+                          <div class="txt txt1 txt1_1">7</div>
+                        </div>
+                        <div class="row">
+                          <div class="txt txt10 txt10_2">2</div>
+                          <div class="txt txt1 txt1_2">9</div>
+                        </div>
+                      </div>
+                      <div class="column_calc_result">
+                        <div class="row">
+                          <div class="txt txt10 txt10_3">4</div>
+                          <div class="txt txt1 txt1_3">6</div>
+                        </div>
+                      </div>
+                      <div class="column_calc_ceil">
+                        <div class="txt txt10">1</div>
+                      </div>
+                    </div>
+                    <div class="hint hint2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="step-list">
+              <li class="step-list_item active"></li>
+              <li class="step-list_item"></li>
+            </ul>
+          </div>
+        </main>
+        <div class="main_prev-next">
+          <button class="btn-prev" style="display: none">이전버튼</button>
+          <!-- <button class="btn-next" style="display: block" disabled> -->
+          <button class="btn-next blinking" style="display: block">
+            다음버튼
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script crossorigin src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+  <script src="../../../COMM/JS/COMMON2.JS"></script>
+  <script src="../../../COMM/JS/CONCEPTEVNT3.JS"></script>
+  <script src="../../../COMM/JS/CONCEPTEVNTBTN.JS"></script> <!-- 개념 익히기 공통 버튼 처리 (0424) -->
+  <script src="../../../COMM/JS/GAME.JS"></script>
+  <script src="../../../COMM/JS/VIDEO.JS"></script>
+  <script src="../../../COMM/JS/VIDEO-HTTP-STREAMING.JS"></script>
+  <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+  <script>
+    /*
+     * 데이터
+     */
+    let intro = {
+      type: "concept", //concept 개념익히기, checkExam 확인문제
+      title: "여러 가지 방법으로<br/>덧셈을 해 볼까요(2)",
+      subTitle: [
+        "일의 자리에서 받아올림이 있는 (두 자리 수)+(두 자리 수)의 문제를 여러 가지 방법으로 해결해 봐요.",
+        "받아올림이 있는 덧셈을 해 봐요.",
+      ],
+      sound: ["../../../COMM/SOUND/2_3_3/2_1_3-3_001.mp3"],
+    };
+
+    //현재 페이지
+    let disStep = 1;
+
+    let pageData = [
+      {
+        step: 1,
+        title: "여러 가지 방법으로 덧셈을 해 봅시다.",
+        sound: "../../../COMM/SOUND/2_3_3/2_1_3-3_001.mp3",
+        headerPage: [1, 2],
+        footerPage: [1, 4],
+        prev: 0,
+        next: 1,
+      },
+      {
+        step: 2,
+        title: "여러 가지 방법으로 덧셈을 해 봅시다.",
+        sound: "../../../COMM/SOUND/2_3_3/2_1_3-3_001.mp3",
+        headerPage: [1, 2],
+        footerPage: [2, 4],
+        prev: 1,
+        next: 1,
+      },
+      {
+        step: 3,
+        title: "여러 가지 방법으로 덧셈을 해 봅시다.",
+        sound: "../../../COMM/SOUND/2_3_3/2_1_3-3_001.mp3",
+        headerPage: [1, 2],
+        footerPage: [3, 4],
+        prev: 1,
+        next: 0,
+      },
+      {
+        step: 4,
+        title: "",
+        sound: "",
+        headerPage: [0, 0],
+        footerPage: [0, 0],
+        prev: 1,
+        next: 1,
+      },
+      {
+        step: 5,
+        title: "여러 가지 방법으로 덧셈을 해 봅시다.",
+        sound: "../../../COMM/SOUND/2_3_3/2_1_3-3_001.mp3",
+        headerPage: [1, 2],
+        footerPage: [4, 4],
+        prev: 2,
+        next: 0,
+      },
+      {
+        step: 6,
+        title: "",
+        sound: "",
+        headerPage: [0, 0],
+        footerPage: [0, 0],
+        prev: 1,
+        next: 1,
+      },
+      {
+        step: 7,
+        title: "수 모형으로 39+28을 구해 봅시다.",
+        sound: "../../../COMM/SOUND/2_3_3/2_1_3-3_024.mp3",
+        headerPage: [2, 2],
+        footerPage: [1, 3],
+        prev: 5,
+        next: 1,
+      },
+      {
+        step: 8,
+        title: "17+29를 어떻게 계산하는지 알아봅시다.",
+        sound: "../../../COMM/SOUND/2_3_3/2_1_3-3_033.mp3",
+        headerPage: [2, 2],
+        footerPage: [2, 3],
+        prev: 1,
+        next: 1,
+      },
+      {
+        step: 9,
+        title: "17+29를 어떻게 계산하는지 알아봅시다.",
+        sound: "../../../COMM/SOUND/2_3_3/2_1_3-3_033.mp3",
+        headerPage: [2, 2],
+        footerPage: [3, 3],
+        prev: 1,
+        next: 0,
+      },
+    ];
+
+    function pageAction() {
+      console.log("disStep ::: ", disStep);
+      //setTimeout 초기화
+      const TimeoutId = setTimeout(() => console.log("timeout clear"), 1);
+      for (let i = 0; i < TimeoutId; i++) {
+        clearTimeout(i);
+      }
+      stepSet();
+      switch (disStep) {
+        case 1:
+          step1.reset();
+          step1.start();
+          break;
+        case 2:
+          step2.reset();
+          step2.start();
+          break;
+        case 3:
+          step3.reset();
+          step3.start();
+          break;
+        case 4:
+          step4.reset();
+          step4.start();
+          break;
+        case 5:
+          step5.reset();
+          step5.start();
+          break;
+        case 6:
+          step6.reset();
+          step6.start();
+          break;
+        case 7:
+          step7.reset();
+          step7.start();
+          break;
+        case 8:
+          step8.reset();
+          step8.start();
+          break;
+        case 9:
+          step9.reset();
+          step9.start();
+          break;
+      }
+    }
+
+    //문제 시작
+    //================STEP1==============
+    const step1 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_001.mp3",
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_002.mp3",
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_003.mp3",
+        ], [
+          {
+            idx: 3,
+            type: 'start',
+            callback: () => {
+              $('.step1 .step1_btm_box').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 3,
+            type: 'end',
+            callback: () => {
+              correctly();
+            }
+          },
+        ])
+      },
+      reset: () => {
+        $('.step1 .step1_btm_box').css('visibility', '');
+      },
+    };
+    //================STEP2==============
+    const step2 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_004.mp3",
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_005.mp3",
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_006.mp3",
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_007.mp3",
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_008.mp3",
+        ], [
+          {
+            idx: 2,
+            type: 'start',
+            callback: () => {
+              $('.step2 .step2_top_box .tooltip').css('display', 'flex');
+            }
+          },
+          {
+            idx: 3,
+            type: 'start',
+            callback: () => {
+              $('.step2 .step2_mid_box .arrow1').css('display', 'block');
+            }
+          },
+          {
+            idx: 4,
+            type: 'start',
+            callback: () => {
+              $('.step2 .step2_mid_box .arrow').css('display', 'block');
+            }
+          },
+          {
+            idx: 5,
+            type: 'start',
+            callback: () => {
+              $('.step2 .step2_btm_box').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 5,
+            type: 'end',
+            callback: () => {
+              correctly();
+            }
+          },
+        ]);
+      },
+      reset: () => {
+        $('.step2 .step2_top_box .tooltip').css('display', '');
+        $('.step2 .step2_mid_box .arrow').css('display', '');
+        $('.step2 .step2_btm_box').css('visibility', '');
+      },
+    };
+    //================STEP3==============
+    const step3 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_009.mp3",
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_010.mp3",
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_011.mp3",
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_012.mp3",
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_013.mp3",
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_014.mp3",
+        ], [
+          {
+            idx: 2,
+            type: 'start',
+            callback: () => {
+              $('.step3 .step3_left_box .hint').css('display', 'block');
+            }
+          },
+          {
+            idx: 3,
+            type: 'start',
+            callback: () => {
+              $('.step3 .step3_right_box .circle').css('display', 'block');
+            }
+          },
+          {
+            idx: 4,
+            type: 'start',
+            callback: () => {
+              $('.step3 .step3_right_box .arrow1').css('display', 'block');
+              $('.step3 .step3_right_box .arrow2').css('display', 'block');
+            }
+          },
+          {
+            idx: 5,
+            type: 'start',
+            callback: () => {
+              $('.step3 .step3_right_box .arrow3').css('display', 'block');
+              $('.step3 .step3_right_box .arrow4').css('display', 'block');
+            }
+          },
+          {
+            idx: 6,
+            type: 'start',
+            callback: () => {
+              $('.step3 .step3_right_btm').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 6,
+            type: 'end',
+            callback: () => {
+              disStep++;
+              pageAction();
+            }
+          },
+        ]);
+      },
+      reset: () => {
+        $('.step3 .step3_left_box .hint').css('display', '');
+        $('.step3 .step3_right_box .circle').css('display', '');
+        $('.step3 .step3_right_box .arrow').css('display', '').removeClass('blinking');;
+        $('.step3 .step3_right_btm').css('visibility', '');
+      },
+    };
+    //================STEP4==============
+    const step4 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_015.mp3",
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_016.mp3",
+        ], [
+          {
+            idx: 1,
+            type: 'start',
+            callback: () => {
+              $('.step4 .check_footer_inner').addClass('slideUp');
+              $('.step4 .step4_right_box .arrow1').addClass('blinking');
+              $('.step4 .step4_right_box .arrow2').addClass('blinking');
+            }
+          },
+          {
+            idx: 2,
+            type: 'start',
+            callback: () => {
+              $('.step4 .step4_right_box .arrow1').removeClass('blinking');
+              $('.step4 .step4_right_box .arrow2').removeClass('blinking');
+              $('.step4 .step4_right_box .arrow3').addClass('blinking');
+              $('.step4 .step4_right_box .arrow4').addClass('blinking');
+            }
+          },
+          {
+            idx: 2,
+            type: 'end',
+            callback: () => {
+              correctly();
+            }
+          },
+        ]);
+      },
+      reset: () => {
+        $('.step4 .step4_right_box .arrow').css('display', '').removeClass('blinking');
+        $('.step4 .check_footer_inner').removeClass('slideUp');
+      },
+    };
+    //================STEP5==============
+    const step5 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_017.mp3",
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_018.mp3",
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_019.mp3",
+        ], [
+          {
+            idx: 2,
+            type: 'start',
+            callback: () => {
+              $('.step5 .step5_right_btm').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 3,
+            type: 'end',
+            callback: () => {
+              $('.step5 .touchMotion5-1').css('display', 'block');
+              step5.guideTouch();
+            }
+          },
+        ]);
+      },
+      guideTouch: () => {
+        $('.step5 .touchMotion5-1').click(() => {
+          $('.step5 .touchMotion5-1').css('display', 'none');
+
+          $('.step5 .step5_right_top .img1').css('display', 'none');
+          $('.step5 .step5_right_top .img2').css('display', 'block');
+
+          $('.step5 .txt_container1').addClass('blink');
+          $('.step5 .txt_container1').click(() => {
+            $('.step5 .txt_container1').removeClass('blink').addClass('point');
+            $('.step5 .quiz_select_wrap1').css('display', 'block');
+            quizSelectSetOn(2, step5);
+          });
+        });
+      },
+
+      quizSelectCorrect: (flag) => {
+        if (flag) {
+          if ($('.step5 .txt_container.point').hasClass('txt_container1')) {
+            $('.step5 .quiz_select_wrap1').css('display', 'none');
+            $('.step5 .txt_container1.point').html($('.step5 .quiz_select_wrap1 .selected').text()).removeClass('point');
+
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+              "../../../COMM/SOUND/2_3_3/2_1_3-3_020.mp3",
+              "../../../COMM/SOUND/2_3_3/2_1_3-3_021.mp3",
+            ], [
+              {
+                idx: 3,
+                type: 'end',
+                callback: () => {
+                  $('.step5 .txt_container2').addClass('blink');
+                  quizSelectSetInit($('.step5 .quiz_select_wrap2'), ["45", "35"]);
+
+                  $('.step5 .txt_container2').click(() => {
+                    $('.step5 .txt_container2').removeClass('blink').addClass('point');
+                    $('.step5 .quiz_select_wrap2').css('display', 'block');
+                    quizSelectSetOn(1, step5);
+                  });
+
+                }
+              }
+            ]);
+          } else if ($('.step5 .txt_container.point').hasClass('txt_container2')) {
+            $('.step5 .quiz_select_wrap2').css('display', 'none');
+            $('.step5 .txt_container2.point').html($('.step5 .quiz_select_wrap2 .selected').text()).removeClass('point');
+
+            audioSet([
+              "../../../COMM/SOUND/CORRECT.mp3",
+              "../../../COMM/SOUND/2_3_3/2_1_3-3_022_v1.mp3",
+            ], [
+              {
+                idx: 2,
+                type: 'end',
+                callback: () => {
+                  disStep++;
+                  pageAction();
+                }
+              },
+            ]);
+          }
+        } else {
+          audioSet([
+            "../../../COMM/SOUND/WRONG.mp3",
+          ]);
+        }
+      },
+      reset: () => {
+        $('.step5 .txt_container').removeClass('point blink').off('click');
+        $('.step5 .txt_container').html('?');
+        $('.step5 .quiz_select_wrap').css('display', '');
+
+        $('.step5 .touchMotion').css('display', '');
+        $('.step5 .step5_right_top .img').css('display', '');
+        $('.step5 .step5_right_btm').css('visibility', '');
+
+        let stepAnswerList = ["21", "15"];
+        quizSelectSetInit($('.step5 .quiz_select_wrap1'), stepAnswerList);
+      },
+    };
+    //================STEP6==============
+    const step6 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_023.mp3",
+        ], [
+          {
+            idx: 1,
+            type: 'start',
+            callback: () => {
+              $('.step6 .check_footer_inner').addClass('slideUp');
+            }
+          },
+          {
+            idx: 1,
+            type: 'end',
+            callback: () => {
+              correctly();
+            }
+          },
+        ]);
+      },
+      reset: () => {
+        $('.step6 .check_footer_inner').removeClass('slideUp');
+      },
+    };
+    //================STEP7==============
+    const step7 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_024.mp3",
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_025.mp3",
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_026.mp3",
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_027.mp3",
+        ], [
+          {
+            idx: 3,
+            type: 'start',
+            callback: () => {
+              $('.step7 .step7_top_box .number_model_table1 .calc_txt_box .tooltip').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 4,
+            type: 'start',
+            callback: () => {
+              $('.step7 .step7_top_box .number_model_table2 .calc_txt_box .tooltip').css('visibility', 'visible');
+            }
+          },
+          {
+            idx: 4,
+            type: 'end',
+            callback: () => {
+              $('.step7 .step7_top_box .number_model_table3').css('visibility', 'visible');
+              $('.step7 .touchMotion7-1').css('display', 'block');
+              step7.guideTouch();
+            }
+          }
+        ]);
+      },
+      guideTouch: () => {
+        $('.step7 .touchMotion7-1').click(() => {
+          $('.step7 .touchMotion7-1').css('display', 'none');
+
+          $('.step7 .step7_top_box .number_model_table3 .step7_img_box5').css('visibility', 'visible');
+          $('.step7 .step7_top_box .number_model_table1 .img1_1').css('display', 'block');
+          $('.step7 .step7_top_box .number_model_table2 .img3_1').css('display', 'block');
+          $('.step7 .step7_top_box .number_model_table3 .hint1').css('display', 'block');
+
+          audioSet([
+            "../../../COMM/SOUND/2_3_3/2_1_3-3_028.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                $('.step7 .touchMotion7-2').css('display', 'block');
+                step7.guideTouch2();
+              }
+            }
+          ]);
+        });
+      },
+      guideTouch2: () => {
+        $('.step7 .touchMotion7-2').click(() => {
+          $('.step7 .touchMotion7-2').css('display', 'none');
+
+          $('.step7 .step7_top_box .number_model_table3 .step7_img_box6').css('visibility', 'visible');
+          $('.step7 .step7_top_box .number_model_table1 .img2_1').css('display', 'block');
+          $('.step7 .step7_top_box .number_model_table2 .img4_1').css('display', 'block');
+          $('.step7 .step7_top_box .number_model_table3 .hint2').css('display', 'block');
+
+          audioSet([
+            "../../../COMM/SOUND/2_3_3/2_1_3-3_029.mp3",
+            "../../../COMM/SOUND/2_3_3/2_1_3-3_030.mp3",
+            "../../../COMM/SOUND/2_3_3/2_1_3-3_031.mp3",
+            "../../../COMM/SOUND/2_3_3/2_1_3-3_032.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step7 .step7_top_box .number_model_table1 .img1_1').css('display', 'none');
+                $('.step7 .step7_top_box .number_model_table2 .img3_1').css('display', 'none');
+                $('.step7 .step7_top_box .number_model_table1 .img2_1').css('display', 'none');
+                $('.step7 .step7_top_box .number_model_table2 .img4_1').css('display', 'none');
+
+                $('.step7 .step7_top_box .number_model_table3 .img6_1').css('display', 'block');
+              }
+            },
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                $('.step7 .step7_btm_box').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 4,
+              type: 'end',
+              callback: () => {
+                correctly();
+              }
+            },
+          ]);
+        });
+      },
+      reset: () => {
+        $('.step7 .touchMotion').css('display', '');
+        $('.step7 .step7_top_box .number_model_table3').css('visibility', '');
+        $('.step7 .step7_top_box .img').css('display', '');
+        $('.step7 .step7_top_box .step7_img_box').css('visibility', '');
+        $('.step7 .step7_top_box .calc_txt_box .tooltip').css('visibility', '');
+        $('.step7 .step7_top_box .hint').css('display', '');
+        $('.step7 .step7_btm_box').css('visibility', '');
+      },
+    };
+    //================STEP8==============
+    const step8 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_033.mp3",
+        ], [
+          {
+            idx: 1,
+            type: 'end',
+            callback: () => {
+              $('.step8 .step8_left_btm').css('visibility', 'visible');
+              $('.step8 .touchMotion8-1').css('display', 'block');
+              step8.guideTouch();
+            }
+          }
+        ]);
+      },
+      guideTouch: () => {
+        $('.step8 .touchMotion8-1').click(() => {
+          $('.step8 .touchMotion8-1').css('display', 'none');
+
+          $('.step8 .step8_left_btm .step8_img_box').css('visibility', 'visible');
+
+          audioSet([
+            "../../../COMM/SOUND/2_3_3/2_1_3-3_034.mp3",
+            "../../../COMM/SOUND/2_3_3/2_1_3-3_035.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $('.step8 .step8_img_box6 .img6_1').css('display', 'block');
+
+                $('.step8 .touchMotion8-2').css('display', 'block');
+                step8.guideTouch2();
+              }
+            }
+          ]);
+        });
+      },
+      guideTouch2: () => {
+        $('.step8 .touchMotion8-2').click(() => {
+          $('.step8 .touchMotion8-2').css('display', 'none');
+
+          $('.step8 .step8_img_box5 .img5_1').css('display', 'block');
+
+          $('.step8 .step8_img_box6 .img6').css('display', 'none');
+          $('.step8 .step8_img_box6 .img6_1').css('display', 'none');
+          $('.step8 .step8_img_box6 .img6_2').css('display', 'block');
+
+
+          audioSet([
+            "../../../COMM/SOUND/2_3_3/2_1_3-3_036.mp3",
+            "../../../COMM/SOUND/2_3_3/2_1_3-3_037.mp3",
+            "../../../COMM/SOUND/2_3_3/2_1_3-3_038.mp3",
+            "../../../COMM/SOUND/2_3_3/2_1_3-3_039.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step8 .step8_right_box .column_calc_ceil').css('visibility', 'visible');
+                $('.step8 .step8_right_box .column_calc_result .txt1_3').css('visibility', 'visible');
+                $('.step8 .step8_right_box .column_calc_point.point1').css('display', 'block');
+              }
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step8 .step8_right_box .column_calc_result .txt10_3').css('visibility', 'visible');
+                $('.step8 .step8_right_box .column_calc_point.point1').css('display', '');
+              }
+            },
+            {
+              idx: 4,
+              type: 'end',
+              callback: () => {
+                correctly();
+              }
+            },
+          ]);
+        });
+      },
+      reset: () => {
+        $('.step8 .touchMotion').css('display', '');
+        $('.step8 .step8_left_btm').css('visibility', '');
+        $('.step8 .step8_left_btm .step8_img_box').css('visibility', '');
+        $('.step8 .step8_img_box .img').css('display', '');
+        $('.step8 .step8_right_box .column_calc_ceil').css('visibility', '');
+        $('.step8 .step8_right_box .column_calc_result .txt').css('visibility', '');
+        $('.step8 .step8_right_box .column_calc_point').css('display', '');
+      },
+    };
+    //================STEP9==============
+    const step9 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_040.mp3",
+          "../../../COMM/SOUND/2_3_3/2_1_3-3_041.mp3",
+        ], [
+          {
+            idx: 2,
+            type: 'end',
+            callback: () => {
+              $('.step9 .step9_top_box .calc_box2').css('visibility', 'visible');
+              $('.step9 .touchMotion9-1').css('display', 'block');
+              step9.guideTouch();
+            }
+          }
+        ]);
+      },
+      guideTouch: () => {
+        $('.step9 .touchMotion9-1').click(() => {
+          $('.step9 .touchMotion9-1').css('display', 'none');
+
+          $('.step9 .calc_box2 .column_calc_ceil').css('visibility', 'visible');
+          $('.step9 .calc_box2 .column_calc_result .txt1').css('visibility', 'visible');
+          $('.step9 .calc_box2 .hint').css('display', 'block');
+
+          audioSet([
+            "../../../COMM/SOUND/2_3_3/2_1_3-3_042.mp3",
+            "../../../COMM/SOUND/2_3_3/2_1_3-3_043.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $('.step9 .step9_top_box .calc_box3').css('visibility', 'visible');
+                $('.step9 .touchMotion9-2').css('display', 'block');
+                step9.guideTouch2();
+              }
+            }
+          ]);
+        });
+      },
+      guideTouch2: () => {
+        $('.step9 .touchMotion9-2').click(() => {
+          $('.step9 .touchMotion9-2').css('display', 'none');
+
+          $('.step9 .calc_box3 .column_calc_result .txt10').css('visibility', 'visible');
+          $('.step9 .calc_box3 .hint').css('display', 'block');
+
+          audioSet([
+            "../../../COMM/SOUND/2_3_3/2_1_3-3_044.mp3",
+            "../../../COMM/SOUND/2_3_3/2_1_3-3_045.mp3",
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step9 .calc_box3 .column_calc_result .txt').addClass('blinking');
+              }
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                callFinish();
+              }
+            }
+          ]);
+        });
+      },
+      reset: () => {
+        $('.step9 .touchMotion').css('display', '');
+        $('.step9 .calc_box').css('visibility', '');
+        $('.step9 .calc_box .column_calc_ceil').css('visibility', '');
+        $('.step9 .calc_box .column_calc_result .txt').css('visibility', '').removeClass('blinking');
+        $('.step9 .calc_box .hint').css('display', '');
+      },
+    };
+
+  </script>
+</body>
+
+</html>

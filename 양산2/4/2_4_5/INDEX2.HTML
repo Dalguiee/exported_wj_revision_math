@@ -1,0 +1,2350 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>개정교육과정-수학 수학 개념</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="KeyWORDs" content="" />
+    <meta name="Description" content="" />
+    <meta name="Robots" content="all" />
+    <meta http-equiv="Subject" content="" />
+    <meta http-equiv="Title" content="" />
+    <meta http-equiv="Author" content="onflou " />
+    <meta http-equiv="Publisher" content="" />
+
+    <!-- 브라우저 호환성을 지정 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="shortcut icon" href="#" />
+    <link href="../../../COMM/CSS/COMMON.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/COMMONLAYOUT.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/CONCEPTCOMMON3.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/VIDEO.CSS" rel="stylesheet" />
+
+    <style>
+      @keyframes rotateClockHour {
+        0% {
+          transform: translate3D(-50%, 0, 0) rotate(180deg);
+        }
+        100% {
+          transform: translate3D(-50%, 0, 0) rotate(210deg);
+        }
+      }
+
+      @keyframes rotateClockMinute {
+        0% {
+          transform: translate3D(-50%, 0, 0) rotate(0deg);
+        }
+        100% {
+          transform: translate3D(-50%, 0, 0) rotate(360deg);
+        }
+      }
+
+      /* 1p */
+      .step1,
+      .step2 {
+        --analog-clock-width: 320px;
+        --analog-clock-fontSize: 30px;
+      }
+
+      .step1 .analog_clock_box .clock-frame,
+      .step2 .analog_clock_box .clock-frame {
+        background-image: url(../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP1_CLOCK.svg);
+      }
+
+      .step1 .analog-clock > .hand.hour,
+      .step2 .analog-clock > .hand.hour {
+        width: 10px;
+        height: 50px;
+        background-color: rgba(23, 159, 54, 1);
+      }
+
+      .step1 .analog-clock > .hand.hour::after,
+      .step2 .analog-clock > .hand.hour::after {
+        background-image: url(../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/minute_arrow.svg);
+        top: 10px;
+      }
+
+      .step1 .step1_content1 {
+        gap: 75px;
+      }
+
+      .step1 .step1_content1 > div {
+        position: relative;
+      }
+
+      .step1 .step1_content1 .clock_box {
+        border-radius: 50%;
+        position: absolute;
+        top: -55px;
+        left: -50px;
+      }
+
+      .step1 .step1_content1 .step1_left_box .bubble_box {
+        width: 395px;
+        height: 252px;
+        position: absolute;
+        top: 110px;
+        left: -322px;
+      }
+
+      .step1 .step1_content1 .step1_left_box .bubble_box .char_g_head {
+        width: 168px;
+        position: absolute;
+        top: -30px;
+        left: 15px;
+      }
+
+      .step1 .step1_content1 .step1_right_box .bubble_box {
+        width: 615px;
+        height: 173px;
+        position: absolute;
+        top: 13px;
+        left: 136px;
+      }
+
+      .step1 .step1_content1 .step1_right_box .bubble_box .char_g_head {
+        width: 168px;
+        position: absolute;
+        top: -110px;
+        right: 15px;
+        transform: translateY(-100%);
+      }
+
+      .step1 .step1_content1 .bubble_box .img {
+        object-fit: none;
+      }
+
+      .step1_content2 .line {
+        position: relative;
+      }
+
+      .step1 .step1_content2 .text_box {
+        position: absolute;
+        top: -32px;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        white-space: nowrap;
+      }
+
+      .step1_content2 .arrow {
+        width: 48px;
+        aspect-ratio: 48.97/31.99;
+        background-image: url('../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP1_ARROW1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 50%;
+        left: -92.5px;
+        transform: translate(-50%, -50%);
+      }
+
+      .step1_content2 .arrow2 {
+        width: 312px;
+        aspect-ratio: 312.38/65.95;
+        background-image: url('../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP1_ARROW2.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        bottom: 0;
+        left: -92.5px;
+        transform: translate(-50%, 50%);
+      }
+
+      .step1_content2 .arrow2 .txt {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .step1 .step1_content2 {
+        gap: 185px;
+      }
+
+      .step1 .step1_content2 .analog_clock_box1 .analog-clock > .time.on,
+      .step1 .step1_content2 .analog_clock_box2 .analog-clock > .time.on {
+        color: #000;
+      }
+
+      .step1 .step1_content2 .analog_clock_box1 .analog-clock > .hand.hour {
+        --hour-deg: 180 !important;
+      }
+
+      .step1 .step1_content2 .analog_clock_box1 .analog-clock > .hand.minute {
+        --minute-deg: 0 !important;
+      }
+
+      .step1 .step1_content2 .analog_clock_box2 .analog-clock > .hand.hour {
+        --hour-deg: 180 !important;
+      }
+
+      .step1 .step1_content2 .analog_clock_box2.on .analog-clock > .hand.hour {
+        animation: rotateClockHour 1s linear forwards;
+      }
+
+      .step1 .step1_content2 .analog_clock_box2 .analog-clock > .hand.minute {
+        --minute-deg: 0 !important;
+      }
+
+      .step1 .step1_content2 .analog_clock_box2.on .analog-clock > .hand.minute {
+        animation: rotateClockMinute 1s linear forwards;
+      }
+
+      .step1 .step1_content2 .step1_point {
+        top: 50%;
+        left: 50%;
+      }
+
+      .step1 .analog_clock_box .touchMotion {
+        top: 65px;
+        left: 112px;
+      }
+
+      /* 2p */
+      @keyframes bgBlink {
+        0% {
+          background-color: #ffffff;
+        }
+        50% {
+          background-color: rgba(255, 184, 239, 1);
+        }
+        100% {
+          background-color: #ffffff;
+        }
+      }
+
+      .step2 .step1_content2 {
+        gap: 213px;
+      }
+
+      .step2 .step1_content2 .arrow {
+        left: -106.5px;
+      }
+
+      .step2 .step1_content2 .line {
+        gap: 22px;
+      }
+
+      .step2 .step1_content2 .line .img_box {
+        position: relative;
+      }
+
+      .step2 .step1_content2 .line .img_box .point {
+        width: calc(100% - 43px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .step2 .step1_content2 .analog_clock_box1 .analog-clock > .hand.hour {
+        --hour-deg: 180 !important;
+      }
+
+      .step2 .step1_content2 .analog_clock_box1 .analog-clock > .hand.minute {
+        --minute-deg: 0 !important;
+      }
+
+      .step2 .step1_content2 .analog_clock_box2 .analog-clock > .hand.hour {
+        --hour-deg: 216 !important;
+      }
+
+      .step2 .step1_content2 .analog_clock_box2 .analog-clock > .hand.minute {
+        --minute-deg: 120 !important;
+      }
+
+      .step2_mid_box {
+        margin-top: 130px;
+        position: relative;
+      }
+
+      .step2_mid_box .line_box {
+        border: 2px solid #000;
+        position: relative;
+      }
+
+      .step2_mid_box .line_box > .point {
+        width: 802px;
+        height: 70px;
+        border: 3px solid rgba(103, 68, 243, 1);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        z-index: 20;
+      }
+
+      .step2_mid_box .line_box .block {
+        width: 100px;
+        height: 70px;
+        position: relative;
+      }
+
+      .step2_mid_box .line_box .block.color {
+        background-color: rgba(255, 184, 239, 1);
+      }
+
+      .step2_mid_box .line_box .block.bgColor {
+        animation: 1s bgBlink infinite;
+      }
+
+      .step2_mid_box .line_box .block:not(.nondot)::after {
+        content: '';
+        width: 4px;
+        height: 70px;
+        background-image: url('../../../COMM/IMG/CONCEPT/SEASON2/2_4_4/STEP1_LINE2.png');
+        background-repeat: repeat-y;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        z-index: 10;
+      }
+
+      .step2_mid_box .line_box .block.nondot::after {
+        content: '';
+        width: 2px;
+        height: 70px;
+        background-color: #000;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        z-index: 10;
+      }
+
+      .step2_mid_box .line_box .block:last-child::after {
+        content: none;
+      }
+
+      .step2_mid_box .line_box .block .txt {
+        position: absolute;
+        top: -5px;
+        left: 0;
+        transform: translate(-50%, -100%);
+      }
+
+      .step2_mid_box .line_box .block .txt.right {
+        left: auto;
+        right: 0;
+        transform: translate(50%, -100%);
+      }
+
+      .step2_mid_box .line_box .block .txt span {
+        white-space: nowrap;
+        font-size: 32px;
+        line-height: 36px;
+      }
+
+      .step2_mid_box .line_box .block .txt span.big {
+        font-size: 44px;
+      }
+
+      .step2_mid_box .text_box {
+        width: 420px;
+        height: 118px;
+        background-color: rgba(242, 245, 255, 1);
+        border-radius: 20px;
+        position: absolute;
+        left: 50%;
+        top: -125px;
+        transform: translate(-50%, -100%);
+      }
+
+      .step2_mid_box .text_box span {
+        line-height: 1;
+      }
+
+      .step2_mid_box .arrow_box1 {
+        width: 800px;
+        aspect-ratio: 814/77;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-100%);
+      }
+
+      .step2_mid_box .arrow_box1 .txt {
+        width: 84px;
+        height: 40px;
+        background-color: #ffffff;
+        position: absolute;
+        top: -25%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .step2_mid_box .arrow_box2 {
+        width: 600px;
+        aspect-ratio: 615/44;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+      }
+
+      .step2_mid_box .arrow_box3 {
+        width: 200px;
+        aspect-ratio: 206/37;
+        position: absolute;
+        bottom: 0;
+        left: 600px;
+        transform: translateY(100%);
+      }
+
+      .step2_mid_box .arrow_box:not(.arrow_box1) .txt {
+        width: 84px;
+        height: 40px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .step2_mid_box .arrow_box .txt span {
+        font-size: 40px;
+        white-space: nowrap;
+      }
+
+      .step2_btm_box {
+        margin-top: 90px;
+        width: 1400px;
+        height: 127px;
+        border-radius: 20px;
+        background-color: rgba(255, 236, 167, 1);
+      }
+
+      .step2_btm_box .txt {
+        line-height: 1;
+      }
+
+      .step2_btm_box .txt_container {
+        margin: 0 3px 0 15px;
+      }
+
+      .step2 .step2_point1 {
+        width: 401px;
+        top: 87%;
+        left: 54%;
+      }
+
+      .step2 .step2_point2 {
+        width: 356px;
+        top: 89%;
+        left: 72%;
+      }
+
+      /* 3p */
+      .step3 .step3_top_box {
+        width: 1450px;
+        margin-right: 70px;
+        position: relative;
+        justify-content: flex-start;
+        gap: 523px;
+      }
+
+      .step3 .step3_top_box .line {
+        width: 1450px;
+        height: 27.02px;
+        background-image: url('../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP3_LINE.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+      }
+
+      .step3 .step3_top_box .train_box {
+        gap: 16px;
+      }
+
+      .step3 .step3_top_box .train_box .img_box {
+        position: relative;
+      }
+
+      .step3 .step3_top_box .train_box .img_box .img1 {
+        position: relative;
+        z-index: 10;
+      }
+
+      .step3 .step3_top_box .train_box .img_box .img2 {
+        width: 332px;
+        height: 145px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .step3 .step2_mid_box {
+        margin-top: 165px;
+      }
+
+      .step3 .step2_mid_box .line_box .arrow {
+        width: 24px;
+        height: 152px;
+        background-image: url('../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP3_ARROW1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: -2px;
+        transform: translate(-50%, -100%);
+      }
+
+      .step3 .step2_mid_box .line_box .arrow1 {
+        left: 0;
+      }
+
+      .step3 .step2_mid_box .line_box .arrow2 {
+        left: 902px;
+      }
+
+      .step3 .step2_mid_box .line_box .arrow .txt {
+        width: 153px;
+        height: 66px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        border: 4px solid rgba(2, 119, 255, 1);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .step3 .step2_mid_box .line_box .arrow .txt span {
+        line-height: 1;
+      }
+
+      .step3 .step2_mid_box .line_box .arrow .point {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
+
+      .step3 .step2_mid_box .line_box .arrow .point img {
+        width: 191px;
+        height: 180px;
+      }
+
+      .step3 .step2_mid_box .line_box .block .txt {
+        top: auto;
+        bottom: -15px;
+        transform: translate(-50%, 100%);
+      }
+
+      .step3 .step2_mid_box .line_box .block .txt.right {
+        transform: translate(50%, 100%);
+      }
+
+      .step3 .step2_btm_box {
+        width: 1200px;
+        height: 150px;
+        margin-top: 140px;
+      }
+
+      /* 4p */
+      .table_box .tr {
+        height: auto;
+      }
+
+      .step4_top_box {
+        position: relative;
+      }
+
+      .step4_top_box .table_box {
+        width: 1181px;
+        border: 3px solid rgba(255, 100, 220, 1);
+        border-radius: 30px;
+        overflow: hidden;
+      }
+
+      .step4_top_box .table_box .tr .td:not(.td:last-child) {
+        border-right: 3px solid rgba(255, 100, 220, 1);
+      }
+
+      .step4_top_box .table_box .tr1 .td,
+      .step4_top_box .table_box .tr2 .td .line:not(.line:last-child) {
+        border-bottom: 3px solid rgba(255, 100, 220, 1);
+      }
+
+      .step4_top_box .table_box .tr1 .td {
+        height: 75px;
+        background-color: rgba(255, 184, 239, 1);
+      }
+
+      .step4_top_box .table_box .tr2 .td1 {
+        height: 225px;
+      }
+
+      .step4_top_box .table_box .tr2 .td1 .img {
+        width: 323px;
+        height: 205px;
+      }
+
+      .step4_top_box .table_box .tr2 .td .line {
+        width: 100%;
+        height: 75px;
+      }
+
+      .step4_top_box .table_box .tr2 .td .line .txt {
+        padding-top: 4px;
+      }
+
+      .step4_top_box .point {
+        width: 66.6%;
+        height: 75px;
+        border: 5px solid rgba(103, 68, 243, 1);
+        position: absolute;
+        right: 0;
+      }
+
+      .step4 .step4_top_box .point1 {
+        top: 75px;
+      }
+
+      .step4 .step4_top_box .point2 {
+        top: 148px;
+      }
+
+      .step4 .step4_btm_box {
+        margin-top: 80px;
+        align-items: flex-start;
+      }
+
+      .step4 .step4_btm_box .line {
+        padding-left: 30px;
+        position: relative;
+      }
+
+      .step4 .step4_btm_box .line::before {
+        content: '';
+        width: 16px;
+        aspect-ratio: 1/1;
+        background-color: #000000;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .step4 .step4_btm_box .line .txt {
+        line-height: 1;
+      }
+
+      .step4 .step4_btm_box .txt_container {
+        margin: 0 3px 0 15px;
+      }
+
+      .red_line {
+        font-size: 38px;
+        color: rgba(231, 46, 38, 1);
+      }
+
+      .step4_btm_box .red_line {
+        padding-left: 30px;
+      }
+
+      .step4 .step4_btm_box .line + .red_line,
+      .step4 .step4_btm_box .red_line + .line {
+        margin-top: 40px;
+      }
+
+      /* 5p */
+      .step5 .full_content_comm {
+        padding-bottom: 40px;
+      }
+
+      .step5 .step4_top_box {
+        margin-top: 30px;
+      }
+
+      .step5 .step4_top_box .point1 {
+        top: 221px;
+        width: 788px;
+        height: 82px;
+      }
+
+      .step5 .step5_btm_box {
+        margin-top: 30px;
+      }
+
+      .step5 .step5_btm_box .bubble_box {
+        position: relative;
+      }
+
+      .step5 .step5_btm_box .bubble_box .img:not(.img1) {
+        position: absolute;
+      }
+
+      .step5 .step5_btm_box .bubble_box .img2 {
+        width: 164px;
+        top: 53px;
+        right: 268px;
+      }
+
+      .step5 .step5_btm_box .bubble_box .img3 {
+        width: 163px;
+        top: 10px;
+        right: 269px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div id="contents-wrap" class="concept" style="position: absolute; display: flex"></div>
+      <div id="contents-main" style="display: none" class="concept-warp">
+        <div class="concept-warp_inner">
+          <header class="header" style="visibility: visible">
+            <div class="header_title">
+              <button class="sound-btn" onclick="titleSound()"></button>
+              <h3></h3>
+            </div>
+            <p class="header_page"><span>1</span>/2</p>
+          </header>
+          <main class="main">
+            <div class="main_content">
+              <!-- 콘텐츠영역 -->
+              <div class="step step1" style="display: block">
+                <!-- step1 시작부분 -->
+                <div class="main__container dp_flex">
+                  <div class="step1_content step1_content1 dp_flex">
+                    <div class="step1_left_box">
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP1_IMG1.png" alt="반죽 이미지" />
+
+                        <div class="clock_box">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP1_CLOCK1.png" alt="6시 시계 이미지" />
+                        </div>
+
+                        <div class="bubble_box v_hidden">
+                          <div class="char_g_head"></div>
+                          <img
+                            src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP1_BUBBLE1.png"
+                            class="img"
+                            alt="말풍선 이미지"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="step1_right_box">
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP1_IMG2.png" alt="오븐 이미지" />
+
+                        <div class="clock_box">
+                          <img
+                            src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP1_CLOCK2.png"
+                            alt="7시 20분 시계 이미지"
+                          />
+                        </div>
+
+                        <div class="bubble_box v_hidden">
+                          <div class="char_g_head"></div>
+                          <img
+                            src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP1_BUBBLE2.png"
+                            class="img"
+                            alt="말풍선 이미지"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step1_content step1_content2 dp_flex dp_none">
+                    <div class="line line1">
+                      <div class="text_box">
+                        <span>시작한 시각</span>
+                      </div>
+
+                      <div class="analog_clock_box analog_clock_box1"></div>
+                    </div>
+                    <div class="line line2">
+                      <div class="arrow"></div>
+
+                      <div class="text_box">
+                        <span>1시간 뒤</span>
+                      </div>
+
+                      <div class="analog_clock_box analog_clock_box2"></div>
+
+                      <div class="arrow2 v_hidden">
+                        <div class="txt">
+                          <span>1시간</span>
+
+                          <div class="step1_point step1_point1 img_point__wrap dp_none">
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP1_STAR.png" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="line line3 v_hidden">
+                      <div class="arrow"></div>
+
+                      <div class="text_box">
+                        <span>완성한 시각</span>
+                      </div>
+
+                      <div class="analog_clock_box analog_clock_box3"></div>
+
+                      <div class="arrow2 v_hidden">
+                        <div class="txt">
+                          <span>20분</span>
+
+                          <div class="step1_point step1_point2 img_point__wrap dp_none">
+                            <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP1_STAR.png" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step2" style="display: block">
+                <!-- step2 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step1_content step1_content2 dp_flex">
+                    <div class="line line1 dp_flex dp_flex_column">
+                      <div class="text_box">
+                        <span>시작한 시각</span>
+                      </div>
+
+                      <div class="analog_clock_box analog_clock_box1"></div>
+                    </div>
+                    <div class="line line2 dp_flex dp_flex_column">
+                      <div class="arrow"></div>
+
+                      <div class="text_box">
+                        <span>완성한 시각</span>
+                      </div>
+                      
+                      <div class="img_box">
+                        <div class="analog_clock_box analog_clock_box2"></div>
+  
+                        <div class="point point1 v_hidden">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP2_CLOCK_POINT1.png" alt="시계 강조 효과">
+                        </div>
+  
+                        <div class="point point2 v_hidden">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP2_CLOCK_POINT2.png" alt="시계 강조 효과">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="step2_mid_box dp_none">
+                    <div class="line_box dp_flex">
+                      <div class="block block1">
+                        <div class="txt">
+                          <span class="big">6시</span>
+                        </div>
+                      </div>
+                      <div class="block block2">
+                        <div class="txt">
+                          <span>10분</span>
+                        </div>
+                      </div>
+                      <div class="block block3">
+                        <div class="txt">
+                          <span>20분</span>
+                        </div>
+                      </div>
+                      <div class="block block4">
+                        <div class="txt">
+                          <span>30분</span>
+                        </div>
+                      </div>
+                      <div class="block block5">
+                        <div class="txt">
+                          <span>40분</span>
+                        </div>
+                      </div>
+                      <div class="block block6 nondot">
+                        <div class="txt">
+                          <span>50분</span>
+                        </div>
+                      </div>
+                      <div class="block block7">
+                        <div class="txt">
+                          <span class="big">7시</span>
+                        </div>
+                      </div>
+                      <div class="block block8">
+                        <div class="txt">
+                          <span>10분</span>
+                        </div>
+                      </div>
+                      <div class="block block9">
+                        <div class="txt">
+                          <span>20분</span>
+                        </div>
+                      </div>
+                      <div class="block block10">
+                        <div class="txt">
+                          <span>30분</span>
+                        </div>
+                      </div>
+                      <div class="block block11">
+                        <div class="txt">
+                          <span>40분</span>
+                        </div>
+                      </div>
+                      <div class="block block12 nondot">
+                        <div class="txt">
+                          <span>50분</span>
+                        </div>
+                        <div class="txt right">
+                          <span class="big">8시</span>
+                        </div>
+                      </div>
+
+                      <div class="point v_hidden"></div>
+                    </div>
+                    <div class="arrow_box arrow_box1 v_hidden">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP2_ARROW1.png" alt="80분" />
+                      <div class="txt dp_flex">
+                        <span>80분</span>
+                      </div>
+                    </div>
+                    <div class="arrow_box arrow_box2 v_hidden">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP2_ARROW2.png" alt="1시간" />
+                      <div class="txt dp_flex">
+                        <span>1시간</span>
+                      </div>
+                    </div>
+                    <div class="arrow_box arrow_box3 v_hidden">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP2_ARROW3.png" alt="20분" />
+                      <div class="txt dp_flex">
+                        <span>20분</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="step2_btm_box dp_flex dp_none v_hidden">
+                    <div class="txt txt1">쿠키를 만드는 데 걸린 시간은 1시간</div>
+                    <div class="txt_container txt_container1 two keypad_txt keypad_txt1" data-val="20" data-length="2"><span>?</span></div>
+                    <div class="txt txt2">분 또는</div>
+                    <div class="txt_container txt_container2 two keypad_txt keypad_txt2" data-val="80" data-length="2"><span>?</span></div>
+                    <div class="txt txt3">분입니다.</div>
+
+                    <div class="step2_point step2_point1 img_point__wrap dp_none">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP2_STAR.png" />
+                    </div>
+
+                    <div class="step2_point step2_point2 img_point__wrap dp_none">
+                      <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP2_STAR2.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step3" style="display: none">
+                <!-- step3 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step3_top_box dp_flex">
+                    <div class="train_box train_box1 dp_flex">
+                      <div class="img_box">
+                        <img
+                          src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP3_TRAIN.png"
+                          class="img img1"
+                          alt="기차"
+                        />
+                        <img
+                          src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP3_TRAIN_POINT.png"
+                          class="img img2 v_hidden"
+                          alt="기차 포인트"
+                        />
+                      </div>
+
+                      <div class="text_box">
+                        <span>서울</span>
+                      </div>
+                    </div>
+                    <div class="train_box train_box2 dp_flex v_hidden">
+                      <div class="img_box">
+                        <img
+                          src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP3_TRAIN.png"
+                          class="img img1"
+                          alt="기차"
+                        />
+                        <img
+                          src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP3_TRAIN_POINT.png"
+                          class="img img2 v_hidden"
+                          alt="기차 포인트"
+                        />
+                      </div>
+
+                      <div class="text_box">
+                        <span>익산</span>
+                      </div>
+                    </div>
+                    <div class="line"></div>
+                  </div>
+
+                  <div class="step2_mid_box">
+                    <div class="line_box dp_flex">
+                      <div class="block block1">
+                        <div class="txt">
+                          <span class="big">7시</span>
+                        </div>
+                      </div>
+                      <div class="block block2">
+                        <div class="txt">
+                          <span>10분</span>
+                        </div>
+                      </div>
+                      <div class="block block3">
+                        <div class="txt">
+                          <span>20분</span>
+                        </div>
+                      </div>
+                      <div class="block block4">
+                        <div class="txt">
+                          <span>30분</span>
+                        </div>
+                      </div>
+                      <div class="block block5">
+                        <div class="txt">
+                          <span>40분</span>
+                        </div>
+                      </div>
+                      <div class="block block6 nondot">
+                        <div class="txt">
+                          <span>50분</span>
+                        </div>
+                      </div>
+                      <div class="block block7">
+                        <div class="txt">
+                          <span class="big">8시</span>
+                        </div>
+                      </div>
+                      <div class="block block8">
+                        <div class="txt">
+                          <span>10분</span>
+                        </div>
+                      </div>
+                      <div class="block block9">
+                        <div class="txt">
+                          <span>20분</span>
+                        </div>
+                      </div>
+                      <div class="block block10">
+                        <div class="txt">
+                          <span>30분</span>
+                        </div>
+                      </div>
+                      <div class="block block11">
+                        <div class="txt">
+                          <span>40분</span>
+                        </div>
+                      </div>
+                      <div class="block block12 nondot">
+                        <div class="txt">
+                          <span>50분</span>
+                        </div>
+                        <div class="txt right">
+                          <span class="big">9시</span>
+                        </div>
+                      </div>
+
+                      <div class="arrow arrow1">
+                        <div class="txt dp_flex">
+                          <span>7:00</span>
+                        </div>
+                      </div>
+                      <div class="arrow arrow2 v_hidden">
+                        <div class="txt dp_flex">
+                          <span>8:30</span>
+                        </div>
+
+                        <div class="point v_hidden">
+                          <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP3_ARROW1_POINT.png" alt="화살표 강조효과">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="step2_btm_box dp_flex v_hidden">
+                    <div class="txt txt1">서울에서 익산까지 걸린 시간: 1시간 30분 =</div>
+                    <div class="txt_container txt_container1 two keypad_txt keypad_txt1" data-val="90" data-length="2"><span>?</span></div>
+                    <div class="txt txt2">분</div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step4" style="display: none">
+                <!-- step4 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div class="step4_top_box">
+                    <div class="table_box">
+                      <div class="tr tr1 dp_flex">
+                        <div class="td td1 dp_flex">
+                          <div class="txt">
+                            <span>딸기 농장 체험 학습</span>
+                          </div>
+                        </div>
+                        <div class="td td2 dp_flex">
+                          <div class="txt">
+                            <span> 시간 </span>
+                          </div>
+                        </div>
+                        <div class="td td3 dp_flex">
+                          <div class="txt">
+                            <span> 활동 </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tr tr2 dp_flex">
+                        <div class="td td1 dp_flex">
+                          <div class="img_box">
+                            <img
+                              src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP4_IMG1.png"
+                              class="img"
+                              alt="딸기 따는 모습"
+                            />
+                          </div>
+                        </div>
+                        <div class="td td2 dp_flex dp_flex_column">
+                          <div class="line line1 dp_flex">
+                            <div class="txt">
+                              <span>10 : 00 ~ 11 : 10</span>
+                            </div>
+                          </div>
+                          <div class="line line2 dp_flex">
+                            <div class="txt">
+                              <span>11 : 10 ~ 12 : 40</span>
+                            </div>
+                          </div>
+                          <div class="line line3 dp_flex">
+                            <div class="txt">
+                              <span>12 : 40 ~ 2 : 00</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="td td3 dp_flex dp_flex_column">
+                          <div class="line line1 dp_flex">
+                            <div class="txt">
+                              <span>딸기 따기</span>
+                            </div>
+                          </div>
+                          <div class="line line2 dp_flex">
+                            <div class="txt">
+                              <span>딸기잼 만들기</span>
+                            </div>
+                          </div>
+                          <div class="line line3 dp_flex">
+                            <div class="txt">
+                              <span>점심 식사</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="point point1 v_hidden"></div>
+                    <div class="point point2 v_hidden"></div>
+                  </div>
+
+                  <div class="step4_btm_box dp_flex dp_flex_column">
+                    <div class="line line1 dp_flex v_hidden">
+                      <div class="txt txt1">
+                        <span>딸기 따는 데 걸린 시간은 </span>
+                      </div>
+                      <div class="txt_container txt_container1 keypad_txt keypad_txt1" data-val="1">
+                        <span>?</span>
+                      </div>
+                      <div class="txt txt2">
+                        <span class="point">시간</span>
+                      </div>
+                      <div class="txt_container txt_container2 two keypad_txt keypad_txt2" data-val="10" data-length="2">
+                        <span>?</span>
+                      </div>
+                      <div class="txt txt3">
+                        <span><span class="point">분</span>입니다.</span>
+                      </div>
+                    </div>
+
+                    <div class="red_line red_line1 v_hidden">
+                      <span>10 : 00 ~ 11 : 00 → <span class="point point1">1시간</span>, 11 : 00 ~ 11 : 10 → <span class="point point2">10분</span></span>
+                    </div>
+
+                    <div class="line line2 dp_flex v_hidden">
+                      <div class="txt txt1">
+                        <span>딸기잼 만드는 데 걸린 시간은 </span>
+                      </div>
+                      <div class="txt_container txt_container1 keypad_txt keypad_txt3" data-val="1">
+                        <span>?</span>
+                      </div>
+                      <div class="txt txt2">
+                        <span class="point">시간</span>
+                      </div>
+                      <div class="txt_container txt_container2 two keypad_txt keypad_txt4" data-val="30" data-length="2">
+                        <span>?</span>
+                      </div>
+                      <div class="txt txt3">
+                        <span><span class="point">분</span>입니다.</span>
+                      </div>
+                    </div>
+
+                    <div class="red_line red_line2 v_hidden">
+                      <span>11 : 10 ~ 12 : 10 → <span class="point point1">1시간</span>, 12 : 10 ~ 12 : 40 → <span class="point point2">30분</span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step5" style="display: none">
+                <!-- step5 시작부분 -->
+                <div class="main__container">
+                  <div class="full_content_comm dp_flex dp_flex_column">
+                    <div class="red_line red_line1 v_hidden">
+                      <span>12 : 40 ~ 1 : 40 → <span class="point point1">1시간</span>, 1 : 40 ~ 2 : 00 → <span class="point point2">20분</span></span>
+                    </div>
+
+                    <div class="step4_top_box">
+                      <div class="table_box">
+                        <div class="tr tr1 dp_flex">
+                          <div class="td td1 dp_flex">
+                            <div class="txt">
+                              <span>딸기 농장 체험 학습</span>
+                            </div>
+                          </div>
+                          <div class="td td2 dp_flex">
+                            <div class="txt">
+                              <span> 시간 </span>
+                            </div>
+                          </div>
+                          <div class="td td3 dp_flex">
+                            <div class="txt">
+                              <span> 활동 </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tr tr2 dp_flex">
+                          <div class="td td1 dp_flex">
+                            <div class="img_box">
+                              <img
+                                src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP4_IMG1.png"
+                                class="img"
+                                alt="딸기 따는 모습"
+                              />
+                            </div>
+                          </div>
+                          <div class="td td2 dp_flex dp_flex_column">
+                            <div class="line line1 dp_flex">
+                              <div class="txt">
+                                <span>10 : 00 ~ 11 : 10</span>
+                              </div>
+                            </div>
+                            <div class="line line2 dp_flex">
+                              <div class="txt">
+                                <span>11 : 10 ~ 12 : 40</span>
+                              </div>
+                            </div>
+                            <div class="line line3 dp_flex">
+                              <div class="txt">
+                                <span>12 : 40 ~ 2 : 00</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="td td3 dp_flex dp_flex_column">
+                            <div class="line line1 dp_flex">
+                              <div class="txt">
+                                <span>딸기 따기</span>
+                              </div>
+                            </div>
+                            <div class="line line2 dp_flex">
+                              <div class="txt">
+                                <span>딸기잼 만들기</span>
+                              </div>
+                            </div>
+                            <div class="line line3 dp_flex">
+                              <div class="txt">
+                                <span>점심 식사</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="point point1 v_hidden"></div>
+                    </div>
+
+                    <div class="step5_btm_box dp_flex">
+                      <div class="img_box">
+                        <img src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP5_IMG1.png" alt="다정파 이미지" />
+                      </div>
+
+                      <div class="bubble_box">
+                        <img
+                          src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP5_BUBBLE1.png"
+                          class="img img1"
+                          alt="말풍선 이미지"
+                        />
+                        <img
+                          src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP5_BUBBLE2.png"
+                          class="img img2 v_hidden"
+                          alt="말풍선 이미지"
+                        />
+                        <img
+                          src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP5_BUBBLE3.png"
+                          class="img img3 v_hidden"
+                          alt="말풍선 이미지"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <footer class="check_footer">
+                    <div class="check_footer_inner">
+                      <div class="check_footer_text img_container img_container1">
+                        <img
+                          src="../../../COMM/IMG/CONCEPT/SEASON2/2_4_5/STEP5_FOOTER_TXT.png"
+                          class="img img1 footer_img"
+                        />
+                      </div>
+                      <div class="check_footer_ch">
+                        <div class="check_footer_ch_head"></div>
+                        <div class="check_footer_ch_body"></div>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+
+              <ul class="step-list">
+                <li class="step-list_item active"></li>
+                <li class="step-list_item"></li>
+              </ul>
+            </div>
+          </main>
+          <div class="main_prev-next">
+            <button class="btn-prev" style="display: none">이전버튼</button>
+            <!-- <button class="btn-next" style="display: block" disabled> -->
+            <button class="btn-next blinking" style="display: block">다음버튼</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script crossorigin src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+    <script src="../../../COMM/JS/COMMON2.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNT3.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNTBTN.JS"></script>
+    <script src="../../../COMM/JS/GAME.JS"></script>
+    <script src="../../../COMM/JS/VIDEO.JS"></script>
+    <script src="../../../COMM/JS/VIDEO-HTTP-STREAMING.JS"></script>
+    <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+    <script>
+      /*
+       * 데이터
+       */
+      let intro = {
+        type: 'concept', //concept 개념익히기, checkExam 확인문제
+        title: '걸린 시간을 알아볼까요',
+        subTitle: [
+          '걸린 시간을 몇 시간 몇 분으로 구하고 설명할 수 있어요.',
+          '걸린 시간을 몇 분 또는 몇 시간 몇 분으로 바꾸어 나타낼 수<br>있어요.',
+        ],
+        sound: ['../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_01.mp3'],
+      };
+
+      //현재 페이지
+      let disStep = 1;
+
+      let pageData = [
+        {
+          step: 1,
+          title: '쿠키를 만드는 데 걸린 시간을 구해 봅시다.',
+          sound: '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_01.mp3',
+          headerPage: [1, 2],
+          footerPage: [1, 2],
+          prev: 0,
+          next: 1,
+        },
+        {
+          step: 2,
+          title: '쿠키를 만드는 데 걸린 시간을 구해 봅시다.',
+          sound: '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_01.mp3',
+          headerPage: [1, 2],
+          footerPage: [2, 2],
+          prev: 1,
+          next: 1,
+        },
+        {
+          step: 3,
+          title: '기차를 타고 이동하는 데 걸린 시간을 구해 봅시다.',
+          sound: '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_25.mp3',
+          headerPage: [2, 2],
+          footerPage: [1, 2],
+          prev: 2,
+          next: 1,
+        },
+        {
+          step: 4,
+          title: '체험 학습 시간표를 보고 활동하는 데 걸린 시간을 구해 봅시다.',
+          sound: '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_31.mp3',
+          headerPage: [2, 2],
+          footerPage: [2, 2],
+          prev: 1,
+          next: 0,
+        },
+        {
+          step: 5,
+          title: '',
+          sound: '',
+          headerPage: [0, 0],
+          footerPage: [0, 0],
+          prev: 2,
+          next: 0,
+        },
+      ];
+
+      function pageAction() {
+        console.log('disStep ::: ', disStep);
+        //setTimeout 초기화
+        const TimeoutId = setTimeout(() => console.log('timeout clear'), 1);
+        for (let i = 0; i < TimeoutId; i++) {
+          clearTimeout(i);
+        }
+        stepSet();
+        switch (disStep) {
+          case 1:
+            step1.reset();
+            step1.start();
+            break;
+          case 2:
+            step2.reset();
+            step2.start();
+            break;
+          case 3:
+            step3.reset();
+            step3.start();
+            break;
+          case 4:
+            step4.reset();
+            step4.start();
+            break;
+          case 5:
+            step5.reset();
+            step5.start();
+            break;
+        }
+      }
+
+      //문제 시작
+      //================STEP1==============
+      const step1 = {
+        clock1: null,
+        clock2: null,
+        clock3: null,
+        start: () => {
+          step1.clock1 = new ClockEx($('.step1 .analog_clock_box1'), '06:00', 'm', '04:55');
+          step1.clock2 = new ClockEx($('.step1 .analog_clock_box2'), '07:00', 'm', '04:55');
+          step1.clock3 = new ClockEx($('.step1 .analog_clock_box3'), '07:00', 'm', '07:20', step1.clockSelectCorrect);
+          audioSet([
+            '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_01.mp3',
+            '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_02.mp3',
+            '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_03.mp3',
+            '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_04.mp3',
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step1 .step1_content1 .step1_left_box .bubble_box').css('visibility', 'visible');
+                $('.step1 .step1_content1 .step1_left_box .clock_box').addClass('box_blink2');
+              },
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step1 .step1_content1 .step1_left_box .bubble_box').css('visibility', 'hidden');
+                $('.step1 .step1_content1 .step1_left_box .clock_box').removeClass('box_blink2');
+                $('.step1 .step1_content1 .step1_right_box .bubble_box').css('visibility', 'visible');
+                $('.step1 .step1_content1 .step1_right_box .clock_box').addClass('box_blink2');
+              },
+            },
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                $('.step1 .step1_content1 .step1_right_box .bubble_box').css('visibility', 'hidden');
+                $('.step1 .step1_content1 .step1_right_box .clock_box').removeClass('box_blink2');
+              },
+            },
+            {
+              idx: 4,
+              type: 'end',
+              callback: () => {
+                $('.step1 .step1_content1 .step1_left_box .clock_box').addClass('box_blink2');
+                touchMotionSetOn(245, 360, step1.guideTouch, $('.step1 .step1_content1 .step1_left_box .clock_box'));
+              },
+            },
+          ]);
+        },
+        guideTouch: flag => {
+          $('.step1 .step1_content1 .step1_left_box .clock_box').removeClass('box_blink2');
+          $('.step1 .step1_content1').css('display', 'none');
+          $('.step1 .step1_content2').css('display', 'flex');
+
+          audioSet([
+            '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_05.mp3'
+          ], [
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                $('.step1 .step1_content2 .analog_clock_box2').addClass('on');
+
+                timerSet(() => {
+                  timerInit();
+                  $('.step1 .step1_content2 .analog_clock_box2').removeClass('on');
+                  $('.step1 .step1_content2 .analog_clock_box2 .analog-clock > .hand.hour').css(
+                    'transform',
+                    'translate3D(-50%, 0, 0) rotate(210deg)'
+                  );
+
+                  audioSet([
+                    '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_06.mp3',
+                    '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_07.mp3',
+                    '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_08.mp3',
+                  ], [
+                    {
+                      idx: 1,
+                      type: 'start',
+                      callback: () => {
+                        $('.step1 .step1_content2 .analog_clock_box2 .analog-clock > .hand').addClass('blinking');
+                      },
+                    },
+                    {
+                      idx: 2,
+                      type: 'start',
+                      callback: () => {
+                        $('.step1 .step1_content2 .analog_clock_box2 .analog-clock > .hand').removeClass(
+                          'blinking'
+                        );
+                        $('.step1_content2 .line3').css('visibility', 'visible');
+                      },
+                    },
+                    {
+                      idx: 3,
+                      type: 'end',
+                      callback: () => {
+                        step1.clock3.setClockEvent();
+                      },
+                    },
+                  ]);
+                }, 1000);
+              },
+            },
+          ]);
+        },
+        clockSelectCorrect: flag => {
+          if (flag) {
+            audioSet([
+              '../../../COMM/SOUND/CORRECT.mp3',
+              '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_09.mp3',
+              '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_10.mp3',
+              '../../../COMM/SOUND/Eff_Start.mp3',
+              '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_11.mp3',
+              '../../../COMM/SOUND/Eff_Start.mp3',
+              '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_12.mp3',
+            ], [
+              {
+                idx: 2,
+                type: 'start',
+                callback: () => {
+                  $('.step1 .step1_content2 .analog_clock_box3 .analog-clock > .hand').addClass('blinking');
+                },
+              },
+              {
+                idx: 3,
+                type: 'start',
+                callback: () => {
+                  $('.step1 .step1_content2 .analog_clock_box3 .analog-clock > .hand').removeClass('blinking');
+                },
+              },
+              {
+                idx: 4,
+                type: 'start',
+                callback: () => {
+                  $('.step1 .step1_content2 .line2 .arrow2').css('visibility', 'visible');
+                  $('.step1 .step1_content2 .step1_point1').css('display', 'block').addClass('spining');
+                },
+              },
+              {
+                idx: 6,
+                type: 'start',
+                callback: () => {
+                  $('.step1 .step1_content2 .line3 .arrow2').css('visibility', 'visible');
+                  $('.step1 .step1_content2 .step1_point2').css('display', 'block').addClass('spining');
+                },
+              },
+              {
+                idx: 7,
+                type: 'end',
+                callback: () => {
+                  correctly();
+                },
+              },
+            ]);
+          } else {
+            audioSet([
+              '../../../COMM/SOUND/WRONG.mp3'
+            ]);
+          }
+        },
+        reset: () => {
+          touchMotionSetInit();
+
+          $('.step1 .dp_none').css('display', '');
+          $('.step1 .v_hidden').css('visibility', '');
+          $('.step1 .box_blink2').removeClass('box_blink2');
+          $('.step1 .blinking').removeClass('blinking');
+          $('.step1 .spining').removeClass('spining');
+          $('.step1 .on').removeClass('on');
+          $('.step1 .step1_content1').css('display', '');
+          $('.step1 .step1_content2 .analog_clock_box2 .analog-clock > .hand.hour').css('transform', '');
+        },
+      };
+      //================STEP2==============
+      const step2 = {
+        clock1: null,
+        clock2: null,
+        start: () => {
+          step1.clock1 = new ClockEx($('.step2 .analog_clock_box1'), '06:00', 'm', '04:55');
+          step1.clock2 = new ClockEx($('.step2 .analog_clock_box2'), '07:20', 'm', '04:55');
+          audioSet([
+            '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_13.mp3',
+            '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_14.mp3',
+            '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_15.mp3',
+          ],[
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step2 .step2_mid_box').css('display', 'block');
+                $('.step2 .step2_btm_box').css('display', 'flex');
+              },
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step2 .analog_clock_box1 .analog-clock > .hand').addClass('blinking');
+              },
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step2 .analog_clock_box1 .analog-clock > .hand').removeClass('blinking');
+                $('.step2 .analog_clock_box2 .analog-clock > .hand').addClass('blinking');
+              },
+            },
+            {
+              idx: 3,
+              type: 'end',
+              callback: () => {
+                $('.step2 .analog_clock_box2 .analog-clock > .hand').removeClass('blinking');
+                $('.step2 .step2_mid_box .line_box .point').css('visibility', 'visible').addClass('box_blink2');
+                touchMotionSetOn(575, 640, step2.guideTouch, $('.step2 .step2_mid_box .line_box .point'));
+              },
+            },
+          ]);
+        },
+        guideTouch: flag => {
+          $('.step2 .step2_mid_box .line_box .point').css('visibility', 'hidden').removeClass('box_blink2');
+          $('.step2 .step2_mid_box .line_box .block1').addClass('color');
+          $('.step2 .step2_mid_box .line_box .block2').addClass('color');
+          $('.step2 .step2_mid_box .line_box .block3').addClass('color');
+          $('.step2 .step2_mid_box .line_box .block4').addClass('color');
+          $('.step2 .step2_mid_box .line_box .block5').addClass('color');
+          $('.step2 .step2_mid_box .line_box .block6').addClass('color');
+          $('.step2 .step2_mid_box .line_box .block7').addClass('color');
+          $('.step2 .step2_mid_box .line_box .block8').addClass('color');
+
+          timerSet(() => {
+            audioSet([
+              '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_16.mp3',
+              '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_17.mp3',
+              '../../../COMM/SOUND/Eff_Start.mp3',
+              '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_18.mp3',
+              '../../../COMM/SOUND/Eff_Start.mp3',
+              '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_19.mp3',
+              '../../../COMM/SOUND/Eff_Start.mp3',
+              '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_20.mp3',
+              '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_21.mp3',
+            ], [
+              {
+                idx: 1,
+                type: 'start',
+                callback: () => {
+                  $('.step2 .step2_mid_box .line_box .block.color').addClass('bgColor');
+                },
+              },
+              {
+                idx: 2,
+                type: 'start',
+                callback: () => {
+                  $('.step2 .bgColor').removeClass('bgColor');
+                },
+              },
+              {
+                idx: 3,
+                type: 'start',
+                callback: () => {
+                  $('.step2 .step2_mid_box .arrow_box1').css('visibility', 'visible');
+                },
+              },
+              {
+                idx: 5,
+                type: 'start',
+                callback: () => {
+                  $('.step2 .step2_mid_box .arrow_box2').css('visibility', 'visible');
+                },
+              },
+              {
+                idx: 6,
+                type: 'start',
+                callback: () => {
+                  $('.step2 .step2_mid_box .arrow_box2 .txt span').addClass('aniScale');
+                },
+              },
+              {
+                idx: 7,
+                type: 'start',
+                callback: () => {
+                  $('.step2 .step2_mid_box .arrow_box2 .txt span').removeClass('aniScale');
+                  $('.step2 .step2_mid_box .arrow_box3').css('visibility', 'visible');
+                },
+              },
+              {
+                idx: 8,
+                type: 'start',
+                callback: () => {
+                  $('.step2 .step2_mid_box .arrow_box3 .txt span').addClass('aniScale');
+                },
+              },
+              {
+                idx: 9,
+                type: 'start',
+                callback: () => {
+                  $('.step2 .step2_mid_box .arrow_box3 .txt span').removeClass('aniScale');
+                  $('.step2 .step2_btm_box').css('visibility', 'visible');
+                },
+              },
+              {
+                idx: 9,
+                type: 'end',
+                callback: () => {
+                  // 빈칸 깜빡이기 (키패드 노출)
+                  let keypadTxtEl1 = $('.step2 .keypad_txt1');
+                  keypadTxtEl1.addClass("blink").click(() => {
+                    keypadTxtEl1.removeClass('blink');
+                    keypadSetOn(keypadTxtEl1, 54, 404);
+                    step2.keypadSetClick(keypadTxtEl1);
+                  });
+                },
+              },
+            ]);
+
+            timerInit();
+          }, 1000);
+        },
+        keypadSetClick: (btn) => {
+          $(document).on('click', keypadBtnCheckEl, () => {
+            if (keypadInput == btn.data('val')) {
+              keypadSetCorrect(btn);
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.MP3",
+              ], [
+                {
+                  idx: 1,
+                  type: 'end',
+                  callback: () => {
+                    // 빈칸 깜빡이기 (키패드 노출)
+                    let keypadTxtEl1 = $('.step2 .keypad_txt2');
+                    keypadTxtEl1.addClass("blink").click(() => {
+                      keypadTxtEl1.removeClass('blink');
+                      keypadSetOn(keypadTxtEl1, 54, 404);
+                      step2.keypadSetClick2(keypadTxtEl1);
+                    });
+                  },
+                },
+              ]);
+            } else {
+              keypadSetOff(btn);
+              btn.addClass('blink');
+
+              audioSet([
+                "../../../COMM/SOUND/WRONG.MP3",
+              ]);
+            }
+          });
+        },
+        keypadSetClick2: (btn) => {
+          $(document).on('click', keypadBtnCheckEl, () => {
+            if (keypadInput == btn.data('val')) {
+              keypadSetCorrect(btn);
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.MP3",
+                '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_22.mp3',
+                '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_23.mp3',
+                '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_24.mp3',
+              ], [
+                {
+                  idx: 2,
+                  type: 'start',
+                  callback: () => {
+                    $('.step2 .step1_content2 .line .point1').css('visibility', 'visible');
+                  },
+                },
+                {
+                  idx: 3,
+                  type: 'start',
+                  callback: () => {
+                    $('.step2 .step1_content2 .line .point1').css('visibility', 'hidden');
+                    $('.step2 .step1_content2 .line .point2').css('visibility', 'visible');
+                  },
+                },
+                {
+                  idx: 4,
+                  type: 'end',
+                  callback: () => {
+                    $('.step2 .step2_point').css('display', 'block');
+                    timerSet(() => {
+                      correctly();
+
+                      timerInit();
+                    }, 1000)
+                  },
+                },
+              ]);
+            } else {
+              keypadSetOff(btn);
+              btn.addClass('blink');
+
+              audioSet([
+                "../../../COMM/SOUND/WRONG.MP3",
+              ]);
+            }
+          });
+        },
+        reset: () => {
+          touchMotionSetInit();
+          keypadSetInit();
+
+          $('.step2 .dp_none').css('display', '');
+          $('.step2 .v_hidden').css('visibility', '');
+          $('.step2 .blinking').removeClass('blinking');
+          $('.step2 .box_blink2').removeClass('box_blink2');
+          $('.step2 .color').removeClass('color');
+          $('.step2 .bgColor').removeClass('bgColor');
+          $('.step2 .aniScale').removeClass('aniScale');
+        },
+      };
+      //================STEP3==============
+      const step3 = {
+        start: () => {
+          audioSet([
+            '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_25.mp3',
+            '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_26.mp3',
+          ], [
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step3 .step2_mid_box .line_box .arrow .txt span').addClass('blinking');
+              },
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                $('.step3 .step2_mid_box .line_box .arrow .txt span').removeClass('blinking');
+                $('.step3 .step3_top_box .train_box1 .img_box .img2').css('visibility', 'visible').addClass('blinking');
+                touchMotionSetOn(155, 210, step3.guideTouch, $('.step3 .step3_top_box .train_box1 .img_box'));
+              },
+            },
+          ]);
+        },
+        guideTouch: (flag) => {
+          $('.step3 .step3_top_box .train_box1 .img_box .img2').css('visibility', 'hidden').removeClass('blinking');
+          $('.step3 .step3_top_box .train_box1').css('visibility', 'hidden');
+          $('.step3 .step2_mid_box .line_box .arrow1').css('visibility', 'hidden');
+          $('.step3 .step3_top_box .train_box2').css('visibility', 'visible');
+          $('.step3 .step2_mid_box .line_box .arrow2').css('visibility', 'visible');
+                
+          audioSet([
+            '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_27.mp3',
+          ], [
+            {
+              idx: 1,
+              type: 'end',
+              callback: () => {
+                $('.step3 .step2_mid_box .line_box .arrow .point').css('visibility', 'visible').addClass('blinking');
+                touchMotionSetOn(285, 1140, step3.guideTouch2, $('.step3 .step2_mid_box .line_box .arrow2'));
+              },
+            },
+          ]);
+        },
+        guideTouch2: (flag) => {
+          $('.step3 .step2_mid_box .line_box .arrow .point').css('visibility', 'hidden').removeClass('blinking');
+          $('.step3 .step2_mid_box .line_box .block1').addClass('color');
+          $('.step3 .step2_mid_box .line_box .block2').addClass('color');
+          $('.step3 .step2_mid_box .line_box .block3').addClass('color');
+          $('.step3 .step2_mid_box .line_box .block4').addClass('color');
+          $('.step3 .step2_mid_box .line_box .block5').addClass('color');
+          $('.step3 .step2_mid_box .line_box .block6').addClass('color');
+          $('.step3 .step2_mid_box .line_box .block7').addClass('color');
+          $('.step3 .step2_mid_box .line_box .block8').addClass('color');
+          $('.step3 .step2_mid_box .line_box .block9').addClass('color');
+                
+          audioSet([
+            '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_28.mp3',
+            '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_29.mp3',
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step3 .step2_mid_box .line_box .block.color').addClass('bgColor');
+              },
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step3 .step2_mid_box .line_box .block.color').removeClass('bgColor');
+                $('.step3 .step2_btm_box').css('visibility', 'visible');
+              },
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                // 빈칸 깜빡이기 (키패드 노출)
+                let keypadTxtEl1 = $('.step3 .keypad_txt1');
+                keypadTxtEl1.addClass("blink").click(() => {
+                  keypadTxtEl1.removeClass('blink');
+                  keypadSetOn(keypadTxtEl1, 54, 514);
+                  step3.keypadSetClick(keypadTxtEl1);
+                });
+              },
+            },
+          ]);
+        },
+        keypadSetClick: (btn) => {
+          $(document).on('click', keypadBtnCheckEl, () => {
+            if (keypadInput == btn.data('val')) {
+              $('.step3 .step2_btm_box .txt_container1').html('<span>90</span>');
+
+              keypadSetCorrect(btn);
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.MP3",
+                '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_30.mp3',
+              ], [
+                {
+                  idx: 2,
+                  type: 'start',
+                  callback: () => {
+                    timerSet(() => {
+                      $('.step3 .step2_btm_box .txt_container1 span').addClass('blinking');
+
+                      timerInit();
+                    }, 4000);
+                  },
+                },
+                {
+                  idx: 2,
+                  type: 'end',
+                  callback: () => {
+                    $('.step3 .step2_btm_box .txt_container1 span').removeClass('blinking');
+                    correctly();
+                  },
+                },
+              ]);
+            } else {
+              keypadSetOff(btn);
+              btn.addClass('blink');
+
+              audioSet([
+                "../../../COMM/SOUND/WRONG.MP3",
+              ]);
+            }
+          });
+        },
+        reset: () => {
+          touchMotionSetInit();
+          keypadSetInit();
+
+          $('.step3 .dp_none').css('display', '');
+          $('.step3 .v_hidden').css('visibility', '');
+          $('.step3 .blinking').addClass('blinking');
+          $('.step3 .step3_top_box .train_box1').css('visibility', '');
+          $('.step3 .step2_mid_box .line_box .arrow1').css('visibility', '');
+        },
+      };
+      //================STEP4==============
+      const step4 = {
+        start: () => {
+          audioSet([
+            '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_31.mp3',
+            '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_32.mp3',
+            '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_33.mp3',
+          ], [
+            {
+              idx: 3,
+              type: 'end',
+              callback: () => {
+                $('.step4 .step4_top_box .point1').css('visibility', 'visible').addClass('box_blink2');
+                touchMotionSetOn(154, 1035, step4.guideTouch, $('.step4 .step4_top_box .point1'));
+              },
+            },
+          ]);
+        },
+        guideTouch: (flag) => {
+          $('.step4 .step4_top_box .point1').css('visibility', 'hidden').removeClass('box_blink2');
+          $('.step4 .step4_btm_box .line1').css('visibility', 'visible');
+
+          // 빈칸 깜빡이기 (키패드 노출)
+		      let keypadTxtEl1 = $('.step4 .keypad_txt1');
+		      keypadTxtEl1.addClass("blink").click(() => {
+			      keypadTxtEl1.removeClass('blink');
+			      keypadSetOn(keypadTxtEl1, 14, 14);
+			      step4.keypadSetClick(keypadTxtEl1);
+		      });
+        },
+        keypadSetClick: (btn) => {
+          $(document).on('click', keypadBtnCheckEl, () => {
+            if (keypadInput == btn.data('val')) {
+              keypadSetCorrect(btn);
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.MP3",
+              ], [
+                {
+                  idx: 1,
+                  type: 'end',
+                  callback: () => {
+                    // 빈칸 깜빡이기 (키패드 노출)
+                    let keypadTxtEl1 = $('.step4 .keypad_txt2');
+                    keypadTxtEl1.addClass("blink").click(() => {
+                      keypadTxtEl1.removeClass('blink');
+                      keypadSetOn(keypadTxtEl1, 14, 14);
+                      step4.keypadSetClick2(keypadTxtEl1);
+                    });
+                  },
+                },
+              ]);
+            } else {
+              keypadSetOff(btn);
+              btn.addClass('blink');
+
+              audioSet([
+                "../../../COMM/SOUND/WRONG.MP3",
+              ]);
+            }
+          });
+        },
+        keypadSetClick2: (btn) => {
+          $(document).on('click', keypadBtnCheckEl, () => {
+            if (keypadInput == btn.data('val')) {
+              $('.step4 .keypad_txt1').html('<span>1</span>');
+              $('.step4 .keypad_txt2').html('<span>10</span>');
+
+              keypadSetCorrect(btn);
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.MP3",
+                '../../../COMM/SOUND/Eff_Start.mp3',
+                '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_34.mp3',
+                '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_35.mp3',
+                '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_36.mp3',
+                '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_37.mp3',
+              ], [
+                {
+                  idx: 2,
+                  type: 'start',
+                  callback: () => {
+                    $('.step4 .step4_btm_box .red_line1').css('visibility', 'visible');
+                  },
+                },
+                {
+                  idx: 3,
+                  type: 'start',
+                  callback: () => {
+                    $('.step4 .step4_btm_box .red_line1 .point1').addClass('aniScale');
+                  },
+                },
+                {
+                  idx: 4,
+                  type: 'start',
+                  callback: () => {
+                    $('.step4 .step4_btm_box .red_line1 .point1').removeClass('aniScale');
+                    $('.step4 .step4_btm_box .red_line1 .point2').addClass('aniScale');
+                  },
+                },
+                {
+                  idx: 5,
+                  type: 'start',
+                  callback: () => {
+                    $('.step4 .step4_btm_box .red_line1 .point2').removeClass('aniScale');
+                    $('.step4 .step4_btm_box .line1 .point').addClass('aniScale');
+                    $('.step4 .keypad_txt1 span').addClass('aniScale');
+                    $('.step4 .keypad_txt2 span').addClass('aniScale');
+                  },
+                },
+                {
+                  idx: 6,
+                  type: 'start',
+                  callback: () => {
+                    $('.step4 .step4_btm_box .line1 .point').removeClass('aniScale');
+                    $('.step4 .keypad_txt1 span').removeClass('aniScale');
+                    $('.step4 .keypad_txt2 span').removeClass('aniScale');
+                  },
+                },
+                {
+                  idx: 6,
+                  type: 'end',
+                  callback: () => {
+                    $('.step4 .step4_top_box .point2').css('visibility', 'visible').addClass('box_blink2');
+                    touchMotionSetOn(225, 1035, step4.guideTouch2, $('.step4 .step4_top_box .point2'));
+                  },
+                },
+              ]);
+            } else {
+              keypadSetOff(btn);
+              btn.addClass('blink');
+
+              audioSet([
+                "../../../COMM/SOUND/WRONG.MP3",
+              ]);
+            }
+          });
+        },
+        guideTouch2: (flag) => {
+          $('.step4 .step4_top_box .point2').css('visibility', 'hidden').removeClass('box_blink2');
+          $('.step4 .step4_btm_box .line2').css('visibility', 'visible');
+
+          // 빈칸 깜빡이기 (키패드 노출)
+		      let keypadTxtEl1 = $('.step4 .keypad_txt3');
+		      keypadTxtEl1.addClass("blink").click(() => {
+			      keypadTxtEl1.removeClass('blink');
+			      keypadSetOn(keypadTxtEl1, 14, 240);
+			      step4.keypadSetClick3(keypadTxtEl1);
+		      });
+        },
+        keypadSetClick3: (btn) => {
+          $(document).on('click', keypadBtnCheckEl, () => {
+            if (keypadInput == btn.data('val')) {
+              keypadSetCorrect(btn);
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.MP3",
+              ], [
+                {
+                  idx: 1,
+                  type: 'end',
+                  callback: () => {
+                    // 빈칸 깜빡이기 (키패드 노출)
+                    let keypadTxtEl1 = $('.step4 .keypad_txt4');
+                    keypadTxtEl1.addClass("blink").click(() => {
+                      keypadTxtEl1.removeClass('blink');
+                      keypadSetOn(keypadTxtEl1, 14, 240);
+                      step4.keypadSetClick4(keypadTxtEl1);
+                    });
+                  },
+                },
+              ]);
+            } else {
+              keypadSetOff(btn);
+              btn.addClass('blink');
+
+              audioSet([
+                "../../../COMM/SOUND/WRONG.MP3",
+              ]);
+            }
+          });
+        },
+        keypadSetClick4: (btn) => {
+          $(document).on('click', keypadBtnCheckEl, () => {
+            if (keypadInput == btn.data('val')) {
+              $('.step4 .keypad_txt3').html('<span>1</span>');
+              $('.step4 .keypad_txt4').html('<span>30</span>');
+
+              keypadSetCorrect(btn);
+              audioSet([
+                "../../../COMM/SOUND/CORRECT.MP3",
+                '../../../COMM/SOUND/Eff_Start.mp3',
+                '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_38.mp3',
+                '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_39.mp3',
+                '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_40.mp3',
+              ], [
+                {
+                  idx: 2,
+                  type: 'start',
+                  callback: () => {
+                    $('.step4 .step4_btm_box .red_line2').css('visibility', 'visible');
+                  },
+                },
+                {
+                  idx: 3,
+                  type: 'start',
+                  callback: () => {
+                    $('.step4 .step4_btm_box .red_line2 .point1').addClass('aniScale');
+                  },
+                },
+                {
+                  idx: 4,
+                  type: 'start',
+                  callback: () => {
+                    $('.step4 .step4_btm_box .red_line2 .point1').removeClass('aniScale');
+                    $('.step4 .step4_btm_box .red_line2 .point2').addClass('aniScale');
+                  },
+                },
+                {
+                  idx: 5,
+                  type: 'start',
+                  callback: () => {
+                    $('.step4 .step4_btm_box .red_line2 .point2').removeClass('aniScale');
+                    $('.step4 .step4_btm_box .line2 .point').addClass('aniScale');
+                    $('.step4 .keypad_txt3 span').addClass('aniScale');
+                    $('.step4 .keypad_txt4 span').addClass('aniScale');
+                  },
+                },
+                {
+                  idx: 5,
+                  type: 'end',
+                  callback: () => {
+                    $('.step4 .step4_btm_box .line2 .point').removeClass('aniScale');
+                    $('.step4 .keypad_txt3 span').removeClass('aniScale');
+                    $('.step4 .keypad_txt4 span').removeClass('aniScale');
+
+                    disStep++;
+                    pageAction();
+                  },
+                },
+              ]);
+            } else {
+              keypadSetOff(btn);
+              btn.addClass('blink');
+
+              audioSet([
+                "../../../COMM/SOUND/WRONG.MP3",
+              ]);
+            }
+          });
+        },
+        reset: () => {
+          touchMotionSetInit();
+          keypadSetInit();
+
+          $('.step4 .dp_none').css('display', '');
+          $('.step4 .v_hidden').css('visibility', '');
+          $('.step4 .box_blink2').removeClass('box_blink2');
+          $('.step4 .aniScale').removeClass('aniScale');
+        },
+      };
+      //================STEP5==============
+      const step5 = {
+        start: () => {
+          audioSet([
+            '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_41.mp3',
+            '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_42.mp3',
+            '../../../COMM/SOUND/Eff_Start.mp3',
+            '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_43.mp3',
+            '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_44.mp3',
+            '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_45.mp3',
+            '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_46.mp3',
+            '../../../COMM/SOUND/Eff_Start.mp3',
+            '../../../COMM/SOUND/SEASON2/2_4_5/2_2_4-5_47.mp3',
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step5_btm_box').css('visibility', 'visible');
+              },
+            },
+            {
+              idx: 2,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step4_top_box .point1').css('visibility', 'visible').addClass('box_blink2');
+              },
+            },
+            {
+              idx: 3,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step4_top_box .point1').css('visibility', 'hidden').removeClass('box_blink2');
+                $('.step5 .red_line').css('visibility', 'visible');
+              },
+            },
+            {
+              idx: 4,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step4_top_box .point1').css('visibility', 'hidden').removeClass('box_blink2');
+                $('.step5 .red_line .point1').addClass('aniScale');
+              },
+            },
+            {
+              idx: 5,
+              type: 'start',
+              callback: () => {
+                $('.step5 .red_line .point1').removeClass('aniScale');
+                $('.step5 .red_line .point2').addClass('aniScale');
+              },
+            },
+            {
+              idx: 6,
+              type: 'start',
+              callback: () => {
+                $('.step5 .red_line .point2').removeClass('aniScale');
+                $('.step5 .step5_btm_box .bubble_box .img2').css('visibility', 'visible');
+              },
+            },
+            {
+              idx: 8,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step5_btm_box .bubble_box .img3').css('visibility', 'visible').addClass('aniScale');
+              },
+            },
+            {
+              idx: 9,
+              type: 'start',
+              callback: () => {
+                $('.step5 .step5_btm_box .bubble_box .img3').removeClass('aniScale');
+                $('.step5 .check_footer_inner').addClass('slideUp');
+              },
+            },
+            {
+              idx: 9,
+              type: 'end',
+              callback: () => {
+                callFinish();
+              },
+            },
+          ]);
+        },
+        reset: () => {
+          $('.step5 .dp_none').css('display', '');
+          $('.step5 .v_hidden').css('visibility', '');
+          $('.step5 .box_blink2').removeClass('box_blink2');
+          $('.step5 .aniScale').removeClass('aniScale');
+          $('.step5 .slideUp').removeClass('slideUp');
+          $('.step5 .step5_btm_box .bubble_box .img1').css('display', 'block');
+        },
+      };
+    </script>
+  </body>
+</html>

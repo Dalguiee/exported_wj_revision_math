@@ -1,0 +1,474 @@
+html,
+body,
+.warp,
+.game {
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "NanumSquareRound" !important;
+}
+
+/* 테스트버튼 추후 삭제 */
+.testBtn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.testBtn .testBtn1,
+.testBtn .testBtn2,
+.testBtn .testBtn3 {
+  width: 240px;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.4);
+  margin-right: 24px;
+  color: white;
+  font-size: 28px;
+  border-radius: 100px;
+}
+
+.testBtn .testBtn3 {
+  margin-right: 0;
+}
+
+.end-popup {
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.end-popup img {
+  width: 70%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* .end-popup button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(calc(-50% + 396px));
+  width: 340px;
+  height: 100px;
+  font-size: 0;
+  border-radius: 100px;
+} */
+
+.warp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  /* width: 2000px; */
+  /* height: 1200px; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  position: relative;
+  width: 2000px;
+  height: 1200px;
+  background: url(../../COMM/IMG/CARDFLIP/BG.JPG) no-repeat center;
+  background-size: 2000px 1200px;
+  /* overflow: hidden; */
+}
+
+.game_intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 1434px;
+  height: 778px;
+  background: url(../../COMM/IMG/CARDFLIP/INTRO.PNG) no-repeat center;
+}
+
+.game_intro_btn {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  width: 360px;
+  height: 140px;
+  border-radius: 100px;
+  transform: translateX(-50%);
+  font-size: 0;
+}
+
+.game_title {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 100px;
+  left: 50%;
+  min-width: 900px;
+  width: auto;
+  background: #f2487a;
+  box-shadow: 0 8px 0 0 #cf2453;
+  border-radius: 100px;
+  height: 133px;
+  transform: translateX(-50%) translateY(-100px);
+  display: none;
+  padding: 0 72px;
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+  white-space: nowrap;
+}
+
+.tree {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 410px;
+  height: 136px;
+  background: url(../../COMM/IMG/CARDFLIP/TREE.PNG) no-repeat center;
+  background-size: contain;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  width: 2000px;
+  height: 0;
+  justify-content: center;
+  align-items: start;
+  padding-top: 300px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* 3X3 */
+.card-list.length6 {
+  width: 950px;
+}
+
+/* 4X2 */
+.card-list.length8 {
+  width: 1280px;
+}
+
+/* 4X3 */
+.card-list.length12 {
+  width: 992px;
+}
+
+.card-item {
+  margin-top: 40px;
+  margin-right: 40px;
+  border-radius: 20px;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+}
+
+.card {
+  background: white;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.08);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.card-list.length6 .card-item {
+  width: calc((100% - 80px) / 3);
+  height: 340px;
+}
+
+.card-list.length8 .card-item {
+  width: calc((100% - 120px) / 4);
+  height: 340px;
+}
+
+.card-list.length12 .card-item {
+  width: calc((100% - 144px) / 4);
+  height: 248px;
+  margin-right: 48px;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.card.clear {
+  transform: rotateY(180deg);
+}
+
+.card-list.length6 .card-item:nth-of-type(-n + 3) {
+  margin-top: 0;
+}
+
+.card-list.length6 .card-item:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.card-list.length8 .card-item:nth-of-type(-n + 4) {
+  margin-top: 0;
+}
+
+.card-list.length8 .card-item:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+.card-list.length12 .card-item:nth-of-type(-n + 4) {
+  margin-top: 0;
+}
+
+.card-list.length12 .card-item:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+.card_front,
+.card_back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card_front {
+  /* background: white; */
+  background: url(../../COMM/IMG/CARDFLIP/CARD_FRONT.JPG) no-repeat center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.card_back img {
+  width: 108%;
+  height: 100%;
+  color: black;
+  font-size: 24px;
+}
+
+.card_back {
+  /* background: black; */
+  background: white;
+  transform: rotateY(180deg);
+  font-size: 64px;
+  color: black;
+  font-weight: 600;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.character {
+  z-index: 1;
+  position: absolute;
+  bottom: 104px;
+  right: 109px;
+  width: 316px;
+  height: 405px;
+  pointer-events: none;
+}
+
+.character_basic {
+  position: absolute;
+  bottom: 0px;
+  width: 346px;
+  height: 365px;
+  background: url(../../COMM/IMG/CARDFLIP/CHARACTER.PNG) no-repeat center;
+  background-size: contain;
+  /* display: none; */
+}
+
+.character_cor {
+  position: absolute;
+  top: -9px;
+  left: 12px;
+  width: 334px;
+  height: 414px;
+  background: url(../../COMM/IMG/CARDFLIP/CHARACTER_COR.PNG) no-repeat center;
+  display: none;
+}
+
+.character_wro {
+  position: absolute;
+  top: 35px;
+  left: -15px;
+  width: 356px;
+  height: 373px;
+  background: url(../../COMM/IMG/CARDFLIP/CHARACTER_WRO.PNG) no-repeat center;
+  display: none;
+}
+
+.character_o-sign,
+.character_x-sign {
+  position: absolute;
+  left: 20px;
+  top: -320px;
+  width: 404px;
+  height: 435px;
+  display: none;
+}
+
+.character_o-sign {
+  background: url(../../COMM/IMG/CARDFLIP/OSIGN.PNG) no-repeat center;
+  background-size: cover;
+}
+
+.character_x-sign {
+  background: url(../../COMM/IMG/CARDFLIP/XSIGN.PNG) no-repeat center;
+  background-size: cover;
+}
+
+/* 타이틀 모션 */
+.game_title.motionStart {
+  animation-duration: 0.8s;
+  animation-name: game_title-motion;
+  animation-fill-mode: forwards;
+}
+
+@keyframes game_title-motion {
+  0% {
+    transform: translateX(-50%) translateY(-100px);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* 카드 랜더링 시 모션 */
+.card-item.motionStart {
+  animation-duration: 0.8s;
+  animation-name: card-item-motion;
+  animation-fill-mode: forwards;
+}
+
+@keyframes card-item-motion {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(100%);
+  }
+}
+
+#complete_popup .buttonArea {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  top: 940px;
+}
+#complete_popup .dimmed {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: rgba(0, 0, 0, 0.8);
+}
+#complete_popup .bg {
+  position: absolute;
+  top: 140px;
+  width: 100%;
+  height: 80%;
+  z-index: 1;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/CARDFLIP/LASTPOPUP.PNG");
+}
+#complete_popup .reload {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  color: blue;
+  z-index: 2;
+  border-radius: 100px;
+  background: center/contain no-repeat url("../../COMM/IMG/CRUNCHY/RETRY.PNG");
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#complete_popup .play_view {
+  display: flex;
+  width: 300px;
+  height: 100px;
+  color: white;
+  font-size: 32px;
+  font-weight: 800px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #2dcabd;
+  z-index: 2;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#complete_popup p {
+  display: flex;
+  position: absolute;
+  bottom: -50px;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.pearl-guide {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.pearl-guide-hand {
+  width: 120px;
+  height: 110px;
+  position: absolute;
+  z-index: 2;
+  background: url("../../COMM/IMG/TOUCH_GUIDE_HAND.PNG") no-repeat center;
+  left: 21.8%;
+  bottom: 55.3%;
+}
+.pearl-guide-point {
+  width: 120px;
+  height: 110px;
+  position: absolute;
+  z-index: 2;
+  background: url("../../COMM/IMG/TOUCH_GUIDE.PNG") no-repeat center;
+  left: 19%;
+  bottom: 59%;
+  animation: opa 1s infinite linear;
+}
+
+@keyframes opa {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

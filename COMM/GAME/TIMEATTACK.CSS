@@ -1,0 +1,672 @@
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+}
+
+.ansBox {
+  display: inline-block;
+  border: 5px solid black;
+  border-radius: 11px;
+  margin: 0 10px;
+  width: 80px !important;
+  height: 80px !important;
+}
+
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "NanumSquareRound" !important;
+}
+
+.osign {
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../COMM/IMG/TIMEATTACK/OSIGN.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.transparentWall {
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.winPopup {
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../COMM/IMG/TIMEATTACK/WINPOPUP.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1440px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+/* 앤딩 팝업 */
+#complete_popup {
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#complete_popup .buttonArea {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  top: 940px;
+}
+#complete_popup .dimmed {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+#complete_popup .bg {
+  position: absolute;
+  top: 140px;
+  width: 100%;
+  height: 80%;
+  z-index: 1;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/TIMEATTACK/LASTPOPUP.PNG");
+}
+
+#complete_popup.defeat .bg {
+  background: center/contain no-repeat
+    url("../../COMM/IMG/TIMEATTACK/LASTPOPUP_DEFEAT.PNG");
+}
+
+#complete_popup .reload {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  color: blue;
+  z-index: 2;
+  border-radius: 100px;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/TIMEATTACK/RETRY.PNG");
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#complete_popup .play_view {
+  display: flex;
+  width: 300px;
+  height: 100px;
+  color: white;
+  font-size: 32px;
+  font-weight: 800px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #2dcabd;
+  z-index: 2;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#complete_popup p {
+  display: flex;
+  position: absolute;
+  bottom: -50px;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.warp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  /* transform: scale(50%); */
+  position: relative;
+  width: 100%;
+  height: 1200px;
+  background: url(../../COMM/IMG/TIMEATTACK/BG.JPG);
+  background-size: 100% 1200px;
+  overflow: hidden;
+}
+
+/* -----인트로----- */
+.game_intro {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../../COMM/IMG/TIMEATTACK/INTRO.JPG) no-repeat center;
+  background-size: 100% 1200px;
+}
+
+/* -----인트로 시작 버튼----- */
+.game_intro_start {
+  position: absolute;
+  top: 69%;
+  left: 50%;
+  width: 355px;
+  height: 140px;
+  border-radius: 100px;
+  transform: translateX(-50%);
+  font-size: 0;
+}
+
+.game_wrong {
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../../COMM/IMG/TIMEATTACK/WRONG_EFFECT.PNG) no-repeat top;
+  background-size: 100%;
+  transform: translateY(-400px);
+  pointer-events: none;
+  display: none;
+}
+
+.game_inner {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2000px;
+  height: 100%;
+}
+
+/* -----타이틀----- */
+.game_title {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1110px;
+  height: 133px;
+  background: url(../../COMM/IMG/TIMEATTACK/TITLEBG.PNG) no-repeat center;
+  background-size: auto;
+}
+
+.game_title p {
+  color: white;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.game_car {
+  position: absolute;
+  top: 300px;
+  left: 190px;
+  width: 1240px;
+  height: 563px;
+  background: url(../../COMM/IMG/TIMEATTACK/CAR.PNG) no-repeat top;
+  background-size: contain;
+}
+
+.game_car_window {
+  position: absolute;
+  top: 50px;
+  left: 126px;
+  overflow: hidden;
+  width: 211px;
+  height: 250px;
+  /* background: rgba(0, 0, 0, 0.5); */
+}
+
+.game_car_character {
+  position: absolute;
+  left: 28px;
+  bottom: 0;
+  width: 181px;
+  height: 161px;
+  background: url(../../COMM/IMG/TIMEATTACK/CHARACTER_DRIVE.PNG);
+  transform: translateX(-70px) translateY(200px) rotate(-50deg);
+}
+
+.game_car_screen {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 346px;
+  width: 824px;
+  /* 240930 수정 */
+  top: 85px;
+  height: 306px;
+  /* top: 42px; */
+  /* height: 356px; */
+  /* 240930 수정 끝*/
+  display: none;
+}
+
+.game_car_screen .text {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: white;
+  padding: 60px;
+  word-break: keep-all;
+}
+
+.game_car_screen .text.fz100 {
+  font-size: 100px;
+}
+
+.game_car_screen .img {
+  /* 240930 수정 */
+  /* margin-top: 30px; */
+  /* 240930 수정 끝*/
+  width: 100%;
+  height: 100%;
+}
+
+/* 이미지 크기 상하크기 문제로 최대크기 제한합니다. */
+.game_car_screen .img.h85 {
+  margin-top: 30px;
+  max-width: 90%;
+  max-height: 85%;
+}
+
+.game_car_wheel {
+  position: absolute;
+  justify-content: space-between;
+  padding: 0 130px;
+  display: flex;
+  width: 100%;
+  bottom: 0;
+}
+
+.game_car_wheel .wheel {
+  width: 151px;
+  height: 151px;
+  background: url(../../COMM/IMG/TIMEATTACK/WHEEL.PNG) no-repeat center;
+  background-size: cover;
+}
+
+.game_cart {
+  position: absolute;
+  top: 640px;
+  right: 192px;
+  width: 403px;
+  height: 214px;
+  transform: translateX(600px);
+}
+
+.game_cart .cart {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: url(../../COMM/IMG/TIMEATTACK/CART.PNG) no-repeat top;
+  background-size: contain;
+}
+
+.cart_wheel {
+  position: absolute;
+  padding: 0 40px 0 100px;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart_wheel .wheel {
+  width: 100px;
+  height: 100px;
+  background: url(../../COMM/IMG/TIMEATTACK/WHEEL.PNG) no-repeat center;
+  background-size: cover;
+}
+
+.cart_time {
+  text-align: center;
+  margin-top: -50px;
+  margin-left: 98px;
+  font-size: 50px;
+  font-weight: 600;
+  color: #fe487a;
+  text-shadow: -1px 0 #fe487a, 0 1px #fe487a, 1px 0 #fe487a, 0 -1px #fe487a;
+}
+.game_cart .character {
+  position: absolute;
+  top: 6px;
+  right: -100px;
+  width: 178px;
+  height: 176px;
+  background: url(../../COMM/IMG/TIMEATTACK/CHARACTER.PNG) no-repeat center;
+  background-size: cover;
+}
+.game_cart .arm {
+  position: absolute;
+  top: 124px;
+  right: -18px;
+  width: 39px;
+  height: 27px;
+  background: url(../../COMM/IMG/TIMEATTACK/ARM.PNG) no-repeat center;
+  background-size: cover;
+}
+
+.game_cart .iscream {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.game_cart .iscream.type1 {
+  top: -360px;
+  left: 90px;
+  width: 278px;
+  height: 500px;
+  background: url(../../COMM/IMG/TIMEATTACK/ISCREAM1.PNG) no-repeat center;
+  background-size: cover;
+}
+.game_cart .iscream.type2 {
+  top: -284px;
+  left: 117px;
+  width: 218px;
+  height: 417px;
+  background: url(../../COMM/IMG/TIMEATTACK/ISCREAM2.PNG) no-repeat center;
+  background-size: cover;
+}
+.game_cart .iscream.type3 {
+  top: -238px;
+  left: 126px;
+  width: 207px;
+  height: 366px;
+  background: url(../../COMM/IMG/TIMEATTACK/ISCREAM3.PNG) no-repeat center;
+  background-size: cover;
+}
+.game_cart .iscream.type4 {
+  top: -166px;
+  left: 126px;
+  width: 211px;
+  height: 294px;
+  background: url(../../COMM/IMG/TIMEATTACK/ISCREAM4.PNG) no-repeat center;
+  background-size: cover;
+}
+
+.answer-list {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  bottom: 80px;
+  display: flex;
+  transform: translateX(-50%);
+}
+.answer-list_item {
+  /* width: 280px; */
+  /* 최소최대크기 지정합니다 좀 작은거같아요 */
+  min-width: 320px;
+  max-width: 420px;
+  height: 200px;
+  border-radius: 16px;
+  margin-right: 160px;
+  transform: scale(0%);
+}
+.answer-list_item:last-of-type {
+  margin-right: 0;
+}
+
+.answer-list_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background: white;
+  transition: background 100ms;
+}
+
+.answer-list_btn.active {
+  outline: 10px solid #ff64dc;
+}
+
+.answer-list_btn.wrong {
+  background: #ff7070;
+  animation-duration: 0.7s;
+  animation-name: wrong;
+  animation-fill-mode: forwards;
+}
+
+.answer-list_btn .text {
+  font-size: 62px;
+  line-height: 62px;
+  font-weight: 800;
+  padding: 0 20px;
+  color: black;
+  /* text-align: start; */
+  text-align: center;
+}
+
+.answer-list_btn.wrong .text {
+  color: white;
+}
+
+.answer-list_btn .img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 카트 등장 모션 */
+.game_cart.motion {
+  animation-duration: 2.6s;
+  animation-name: cart-motion;
+  animation-fill-mode: forwards;
+}
+@keyframes cart-motion {
+  0% {
+    transform: translateX(600px);
+  }
+  90% {
+    transform: translateX(-12px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* 캐릭터 이동 모션 */
+.character.motion {
+  animation-duration: 1s;
+  animation-name: character;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+@keyframes character {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-530px) translateY(-30px);
+  }
+}
+
+/* 운전하는 토끼 모션 */
+.game_car_character.motion {
+  animation-duration: 1.4s;
+  animation-name: character-car;
+  animation-fill-mode: forwards;
+}
+@keyframes character-car {
+  0% {
+    transform: translateX(-70px) translateY(200px) rotate(-50deg);
+  }
+  100% {
+    transform: translateX(0) translateY(0) rotate(0);
+  }
+}
+
+/* 도로 달리는 모션 */
+.game.motion {
+  animation-duration: 1.2s;
+  animation-name: load;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes load {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+/*정답 선택지 등장 모션*/
+.answer-list_item.motion {
+  animation-duration: 0.4s;
+  animation-name: list-up;
+  animation-fill-mode: forwards;
+  transform: scale(0%);
+}
+@keyframes list-up {
+  0% {
+    transform: scale(0%);
+  }
+  80% {
+    transform: scale(105%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+/*정답 선택지 퇴장 모션*/
+.answer-list_item.motion-down {
+  animation-duration: 0.4s;
+  animation-name: list-down;
+  animation-fill-mode: forwards;
+  transform: scale(100%);
+}
+@keyframes list-down {
+  0% {
+    transform: scale(100%);
+  }
+  20% {
+    transform: scale(105%);
+  }
+  100% {
+    transform: scale(0%);
+  }
+}
+
+/* 문제 틀림 모션 */
+@keyframes wrong {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(30px);
+  }
+  40% {
+    transform: translateX(-30px);
+  }
+  60% {
+    transform: translateX(30px);
+  }
+  80% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.game_wrong.motion {
+  animation-duration: 1s;
+  animation-name: flowing-down;
+  animation-fill-mode: forwards;
+}
+/* 흘러내립 모션 */
+@keyframes flowing-down {
+  0% {
+    transform: translateY(-400px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.wheel-motion {
+  animation-duration: 0.1s;
+  animation-name: wheel-motion;
+  animation-iteration-count: infinite;
+}
+/* 휠 흔들림 모션 */
+@keyframes wheel-motion {
+  0% {
+    transform: translateY(-1%);
+  }
+  100% {
+    transform: translateY(1%);
+  }
+  0% {
+    transform: translateY(-1%);
+  }
+}
+
+.pearl-guide {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.pearl-guide-hand {
+  width: 120px;
+  height: 110px;
+  position: absolute;
+  z-index: 2;
+  background: url("../../COMM/IMG/TOUCH_GUIDE_HAND.PNG") no-repeat center;
+  left: 31.8%;
+  bottom: 5.4%;
+}
+.pearl-guide-point {
+  width: 120px;
+  height: 110px;
+  position: absolute;
+  z-index: 2;
+  background: url("../../COMM/IMG/TOUCH_GUIDE.PNG") no-repeat center;
+  left: 29%;
+  bottom: 9%;
+  animation: opa 1s infinite linear;
+}
+
+@keyframes opa {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

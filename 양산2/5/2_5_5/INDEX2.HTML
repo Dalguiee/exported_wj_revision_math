@@ -1,0 +1,2083 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>개정교육과정-수학 수학 개념</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="KeyWORDs" content="" />
+    <meta name="Description" content="" />
+    <meta name="Robots" content="all" />
+    <meta http-equiv="Subject" content="" />
+    <meta http-equiv="Title" content="" />
+    <meta http-equiv="Author" content="onflou " />
+    <meta http-equiv="Publisher" content="" />
+
+    <!-- 브라우저 호환성을 지정 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="#" />
+    <link href="../../../COMM/CSS/COMMON.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/COMMONLAYOUT.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/CONCEPTCOMMON3.CSS" rel="stylesheet" />
+    <link href="../../../COMM/CSS/VIDEO.CSS" rel="stylesheet" />
+
+    <style>
+      .table_tit {
+        background-color: #dbd8fa;
+        border-radius: 10px;
+        padding: 11px 15px;
+        font-size: 33px;
+        line-height: 41px;
+        margin-bottom: 15px;
+      }
+
+      .cake_table_wrap .cake_table {
+        width: 763px;
+        border: solid 1px #000;
+        font-size: 21px;
+      }
+
+      .cake_table_wrap .cake_table .tr {
+        width: 100%;
+      }
+
+      .cake_table_wrap .cake_table .tr + .tr {
+        border-top: solid 1px #000;
+        flex: 1;
+      }
+
+      .cake_table_wrap .cake_table .tr .td {
+        flex: 1;
+        height: 100%;
+        position: relative;
+      }
+
+      .cake_table_wrap .cake_table .tr .td + .td {
+        border-left: solid 1px #000;
+      }
+
+      .cake_table_wrap .cake_table .cake_name,
+      .cake_table_wrap .cake_table .student {
+        font-size: 1em;
+        line-height: 2em;
+        height: 2em;
+        width: 100%;
+        text-align: center;
+      }
+
+      .cake_table_wrap .cake_table .cake_name {
+        color: #e72e26;
+      }
+
+      .cake_table_wrap .cake_table .cake_img {
+        width: 3.2em;
+        height: 2.4em;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 1;
+      }
+
+      .cake_table_wrap .cake_table .cake_img.choco {
+        background-image: url('../../../COMM/IMG/CONCEPT/SEASON2/2_5_5/CAKE_CHOCO.png');
+      }
+
+      .cake_table_wrap .cake_table .cake_img.strawberry {
+        background-image: url('../../../COMM/IMG/CONCEPT/SEASON2/2_5_5/CAKE_STRAWBERRY.png');
+      }
+
+      .cake_table_wrap .cake_table .cake_img.cheese {
+        background-image: url('../../../COMM/IMG/CONCEPT/SEASON2/2_5_5/CAKE_CHEESE.png');
+      }
+
+      .cake_table_wrap .cake_table .cake_img.greentea {
+        background-image: url('../../../COMM/IMG/CONCEPT/SEASON2/2_5_5/CAKE_GREENTEA.png');
+      }
+
+     .cake_table_wrap .cake_table .cake_point {
+        width: 92px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .table {
+        display: flex;
+        flex-direction: column;
+        width: 1278px;
+        border-radius: 16px;
+        border: solid 2px #c4bffd;
+        overflow: hidden;
+        font-size: 36px;
+      }
+
+      .table .tr {
+        display: flex;
+      }
+
+      .table .tr + .tr {
+        border-top: solid 2px #c4bffd;
+      }
+
+      .table .td {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+      }
+
+      .table .td + .td {
+        border-left: solid 2px #c4bffd;
+      }
+
+      .table .th {
+        background-color: #dbd8fa;
+      }
+
+      .cake_count_table .tr1 {
+        height: 80px;
+      }
+
+      .cake_count_table .tr2 {
+        height: 85px;
+        line-height: 1.1em;
+      }
+
+      .cake_count_table .td2,
+      .cake_count_table .td5 {
+        flex: 4;
+      }
+
+      .cake_circle_table {
+        width: 774px;
+        flex-direction: column-reverse;
+      }
+
+      .cake_circle_table .tr + .tr {
+        border-top: none;
+        border-bottom: solid 2px #c4bffd;
+      }
+
+      .cake_circle_table .td {
+        height: auto;
+      }
+
+      .cake_circle_table .td > .td {
+        height: 100%;
+      }
+
+      .cake_circle_table .tr_title {
+        height: 80px;
+      }
+
+      .cake_circle_table .td_num {
+        font-size: 32px;
+      }
+
+      .cake_circle_table .td_circle {
+        font-size: 36px;
+        flex: 3.8;
+      }
+
+      .cake_circle_table .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        border: solid 2px #000;
+      }
+
+      .cake_circle_table .tr_title .th.td_num {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .cake_circle_table .tr_title .th.td_num::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -4px;
+        right: -2px;
+        background: url("../../../COMM/IMG/CONCEPT/SEASON2/2_5_5/TABLE_DIV.svg") center no-repeat;
+        background-size: cover;
+      }
+
+      .cake_circle_table .th.td_num .text {
+        position: absolute;
+      }
+
+      .cake_circle_table .th.td_num .text1 {
+        font-size: 20px;
+        line-height: 36px;
+        left: 4px;
+        top: 0;
+      }
+
+      .cake_circle_table .th.td_num .text2 {
+        font-size: 25px;
+        line-height: 36px;
+        right: 8px;
+        bottom: 2px;
+      }
+
+      /* 1p */
+      .step1 .talk_box{
+        width: 1680px;
+        height: 370px;
+        position: relative;
+      }
+
+      .step1 .hint1 {
+        position: absolute;
+        right: 200px;
+        bottom: 156px;
+      }
+
+      .step1 .img_box1 {
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+      }
+
+      .step1 .hint2 {
+        position: absolute;
+        left: 200px;
+        bottom: 156px;
+      }
+
+      .step1 .img_box2{
+        position: absolute;
+        width: 227px;
+        height: 262px;
+        left: 0;
+        bottom: -10px;
+      }
+
+      .step1 .ch_pink{
+        width: 207px;
+        height: 271px;
+        position: relative;
+      }
+
+      /* 2p */
+      .step2 .main__container {
+        justify-content: start;
+        padding-top: 40px;
+      }
+
+      .step2_btm_box {
+        margin-top: 32px;
+      }
+
+      .step2_btm_box .answer_list_box {
+        margin-top: 15px;
+        position: relative;
+        z-index: 1;
+      }
+
+      /* 3p */
+      .step3 .main__container {
+        align-items: start;
+        padding-top: 175px;
+      }
+
+      .step3 .table_tit {
+        font-size: 28px;
+        line-height: 28px;
+        padding: 15px 12.5px;
+      }
+
+      .step3_left_box .cake_count_table {
+        width: 833px;
+      }
+
+      .step3_left_box .cake_count_table .tr1 {
+        height: 92px;
+      }
+
+      .step3_left_box .cake_count_table .tr2 {
+        height: 100px;
+      }
+
+      .step3_right_box {
+        margin-left: 30px;
+      }
+
+      .step3_right_box .cake_circle_table {
+        overflow: visible;
+      }
+
+      .step3_right_box .cake_circle_table .tr_title .th.td_num {
+        border-bottom-left-radius: 14px;
+      }
+
+      .step3_right_box .cake_circle_table .tr_title .td_circle {
+        border-bottom-right-radius: 14px;
+      }
+
+      .step3_right_box .cake_circle_table .tr:last-child .td_num {
+        border-top-left-radius: 14px;
+      }
+
+      .step3_right_box .cake_circle_table .box_blink2 {
+        z-index: 1;
+      }
+
+      /* 4p */
+      .step4 .full_content_comm {
+        align-items: start;
+        padding-top: 35px;
+      }
+
+      .step4 .table_tit {
+        font-size: 31px;
+        line-height: 31px;
+        padding: 15px 12.5px;
+      }
+
+      .step4_arrow {
+        justify-content: center;
+        align-items: center;
+        width: 154px;
+        height: 100%;
+      }
+
+      .step4_arrow .img {
+        width: auto;
+        max-width: 100%;
+      }
+
+      .step4_arrow_box2 {
+        width: 142px;
+      }
+
+      .step4_table_box {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .step4_table_box .cake_count_table {
+        width: 710px;
+        font-size: 35px;
+      }
+
+      .step4_table_box .cake_count_table .tr2 {
+        height: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div
+        id="contents-wrap"
+        class="concept"
+        style="position: absolute; display: flex"
+      ></div>
+      <div id="contents-main" style="display: none" class="concept-warp">
+        <div class="concept-warp_inner">
+          <header class="header" style="visibility: visible">
+            <div class="header_title">
+              <button class="sound-btn" onclick="titleSound()"></button>
+              <h3></h3>
+            </div>
+            <p class="header_page"><span>1</span>/2</p>
+          </header>
+          <main class="main">
+            <div class="main_content">
+              <!-- 콘텐츠영역 -->
+              <div class="step step1" style="display: block">
+                <!-- step1 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div
+                    class="step1_top_box cake_table_wrap dp_flex dp_flex_column"
+                  >
+                    <div class="table_tit">
+                      <span>은서네 반 학생들이 좋아하는 케이크</span>
+                    </div>
+                    <div class="cake_table dp_flex dp_flex_column">
+                      <div class="tr dp_flex">
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name">초콜릿</div>
+                          <div class="cake_img choco"></div>
+                          <div class="student">은서</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name">치즈</div>
+                          <div class="cake_img cheese"></div>
+                          <div class="student">연경</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name">딸기</div>
+                          <div class="cake_img strawberry"></div>
+                          <div class="student">주호</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img choco"></div>
+                          <div class="student">희진</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img choco"></div>
+                          <div class="student">창민</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img strawberry"></div>
+                          <div class="student">지석</div>
+                        </div>
+                      </div>
+                      <div class="tr dp_flex">
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name">녹차</div>
+                          <div class="cake_img greentea"></div>
+                          <div class="student">상준</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img strawberry"></div>
+                          <div class="student">영란</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img choco"></div>
+                          <div class="student">혜림</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img strawberry"></div>
+                          <div class="student">명우</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img greentea"></div>
+                          <div class="student">해일</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img choco"></div>
+                          <div class="student">태수</div>
+                        </div>
+                      </div>
+                      <div class="tr dp_flex">
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img cheese"></div>
+                          <div class="student">인성</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img choco"></div>
+                          <div class="student">수연</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img cheese"></div>
+                          <div class="student">용석</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img choco"></div>
+                          <div class="student">경지</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img strawberry"></div>
+                          <div class="student">정현</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img choco"></div>
+                          <div class="student">동재</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="talk_box dp_none">
+                    <div class="yellow_box dp_flex_column">
+                      <div class="hint hint2  dp_flex">
+                        <figure class="figPic"><img src="../../../COMM/IMG/CONCEPT/SEASON2/2_5_5/STEP1_LEFT_IMG.png" class="img img1 right_box" /></figure>
+                      </div>
+                      <div class="img_box img_box2  dp_flex dp_flex_column">
+                        <div class="char_g_head"></div>
+                        <div class="char_g_body"></div>
+                      </div>
+                    </div>
+                    <div class="green_box v_hidden">
+                      <div class="hint hint1  dp_flex">
+                        <figure class="figPic"><img src="../../../COMM/IMG/CONCEPT/SEASON2/2_5_5/STEP1_RIGHT_IMG.png" class="img img1 left_box" /></figure>
+                      </div>
+                      <div class="img_box img_box1  dp_flex dp_flex_column">
+                          <div class="ch_pink"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step2" style="display: block">
+                <!-- step2 시작부분 -->
+                <div class="main__container dp_flex dp_flex_column">
+                  <div
+                    class="step2_top_box cake_table_wrap dp_flex dp_flex_column"
+                  >
+                    <div class="table_tit">
+                      <span>은서네 반 학생들이 좋아하는 케이크</span>
+                    </div>
+                    <div class="cake_table dp_flex dp_flex_column">
+                      <div class="tr dp_flex">
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name">초콜릿</div>
+                          <div class="cake_img choco"></div>
+                          <div class="cake_point choco blinking dp_none"><img src="../../../COMM/IMG/CONCEPT/SEASON2/2_5_5/CAKE_BG.png" /></div>
+                          <div class="student">은서</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name">치즈</div>
+                          <div class="cake_img cheese"></div>
+                          <div class="cake_point cheese blinking dp_none"><img src="../../../COMM/IMG/CONCEPT/SEASON2/2_5_5/CAKE_BG.png" /></div>
+                          <div class="student">연경</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name">딸기</div>
+                          <div class="cake_img strawberry"></div>
+                          <div class="cake_point strawberry blinking dp_none"><img src="../../../COMM/IMG/CONCEPT/SEASON2/2_5_5/CAKE_BG.png" /></div>
+                          <div class="student">주호</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img choco"></div>
+                          <div class="student">희진</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img choco"></div>
+                          <div class="student">창민</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img strawberry"></div>
+                          <div class="student">지석</div>
+                        </div>
+                      </div>
+                      <div class="tr dp_flex">
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name">녹차</div>
+                          <div class="cake_img greentea"></div>
+                          <div class="cake_point greentea blinking dp_none"><img src="../../../COMM/IMG/CONCEPT/SEASON2/2_5_5/CAKE_BG.png" /></div>
+                          <div class="student">상준</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img strawberry"></div>
+                          <div class="student">영란</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img choco"></div>
+                          <div class="student">혜림</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img strawberry"></div>
+                          <div class="student">명우</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img greentea"></div>
+                          <div class="student">해일</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img choco"></div>
+                          <div class="student">태수</div>
+                        </div>
+                      </div>
+                      <div class="tr dp_flex">
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img cheese"></div>
+                          <div class="student">인성</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img choco"></div>
+                          <div class="student">수연</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img cheese"></div>
+                          <div class="student">용석</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img choco"></div>
+                          <div class="student">경지</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img strawberry"></div>
+                          <div class="student">정현</div>
+                        </div>
+                        <div class="td dp_flex dp_flex_column">
+                          <div class="cake_name"></div>
+                          <div class="cake_img choco"></div>
+                          <div class="student">동재</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step2_btm_box dp_flex dp_flex_column">
+                    <div class="table_tit">
+                      <span>은서네 반 학생들이 좋아하는 케이크별 학생 수</span>
+                    </div>
+                    <div class="table cake_count_table">
+                      <div class="tr tr1 dp_flex">
+                        <div class="td th td1">케이크</div>
+                        <div class="td th td2 dp_flex">
+                          <div class="td v_hidden td_choco">
+                            <span class="tit dp_none">초콜릿</span>
+                          </div>
+                          <div class="td v_hidden td_cheese">
+                            <span class="tit dp_none">치즈</span>
+                          </div>
+                          <div class="td v_hidden td_strawberry">
+                            <span class="tit dp_none">딸기</span>
+                          </div>
+                          <div class="td v_hidden td_greentea">
+                            <span class="tit dp_none">녹차</span>
+                          </div>
+                        </div>
+                        <div class="td th td3">합계</div>
+                      </div>
+                      <div class="tr tr2 dp_flex">
+                        <div class="td th td4">학생 수(명)</div>
+                        <div class="td td5 dp_flex">
+                          <div class="td v_hidden td_choco">
+                            <span class="num dp_none">8</span>
+                          </div>
+                          <div class="td v_hidden td_cheese">
+                            <span class="num dp_none">3</span>
+                          </div>
+                          <div class="td v_hidden td_strawberry">
+                            <span class="num dp_none">5</span>
+                          </div>
+                          <div class="td v_hidden td_greentea">
+                            <div
+                              class="txt_container txt_container1 dp_none"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="td td3">
+                          <div
+                            class="txt_container txt_container2 two dp_none"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="answer_list_box"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step3" style="display: none">
+                <!-- step3 시작부분 -->
+                <div class="main__container dp_flex">
+                  <div class="step3_left_box dp_flex dp_flex_column">
+                    <div class="table_tit">
+                      <span>은서네 반 학생들이 좋아하는 케이크별 학생 수</span>
+                    </div>
+                    <div class="table cake_count_table">
+                      <div class="tr tr1 dp_flex">
+                        <div class="td th td1">케이크</div>
+                        <div class="td th td2 dp_flex">
+                          <div class="td td_choco">초콜릿</div>
+                          <div class="td td_cheese">치즈</div>
+                          <div class="td td_strawberry">딸기</div>
+                          <div class="td td_greentea">녹차</div>
+                        </div>
+                        <div class="td th td3">합계</div>
+                      </div>
+                      <div class="tr tr2 dp_flex">
+                        <div class="td th td4">학생 수<br />(명)</div>
+                        <div class="td td5 dp_flex">
+                          <div class="td td_choco">8</div>
+                          <div class="td td_cheese">3</div>
+                          <div class="td td_strawberry">5</div>
+                          <div class="td td_greentea">2</div>
+                        </div>
+                        <div class="td td3">18</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step3_right_box dp_flex dp_flex_column">
+                    <div class="table_tit">
+                      <span>은서네 반 학생들이 좋아하는 케이크별 학생 수</span>
+                    </div>
+                    <div class="table cake_circle_table">
+                      <div class="tr tr_title">
+                        <div class="td th td_num">
+                          <div class="text1 text">학생 수(명)</div>
+                          <div class="text2 text v_hidden">케이크</div>
+                        </div>
+                        <div class="td th td_circle">
+                          <div class="td v_hidden td_choco">
+                            <span class="tit dp_none">초콜릿</span>
+                          </div>
+                          <div class="td v_hidden td_cheese">
+                            <span class="tit dp_none">치즈</span>
+                          </div>
+                          <div class="td v_hidden td_strawberry">
+                            <span class="tit dp_none">딸기</span>
+                          </div>
+                          <div class="td v_hidden td_greentea">
+                            <span class="tit dp_none">녹차</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tr tr1">
+                        <div class="td th td_num">1</div>
+                        <div class="td td_circle">
+                          <div class="td v_hidden td_choco">
+                            <div class="circle dp_none"></div>
+                          </div>
+                          <div class="td v_hidden td_cheese">
+                            <div class="circle dp_none"></div>
+                          </div>
+                          <div class="td v_hidden td_strawberry">
+                            <div class="circle dp_none"></div>
+                          </div>
+                          <div class="td v_hidden td_greentea">
+                            <div class="circle dp_none"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tr tr2">
+                        <div class="td th td_num">2</div>
+                        <div class="td td_circle">
+                          <div class="td v_hidden td_choco">
+                            <div class="circle dp_none"></div>
+                          </div>
+                          <div class="td v_hidden td_cheese">
+                            <div class="circle dp_none"></div>
+                          </div>
+                          <div class="td v_hidden td_strawberry">
+                            <div class="circle dp_none"></div>
+                          </div>
+                          <div class="td v_hidden td_greentea">
+                            <div class="circle dp_none"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tr tr3">
+                        <div class="td th td_num">3</div>
+                        <div class="td td_circle">
+                          <div class="td v_hidden td_choco">
+                            <div class="circle dp_none"></div>
+                          </div>
+                          <div class="td v_hidden td_cheese">
+                            <div class="circle dp_none"></div>
+                          </div>
+                          <div class="td v_hidden td_strawberry">
+                            <div class="circle dp_none"></div>
+                          </div>
+                          <div class="td v_hidden td_greentea"></div>
+                        </div>
+                      </div>
+                      <div class="tr tr4">
+                        <div class="td th td_num">4</div>
+                        <div class="td td_circle">
+                          <div class="td v_hidden td_choco">
+                            <div class="circle dp_none"></div>
+                          </div>
+                          <div class="td v_hidden td_cheese"></div>
+                          <div class="td v_hidden td_strawberry">
+                            <div class="circle dp_none"></div>
+                          </div>
+                          <div class="td v_hidden td_greentea"></div>
+                        </div>
+                      </div>
+                      <div class="tr tr5">
+                        <div class="td th td_num">5</div>
+                        <div class="td td_circle">
+                          <div class="td v_hidden td_choco">
+                            <div class="circle dp_none"></div>
+                          </div>
+                          <div class="td v_hidden td_cheese"></div>
+                          <div class="td v_hidden td_strawberry">
+                            <div class="circle dp_none"></div>
+                          </div>
+                          <div class="td v_hidden td_greentea"></div>
+                        </div>
+                      </div>
+                      <div class="tr tr6">
+                        <div class="td th td_num">6</div>
+                        <div class="td td_circle">
+                          <div class="td v_hidden td_choco">
+                            <div class="circle dp_none"></div>
+                          </div>
+                          <div class="td v_hidden td_cheese"></div>
+                          <div class="td v_hidden td_strawberry"></div>
+                          <div class="td v_hidden td_greentea"></div>
+                        </div>
+                      </div>
+                      <div class="tr tr7">
+                        <div class="td th td_num">7</div>
+                        <div class="td td_circle">
+                          <div class="td v_hidden td_choco">
+                            <div class="circle dp_none"></div>
+                          </div>
+                          <div class="td v_hidden td_cheese"></div>
+                          <div class="td v_hidden td_strawberry"></div>
+                          <div class="td v_hidden td_greentea"></div>
+                        </div>
+                      </div>
+                      <div class="tr tr8">
+                        <div class="td th td_num">8</div>
+                        <div class="td td_circle">
+                          <div class="td v_hidden td_choco">
+                            <div class="circle dp_none"></div>
+                          </div>
+                          <div class="td v_hidden td_cheese"></div>
+                          <div class="td v_hidden td_strawberry"></div>
+                          <div class="td v_hidden td_greentea"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step step4" style="display: none">
+                <!-- step4 시작부분 -->
+                <div class="main__container">
+                  <div class="full_content_comm dp_flex">
+                    <div class="step4_table_box one">
+                      <div class="cake_table_wrap dp_flex dp_flex_column">
+                        <div class="table_tit">
+                          <span>은서네 반 학생들이 좋아하는 케이크</span>
+                        </div>
+                        <div class="cake_table dp_flex dp_flex_column">
+                          <div class="tr dp_flex">
+                            <div class="td dp_flex dp_flex_column">
+                              <div class="cake_name">초콜릿</div>
+                              <div class="cake_img choco"></div>
+                              <div class="student">은서</div>
+                            </div>
+                            <div class="td dp_flex dp_flex_column">
+                              <div class="cake_name">치즈</div>
+                              <div class="cake_img cheese"></div>
+                              <div class="student">연경</div>
+                            </div>
+                            <div class="td dp_flex dp_flex_column">
+                              <div class="cake_name">딸기</div>
+                              <div class="cake_img strawberry"></div>
+                              <div class="student">주호</div>
+                            </div>
+                            <div class="td dp_flex dp_flex_column">
+                              <div class="cake_name"></div>
+                              <div class="cake_img choco"></div>
+                              <div class="student">희진</div>
+                            </div>
+                            <div class="td dp_flex dp_flex_column">
+                              <div class="cake_name"></div>
+                              <div class="cake_img choco"></div>
+                              <div class="student">창민</div>
+                            </div>
+                            <div class="td dp_flex dp_flex_column">
+                              <div class="cake_name"></div>
+                              <div class="cake_img strawberry"></div>
+                              <div class="student">지석</div>
+                            </div>
+                          </div>
+                          <div class="tr dp_flex">
+                            <div class="td dp_flex dp_flex_column">
+                              <div class="cake_name">녹차</div>
+                              <div class="cake_img greentea"></div>
+                              <div class="student">상준</div>
+                            </div>
+                            <div class="td dp_flex dp_flex_column">
+                              <div class="cake_name"></div>
+                              <div class="cake_img strawberry"></div>
+                              <div class="student">영란</div>
+                            </div>
+                            <div class="td dp_flex dp_flex_column">
+                              <div class="cake_name"></div>
+                              <div class="cake_img choco"></div>
+                              <div class="student">혜림</div>
+                            </div>
+                            <div class="td dp_flex dp_flex_column">
+                              <div class="cake_name"></div>
+                              <div class="cake_img strawberry"></div>
+                              <div class="student">명우</div>
+                            </div>
+                            <div class="td dp_flex dp_flex_column">
+                              <div class="cake_name"></div>
+                              <div class="cake_img greentea"></div>
+                              <div class="student">해일</div>
+                            </div>
+                            <div class="td dp_flex dp_flex_column">
+                              <div class="cake_name"></div>
+                              <div class="cake_img choco"></div>
+                              <div class="student">태수</div>
+                            </div>
+                          </div>
+                          <div class="tr dp_flex">
+                            <div class="td dp_flex dp_flex_column">
+                              <div class="cake_name"></div>
+                              <div class="cake_img cheese"></div>
+                              <div class="student">인성</div>
+                            </div>
+                            <div class="td dp_flex dp_flex_column">
+                              <div class="cake_name"></div>
+                              <div class="cake_img choco"></div>
+                              <div class="student">수연</div>
+                            </div>
+                            <div class="td dp_flex dp_flex_column">
+                              <div class="cake_name"></div>
+                              <div class="cake_img cheese"></div>
+                              <div class="student">용석</div>
+                            </div>
+                            <div class="td dp_flex dp_flex_column">
+                              <div class="cake_name"></div>
+                              <div class="cake_img choco"></div>
+                              <div class="student">경지</div>
+                            </div>
+                            <div class="td dp_flex dp_flex_column">
+                              <div class="cake_name"></div>
+                              <div class="cake_img strawberry"></div>
+                              <div class="student">정현</div>
+                            </div>
+                            <div class="td dp_flex dp_flex_column">
+                              <div class="cake_name"></div>
+                              <div class="cake_img choco"></div>
+                              <div class="student">동재</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="step4_arrow step4_arrow1 dp_none">
+                      <img
+                        src="../../../COMM/IMG/CONCEPT/SEASON2/2_5_5/STEP4_ARROW.png"
+                        class="img"
+                      />
+                    </div>
+                    <div class="step4_table_box two dp_none">
+                      <div class="table_tit">
+                        <span
+                          >은서네 반 학생들이 좋아하는 케이크별 학생 수</span
+                        >
+                      </div>
+                      <div class="table cake_count_table">
+                        <div class="tr tr1 dp_flex">
+                          <div class="td th td1">케이크</div>
+                          <div class="td th td2 dp_flex">
+                            <div class="td td_choco">초콜릿</div>
+                            <div class="td td_cheese">치즈</div>
+                            <div class="td td_strawberry">딸기</div>
+                            <div class="td td_greentea">녹차</div>
+                          </div>
+                          <div class="td th td3">합계</div>
+                        </div>
+                        <div class="tr tr2 dp_flex">
+                          <div class="td th td4">학생 수<br />(명)</div>
+                          <div class="td td5 dp_flex">
+                            <div class="td td_choco">8</div>
+                            <div class="td td_cheese">3</div>
+                            <div class="td td_strawberry">5</div>
+                            <div class="td td_greentea">2</div>
+                          </div>
+                          <div class="td td3">18</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="step4_arrow step4_arrow2 dp_none">
+                      <img
+                        src="../../../COMM/IMG/CONCEPT/SEASON2/2_5_5/STEP4_ARROW.png"
+                        class="img"
+                      />
+                    </div>
+                    <div class="step4_table_box dp_none three">
+                      <div class="table_tit">
+                        <span
+                          >은서네 반 학생들이 좋아하는 케이크별 학생 수</span
+                        >
+                      </div>
+                      <div class="table cake_circle_table">
+                        <div class="tr tr_title">
+                          <div class="td th td_num">
+                            <div class="text1 text">학생 수(명)</div>
+                            <div class="text2 text">케이크</div>
+                          </div>
+                          <div class="td th td_circle">
+                            <div class="td td_choco">초콜릿</div>
+                            <div class="td td_cheese">치즈</div>
+                            <div class="td td_strawberry">딸기</div>
+                            <div class="td td_greentea">녹차</div>
+                          </div>
+                        </div>
+                        <div class="tr">
+                          <div class="td th td_num">1</div>
+                          <div class="td td_circle">
+                            <div class="td td_choco">
+                              <div class="circle"></div>
+                            </div>
+                            <div class="td td_cheese">
+                              <div class="circle"></div>
+                            </div>
+                            <div class="td td_strawberry">
+                              <div class="circle"></div>
+                            </div>
+                            <div class="td td_greentea">
+                              <div class="circle"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tr">
+                          <div class="td th td_num">2</div>
+                          <div class="td td_circle">
+                            <div class="td td_choco">
+                              <div class="circle"></div>
+                            </div>
+                            <div class="td td_cheese">
+                              <div class="circle"></div>
+                            </div>
+                            <div class="td td_strawberry">
+                              <div class="circle"></div>
+                            </div>
+                            <div class="td td_greentea">
+                              <div class="circle"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tr">
+                          <div class="td th td_num">3</div>
+                          <div class="td td_circle">
+                            <div class="td td_choco">
+                              <div class="circle"></div>
+                            </div>
+                            <div class="td td_cheese">
+                              <div class="circle"></div>
+                            </div>
+                            <div class="td td_strawberry">
+                              <div class="circle"></div>
+                            </div>
+                            <div class="td td_greentea"></div>
+                          </div>
+                        </div>
+                        <div class="tr">
+                          <div class="td th td_num">4</div>
+                          <div class="td td_circle">
+                            <div class="td td_choco">
+                              <div class="circle"></div>
+                            </div>
+                            <div class="td td_cheese"></div>
+                            <div class="td td_strawberry">
+                              <div class="circle"></div>
+                            </div>
+                            <div class="td td_greentea"></div>
+                          </div>
+                        </div>
+                        <div class="tr">
+                          <div class="td th td_num">5</div>
+                          <div class="td td_circle">
+                            <div class="td td_choco">
+                              <div class="circle"></div>
+                            </div>
+                            <div class="td td_cheese"></div>
+                            <div class="td td_strawberry">
+                              <div class="circle"></div>
+                            </div>
+                            <div class="td td_greentea"></div>
+                          </div>
+                        </div>
+                        <div class="tr">
+                          <div class="td th td_num">6</div>
+                          <div class="td td_circle">
+                            <div class="td td_choco">
+                              <div class="circle"></div>
+                            </div>
+                            <div class="td td_cheese"></div>
+                            <div class="td td_strawberry"></div>
+                            <div class="td td_greentea"></div>
+                          </div>
+                        </div>
+                        <div class="tr">
+                          <div class="td th td_num">7</div>
+                          <div class="td td_circle">
+                            <div class="td td_choco">
+                              <div class="circle"></div>
+                            </div>
+                            <div class="td td_cheese"></div>
+                            <div class="td td_strawberry"></div>
+                            <div class="td td_greentea"></div>
+                          </div>
+                        </div>
+                        <div class="tr">
+                          <div class="td th td_num">8</div>
+                          <div class="td td_circle">
+                            <div class="td td_choco">
+                              <div class="circle"></div>
+                            </div>
+                            <div class="td td_cheese"></div>
+                            <div class="td td_strawberry"></div>
+                            <div class="td td_greentea"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <footer class="check_footer">
+                    <div class="check_footer_inner">
+                      <div
+                        class="check_footer_text img_container img_container1"
+                      >
+                        <img
+                          src="../../../COMM/IMG/CONCEPT/SEASON2/2_5_5/STEP4_FOOTER_TXT_1.png"
+                          class="img img1 footer_img"
+                        />
+                        <img
+                          src="../../../COMM/IMG/CONCEPT/SEASON2/2_5_5/STEP4_FOOTER_TXT_2.png"
+                          class="img img2 footer_img"
+                        />
+                      </div>
+                      <div class="check_footer_ch">
+                        <div class="check_footer_ch_head"></div>
+                        <div class="check_footer_ch_body"></div>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+
+              <ul class="step-list">
+                <li class="step-list_item active"></li>
+                <li class="step-list_item"></li>
+              </ul>
+            </div>
+          </main>
+          <div class="main_prev-next">
+            <button class="btn-prev" style="display: none">이전버튼</button>
+            <!-- <button class="btn-next" style="display: block" disabled> -->
+            <button class="btn-next blinking" style="display: block">
+              다음버튼
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      crossorigin
+      src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"
+    ></script>
+    <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+    <script src="../../../COMM/JS/COMMON2.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNT3.JS"></script>
+    <script src="../../../COMM/JS/CONCEPTEVNTBTN.JS"></script>
+    <script src="../../../COMM/JS/GAME.JS"></script>
+    <script src="../../../COMM/JS/VIDEO.JS"></script>
+    <script src="../../../COMM/JS/VIDEO-HTTP-STREAMING.JS"></script>
+    <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+    <script>
+      /*
+       * 데이터
+       */
+      let intro = {
+        type: "concept", //concept 개념익히기, checkExam 확인문제
+        title: "표와 그래프로 <br/>나타내 볼까요",
+        subTitle: ["자료를 조사하여 표와 그래프로 나타낼 수 있어요."],
+        sound: ["../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_01.mp3"],
+      };
+
+      //현재 페이지
+      let disStep = 1;
+
+      let pageData = [
+        {
+          step: 1,
+          title: "은서네 반 학생들이 좋아하는 케이크를 조사해 봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_01.mp3",
+          headerPage: [1, 1],
+          footerPage: [1, 3],
+          prev: 0,
+          next: 1,
+        },
+        {
+          step: 2,
+          title: "조사한 자료를 표로 나타내 봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_05.mp3",
+          headerPage: [1, 1],
+          footerPage: [2, 3],
+          prev: 1,
+          next: 1,
+        },
+        {
+          step: 3,
+          title: "표를 보고 그래프로 나타내 봅시다.",
+          sound: "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_11.mp3",
+          headerPage: [1, 1],
+          footerPage: [3, 3],
+          prev: 1,
+          next: 0,
+        },
+        {
+          step: 4,
+          title: "",
+          sound: "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_01.mp3",
+          headerPage: [0, 0],
+          footerPage: [0, 0],
+          prev: 1,
+          next: 0,
+        },
+      ];
+
+      function pageAction() {
+        console.log("disStep ::: ", disStep);
+        //setTimeout 초기화
+        const TimeoutId = setTimeout(() => console.log("timeout clear"), 1);
+        for (let i = 0; i < TimeoutId; i++) {
+          clearTimeout(i);
+        }
+        stepSet();
+        switch (disStep) {
+          case 1:
+            step1.reset();
+            step1.start();
+            break;
+          case 2:
+            step2.reset();
+            step2.start();
+            break;
+          case 3:
+            step3.reset();
+            step3.start();
+            break;
+          case 4:
+            step4.reset();
+            step4.start();
+            break;
+          case 5:
+            step5.reset();
+            step5.start();
+            break;
+        }
+      }
+
+      let correctlyFlag = 0;
+      let stepDropList = "";
+      let stepDropArr = "";
+
+      //문제 시작
+      //================STEP1==============
+      const step1 = {
+        start: () => {
+          audioSet(
+            [
+              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_01.mp3",
+              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_02.mp3",
+              "../../../COMM/SOUND/EFFECT.MP3",
+              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_03.mp3",
+              "../../../COMM/SOUND/EFFECT.MP3",
+              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_04.mp3",
+            ],
+            [
+              {
+                idx: 3,
+                type: "start",
+                callback: () => {
+                  $('.step1 .talk_box').css('display', 'block');
+                },
+              },
+              {
+                idx: 5,
+                type: "start",
+                callback: () => {
+                  $('.step1 .talk_box .green_box').css('visibility', 'visible');
+                },
+              },
+              {
+                idx: 6,
+                type: "end",
+                callback: () => {
+                  correctly();
+                },
+              },
+            ]
+          );
+        },
+        reset: () => {
+          $(".step1 .dp_none").css("display", "");
+          $(".step1 .v_hidden").css("visibility", "");
+        },
+      };
+      //================STEP2==============
+      const step2 = {
+        start: () => {
+          audioSet(
+            [
+              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_05.mp3",
+              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_06.mp3",
+            ],
+            [
+              {
+                idx: 2,
+                type: "end",
+                callback: () => {
+                  $(".step2 .cake_count_table").addClass("box_blink2");
+                  touchMotionSetOn(
+                    682,
+                    840,
+                    step2.guideTouch,
+                    $(".step2 .cake_count_table")
+                  );
+                },
+              },
+            ]
+          );
+        },
+        guideTouch: () => {
+          $(".step2 .cake_count_table").removeClass("box_blink2");
+
+          audioSet(
+            [
+              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_07.mp3",
+              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_08.mp3",
+              "../../../COMM/SOUND/EFFECT.MP3",
+              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_08_1.mp3",
+            ],
+            [
+              {
+                idx: 1,
+                type: 'start',
+                callback: () => {
+                  timerSet(() => {
+                    $('.cake_point.choco').css('display', 'block');                    
+                      timerSet(() => {
+                        $('.cake_point.choco').css('display', '');
+                        $('.cake_point.cheese').css('display', 'block');
+                        timerSet(() => {
+                          $('.cake_point.cheese').css('display', '');
+                          $('.cake_point.strawberry').css('display', 'block');                          
+                            timerSet(() => {
+                              $('.cake_point.strawberry').css('display', '');
+                              $('.cake_point.greentea').css('display', 'block');
+                              timerSet(() => {
+                                $('.cake_point.greentea').css('display', '');
+
+                                timerInit();
+                              }, 1600);
+                              timerInit();
+                            }, 1600);
+                          timerInit();
+                        }, 1600);
+                        timerInit();
+                      }, 1600);
+                    timerInit();
+                  }, 2700);
+                }
+              },
+              {
+                idx: 3,
+                type: 'start',
+                callback: () => {                  
+                  $(".step2_btm_box .td2 .td.v_hidden").css("visibility", "visible");
+                  $(".step2_btm_box .td5 .td.v_hidden").css("visibility", "visible");
+                }
+              },
+              {
+                idx: 4,
+                type: 'end',
+                callback: () => {
+                  $(".step2 .cake_count_table").addClass("box_blink2");
+                  touchMotionSetOn(
+                    682,
+                    840,
+                    step2.guideTouch2,
+                    $(".step2 .cake_count_table")
+                  );
+                }
+              }
+            ]
+          );
+        },
+        guideTouch2: () => {
+          $(".step2 .cake_count_table").removeClass("box_blink2");
+          $(".step2_btm_box .tr1 .dp_none").css("display", "block");
+          audioSet(
+            ["../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_09.mp3"],
+            [
+              {
+                idx: 1,
+                type: "end",
+                callback: () => {
+                  $(".step2_btm_box .tr2 .dp_none").css("display", "flex");
+                  $(".step2_btm_box .sum").css("display", "none");
+
+                  stepDropList = [
+                    {
+                      dropEl: ".step2 .txt_container1",
+                      correct: 1,
+                    },
+                    {
+                      dropEl: ".step2 .txt_container2",
+                      correct: 3,
+                    },
+                  ];
+
+                  stepDropArr = [2, 3, 18];
+
+                  quizMultiDragDropSetOnNew(
+                    stepDropList,
+                    $(".step2 .answer_list_box"),
+                    stepDropArr,
+                    step2.quizCorrect
+                  );
+                },
+              },
+            ]
+          );
+        },
+        quizCorrect: (flag) => {
+          $(".droppable")
+            .droppable({ disabled: false })
+            .on("droppable:drop", function (droppp, drag) {
+              let dragAnswer = drag.item[0].dataset.val;
+              let answer = droppp.currentTarget.dataset.val;
+
+              if (answer === dragAnswer) {
+                correctlyFlag++;
+                quizMultiDragDropSetCorrect(droppp.currentTarget);
+
+                if (correctlyFlag == stepDropList.length) {
+                  quizMultiDragDropSetCorrectly();
+                  $(".step2 .answer_list_box").css("display", "none");
+
+                  audioSet(
+                    [
+                      "../../../COMM/SOUND/CORRECT.mp3",
+                      "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_10.mp3",
+                    ],
+                    [
+                      {
+                        idx: 2,
+                        type: "end",
+                        callback: () => {
+                          correctly();
+                        },
+                      },
+                    ]
+                  );
+                } else {
+                  audioSet(["../../../COMM/SOUND/CORRECT.mp3"]);
+                }
+              } else {
+                audioSet(["../../../COMM/SOUND/WRONG.mp3"]);
+
+                return false;
+              }
+            });
+        },
+        reset: () => {
+          correctlyFlag = 0;
+          $(".step2 .txt_container").html("?");
+          stepDropList = "";
+          stepDropArr = "";
+
+          timerInit();
+          touchMotionSetInit();
+
+          $(".step2 .dp_none").css("display", "");
+          $(".step2 .v_hidden").css("visibility", "");
+          $(".step2 .answer_list_box").html("").css("display", "");
+          $(".step2 .cake_count_table").removeClass("box_blink2");
+        },
+      };
+      //================STEP3==============
+      const step3 = {
+        start: () => {
+          audioSet(
+            ["../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_11.mp3"],
+            [
+              {
+                idx: 1,
+                type: "end",
+                callback: () => {
+                  $(".step3 .cake_circle_table").addClass("box_blink2");
+                  touchMotionSetOn(
+                    587,
+                    1030,
+                    step3.guideTouch,
+                    $(".step3 .cake_circle_table")
+                  );
+                },
+              },
+            ]
+          );
+        },
+        guideTouch: () => {
+          $(".step3 .cake_circle_table").removeClass("box_blink2");
+          audioSet(
+            [
+              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_12.mp3",
+              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_13.mp3",
+              "../../../COMM/SOUND/EFFECT.MP3",
+              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_14.mp3",
+            ],
+            [
+              {
+                idx: 3,
+                type: "start",
+                callback: () => {
+                  $(".step3 .cake_circle_table .text2").css(
+                    "visibility",
+                    "visible"
+                  );
+                },
+              },
+              {
+                idx: 4,
+                type: "end",
+                callback: () => {
+                  $(".step3 .cake_circle_table").addClass("box_blink2");
+                  touchMotionSetOn(
+                    577,
+                    1354,
+                    step3.guideTouch2,
+                    $(".step3 .cake_circle_table")
+                  );
+                },
+              },
+            ]
+          );
+        },
+        guideTouch2: () => {
+          $(".step3 .cake_circle_table").removeClass("box_blink2");
+          audioSet(
+            [
+              "../../../COMM/SOUND/EFFECT.MP3",
+              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_15.mp3",
+            ],
+            [
+              {
+                idx: 1,
+                type: "start",
+                callback: () => {
+                  $(".step3 .cake_circle_table .v_hidden").css(
+                    "visibility",
+                    "visible"
+                  );
+                },
+              },
+              {
+                idx: 2,
+                type: "end",
+                callback: () => {
+                  $(".step3 .cake_circle_table").addClass("box_blink2");
+                  touchMotionSetOn(
+                    577,
+                    1354,
+                    step3.guideTouch3,
+                    $(".step3 .cake_circle_table")
+                  );
+                },
+              },
+            ]
+          );
+        },
+        guideTouch3: () => {
+          $(".step3 .cake_circle_table").removeClass("box_blink2");
+          audioSet(
+            [
+              "../../../COMM/SOUND/EFFECT.MP3",
+              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_16.mp3",
+            ],
+            [
+              {
+                idx: 1,
+                type: "start",
+                callback: () => {
+                  $(".step3 .cake_circle_table .tr_title .dp_none").css(
+                    "display",
+                    "block"
+                  );
+                },
+              },
+              {
+                idx: 2,
+                type: "end",
+                callback: () => {
+                  $(".step3 .cake_circle_table .tr_title .td_choco").addClass(
+                    "box_blink2"
+                  );
+                  touchMotionSetOn(
+                    577,
+                    1133,
+                    step3.guideTouch4,
+                    $(".step3 .cake_circle_table .tr_title .td_choco")
+                  );
+                },
+              },
+            ]
+          );
+        },
+        guideTouch4: () => {
+          $(".step3 .cake_circle_table .tr_title .td_choco").removeClass(
+            "box_blink2"
+          );
+          audioSet(
+            [
+              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_17.mp3",
+              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_18.mp3",
+              "../../../COMM/SOUND/EFFECT.MP3",
+            ],
+            [
+              {
+                idx: 1,
+                type: "end",
+                callback: () => {
+                  $(".step3 .cake_count_table .tr2 .td_choco").addClass(
+                    "highlight red"
+                  );
+                },
+              },
+              {
+                idx: 3,
+                type: "start",
+                callback: () => {
+                  $(".step3 .cake_circle_table .v_hidden").css(
+                    "visibility",
+                    "visible"
+                  );
+
+                  $(".step3 .cake_circle_table .tr1 .td_choco .circle").css(
+                    "display",
+                    "block"
+                  );
+                  timerSet(() => {
+                    $(".step3 .cake_circle_table .tr2 .td_choco .circle").css(
+                      "display",
+                      "block"
+                    );
+                    timerSet(() => {
+                      $(".step3 .cake_circle_table .tr3 .td_choco .circle").css(
+                        "display",
+                        "block"
+                      );
+                      timerSet(() => {
+                        $(
+                          ".step3 .cake_circle_table .tr4 .td_choco .circle"
+                        ).css("display", "block");
+                        timerSet(() => {
+                          $(
+                            ".step3 .cake_circle_table .tr5 .td_choco .circle"
+                          ).css("display", "block");
+                          timerSet(() => {
+                            $(
+                              ".step3 .cake_circle_table .tr6 .td_choco .circle"
+                            ).css("display", "block");
+                            timerSet(() => {
+                              $(
+                                ".step3 .cake_circle_table .tr7 .td_choco .circle"
+                              ).css("display", "block");
+                              timerSet(() => {
+                                $(
+                                  ".step3 .cake_circle_table .tr8 .td_choco .circle"
+                                ).css("display", "block");
+                                $(
+                                  ".step3 .cake_count_table .tr2 .td_choco"
+                                ).removeClass("highlight red");
+
+                                audioSet(
+                                  [
+                                    "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_19.mp3",
+                                  ],
+                                  [
+                                    {
+                                      idx: 1,
+                                      type: "end",
+                                      callback: () => {
+                                        $(
+                                          ".step3 .cake_circle_table .tr_title .td_cheese"
+                                        ).addClass("box_blink2");
+                                        touchMotionSetOn(
+                                          577,
+                                          1285,
+                                          step3.guideTouch5,
+                                          $(
+                                            ".step3 .cake_circle_table .tr_title .td_cheese"
+                                          )
+                                        );
+                                      },
+                                    },
+                                  ]
+                                );
+
+                                timerInit();
+                              }, 300);
+                              timerInit();
+                            }, 300);
+                            timerInit();
+                          }, 300);
+                          timerInit();
+                        }, 300);
+                        timerInit();
+                      }, 300);
+                      timerInit();
+                    }, 300);
+                    timerInit();
+                  }, 300);
+                },
+              },
+            ]
+          );
+        },
+        guideTouch5: () => {
+          $(".step3 .cake_circle_table .tr_title .td_cheese").removeClass(
+            "box_blink2"
+          );
+          audioSet(
+            [
+              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_20.mp3",
+              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_21.mp3",
+              "../../../COMM/SOUND/EFFECT.MP3",
+            ],
+            [
+              {
+                idx: 1,
+                type: "end",
+                callback: () => {
+                  $(".step3 .cake_count_table .tr2 .td_cheese").addClass(
+                    "highlight red"
+                  );
+                },
+              },
+              {
+                idx: 3,
+                type: "start",
+                callback: () => {
+                  $(".step3 .cake_circle_table .v_hidden").css(
+                    "visibility",
+                    "visible"
+                  );
+
+                  $(".step3 .cake_circle_table .tr1 .td_cheese .circle").css(
+                    "display",
+                    "block"
+                  );
+                  timerSet(() => {
+                    $(".step3 .cake_circle_table .tr2 .td_cheese .circle").css(
+                      "display",
+                      "block"
+                    );
+                    timerSet(() => {
+                      $(
+                        ".step3 .cake_circle_table .tr3 .td_cheese .circle"
+                      ).css("display", "block");
+                      $(".step3 .cake_count_table .tr2 .td_cheese").removeClass(
+                        "highlight red"
+                      );
+
+                      audioSet(
+                        ["../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_22.mp3"],
+                        [
+                          {
+                            idx: 1,
+                            type: "end",
+                            callback: () => {
+                              $(".step3 .cake_circle_table .tr_title .td_strawberry").addClass("box_blink2");
+                              touchMotionSetOn(577, 1436, step3.guideTouch6, $(".step3 .cake_circle_table .tr_title .td_strawberry"));
+                            },
+                          },
+                        ]
+                      );
+
+                      timerInit();
+                    }, 300);
+                    timerInit();
+                  }, 300);
+                },
+              },
+            ]
+          );
+        },
+        guideTouch6: () => {
+          $(".step3 .cake_circle_table .tr_title .td_strawberry").removeClass(
+            "box_blink2"
+          );
+          audioSet(
+            [
+              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_23.mp3",
+              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_24.mp3",
+              "../../../COMM/SOUND/EFFECT.MP3",
+            ],
+            [
+              {
+                idx: 1,
+                type: "end",
+                callback: () => {
+                  $(".step3 .cake_count_table .tr2 .td_strawberry").addClass(
+                    "highlight red"
+                  );
+                },
+              },
+              {
+                idx: 3,
+                type: "start",
+                callback: () => {
+                  $(".step3 .cake_circle_table .v_hidden").css(
+                    "visibility",
+                    "visible"
+                  );
+
+                  $(
+                    ".step3 .cake_circle_table .tr1 .td_strawberry .circle"
+                  ).css("display", "block");
+                  timerSet(() => {
+                    $(
+                      ".step3 .cake_circle_table .tr2 .td_strawberry .circle"
+                    ).css("display", "block");
+                    timerSet(() => {
+                      $(
+                        ".step3 .cake_circle_table .tr3 .td_strawberry .circle"
+                      ).css("display", "block");
+                      timerSet(() => {
+                        $(
+                          ".step3 .cake_circle_table .tr4 .td_strawberry .circle"
+                        ).css("display", "block");
+                        timerSet(() => {
+                          $(
+                            ".step3 .cake_circle_table .tr5 .td_strawberry .circle"
+                          ).css("display", "block");
+                          $(
+                            ".step3 .cake_count_table .tr2 .td_strawberry"
+                          ).removeClass("highlight red");
+
+                          audioSet(
+                            [
+                              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_25.mp3",
+                            ],
+                            [
+                              {
+                                idx: 1,
+                                type: "end",
+                                callback: () => {
+                                  $(
+                                    ".step3 .cake_circle_table .tr1 .td_greentea .circle"
+                                  )
+                                    .css("display", "block")
+                                    .addClass("blinking");
+                                  touchMotionSetOn(
+                                    514,
+                                    1593,
+                                    step3.guideTouch7,
+                                    $(
+                                      ".step3 .cake_circle_table .tr1 .td_greentea"
+                                    )
+                                  );
+                                },
+                              },
+                            ]
+                          );
+
+                          timerInit();
+                        }, 300);
+                        timerInit();
+                      }, 300);
+                      timerInit();
+                    }, 300);
+                    timerInit();
+                  }, 300);
+                },
+              },
+            ]
+          );
+        },
+        guideTouch7: () => {
+          $(".step3 .cake_circle_table .tr1 .td_greentea .circle").removeClass(
+            "blinking"
+          );
+
+          timerSet(() => {
+            $(".step3 .cake_circle_table .tr2 .td_greentea .circle")
+              .css("display", "block")
+              .addClass("blinking");
+            touchMotionSetOn(
+              477,
+              1593,
+              step3.guideTouch8,
+              $(".step3 .cake_circle_table .tr2 .td_greentea")
+            );
+
+            timerInit();
+          }, 500);
+        },
+        guideTouch8: () => {
+          $(".step3 .cake_circle_table .tr2 .td_greentea .circle").removeClass(
+            "blinking"
+          );
+          audioSet(
+            [
+              "../../../COMM/SOUND/CORRECT.mp3",
+              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_26.mp3",
+            ],
+            [
+              {
+                idx: 2,
+                type: "end",
+                callback: () => {
+                  disStep++;
+                  pageAction();
+                },
+              },
+            ]
+          );
+        },
+        reset: () => {
+          timerInit();
+          touchMotionSetInit();
+
+          $(".step3 .dp_none").css("display", "");
+          $(".step3 .v_hidden").css("visibility", "");
+
+          $(".step3 .cake_count_table .tr2 .highlight").removeClass(
+            "highlight red"
+          );
+          $(".step3 .cake_circle_table .circle").removeClass("blinking");
+        },
+      };
+      //================STEP4==============
+      const step4 = {
+        start: () => {
+          $(".step4 .step4_arrow1").css("display", "flex");
+          $(".step4 .step4_table_box.two").css("display", "flex");
+          audioSet(
+            [
+              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_27.mp3",
+              "../../../COMM/SOUND/EFFECT.MP3",
+              "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_28.mp3",
+              "../../../COMM/SOUND/EFFECT.MP3",
+            ],
+            [
+              {
+                idx: 2,
+                type: "start",
+                callback: () => {
+                  $(".step4 .check_footer_inner").addClass("slideUp");
+                },
+              },
+              {
+                idx: 4,
+                type: "end",
+                callback: () => {
+                  timerSet(() => {
+                    audioSet(
+                      [
+                        "../../../COMM/SOUND/CHANGEPAGE3.MP3",
+                        "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_29.mp3",
+                        "../../../COMM/SOUND/EFFECT.MP3",
+                        "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_30.mp3",
+                        "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_31.mp3",
+                        "../../../COMM/SOUND/SEASON2/2_5_5/2_2_5-5_32.mp3",
+                      ],
+                      [
+                        {
+                          idx: 1,
+                          type: "start",
+                          callback: () => {
+                            $(".step4 .step4_arrow1").css("display", "");
+                            $(".step4 .step4_table_box.one").css(
+                              "display",
+                              "none"
+                            );
+
+                            $(".step4 .step4_arrow2")
+                              .css("display", "flex")
+                              .css("visibility", "hidden");
+                            $(".step4 .step4_table_box.three")
+                              .css("display", "flex")
+                              .css("visibility", "hidden");
+
+                            $(".step4 .check_footer_text .img2").css(
+                              "display",
+                              "block"
+                            );
+                          },
+                        },
+                        {
+                          idx: 3,
+                          type: "start",
+                          callback: () => {
+                            $(".step4 .step4_arrow2").css(
+                              "visibility",
+                              "visible"
+                            );
+                            $(".step4 .step4_table_box.three").css(
+                              "visibility",
+                              "visible"
+                            );
+                          },
+                        },
+                        {
+                          idx: 4,
+                          type: "start",
+                          callback: () => {
+                            $('.step4 .cake_count_table').addClass('box_blink2');
+                            setTimeout(() => {
+                              $('.step4 .cake_count_table').removeClass('box_blink2');
+                            }, 3000);
+                          },
+                        },
+                        {
+                          idx: 5,
+                          type: "start",
+                          callback: () => {
+                            $('.step4 .cake_circle_table').addClass('box_blink2');
+                            setTimeout(() => {
+                              $('.step4 .cake_circle_table').removeClass('box_blink2');
+                            }, 3000);
+                          },
+                        },
+                        {
+                          idx: 6,
+                          type: "end",
+                          callback: () => {
+                            callFinish();
+                          },
+                        },
+                      ]
+                    );
+
+                    timerInit();
+                  }, 250);
+                },
+              },
+            ]
+          );
+        },
+        reset: () => {
+          timerInit();
+
+          $(".step4 .dp_none").css("display", "");
+          $(".step4 .v_hidden").css("visibility", "");
+
+          $(".step4 .check_footer_inner").removeClass("slideUp");
+          $(".step4 .step4_table_box").css("display", "").css("visibility", "");
+          $(".step4 .step4_arrow").css("display", "").css("visibility", "");
+          $(".step4 .check_footer_text .img").css("display", "");
+          $('.step4 .box_blink2').removeClass('box_blink2');
+        },
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,509 @@
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "NanumSquareRound" !important;
+}
+
+.end-popup {
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.end-popup img {
+  width: 70%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  margin-top: -100px;
+}
+
+.end-popup button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(calc(-50% + 300px));
+  width: 340px;
+  height: 120px;
+  font-size: 0;
+  /* background: blue; */
+}
+
+.osign {
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../COMM/IMG/BRUSHING/OSIGN.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.warp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  /* transform: scale(50%); */
+  position: relative;
+  width: 100%;
+  height: 1200px;
+  background: url(../../COMM/IMG/BRUSHING/BG.JPG) no-repeat center;
+  background-size: 2000px 1200px;
+  overflow: hidden;
+}
+
+/* -----인트로----- */
+.game_intro {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../../COMM/IMG/BRUSHING/INTRO.JPG) no-repeat center;
+  background-size: 2000px 1200px;
+}
+
+/* -----인트로 시작 버튼----- */
+.game_intro_start {
+  position: absolute;
+  top: 69%;
+  left: 50%;
+  width: 310px;
+  height: 120px;
+  border-radius: 100px;
+  transform: translateX(-50%);
+  font-size: 0;
+}
+
+/* -----타이틀----- */
+.game_title {
+  z-index: 1;
+  display: none;
+  position: absolute;
+  top: 120px;
+  left: 120px;
+  width: auto;
+  padding: 0 100px;
+  border-radius: 200px;
+  height: 134px;
+  background: #1f78ff;
+  box-shadow: 0px 8px #0f489d;
+}
+
+.game_title_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 55px;
+  font-weight: 800;
+  color: white;
+}
+
+/* -----캐릭터----- */
+.character {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 1843px;
+  height: 1091px;
+  transform: translateX(100%);
+}
+
+.character_arm {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 678px;
+  height: 506px;
+  background: url(../../COMM/IMG/BRUSHING/CHARACTER/ARM.PNG) no-repeat center;
+  background-size: cover;
+  transform: translateY(30%) rotate(45deg);
+  pointer-events: none;
+}
+
+.character_body {
+  position: absolute;
+  bottom: 0;
+  right: -70px;
+  width: 1408px;
+  height: 516px;
+  background: url(../../COMM/IMG/BRUSHING/CHARACTER/BODY.PNG) no-repeat center;
+  background-size: cover;
+  pointer-events: none;
+}
+
+.character_head {
+  position: absolute;
+  top: 10px;
+  left: 60px;
+  width: 1625px;
+  height: 1011px;
+  background: url(../../COMM/IMG/BRUSHING/CHARACTER/HEAD.PNG) no-repeat center;
+  background-size: cover;
+  pointer-events: none;
+}
+
+.character_snout {
+  position: absolute;
+  top: 530px;
+  left: 164px;
+  width: 950px;
+  height: 360px;
+  background: rgba(255, 93, 71, 1);
+}
+
+/* 정답 입력 인풋 리스트 */
+.answer-input-list {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.answer-input-list_item {
+  width: 160px;
+  height: 148px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  border-radius: 0 0 80px 80px;
+  transition: all 500ms;
+  border: none;
+}
+
+.answer-input-list_item p {
+  color: black;
+}
+
+.answer-input-list_item.droppable {
+  background: url(../../COMM/IMG/BRUSHING/BLANKTOP.SVG) no-repeat center;
+  background-size: cover;
+  transform: scale(105%);
+}
+
+.answer-input-list_item.droppable:has(li) {
+  transform: scale(100%);
+}
+
+.answer-input-list_item.droppable p {
+  display: none;
+}
+
+.answer-input-list_item p {
+  font-size: 80px;
+  font-weight: 800;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.answer-input-list_item:nth-of-type(n + 6) {
+  border-radius: 80px 80px 0 0;
+}
+
+.answer-input-list_item:nth-of-type(n + 6).droppable {
+  background: url(../../COMM/IMG/BRUSHING/BLANKBOTTOM.SVG) no-repeat center;
+  background-size: cover;
+}
+
+/* 문제 정답에 들어간 상태 */
+.answer-input-list_item .quiz-list_item {
+  width: 160px;
+  height: 148px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  border-radius: 0 0 80px 80px;
+  box-shadow: none;
+  font-size: 80px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: black;
+}
+
+.answer-input-list_item:nth-of-type(n + 6) .quiz-list_item {
+  border-radius: 80px 80px 0 0;
+}
+
+/* -----문항 리스트----- */
+.quiz-list {
+  position: absolute;
+  right: 130px;
+  bottom: 250px;
+  width: 560px;
+  height: 250px;
+  display: flex;
+  transform: translateX(-2000px);
+}
+
+.quiz-list_item {
+  width: 160px;
+  height: 100%;
+  margin-right: 40px;
+  background: white;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120px;
+  font-weight: 800;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.4);
+  color: black;
+}
+
+.quiz-list_item:last-of-type {
+  margin-right: 0;
+}
+
+/* 100이상 폰트 사이즈 수정 */
+.fontSizeDown {
+  font-size: 80px;
+  text-shadow: -1px 0px #000000, 0px 1px #000000, 1px 0px #000000, 0px -1px #000000;
+}
+
+/* -----드래그 동적 스타일----- */
+/* 비활성화 */
+.quiz-list_item.pointerNone {
+  pointer-events: none;
+}
+
+/* 비활성화 */
+.quiz-list_item.active {
+  outline: 10px solid rgba(255, 100, 220, 1);
+}
+
+/* 오답시 튕겨져 나감 */
+.quiz-list_item.off {
+  transition: transform 300ms;
+  transform: translateX(100px) translateY(-100px) rotate(120deg);
+  animation-duration: 0.5s;
+  animation-name: fadeOut;
+  animation-fill-mode: forwards;
+}
+
+/* -----애니메이션----- */
+
+/* 캐릭터 등장 */
+.character-slide {
+  transform: translateX(100%);
+}
+
+.character-slide.motionStart {
+  animation-duration: 0.7s;
+  animation-name: character-slide;
+  animation-fill-mode: forwards;
+}
+
+@keyframes character-slide {
+  0% {
+    transform: translateX(100%);
+  }
+
+  80% {
+    transform: translateX(-5%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* 캐릭터 팔 드는 모션 */
+.character-arm-motion {
+  transform: translateY(30%) rotate(45deg);
+}
+
+.character-arm-motion.motionStart {
+  animation-duration: 0.3s;
+  animation-name: character-arm-motion;
+  animation-fill-mode: forwards;
+}
+
+@keyframes character-arm-motion {
+  0% {
+    transform: translateY(30%) rotate(45deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+/* 문항 등장 */
+.quiz-list-slide {
+  transform: translateX(-2000px);
+}
+
+.quiz-list-slide.motionStart {
+  animation-duration: 1s;
+  animation-name: quiz-list-slide;
+  animation-fill-mode: forwards;
+}
+
+@keyframes quiz-list-slide {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.fadeOut {
+  animation-duration: 1s;
+  animation-name: fadeOut;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#complete_popup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#complete_popup .buttonArea {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  top: 940px;
+}
+#complete_popup .dimmed {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+#complete_popup .bg {
+  position: absolute;
+  top: 140px;
+  width: 100%;
+  height: 80%;
+  z-index: 1;
+  background: center/contain no-repeat
+    url("../../COMM/IMG/BRUSHING/LASTPOPUP.PNG");
+}
+#complete_popup .reload {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  color: blue;
+  z-index: 2;
+  border-radius: 100px;
+  background: center/contain no-repeat url("../../COMM/IMG/BRUSHING/RETRY.PNG");
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#complete_popup .play_view {
+  display: flex;
+  width: 300px;
+  height: 100px;
+  color: white;
+  font-size: 32px;
+  font-weight: 800px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #2dcabd;
+  z-index: 2;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#complete_popup p {
+  display: flex;
+  position: absolute;
+  bottom: -50px;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.pearl-guide {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.pearl-guide-hand {
+  width: 120px;
+  height: 110px;
+  position: absolute;
+  z-index: 2;
+  background: url("../../COMM/IMG/TOUCH_GUIDE_HAND.PNG") no-repeat center;
+  left: 68%;
+  bottom: 19%;
+  animation: move 2s infinite linear;
+}
+.pearl-guide-point {
+  width: 120px;
+  height: 110px;
+  position: absolute;
+  z-index: 2;
+  background: url("../../COMM/IMG/TOUCH_GUIDE.PNG") no-repeat center;
+  left: 65%;
+  bottom: 23%;
+  animation: opa 1s infinite linear, move 2s infinite linear;
+}
+
+@keyframes opa {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(-300px, 0px);
+  }
+}

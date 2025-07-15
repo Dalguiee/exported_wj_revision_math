@@ -1,0 +1,1398 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>개정교육과정-수학 수학 개념</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <meta name="KeyWORDs" content="" />
+  <meta name="Description" content="" />
+  <meta name="Robots" content="all" />
+  <meta http-equiv="Subject" content="" />
+  <meta http-equiv="Title" content="" />
+  <meta http-equiv="Author" content="onflou " />
+  <meta http-equiv="Publisher" content="" />
+
+  <!-- 브라우저 호환성을 지정 -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="shortcut icon" href="#" />
+  <link href="../../../COMM/CSS/COMMON.CSS" rel="stylesheet" />
+  <link href="../../../COMM/CSS/CONCEPTCOMMON2.CSS" rel="stylesheet" />
+  <link href="../../../COMM/CSS/VIDEO.CSS" rel="stylesheet" />
+
+  <style>
+    .content_box_comm {
+      background-color: transparent;
+      border: 6px solid rgba(190, 218, 255, 1);
+    }
+
+    .quiz_correct .answer,
+    .answer_list .answer {
+      border-radius: 10px;
+    }
+
+    .stick {
+      position: relative;
+    }
+
+    .stick .icon_bubble {
+      position: absolute;
+      top: -44px;
+    }
+
+    .stick1 .icon_bubble {
+      right: calc(100% - 12px);
+    }
+
+    .stick2 .icon_bubble {
+      left: calc(100% - 12px);
+    }
+
+    .stick .icon_bubble .img_container {
+      width: 142px;
+      height: 131px;
+    }
+
+    .box3 {
+      position: relative;
+    }
+
+    .calc_point_star {
+      position: absolute;
+      z-index: 10;
+      display: none;
+    }
+
+    .calc_point_star1 {
+      width: 401px;
+      height: 178px;
+      background: url(../../../COMM/IMG/CONCEPT/2_3_10/POINT_STAR_1.png) no-repeat center center / contain;
+      left: -45px;
+      top: -45px;
+    }
+
+    .calc_point_star2 {
+      width: 471px;
+      height: 178px;
+      background: url(../../../COMM/IMG/CONCEPT/2_3_10/POINT_STAR_2.png) no-repeat center center / contain;
+      bottom: -60px;
+      left: -45px;
+    }
+
+    /* 1p */
+    .step1 .step1_top_box {
+      width: 1600px;
+      height: 288px;
+      margin-top: 46px;
+      text-align: center;
+      line-height: 70px;
+    }
+
+    .step1 .step1_mid_box {
+      width: 745px;
+      height: 187px;
+      margin-top: 44px;
+      justify-content: space-between;
+      gap: 35px;
+      visibility: hidden;
+    }
+
+    .step1 .step1_mid_box .box {
+      width: 100%;
+      height: 40.5%;
+    }
+
+    .step1 .step1_mid_box .step1_stick_box {
+      width: 745px;
+      height: 76px;
+      border: 4px solid rgba(35, 24, 21, 1);
+      box-sizing: border-box;
+      visibility: hidden;
+    }
+
+    .step1 .step1_mid_box .step1_stick_box .stick {
+      height: 100%;
+    }
+
+    .step1 .step1_mid_box .step1_stick_box1 .stick1 {
+      width: 80%;
+      background: rgba(246, 221, 161, 1);
+    }
+
+    .step1 .step1_mid_box .step1_stick_box1 .stick2 {
+      width: 20%;
+      border-left: 4px solid rgba(35, 24, 21, 1);
+      background: rgba(255, 211, 57, 1);
+    }
+
+    .step1 .step1_mid_box .step1_stick_box2 .stick1 {
+      width: 100%;
+      background: rgba(199, 223, 165, 1);
+    }
+
+    .step1 .step1_btm_box {
+      margin-top: 25px;
+      visibility: hidden;
+    }
+
+    .step1 .step1_btm_box .txt_container {
+      width: 133px;
+    }
+
+    .step1 .step1_btm_box .quiz_select_wrap {
+      visibility: hidden;
+      margin-top: 22px;
+    }
+
+    .step1 .step1_btm_box .quiz_select_wrap .answer {
+      width: 204px;
+      height: 114px;
+    }
+
+    .step1 .step1_btm_box .quiz_select_wrap .answer+.answer {
+      margin-left: 48px;
+    }
+
+    /* 2p */
+    .step2 .step2_top_box {
+      width: 745px;
+      height: 187px;
+      margin-top: 144px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 35px;
+    }
+
+    .step2 .step2_top_box .box {
+      width: 100%;
+      height: 40.5%;
+    }
+
+    .step2 .step2_top_box .step2_img_box {
+      width: 745px;
+      height: 76px;
+    }
+
+    .step2 .step2_top_box .step2_stick_box {
+      width: 745px;
+      height: 76px;
+      border: 4px solid rgba(35, 24, 21, 1);
+      box-sizing: border-box;
+    }
+
+    .step2 .step2_top_box .step2_stick_box .stick {
+      height: 100%;
+    }
+
+    .step2 .step2_top_box .step2_stick_box1 .stick1 {
+      width: 80%;
+      background: rgba(246, 221, 161, 1);
+    }
+
+    .step2 .step2_top_box .step2_stick_box1 .stick2 {
+      width: 20%;
+      border-left: 4px solid rgba(35, 24, 21, 1);
+      background: rgba(255, 211, 57, 1);
+    }
+
+    .step2 .step2_top_box .step2_stick_box2 .stick1 {
+      width: 100%;
+      background: rgba(199, 223, 165, 1);
+    }
+
+    .step2 .step2_mid_box {
+      /* width: 1080px; */
+      height: 182px;
+      margin-top: 116px;
+      /* justify-content: space-between; */
+      /* gap: 0; */
+    }
+
+    .step2 .step2_mid_box1 {
+      width: 507px;
+      height: 154px;
+      background: rgba(255, 255, 255, 1);
+      border: 3px solid rgba(190, 218, 255, 1);
+      border-radius: 20px;
+    }
+
+    .step2 .step2_mid_box .box1 {
+      width: 507px;
+      height: 154px;
+      background: rgba(255, 255, 255, 1);
+      border: 3px solid rgba(190, 218, 255, 1);
+      border-radius: 20px;
+      box-sizing: border-box;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .step2 .step2_mid_box .box1 .txt1 {
+      padding: 12px 16px;
+      margin-right: 50px;
+      background: rgba(145, 180, 251, 1);
+      border-radius: 10px;
+      box-sizing: border-box;
+      font-size: 36px;
+    }
+
+    .step2 .step2_mid_box .img_container {
+      width: 115px;
+      height: 111px;
+    }
+
+    .step2 .step2_mid_box .box3 .calc_box {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+
+    .step2 .step2_mid_box .box3 .calc_box .img {
+      width: auto;
+      margin-right: 28px;
+    }
+
+    .step2 .step2_mid_box .box3 .calc_box .txt {
+      visibility: hidden;
+    }
+
+    .step2 .step2_mid_box .box3 .calc_box2 {
+      margin-top: 49px;
+      padding-left: 6px;
+    }
+
+    .step2 .step2_mid_box .box3 .calc_box2 .txt {
+      padding: 0 10px;
+    }
+
+    .step2 .step2_mid_box .box3 .txt_container {
+      visibility: hidden;
+    }
+
+    .step2 .step2_mid_box .box3 .txt_container1 {
+      width: 133px;
+    }
+
+    .step2 .step2_btm_box {
+      width: 439px;
+      height: 75px;
+      margin-top: 106px;
+      visibility: hidden;
+      z-index: 10;
+    }
+
+    .step2 .calc_point_star1 {
+      left: 4px;
+    }
+
+    .step2 .calc_point_star2 {
+      left: 42px;
+    }
+
+    /* 3p */
+    .step3 .step3_top_box {
+      width: 1600px;
+      height: 288px;
+      margin-top: 46px;
+      text-align: center;
+      line-height: 70px;
+    }
+
+    .step3 .step3_mid_box {
+      width: 745px;
+      height: 187px;
+      margin-top: 44px;
+      justify-content: space-between;
+      gap: 35px;
+      visibility: hidden;
+    }
+
+    .step3 .step3_mid_box .box {
+      width: 100%;
+      height: 40.5%;
+    }
+
+    .step3 .step3_mid_box .step3_stick_box {
+      width: 745px;
+      height: 76px;
+      box-sizing: border-box;
+      visibility: hidden;
+    }
+
+    .step3 .step3_mid_box .step3_stick_box .stick {
+      height: 100%;
+    }
+
+    .step3 .step3_mid_box .step3_stick_box1 .stick1 {
+      width: 100%;
+      background: rgba(199, 223, 165, 1);
+      border: 4px solid rgba(35, 24, 21, 1);
+    }
+
+    .step3 .step3_mid_box .step3_stick_box2 .stick1 {
+      width: 50%;
+      background: rgba(246, 221, 161, 1);
+      border: 4px solid rgba(35, 24, 21, 1);
+    }
+
+    .step3 .step3_mid_box .step3_stick_box2 .stick2 {
+      width: 60%;
+      background: rgba(255, 211, 57, 1);
+      border-top: 4px solid rgba(35, 24, 21, 1);
+      border-bottom: 4px solid rgba(35, 24, 21, 1);
+      border-right: 4px solid rgba(35, 24, 21, 1);
+    }
+
+    .step3 .step3_btm_box {
+      margin-top: 25px;
+      visibility: hidden;
+    }
+
+    .step3 .step3_btm_box .txt_container {
+      width: 133px;
+    }
+
+    .step3 .step3_btm_box .quiz_select_wrap {
+      visibility: hidden;
+      margin-top: 22px;
+    }
+
+    .step3 .step3_btm_box .quiz_select_wrap .answer {
+      width: 204px;
+      height: 114px;
+    }
+
+    .step3 .step3_btm_box .quiz_select_wrap .answer+.answer {
+      margin-left: 48px;
+    }
+
+    /* 4p */
+    .step4 .concept-warp .header {
+      height: 109px;
+    }
+
+    .step4 .main__container {
+      justify-content: start;
+    }
+
+    .step4 .step4_top_box {
+      width: 745px;
+      height: 187px;
+      margin-top: -18px;
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 35px;
+    }
+
+    .step4 .step4_top_box .box {
+      width: 100%;
+      height: 40.5%;
+    }
+
+    .step4 .step4_top_box .step4_img_box {
+      width: 745px;
+      height: 76px;
+    }
+
+    .step4 .step4_top_box .step4_stick_box {
+      width: 745px;
+      height: 76px;
+      border: 4px solid rgba(35, 24, 21, 1);
+      box-sizing: border-box;
+    }
+
+    .step4 .step4_top_box .step4_stick_box .stick {
+      height: 100%;
+    }
+
+    .step4 .step4_top_box .step4_stick_box1 .stick1 {
+      width: 100%;
+      background: rgba(199, 223, 165, 1);
+    }
+
+    .step4 .step4_top_box .step4_stick_box2 .stick1 {
+      width: 50%;
+      background: rgba(246, 221, 161, 1);
+    }
+
+    .step4 .step4_top_box .step4_stick_box2 .stick2 {
+      width: 60%;
+      background: rgba(255, 211, 57, 1);
+      border-left: 4px solid rgba(35, 24, 21, 1);
+    }
+
+    .step4 .step4_mid_box {
+      /* width: 1011px; */
+      height: 181px;
+      margin-top: 50px;
+      /* justify-content: space-between; */
+      /* gap: 28px; */
+    }
+
+    .step4 .step4_mid_box1 {
+      width: 507px;
+      height: 154px;
+      background: rgba(255, 255, 255, 1);
+      border: 3px solid rgba(190, 218, 255, 1);
+      border-radius: 20px;
+    }
+
+    .step4 .step4_mid_box .box1 {
+      width: 507px;
+      height: 157px;
+      background: rgba(255, 255, 255, 1);
+      border: 3px solid rgba(190, 218, 255, 1);
+      border-radius: 20px;
+      box-sizing: border-box;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .step4 .step4_mid_box .box3 {
+      margin-left: 7px;
+    }
+
+    .step4 .step4_mid_box .box1 .txt1 {
+      padding: 12px 16px;
+      margin-right: 50px;
+      background: rgba(145, 180, 251, 1);
+      border-radius: 10px;
+      box-sizing: border-box;
+      font-size: 36px;
+    }
+
+    .step4 .step4_mid_box .img_container {
+      width: 115px;
+      height: 111px;
+    }
+
+    .step4 .step4_mid_box .box3 .calc_box {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+
+    .step4 .step4_mid_box .box3 .calc_box .five,
+    .step4 .step4_mid_box .box3 .calc_box .six {
+      width: 75px;
+      height: 75px;
+
+      justify-content: center;
+      align-items: center;
+    }
+
+    .step4 .step4_mid_box .box3 .calc_box .five,
+    .step4 .step4_mid_box .box3 .calc_box .txt_container2 {
+      background: url(../../../COMM/IMG/CONCEPT/2_3_10/STEP2_JELLY1.png) no-repeat center center / contain;
+    }
+
+    .step4 .step4_mid_box .box3 .calc_box .six,
+    .step4 .step4_mid_box .box3 .calc_box .txt_container1 {
+      background: url(../../../COMM/IMG/CONCEPT/2_3_10/STEP2_JELLY2.png) no-repeat center center / contain;
+    }
+
+    .step4 .step4_mid_box .box3 .calc_box .txt_container1 .placeholder,
+    .step4 .step4_mid_box .box3 .calc_box .txt_container2 .placeholder {
+      visibility: hidden;
+    }
+
+    .step4 .step4_mid_box .box3 .calc_box .txt_container1 {
+      padding: 9px 6px;
+      background-origin: content-box;
+    }
+
+    .step4 .step4_mid_box .box3 .calc_box .txt_container2 {
+      padding: 2px 11px;
+      background-origin: content-box;
+    }
+
+    .step4 .step4_mid_box .box3 .calc_box .txt {
+      padding: 0 10px;
+      visibility: hidden;
+    }
+
+    .step4 .step4_mid_box .box3 .calc_box1 div {
+      visibility: hidden;
+    }
+
+    .step4 .step4_mid_box .box3 .calc_box2 {
+      margin-top: 26px;
+      position: relative;
+    }
+
+    .step4 .step4_mid_box .box3 .txt_container {
+      visibility: hidden;
+    }
+
+    .step4 .step4_mid_box .box3 .txt_container3 {
+      width: 133px;
+    }
+
+    .step4 .step4_mid_box .box3 .calc_box2 .answer_box {
+      margin-left: 0;
+      position: absolute;
+      top: 117px;
+      left: -28px;
+      visibility: hidden;
+      z-index: 10;
+    }
+
+    .step4 .calc_comm>div+div {
+      margin-left: 0;
+    }
+
+    .step4 .check_footer_text {
+      position: relative;
+      background: url("../../../COMM/IMG/CONCEPT/2_3_10/STEP4_FOOTER_TXT.png") no-repeat center;
+      left: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="contents-wrap" class="concept" style="position: absolute; display: flex"></div>
+    <div id="contents-main" style="display: none" class="concept-warp">
+      <div class="concept-warp_inner">
+        <header class="header" style="visibility: visible">
+          <div class="header_title">
+            <button class="sound-btn" onclick="titleSound()"></button>
+            <h3></h3>
+          </div>
+          <p class="header_page"><span>1</span>/2</p>
+        </header>
+        <main class="main">
+          <div class="main_content">
+            <!-- 콘텐츠영역 -->
+            <div class="step step1" style="display: block">
+              <!-- step1 시작부분 -->
+              <div class="main__container dp_flex dp_flex_column">
+                <div class="step1_top_box content_box_comm dp_flex">노란색 나비가 8마리, 흰색 나비가 2마리 있습니다.<br />나비는 모두 몇 마리일까요?
+                </div>
+                <div class="step1_mid_box dp_flex dp_flex_column">
+                  <div class="box">
+                    <div class="step1_stick_box step1_stick_box1 dp_flex">
+                      <div class="stick stick1 dp_flex">8</div>
+                      <div class="stick stick2 dp_flex">2</div>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="step1_stick_box step1_stick_box2 dp_flex">
+                      <div class="stick stick1 dp_flex">10</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="step1_btm_box dp_flex dp_flex_column">
+                  <div class="calc_arrow_comm calc_comm">
+                    <div class="txt">8</div>
+                    <div class="txt">+</div>
+                    <div class="txt">2</div>
+                    <div class="txt">=</div>
+                    <div class="txt_container txt_container1"><span>?</span></div>
+                  </div>
+                  <div class="quiz_select_wrap"></div>
+                </div>
+              </div>
+            </div>
+            <div class="step step2" style="display: block">
+              <!-- step2 시작부분 -->
+              <div class="main__container dp_flex dp_flex_column">
+                <div class="step2_top_box">
+                  <div class="box">
+                    <div class="step2_stick_box step2_stick_box1 dp_flex">
+                      <div class="stick stick1 dp_flex eight"><span>8</span>
+                        <div class="icon_bubble">
+                          <div class="img_container">
+                            <img src="../../../COMM/IMG/CONCEPT/2_3_10/STEP2_BUTTERFLY2_BUBBLE.png" class="img img1" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="stick stick2 dp_flex two"><span>2</span>
+                        <div class="icon_bubble">
+                          <div class="img_container">
+                            <img src="../../../COMM/IMG/CONCEPT/2_3_10/STEP2_BUTTERFLY1_BUBBLE.png" class="img img1" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="step2_stick_box step2_stick_box2 dp_flex">
+                      <div class="stick stick1 dp_flex ten">10</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="step2_mid_box dp_flex">
+                  <div class="box box1">
+                    <div class="txt txt1">
+                      덧셈식
+                    </div>
+                    <div class="txt txt2">
+                      <span class="eight">8</span> + <span class="two">2</span> = <span class="ten ten2">10</span>
+                    </div>
+                  </div>
+                  <div class="box box2">
+                    <div class="img_container">
+                      <img src="../../../COMM/IMG/CONCEPT/2_3_10/ARROW1_1.png" class="img img1" />
+                    </div>
+                  </div>
+                  <div class="box box3">
+                    <div class="calc_box calc_box1">
+                      <img src="../../../COMM/IMG/CONCEPT/2_3_10/STEP2_BUTTERFLY1_1.png" class="img">
+                      <div class="txt"><span class="ten ten2">10</span> - <span class="eight">8</span> = <span
+                          class="two">2</span></div>
+                    </div>
+                    <div class="calc_box calc_box2">
+                      <img src="../../../COMM/IMG/CONCEPT/2_3_10/STEP2_BUTTERFLY2.png" class="img">
+                      <div class="txt_container txt_container1"><span>?</span></div>
+                      <div class="txt">-</div>
+                      <div class="txt_container txt_container2"><span>?</span></div>
+                      <div class="txt">=</div>
+                      <div class="txt_container txt_container3"><span>?</span></div>
+                    </div>
+                    <div class="calc_point_star calc_point_star1 blinking"></div>
+                    <div class="calc_point_star calc_point_star2 blinking"></div>
+                  </div>
+                </div>
+                <div class="step2_btm_box">
+                  <div class="answer_box step2_answer_box dp_flex"></div>
+                </div>
+              </div>
+            </div>
+            <div class="step step3" style="display: none">
+              <!-- step3 시작부분 -->
+              <div class="main__container dp_flex dp_flex_column">
+                <div class="step3_top_box content_box_comm dp_flex">접시에 곰돌이 모양 젤리와 하트 모양 젤리가 모두 11개 있습니다.<br />곰돌이 모양
+                  젤리가 5개 있다면, 하트 모양 젤리는 몇 개일까요?</div>
+                <div class="step3_mid_box dp_flex dp_flex_column">
+                  <div class="box">
+                    <div class="step3_stick_box step3_stick_box1 dp_flex">
+                      <div class="stick stick1 dp_flex">11</div>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="step3_stick_box step3_stick_box2 dp_flex">
+                      <div class="stick stick1 dp_flex"><span>5</span></div>
+                      <div class="stick stick2 dp_flex"><span>6</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="step3_btm_box dp_flex dp_flex_column">
+                  <div class="calc_arrow_comm calc_comm">
+                    <div class="txt">11</div>
+                    <div class="txt">-</div>
+                    <div class="txt">5</div>
+                    <div class="txt">=</div>
+                    <div class="txt_container txt_container1"><span>?</span></div>
+                  </div>
+                  <div class="quiz_select_wrap"></div>
+                </div>
+              </div>
+            </div>
+            <div class="step step4" style="display: none">
+              <!-- step4 시작부분 -->
+              <div class="main__container dp_flex dp_flex_column">
+                <div class="step4_top_box">
+                  <div class="box">
+                    <div class="step4_stick_box step4_stick_box1 dp_flex">
+                      <div class="stick stick1 dp_flex eleven">11</div>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="step4_stick_box step4_stick_box2 dp_flex">
+                      <div class="stick stick1 dp_flex five"><span>5</span>
+                        <div class="icon_bubble">
+                          <div class="img_container">
+                            <img src="../../../COMM/IMG/CONCEPT/2_3_10/STEP2_JELLY1_BUBBLE.png" class="img img1" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="stick stick2 dp_flex six"><span>6</span>
+                        <div class="icon_bubble">
+                          <div class="img_container">
+                            <img src="../../../COMM/IMG/CONCEPT/2_3_10/STEP2_JELLY2_BUBBLE.png" class="img img1" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="step4_mid_box dp_flex">
+                  <div class="box box1">
+                    <div class="txt txt1">
+                      뺄셈식
+                    </div>
+                    <div class="txt txt2">
+                      <span class="eleven">11</span> - <span class="five">5</span> = <span class="six">6</span>
+                    </div>
+                  </div>
+                  <div class="box box2">
+                    <div class="img_container">
+                      <img src="../../../COMM/IMG/CONCEPT/2_3_10/ARROW1_1.png" class="img img1" />
+                    </div>
+                  </div>
+                  <div class="box box3">
+                    <div class="calc_box calc_box1">
+                      <div class="calc_comm">
+                        <div class="dp_flex txt five">5</div>
+                        <div class="txt">+</div>
+                        <div class="dp_flex txt six">6</div>
+                        <div class="txt">=</div>
+                        <div class="txt eleven">11</div>
+                      </div>
+                    </div>
+                    <div class="calc_box calc_box2">
+                      <div class="calc_comm">
+                        <div class="txt_container txt_container1"></div>
+                        <div class="txt">+</div>
+                        <div class="txt_container txt_container2"></div>
+                        <div class="txt">=</div>
+                        <div class="txt_container txt_container3">?</div>
+                      </div>
+                      <div class="answer_box step4_answer_box dp_flex"></div>
+                    </div>
+                    <div class="calc_point_star calc_point_star1 blinking"></div>
+                    <div class="calc_point_star calc_point_star2 blinking"></div>
+                  </div>
+                </div>
+                <footer class="check_footer">
+                  <div class="check_footer_inner slideUp">
+                    <div class="check_footer_text"></div>
+                    <div class="check_footer_ch">
+                      <div class="check_footer_ch_head"></div>
+                      <div class="check_footer_ch_body"></div>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+
+            <ul class="step-list">
+              <li class="step-list_item active"></li>
+              <li class="step-list_item"></li>
+            </ul>
+          </div>
+        </main>
+        <div class="main_prev-next">
+          <button class="btn-prev" style="display: none">이전버튼</button>
+          <!-- <button class="btn-next" style="display: block" disabled> -->
+          <button class="btn-next blinking" style="display: block">
+            다음버튼
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script crossorigin src="https://www.unpkg.com/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="../../../COMM/JS/HOWLER.MIN.JS"></script>
+  <script src="../../../COMM/JS/COMMON2.JS"></script>
+  <script src="../../../COMM/JS/CONCEPTEVNT3.JS"></script>
+  <script src="../../../COMM/JS/CONCEPTEVNTBTN.JS"></script> <!-- 개념 익히기 공통 버튼 처리 (0424) -->
+  <script src="../../../COMM/JS/GAME.JS"></script>
+  <script src="../../../COMM/JS/VIDEO.JS"></script>
+  <script src="../../../COMM/JS/VIDEO-HTTP-STREAMING.JS"></script>
+  <script defer src="../../../COMM/JS/TOUCHDND.JS"></script>
+  <script>
+    /*
+     * 데이터
+     */
+    let intro = {
+      type: "concept", //concept 개념익히기, checkExam 확인문제
+      title: "덧셈과 뺄셈의 관계를 식으로 나타내 볼까요",
+      subTitle: [
+        "덧셈식과 뺄셈식으로 나타내요.",
+        "덧셈과 뺄셈 사이의 관계를 알아봐요.",
+      ],
+      sound: ["../../../COMM/SOUND/2_3_10/2_1_3-10_001.mp3"],
+    };
+
+    //현재 페이지
+    let disStep = 1;
+
+    let pageData = [
+      {
+        step: 1,
+        title: "덧셈식을 뺄셈식으로 나타내 봅시다.",
+        sound: "../../../COMM/SOUND/2_3_10/2_1_3-10_001.mp3",
+        headerPage: [1, 2],
+        footerPage: [1, 2],
+        prev: 0,
+        next: 1,
+      },
+      {
+        step: 2,
+        title: "덧셈식을 뺄셈식으로 나타내 봅시다.",
+        sound: "../../../COMM/SOUND/2_3_10/2_1_3-10_001.mp3",
+        headerPage: [1, 2],
+        footerPage: [2, 2],
+        prev: 1,
+        next: 1,
+      },
+      {
+        step: 3,
+        title: "뺄셈식을 덧셈식으로 나타내 봅시다.",
+        sound: "../../../COMM/SOUND/2_3_10/2_1_3-10_015.mp3",
+        headerPage: [2, 2],
+        footerPage: [1, 1],
+        prev: 2,
+        next: 1,
+      },
+      {
+        step: 4,
+        title: "",
+        sound: "",
+        headerPage: [0, 0],
+        footerPage: [0, 0],
+        prev: 1,
+        next: 0,
+      },
+    ];
+
+    function pageAction() {
+      console.log("disStep ::: ", disStep);
+      //setTimeout 초기화
+      const TimeoutId = setTimeout(() => console.log("timeout clear"), 1);
+      for (let i = 0; i < TimeoutId; i++) {
+        clearTimeout(i);
+      }
+      stepSet();
+      switch (disStep) {
+        case 1:
+          step1.reset();
+          step1.start();
+          break;
+        case 2:
+          step2.reset();
+          step2.start();
+          break;
+        case 3:
+          step3.reset();
+          step3.start();
+          break;
+        case 4:
+          step4.reset();
+          step4.start();
+          break;
+      }
+    }
+
+    //문제 시작
+    //================STEP1==============
+    const step1 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/2_3_10/2_1_3-10_001.mp3",
+          "../../../COMM/SOUND/2_3_10/2_1_3-10_002.mp3",
+          "../../../COMM/SOUND/2_3_10/2_1_3-10_003.mp3",
+        ], [
+          {
+            idx: 3,
+            type: 'end',
+            callback: () => {
+              touchMotionSetOn(290, 1440, step1.guideTouch, $('.step1 .step1_top_box'));
+            }
+          },
+        ]);
+      },
+      guideTouch: () => {
+        $('.step1 .step1_mid_box .step1_stick_box1').css('visibility', 'visible');
+
+        audioSet([
+          "../../../COMM/SOUND/2_3_10/2_1_3-10_004.mp3",
+        ], [
+          {
+            idx: 1,
+            type: 'end',
+            callback: () => {
+              $('.step1 .step1_btm_box').css('visibility', 'visible');
+
+              $('.step1 .step1_btm_box .quiz_select_wrap').css('visibility', 'visible');
+              quizSelectSetOn(1, step1);
+            }
+          }
+        ]);
+      },
+      quizSelectCorrect: (flag) => {
+        if (flag) {
+          $('.step1 .step1_btm_box .quiz_select_wrap').css('visibility', '');
+          $('.step1 .txt_container1').html($('.step1 .step1_btm_box .quiz_select_wrap .selected').text()).removeClass('point');
+
+          audioSet([
+            "../../../COMM/SOUND/CORRECT.mp3",
+            "../../../COMM/SOUND/2_3_10/2_1_3-10_005.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step1 .step1_mid_box .step1_stick_box2').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                correctly();
+              }
+            }
+          ]);
+        } else {
+          audioSet([
+            "../../../COMM/SOUND/WRONG.mp3",
+          ]);
+        }
+      },
+      reset: () => {
+        $('.step1 .txt_container').removeClass('blink point').off('click');
+        $('.step1 .txt_container').html('<span>?</span>');
+        $('.step1 .step1_mid_box .step1_stick_box1').css('visibility', '');
+        $('.step1 .step1_btm_box').css('visibility', '');
+        $('.step1 .step1_mid_box .step1_stick_box2').css('visibility', '');
+
+        touchMotionSetInit();
+        let stepAnswerList = ["10", "11", "12"];
+        quizSelectSetInit($('.step1 .step1_btm_box .quiz_select_wrap'), stepAnswerList);
+      },
+    };
+    //================STEP2==============
+    const step2 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/2_3_10/2_1_3-10_006.mp3",
+        ], [
+          {
+            idx: 1,
+            type: 'end',
+            callback: () => {
+              touchMotionSetOn(490, 955, step2.guideTouch, $('.step2 .step2_mid_box .box3 .calc_box1 .img'));
+            }
+          },
+        ]);
+      },
+      guideTouch: () => {
+        $('.step2 .step2_mid_box .box3 .calc_box1 .txt').css('visibility', 'visible');
+
+        audioSet([
+          "../../../COMM/SOUND/2_3_10/2_1_3-10_007.mp3",
+          "../../../COMM/SOUND/2_3_10/2_1_3-10_008.mp3",
+          "../../../COMM/SOUND/2_3_10/2_1_3-10_009.mp3",
+          "../../../COMM/SOUND/2_3_10/2_1_3-10_010.mp3",
+          "../../../COMM/SOUND/2_3_10/2_1_3-10_011.mp3",
+        ], [
+          {
+            idx: 1,
+            type: 'start',
+            callback: () => {
+              $('.step2 .ten').addClass('highlight');
+            }
+          },
+          {
+            idx: 2,
+            type: 'start',
+            callback: () => {
+              $('.step2 .ten').removeClass('highlight');
+              $('.step2 .eight').addClass('highlight');
+            }
+          },
+          {
+            idx: 3,
+            type: 'start',
+            callback: () => {
+              $('.step2 .eight').removeClass('highlight');
+              $('.step2 .two').addClass('highlight');
+            }
+          },
+          {
+            idx: 5,
+            type: 'start',
+            callback: () => {
+              $('.step2 .two').removeClass('highlight');
+            }
+          },
+          {
+            idx: 5,
+            type: 'end',
+            callback: () => {
+              touchMotionSetOn(610, 955, step2.guideTouch2, $('.step2 .step2_mid_box .box3 .calc_box2 .img'));
+            }
+          }
+        ]);
+      },
+      guideTouch2: () => {
+        $('.step2 .step2_mid_box .box3 .txt_container').css('visibility', 'visible');
+        $('.step2 .step2_mid_box .box3 .calc_box2 .txt').css('visibility', 'visible');
+
+        /* S: 드래그 문제 */
+        stepDropList = [
+          {
+            dropEl: '.step2 .txt_container1',
+            correct: 3
+          },
+          {
+            dropEl: '.step2 .txt_container2',
+            correct: 1
+          },
+          {
+            dropEl: '.step2 .txt_container3',
+            correct: 2
+          },
+        ];
+
+        stepDropArr = ["2", "8", "10"];
+
+        quizMultiDragDropSetOn(stepDropList, $('.step2_answer_box'), stepDropArr, step2);
+
+        $('.step2 .step2_btm_box').css('visibility', 'visible');
+        /* E: 드래그 문제 */
+      },
+      dropppFn: () => {
+        $(".droppable")
+          .droppable({ disabled: false })
+          .on("droppable:drop", function (droppp, drag) {
+            let dragAnswer = drag.item[0].dataset.val;
+            let answer = droppp.currentTarget.dataset.val;
+
+            if (answer === dragAnswer) {
+              correctlyFlag++;
+              quizMultiDragDropSetCorrect(droppp.currentTarget);
+
+              if (correctlyFlag == stepDropList.length) {
+                quizMultiDragDropSetCorrectly();
+                stepDropList = "";
+                stepDropArr = "";
+
+                audioSet([
+                  "../../../COMM/SOUND/CORRECT.mp3",
+                  "../../../COMM/SOUND/2_3_10/2_1_3-10_013.mp3",
+                  "../../../COMM/SOUND/2_3_10/2_1_3-10_014.mp3",
+                ], [
+                  {
+                    idx: 2,
+                    type: 'start',
+                    callback: () => {
+                      $('.step2 .step2_mid_box .box3 .calc_point_star').css('display', 'block');
+                    }
+                  },
+                  {
+                    idx: 3,
+                    type: 'start',
+                    callback: () => {
+                      $('.step2 .step2_mid_box .box3 .calc_point_star').css('display', 'none');
+                      $('.step2 .step2_mid_box .box3 .txt_container1 .answer').addClass('highlight');
+                      $('.step2 .ten2').addClass('highlight');
+                    }
+                  },
+                  {
+                    idx: 3,
+                    type: 'end',
+                    callback: () => {
+                      // disStep++;
+                      // pageAction();
+                      correctly();
+                    }
+                  }
+                ]);
+              } else {
+                audioSet([
+                  "../../../COMM/SOUND/CORRECT.mp3",
+                ]);
+              }
+            } else {
+              audioSet([
+                "../../../COMM/SOUND/WRONG.mp3",
+                "../../../COMM/SOUND/2_3_10/2_1_3-10_012.mp3",
+              ]);
+
+              return false;
+            }
+          });
+      },
+      reset: () => {
+        $('.step2 .ten').removeClass('highlight');
+        $('.step2 .eight').removeClass('highlight');
+        $('.step2 .two').removeClass('highlight');
+        $('.step2 .step2_mid_box .box3 .txt').removeClass('highlight');
+        $('.step2 .step2_mid_box .box3 .txt_container').removeClass('highlight');
+        $('.step2 .step2_mid_box .box3 .calc_box1 .txt').css('visibility', '');
+        $('.step2 .step2_mid_box .box3 .txt_container').css('visibility', '');
+        $('.step2 .step2_mid_box .box3 .calc_box2 .txt').css('visibility', '');
+        $('.step2 .step2_btm_box').css('visibility', '');
+        $('.step2 .step2_mid_box .box3 .txt_container1 .answer').removeClass('highlight');
+        $('.step2 .ten2').removeClass('highlight');
+        $('.step2 .step2_mid_box .box3 .calc_point_star').css('display', '');
+
+        touchMotionSetInit();
+
+        correctlyFlag = 0;
+      },
+    };
+    //================STEP3==============
+    const step3 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/2_3_10/2_1_3-10_015.mp3",
+          "../../../COMM/SOUND/2_3_10/2_1_3-10_016.mp3",
+          "../../../COMM/SOUND/2_3_10/2_1_3-10_017.mp3",
+        ], [
+          {
+            idx: 3,
+            type: 'end',
+            callback: () => {
+              touchMotionSetOn(260, 1500, step3.guideTouch, $('.step3 .step3_top_box'));
+            }
+          },
+        ]);
+      },
+      guideTouch: () => {
+        $('.step3 .step3_mid_box .step3_stick_box1').css('visibility', 'visible');
+        $('.step3 .step3_mid_box .step3_stick_box2 .stick1').css('visibility', 'visible');
+
+        audioSet([
+          "../../../COMM/SOUND/2_3_10/2_1_3-10_018.mp3",
+        ], [
+          {
+            idx: 1,
+            type: 'end',
+            callback: () => {
+              $('.step3 .step3_btm_box').css('visibility', 'visible');
+
+              $('.step3 .step3_btm_box .quiz_select_wrap').css('visibility', 'visible');
+              quizSelectSetOn(3, step3);
+            }
+          }
+        ]);
+      },
+      quizSelectCorrect: (flag) => {
+        if (flag) {
+          $('.step3 .step3_btm_box .quiz_select_wrap').css('visibility', '');
+          $('.step3 .txt_container1').html($('.step3 .step3_btm_box .quiz_select_wrap .selected').text()).removeClass('point');
+
+          audioSet([
+            "../../../COMM/SOUND/CORRECT.mp3",
+            "../../../COMM/SOUND/2_3_10/2_1_3-10_019.mp3",
+          ], [
+            {
+              idx: 1,
+              type: 'start',
+              callback: () => {
+                $('.step3 .step3_mid_box .step3_stick_box2 .stick2').css('visibility', 'visible');
+              }
+            },
+            {
+              idx: 2,
+              type: 'end',
+              callback: () => {
+                correctly();
+              }
+            }
+          ]);
+        } else {
+          audioSet([
+            "../../../COMM/SOUND/WRONG.mp3",
+          ]);
+        }
+      },
+      reset: () => {
+        $('.step3 .txt_container').removeClass('blink point').off('click');
+        $('.step3 .txt_container').html('<span>?</span>');
+        $('.step3 .step3_mid_box .step3_stick_box1').css('visibility', '');
+        $('.step3 .step3_mid_box .step3_stick_box2 .stick1').css('visibility', '');
+        $('.step3 .step3_mid_box .step3_stick_box2 .stick2').css('visibility', '');
+        $('.step3 .step3_btm_box').css('visibility', '');
+
+        touchMotionSetInit();
+        let stepAnswerList = ["8", "7", "6"];
+        quizSelectSetInit($('.step3 .step3_btm_box .quiz_select_wrap'), stepAnswerList);
+      },
+    };
+    //================STEP4==============
+    const step4 = {
+      start: () => {
+        audioSet([
+          "../../../COMM/SOUND/2_3_10/2_1_3-10_020.mp3",
+        ], [
+          {
+            idx: 1,
+            type: 'end',
+            callback: () => {
+              touchMotionSetOn(220, 1010, step4.guideTouch, $('.step4 .step4_mid_box .box3 .calc_box1'));
+            }
+          },
+        ]);
+      },
+      guideTouch: () => {
+        $('.step4 .step4_mid_box .box3 .calc_box1 div').css('visibility', 'visible');
+        $('.step4 .step4_mid_box .box3 .calc_box1 .txt').css('visibility', 'visible');
+
+        audioSet([
+          "../../../COMM/SOUND/2_3_10/2_1_3-10_021.mp3",
+          "../../../COMM/SOUND/2_3_10/2_1_3-10_022.mp3",
+          "../../../COMM/SOUND/2_3_10/2_1_3-10_023.mp3",
+          "../../../COMM/SOUND/2_3_10/2_1_3-10_024.mp3",
+          "../../../COMM/SOUND/2_3_10/2_1_3-10_025.mp3",
+        ], [
+          {
+            idx: 1,
+            type: 'start',
+            callback: () => {
+              $('.step4 .five').addClass('highlight');
+            }
+          },
+          {
+            idx: 2,
+            type: 'start',
+            callback: () => {
+              $('.step4 .five').removeClass('highlight');
+              $('.step4 .six').addClass('highlight');
+            }
+          },
+          {
+            idx: 3,
+            type: 'start',
+            callback: () => {
+              $('.step4 .six').removeClass('highlight');
+              $('.step4 .eleven').addClass('highlight');
+            }
+          },
+          {
+            idx: 4,
+            type: 'start',
+            callback: () => {
+              $('.step4 .eleven').removeClass('highlight');
+            }
+          },
+          {
+            idx: 5,
+            type: 'end',
+            callback: () => {
+              touchMotionSetOn(320, 1010, step4.guideTouch2, $('.step4 .step4_mid_box .box3 .calc_box2'));
+            }
+          }
+        ]);
+      },
+      guideTouch2: () => {
+        $('.step4 .step4_mid_box .box3 .txt_container').css('visibility', 'visible');
+        $('.step4 .step4_mid_box .box3 .calc_box2 .txt').css('visibility', 'visible');
+
+        /* S: 드래그 문제 */
+        stepDropList = [
+          {
+            dropEl: '.step4 .txt_container1',
+            correct: 2
+          },
+          {
+            dropEl: '.step4 .txt_container2',
+            correct: 3
+          },
+          {
+            dropEl: '.step4 .txt_container3',
+            correct: 1
+          },
+        ];
+
+        stepDropArr = ["11", "6", "5"];
+
+        quizMultiDragDropSetOn(stepDropList, $('.step4_answer_box'), stepDropArr, step4);
+
+        $('.step4 .step4_mid_box .box3 .calc_box2 .answer_box').css('visibility', 'visible');
+        /* E: 드래그 문제 */
+      },
+      dropppFn: () => {
+        $(".droppable")
+          .droppable({ disabled: false })
+          .on("droppable:drop", function (droppp, drag) {
+            let dragAnswer = drag.item[0].dataset.val;
+            let answer = droppp.currentTarget.dataset.val;
+
+            if (answer === dragAnswer) {
+              correctlyFlag++;
+              quizMultiDragDropSetCorrect(droppp.currentTarget);
+
+              if (correctlyFlag == stepDropList.length) {
+                quizMultiDragDropSetCorrectly();
+                stepDropList = "";
+                stepDropArr = "";
+
+                audioSet([
+                  "../../../COMM/SOUND/CORRECT.mp3",
+                  "../../../COMM/SOUND/2_3_10/2_1_3-10_027.mp3",
+                  "../../../COMM/SOUND/2_3_10/2_1_3-10_028.mp3",
+                ], [
+                  {
+                    idx: 2,
+                    type: 'start',
+                    callback: () => {
+                      $('.step4 .step4_mid_box .box3 .calc_point_star').css('display', 'block');
+                    }
+                  },
+                  {
+                    idx: 3,
+                    type: 'start',
+                    callback: () => {
+                      $('.step4 .step4_mid_box .box3 .calc_point_star').css('display', 'none');
+
+                      $('.step4 .check_footer_inner').addClass('slideUp');
+                    }
+                  },
+                  {
+                    idx: 3,
+                    type: 'end',
+                    callback: () => {
+                      callFinish();
+                    }
+                  }
+                ]);
+              } else {
+                audioSet([
+                  "../../../COMM/SOUND/CORRECT.mp3",
+                ]);
+              }
+            } else {
+              audioSet([
+                "../../../COMM/SOUND/WRONG.mp3",
+                "../../../COMM/SOUND/2_3_10/2_1_3-10_026.mp3",
+              ]);
+
+              return false;
+            }
+          });
+      },
+      reset: () => {
+        $('.step4 .five').removeClass('highlight');
+        $('.step4 .six').removeClass('highlight');
+        $('.step4 .eleven').removeClass('highlight');
+        $('.step4 .step4_mid_box .box3 .txt_container').removeClass('highlight');
+        $('.step4 .step4_mid_box .box3 .txt').removeClass('highlight');
+        $('.step4 .step4_mid_box .box3 .calc_box1 div').removeClass('highlight');
+        $('.step4 .step4_mid_box .box3 .calc_box1 div').css('visibility', '');
+        $('.step4 .step4_mid_box .box3 .calc_box1 .txt').css('visibility', '');
+        $('.step4 .step4_mid_box .box3 .txt_container').css('visibility', '');
+        $('.step4 .step4_mid_box .box3 .calc_box2 .txt').css('visibility', '');
+        $('.step4 .step4_mid_box .box3 .calc_box2 .answer_box').css('visibility', '');
+        $('.step4 .check_footer_inner').removeClass('slideUp');
+        $('.step4 .step4_mid_box .box3 .calc_point_star').css('display', '');
+
+        touchMotionSetInit();
+
+        correctlyFlag = 0;
+      },
+    };
+  </script>
+</body>
+
+</html>
